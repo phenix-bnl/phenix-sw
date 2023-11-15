@@ -1,0 +1,33 @@
+	Class FROG - File Replica On Grid
+
+Method FROG::location translates a logical file name (given as an
+argument) to a physical location(full file path).
+
+If environment variable GSEARCHPATH is not set FROG::location 
+returns  a logical file name(LFN) back.
+
+Environment variable GSEARCHPATH is a colon separated list that 
+can contain local directories  and reserved words for  database 
+search. The word for Objectivity search is OBJY.
+
+Example: if the GSEARCHPATH=.:/home/$USER/:OBJY
+first the current directory will be searched for LFN, then the
+/home/$USER/ directory, then Objectivity.
+If the file exists in more than one place, the first found path 
+will be returned.
+
+The user code need not be changed in different environments - with
+DB access and without. If GSEARCHPATH indicates that DBs should be
+searched, a dynamic library will be loaded at run time for each DB 
+to do the search. 
+ 
+If LFN starts with a slash, it is considered an absolute path and
+FROG::location returns it if the file exists, otherwise an empty string
+is returned. 
+
+Example of ROOT session:
+
+root [0] gSystem->Load("libFROG.so");
+root [1] FROG fr;
+root [2] TFile *f = new TFile(fr.location("uuDST_run2_v03_burn1-0000033694-0050.root"));
+

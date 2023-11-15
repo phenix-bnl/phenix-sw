@@ -1,0 +1,33 @@
+AC_INIT(configure.in)
+
+AC_PROG_CXX(cxx CC g++)
+
+AC_CANONICAL_HOST
+case "$host" in
+  *-*-osf*)
+    if test $ac_cv_prog_gcc = no; then
+      CXXFLAGS="$CXXFLAGS -wall -O -std gnu"
+      LIBS="-lcxxstd"
+    fi
+  ;;
+  *-*-linux*)
+  ;;
+  *-*-solaris*)
+  ;;
+  *)
+    AC_MSG_ERROR([default compiler unknown for this system!])
+  ;;
+esac
+
+dnl   no point in suppressing warnings people should 
+dnl   at least see them, so here we go for g++: -Wall
+if test $ac_cv_prog_gxx = yes; then
+  CXXFLAGS="$CXXFLAGS -Wall -Werror"
+fi
+
+
+AM_INIT_AUTOMAKE(PHWrappers, 1.1)
+AC_ENABLE_STATIC(no)
+AC_PROG_LIBTOOL
+
+AC_OUTPUT(Makefile)

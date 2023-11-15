@@ -1,0 +1,32 @@
+AC_INIT(TOAD.C)
+
+AC_CANONICAL_HOST
+
+
+case "$host" in
+*-*-linux*)
+  ;;
+*-*-solaris*)
+  EXTRALIBS="-library=Cstd"
+  AC_SUBST(EXTRALIBS)
+  ;;
+*)
+  AC_MSG_ERROR([default compiler unknown for this system!])
+  ;;
+esac
+
+
+AM_INIT_AUTOMAKE(TOAD,1.0)
+AC_PROG_CXX(CC g++)
+AC_ENABLE_STATIC(no)
+AC_PROG_LIBTOOL
+
+dnl   no point in suppressing warnings people should
+dnl   at least see them, so here we go for g++: -Wall
+dnl   treat warnings as errors: -Werror
+if test $ac_cv_prog_gxx = yes; then
+   CXXFLAGS="$CXXFLAGS -Wall -Werror"
+fi
+
+AC_OUTPUT(Makefile)
+

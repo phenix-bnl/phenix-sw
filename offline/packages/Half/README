@@ -1,0 +1,7 @@
+This code is part of the ilmbase 1.0.2 software package available from 
+http://www.openexr.com/
+The original Makefile.am is included as Makefile.am.orig to show how
+the include files eLut.h and toFloat.h were build. I checked those in - I don't
+think it is a good idea to build them every time this package is build
+
+Chris Pinkenburg 7/7/2011

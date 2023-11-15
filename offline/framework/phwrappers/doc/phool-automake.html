@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Editing Makefile.am</title>
+  <LINK REL=STYLESHEET HREF="style.css">
+</head>
+
+<body>
+<h1>Editing Makefile.am</h1>
+
+<!-- hhmts start -->
+Last modified: Wed Jun 28 23:46:00 EDT 2000
+<!-- hhmts end -->
+
+<p> This discussion is intended to provide guidance on editing the
+Makefile.am files that genAutoMake produces.  It is not intended to be
+a guide to creating a Makefile.am from scratch, nor is it a general
+introduction to automake.  For detailed information, see the
+documentation at the
+<a href="http://www.cygnus.com/~tromey/automake/">automake home page</a>.
+</p>
+
+<h2>Generalities</h2>
+
+<p> The Makefile.am files use the following standard automake
+variables to define lists of source files to be created or compiled
+during the build:
+</p>
+
+<dl>
+  <dt> include_HEADERS
+  <dd> list of header files that will be installed.
+  <dt> noinst_HEADERS
+  <dd> list of header files that will <em>not</em> be installed.
+  <dt> libabc_la_SOURCES
+  <dd> list of files that need to be compiled to make the shared
+      library libabc.so.
+</dl>
+
+<p>Previous versions of this document made references to the
+BUILT_SOURCES list, which contained the source files to be created by
+an external program such as phidl or rootcint.  The makefiles seem to
+work fine without this list as of automake version 1.4a (and perhaps
+earlier), and the use of BUILT_SOURCES in Makefile.am in general seems
+to be becoming obsolescent (see, for example,
+<a href="http://sourceware.cygnus.com/ml/automake/2000-01/msg00076.html">
+this message to the automake mailing list</a>).</p>
+
+<h2>Specific Cases</h2>
+
+<p> Building new source files into the shared libraries for your
+analysis package is generally a matter of adding appropriate file
+names to these lists.  Let's look at a few common cases:</p>
+<ul>
+  <li><a href="#adding_table">Adding a new wrapped table</a>
+  <li><a href="#adding_staf_module">Adding a new STAF-style (wrapped) module</a>
+  <li><a href="#adding_phool_module">Adding a new PHOOL-style module</a>
+  <li><a href="#adding_class_nocint">Adding a new class (without a CINT dictionary)</a>
+  <li><a href="#adding_class_cint">Adding a new class (with a CINT dictionary)</a>
+</ul>
+
+<h4><a name="adding_table">Adding a new wrapped table</a></h4>
+
+<p> To compile a new wrapped table, the Makefiles need to know about
+your table IDL file, and the files that the phidl IDL compiler and the
+rootcint dictionary generator create from the IDL file.</p>
+
+<p> As an example, say that you have a table IDL file, dAbcData.idl .
+Running phidl produces:</p>
+
+<dl>
+  <dt> dAbcData.h
+  <dd> a header file for the struct containing the data variables
+  <dt> dAbcDataWrapper.h dAbcDataWrapper.C
+  <dd> a header and implementation file for the wrapper class
+  <dt> dAbcDataLinkDef.h
+  <dd> a "linkdef" header file for rootcint
+</dl>
+
+<p> To generate the CINT (ROOT) dictionary, the Makefile will run
+rootcint with the wrapper header file and the "linkdef" file as
+inputs.  Running rootcint produces dAbcDataDict.h and dAbcDataDict.C,
+the source files for the dictionary. </p>
+
+<p> You'll need to add these files to inc/Makefile.am:</p>
+
+<ul>
+  <li> add the IDL file to include_HEADERS
+  <li> add the "linkdef" file and the dictionary header file to
+      noinst_HEADERS
+  <li> add the struct header file and the wrapper header file to
+      include_HEADERS
+  <li> add the wrapper "C" file and the dictionary "C" file to
+      lib???_tables_la_SOURCES (replace ??? with
+      the name of your analysis package, "abc" in this example)
+</ul>
+
+<p> In the simplest case, where there is only one wrapped table
+(dAbcData.idl), and there are no other headers in the source inc/
+area, the source lists in our example inc/Makefile.am will look
+something like this:
+</p>
+
+<pre class=source>
+noinst_HEADERS = dAbcDataLinkDef.h dAbcDataDict.h
+
+include_HEADERS = dAbcData.idl dAbcData.h dAbcDataWrapper.h
+
+libabc_tables_la_SOURCES = dAbcDataWrapper.C dAbcDataDict.C
+</pre>
+
+<h4><a name="adding_staf_module">Adding a new STAF-style (wrapped) module</a></h4>
+
+<p> To compile a new wrapped module, the Makefiles need to know about
+your module IDL file, and the files that the phidl IDL compiler and the
+rootcint dictionary generator create from the IDL file.</p>
+
+<p> As an example, say that you have a module IDL file,
+mAbcFillData.idl and a STAF-compatible module source file,
+mAbcFillData.cc .  Running phidl on mAbcFillData.idl produces the
+following files:</p>
+
+<dl>
+  <dt> mAbcFillData.h
+  <dd> a module header file containing the function prototype for
+      mAbcFillData.cc
+  <dt> mAbcFillDataModule.h mAbcFillDataModule.C mAbcFillDataPAM.C
+  <dd> a header and implementation files for the wrapper class
+  <dt> mAbcFillDataLinkDef.h
+  <dd> a "linkdef" header file for rootcint
+</dl>
+
+<p> To generate the CINT (ROOT) dictionary, the Makefile will run
+rootcint with the wrapper header file and the "linkdef" file as
+inputs.  Running rootcint produces dAbcFillDataDict.h and
+dAbcFillDataDict.C, the source files for the dictionary. </p>
+
+<p> You'll need to add these files to src/Makefile.am:</p>
+
+<ul>
+  <li> add the module header file, the wrapper header file, the
+      "linkdef" file, and the dictionary header file to noinst_HEADERS
+  <li> add your module source file to lib???_la_SOURCES (replace ???
+      with the name of your analysis package, "abc" in this example)
+  <li> add the wrapper "C" files and the dictionary "C" file to
+      lib???_la_SOURCES (replace ??? with the
+      name of your analysis package, "abc" in this example)
+</ul>
+
+<p> In the simplest case, where there is only one wrapped module
+(mAbcFillData.idl), and there are no other source files in the source
+src/ area, the source lists in our example src/Makefile.am will look
+something like this:
+</p>
+
+<pre class=source>
+noinst_HEADERS = mAbcFillData.h mAbcFillDataModule.h \
+mAbcFillDataLinkDef.h mAbcFillDataDict.h
+
+libabc_la_SOURCES = mAbcFillData.cc mAbcFillDataModule.C \
+mAbcFillDataPAM.C mAbcFillDataDict.C
+</pre>
+
+<h4><a name="adding_phool_module">Adding a new PHOOL-style module</a></h4>
+
+<p> To compile a new PHOOL-style module, the Makefiles need to know about
+your module source files and the files that the rootcint dictionary
+generator creates.</p>
+
+<p> To write a PHOOL-style module (let's use mAbcPrintData as an
+example), you will need to write a header file
+(mAbcPrintDataModule.h), an implementation file
+(mAbcPrintDataModule.cc), and a "linkdef" file
+(mAbcPrintDataLinkDef.h).  (The documentation for writing these files
+does not exist yet.)  You will also need a CINT (ROOT)
+dictionary, which is generated by running rootcint with the module
+header file and the "linkdef" file as inputs.  Running rootcint
+produces dAbcPrintDataDict.h and dAbcPrintDataDict.C, the source files
+for the dictionary. </p>
+
+<p> You'll need to add these files to src/Makefile.am:</p>
+
+<ul>
+  <li> add the module header file, the wrapper header file, the
+      "linkdef" file, and the dictionary header file to noinst_HEADERS
+  <li> add your module source file, the wrapper "C" files, and the
+      dictionary "C" file to lib???_la_SOURCES
+      (replace ??? with the name of your analysis package, "abc" in
+      this example)
+</ul>
+
+<p> In the simplest case, where there is only one PHOOL-style module
+(mAbcPrintDataModule.C), and there are no other source files in the source
+src/ area, the source lists in our example src/Makefile.am will look
+something like this:
+</p>
+
+<pre class=source>
+noinst_HEADERS = mAbcPrintDataModule.h \
+mAbcPrintDataLinkDef.h mAbcPrintDataDict.h
+
+libabc_la_SOURCES = mAbcPrintDataModule.C mAbcPrintDataDict.C
+</pre>
+
+
+<h4><a name="adding_class_nocint">Adding a new class (without a CINT dictionary)</a></h4>
+
+<p> To compile a new class without a CINT dictionary, the Makefiles
+need to know about your class source files.</p>
+
+<p> To write a class (let's use TAbcClass as an example), you will
+need to write a header file (TAbcClass.hh) and an implementation file
+(TAbcClass.cc).  It is a good idea to place both files in the src/
+subdirectory, so that the most up-to-date version of the header file
+can be found easily.</p>
+
+<p> You'll need to add these files to src/Makefile.am:</p>
+
+<ul>
+  <li> add the class header file to include_HEADERS
+  <li> add the class source file to lib???_la_SOURCES
+      (replace ??? with the name of your analysis package, "abc" in
+      this example)
+</ul>
+
+<p> In the simplest case, where there is only one class
+(TAbcClass), and there are no other source files in the source
+src/ area, the source lists in our example src/Makefile.am will look
+something like this:
+</p>
+
+<pre class=source>
+include_HEADERS = TAbcClass.hh
+
+libabc_la_SOURCES =  TAbcClass.cc
+</pre>
+
+
+<h4><a name="adding_class_cint">Adding a new class (with a CINT dictionary)</a></h4>
+
+<p> To compile a new class and create a CINT dictionary, the Makefiles
+need to know about your module source files and the files that the
+rootcint dictionary generator creates.</p>
+
+<p> To write a class (let's use TAbcClass as an
+example), you will need to write a header file
+(TAbcClass.hh) and an implementation file
+(TAbcClass.cc), and a "linkdef" file
+(TAbcClassLinkDef.h).  It is a good idea to place all three files in
+the src/ subdirectory, so that the most up-to-date version of the
+header file can be found easily.</p>
+
+<p> You will also need a CINT (ROOT) dictionary, which is generated by
+running rootcint with the class header file and the "linkdef" file as
+inputs.  Running rootcint produces TAbcClassDataDict.h and
+TAbcClassDict.C, the source files for the dictionary. </p>
+
+<p> You'll need to add these files to src/Makefile.am:</p>
+
+<ul>
+  <li> add the "linkdef" file to noinst_HEADERS
+  <li> add the dictionary header file to noinst_HEADERS
+  <li> add the dictionary "C" file to
+      lib???_la_SOURCES (replace ??? with the name of your analysis
+      package, "abc" in this example)
+  <li> add the class header file to include_HEADERS
+  <li> add the class source file to lib???_la_SOURCES
+      (replace ??? with the name of your analysis package, "abc" in
+      this example)
+</ul>
+
+<p> In the simplest case, where there is only one class
+(TAbcClass), and there are no other source files in the source
+src/ area, the source lists in our example src/Makefile.am will look
+something like this:
+</p>
+
+<pre class=source>
+noinst_HEADERS = TAbcClassLinkDef.h TAbcClassDict.h
+
+include_HEADERS = TAbcClass.hh
+
+libabc_la_SOURCES =  TAbcClass.cc TAbcClassDict.C
+</pre>
+
+<h2><a NAME="REV_HISTORY">Revision History</a></h2>
+
+<dl>
+<dt>June 28, 2000</dt>
+<dd>Removed references to BUILT_SOURCES.  The document still refers to
+    the inc/ and src/ subdirectories, which are no longer used, so more
+    work needs to be done.</dd>
+</dl>
+
+<hr>
+<address><a href="mailto:pope@phy.ornl.gov">Kyle Pope &lt;pope@phy.ornl.gov&gt;</a></address>
+
+</body> </html>
