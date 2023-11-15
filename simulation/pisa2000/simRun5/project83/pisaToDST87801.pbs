@@ -1,0 +1,74 @@
+#! /bin/tcsh -f
+#PBS -o /scratch/maguire/0/project83/dstEvents/rndm01/log87801.out
+#PBS -j oe
+#PBS -l walltime=2:00:00
+#PBS -l cput=1:50:30
+#PBS -l nodes=1:ppn=1:x86
+#PBS -l mem=450mb
+cd /scratch/maguire/0/project83/dstEvents/rndm01
+date
+echo $HOST
+echo $HOST > accreHost87801
+df -k /tmp
+ls -al /tmp
+rm -rf /tmp/maguire87801
+mkdir /tmp/maguire87801
+# 
+# Logic to allow only one PISAEvent.root file copy at a time
+# 
+@ notdone = 1
+@ counter = 0
+while ( $notdone == 1 )
+  sleep 55
+  if( $counter >= 65) then
+    break
+  endif
+  if( -e "/scratch/maguire/0/project83/dstEvents/copyPISA/copyPISAFlag") then
+    @ notdone = 1
+  else
+    touch /scratch/maguire/0/project83/dstEvents/copyPISA/copyPISAFlag
+    @ notdone = 0
+    break;
+  endif
+  @ counter++
+end
+echo " "
+echo "Wait counter is $counter"
+echo " "
+touch /scratch/maguire/0/project83/dstEvents/copyPISA/startCopy87801
+cp /scratch/maguire/0/project83/pisaEvents/done/PISA2000_KSPi0Pi0MIMI-0000087801-0083.rootg /tmp/maguire87801/PISAEvent.root
+cp AlwaysDeadCh_pp200_168676.dat /tmp/maguire87801
+cp crk_cabling_vrdc.txt /tmp/maguire87801
+cp DchEfficiency_pp200.Real /tmp/maguire87801
+cp DchGeometry.frame00NoRetracted /tmp/maguire87801
+cp DchGeometry.info /tmp/maguire87801
+cp DchGeometry.wireMc /tmp/maguire87801
+cp fieldIntegral.dat /tmp/maguire87801
+cp pisaToDST.C /tmp/maguire87801
+cp pisaToDST_IOManager.C /tmp/maguire87801
+cp pisaToDST.input /tmp/maguire87801
+touch /scratch/maguire/0/project83/dstEvents/copyPISA/endCopy87801
+rm /scratch/maguire/0/project83/dstEvents/copyPISA/copyPISAFlag
+cd /tmp/maguire87801
+ls -al
+date
+root -b < pisaToDST.input >& pisaToDST87801.out
+date
+cd /scratch/maguire/0/project83/dstEvents/rndm01
+cp /tmp/maguire87801/pisaToDST87801.out .
+cp /tmp/maguire87801/simDST.root .
+cp /tmp/maguire87801/simCNT.root .
+cp /tmp/maguire87801/simHWG.root .
+chmod u-w simCNT.root
+mv simCNT.root CNT2000_KSPi0Pi0MIMI-0000087801-0083.rootg
+mv CNT2000_KSPi0Pi0MIMI-0000087801-0083.rootg ../done
+chmod u-w simHWG.root
+mv simHWG.root HWG2000_KSPi0Pi0MIMI-0000087801-0083.rootg
+mv HWG2000_KSPi0Pi0MIMI-0000087801-0083.rootg ../done
+chmod u-w simDST.root
+mv simDST.root DST2000_KSPi0Pi0MIMI-0000087801-0083.rootg
+mv DST2000_KSPi0Pi0MIMI-0000087801-0083.rootg ../done
+touch finish87801
+rm -rf /tmp/maguire87801
+ls -al /tmp
+date

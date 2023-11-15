@@ -1,0 +1,12 @@
+macro drawcent.kumac
+for/file 33 drawcent.ps
+meta 33 -111
+next
+cfm_s
+ptrig 1
+draw hall 180 0
+dxyz
+igset txci 4
+dtext 10 18. 'PISA2000' 0.5 0.0 4 'CENT'
+for/close 33
+return

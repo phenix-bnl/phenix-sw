@@ -1,0 +1,7 @@
+macro glogon.kumac
+Message ' '
+Message '  Welcome to PISA2000, the PHENIX simulation program'
+Message '  Date of last core file change: March 13, 2004' 
+Message '  Changes for new RLT volume (Relative Luminosity Telescope)' 
+Message ' '
+return

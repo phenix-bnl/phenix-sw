@@ -1,0 +1,24 @@
+c $Id: gcbank.inc,v 1.2 2008/05/21 08:15:53 hpereira Exp $
+
+      INTEGER IQ,LQ,NZEBRA,IXSTOR,IXDIV,IXCONS,LMAIN,LR1,JCG
+      INTEGER KWBANK,KWWORK,IWS
+      REAL GVERSN,ZVERSN,FENDQ,WS,Q
+
+c       PARAMETER (KWBANK=69000,KWWORK=5200)
+c       COMMON/GCBANK/NZEBRA,GVERSN,ZVERSN,IXSTOR,IXDIV,IXCONS,FENDQ(16)
+c      +             ,LMAIN,LR1,WS(KWBANK)
+c       DIMENSION IQ(2),Q(2),LQ(8000),IWS(2)
+c       EQUIVALENCE (Q(1),IQ(1),LQ(9)),(LQ(1),LMAIN),(IWS(1),WS(1))
+c       EQUIVALENCE (JCG,JGSTAT)
+      INTEGER       JDIGI ,JDRAW ,JHEAD ,JHITS ,JKINE ,JMATE ,JPART
+     +      ,JROTM ,JRUNG ,JSET  ,JSTAK ,JGSTAT,JTMED ,JTRACK,JVERTX
+     +      ,JVOLUM,JXYZ  ,JGPAR ,JGPAR2,JSKLT
+
+c       COMMON/GCLINK/JDIGI ,JDRAW ,JHEAD ,JHITS ,JKINE ,JMATE ,JPART
+c      +      ,JROTM ,JRUNG ,JSET  ,JSTAK ,JGSTAT,JTMED ,JTRACK,JVERTX
+c      +      ,JVOLUM,JXYZ  ,JGPAR ,JGPAR2,JSKLT
+
+
+c using official geant321 headers in place of local hacks
+c to avoid conflicts when changing geant version
+#include "geant321/gcbank.inc"

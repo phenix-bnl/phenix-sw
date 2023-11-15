@@ -1,0 +1,3 @@
+The files in this directory are Autoconf m4 macros which are used by
+PISA to test for the features that are required from its build
+environment.

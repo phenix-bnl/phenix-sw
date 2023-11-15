@@ -1,0 +1,12 @@
+macro drawtzr.kumac
+for/file 33 drawtzr.ps
+meta 33 -111
+next
+cfm_s
+ptrig 1
+draw HALL 180 0
+dxyz
+igset txci 4
+dtext 10 18. 'TZR in PISA' 0.5 0.0 4 'CENT'
+for/close 33
+return

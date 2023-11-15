@@ -1,0 +1,2 @@
+.x pisaToDST.C(2500, "simDST.root", "simMicroDST.root", "simNanoDST.root", "PISA2500PhiKK.root", 0);
+.q;

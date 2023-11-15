@@ -1,0 +1,12 @@
+#! /bin/tcsh
+#PBS -o /mrbig/ghosh/project1/pisar/RAxx/job.out
+#PBS -j oe
+#PBS -l walltime=08:00:00
+#PBS -l cput=08:00:00
+#PBS -l nodes=1
+cd /mrbig/ghosh/project1/pisar/RAxx
+rm oscar.root
+ln -s /mrbig/phenix/simul_ev/oscar_ev/oscar5MKaonP1.root oscar.root
+time perl pisa_run.pl
+chmod u-w PISAEvent.root
+perl pisa_tran.pl

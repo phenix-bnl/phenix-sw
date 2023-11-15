@@ -1,0 +1,3081 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   4.01/02   23 January 2006   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+Compiled for linux with thread support.
+
+CINT/ROOT C/C++ Interpreter version 5.15.152, Sep 13 2004
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+
+ Recording library path for this job:
+/home/phenix/root-4.01.02/lib:.:/home/phenix/install/lib:/home/phenix/root-4.01.02/lib:/home/phenix/pro72Apr25/lib:/afs/rhic.bnl.gov/app/insure-6.1-gcc-3.2/lib.linux2:/home/phenix/odbc_extra_libs:/usr/local/lors/p4/gcc/lib:/usr/local/ddt/lib
+
+
+
+ No AFS connection available; field map file fieldIntegral.dat assumed in local working area
+Welcome to pmonitor.  Type phelp() for help 
+
+
+   pisaToDST <I>: Drift Chamber dead channel map corresponds to Run5 pp at 200 GeV
+
+********* GAS GAIN: 3000 **************
+Call AccSim::SetCalibPara()
+
+TOP (PHCompositeNode)/
+   DCM (PHCompositeNode)/
+   DST (PHCompositeNode)/
+      T0Out (PHIODataNode)
+      AccCluster (PHIODataNode)
+   RUN (PHCompositeNode)/
+   PAR (PHCompositeNode)/
+   PRDF (PHDataNode)
+Initialize the Central Track Analysis...
+
+ Using legacy libgea.so library to fill ghit tables
+manager: 0xb5c18708
+SIMDST writes simDST.root
+SIMDST: Node fkin is written out
+SIMDST: Node primary is written out
+SIMDST: Node header is written out
+SIMDST: Node T0Out is written out
+SIMDST: Node VtxOut is written out
+SIMDST: Node bbcghit is written out
+SIMDST: Node BbcOut is written out
+SIMDST: Node BbcRaw is written out
+SIMDST: Node dcghit is written out
+SIMDST: Node DchHitLineTablev1 is written out
+SIMDST: Node DchHitLineTable is written out
+SIMDST: Node DchTrack is written out
+SIMDST: Node dDchTracksPerf is written out
+SIMDST: Node dDchTracksExtPerf is written out
+SIMDST: Node dDchGhitHits is written out
+SIMDST: Node pc1ghit is written out
+SIMDST: Node pc2ghit is written out
+SIMDST: Node pc3ghit is written out
+SIMDST: Node dPc1GhitClus is written out
+SIMDST: Node dPc2GhitClus is written out
+SIMDST: Node dPc3GhitClus is written out
+SIMDST: Node Pc1Cluster is written out
+SIMDST: Node Pc2Cluster is written out
+SIMDST: Node Pc3Cluster is written out
+SIMDST: Node Pc1Raw is written out
+SIMDST: Node Pc2Raw is written out
+SIMDST: Node Pc3Raw is written out
+SIMDST: Node crkghit is written out
+SIMDST: Node CrkHit is written out
+SIMDST: Node CrkRing is written out
+SIMDST: Node CrkRingBack is written out
+SIMDST: Node tecghit is written out
+SIMDST: Node dTecGhitRaw is written out
+SIMDST: Node TecOut is written out
+SIMDST: Node TecHitOut is written out
+SIMDST: Node tofghit is written out
+SIMDST: Node TofOut is written out
+SIMDST: Node dTofGdigi is written out
+SIMDST: Node dTofGhitGdigi is written out
+SIMDST: Node dTofGdigiRec is written out
+SIMDST: Node AerGeaHits is written out
+SIMDST: Node AccCluster is written out
+SIMDST: Node AccRaw is written out
+SIMDST: Node AccHit is written out
+SIMDST: Node emcghit is written out
+SIMDST: Node emcClusterContainer is written out
+SIMDST: Node emcTowerContainer is written out
+SIMDST: Node dEmcGeaClusterTrack is written out
+SIMDST: Node dEmcGeaTrack is written out
+SIMDST: Node dEmcGeaTrackCluster is written out
+SIMDST: Node CglTrack is written out
+SIMDST: Node CglTrackBack is written out
+SIMDST: Node PHDchTrackOut is written out
+SIMDST: Node PHTrackOut is written out
+SIMDST: Node PHTrackOutBack is written out
+SIMDST: Node EventHeader is written out
+SIMDST wrote 0 Events
+manager: 0xb5c1a4a0
+SIMCNT writes simCNT.root
+SIMCNT: Node PHCentralTrack is written out
+SIMCNT: Node McSingle is written out
+SIMCNT: Node PHGlobal is written out
+SIMCNT: Node EventHeader is written out
+SIMCNT: Node AccCluster is written out
+SIMCNT wrote 0 Events
+manager: 0xb5c1adb8
+SIMHWG writes simHWG.root
+SIMHWG: Node HWGCentralTrack is written out
+SIMHWG: Node McSingle is written out
+SIMHWG: Node PHGlobal is written out
+SIMHWG: Node EventHeader is written out
+SIMHWG wrote 0 Events
+
+ Fun4AllPisaInputManager <I>: Using run number 179846
+ Events in PISA hits input = 250
+
+ Fun4AllPisaInputManager <I>: nFiles = 1
+
+ pisaRootGetEvent <I>: number of input files = 1
+
+  PISA99 Tree Mode was used for this PISA hits file. 
+
+ Zdc not installed for input file 1
+
+ This PISA hits file contains no MutPISAPara information
+
+
+ trtrnoRoot.cc <I>: version modified on Jan. 4, 2006
+
+
+ pisaRootGetEvent <I>:  For event 1 the maximum ancestry track number was 130
+
+
+  Fun4AllPisaInputManager::run() <I>: mapScaleFactor = 1
+     Setting positive current 
+
+BbcSimreco> restored constants are for Fri Jun 24 07:38:36 2005 ; parameters dump has been suppressed 
+BbcCalib.overflow0:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.overflow1:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.pedestal:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.pmtgain:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.offset:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:26 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.tzero:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:26 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.adc:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.tdc0:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.tdc1:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.slewpar0:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:26 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.slewpar1:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:26 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.config:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:26 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.fakeped:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.threshold:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+BbcCalib.timereso:restore
+Now opening FD in readonly mode..
+BankID = 4002
+Insert   : Wed Oct 19 15:34:27 2005
+StartVal : Wed Jun 22 08:35:00 2005
+EndVal   : Thu Dec 31 00:00:00 2020
+Calibration Description : Version:4004, DataFrom:2005/06/22 08:35:00, Run type:pp 200GeV, Magnetic Field:ON, Slewing type:Inclusive 
+User Name = Yoshihide Nakamiya
+ ### Loaded calibration parameters ###
+ Ped: 932.58 OverFlow0:3007.46 Slew:  2.52 -33.75   0.19 Gain:  40.29 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 884.54 Theshold(MC): 948.73 TimeReso(MC):0.097
+ Ped: 870.41 OverFlow0:2975.95 Slew:  2.85 -29.73   0.14 Gain:  35.89 TdcConv:0.007 AdcConv:0.485 FakePed(MC): 916.34 Theshold(MC): 883.74 TimeReso(MC):0.077
+ Ped: 812.56 OverFlow0:2974.01 Slew:  1.71 -25.59   0.26 Gain:  50.08 TdcConv:0.007 AdcConv:0.466 FakePed(MC): 913.32 Theshold(MC): 829.10 TimeReso(MC):0.091
+ Ped: 820.85 OverFlow0:3060.19 Slew:  1.28 -24.24   0.22 Gain:  39.70 TdcConv:0.007 AdcConv:0.461 FakePed(MC): 920.90 Theshold(MC): 831.11 TimeReso(MC):0.084
+ Ped: 754.04 OverFlow0:3022.42 Slew:  1.26 -28.51   0.22 Gain:  45.09 TdcConv:0.007 AdcConv:0.456 FakePed(MC): 896.16 Theshold(MC): 766.79 TimeReso(MC):0.089
+ Ped: 813.40 OverFlow0:3001.07 Slew:  2.53 -45.14   0.10 Gain:  35.94 TdcConv:0.007 AdcConv:0.452 FakePed(MC): 931.39 Theshold(MC): 836.25 TimeReso(MC):0.082
+ Ped: 944.61 OverFlow0:2980.03 Slew:  2.29 -24.20   0.22 Gain:  28.77 TdcConv:0.007 AdcConv:0.489 FakePed(MC): 874.01 Theshold(MC): 956.94 TimeReso(MC):0.087
+ Ped: 837.61 OverFlow0:2973.82 Slew:  2.25 -23.07   0.27 Gain:  61.05 TdcConv:0.007 AdcConv:0.486 FakePed(MC): 822.46 Theshold(MC): 850.99 TimeReso(MC):0.073
+ Ped: 779.59 OverFlow0:2983.97 Slew:  2.65 -33.85   0.21 Gain:  27.43 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 891.04 Theshold(MC): 797.81 TimeReso(MC):0.074
+ Ped: 769.44 OverFlow0:2975.95 Slew:  2.32 -24.36   0.26 Gain:  36.74 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 841.83 Theshold(MC): 784.39 TimeReso(MC):0.088
+ Ped: 758.78 OverFlow0:2947.27 Slew:  1.88 -36.15   0.24 Gain:  80.76 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 863.76 Theshold(MC): 781.09 TimeReso(MC):0.078
+ Ped: 700.33 OverFlow0:2991.21 Slew:  0.32 -16.64   0.35 Gain:  25.87 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 745.27 Theshold(MC): 709.34 TimeReso(MC):0.081
+ Ped: 823.27 OverFlow0:3081.37 Slew:  1.66 -24.50   0.22 Gain:  37.19 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 932.72 Theshold(MC): 835.91 TimeReso(MC):0.097
+ Ped: 784.74 OverFlow0:2961.42 Slew:  1.60 -31.56   0.27 Gain:  32.62 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 902.67 Theshold(MC): 803.71 TimeReso(MC):0.080
+ Ped: 874.83 OverFlow0:2786.77 Slew:  2.10 -25.07   0.26 Gain:  25.83 TdcConv:0.008 AdcConv:0.400 FakePed(MC): 896.58 Theshold(MC): 889.27 TimeReso(MC):0.078
+ Ped: 814.06 OverFlow0:2958.43 Slew:  3.18 -29.01   0.19 Gain:  31.58 TdcConv:0.007 AdcConv:0.400 FakePed(MC): 846.32 Theshold(MC): 828.29 TimeReso(MC):0.085
+ Ped: 911.61 OverFlow0:3078.65 Slew:  2.26 -27.85   0.25 Gain:  44.89 TdcConv:0.007 AdcConv:0.463 FakePed(MC): 931.98 Theshold(MC): 928.00 TimeReso(MC):0.082
+ Ped: 894.03 OverFlow0:3087.72 Slew:  2.38 -39.86   0.10 Gain:  30.30 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 910.97 Theshold(MC): 911.03 TimeReso(MC):0.083
+ Ped: 859.81 OverFlow0:3044.85 Slew:  2.12 -42.38   0.13 Gain:  31.67 TdcConv:0.007 AdcConv:0.452 FakePed(MC): 929.28 Theshold(MC): 879.41 TimeReso(MC):0.087
+ Ped: 827.19 OverFlow0:3192.47 Slew:  0.43 -32.52   0.20 Gain:  40.26 TdcConv:0.007 AdcConv:0.477 FakePed(MC): 936.77 Theshold(MC): 843.09 TimeReso(MC):0.076
+ Ped: 931.26 OverFlow0:3096.68 Slew:  1.15 -32.28   0.24 Gain:  39.97 TdcConv:0.007 AdcConv:0.462 FakePed(MC): 953.16 Theshold(MC): 947.09 TimeReso(MC):0.093
+ Ped: 821.11 OverFlow0:2960.23 Slew:  2.23 -38.42   0.17 Gain:  58.52 TdcConv:0.007 AdcConv:0.461 FakePed(MC): 898.15 Theshold(MC): 840.39 TimeReso(MC):0.073
+ Ped: 971.11 OverFlow0:2930.81 Slew:  2.31 -27.61   0.21 Gain:  26.39 TdcConv:0.007 AdcConv:0.479 FakePed(MC): 892.82 Theshold(MC): 984.15 TimeReso(MC):0.080
+ Ped: 783.11 OverFlow0:2970.75 Slew:  2.76 -21.42   0.28 Gain:  46.36 TdcConv:0.007 AdcConv:0.474 FakePed(MC): 922.70 Theshold(MC): 797.48 TimeReso(MC):0.090
+ Ped:1007.53 OverFlow0:2970.26 Slew:  3.41 -30.42   0.21 Gain:  37.96 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 933.84 Theshold(MC):1023.87 TimeReso(MC):0.075
+ Ped: 896.16 OverFlow0:2999.37 Slew:  1.99 -36.09   0.18 Gain:  31.05 TdcConv:0.007 AdcConv:0.474 FakePed(MC): 919.88 Theshold(MC): 910.08 TimeReso(MC):0.080
+ Ped: 963.43 OverFlow0:2884.91 Slew:  0.93 -25.28   0.29 Gain:  71.28 TdcConv:0.008 AdcConv:0.467 FakePed(MC): 895.27 Theshold(MC): 976.45 TimeReso(MC):0.074
+ Ped: 837.44 OverFlow0:3005.34 Slew:  1.01 -27.89   0.21 Gain:  43.12 TdcConv:0.007 AdcConv:0.463 FakePed(MC): 843.01 Theshold(MC): 849.32 TimeReso(MC):0.087
+ Ped: 781.17 OverFlow0:3015.61 Slew:  1.03 -41.25   0.10 Gain:  27.66 TdcConv:0.007 AdcConv:0.477 FakePed(MC): 780.38 Theshold(MC): 795.73 TimeReso(MC):0.090
+ Ped: 861.83 OverFlow0:3005.25 Slew:  1.09 -25.29   0.28 Gain:  53.14 TdcConv:0.007 AdcConv:0.469 FakePed(MC): 929.25 Theshold(MC): 876.29 TimeReso(MC):0.085
+ Ped: 839.78 OverFlow0:2969.61 Slew:  2.54 -30.38   0.21 Gain:  37.10 TdcConv:0.007 AdcConv:0.461 FakePed(MC): 874.00 Theshold(MC): 858.42 TimeReso(MC):0.083
+ Ped: 846.63 OverFlow0:3024.84 Slew:  2.08 -27.43   0.26 Gain:  31.07 TdcConv:0.007 AdcConv:0.465 FakePed(MC): 853.53 Theshold(MC): 861.22 TimeReso(MC):0.085
+ Ped: 720.87 OverFlow0:3022.30 Slew:  2.62 -28.28   0.15 Gain:  26.48 TdcConv:0.007 AdcConv:0.480 FakePed(MC): 801.50 Theshold(MC): 732.24 TimeReso(MC):0.108
+ Ped: 695.40 OverFlow0:3014.19 Slew:  2.86 -32.07   0.13 Gain:  35.44 TdcConv:0.007 AdcConv:0.474 FakePed(MC): 813.19 Theshold(MC): 708.84 TimeReso(MC):0.085
+ Ped: 949.25 OverFlow0:2959.57 Slew:  1.65 -18.80   0.27 Gain:  37.15 TdcConv:0.007 AdcConv:0.499 FakePed(MC): 910.24 Theshold(MC): 960.13 TimeReso(MC):0.090
+ Ped: 820.29 OverFlow0:2978.19 Slew:  1.39 -33.72   0.18 Gain:  56.61 TdcConv:0.007 AdcConv:0.509 FakePed(MC): 930.70 Theshold(MC): 835.34 TimeReso(MC):0.100
+ Ped: 843.41 OverFlow0:3018.43 Slew:  0.85 -12.79   0.35 Gain:  50.95 TdcConv:0.007 AdcConv:0.489 FakePed(MC): 832.64 Theshold(MC): 854.11 TimeReso(MC):0.089
+ Ped: 617.65 OverFlow0:2977.83 Slew:  1.86 -21.60   0.26 Gain:  38.21 TdcConv:0.007 AdcConv:0.471 FakePed(MC): 879.88 Theshold(MC): 630.10 TimeReso(MC):0.078
+ Ped: 885.22 OverFlow0:2995.80 Slew:  2.93 -42.27   0.10 Gain:  29.31 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 898.59 Theshold(MC): 902.99 TimeReso(MC):0.100
+ Ped: 806.65 OverFlow0:3007.32 Slew:  2.36 -22.43   0.28 Gain:  32.99 TdcConv:0.007 AdcConv:0.490 FakePed(MC): 746.92 Theshold(MC): 819.89 TimeReso(MC):0.082
+ Ped: 787.77 OverFlow0:2999.64 Slew:  2.71 -40.30   0.18 Gain:  39.48 TdcConv:0.007 AdcConv:0.460 FakePed(MC): 877.86 Theshold(MC): 806.59 TimeReso(MC):0.076
+ Ped: 809.70 OverFlow0:2992.37 Slew:  2.94 -23.09   0.25 Gain:  36.30 TdcConv:0.007 AdcConv:0.457 FakePed(MC): 861.54 Theshold(MC): 826.06 TimeReso(MC):0.080
+ Ped: 986.70 OverFlow0:2972.46 Slew:  2.07 -39.88   0.17 Gain:  53.23 TdcConv:0.007 AdcConv:0.479 FakePed(MC): 947.08 Theshold(MC):1005.59 TimeReso(MC):0.079
+ Ped: 780.82 OverFlow0:3023.47 Slew:  1.17 -35.63   0.17 Gain:  34.64 TdcConv:0.007 AdcConv:0.468 FakePed(MC): 856.98 Theshold(MC): 797.17 TimeReso(MC):0.085
+ Ped: 895.28 OverFlow0:3017.37 Slew:  1.62 -36.69   0.22 Gain:  38.12 TdcConv:0.007 AdcConv:0.443 FakePed(MC): 950.79 Theshold(MC): 914.92 TimeReso(MC):0.084
+ Ped: 752.64 OverFlow0:3030.01 Slew:  2.75 -35.85   0.10 Gain:  22.45 TdcConv:0.007 AdcConv:0.459 FakePed(MC): 905.17 Theshold(MC): 768.18 TimeReso(MC):0.097
+ Ped: 805.08 OverFlow0:2930.86 Slew:  1.99 -25.97   0.28 Gain:  30.96 TdcConv:0.007 AdcConv:0.468 FakePed(MC): 872.49 Theshold(MC): 820.14 TimeReso(MC):0.082
+ Ped: 877.85 OverFlow0:2944.80 Slew:  2.41 -27.57   0.29 Gain:  52.64 TdcConv:0.007 AdcConv:0.460 FakePed(MC): 902.81 Theshold(MC): 895.26 TimeReso(MC):0.079
+ Ped: 919.42 OverFlow0:3016.14 Slew:  2.37 -39.54   0.18 Gain:  31.14 TdcConv:0.007 AdcConv:0.460 FakePed(MC): 916.45 Theshold(MC): 938.22 TimeReso(MC):0.095
+ Ped: 742.53 OverFlow0:2943.70 Slew:  3.54 -40.26   0.10 Gain:  39.39 TdcConv:0.007 AdcConv:0.453 FakePed(MC): 868.40 Theshold(MC): 764.94 TimeReso(MC):0.089
+ Ped: 817.87 OverFlow0:3005.97 Slew:  1.63 -27.75   0.26 Gain:  59.36 TdcConv:0.007 AdcConv:0.478 FakePed(MC): 918.60 Theshold(MC): 833.48 TimeReso(MC):0.085
+ Ped: 821.37 OverFlow0:3040.63 Slew:  0.99 -30.50   0.20 Gain:  34.98 TdcConv:0.007 AdcConv:0.466 FakePed(MC): 915.70 Theshold(MC): 833.94 TimeReso(MC):0.083
+ Ped: 763.83 OverFlow0:3003.78 Slew:  1.96 -33.98   0.15 Gain:  31.09 TdcConv:0.007 AdcConv:0.451 FakePed(MC): 890.71 Theshold(MC): 778.99 TimeReso(MC):0.095
+ Ped: 646.99 OverFlow0:2968.67 Slew:  2.38 -40.65   0.13 Gain:  36.45 TdcConv:0.007 AdcConv:0.459 FakePed(MC): 901.76 Theshold(MC): 666.53 TimeReso(MC):0.082
+ Ped: 840.64 OverFlow0:2924.97 Slew:  2.42 -17.55   0.28 Gain:  28.85 TdcConv:0.007 AdcConv:0.475 FakePed(MC): 863.70 Theshold(MC): 850.63 TimeReso(MC):0.082
+ Ped: 889.93 OverFlow0:3068.21 Slew:  2.69 -22.89   0.20 Gain:  56.01 TdcConv:0.007 AdcConv:0.480 FakePed(MC): 870.94 Theshold(MC): 902.45 TimeReso(MC):0.091
+ Ped: 839.73 OverFlow0:2922.01 Slew:  3.00 -34.59   0.19 Gain:  58.52 TdcConv:0.007 AdcConv:0.463 FakePed(MC): 922.04 Theshold(MC): 858.90 TimeReso(MC):0.087
+ Ped: 789.03 OverFlow0:2988.53 Slew:  2.07 -27.59   0.24 Gain:  78.53 TdcConv:0.007 AdcConv:0.490 FakePed(MC): 912.65 Theshold(MC): 805.77 TimeReso(MC):0.075
+ Ped: 839.70 OverFlow0:2921.95 Slew:  1.79 -34.94   0.23 Gain:  71.03 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 909.50 Theshold(MC): 859.83 TimeReso(MC):0.079
+ Ped: 861.61 OverFlow0:2965.50 Slew:  1.44 -26.60   0.22 Gain:  35.97 TdcConv:0.007 AdcConv:0.468 FakePed(MC): 919.35 Theshold(MC): 876.07 TimeReso(MC):0.096
+ Ped: 833.96 OverFlow0:3042.26 Slew:  1.41 -30.19   0.18 Gain:  27.42 TdcConv:0.007 AdcConv:0.462 FakePed(MC): 835.27 Theshold(MC): 847.45 TimeReso(MC):0.097
+ Ped: 761.61 OverFlow0:2960.61 Slew:  2.03 -37.28   0.17 Gain:  37.21 TdcConv:0.007 AdcConv:0.459 FakePed(MC): 888.33 Theshold(MC): 782.35 TimeReso(MC):0.083
+ Ped: 911.23 OverFlow0:2937.29 Slew:  2.49 -37.95   0.15 Gain:  36.19 TdcConv:0.007 AdcConv:0.461 FakePed(MC): 898.41 Theshold(MC): 928.32 TimeReso(MC):0.085
+ Ped: 768.78 OverFlow0:2954.15 Slew:  3.21 -30.48   0.22 Gain:  42.34 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 880.82 Theshold(MC): 786.22 TimeReso(MC):0.077
+ Ped: 830.08 OverFlow0:2978.18 Slew:  2.84 -25.40   0.23 Gain:  31.73 TdcConv:0.007 AdcConv:0.469 FakePed(MC): 843.81 Theshold(MC): 844.08 TimeReso(MC):0.088
+ Ped: 849.49 OverFlow0:3041.52 Slew:  2.63 -30.67   0.16 Gain:  34.14 TdcConv:0.007 AdcConv:0.474 FakePed(MC): 802.96 Theshold(MC): 862.45 TimeReso(MC):0.094
+ Ped: 927.95 OverFlow0:2990.24 Slew:  1.84 -24.48   0.30 Gain:  37.09 TdcConv:0.007 AdcConv:0.471 FakePed(MC): 935.33 Theshold(MC): 945.06 TimeReso(MC):0.082
+ Ped: 921.43 OverFlow0:3024.45 Slew:  1.25 -30.37   0.21 Gain:  34.54 TdcConv:0.007 AdcConv:0.467 FakePed(MC): 904.49 Theshold(MC): 925.80 TimeReso(MC):0.091
+ Ped: 822.75 OverFlow0:2990.22 Slew:  1.16 -22.65   0.27 Gain:  43.98 TdcConv:0.007 AdcConv:0.459 FakePed(MC): 908.25 Theshold(MC): 833.70 TimeReso(MC):0.084
+ Ped: 782.55 OverFlow0:3084.82 Slew:  1.99 -23.37   0.25 Gain:  28.44 TdcConv:0.007 AdcConv:0.464 FakePed(MC): 903.87 Theshold(MC): 797.83 TimeReso(MC):0.084
+ Ped: 859.76 OverFlow0:2973.08 Slew:  2.31 -28.37   0.25 Gain:  38.25 TdcConv:0.007 AdcConv:0.467 FakePed(MC): 847.66 Theshold(MC): 874.60 TimeReso(MC):0.088
+ Ped: 900.04 OverFlow0:2927.03 Slew:  3.09 -21.79   0.25 Gain: 111.95 TdcConv:0.007 AdcConv:0.473 FakePed(MC): 912.14 Theshold(MC): 914.26 TimeReso(MC):0.073
+ Ped: 845.30 OverFlow0:2950.82 Slew:  3.34 -32.03   0.20 Gain:  52.17 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 789.21 Theshold(MC): 864.48 TimeReso(MC):0.069
+ Ped: 879.58 OverFlow0:2998.43 Slew:  2.60 -31.67   0.22 Gain:  47.87 TdcConv:0.007 AdcConv:0.473 FakePed(MC): 917.40 Theshold(MC): 897.70 TimeReso(MC):0.086
+ Ped: 901.58 OverFlow0:3066.81 Slew:  1.71 -34.64   0.23 Gain:  44.76 TdcConv:0.007 AdcConv:0.464 FakePed(MC): 950.93 Theshold(MC): 918.97 TimeReso(MC):0.087
+ Ped: 836.44 OverFlow0:3000.28 Slew:  1.26 -23.31   0.28 Gain:  38.60 TdcConv:0.007 AdcConv:0.468 FakePed(MC): 919.55 Theshold(MC): 850.28 TimeReso(MC):0.079
+ Ped: 909.17 OverFlow0:3048.67 Slew:  1.29 -19.14   0.29 Gain:  36.65 TdcConv:0.007 AdcConv:0.467 FakePed(MC): 911.36 Theshold(MC): 920.43 TimeReso(MC):0.089
+ Ped: 907.48 OverFlow0:3017.95 Slew:  0.96 -27.95   0.26 Gain:  62.12 TdcConv:0.007 AdcConv:0.461 FakePed(MC): 913.65 Theshold(MC): 923.79 TimeReso(MC):0.079
+ Ped: 829.92 OverFlow0:3096.88 Slew:  2.75 -27.58   0.18 Gain:  31.70 TdcConv:0.007 AdcConv:0.463 FakePed(MC): 897.92 Theshold(MC): 844.58 TimeReso(MC):0.082
+ Ped: 802.93 OverFlow0:3003.55 Slew:  1.65 -16.68   0.30 Gain:  26.73 TdcConv:0.007 AdcConv:0.478 FakePed(MC): 759.46 Theshold(MC): 758.72 TimeReso(MC):0.086
+ Ped: 734.11 OverFlow0:2956.40 Slew:  3.70 -39.64   0.13 Gain:  34.40 TdcConv:0.007 AdcConv:0.457 FakePed(MC): 874.85 Theshold(MC): 752.68 TimeReso(MC):0.088
+ Ped: 891.59 OverFlow0:2938.08 Slew:  3.04 -36.71   0.17 Gain:  36.55 TdcConv:0.007 AdcConv:0.473 FakePed(MC): 948.66 Theshold(MC): 911.18 TimeReso(MC):0.093
+ Ped: 889.26 OverFlow0:2975.55 Slew:  2.14 -42.20   0.15 Gain:  37.39 TdcConv:0.007 AdcConv:0.464 FakePed(MC): 913.63 Theshold(MC): 908.06 TimeReso(MC):0.084
+ Ped: 884.65 OverFlow0:3010.30 Slew:  1.19 -23.10   0.27 Gain:  38.38 TdcConv:0.007 AdcConv:0.475 FakePed(MC): 918.68 Theshold(MC): 898.18 TimeReso(MC):0.078
+ Ped: 793.96 OverFlow0:3023.65 Slew:  1.80 -27.89   0.16 Gain:  41.82 TdcConv:0.007 AdcConv:0.465 FakePed(MC): 853.27 Theshold(MC): 806.58 TimeReso(MC):0.087
+ Ped: 811.86 OverFlow0:3027.85 Slew:  2.06 -39.45   0.18 Gain:  32.70 TdcConv:0.007 AdcConv:0.451 FakePed(MC): 949.27 Theshold(MC): 833.03 TimeReso(MC):0.084
+ Ped: 918.74 OverFlow0:2979.02 Slew:  2.59 -22.71   0.26 Gain:  39.63 TdcConv:0.007 AdcConv:0.485 FakePed(MC): 882.24 Theshold(MC): 930.20 TimeReso(MC):0.080
+ Ped: 783.77 OverFlow0:2925.58 Slew:  3.39 -34.99   0.17 Gain:  47.32 TdcConv:0.007 AdcConv:0.455 FakePed(MC): 885.74 Theshold(MC): 801.44 TimeReso(MC):0.090
+ Ped: 862.84 OverFlow0:3035.60 Slew:  2.86 -32.57   0.24 Gain:  64.08 TdcConv:0.007 AdcConv:0.481 FakePed(MC): 927.54 Theshold(MC): 881.70 TimeReso(MC):0.076
+ Ped: 755.65 OverFlow0:3010.63 Slew:  3.14 -39.77   0.15 Gain:  32.01 TdcConv:0.007 AdcConv:0.457 FakePed(MC): 915.52 Theshold(MC): 774.03 TimeReso(MC):0.094
+ Ped: 915.85 OverFlow0:3003.51 Slew:  2.65 -38.28   0.13 Gain:  45.29 TdcConv:0.007 AdcConv:0.476 FakePed(MC): 913.61 Theshold(MC): 936.37 TimeReso(MC):0.080
+ Ped: 721.12 OverFlow0:3025.58 Slew:  1.99 -40.02   0.19 Gain:  35.34 TdcConv:0.007 AdcConv:0.456 FakePed(MC): 899.78 Theshold(MC): 735.96 TimeReso(MC):0.112
+ Ped: 762.30 OverFlow0:2970.15 Slew:  1.63 -14.40   0.25 Gain:  40.89 TdcConv:0.007 AdcConv:0.464 FakePed(MC): 876.78 Theshold(MC): 766.45 TimeReso(MC):0.087
+ Ped: 855.11 OverFlow0:3052.51 Slew:  2.63 -43.56   0.10 Gain:  32.80 TdcConv:0.007 AdcConv:0.454 FakePed(MC): 925.77 Theshold(MC): 874.73 TimeReso(MC):0.088
+ Ped: 919.74 OverFlow0:2955.81 Slew:  2.22 -21.89   0.24 Gain:  40.68 TdcConv:0.007 AdcConv:0.477 FakePed(MC): 912.92 Theshold(MC): 930.52 TimeReso(MC):0.089
+ Ped: 738.23 OverFlow0:3006.03 Slew:  3.22 -24.61   0.24 Gain:  56.57 TdcConv:0.007 AdcConv:0.476 FakePed(MC): 844.14 Theshold(MC): 752.28 TimeReso(MC):0.089
+ Ped: 878.25 OverFlow0:2926.62 Slew:  3.36 -35.15   0.17 Gain:  35.62 TdcConv:0.007 AdcConv:0.469 FakePed(MC): 955.06 Theshold(MC): 895.42 TimeReso(MC):0.088
+ Ped: 893.92 OverFlow0:2869.25 Slew:  2.64 -43.09   0.13 Gain:  34.23 TdcConv:0.007 AdcConv:0.478 FakePed(MC): 959.87 Theshold(MC): 912.24 TimeReso(MC):0.112
+ Ped: 755.91 OverFlow0:2948.62 Slew:  2.72 -42.34   0.11 Gain:  52.17 TdcConv:0.007 AdcConv:0.471 FakePed(MC): 897.50 Theshold(MC): 779.01 TimeReso(MC):0.089
+ Ped: 840.67 OverFlow0:3037.02 Slew:  0.93 -22.47   0.26 Gain:  62.28 TdcConv:0.007 AdcConv:0.482 FakePed(MC): 904.96 Theshold(MC): 853.74 TimeReso(MC):0.076
+ Ped: 875.10 OverFlow0:3068.90 Slew:  1.43 -34.02   0.18 Gain:  47.85 TdcConv:0.007 AdcConv:0.473 FakePed(MC): 910.40 Theshold(MC): 889.70 TimeReso(MC):0.086
+ Ped: 896.35 OverFlow0:3008.80 Slew:  2.08 -27.54   0.28 Gain:  50.22 TdcConv:0.007 AdcConv:0.471 FakePed(MC): 928.93 Theshold(MC): 916.59 TimeReso(MC):0.085
+ Ped: 797.89 OverFlow0:2958.49 Slew:  2.18 -22.51   0.26 Gain:  43.36 TdcConv:0.007 AdcConv:0.477 FakePed(MC): 874.59 Theshold(MC): 811.80 TimeReso(MC):0.087
+ Ped: 826.75 OverFlow0:2978.43 Slew:  3.58 -31.93   0.19 Gain:  27.58 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 860.01 Theshold(MC): 840.20 TimeReso(MC):0.095
+ Ped: 858.97 OverFlow0:2903.77 Slew:  2.90 -31.75   0.22 Gain:  38.76 TdcConv:0.007 AdcConv:0.482 FakePed(MC): 940.90 Theshold(MC): 876.71 TimeReso(MC):0.076
+ Ped: 771.66 OverFlow0:2978.26 Slew:  3.55 -39.07   0.10 Gain:  30.26 TdcConv:0.007 AdcConv:0.479 FakePed(MC): 870.47 Theshold(MC): 789.86 TimeReso(MC):0.091
+ Ped: 915.95 OverFlow0:3009.83 Slew:  2.55 -37.62   0.15 Gain:  40.31 TdcConv:0.007 AdcConv:0.479 FakePed(MC): 894.85 Theshold(MC): 935.85 TimeReso(MC):0.084
+ Ped: 885.06 OverFlow0:3015.09 Slew:  1.15 -33.59   0.21 Gain:  38.73 TdcConv:0.007 AdcConv:0.481 FakePed(MC): 900.10 Theshold(MC): 900.82 TimeReso(MC):0.084
+ Ped: 757.51 OverFlow0:3084.83 Slew:  2.30 -39.16   0.12 Gain:  50.72 TdcConv:0.007 AdcConv:0.458 FakePed(MC): 837.18 Theshold(MC): 775.43 TimeReso(MC):0.093
+ Ped: 754.29 OverFlow0:2972.78 Slew:  2.87 -38.87   0.14 Gain:  56.08 TdcConv:0.007 AdcConv:0.452 FakePed(MC): 882.61 Theshold(MC): 774.48 TimeReso(MC):0.084
+ Ped: 846.25 OverFlow0:2955.43 Slew:  1.98 -24.76   0.29 Gain:  43.31 TdcConv:0.007 AdcConv:0.459 FakePed(MC): 933.48 Theshold(MC): 862.69 TimeReso(MC):0.078
+ Ped: 805.74 OverFlow0:3005.61 Slew:  3.29 -32.36   0.16 Gain:  35.60 TdcConv:0.007 AdcConv:0.458 FakePed(MC): 920.39 Theshold(MC): 821.71 TimeReso(MC):0.082
+ Ped: 932.77 OverFlow0:2900.25 Slew:  3.06 -35.42   0.18 Gain:  38.89 TdcConv:0.007 AdcConv:0.477 FakePed(MC): 953.27 Theshold(MC): 950.50 TimeReso(MC):0.082
+ Ped: 776.39 OverFlow0:2965.56 Slew:  3.36 -34.10   0.17 Gain:  43.82 TdcConv:0.007 AdcConv:0.470 FakePed(MC): 887.45 Theshold(MC): 796.10 TimeReso(MC):0.088
+ Ped: 961.10 OverFlow0:2966.66 Slew:  2.38 -34.03   0.20 Gain:  37.56 TdcConv:0.007 AdcConv:0.461 FakePed(MC): 957.95 Theshold(MC): 977.94 TimeReso(MC):0.081
+ Ped: 862.18 OverFlow0:3012.34 Slew:  1.19 -20.94   0.24 Gain:  49.19 TdcConv:0.007 AdcConv:0.491 FakePed(MC): 935.38 Theshold(MC): 871.41 TimeReso(MC):0.073
+ Ped:1050.51 OverFlow0:2997.54 Slew:  1.90 -25.40   0.20 Gain:  55.18 TdcConv:0.007 AdcConv:0.512 FakePed(MC): 946.40 Theshold(MC):1065.50 TimeReso(MC):0.087
+ Ped: 856.21 OverFlow0:3042.32 Slew:  2.14 -28.79   0.23 Gain:  41.36 TdcConv:0.007 AdcConv:0.451 FakePed(MC): 920.36 Theshold(MC): 876.21 TimeReso(MC):0.081
+ Ped: 885.38 OverFlow0:3029.25 Slew:  2.41 -21.74   0.25 Gain:  40.98 TdcConv:0.007 AdcConv:0.504 FakePed(MC): 935.00 Theshold(MC): 897.11 TimeReso(MC):0.080
+ Ped: 878.28 OverFlow0:2921.11 Slew:  3.55 -23.17   0.20 Gain:  35.44 TdcConv:0.007 AdcConv:0.464 FakePed(MC): 879.13 Theshold(MC): 889.68 TimeReso(MC):0.085
+ Ped: 793.25 OverFlow0:2974.40 Slew:  3.29 -30.77   0.19 Gain:  31.90 TdcConv:0.007 AdcConv:0.472 FakePed(MC): 879.74 Theshold(MC): 808.52 TimeReso(MC):0.092
+ Ped: 870.08 OverFlow0:2947.97 Slew:  2.65 -27.09   0.23 Gain:  43.18 TdcConv:0.007 AdcConv:0.465 FakePed(MC): 900.36 Theshold(MC): 884.13 TimeReso(MC):0.080
+ Ped: 854.23 OverFlow0:2977.85 Slew:  1.43 -26.97   0.25 Gain:  40.60 TdcConv:0.007 AdcConv:0.458 FakePed(MC): 920.70 Theshold(MC): 870.87 TimeReso(MC):0.074
+ Ped: 889.81 OverFlow0:3000.65 Slew:  2.00 -25.22   0.19 Gain:  28.50 TdcConv:0.007 AdcConv:0.477 FakePed(MC): 886.93 Theshold(MC): 898.05 TimeReso(MC):0.091
+ Ped: 903.72 OverFlow0:3027.56 Slew:  1.33 -25.34   0.24 Gain:  40.96 TdcConv:0.007 AdcConv:0.465 FakePed(MC): 922.89 Theshold(MC): 915.82 TimeReso(MC):0.083
+ Ped: 832.66 OverFlow0:2982.71 Slew:  1.30 -34.54   0.26 Gain:  50.78 TdcConv:0.007 AdcConv:0.470 FakePed(MC): 933.39 Theshold(MC): 851.47 TimeReso(MC):0.075
+ Ped: 838.56 OverFlow0:2957.07 Slew:  2.23 -24.13   0.27 Gain:  36.34 TdcConv:0.007 AdcConv:0.486 FakePed(MC): 938.46 Theshold(MC): 850.71 TimeReso(MC):0.102
+ Ped: 867.66 OverFlow0:2930.84 Slew:  2.30 -25.27   0.28 Gain:  34.30 TdcConv:0.007 AdcConv:0.471 FakePed(MC): 908.69 Theshold(MC): 881.89 TimeReso(MC):0.088
+Offset For South BBC  = -0.12789 Offset For North BBC  = 0.12789 Time Zero Offset      = 0
+
+Function type 
+ a+(b/ADC)+c*log(ADC)
+######################################
+  Version for Calibration parameters  
+######################################
+For Overflow0    = Ver 4.002
+For OverFlow1    = Ver 4.002
+For Pedestal     = Ver 4.002
+For PmtGain      = Ver 4.002
+For Arm Offset   = Ver 4.002
+For Time Zero    = Ver 4.002
+For AdcGain      = Ver 4.002
+For TdcGain0     = Ver 4.002
+For TdcGain1     = Ver 4.002
+For Slewing Par0 = Ver 4.002
+For Slewing Par1 = Ver 4.002
+For BBC Config   = Ver 4.002
+For FakePedestal = Ver 4.002
+For Threshold    = Ver 4.002
+For TimeReso     = Ver 4.002
+######################################
+
+ PadSimreco Geometry <I>: FetchFromSimDatabase succeeded, used TimeStamp December 31, 2001
+
+  For bad channels PadSimreco is using TimeStamp = Mon Jan 26 17:30:00 2004,  PadInclBad status return = 1
+
+
+
+  DchSimreco.C version May 20, 2006 (modified for Run5 dead channel option)
+
+
+  DchSimreco <I>: Using Run5 pp 200 GeV dead channel and efficiency maps (Run 168676
+/home/phnxbld/pro/source/offline/database/pdbcal/pg/RunToTimePg.cc:130: RunToTimePg::Run not found
+DUDE RunToTime could find any information for run 0
+Attempting to fetch from recoConsts
+I got the time of: Wed Dec 31 19:00:00 1969
+End of file reached !! 
+Going to read CALIBRATION from:DchCalibration.Mc
+Going to read SLEW CALIBRATION from:DchCalibrationSlew.Real
+Going to read LOCAL WIRE CALIBRATION from:DchCalibrationLocal.Real
+Going to read STEREO WIRE CALIBRATION from:DchCalibrationStereo.Real
+ could not open input file DchCalibration.Mc !!
+Going to read NOISE from: AlwaysDeadCh_pp200_168676.dat
+Going to read EFFICIENCY from: DchEfficiency_pp200.Real
+ Reading from file AlwaysDeadCh_pp200_168676.dat
+NoiseFile: End of file reached
+ Reading from file DchEfficiency_pp200.Real
+Efficiency File: End of file reached
+ TOF intrinsic timing resolution set to : 0.1000 ns
+
+ TofSimreco <I>: MC parameters from ObjyDB : Sun Apr  4 12:00:00 2004
+
+Real calibration of specified RUN fed into CrkSimuRawReCal
+Found TimeStamp: Fri Jun 24 07:38:36 2005
+Found TimeStamp: Fri Jun 24 07:38:36 2005
+<I> mEmcRecoModuleSimulationYear3 : Using TimeStamp: Fri Jun 24 07:38:36 2005
+EmcReco3::InitRun : I selected mEmcRecoModuleSimulationYear3 as reconstruction module for EMCAL.
+<I> mEmcGeometryModule: PISA Geometry Initialized
+mEmcRecoModuleSimulationYear3::setupAna : module list : 
+  0 mEmcGeaGetHits
+  1 mEmcGeaParamsModule (first event only) 
+  2 mEmcGeaEventModule
+  3 mEmcGeaMakeRawModule
+  4 mEmcGeaTrackModule
+  5 mEmcGeaMakeCalibTower
+  6 mEmcApplyQAToSimu
+  7 mEmcClusterizerv0
+  8 mEmcGeaPatchSimulatedCluster
+  9 mEmcGeaMakeClusterEvaluation
+TOP (PHCompositeNode)/
+   DCM (PHCompositeNode)/
+      dBbcDCMReCal (PHIODataNode)
+      dBbcDCM (PHIODataNode)
+      dPc1DCM (PHIODataNode)
+      dPc2DCM (PHIODataNode)
+      dPc3DCM (PHIODataNode)
+      dDchDCM (PHIODataNode)
+      dTofDCM (PHIODataNode)
+      dCrkDCM (PHIODataNode)
+      dCrkDCMReCal (PHIODataNode)
+      dEmcDCMData (PHIODataNode)
+   DST (PHCompositeNode)/
+      T0Out (PHIODataNode)
+      AccCluster (PHIODataNode)
+      PHCentralTrack (PHIODataNode)
+      EVA (PHCompositeNode)/
+         fkin (PHIODataNode)
+         primary (PHIODataNode)
+         pythia (PHIODataNode)
+         header (PHIODataNode)
+         dBbcGhitRaw (PHIODataNode)
+         dPc1GhitRaw (PHIODataNode)
+         dPc2GhitRaw (PHIODataNode)
+         dPc3GhitRaw (PHIODataNode)
+         dPc1GhitClus (PHIODataNode)
+         dPc2GhitClus (PHIODataNode)
+         dPc3GhitClus (PHIODataNode)
+         dPc1NibbleGhit (PHIODataNode)
+         dPc2NibbleGhit (PHIODataNode)
+         dPc3NibbleGhit (PHIODataNode)
+         dDchGhitHits (PHIODataNode)
+         dDchNibbleGhit (PHIODataNode)
+         McSingle (PHIODataNode)
+         dTecGhitRaw (PHIODataNode)
+         dTofGhitRaw (PHIODataNode)
+         dTofFEMhitGhit (PHIODataNode)
+         dTofGdigi (PHIODataNode)
+         dTofGhitGdigi (PHIODataNode)
+         dTofGdigiRec (PHIODataNode)
+         dTofRawRec (PHIODataNode)
+         dCrkRel2s (PHIODataNode)
+         dEmcGeaTrackTower (PHIODataNode)
+         dEmcGeaTowerTrack (PHIODataNode)
+         dEmcGeaTrack (PHIODataNode)
+         dEmcGeaTrackCluster (PHIODataNode)
+         dEmcGeaClusterTrack (PHIODataNode)
+      GEA (PHCompositeNode)/
+         bbcghit (PHIODataNode)
+         pc1ghit (PHIODataNode)
+         pc2ghit (PHIODataNode)
+         pc3ghit (PHIODataNode)
+         dcghit (PHIODataNode)
+         tecghit (PHIODataNode)
+         tofghit (PHIODataNode)
+         crkghit (PHIODataNode)
+         AerGeaHits (PHIODataNode)
+         dEmcGeaHit (PHIODataNode)
+      BbcRaw (PHIODataNode)
+      BbcOut (PHIODataNode)
+      dPc1Raw (PHIODataNode)
+      dPc2Raw (PHIODataNode)
+      dPc3Raw (PHIODataNode)
+      dPc1Cluster (PHIODataNode)
+      dPc2Cluster (PHIODataNode)
+      dPc3Cluster (PHIODataNode)
+      Pc1Raw (PHIODataNode)
+      Pc2Raw (PHIODataNode)
+      Pc3Raw (PHIODataNode)
+      Pc1Cluster (PHIODataNode)
+      Pc2Cluster (PHIODataNode)
+      Pc3Cluster (PHIODataNode)
+      VtxOut (PHIODataNode)
+      DchHitLineTable (PHIODataNode)
+      DchHitLineTablev1 (PHIODataNode)
+      DchTrack (PHIODataNode)
+      dDchHit (PHIODataNode)
+      dDchTracks (PHIODataNode)
+      dDchTracksExt (PHIODataNode)
+      dDchTracksPerf (PHIODataNode)
+      dDchTracksExtPerf (PHIODataNode)
+      TecOut (PHIODataNode)
+      TecOutShort (PHIODataNode)
+      TecHitOut (PHIODataNode)
+      dTofReconstructed (PHIODataNode)
+      TofOut (PHIODataNode)
+      dCrkHit (PHIODataNode)
+      CrkHit (PHIODataNode)
+      AccRaw (PHIODataNode)
+      AccHit (PHIODataNode)
+      emcTowerContainer (PHIODataNode)
+      emcClusterContainer (PHIODataNode)
+   RUN (PHCompositeNode)/
+      RunHeader (PHIODataNode)
+      EventHeader (PHIODataNode)
+   PAR (PHCompositeNode)/
+      dBbcGeo (PHIODataNode)
+      dBbcGhitRawPar (PHIODataNode)
+      dBbcRawHitPar (PHIODataNode)
+      BbcCalibPar (PHDataNode)
+      dPadGeom (PHIODataNode)
+      dPad23Par (PHIODataNode)
+      dPadSlowSimPar (PHIODataNode)
+      dPadRecPar (PHIODataNode)
+      dPadEvalPar (PHIODataNode)
+      dPadFEMPar (PHIODataNode)
+      dPadDCMPar (PHIODataNode)
+      mPadDetGeo (PHIODataNode)
+      dDchRecoPar (PHIODataNode)
+      dDchUnpackPar (PHIODataNode)
+      dDchPerfPar (PHIODataNode)
+      dDchFastSimPar (PHIODataNode)
+      dDchDCMPar (PHIODataNode)
+      dDchEvalPar (PHIODataNode)
+      TecGeometry (PHIODataNode)
+      TecCalibration (PHDataNode)
+      dTofFEMmap (PHIODataNode)
+      dTofDCMPar (PHIODataNode)
+      TofGeometry (PHIODataNode)
+      dCrkGeo (PHIODataNode)
+      dCrkGhitRawPar (PHIODataNode)
+      dCrkUcal (PHIODataNode)
+      dCrkRawFEMpar (PHIODataNode)
+      dCrkDCMpar (PHIODataNode)
+      dCrkCal (PHIODataNode)
+      AccGeometry (PHDataNode)
+      dEmcGeaParams (PHIODataNode)
+      dEmcRespPar (PHIODataNode)
+      dEmcGeometry (PHIODataNode)
+      emcpar (PHIODataNode)
+      mEmcGeometry (PHIODataNode)
+   PRDF (PHDataNode)
+   TOP (PHCompositeNode)/
+   BBC (PHCompositeNode)/
+      dBbcRawReCal (PHIODataNode)
+      dBbcUcal (PHIODataNode)
+      dBbcRaw (PHIODataNode)
+      dBbcOut (PHIODataNode)
+   PAD (PHCompositeNode)/
+      dPc1Eval (PHIODataNode)
+      dPc2Eval (PHIODataNode)
+      dPc3Eval (PHIODataNode)
+      dPc1FEM (PHIODataNode)
+      dPc2FEM (PHIODataNode)
+      dPc3FEM (PHIODataNode)
+      dPc1Raw (PHIODataNode)
+      dPc2Raw (PHIODataNode)
+      dPc3Raw (PHIODataNode)
+      dPc1RawClus (PHIODataNode)
+      dPc2RawClus (PHIODataNode)
+      dPc3RawClus (PHIODataNode)
+   DCH (PHCompositeNode)/
+      dDchGhitRaw (PHIODataNode)
+      dDchFEM (PHIODataNode)
+      dDchRaw (PHIODataNode)
+      DchRawTablev1 (PHIODataNode)
+   DCHDO (PHCompositeNode)/
+      DchHisto (PHDataNode)
+      DchDAO (PHDataNode)
+      DchDGO (PHDataNode)
+      DchDCO (PHDataNode)
+      DchDNO (PHDataNode)
+      DchEvent (PHDataNode)
+   DCHTMP (PHCompositeNode)/
+      DchCandidate (PHDataNode)
+      PerfectDchTrackCandidate (PHDataNode)
+      DchTrackCandidate (PHDataNode)
+      DchRawInfo (PHDataNode)
+      DchHitInfo (PHDataNode)
+      DchTrackInfo (PHDataNode)
+      DchTrackBestInfo (PHDataNode)
+      DchHitLineLists (PHDataNode)
+      DchPc1HitLists (PHDataNode)
+   TEC (PHCompositeNode)/
+      dTecFemData (PHIODataNode)
+   TOF (PHCompositeNode)/
+      dTofFEM (PHIODataNode)
+      dTofGdigiRec (PHIODataNode)
+      dTofRaw (PHIODataNode)
+   CRK (PHCompositeNode)/
+      dCrkFEM (PHIODataNode)
+      dCrkFEMReCal (PHIODataNode)
+      dCrkRawHitPar (PHIODataNode)
+      dCrkRaw (PHIODataNode)
+      dCrkRawReCal (PHIODataNode)
+   ACC (PHCompositeNode)/
+   EMC (PHCompositeNode)/
+      dEmcRawData (PHIODataNode)
+      dEmcFEMData (PHIODataNode)
+      emcBadModules (PHIODataNode)
+ERROR: Unable to initialize TriggerHelper
+cglDetectorGeo::fetch_mrpcGeo
+	ERROR
+	mrpc detector geometries not found.
+
+cglHitAssociate Parameters:
+  Verbose = 10
+  TrackModelFlag = 2
+  PredictMomentum = 1
+  TECZ0Buffer = 10.0000
+  TECSlopeCut = 1.0000
+  RemoveHits = 0
+  MinPhiWidth = 0.1200
+  MinZWidth = 50.0000
+  MinDchQuality = 0
+  PhiRoadOnly = 1
+  MaxDchQuality = 4
+  PC1: UseFlag = 1, PhiRoad = 30.0000, ZRoad = 40.0000
+  PC2: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  PC3: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  CRK: UseFlag = 0, PhiRoad = 0.0000, ZRoad = 25.0000
+  TEC: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  TOF: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  PbSc: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  PbGl: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  Tzr: UseFlag = 0, PhiRoad = 15.0000, ZRoad = 25.0000
+  Pcr: UseFlag = 0, PhiRoad = 15.0000, ZRoad = 25.0000
+  Acc: UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  Mrpc:UseFlag = 1, PhiRoad = 15.0000, ZRoad = 25.0000
+  SVX: UseFlag = 0, PhiRoad = 15.0000, ZRoad = 25.0000
+  SVX: UseFlag = 0, PhiRoad = 15.0000, ZRoad = 25.0000
+  SVX: UseFlag = 0, PhiRoad = 15.0000, ZRoad = 25.0000
+  SVX: UseFlag = 0, PhiRoad = 15.0000, ZRoad = 25.0000
+
+identify yourself: DetectorGeometryv1 Object containing 226 Panels
+RingReco using Run number -1
+CGO constructed with design geometry
+/home/phnxbld/pro/source/offline/packages/crk/CrkGeometryObject.cc:682: tSearch is Fri Jan 15 00:00:00 1999
+Run Number set -1 --> Use defaut t0 values
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+Initialize the WG Working Group Analysis...
+CGO constructed with design geometry
+/home/phnxbld/pro/source/offline/packages/crk/CrkGeometryObject.cc:682: tSearch is Fri Jan 15 00:00:00 1999
+Run Number set -1 --> Use defaut t0 values
+CGO constructed with design geometry
+/home/phnxbld/pro/source/offline/packages/crk/CrkGeometryObject.cc:682: tSearch is Fri Jan 15 00:00:00 1999
+Run Number set -1 --> Use defaut t0 values
+Modifying PC2 Z matching parameters
+Modifying PC3e Z matching parameters
+Modifying PC3w Z matching parameters
+Modifying TOF Z matching parameters
+Modifying PC2 Phi matching parameters
+Modifying PC3e Phi matching parameters
+Modifying PC3w Phi matching parameters
+Modifying TOF Phi matching parameters
+TOP (PHCompositeNode)/
+   DCM (PHCompositeNode)/
+      dBbcDCMReCal (PHIODataNode)
+      dBbcDCM (PHIODataNode)
+      dPc1DCM (PHIODataNode)
+      dPc2DCM (PHIODataNode)
+      dPc3DCM (PHIODataNode)
+      dDchDCM (PHIODataNode)
+      dTofDCM (PHIODataNode)
+      dCrkDCM (PHIODataNode)
+      dCrkDCMReCal (PHIODataNode)
+      dEmcDCMData (PHIODataNode)
+   DST (PHCompositeNode)/
+      T0Out (PHIODataNode)
+      AccCluster (PHIODataNode)
+      PHCentralTrack (PHIODataNode)
+      EVA (PHCompositeNode)/
+         fkin (PHIODataNode)
+         primary (PHIODataNode)
+         pythia (PHIODataNode)
+         header (PHIODataNode)
+         dBbcGhitRaw (PHIODataNode)
+         dPc1GhitRaw (PHIODataNode)
+         dPc2GhitRaw (PHIODataNode)
+         dPc3GhitRaw (PHIODataNode)
+         dPc1GhitClus (PHIODataNode)
+         dPc2GhitClus (PHIODataNode)
+         dPc3GhitClus (PHIODataNode)
+         dPc1NibbleGhit (PHIODataNode)
+         dPc2NibbleGhit (PHIODataNode)
+         dPc3NibbleGhit (PHIODataNode)
+         dDchGhitHits (PHIODataNode)
+         dDchNibbleGhit (PHIODataNode)
+         McSingle (PHIODataNode)
+         dTecGhitRaw (PHIODataNode)
+         dTofGhitRaw (PHIODataNode)
+         dTofFEMhitGhit (PHIODataNode)
+         dTofGdigi (PHIODataNode)
+         dTofGhitGdigi (PHIODataNode)
+         dTofGdigiRec (PHIODataNode)
+         dTofRawRec (PHIODataNode)
+         dCrkRel2s (PHIODataNode)
+         dEmcGeaTrackTower (PHIODataNode)
+         dEmcGeaTowerTrack (PHIODataNode)
+         dEmcGeaTrack (PHIODataNode)
+         dEmcGeaTrackCluster (PHIODataNode)
+         dEmcGeaClusterTrack (PHIODataNode)
+      GEA (PHCompositeNode)/
+         bbcghit (PHIODataNode)
+         pc1ghit (PHIODataNode)
+         pc2ghit (PHIODataNode)
+         pc3ghit (PHIODataNode)
+         dcghit (PHIODataNode)
+         tecghit (PHIODataNode)
+         tofghit (PHIODataNode)
+         crkghit (PHIODataNode)
+         AerGeaHits (PHIODataNode)
+         dEmcGeaHit (PHIODataNode)
+      BbcRaw (PHIODataNode)
+      BbcOut (PHIODataNode)
+      dPc1Raw (PHIODataNode)
+      dPc2Raw (PHIODataNode)
+      dPc3Raw (PHIODataNode)
+      dPc1Cluster (PHIODataNode)
+      dPc2Cluster (PHIODataNode)
+      dPc3Cluster (PHIODataNode)
+      Pc1Raw (PHIODataNode)
+      Pc2Raw (PHIODataNode)
+      Pc3Raw (PHIODataNode)
+      Pc1Cluster (PHIODataNode)
+      Pc2Cluster (PHIODataNode)
+      Pc3Cluster (PHIODataNode)
+      VtxOut (PHIODataNode)
+      DchHitLineTable (PHIODataNode)
+      DchHitLineTablev1 (PHIODataNode)
+      DchTrack (PHIODataNode)
+      dDchHit (PHIODataNode)
+      dDchTracks (PHIODataNode)
+      dDchTracksExt (PHIODataNode)
+      dDchTracksPerf (PHIODataNode)
+      dDchTracksExtPerf (PHIODataNode)
+      TecOut (PHIODataNode)
+      TecOutShort (PHIODataNode)
+      TecHitOut (PHIODataNode)
+      dTofReconstructed (PHIODataNode)
+      TofOut (PHIODataNode)
+      dCrkHit (PHIODataNode)
+      CrkHit (PHIODataNode)
+      AccRaw (PHIODataNode)
+      AccHit (PHIODataNode)
+      emcTowerContainer (PHIODataNode)
+      emcClusterContainer (PHIODataNode)
+      CglTrack (PHIODataNode)
+      CglTrackBack (PHIODataNode)
+      PHTrackOut (PHIODataNode)
+      PHTrackOutBack (PHIODataNode)
+      PHDchTrackOut (PHIODataNode)
+      CrkRing (PHIODataNode)
+      CrkRingBack (PHIODataNode)
+      PHGlobal (PHIODataNode)
+      PHGlobal_CENTRAL (PHIODataNode)
+      HWGCentralTrack (PHIODataNode)
+   RUN (PHCompositeNode)/
+      RunHeader (PHIODataNode)
+      EventHeader (PHIODataNode)
+      DetectorGeometry (PHIODataNode)
+   PAR (PHCompositeNode)/
+      dBbcGeo (PHIODataNode)
+      dBbcGhitRawPar (PHIODataNode)
+      dBbcRawHitPar (PHIODataNode)
+      BbcCalibPar (PHDataNode)
+      dPadGeom (PHIODataNode)
+      dPad23Par (PHIODataNode)
+      dPadSlowSimPar (PHIODataNode)
+      dPadRecPar (PHIODataNode)
+      dPadEvalPar (PHIODataNode)
+      dPadFEMPar (PHIODataNode)
+      dPadDCMPar (PHIODataNode)
+      mPadDetGeo (PHIODataNode)
+      dDchRecoPar (PHIODataNode)
+      dDchUnpackPar (PHIODataNode)
+      dDchPerfPar (PHIODataNode)
+      dDchFastSimPar (PHIODataNode)
+      dDchDCMPar (PHIODataNode)
+      dDchEvalPar (PHIODataNode)
+      TecGeometry (PHIODataNode)
+      TecCalibration (PHDataNode)
+      dTofFEMmap (PHIODataNode)
+      dTofDCMPar (PHIODataNode)
+      TofGeometry (PHIODataNode)
+      dCrkGeo (PHIODataNode)
+      dCrkGhitRawPar (PHIODataNode)
+      dCrkUcal (PHIODataNode)
+      dCrkRawFEMpar (PHIODataNode)
+      dCrkDCMpar (PHIODataNode)
+      dCrkCal (PHIODataNode)
+      AccGeometry (PHDataNode)
+      dEmcGeaParams (PHIODataNode)
+      dEmcRespPar (PHIODataNode)
+      dEmcGeometry (PHIODataNode)
+      emcpar (PHIODataNode)
+      mEmcGeometry (PHIODataNode)
+      cglDetectorGeo (PHDataNode)
+   PRDF (PHDataNode)
+   TOP (PHCompositeNode)/
+   BBC (PHCompositeNode)/
+      dBbcRawReCal (PHIODataNode)
+      dBbcUcal (PHIODataNode)
+      dBbcRaw (PHIODataNode)
+      dBbcOut (PHIODataNode)
+   PAD (PHCompositeNode)/
+      dPc1Eval (PHIODataNode)
+      dPc2Eval (PHIODataNode)
+      dPc3Eval (PHIODataNode)
+      dPc1FEM (PHIODataNode)
+      dPc2FEM (PHIODataNode)
+      dPc3FEM (PHIODataNode)
+      dPc1Raw (PHIODataNode)
+      dPc2Raw (PHIODataNode)
+      dPc3Raw (PHIODataNode)
+      dPc1RawClus (PHIODataNode)
+      dPc2RawClus (PHIODataNode)
+      dPc3RawClus (PHIODataNode)
+   DCH (PHCompositeNode)/
+      dDchGhitRaw (PHIODataNode)
+      dDchFEM (PHIODataNode)
+      dDchRaw (PHIODataNode)
+      DchRawTablev1 (PHIODataNode)
+   DCHDO (PHCompositeNode)/
+      DchHisto (PHDataNode)
+      DchDAO (PHDataNode)
+      DchDGO (PHDataNode)
+      DchDCO (PHDataNode)
+      DchDNO (PHDataNode)
+      DchEvent (PHDataNode)
+   DCHTMP (PHCompositeNode)/
+      DchCandidate (PHDataNode)
+      PerfectDchTrackCandidate (PHDataNode)
+      DchTrackCandidate (PHDataNode)
+      DchRawInfo (PHDataNode)
+      DchHitInfo (PHDataNode)
+      DchTrackInfo (PHDataNode)
+      DchTrackBestInfo (PHDataNode)
+      DchHitLineLists (PHDataNode)
+      DchPc1HitLists (PHDataNode)
+   TEC (PHCompositeNode)/
+      dTecFemData (PHIODataNode)
+   TOF (PHCompositeNode)/
+      dTofFEM (PHIODataNode)
+      dTofGdigiRec (PHIODataNode)
+      dTofRaw (PHIODataNode)
+   CRK (PHCompositeNode)/
+      dCrkFEM (PHIODataNode)
+      dCrkFEMReCal (PHIODataNode)
+      dCrkRawHitPar (PHIODataNode)
+      dCrkRaw (PHIODataNode)
+      dCrkRawReCal (PHIODataNode)
+   ACC (PHCompositeNode)/
+   EMC (PHCompositeNode)/
+      dEmcRawData (PHIODataNode)
+      dEmcFEMData (PHIODataNode)
+      emcBadModules (PHIODataNode)
+   CGL (PHCompositeNode)/
+      dPHDchTrack (PHIODataNode)
+mBbcSetUcalModule> BbcCalibPar node is found
+/phenix/workarea/maguire/cvsRun05Prod_C_02/offline/framework/simreco/BbcSimreco.C:352: 
+ BbcSimreco::process_event <I>: Using Z0 from PISA event header as centroid with Gaussian sigma (cm) = 2.0000
+ simT0Vertex (ns) = 0.0000 +/- (Gaussian sigma, ns) 0.0500
+/home/phnxbld/pro/source/offline/packages/bbc/mBbcFEMModule.C:79:  Did not find output BBC FEM node dBbcFEM try to create it!
+
+ 
+   /phenix/workarea/maguire/cvsRun05Prod_C_02/offline/framework/simreco/BbcSimreco.C:501: 
+
+ BbcSimreco::process_event <I>: one time printout  bbcZ0Vertex (cm) = 37.4968,  bbcTimeZero (ns) = 0.0601
+
+
+  DchSimreco <I>: Event requires at least 3 Dch hits
+/---------------/ Maximum Sags: East 0.0000 cm,  West 0.0000 ,cm
+DC hit offset look up table Initalized
+ERROR:  'in' parameter dTofRaw not found
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Finished reading field integral file. 
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+Warning in <TClass::TClass>: no dictionary for class TABLE_HEAD_ST is available
+Error in <TStreamerInfo::Build:>: PHTable: TABLE_HEAD_ST* has no streamer or dictionary, data member fTableHeader will not be saved
+Warning in <TClass::TClass>: no dictionary for class FKIN_ST is available
+Error in <TStreamerInfo::Build:>: fkinWrapper: FKIN_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class PRIMARY_ST is available
+Error in <TStreamerInfo::Build:>: primaryWrapper: PRIMARY_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class HEADER_ST is available
+Error in <TStreamerInfo::Build:>: headerWrapper: HEADER_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DPADGHITCLUS_ST is available
+Error in <TStreamerInfo::Build:>: dPadGhitClusWrapper: DPADGHITCLUS_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DDCHGHITHITS_ST is available
+Error in <TStreamerInfo::Build:>: dDchGhitHitsWrapper: DDCHGHITHITS_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DTECGHITRAW_ST is available
+Error in <TStreamerInfo::Build:>: dTecGhitRawWrapper: DTECGHITRAW_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DTOFGDIGI_ST is available
+Error in <TStreamerInfo::Build:>: dTofGdigiWrapper: DTOFGDIGI_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DTOFGHITGDIGI_ST is available
+Error in <TStreamerInfo::Build:>: dTofGhitGdigiWrapper: DTOFGHITGDIGI_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DTOFGDIGIREC_ST is available
+Error in <TStreamerInfo::Build:>: dTofGdigiRecWrapper: DTOFGDIGIREC_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DEMCGEATRACK_ST is available
+Error in <TStreamerInfo::Build:>: dEmcGeaTrackWrapper: DEMCGEATRACK_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DEMCGEATRACKCLUSTER_ST is available
+Error in <TStreamerInfo::Build:>: dEmcGeaTrackClusterWrapper: DEMCGEATRACKCLUSTER_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DEMCGEACLUSTERTRACK_ST is available
+Error in <TStreamerInfo::Build:>: dEmcGeaClusterTrackWrapper: DEMCGEACLUSTERTRACK_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class BBCGHIT_ST is available
+Error in <TStreamerInfo::Build:>: bbcghitWrapper: BBCGHIT_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class PCGHIT_ST is available
+Error in <TStreamerInfo::Build:>: pcghitWrapper: PCGHIT_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DCGHIT_ST is available
+Error in <TStreamerInfo::Build:>: dcghitWrapper: DCGHIT_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class TECGHIT_ST is available
+Error in <TStreamerInfo::Build:>: tecghitWrapper: TECGHIT_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class TOFGHIT_ST is available
+Error in <TStreamerInfo::Build:>: tofghitWrapper: TOFGHIT_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class CRKGHIT_ST is available
+Error in <TStreamerInfo::Build:>: crkghitWrapper: CRKGHIT_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DDCHTRACKS_ST is available
+Error in <TStreamerInfo::Build:>: dDchTracksWrapper: DDCHTRACKS_ST* has no streamer or dictionary, data member fTableData will not be saved
+Warning in <TClass::TClass>: no dictionary for class DDCHTRACKSEXT_ST is available
+Error in <TStreamerInfo::Build:>: dDchTracksExtWrapper: DDCHTRACKSEXT_ST* has no streamer or dictionary, data member fTableData will not be saved
+
+ pisaRootGetEvent <I>:  For event 2 the maximum ancestry track number was 778
+
+ BBC Z0 from BbcOut = 25.8505   BBC T0 from dBbcOut = 0.0127
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 3 the maximum ancestry track number was 159
+
+ BBC Z0 from BbcOut = 13.7280   BBC T0 from dBbcOut = 0.0492
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 4 the maximum ancestry track number was 3121
+
+ BBC Z0 from BbcOut = -1.1062   BBC T0 from dBbcOut = 0.0216
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 5 the maximum ancestry track number was 162
+
+ BBC Z0 from BbcOut = 15.6788   BBC T0 from dBbcOut = 0.0433
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 6 the maximum ancestry track number was 518
+
+ BBC Z0 from BbcOut = 30.8471   BBC T0 from dBbcOut = 0.0312
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 7 the maximum ancestry track number was 672
+
+ BBC Z0 from BbcOut = 52.3625   BBC T0 from dBbcOut = 0.0367
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 8 the maximum ancestry track number was 69
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 9 the maximum ancestry track number was 500
+
+ BBC Z0 from BbcOut = -4.6271   BBC T0 from dBbcOut = 0.0590
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 10 the maximum ancestry track number was 1345
+
+ BBC Z0 from BbcOut = 25.6713   BBC T0 from dBbcOut = 0.0441
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 11 the maximum ancestry track number was 239
+
+ BBC Z0 from BbcOut = -12.6286   BBC T0 from dBbcOut = 0.0366
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 12 the maximum ancestry track number was 1546
+
+ BBC Z0 from BbcOut = -7.2186   BBC T0 from dBbcOut = 0.0217
+/home/phnxbld/pro/source/offline/packages/dch/mNewDchPerfectTracker.C:685: NO INTERSECTION *****
+
+ ****No more of these NO INTERSECTION messages will be printed***
+
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 13 the maximum ancestry track number was 1380
+
+ BBC Z0 from BbcOut = -15.1904   BBC T0 from dBbcOut = 0.0280
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 14 the maximum ancestry track number was 1509
+
+ BBC Z0 from BbcOut = 29.8408   BBC T0 from dBbcOut = 0.0406
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 15 the maximum ancestry track number was 338
+
+ BBC Z0 from BbcOut = -8.9509   BBC T0 from dBbcOut = 0.0160
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 16 the maximum ancestry track number was 939
+
+ BBC Z0 from BbcOut = 11.6921   BBC T0 from dBbcOut = 0.0217
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 17 the maximum ancestry track number was 341
+
+ BBC Z0 from BbcOut = 15.8208   BBC T0 from dBbcOut = 0.0297
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 18 the maximum ancestry track number was 206
+
+ BBC Z0 from BbcOut = -38.1581   BBC T0 from dBbcOut = 0.0410
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 19 the maximum ancestry track number was 1179
+
+ BBC Z0 from BbcOut = 57.5349   BBC T0 from dBbcOut = 0.0286
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 20 the maximum ancestry track number was 263
+
+ BBC Z0 from BbcOut = -75.8497   BBC T0 from dBbcOut = 0.0780
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 21 the maximum ancestry track number was 385
+
+ BBC Z0 from BbcOut = -34.0189   BBC T0 from dBbcOut = 0.0686
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 22 the maximum ancestry track number was 3258
+
+ BBC Z0 from BbcOut = -41.7073   BBC T0 from dBbcOut = 0.0285
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 23 the maximum ancestry track number was 92
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 24 the maximum ancestry track number was 546
+
+ BBC Z0 from BbcOut = 47.0519   BBC T0 from dBbcOut = 0.0209
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 25 the maximum ancestry track number was 36
+
+ pisaRootGetEvent <I>:  For event 26 the maximum ancestry track number was 40
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 27 the maximum ancestry track number was 1973
+
+ BBC Z0 from BbcOut = 8.4628   BBC T0 from dBbcOut = 0.0049
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 28 the maximum ancestry track number was 1998
+
+ BBC Z0 from BbcOut = 6.5982   BBC T0 from dBbcOut = 0.0340
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 29 the maximum ancestry track number was 1838
+
+ BBC Z0 from BbcOut = -15.3406   BBC T0 from dBbcOut = 0.0223
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 30 the maximum ancestry track number was 1298
+
+ BBC Z0 from BbcOut = 43.8482   BBC T0 from dBbcOut = 0.0504
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 31 the maximum ancestry track number was 1054
+
+ BBC Z0 from BbcOut = 12.4998   BBC T0 from dBbcOut = 0.0212
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 32 the maximum ancestry track number was 53
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 33 the maximum ancestry track number was 108
+
+ BBC Z0 from BbcOut = -30.4174   BBC T0 from dBbcOut = 0.0496
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 34 the maximum ancestry track number was 123
+
+ BBC Z0 from BbcOut = 218.1688   BBC T0 from dBbcOut = 7.2199
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 35 the maximum ancestry track number was 14
+
+ pisaRootGetEvent <I>:  For event 36 the maximum ancestry track number was 68
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 37 the maximum ancestry track number was 1070
+
+ BBC Z0 from BbcOut = 1.0628   BBC T0 from dBbcOut = 0.0490
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 38 the maximum ancestry track number was 188
+
+ BBC Z0 from BbcOut = 8.5401   BBC T0 from dBbcOut = 0.0202
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 39 the maximum ancestry track number was 2408
+
+ BBC Z0 from BbcOut = -21.2416   BBC T0 from dBbcOut = 0.0348
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 40 the maximum ancestry track number was 1010
+
+ BBC Z0 from BbcOut = 1.0413   BBC T0 from dBbcOut = 0.0451
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 41 the maximum ancestry track number was 103
+
+ BBC Z0 from BbcOut = 34.4757   BBC T0 from dBbcOut = 0.0089
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 42 the maximum ancestry track number was 1194
+
+ BBC Z0 from BbcOut = -29.7883   BBC T0 from dBbcOut = 0.0344
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 43 the maximum ancestry track number was 167
+
+ BBC Z0 from BbcOut = 1.6515   BBC T0 from dBbcOut = 0.0335
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 44 the maximum ancestry track number was 1216
+
+ BBC Z0 from BbcOut = -2.8912   BBC T0 from dBbcOut = 0.0242
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 45 the maximum ancestry track number was 120
+
+ BBC Z0 from BbcOut = 5.7593   BBC T0 from dBbcOut = 0.0231
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 46 the maximum ancestry track number was 298
+
+ BBC Z0 from BbcOut = -29.0351   BBC T0 from dBbcOut = 0.0268
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 47 the maximum ancestry track number was 1080
+
+ BBC Z0 from BbcOut = -21.8646   BBC T0 from dBbcOut = 0.0491
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 48 the maximum ancestry track number was 83
+
+ BBC Z0 from BbcOut = -45.0553   BBC T0 from dBbcOut = 0.0604
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 49 the maximum ancestry track number was 985
+
+ BBC Z0 from BbcOut = -8.9502   BBC T0 from dBbcOut = 0.0303
+ this is a very late hit: it falls out of digitalization
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 50 the maximum ancestry track number was 186
+
+ BBC Z0 from BbcOut = -9.6143   BBC T0 from dBbcOut = 0.0475
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 51 the maximum ancestry track number was 212
+
+ BBC Z0 from BbcOut = -7.8340   BBC T0 from dBbcOut = 0.0633
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 52 the maximum ancestry track number was 3060
+
+ BBC Z0 from BbcOut = 3.6805   BBC T0 from dBbcOut = 0.0126
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 53 the maximum ancestry track number was 3098
+
+ BBC Z0 from BbcOut = 1.8024   BBC T0 from dBbcOut = 0.0340
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 54 the maximum ancestry track number was 342
+
+ BBC Z0 from BbcOut = -26.1231   BBC T0 from dBbcOut = 0.0966
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 55 the maximum ancestry track number was 1724
+
+ BBC Z0 from BbcOut = -27.1392   BBC T0 from dBbcOut = 0.0284
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 56 the maximum ancestry track number was 486
+
+ BBC Z0 from BbcOut = 3.3052   BBC T0 from dBbcOut = 0.0171
+ this is a very late hit: it falls out of digitalization
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 57 the maximum ancestry track number was 2351
+
+ BBC Z0 from BbcOut = -1.1405   BBC T0 from dBbcOut = -0.0006
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 58 the maximum ancestry track number was 583
+
+ BBC Z0 from BbcOut = 10.4671   BBC T0 from dBbcOut = 0.0287
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 59 the maximum ancestry track number was 11
+
+ pisaRootGetEvent <I>:  For event 60 the maximum ancestry track number was 245
+
+ BBC Z0 from BbcOut = 3.0394   BBC T0 from dBbcOut = 0.0543
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 61 the maximum ancestry track number was 3525
+
+ BBC Z0 from BbcOut = 6.9572   BBC T0 from dBbcOut = 0.0030
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 62 the maximum ancestry track number was 2132
+
+ BBC Z0 from BbcOut = -20.7003   BBC T0 from dBbcOut = 0.0167
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 63 the maximum ancestry track number was 561
+
+ BBC Z0 from BbcOut = -24.4015   BBC T0 from dBbcOut = 0.0545
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 64 the maximum ancestry track number was 1204
+
+ BBC Z0 from BbcOut = 9.0510   BBC T0 from dBbcOut = 0.0245
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 65 the maximum ancestry track number was 537
+
+ BBC Z0 from BbcOut = 4.9675   BBC T0 from dBbcOut = 0.0041
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 66 the maximum ancestry track number was 416
+
+ BBC Z0 from BbcOut = -0.7183   BBC T0 from dBbcOut = 0.0768
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 67 the maximum ancestry track number was 570
+
+ BBC Z0 from BbcOut = 4.6122   BBC T0 from dBbcOut = 0.0361
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 68 the maximum ancestry track number was 736
+
+ BBC Z0 from BbcOut = 7.0915   BBC T0 from dBbcOut = 0.0378
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 69 the maximum ancestry track number was 37
+
+ pisaRootGetEvent <I>:  For event 70 the maximum ancestry track number was 375
+
+ BBC Z0 from BbcOut = 19.6752   BBC T0 from dBbcOut = 0.0721
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 71 the maximum ancestry track number was 1590
+
+ BBC Z0 from BbcOut = 32.5570   BBC T0 from dBbcOut = 0.0458
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 72 the maximum ancestry track number was 1387
+
+ BBC Z0 from BbcOut = 8.6787   BBC T0 from dBbcOut = 0.0329
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 73 the maximum ancestry track number was 2951
+
+ BBC Z0 from BbcOut = -12.2283   BBC T0 from dBbcOut = 0.0288
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 74 the maximum ancestry track number was 43
+
+ BBC Z0 from BbcOut = 24.6827   BBC T0 from dBbcOut = 0.0837
+
+ pisaRootGetEvent <I>:  For event 75 the maximum ancestry track number was 664
+
+ BBC Z0 from BbcOut = -11.4868   BBC T0 from dBbcOut = 0.0849
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 76 the maximum ancestry track number was 584
+
+ BBC Z0 from BbcOut = 0.7402   BBC T0 from dBbcOut = 0.0184
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 77 the maximum ancestry track number was 3106
+
+ BBC Z0 from BbcOut = -21.9871   BBC T0 from dBbcOut = 0.0112
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 78 the maximum ancestry track number was 2281
+
+ BBC Z0 from BbcOut = 22.0091   BBC T0 from dBbcOut = 0.0276
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 79 the maximum ancestry track number was 278
+
+ BBC Z0 from BbcOut = 12.0831   BBC T0 from dBbcOut = 0.0610
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 80 the maximum ancestry track number was 845
+
+ BBC Z0 from BbcOut = 19.8953   BBC T0 from dBbcOut = 0.0304
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 81 the maximum ancestry track number was 7
+
+ pisaRootGetEvent <I>:  For event 82 the maximum ancestry track number was 57
+
+ BBC Z0 from BbcOut = -9.1341   BBC T0 from dBbcOut = 0.0065
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 83 the maximum ancestry track number was 236
+
+ BBC Z0 from BbcOut = -23.8434   BBC T0 from dBbcOut = 0.0326
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 84 the maximum ancestry track number was 2190
+
+ BBC Z0 from BbcOut = 22.3688   BBC T0 from dBbcOut = 0.0250
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 85 the maximum ancestry track number was 159
+
+ BBC Z0 from BbcOut = -50.2638   BBC T0 from dBbcOut = 0.0047
+
+ pisaRootGetEvent <I>:  For event 86 the maximum ancestry track number was 77
+
+ BBC Z0 from BbcOut = -0.6970   BBC T0 from dBbcOut = -0.0076
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 87 the maximum ancestry track number was 2496
+
+ BBC Z0 from BbcOut = 21.3531   BBC T0 from dBbcOut = 0.0450
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 88 the maximum ancestry track number was 202
+
+ BBC Z0 from BbcOut = 41.7420   BBC T0 from dBbcOut = 0.2395
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 89 the maximum ancestry track number was 1145
+
+ BBC Z0 from BbcOut = 4.0086   BBC T0 from dBbcOut = 0.0462
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 90 the maximum ancestry track number was 334
+
+ BBC Z0 from BbcOut = -2.7774   BBC T0 from dBbcOut = 0.0262
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 91 the maximum ancestry track number was 2583
+
+ BBC Z0 from BbcOut = -4.2585   BBC T0 from dBbcOut = 0.0254
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 92 the maximum ancestry track number was 2135
+
+ BBC Z0 from BbcOut = -3.4122   BBC T0 from dBbcOut = 0.0030
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 93 the maximum ancestry track number was 161
+
+ BBC Z0 from BbcOut = 11.7489   BBC T0 from dBbcOut = 0.1175
+
+ pisaRootGetEvent <I>:  For event 94 the maximum ancestry track number was 299
+
+ BBC Z0 from BbcOut = -5.4987   BBC T0 from dBbcOut = 0.0732
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 95 the maximum ancestry track number was 410
+
+ BBC Z0 from BbcOut = 34.1089   BBC T0 from dBbcOut = 0.0887
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 96 the maximum ancestry track number was 217
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 97 the maximum ancestry track number was 1409
+
+ BBC Z0 from BbcOut = 6.0189   BBC T0 from dBbcOut = 0.0225
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 98 the maximum ancestry track number was 2668
+
+ BBC Z0 from BbcOut = 8.8102   BBC T0 from dBbcOut = 0.0126
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 99 the maximum ancestry track number was 776
+
+ BBC Z0 from BbcOut = -33.4185   BBC T0 from dBbcOut = 0.0432
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 100 the maximum ancestry track number was 89
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 101 the maximum ancestry track number was 766
+
+ BBC Z0 from BbcOut = -42.5078   BBC T0 from dBbcOut = 0.0272
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 102 the maximum ancestry track number was 131
+
+ pisaRootGetEvent <I>:  For event 103 the maximum ancestry track number was 883
+
+ BBC Z0 from BbcOut = -0.2183   BBC T0 from dBbcOut = 0.0529
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 104 the maximum ancestry track number was 78
+
+ BBC Z0 from BbcOut = -1.7608   BBC T0 from dBbcOut = 0.1670
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 105 the maximum ancestry track number was 552
+
+ BBC Z0 from BbcOut = -3.5515   BBC T0 from dBbcOut = 0.0291
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 106 the maximum ancestry track number was 2030
+
+ BBC Z0 from BbcOut = 28.4138   BBC T0 from dBbcOut = 0.0413
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 107 the maximum ancestry track number was 109
+
+ BBC Z0 from BbcOut = -22.8598   BBC T0 from dBbcOut = 0.0143
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 108 the maximum ancestry track number was 2890
+
+ BBC Z0 from BbcOut = -17.1234   BBC T0 from dBbcOut = 0.0410
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 109 the maximum ancestry track number was 99
+
+ BBC Z0 from BbcOut = 24.1261   BBC T0 from dBbcOut = -0.0171
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 110 the maximum ancestry track number was 501
+
+ BBC Z0 from BbcOut = 5.5892   BBC T0 from dBbcOut = 0.0283
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 111 the maximum ancestry track number was 923
+
+ BBC Z0 from BbcOut = 4.7462   BBC T0 from dBbcOut = 0.0510
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 112 the maximum ancestry track number was 2701
+
+ BBC Z0 from BbcOut = 31.8577   BBC T0 from dBbcOut = 0.0235
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 113 the maximum ancestry track number was 676
+
+ BBC Z0 from BbcOut = -11.6748   BBC T0 from dBbcOut = 0.0124
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 114 the maximum ancestry track number was 216
+
+ BBC Z0 from BbcOut = 4.4147   BBC T0 from dBbcOut = 0.0423
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 115 the maximum ancestry track number was 508
+
+ BBC Z0 from BbcOut = -31.1693   BBC T0 from dBbcOut = 0.0682
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 116 the maximum ancestry track number was 682
+
+ BBC Z0 from BbcOut = 18.3869   BBC T0 from dBbcOut = 0.0530
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 117 the maximum ancestry track number was 534
+
+ BBC Z0 from BbcOut = 5.6782   BBC T0 from dBbcOut = 0.0444
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 118 the maximum ancestry track number was 2459
+
+ BBC Z0 from BbcOut = 50.3459   BBC T0 from dBbcOut = 0.0356
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 119 the maximum ancestry track number was 454
+
+ BBC Z0 from BbcOut = -19.5855   BBC T0 from dBbcOut = 0.0266
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 120 the maximum ancestry track number was 3510
+
+ BBC Z0 from BbcOut = -10.5911   BBC T0 from dBbcOut = 0.0092
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 121 the maximum ancestry track number was 1235
+
+ BBC Z0 from BbcOut = 31.5633   BBC T0 from dBbcOut = 0.0711
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 122 the maximum ancestry track number was 380
+
+ BBC Z0 from BbcOut = 3.5625   BBC T0 from dBbcOut = 0.0757
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 123 the maximum ancestry track number was 2603
+
+ BBC Z0 from BbcOut = -32.8060   BBC T0 from dBbcOut = 0.0342
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 124 the maximum ancestry track number was 4462
+
+ BBC Z0 from BbcOut = -5.2344   BBC T0 from dBbcOut = 0.0425
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 125 the maximum ancestry track number was 119
+
+ BBC Z0 from BbcOut = 12.4359   BBC T0 from dBbcOut = 0.0331
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 126 the maximum ancestry track number was 266
+
+ BBC Z0 from BbcOut = -55.7590   BBC T0 from dBbcOut = 0.0133
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 127 the maximum ancestry track number was 178
+
+ BBC Z0 from BbcOut = 32.6668   BBC T0 from dBbcOut = 0.0369
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 128 the maximum ancestry track number was 170
+
+ pisaRootGetEvent <I>:  For event 129 the maximum ancestry track number was 1380
+
+ BBC Z0 from BbcOut = -6.1521   BBC T0 from dBbcOut = 0.0508
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 130 the maximum ancestry track number was 36
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 131 the maximum ancestry track number was 461
+
+ BBC Z0 from BbcOut = -33.5219   BBC T0 from dBbcOut = 0.0895
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 132 the maximum ancestry track number was 512
+
+ BBC Z0 from BbcOut = -18.3663   BBC T0 from dBbcOut = 0.0313
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 133 the maximum ancestry track number was 27
+
+ pisaRootGetEvent <I>:  For event 134 the maximum ancestry track number was 626
+
+ BBC Z0 from BbcOut = 30.1387   BBC T0 from dBbcOut = 0.0378
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 135 the maximum ancestry track number was 166
+
+ BBC Z0 from BbcOut = 13.8790   BBC T0 from dBbcOut = 0.0606
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 136 the maximum ancestry track number was 871
+
+ BBC Z0 from BbcOut = -15.0003   BBC T0 from dBbcOut = 0.0480
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 137 the maximum ancestry track number was 1667
+
+ BBC Z0 from BbcOut = 23.1208   BBC T0 from dBbcOut = 0.0389
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 138 the maximum ancestry track number was 753
+
+ BBC Z0 from BbcOut = -4.9502   BBC T0 from dBbcOut = 0.0434
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 139 the maximum ancestry track number was 181
+
+ BBC Z0 from BbcOut = -22.4624   BBC T0 from dBbcOut = 0.0768
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 140 the maximum ancestry track number was 1337
+
+ BBC Z0 from BbcOut = 14.4475   BBC T0 from dBbcOut = 0.0481
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 141 the maximum ancestry track number was 296
+
+ BBC Z0 from BbcOut = -15.7427   BBC T0 from dBbcOut = 0.0524
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 142 the maximum ancestry track number was 48
+
+ BBC Z0 from BbcOut = -0.1624   BBC T0 from dBbcOut = 0.1834
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 143 the maximum ancestry track number was 92
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 144 the maximum ancestry track number was 73
+
+ pisaRootGetEvent <I>:  For event 145 the maximum ancestry track number was 169
+
+ BBC Z0 from BbcOut = -2.7235   BBC T0 from dBbcOut = -0.0111
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 146 the maximum ancestry track number was 482
+
+ BBC Z0 from BbcOut = 27.4824   BBC T0 from dBbcOut = 0.1185
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 147 the maximum ancestry track number was 99
+
+ BBC Z0 from BbcOut = 18.1758   BBC T0 from dBbcOut = -0.0107
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 148 the maximum ancestry track number was 219
+
+ BBC Z0 from BbcOut = 11.7278   BBC T0 from dBbcOut = 0.0397
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 149 the maximum ancestry track number was 1714
+
+ BBC Z0 from BbcOut = -12.9323   BBC T0 from dBbcOut = 0.0520
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 150 the maximum ancestry track number was 391
+
+ BBC Z0 from BbcOut = -17.0545   BBC T0 from dBbcOut = 0.0823
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 151 the maximum ancestry track number was 2621
+
+ BBC Z0 from BbcOut = -14.3686   BBC T0 from dBbcOut = 0.0401
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 152 the maximum ancestry track number was 598
+
+ BBC Z0 from BbcOut = -17.9157   BBC T0 from dBbcOut = 0.0379
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 153 the maximum ancestry track number was 513
+
+ BBC Z0 from BbcOut = -4.9417   BBC T0 from dBbcOut = 0.0763
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 154 the maximum ancestry track number was 2797
+
+ BBC Z0 from BbcOut = -17.6623   BBC T0 from dBbcOut = 0.0272
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 155 the maximum ancestry track number was 49
+
+ BBC Z0 from BbcOut = -31.0823   BBC T0 from dBbcOut = 0.0282
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 156 the maximum ancestry track number was 52
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 157 the maximum ancestry track number was 676
+
+ BBC Z0 from BbcOut = 27.7908   BBC T0 from dBbcOut = 0.0542
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 158 the maximum ancestry track number was 925
+
+ BBC Z0 from BbcOut = 7.4214   BBC T0 from dBbcOut = 0.0323
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 159 the maximum ancestry track number was 133
+
+ BBC Z0 from BbcOut = 23.2224   BBC T0 from dBbcOut = 0.0293
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 160 the maximum ancestry track number was 2091
+
+ BBC Z0 from BbcOut = -47.4399   BBC T0 from dBbcOut = 0.0748
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 161 the maximum ancestry track number was 509
+
+ BBC Z0 from BbcOut = 0.4127   BBC T0 from dBbcOut = 0.0439
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 162 the maximum ancestry track number was 283
+
+ BBC Z0 from BbcOut = 4.4268   BBC T0 from dBbcOut = 0.0483
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 163 the maximum ancestry track number was 391
+
+ BBC Z0 from BbcOut = 13.9550   BBC T0 from dBbcOut = 0.0370
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 164 the maximum ancestry track number was 887
+
+ BBC Z0 from BbcOut = 1.4888   BBC T0 from dBbcOut = 0.0425
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 165 the maximum ancestry track number was 97
+
+ BBC Z0 from BbcOut = -10.5141   BBC T0 from dBbcOut = 0.0416
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 166 the maximum ancestry track number was 865
+
+ BBC Z0 from BbcOut = 27.9546   BBC T0 from dBbcOut = 0.0175
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 167 the maximum ancestry track number was 2639
+
+ BBC Z0 from BbcOut = -2.8923   BBC T0 from dBbcOut = -0.0064
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 168 the maximum ancestry track number was 688
+
+ BBC Z0 from BbcOut = 2.2207   BBC T0 from dBbcOut = 0.0190
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 169 the maximum ancestry track number was 509
+
+ BBC Z0 from BbcOut = -57.6677   BBC T0 from dBbcOut = 0.1136
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 170 the maximum ancestry track number was 55
+
+ pisaRootGetEvent <I>:  For event 171 the maximum ancestry track number was 134
+
+ BBC Z0 from BbcOut = -10.0217   BBC T0 from dBbcOut = 0.1979
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 172 the maximum ancestry track number was 396
+
+ BBC Z0 from BbcOut = 36.0118   BBC T0 from dBbcOut = 0.1016
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 173 the maximum ancestry track number was 640
+
+ BBC Z0 from BbcOut = -4.3904   BBC T0 from dBbcOut = 0.1135
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 174 the maximum ancestry track number was 1854
+
+ BBC Z0 from BbcOut = 18.7311   BBC T0 from dBbcOut = 0.0612
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 175 the maximum ancestry track number was 52
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 176 the maximum ancestry track number was 2500
+
+ BBC Z0 from BbcOut = 12.5145   BBC T0 from dBbcOut = 0.0077
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 177 the maximum ancestry track number was 264
+
+ BBC Z0 from BbcOut = -4.9069   BBC T0 from dBbcOut = 0.0034
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 178 the maximum ancestry track number was 3449
+
+ BBC Z0 from BbcOut = 12.4582   BBC T0 from dBbcOut = 0.0219
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 179 the maximum ancestry track number was 2973
+
+ BBC Z0 from BbcOut = -5.5031   BBC T0 from dBbcOut = 0.0176
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 180 the maximum ancestry track number was 2392
+
+ BBC Z0 from BbcOut = -4.9283   BBC T0 from dBbcOut = 0.0235
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 181 the maximum ancestry track number was 123
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 182 the maximum ancestry track number was 669
+
+ BBC Z0 from BbcOut = -27.0001   BBC T0 from dBbcOut = 0.0316
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 183 the maximum ancestry track number was 724
+
+ BBC Z0 from BbcOut = -3.0487   BBC T0 from dBbcOut = 0.0360
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 184 the maximum ancestry track number was 56
+
+ BBC Z0 from BbcOut = 18.5987   BBC T0 from dBbcOut = 0.1130
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 185 the maximum ancestry track number was 186
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 186 the maximum ancestry track number was 29
+
+ pisaRootGetEvent <I>:  For event 187 the maximum ancestry track number was 29
+
+ pisaRootGetEvent <I>:  For event 188 the maximum ancestry track number was 3369
+
+ BBC Z0 from BbcOut = -18.7418   BBC T0 from dBbcOut = 0.0128
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 189 the maximum ancestry track number was 740
+
+ BBC Z0 from BbcOut = 1.3892   BBC T0 from dBbcOut = 0.0499
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 190 the maximum ancestry track number was 3821
+
+ BBC Z0 from BbcOut = -27.9409   BBC T0 from dBbcOut = 0.0146
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 191 the maximum ancestry track number was 3872
+
+ BBC Z0 from BbcOut = 19.2445   BBC T0 from dBbcOut = 0.0366
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 192 the maximum ancestry track number was 994
+
+ BBC Z0 from BbcOut = -21.4989   BBC T0 from dBbcOut = 0.0258
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 193 the maximum ancestry track number was 546
+
+ BBC Z0 from BbcOut = 27.5550   BBC T0 from dBbcOut = 0.0279
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 194 the maximum ancestry track number was 44
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 195 the maximum ancestry track number was 2920
+
+ BBC Z0 from BbcOut = 4.9338   BBC T0 from dBbcOut = 0.0162
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 196 the maximum ancestry track number was 271
+
+ BBC Z0 from BbcOut = -27.7773   BBC T0 from dBbcOut = 0.0613
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 197 the maximum ancestry track number was 555
+
+ BBC Z0 from BbcOut = 5.6167   BBC T0 from dBbcOut = 0.0167
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 198 the maximum ancestry track number was 78
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 199 the maximum ancestry track number was 180
+
+ BBC Z0 from BbcOut = 17.2299   BBC T0 from dBbcOut = 0.0007
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 200 the maximum ancestry track number was 634
+
+ BBC Z0 from BbcOut = 17.0484   BBC T0 from dBbcOut = 0.0479
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 201 the maximum ancestry track number was 13
+
+ pisaRootGetEvent <I>:  For event 202 the maximum ancestry track number was 110
+
+ BBC Z0 from BbcOut = 19.6977   BBC T0 from dBbcOut = 0.1057
+
+ pisaRootGetEvent <I>:  For event 203 the maximum ancestry track number was 920
+
+ BBC Z0 from BbcOut = 6.5099   BBC T0 from dBbcOut = 0.0206
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 204 the maximum ancestry track number was 420
+
+ BBC Z0 from BbcOut = -2.9395   BBC T0 from dBbcOut = 0.0396
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 205 the maximum ancestry track number was 342
+
+ BBC Z0 from BbcOut = 25.1184   BBC T0 from dBbcOut = 0.0658
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 206 the maximum ancestry track number was 113
+
+ BBC Z0 from BbcOut = -27.0057   BBC T0 from dBbcOut = 0.0066
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 207 the maximum ancestry track number was 1798
+
+ BBC Z0 from BbcOut = -16.2703   BBC T0 from dBbcOut = 0.0321
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 208 the maximum ancestry track number was 89
+
+ BBC Z0 from BbcOut = 36.6005   BBC T0 from dBbcOut = -0.0491
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 209 the maximum ancestry track number was 437
+
+ BBC Z0 from BbcOut = -48.4781   BBC T0 from dBbcOut = 0.0186
+
+ pisaRootGetEvent <I>:  For event 210 the maximum ancestry track number was 47
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 211 the maximum ancestry track number was 1784
+
+ BBC Z0 from BbcOut = 11.3373   BBC T0 from dBbcOut = 0.0076
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 212 the maximum ancestry track number was 1409
+
+ BBC Z0 from BbcOut = 2.0321   BBC T0 from dBbcOut = 0.0325
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 213 the maximum ancestry track number was 155
+
+ BBC Z0 from BbcOut = -21.9612   BBC T0 from dBbcOut = 0.0330
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 214 the maximum ancestry track number was 31
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 215 the maximum ancestry track number was 1844
+
+ BBC Z0 from BbcOut = -21.2886   BBC T0 from dBbcOut = 0.0414
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 216 the maximum ancestry track number was 97
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 217 the maximum ancestry track number was 2261
+
+ BBC Z0 from BbcOut = 11.1400   BBC T0 from dBbcOut = 0.0329
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 218 the maximum ancestry track number was 828
+
+ BBC Z0 from BbcOut = 1.1626   BBC T0 from dBbcOut = 0.0538
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 219 the maximum ancestry track number was 1571
+
+ BBC Z0 from BbcOut = 9.9572   BBC T0 from dBbcOut = 0.0381
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 220 the maximum ancestry track number was 146
+
+ BBC Z0 from BbcOut = -20.0067   BBC T0 from dBbcOut = 0.0770
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 221 the maximum ancestry track number was 586
+
+ BBC Z0 from BbcOut = -45.6019   BBC T0 from dBbcOut = 0.0481
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 222 the maximum ancestry track number was 740
+
+ BBC Z0 from BbcOut = -25.3638   BBC T0 from dBbcOut = 0.0270
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 223 the maximum ancestry track number was 1095
+
+ BBC Z0 from BbcOut = -12.6383   BBC T0 from dBbcOut = 0.0397
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 224 the maximum ancestry track number was 151
+
+ BBC Z0 from BbcOut = -1.0351   BBC T0 from dBbcOut = 0.0075
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 225 the maximum ancestry track number was 390
+
+ BBC Z0 from BbcOut = -56.4125   BBC T0 from dBbcOut = 0.0886
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 226 the maximum ancestry track number was 723
+
+ BBC Z0 from BbcOut = 4.3764   BBC T0 from dBbcOut = 0.0652
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 227 the maximum ancestry track number was 1652
+
+ BBC Z0 from BbcOut = 0.6000   BBC T0 from dBbcOut = 0.0440
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 228 the maximum ancestry track number was 1626
+
+ BBC Z0 from BbcOut = 5.8312   BBC T0 from dBbcOut = 0.0266
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 229 the maximum ancestry track number was 7
+
+ pisaRootGetEvent <I>:  For event 230 the maximum ancestry track number was 145
+
+ BBC Z0 from BbcOut = 27.1673   BBC T0 from dBbcOut = 0.0052
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 231 the maximum ancestry track number was 2308
+
+ BBC Z0 from BbcOut = -23.0216   BBC T0 from dBbcOut = 0.0040
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 232 the maximum ancestry track number was 247
+
+ BBC Z0 from BbcOut = 17.2418   BBC T0 from dBbcOut = 0.1552
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 233 the maximum ancestry track number was 3375
+
+ BBC Z0 from BbcOut = 8.9012   BBC T0 from dBbcOut = 0.0135
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 234 the maximum ancestry track number was 1754
+
+ BBC Z0 from BbcOut = -5.5418   BBC T0 from dBbcOut = 0.0812
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 235 the maximum ancestry track number was 770
+
+ BBC Z0 from BbcOut = 5.8292   BBC T0 from dBbcOut = 0.0366
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 236 the maximum ancestry track number was 105
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 237 the maximum ancestry track number was 2622
+
+ BBC Z0 from BbcOut = 20.2723   BBC T0 from dBbcOut = -0.0041
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 238 the maximum ancestry track number was 1654
+
+ BBC Z0 from BbcOut = -15.9388   BBC T0 from dBbcOut = 0.0161
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 239 the maximum ancestry track number was 1100
+
+ BBC Z0 from BbcOut = 23.7062   BBC T0 from dBbcOut = 0.0336
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 240 the maximum ancestry track number was 736
+
+ BBC Z0 from BbcOut = -0.2160   BBC T0 from dBbcOut = 0.0657
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 241 the maximum ancestry track number was 65
+
+ BBC Z0 from BbcOut = -0.7439   BBC T0 from dBbcOut = 0.0437
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 242 the maximum ancestry track number was 1570
+
+ BBC Z0 from BbcOut = 27.3006   BBC T0 from dBbcOut = 0.0157
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 243 the maximum ancestry track number was 3770
+
+ BBC Z0 from BbcOut = -4.3805   BBC T0 from dBbcOut = 0.0223
+ this is a very late hit: it falls out of digitalization
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 244 the maximum ancestry track number was 2648
+
+ BBC Z0 from BbcOut = -3.2182   BBC T0 from dBbcOut = 0.0158
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 245 the maximum ancestry track number was 69
+
+ BBC Z0 from BbcOut = -7.8933   BBC T0 from dBbcOut = 0.1233
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 246 the maximum ancestry track number was 2348
+
+ BBC Z0 from BbcOut = -14.6796   BBC T0 from dBbcOut = 0.0101
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 247 the maximum ancestry track number was 536
+
+ BBC Z0 from BbcOut = -16.2267   BBC T0 from dBbcOut = 0.0448
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 248 the maximum ancestry track number was 169
+
+ BBC Z0 from BbcOut = -8.2053   BBC T0 from dBbcOut = 0.0471
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 249 the maximum ancestry track number was 61
+
+ BBC Z0 from BbcOut = 6.7173   BBC T0 from dBbcOut = 0.1379
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+
+ pisaRootGetEvent <I>:  For event 250 the maximum ancestry track number was 16
+Running the chain that makes the packet for Lvl2 for CRK
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+TriggerHelper Error::  TrigRunLvl1 and/or TrigLvl1 Objects not found
+Exception: find_node failed: TMutHitMap  file:/afs/rhic.bnl.gov/phenix/PHENIX_LIB/sys/i386_sl305/pro.72/include/TMutNode.h line:49
+eventLoop : Real Time = 281.73 seconds Cpu Time = 271.99 seconds
+  SID  PPID   PID USER     COMMAND            VSZ  RSS     TIME
+11816 10177 11816 maguirc1 tcsh              4972  216 00:00:00
+11817 10177 11817 maguirc1 tcsh              4984  216 00:00:00
+11816 11816 12544 maguirc1 35914.vmpsc.SC    4500  132 00:00:00
+11817 11817 12545 maguirc1 35915.vmpsc.SC    4508  136 00:00:00
+11816 12544 12576 maguirc1 root              3308  544 00:00:00
+11816 12576 12577 maguirc1 root.exe         860684 416624 00:04:37
+11817 12545 12610 maguirc1 root              3312  600 00:00:00
+11817 12610 12611 maguirc1 root.exe         836156 394264 00:01:11
+11816 12577 12645 maguirc1 ps                2744  700 00:00:00
+Completed reconstruction.

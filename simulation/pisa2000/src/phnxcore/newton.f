@@ -1,0 +1,55 @@
+*CMZ :  2.04/00 05/10/92  11.19.39  by  Charles F. Maguire
+*-- Author :
+*-- Author :
+      SUBROUTINE NEWTON(TRAN,TEMP,P)
+      IMPLICIT NONE
+C
+C      SOLVE EXP(-E/T)(E/T+1) - 1 + TRAN = 0
+C
+      REAL TRAN,TEMP,P
+      REAL*8 FX,FN,FDERIV,EXTREM,X0,X1,EPS
+      PARAMETER (EXTREM=.7357589D00,EPS=1.D-5)
+      INTEGER NSTEP,NLIMIT
+      PARAMETER (NLIMIT=10000)
+      FN=DBLE(1.-TRAN)
+C
+C      INITIAL GUESS
+C
+      IF(FN.GT.EXTREM)THEN
+         X0=1.-3.007D00*(FN-EXTREM)
+      ELSE
+         X0=1.+5.549*(EXTREM-FN)
+      ENDIF
+      FX=DEXP(-X0)*(X0+1.D00)-FN
+      NSTEP=0
+10    CONTINUE
+      NSTEP=NSTEP+1
+      FDERIV=-X0*DEXP(-X0)
+      IF(FDERIV.NE.0.0D00)THEN
+         X1=X0-FX/FDERIV
+      ELSE
+         PRINT 11,X0,TRAN,FX,TEMP,NSTEP
+11    FORMAT(' X0,TR,FX,TEMP ',4E13.5,' NS ',I8)
+         PRINT *,' FDERIV = 0 IN NEWTON ??'
+         P=-1.
+         RETURN
+      ENDIF
+      X0=X1
+      FX=DEXP(-X0)*(X0+1.D00)-FN
+      IF(DABS(FX).LT.EPS)GO TO 20
+      IF(NSTEP.LT.NLIMIT)THEN
+         GO TO 10
+      ELSE
+         PRINT 11,X0,TRAN,FX,TEMP,NSTEP
+         PRINT 12
+12    FORMAT('  NSTEP EXCEEDS NLIMIT')
+         P=-1.
+         RETURN
+      ENDIF
+20    CONTINUE
+      P=TEMP*X0
+C     PRINT 11,X0,TRAN,FX,TEMP,NSTEP
+C     PRINT 21
+21    FORMAT('  CONVERGED')
+      RETURN
+      END

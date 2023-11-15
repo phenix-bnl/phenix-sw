@@ -1,0 +1,45 @@
+#! /bin/tcsh -f
+#PBS -o /scratch/maguire/0/project88/pisaEvents/PosField/rndm01/log90201.out
+#PBS -j oe
+#PBS -l walltime=2:00:00
+#PBS -l cput=1:50:00
+#PBS -l nodes=1:ppn=1:x86
+#PBS -l mem=450mb
+echo $HOST
+cd /scratch/maguire/0/project88/pisaEvents/PosField/rndm01
+echo $HOST > accreHost90201
+cp pisaInput90201 pisa.input
+date
+ls -al /tmp
+rm -rf /tmp/maguire90201
+mkdir /tmp/maguire90201
+cp pisa.input /tmp/maguire90201
+cp event.par /tmp/maguire90201
+cp flukaaf.dat /tmp/maguire90201
+cp gffgo.dat /tmp/maguire90201
+cp glogon.kumac /tmp/maguire90201
+cp hijing90201.par /tmp/maguire90201
+cp phnx.par /tmp/maguire90201
+cp pisa.kumac /tmp/maguire90201
+cp Sim3D++.root /tmp/maguire90201
+cp xsneut95.dat /tmp/maguire90201
+date
+cd /tmp/maguire90201
+ln -fs hijing90201.par hijing.par
+df -k /tmp
+hijing > hijing90201.out
+mv hijingzeb.out hijing90201.dat
+pisa < pisa.input >& pisa90201.out
+cd /scratch/maguire/0/project88/pisaEvents/PosField/rndm01
+cp /tmp/maguire90201/hijing90201.dat .
+cp /tmp/maguire90201/hijing90201.out .
+mv hijing90201.dat ../done
+cp /tmp/maguire90201/PISAEvent.root .
+cp /tmp/maguire90201/pisa90201.out .
+chmod u-w PISAEvent.root
+mv PISAEvent.root PISA2000_HijingPLPL-0000090201-0088.rootg
+mv PISA2000_HijingPLPL-0000090201-0088.rootg ../done
+touch finish90201
+rm -rf /tmp/maguire90201
+ls -al /tmp
+date

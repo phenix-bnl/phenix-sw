@@ -1,0 +1,50 @@
+*
+*  PISA Tutorial kumac file for Central Arms (July 22, 2000 version)
+*           MVD is omitted, assume retracted arms in phnx.par
+*           No passive volumes except for beam pipe
+*           Using JXYZ option in tracking (uses extra ZEBRA memory)
+*           Add CTRK option for EMC as per Gabor David's instructions
+*
+* Random number seeds (using internal GEANT seeds from 001 to 215)
+*        keep the second input as 0 all the time, change only the first
+*
+RNDM 001 0
+*
+* Tracking thresholds
+*
+CUTS  .001 .001 .010 .010 .010 .001 .001 1.e+4 1.e+4 .010 4.e-7
+*
+* NOTE: As of December 1, 1999 the compressed ZEBRA output format is not used by default
+*       The FOUT line will be used only if the SWIT(1) value is changed to 6 in gffgo.dat
+*
+FOUT 'phnx.dat.cZ'              ! Name of output hits file
+FPAR 'phnx.par'                 ! Name of namelist parameter file for geometry
+STEE 'KINE' 'HITS' 'DIGI' 'JXYZ'      ! Output data structure control
+DOUT 'DIGI'                     ! Output data structure control
+MAGF 'QUAD' 1.00 0001 
+GEOP 'PIPE'
+*GEOP 'ENDC' 'CENT' 'PIPE' 'NOSE' 'PLUG' 'BCOL'   ! passive volumes control
+ANNI  1                         ! GEANT command for annihilation on
+BREM  1                         ! GEANT command for bremsstrahlung on
+COMP  1                         ! GEANT command for Compton scattering on
+LOSS  2                         ! GEANT command for Landau fluctuations on
+DRAY  0                         ! GEANT command for Delta no ray (Landau is on)
+HADR  4                         ! GEANT command for hadrons using FLUKA
+MULS  1                         ! GEANT command for multiple scattering on
+PAIR  1                         ! GEANT command for pair production on
+PHOT  1                         ! GEANT command for photoelectric effect on
+***************************************************************************
+*
+*	To install a detector turn the switch 'ON'
+*
+***************************************************************************
+VER  'OFF' 'FULL' 'P_ID' 'FULL' 'VCAL' 'STCK'   ! MVD on with track stack used
+BBC  'ON' 'FULL' 'ETOT' 'FULL' 'BCAL' 'STCK'   ! BBC on with track stack used
+ITR  'ON' 'IT96' 'ETOT' 'FULL' 'TRKS'          ! Latest version of Dch and PC1
+CRK  'ON' 'FULL' 'P_PZ' 'FULL' 'CCAL' 'CO2 '   ! RICH with CO2 radiator gas
+PAD  'ON' 'PC98' 'P_ID' 'FULL' 'PCAL'          ! Latest version of PC2/PC3
+TRD  'ON' 'FULL' 'P_ID' 'FULL' 'TCAL'          ! This is the TEC
+TOF  'ON' 'FULL' 'P_ID' 'FULL' 'FCAL' 0.0 0.0  ! Time of Flight
+EMC  'ON' 'FULL' 'FULL' 'FULL' 'ECAL' 'AUAU' 'CTRK'   ! EMCal, H.I. with Cerenkov
+MUM  'OFF' 'FULL' 'ETOT' 'FULL' 'MCAL' 0. 0. 0. 'STCK' 'NNEU'  ! Muon trackers
+MUI  'OFF' 'FULL' 'ETOT' 'FULL' 'NCAL' 0. 0. 0. 'STCK' 'NNEU'  ! Muon identifier

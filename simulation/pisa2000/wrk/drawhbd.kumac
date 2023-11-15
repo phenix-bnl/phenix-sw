@@ -1,0 +1,48 @@
+macro drawhbd1.kumac
+
+for/file 33 drawhbd1.ps
+meta 33 -111
+
+next 
+cfm_sngp  
+ptrig 1
+
+dopt hide off
+dopt shad off
+dopt edge off
+
+satt HALL seen 0
+satt HBDG seen 0
+
+draw HBDG 0.0 0.0 0.0 10.0 10.0 0.13 0.13
+
+*zoom in panel joint point
+*draw HBDG 0 0 0 50.0 10.0 0.7 0.7
+*zoom in panel joint point 2
+*draw HBDG   0 0 0 540.0 540.0 12.8 12.8
+*zoom in panel joint point 3
+*draw HBDG   0 0 0 540.0 540.0 12.5 12.5
+*zoom at window
+*draw HBDG 0 0 0 11.0 10.0 0.7 0.7
+*3D view
+*draw HBDG 145 25 0 11.0 10.0 0.12 0.12
+*zoom in HV panel and vertical wall joint point
+*draw HBDG  180 0 0 10.0 130.0 2.0 2.0
+*zoom in panel
+*draw HBDG  180. 0. 0. -21.0 58.0 1.0 1.0
+*XY view
+*draw HBDG 0.0 0.0 0.0 10.0 10.0 0.13 0.13
+*YZ view
+*draw HBDG 90.0 90.0 0.0 10.0 9.5 0.15 0.15
+*YZ view 2
+*draw HBDG   90 0 0 20.0 30.0 0.4 0.4
+*zoom in active panel and HV panel joint point
+*draw HBDG  180. 0. 0. 120.0 285.0 5.0 5.0
+*zoom in active panel and HV panel joint point
+*draw HBDG  180. 0. 0. 125.0 295.0 5.1 5.1
+
+dxyz
+igset txci 4
+dtext 10 19. 'HBD' 0.5 0.0 2 'CENT'
+for/close 33
+return

@@ -1,0 +1,51 @@
+======================================
+PLEASE READ THROUGH THIS IS IMPORTANT!
+======================================
+
+this directory contains 1000 files
+
+10,000 events in each file
+1 particle per event 
+particle ID = 3101, K0_S (498) meson
+
+true particle mass from online PDG 497.648 MeV
+true particle lifetime 0.8952 s-1 
+
+parameters:
+ 1.8 < pt < 14 GeV/c   enchanced at low pT
+-0.5 < y < 0.5
+ 0.0 < \phi < 6.2831
+
+requirements to PISA:
+---------------------
+1. PISA shall be used in environment of pro.72
+2. run5pp configuration field setting "minus-minus".
+
+requirements to RECO:
+---------------------
+1. same pro.72 and run5pp configuration.
+2. Please use following parameter settings:
+
+   Int_t   magField=3;
+   Int_t   simVertexFlag=2; 
+   Float_t simZ0Vertex=0.0;
+   Float_t simT0Vertex=0.0;
+   Float_t simZ0VertexWidth=2.0;
+   Float_t simT0VertexWidth=0.05;
+   Int_t   dchReqHits=0; 
+   Int_t   pc1ReqHits=0; 
+   Int_t   pc2ReqHits=0; 
+   Int_t   pc3ReqHits=0;
+   Int_t   tofReqHits=0; 
+   Int_t   emcReqHits=0;
+   const Int_t debugFlag=0;
+
+3. Following nodes are required among others in output DSTs:
+   PHCentralTrack
+   McSingle
+   PHGlobal
+   EventHeader
+   emcClusterContainer
+   emcTowerContainer
+
+4. We need clear correspondance between input and output files.

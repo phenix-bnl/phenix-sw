@@ -1,0 +1,8 @@
+0
+N
+0
+RNDM 1 000
+RUNN 90431 90431 89 0
+oscar oscar.root 1 
+ptrig 50000
+exit

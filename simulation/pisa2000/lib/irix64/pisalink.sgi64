@@ -1,0 +1,12 @@
+f77 -v -n32 -o ../../wrk/irix64/pisa gint_pisa.o igmenu.o \
+guaddparts.o gubook.o gudigi.o guevgen.o gufld.o \
+guhadr.o guinit.o gukine.o gulast.o guloren.o guphad.o gurot.o \
+gustep.o gutrak.o gutrev.o \
+gugeom.o gsngtr.o gsstak.o gdecay.o \
+libpisa.a \
+-L$HOME/cvs/pisa99/src/root -lPISARoot \
+/usr/lib32/c++init.o \
+-L/phenix/local/cern/lib -lgeant321 -lpawlib -lgraflib -lgrafX11 -lpacklib -lmathlib \
+-L$ROOTSYS/lib -lNew -lCore -lCint -lHist -lGraf -lGraf3d -lGpad -lTree \
+                  -lRint -lPostscript -lMatrix -lGui -lPhysics -lm -ldl \
+-L/usr/lib32 -lX11 -lC 

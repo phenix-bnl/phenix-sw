@@ -1,0 +1,45 @@
+c*************************************************************************
+c	event.par (for kinematic and particle ID cuts)  F77 version
+c                 (used by HIJET and  VENUS event interfaces)
+c   Original Author: C.F. Maguire (1992)
+c   Revision History
+c     Hubert van Hecke  2/6/96   Added X,Y randomization in VRMS
+c                                Z diamond now part of VRMS too
+c     CFM               2/10/96  Put in default vertex position XYZ0_INPUT
+c                                Take all particles (iincl taken out)
+c     CFM               4/19/96  Put in North_South mirror cut parameter
+c
+c     CFM               5/29/98  Put in default nskip_evt parameter = 0
+c
+c     CFM              12/16/98  Change default p_min to 0.030 (30 MeV/c)
+c                                Change default pt_min to 0.030 (30 MeV/c)
+c
+c     CFM              11/26/99  Add t0cent and t0width, default as 0.0
+c
+c*************************************************************************
+ $epar
+  y_min = -1.e+20,
+  y_max = +1.e+20,
+  p_min = 0.00,
+  p_max = +1.e+20,
+  pt_min = 0.00,
+  pt_max = +1.e+20,
+  the_min = 0.00,
+  the_max = 180.00,
+  phi_min = -180.00,
+  phi_max = +180.00,
+  xyz0_input = 0.0, 0.0, 0.0,
+  vrms = 0.025, 0.025, -30.0,
+  north_south = 0,
+  nskip_evt = 0,
+  t0cent = 0.0,
+  t0width = 0.0,
+ $end
+**************************************************************************
+*
+* Lines below show how one "includes" only the pions using GEANT IDs
+*
+*  iincl = +3,
+*  include = 8, 9, 7, 17*0, 
+*
+**************************************************************************

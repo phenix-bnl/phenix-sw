@@ -1,0 +1,30 @@
+c***************************************************************
+c
+c	Pythia event generator .par file
+c
+c	notes: Values for the msel and ckin arrays are set via 
+c	       imsel and ickin, where the first number is the	
+c	       index of the array, and the second in the user 
+c	       value.
+c
+c	revision list:	1-20-98	created by Andrew Rose
+c       revision list:  7-10-02 modified by H.T
+c
+c***************************************************************
+ $pyth_par
+  tnumevt = @_NUM_EVENT_@,
+  imsel   = 2,
+  imstp   = 0, 0,
+	  0, 0,
+  ickin = 0, 0,
+	  0, 0,
+  imrlu = 1, @_RANDOMSEED_@,
+	  0, 0,
+	  0, 0,
+  sqrts = 200.
+  verbose=.false.
+  xverbose=.false.
+  zebrastore=.false.
+  hist_file='pythia.hist'
+ $end
+c***************************************************************

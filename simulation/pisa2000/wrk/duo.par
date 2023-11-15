@@ -1,0 +1,15 @@
+$duo_par
+ duo_npairs = 1,
+ duo_partid = 5,6,
+ duo_theta  = 90.0, 90.0,
+ duo_phi    = 0.0, 180.0,
+ duo_ran_th1 = 20.0,
+ duo_ran_ph1 = 180.0,
+ duo_ptot   = 0.5, 0.5,
+ duo_xvert  = 0.0, 0.0,
+ duo_ran_x1 = 0.0,
+ duo_yvert  = 0.0, 0.0,
+ duo_ran_y1 = 0.0,
+ duo_zvert  = 0.0, 0.0,
+ duo_ran_z1 = 0.0,
+$end

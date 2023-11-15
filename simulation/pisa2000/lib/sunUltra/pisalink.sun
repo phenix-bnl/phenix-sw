@@ -1,0 +1,26 @@
+#
+#  C.F. Maguire  April 02  1997    Put in explicit EXTERNAL files
+#                                  SunOS linker ignoring EXTERNAL reference?
+#                                  Committed to repository on May 30, 1997
+#  C.F. Maguire  July 30, 1997     Add gsstak, gpairg, gtnino, and gdecay
+#                                  for more explicit calls
+#
+#  C.F. Maguire  July 18, 1998     Add sunUltra (rsun00) version
+#
+#  C.F. Maguire  August 16, 1999   Change to /cern/new/lib version
+#
+f77 -o ../../wrk/sunUltra/pisa gint_pisa.o igmenu.o \
+guaddparts.o gubook.o gudigi.o guevgen.o gufld.o \
+guhadr.o guinit.o gukine.o gulast.o guloren.o guphad.o \
+gustep.o gutrak.o gutrev.o \
+gugeom.o gsngtr.o gsstak.o gdecay.o \
+libpisa.a \
+-L/afs/rhic/phenix/software/simulation/pro/@sys/lib -lPISARoot \
+-L/cern/old/lib -lgeant321 -lpawlib -lgraflib -lgrafX11 -lpacklib -lmathlib -lkernlib \
+/opt/WS6.0u1/WS6U1/lib/libF77.so.4 \
+-L$ROOTSYS/lib -lNew -lCore -lCint -lHist -lGraf -lGraf3d -lGpad -lTree \
+                  -lRint -lPostscript -lMatrix -lPhysics -lm -ldl \
+-L/usr/openwin/lib -R/usr/openwin/lib \
+-lsocket -lnsl -lgen -lw \
+-L/usr/X11R6/lib -lXm -lXt -lXext -lX11 -lm -ldl -lcrypt \
+/usr/lib/libC.so.5 /opt/WS6.0u1/WS6U1/lib/libCstd.a /opt/WS6.0u1/WS6U1/lib/libCrun.a

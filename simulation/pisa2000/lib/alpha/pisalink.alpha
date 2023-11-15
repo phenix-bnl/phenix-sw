@@ -1,0 +1,23 @@
+#
+# Provisional version of pisalink.alpha for DEC
+#
+# CERNLIB is /net/phenix/disk3/local/alpha/cern/lib/ at Vanderbilt
+#
+# Need to modify for location of libPISARoot.so and ROOT libraries
+#
+f77 -o ../../wrk/alpha/pisa  -static -g3 -g \
+    gint_pisa.o gdgirl.o gen_evt.o igmenu.o \
+	libpisa.a \
+    ../../src/root/libPISARoot.so \
+    -L$ROOTSYS/lib -lNew -lCore -lCint \
+    -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript \
+    -lMatrix -lPhysics -lm \
+    $CERNLIB/libgeant321.a \
+    $CERNLIB/libpawlib.a \
+    $CERNLIB/libgraflib.a \
+    $CERNLIB/libgrafX11.a \
+    $CERNLIB/libpacklib.a \
+    -lX11 \
+    $CERNLIB/libkernlib.a \
+    $CERNLIB/libmathlib.a \
+   -L/usr/ccs/lib/cmplrs/cxx -lcxx -lcxxstd

@@ -1,0 +1,44 @@
+Project 5 is the simulation of pairs for HBT.  The files are described below.
+
+Creating OSCAR input
+--------------------
+eventMaker -- executable to create oscar output for pisa
+
+Makefile   -- makes eventMaker from eventMaker.C
+              configured to work on LLNL gps cluster only
+
+pionwest.input   -- for multiple pions in west arm
+protonwest.input -- for multiple protons in west arm
+  the format is [pdgid] [npart] [phimin] [phimax]
+
+eventMaker.sh -- checks environment and calls eventMaker.pl 
+eventMaker.pl -- loops over output files and calls eventMaker
+
+Interactive Usage: eventMaker.sh [name] 
+      Batch Usage: psub -tM 50:00 -o eventMaker.log -r eventtMaker eventMaker.sh [name]
+
+e.g. [name] = "pionwest"
+
+
+Submiting pisa jobs
+-------------------
+submitpisa.pl  --  Creates directories, copies files, and submits pisa jobs.
+                   Jobs will be run in the area defined by $P5NFS, one job per directory.
+                   Common usage is "submitpisa.pl --subset=pionwest".
+                   Type "submitpisa.pl --help" for other options.
+
+
+submitpisa_multi.pl -- Same as above, but runs mutiple pisa runs per batch job.
+
+
+Misc. scripts
+-------------
+cleanpisa.pl -- used to check statistics and move files to single directory
+                in preparation for copying to rcf
+rcopy.pl     -- sets up simultaneous scp streams to copy whole directoreis to rftpexp.
+
+Pisa files
+----------
+event.par and pisa.kumac are taken from this directory.  Other pisa inputs, 
+such as magnetic field map are copied from the cvs/simulation/pisa2000/wrk area.
+

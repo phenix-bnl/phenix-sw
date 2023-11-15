@@ -1,0 +1,26 @@
+c $Id: gcmutr.inc,v 1.2 2008/05/21 08:15:54 hpereira Exp $
+
+      INTEGER NCVOLS,NSHIFT,KSHIFT,ICUBE,NAIN,JJJ,NIET,IVOOLD,
+     +        IWPOIN,IHPOIN,IVECVO,IOLDSU,ICGP,IPORNT
+      REAL    GXMIN,GXMAX,GYMIN,GYMAX,GZMIN,GZMAX,GXXXX,GYYYY,GZZZZ
+      REAL    CLIPMI,CLIPMA,ABCD,BMIN,BMAX,CGB,CGB1,GBOOM
+      REAL    PORGX,PORGY,PORGZ,POX,POY,POZ,PORMIR,PORMAR
+
+c       PARAMETER (MULTRA=50)
+c       CHARACTER*4 GNASH, GNNVV, GNVNV
+c       COMMON/GCMUTR/NCVOLS,KSHIFT,NSHIFT,ICUBE,NAIN,JJJ,
+c      +              NIET,IOLDSU,IVOOLD,IWPOIN,IHPOIN,IVECVO(100),
+c      +              PORGX,PORGY,PORGZ,POX(15),POY(15),POZ(15),GBOOM,
+c      +              PORMIR(18),PORMAR(18),IPORNT,
+c      +              ICGP,CLIPMI(6),CLIPMA(6),
+c      +              ABCD(4),BMIN(6),BMAX(6),CGB(16000),CGB1(16000),
+c      +              GXMIN(MULTRA),GXMAX(MULTRA),GYMIN(MULTRA),
+c      +              GYMAX(MULTRA),GZMIN(MULTRA),GZMAX(MULTRA),
+c      +              GXXXX(MULTRA),GYYYY(MULTRA),GZZZZ(MULTRA)
+
+c       COMMON/GCMUTC/   GNASH(MULTRA),GNNVV(MULTRA),GNVNV(MULTRA)
+
+
+c using official geant321 headers in place of local hacks
+c to avoid conflicts when changing geant version
+#include "geant321/gcmutr.inc"

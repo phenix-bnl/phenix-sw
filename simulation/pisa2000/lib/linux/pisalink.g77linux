@@ -1,0 +1,44 @@
+#
+# C.F. Maguire  April 02  1997     Put in explicit EXTERNAL files
+#                                  SunOS linker ignoring EXTERNAL reference?
+#                                  Committed to repository on May 30, 1997
+# C.F. Maguire  July 30, 1997      Add gsstak, gpairg, gtnino, and gdecay
+#
+# C.F. Maguire  April 8, 1998      First version for Linux platform; uses
+#                                  Portland Group F77 compiler (pgf77)
+#
+# C.F. Maguire  August 3, 1998     Change to /afs area for CERNLIBs
+# 
+# C.F. Maguire  August 18, 1999    Version for g77 RH5.1 egcs Linux at RCF
+#
+# C.F. Maguire  August 30, 1999    ROOT-in-PISA version
+#
+# C.F. Maguire  August 31, 1999    Put libPISARoot.so copy in /afs Linux area
+#
+# C.F. Maguire  October 31, 1999   Re-install libPISARoot.so copy in /afs Linux area
+#                                  Use ROOT-2.23 library list
+#
+# C.F. Maguire  December 17, 1999  Add -lnsl to accommodate RCF change
+#
+# C.F. Maguire  December 20, 1999  Change to -L/afs/rhic/phenix/PHENIX_LIB/simulation/pro/@sys/lib
+#
+# C.F. Maguire  February 15, 2000  Change to -L/afs/rhic/phenix/PHENIX_LIB/simulation/dev/@sys/lib
+#                                  to allow "development" version of libPISARoot.so to be used
+#
+# C.F. Maguire  April 6, 2000      Change to /cern/pro/lib instead of /cern/old/lib for RH6.1
+#
+# C.F. Maguire  March 12, 2000     Change to $ROOTSYS/lib instead of /opt/phenix/root/lib to
+#                                  insulate better from Off-Line changes
+*
+# C.F. Maguire  April 20, 2003     Use /cern/old/lib since /cern/pro/lib is really broken
+#
+g77 -o ../../wrk/linux/pisa -fdebug-kludge gint_pisa.o igmenu.o \
+guaddparts.o gubook.o gudigi.o guevgen.o gufld.o \
+guhadr.o guinit.o gukine.o gulast.o guloren.o guphad.o gurot.o \
+gustep.o gutrak.o gutrev.o \
+gugeom.o gsngtr.o gsstak.o gdecay.o \
+libpisa.a -L/afs/rhic/phenix/PHENIX_LIB/simulation/new/rh72/lib -lPISARoot \
+-L/cern/old/lib -lgeant321 -lpawlib -lgraflib -lgrafX11 -lpacklib -lmathlib -lkernlib \
+-L$ROOTSYS/lib -lNew -lCore -lCint -lHist -lGraf -lGraf3d -lGpad -lTree \
+                  -lRint -lPostscript -lMatrix -lPhysics -lm -ldl -rdynamic \
+-L/usr/X11R6/lib -lXpm -lX11 -lnsl 

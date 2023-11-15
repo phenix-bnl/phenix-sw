@@ -1,0 +1,20 @@
+c $Id: gconsp.inc,v 1.2 2008/05/21 08:15:54 hpereira Exp $
+
+c     REAL          PI,TWOPI,PIBY2,DEGRAD,RADDEG,CLIGHT,BIG,EMASS
+c       REAL          EMMU,PMASS,AVO
+
+c       PARAMETER (PI=3.14159265358979324)
+c       PARAMETER (TWOPI=6.28318530717958648)
+c       PARAMETER (PIBY2=1.57079632679489662)
+c       PARAMETER (DEGRAD=0.0174532925199432958)
+c       PARAMETER (RADDEG=57.2957795130823209)
+c       PARAMETER (CLIGHT=29979245800.)
+c       PARAMETER (BIG=10000000000.)
+c       PARAMETER (EMASS=0.0005109990615)
+c       PARAMETER (EMMU=0.105658387)
+c       PARAMETER (PMASS=0.9382723128)
+c       PARAMETER (AVO=0.60221367)
+
+c using official geant321 headers in place of local hacks
+c to avoid conflicts when changing geant version
+#include "geant321/gconsp.inc"
