@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Win32</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="Libodbc++ Installation"
+HREF="book1.html"><LINK
+REL="UP"
+TITLE="Installation"
+HREF="c70.html"><LINK
+REL="PREVIOUS"
+TITLE="Installation"
+HREF="c70.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Libodbc++ Installation</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c70.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Installation</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+>&nbsp;</TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="WIN32"
+></A
+>Win32</H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="MSVC"
+></A
+>MSVC</H2
+><P
+>A makefile for MSVC is provided in the win32 directory of the source distribution. Use
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="USERINPUT"
+><B
+><B
+CLASS="COMMAND"
+>nmake /f makefile.w32 CFG=<TT
+CLASS="REPLACEABLE"
+><I
+>config</I
+></TT
+></B
+></B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  where <TT
+CLASS="REPLACEABLE"
+><I
+>config</I
+></TT
+> is one of:
+	  <P
+></P
+><UL
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>debug-lib</TT
+> - Static library with debugging information. Builds
+		<TT
+CLASS="FILENAME"
+>odbc++sd.lib</TT
+> in the <TT
+CLASS="FILENAME"
+>debug-lib</TT
+> subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>debug-dll</TT
+> - Shared library with debugging information. Builds
+		<TT
+CLASS="FILENAME"
+>odbc++d.lib</TT
+> and <TT
+CLASS="FILENAME"
+>odbc++d.dll</TT
+> in the <TT
+CLASS="FILENAME"
+>debug-dll</TT
+>
+		subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>prod-lib</TT
+> - Production static library. Builds <TT
+CLASS="FILENAME"
+>odbc++s.lib</TT
+>
+		in the <TT
+CLASS="FILENAME"
+>prod-lib</TT
+> subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>prod-dll</TT
+> - Production shared library. Builds <TT
+CLASS="FILENAME"
+>odbc++.lib</TT
+>
+		and <TT
+CLASS="FILENAME"
+>odbc++.dll</TT
+> in the <TT
+CLASS="FILENAME"
+>prod-dll</TT
+> subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>qt-debug-lib</TT
+> - Static library with QT and debugging information.
+		Builds <TT
+CLASS="FILENAME"
+>odbc++qtsd.lib</TT
+> in the <TT
+CLASS="FILENAME"
+>qt-debug-lib</TT
+> subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>qt-debug-dll</TT
+> - Shared library with QT and debugging information.
+		Builds <TT
+CLASS="FILENAME"
+>odbc++qtd.lib</TT
+> and <TT
+CLASS="FILENAME"
+>odbc++qtd.dll</TT
+> in the 
+		<TT
+CLASS="FILENAME"
+>qt-debug-dll</TT
+> subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>qt-prod-lib</TT
+> - Production static library with QT. Builds
+		<TT
+CLASS="FILENAME"
+>odbc++qts.lib</TT
+> in the <TT
+CLASS="FILENAME"
+>qt-prod-lib</TT
+> subdirectory.</P
+></LI
+><LI
+><P
+><TT
+CLASS="LITERAL"
+>qt-prod-dll</TT
+> - Production shared library with QT. Builds
+		<TT
+CLASS="FILENAME"
+>odbc++qt.lib</TT
+> and <TT
+CLASS="FILENAME"
+>odbc++qt.dll</TT
+> in the 
+		<TT
+CLASS="FILENAME"
+>qt-prod-dll</TT
+> subdirectory.</P
+></LI
+></UL
+></P
+><P
+>When building with QT, make sure you have your environment set up right. <TT
+CLASS="LITERAL"
+>QTDIR</TT
+>
+	  must point to a directory that contains the <TT
+CLASS="LITERAL"
+>include</TT
+> and
+	  <TT
+CLASS="LITERAL"
+>lib</TT
+> subdirectories for QT. The makefile will assume version 202 (2.0.2) of QT.
+	  To override that, pass <TT
+CLASS="LITERAL"
+>QT_VERSION=nnn</TT
+> to <TT
+CLASS="LITERAL"
+>nmake</TT
+>, for
+	  example:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="USERINPUT"
+><B
+>nmake /f makefile.w32 CFG=qt-debug-dll QT_VERSION=201</B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  will build <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> against QT version 2.0.1.</P
+><P
+>The library is always built with multithreading support on win32.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c70.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Installation</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c70.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

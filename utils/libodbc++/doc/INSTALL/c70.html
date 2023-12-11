@@ -1,0 +1,663 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Installation</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="Libodbc++ Installation"
+HREF="book1.html"><LINK
+REL="PREVIOUS"
+TITLE="QT"
+HREF="x65.html"><LINK
+REL="NEXT"
+TITLE="Win32"
+HREF="x185.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Libodbc++ Installation</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x65.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x185.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="INSTALLATION"
+></A
+>Installation</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="UNIX"
+></A
+>UNIX</H1
+><P
+>The following information applies for installing <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> on unices.</P
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="CONFIGURATION"
+></A
+>Configuration</H2
+><P
+>First, you need to configure <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> for your system. 
+	  Go into the source directory and do:
+	  
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+><B
+CLASS="COMMAND"
+>./configure</B
+></B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  
+	  or, if <TT
+CLASS="APPLICATION"
+>iODBC</TT
+> isn't installed in it's default location
+	  <TT
+CLASS="FILENAME"
+>/usr/local</TT
+>, do:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+><B
+CLASS="COMMAND"
+>./configure</B
+> --with-iodbc=<TT
+CLASS="REPLACEABLE"
+><I
+>DIR</I
+></TT
+></B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  
+	  This will make <B
+CLASS="COMMAND"
+>./configure</B
+> look for <TT
+CLASS="APPLICATION"
+>iODBC</TT
+> in 
+	  <TT
+CLASS="FILENAME"
+><TT
+CLASS="REPLACEABLE"
+><I
+>DIR</I
+></TT
+>/include</TT
+> and
+	  <TT
+CLASS="FILENAME"
+><TT
+CLASS="REPLACEABLE"
+><I
+>DIR</I
+></TT
+>/lib</TT
+>.</P
+><P
+>If you aren't using <TT
+CLASS="APPLICATION"
+>iODBC</TT
+>, try
+	  
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+><B
+CLASS="COMMAND"
+>./configure</B
+> --with-odbc=<TT
+CLASS="REPLACEABLE"
+><I
+>DIR</I
+></TT
+></B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  This works the same as above, except it looks for standard <SPAN
+CLASS="ACRONYM"
+>ODBC</SPAN
+> headers and libraries
+	  instead of the <TT
+CLASS="APPLICATION"
+>iODBC</TT
+>-specific ones. This should be used with for example
+	  <TT
+CLASS="APPLICATION"
+>unixODBC</TT
+> and <TT
+CLASS="APPLICATION"
+>Merant driver manager</TT
+>.</P
+><P
+>If you wish to install <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> in a location other than 
+	  <TT
+CLASS="FILENAME"
+>/usr/local</TT
+>, add
+	  <TT
+CLASS="USERINPUT"
+><B
+>--prefix=<TT
+CLASS="REPLACEABLE"
+><I
+>PREFIX</I
+></TT
+></B
+></TT
+> to the <B
+CLASS="COMMAND"
+>./configure</B
+> arguments.</P
+><P
+>If the c++ compiler you wish to use to compile this package isn't the system
+	  default one, you will need to set the environment variable <TT
+CLASS="ENVAR"
+>CXX</TT
+> to
+	  the name of it's executable. For example, if you have an old <TT
+CLASS="APPLICATION"
+>gcc</TT
+> or
+	  <TT
+CLASS="APPLICATION"
+>egcs</TT
+> as a system default compiler, but installed a newer 
+	  <TT
+CLASS="APPLICATION"
+>gcc</TT
+> in <TT
+CLASS="FILENAME"
+>/usr/local/gcc</TT
+>, do like this:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+><TT
+CLASS="ENVAR"
+>CXX=/usr/local/egcs/bin/c++</TT
+> <B
+CLASS="COMMAND"
+>./configure</B
+> --with-iodbc</B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	</P
+><P
+>If you wish to enable support for multithreaded programs, add
+	  <TT
+CLASS="USERINPUT"
+><B
+>--enable-threads</B
+></TT
+> to the <B
+CLASS="COMMAND"
+>./configure</B
+> arguments.
+	  On UNIX, this requires pthreads and will probably not yet work on anything else
+	  than linux and solaris. The library built will have suffix <TT
+CLASS="FILENAME"
+>'-mt'</TT
+> appended
+	  to it's name if threads are enabled.</P
+><P
+>If you wish to enable support for <TT
+CLASS="APPLICATION"
+>QT</TT
+>,
+	  use the <TT
+CLASS="USERINPUT"
+><B
+>--with-qt</B
+></TT
+>
+	  argument. You can optionally specify where your QT lives by using
+	  <TT
+CLASS="USERINPUT"
+><B
+>--with-qt=<TT
+CLASS="REPLACEABLE"
+><I
+>QTDIR</I
+></TT
+></B
+></TT
+>. The 
+	  <TT
+CLASS="USERINPUT"
+><B
+>--with-qt-includes=<TT
+CLASS="REPLACEABLE"
+><I
+>DIR</I
+></TT
+></B
+></TT
+>,
+	  <TT
+CLASS="USERINPUT"
+><B
+>--with-qt-libs=<TT
+CLASS="REPLACEABLE"
+><I
+>DIR</I
+></TT
+></B
+></TT
+> and
+	  <TT
+CLASS="USERINPUT"
+><B
+>--with-qt-moc=<TT
+CLASS="REPLACEABLE"
+><I
+>PATH</I
+></TT
+></B
+></TT
+> options might be handy if you have
+	  a strange <TT
+CLASS="APPLICATION"
+>QT</TT
+> installation. This will compile a second version of the library
+	  named <TT
+CLASS="FILENAME"
+>libodbc++_qt</TT
+> in the subdirectory <TT
+CLASS="FILENAME"
+>qt</TT
+>.
+	  Note that you must define <TT
+CLASS="VARNAME"
+>ODBCXX_QT</TT
+> when compiling a program
+	  that links with <TT
+CLASS="FILENAME"
+>libodbc++_qt</TT
+>.</P
+><P
+>The two "demo" programs that come with <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> aren't
+	  built by default. To enable them, use <TT
+CLASS="USERINPUT"
+><B
+>--with-isqlxx</B
+></TT
+> and/or
+	  <TT
+CLASS="USERINPUT"
+><B
+>--with-qtsqlxx</B
+></TT
+> to build <TT
+CLASS="APPLICATION"
+>isql++</TT
+>
+	  respectively <TT
+CLASS="APPLICATION"
+>qtsql++</TT
+>.</P
+><P
+>By default, a number of test programs are built with the library. If you do not wish
+	  to build them, use <TT
+CLASS="USERINPUT"
+><B
+>--without-tests</B
+></TT
+>.</P
+><P
+>You can control the <SPAN
+CLASS="ACRONYM"
+>ODBC</SPAN
+> version <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> uses by specifying:
+	  <TT
+CLASS="USERINPUT"
+><B
+>--with-odbc-version=<TT
+CLASS="REPLACEABLE"
+><I
+>ODBCVER</I
+></TT
+></B
+></TT
+>,
+	  where <TT
+CLASS="REPLACEABLE"
+><I
+>ODBCVER</I
+></TT
+> should be a
+	  four-digit hexadecimal value representing the <SPAN
+CLASS="ACRONYM"
+>ODBC</SPAN
+> version. For example:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+><B
+CLASS="COMMAND"
+>./configure</B
+> --with-odbc-version=0x0250</B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  would make <TT
+CLASS="APPLICATION"
+>libodbc++</TT
+> use <SPAN
+CLASS="ACRONYM"
+>ODBC</SPAN
+> version 2.50.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="COMPILATION"
+></A
+>Compilation</H2
+><P
+>Just type:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+>make</B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	</P
+><P
+>If it all goes well, you can try a couple of the test programs in 
+	  <TT
+CLASS="FILENAME"
+>tests/</TT
+>. You'll need to configure some datasources before
+	  running most of the tests. For simply reality-checking your current ODBC
+	  setup, you can try running <TT
+CLASS="FILENAME"
+>tests/dmtest</TT
+>, which lists
+	  all available datasources and drivers.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="INSTALLING-LIBODBC"
+></A
+>Installing libodbc++</H2
+><P
+>If you have write privileges in <TT
+CLASS="LITERAL"
+>PREFIX</TT
+>, just do:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+>make install</B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+>
+	  Otherwise, you'll have to use:
+	  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+><TT
+CLASS="PROMPT"
+>$ </TT
+><TT
+CLASS="USERINPUT"
+><B
+>su root -c 'make install'</B
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+></P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x65.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="book1.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x185.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>QT</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Win32</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

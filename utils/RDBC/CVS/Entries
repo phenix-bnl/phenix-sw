@@ -1,0 +1,25 @@
+/.cvsignore/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/AUTHORS/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/BUGS/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/COPYING/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/ChangeLog/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/INSTALL/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/INSTALL.local/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/Makefile.am/1.5/Wed Dec  8 21:17:25 2010//
+/NEWS/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/RDBC.spec.in/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/README/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/TODO/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/acconfig.h/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/acinclude.m4/1.4/Wed Oct 17 09:48:21 2012//
+/autogen.sh/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/config.h.in/1.1.1.1/Wed Feb 18 20:58:02 2004//
+/configure.in/1.4/Wed Oct 17 09:46:59 2012//
+D/admin////
+D/doc////
+D/include////
+D/macros////
+D/mysql////
+D/odbc////
+D/rdbc////
+D/test////
