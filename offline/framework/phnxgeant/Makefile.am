@@ -4,7 +4,8 @@ AM_FFLAGS = -funroll-loops -fomit-frame-pointer -fPIC -fno-second-underscore -DC
 
 AM_CPPFLAGS = \
   -I$(includedir) \
-  -I$(CERN)/$(CERN_LEVEL)/include
+  -I$(CERN)/$(CERN_LEVEL)/include \
+  -I$(CERN)/$(CERN_LEVEL)/include/geant321
 
 lib_LTLIBRARIES = libphnxgeant.la
 

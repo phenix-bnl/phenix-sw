@@ -12,7 +12,8 @@ AM_CPPFLAGS = \
   -I$(includedir) \
   -I$(OFFLINE_MAIN)/include \
   -I$(ROOTSYS)/include \
-  -I$(CERN)/$(CERN_LEVEL)/include
+  -I$(CERN)/$(CERN_LEVEL)/include \
+  -I$(CERN)/$(CERN_LEVEL)/include/geant321
 
 lib_LTLIBRARIES = libPHGeant.la
 
