@@ -46,15 +46,7 @@ my @externalPackages = ();
     push(@externalPackages,"CGAL");
     push(@externalPackages,"CLHEP");
     push(@externalPackages,"Eigen");
-    push(@externalPackages,"EvtGen");
-    push(@externalPackages,"fastjet");
-    push(@externalPackages,"geant4-vmc");
     push(@externalPackages,"gsl");
-    push(@externalPackages,"HepMC");
-    push(@externalPackages,"PHOTOS");
-    push(@externalPackages,"pythia8");
-    push(@externalPackages,"TAUOLA");
-    push(@externalPackages,"vgm");
 
 # Keep track of where we were and when it was that we got underway
 my $starttime = time;
@@ -67,13 +59,13 @@ my $buildSucceeded = 0;
 $opt_cvstag = '';
 $opt_version = 'new';
 $opt_stage = 0;
-$opt_db = 1;
+$opt_db = 0;
 $opt_64 = 0;
 $opt_scanbuild = 0;
 $opt_coverity = 0;
 $opt_lafiles = 0;
 
-GetOptions('help', 'stage=i',
+GetOptions('help', 'stage=i', 'source:s',
 	   'version:s', 'tinderbox', 'cvstag:s',
 	   'phenixinstall','workdir:s','insure','scanbuild',
 	   'coverity','covpasswd:s','notify','64', 'db:i', 'lafiles');
