@@ -1,0 +1,104 @@
+	  ***************************************
+	  *       MySQL ODBC 3.51 Driver        *
+  	  *               INSTALL               *
+          * (C) Copyright MySQL AB 1995-2002	*
+	  ***************************************
+
+=========
+CONTENTS
+=========
+1. SOFTWARE REQUIREMENTS
+2. MYODBC 3.51 CONFIGURATION OPTIONS
+3. CONFIGURATION
+4. BUILDING THE DRIVER
+5. BUILDING THE DRIVER ON WINDOWS
+6. CONFIGURING DATA SOURCE
+7. TESTING THE DRIVER
+8. TESTING WITH iodbc
+9. TESTING WITH unixODBC
+
+=========================
+1. SOFTWARE REQUIREMENTS
+=========================
+
+* MySQL client libraries and include files from 3.23.14 and above
+  This is required because MyODBC uses new calls that only exists
+  starting from the above library.
+  
+* The MySQL library must be configured with '--with-thread-safe-client'
+
+* libmysqlclient installed as a shared library.
+
+* One of unix ODBC driver managers:
+  * iODBC 3.00 or later, (http://www.iodbc.org), installed
+  * unixODBC Alpha 3 or later (http://www.unixodbc.org), installed
+  
+* If you using a character set that isn't compiled into the MySQL
+    client library (the defaults are:
+    latin1 big5 czech euc_kr gb2312 gbk sjis tis620 ujis
+     ) then you need to install the mysql character definitions from the
+     charsets directory into SHAREDIR (default 
+    /usr/local/mysql/share/mysql/charsets);  These should already be into
+    place if you have installed the MySQL server on the same machine.
+
+====================================
+2. MYODBC 3.51 CONFIGURATION OPTIONS
+====================================
+
+Usage: configure [options] [host]
+Options: [defaults in brackets after descriptions]
+
+Configuration:
+  --cache-file=FILE       cache test results in FILE
+  --help                  print this message
+  --no-create             do not create output files
+  --quiet, --silent       do not print `checking...' messages
+  --version               print the version of autoconf that created configure
+
+Directory and file names:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+                          [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+                          [same as prefix]
+  --bindir=DIR            user executables in DIR [EPREFIX/bin]
+  --sbindir=DIR           system admin executables in DIR [EPREFIX/sbin]
+  --libexecdir=DIR        program executables in DIR [EPREFIX/libexec]
+  --datadir=DIR           read-only architecture-independent data in DIR
+                          [PREFIX/share]
+  --sysconfdir=DIR        read-only single-machine data in DIR [PREFIX/etc]
+  --sharedstatedir=DIR    modifiable architecture-independent data in DIR
+                          [PREFIX/com]
+  --localstatedir=DIR     modifiable single-machine data in DIR [PREFIX/var]
+  --libdir=DIR            object code libraries in DIR [EPREFIX/lib]
+  --includedir=DIR        C header files in DIR [PREFIX/include]
+  --oldincludedir=DIR     C header files for non-gcc in DIR [/usr/include]
+  --infodir=DIR           info documentation in DIR [PREFIX/info]
+  --mandir=DIR            man documentation in DIR [PREFIX/man]
+  --srcdir=DIR            find the sources in DIR [configure dir or ..]
+  --program-prefix=PREFIX prepend PREFIX to installed program names
+  --program-suffix=SUFFIX append SUFFIX to installed program names
+  --program-transform-name=PROGRAM
+                          run sed PROGRAM on installed program names
+Host type:
+  --build=BUILD           configure for building on BUILD [BUILD=HOST]
+  --host=HOST             configure for HOST [guessed]
+  --target=TARGET         configure for TARGET [TARGET=HOST]
+
+Features and packages:
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --x-includes=DIR        X include files are in DIR
+  --x-libraries=DIR       X library files are in DIR
+
+--enable and --with options recognized:
+  --enable-shared[=PKGS]  build shared libraries [default=yes]
+  --enable-static[=PKGS]  build static libraries [default=no]
+  --enable-fast-install[=PKGS]  optimize for fast installation [default=yes]
+  --with-gnu-ld           assume the C compiler uses GNU ld [default=no]
+  --disable-libtool-lock  avoid locking (might break parallel builds)
+  --with-mysql-libs=DIR   Look for mysql client libraries in DIR
+  --with-mysql-includes=DIR   Look for mysql include files in DIR
+  --with-unixODBC[=DIR]   Use unixODBC located in DIR
+  --with-u
