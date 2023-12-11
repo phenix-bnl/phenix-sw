@@ -27,17 +27,13 @@ event_gen/src/PHPyquen|ngrau@augie.edu
 event_gen/src/PHHijing|chiu@bnl.gov
 event_gen/src/QPythia|ngrau@augie.edu
 #generators/pythia8HepMC|dave@bnl.gov
-generators/hijing|dave@bnl.gov
-generators/flowAfterburner|dave@bnl.gov
 #
 # simulations
 #
-offline/packages/PHG3toG4|slash@rcf.rhic.bnl.gov
 event_gen/src/PHParticleGen|chiu@bnl.gov
 offline/analysis/exodus|bbannier@bnl.gov
 offline/packages/mfm|hubert@lanl.gov
 simulation/pisa2000|hubert@lanl.gov
-simulation/g4simulation/phhepmc|pinkenburg@bnl.gov
 #
 # packages with deps only on phool, Event, PdbCal and SubsysReco
 offline/packages/svxgeo|andrew.adare@colorado.edu
@@ -123,7 +119,6 @@ offline/packages/muioo/classes|silvermy@mail.phy.ornl.gov
 #mutrg needs mutoo_interface and mutoo_base
 offline/packages/mutrg|fukao@riken.jp
 #MuTrigLL1Emulator needs mutrg
-offline/packages/MuTrigLL1Emulator|lajoie@iastate.edu
 #rxnp base needs mutoo base
 offline/packages/rxnp/base|ericr@umd.edu
 #rxnp_interface needs rxnp base and mutoo classes
@@ -167,7 +162,6 @@ offline/analysis/EmcOffCal|pinkenburg@bnl.gov
 # uspin needs ert
 offline/packages/uspin|aoki@nh.scphys.kyoto-u.ac.jp
 # LPana and mpcexcode need uspin
-offline/packages/mpcexcode|nathan.grau@augie.edu
 #offline/packages/LPana|togawa@bnl.gov
 offline/packages/CrkPID|akiba@bnl.gov
 offline/packages/cteval|ralf@skipper.physics.sunysb.edu
