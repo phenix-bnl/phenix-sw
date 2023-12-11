@@ -1,0 +1,17 @@
+/Makefile.am/1.2/Tue Apr 24 01:43:37 2001//
+/et_2_et.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_client.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_client_phenix.c/1.1.1.1/Thu Feb  1 17:56:33 2001//
+/et_client_simple.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_netclient.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_netclient_phenix.c/1.1.1.1/Thu Feb  1 17:56:33 2001//
+/et_producer.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_producer.h/1.2/Tue Oct 26 17:24:37 2004//
+/et_producer1.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_producer2.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_producer_phenix.c/1.1.1.1/Thu Feb  1 17:56:33 2001//
+/et_start.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_start_phenix.c/1.1.1.1/Thu Feb  1 17:56:33 2001//
+/et_userfunction.c/1.2/Tue Oct 26 17:24:37 2004//
+/et_write_phenix.c/1.1.1.1/Thu Feb  1 17:56:34 2001//
+D
