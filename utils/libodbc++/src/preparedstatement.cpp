@@ -161,7 +161,7 @@ void PreparedStatement::_setupParams()
   numParams_=np;
   
   SQLSMALLINT sqlType;
-  SQLUINTEGER prec;
+  SQLULEN prec;
   SQLSMALLINT scale;
   SQLSMALLINT nullable;
 
@@ -303,7 +303,7 @@ bool PreparedStatement::execute()
       r=SQLParamData(hstmt_,&currentCol);
       this->_checkStmtError(hstmt_,r,"SQLParamData failure");
       if(r==SQL_NEED_DATA) {
-	DataHandler* dh=rowset_->getColumn((int)currentCol);
+	DataHandler* dh=rowset_->getColumn((long int)currentCol);
 
 	assert(dh->isStreamed_);
 	

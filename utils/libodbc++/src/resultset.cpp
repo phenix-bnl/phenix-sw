@@ -354,7 +354,7 @@ void ResultSet::_bindStreamedCols()
   int nc=metaData_->getColumnCount();
   unsigned int cr=rowset_->getCurrentRow();
 
-  for(int i=1; i<=nc; i++) {
+  for(long int i=1; i<=nc; i++) {
     DataHandler* dh=rowset_->getColumn(i);
     if(dh->isStreamed_) {
       streamedColsBound_=true;
@@ -528,7 +528,7 @@ void ResultSet::_handleStreams(SQLRETURN r)
       r=SQLParamData(hstmt_,&currentCol);
       this->_checkStmtError(hstmt_,r,"SQLParamData failure");
       if(r==SQL_NEED_DATA) {
-	DataHandler* dh=rowset_->getColumn((int)currentCol);
+	DataHandler* dh=rowset_->getColumn((long int)currentCol);
 
 	assert(dh->isStreamed_);
 

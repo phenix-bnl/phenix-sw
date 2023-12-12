@@ -39,7 +39,7 @@ ResultSetMetaData::ResultSetMetaData(ResultSet* rs)
 int ResultSetMetaData::_getNumericAttribute(unsigned int col,
 					   SQLUSMALLINT attr)
 {
-  SQLINTEGER res=0;
+  SQLLEN res=0;
   SQLRETURN r=
     ODBC3_C(SQLColAttribute,SQLColAttributes)(resultSet_->hstmt_,
 					      (SQLUSMALLINT)col,
@@ -63,7 +63,7 @@ ResultSetMetaData::_getStringAttribute(unsigned int col,
   odbc::Deleter<char> _buf(buf,true);
   buf[maxlen]=0;
 
-  SQLINTEGER res=0;
+  SQLLEN res=0;
   SQLSMALLINT len=0;
 
   SQLRETURN r=

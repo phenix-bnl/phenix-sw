@@ -30,7 +30,7 @@ using namespace std;
 #if !defined(ODBCXX_QT)
 
 DataStreamBuf::DataStreamBuf(ErrorHandler* eh, SQLHSTMT hstmt, int col, 
-			     int cType,SQLINTEGER& dataStatus)
+			     int cType,SQLLEN& dataStatus)
   :errorHandler_(eh), 
    hstmt_(hstmt), 
    column_(col), 
@@ -78,7 +78,7 @@ int DataStreamBuf::underflow()
   
   //after the call, this is the number of bytes that were 
   //available _before_ the call
-  SQLINTEGER bytes;
+  SQLLEN bytes;
 
   //the actual number of bytes that should end up in our buffer
   //we don't care about NULL termination
@@ -116,7 +116,7 @@ int DataStreamBuf::underflow()
     //as we're going to use bytes to set up our
     //pointers below, we adjust it to the number of bytes
     //we read
-    if(bytes>(SQLINTEGER)bs) {
+    if(bytes>(SQLLEN)bs) {
       bytes=bs;
     }
     break;
@@ -134,7 +134,7 @@ int DataStreamBuf::underflow()
 // really ugly
 
 DataStream::DataStream(ErrorHandler* eh, SQLHSTMT hstmt, int col, 
-		       int cType,SQLINTEGER& dataStatus)
+		       int cType,SQLLEN& dataStatus)
   :errorHandler_(eh), 
    hstmt_(hstmt), 
    column_(col), 
@@ -175,7 +175,7 @@ DataStream::~DataStream()
 // private
 void DataStream::_readStep()
 {
-  SQLINTEGER bytes;
+  SQLLEN bytes;
   
   // see above
   size_t bs=(cType_==SQL_C_CHAR?bufferSize_-1:bufferSize_);
@@ -207,7 +207,7 @@ void DataStream::_readStep()
     break;
 
   default:
-    if(bytes>(SQLINTEGER)bs) {
+    if(bytes>(SQLLEN)bs) {
       bytes=bs;
     }
     break;

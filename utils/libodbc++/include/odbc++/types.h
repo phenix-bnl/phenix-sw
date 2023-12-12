@@ -28,6 +28,7 @@
 
 #if !defined(ODBCXX_QT)
 # include <string>
+# include <cstring>
 # else
 # include <qstring.h>
 #endif
@@ -233,7 +234,7 @@ namespace odbc {
 	:len_(l), refCount_(0) {
 	if(len_>0) {
 	  buf_=new signed char[len_];
-	  memcpy((void*)buf_,(void*)b,len_);
+	  std::memcpy((void*)buf_,(void*)b,len_);
 	} else {
 	  buf_=NULL;
 	}

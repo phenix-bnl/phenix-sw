@@ -36,6 +36,8 @@
 # include <qiodevice.h>
 #endif
 
+#include <stdio.h>
+
 namespace odbc {
 
 #if !defined(ODBCXX_QT)
@@ -49,7 +51,7 @@ namespace odbc {
     SQLHSTMT hstmt_;
     int column_;
     int cType_;
-    SQLINTEGER& dataStatus_;
+    SQLLEN& dataStatus_;
     size_t bufferSize_;
 
     virtual int underflow();
@@ -63,7 +65,7 @@ namespace odbc {
       return 0;
     }
     
-    virtual int showmanyc() {
+    virtual long int showmanyc() {
       if(this->gptr() < this->egptr()) {
 	return this->egptr() - this->gptr();
       }
@@ -71,7 +73,7 @@ namespace odbc {
     }
 
     DataStreamBuf(ErrorHandler* eh, SQLHSTMT hstmt, int col, int cType,
-		  SQLINTEGER& dataStatus);
+		  SQLLEN& dataStatus);
     virtual ~DataStreamBuf();
   };
 
@@ -83,7 +85,7 @@ namespace odbc {
     
   protected:
     DataStreamBase(ErrorHandler* eh, SQLHSTMT hstmt, int column, 
-		   int cType,SQLINTEGER& ds)
+		   int cType,SQLLEN& ds)
       :buf_(eh,hstmt,column,cType,ds) {}
     
     virtual ~DataStreamBase() {}
@@ -102,7 +104,7 @@ namespace odbc {
     friend class Rowset;
   private:
     DataStream(ErrorHandler* eh, SQLHSTMT hstmt, int column, int cType,
-	       SQLINTEGER& ds)
+	       SQLLEN& ds)
       :
 #if !defined(ODBCXX_HAVE_ISO_CXXLIB)
       DataStreamBase(eh,hstmt,column,cType,ds),std::istream(this->rdbuf())
@@ -141,7 +143,7 @@ namespace odbc {
 # endif
 
     DataStream(ErrorHandler* eh, SQLHSTMT hstmt, int column, int cType,
-	       SQLINTEGER& ds);
+	       SQLLEN& ds);
     virtual ~DataStream();
 
     virtual bool open(int) {
@@ -177,7 +179,7 @@ namespace odbc {
     SQLHSTMT hstmt_;
     int column_;
     int cType_;
-    SQLINTEGER& dataStatus_;
+    SQLLEN& dataStatus_;
     size_t bufferStart_;
     size_t bufferEnd_;
     bool eof_;
