@@ -5,7 +5,7 @@ BUILT_SOURCES = \
 
 lib_LTLIBRARIES = libheader.la
 
-INCLUDES = -I$(includedir) -I$(OFFLINE_MAIN)/include -I$(ROOTSYS)/include
+INCLUDES = -I$(includedir) -I$(OFFLINE_MAIN)/include -I$(ROOTSYS)/include -I/phenix-sw/offline/packages/RawDataCheck -I/phenix-sw/offline/framework/fun4all
 
 AM_CXXFLAGS = -Wall -Werror
 AM_LDFLAGS = -L$(libdir) -L$(OFFLINE_MAIN)/lib
