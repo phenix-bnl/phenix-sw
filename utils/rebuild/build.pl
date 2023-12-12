@@ -233,7 +233,7 @@ if ($opt_coverity)
 }
 
 $logfile = $workdir.'/rebuild.log';
-open(LOG, ">$logfile");
+*LOG = *STDOUT;
 select LOG;
 $| = 1;
 print LOG "Welcome to the PHENIX $sysname rebuild \n started at ",$date,"\n";
@@ -387,7 +387,10 @@ mkpath($installDir."/share", 0, 0775) unless -e $installDir."/share";
 print LOG "===========================================\n";
 print LOG "Here we can see if the environment is sane.\n";
 print LOG "===========================================\n";
-`printenv  >>$logfile 2>&1`;
+foreach $key (sort keys(%ENV))
+{
+    print LOG "$key = $ENV{$key}\n";
+}
 
 # Start building packages
     if ($opt_stage < 2)
@@ -717,8 +720,6 @@ NORELEASEFILE:
     print LOG "copying build log to install area before releasing\n";
     print LOG "this is the last line you will see\n";
     close LOG;
-    system("cp $logfile $installDir");
-    open(LOG, ">>$logfile");
     print LOG "$date initiating release, touching $releasefile\n";
     system("touch $releasefile");
     my $n=70;
@@ -795,8 +796,6 @@ print INFO " http://phenix-intra.sdcc.bnl.gov/software/tinderbox/showbuilds.cgi?
 print INFO " CVS tag: \n".$opt_cvstag."\n";
 print INFO " CVS command used: \n".$cvscommand."\n";
 %month=('Jan',0,'Feb',1,'Mar',2,'Apr',3,'May',4,'Jun',5,'Jul',6,'Aug',7,'Sep',8,'Oct',9,'Nov',10,'Dec',11);
-close (LOG);
-open(LOG,"$logfile");
 $action='';
 $time=0;
 $flag=0;
@@ -838,10 +837,8 @@ if ( defined($dbh)) { $dbh->disconnect; }
 
 sub doSystemFail
   {
-    close(LOG);
-    my $arg = shift(@_) . ">> $logfile 2>&1";
+    my $arg = shift(@_);
     my $status = system($arg);
-    open(LOG, ">>$logfile");
     if ($status)
       {
 	print LOG "system $arg failed: $?\n";
