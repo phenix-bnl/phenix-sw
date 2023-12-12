@@ -212,7 +212,7 @@ DataHandler::DataHandler(unsigned int& cr, size_t rows,
   case Types::INTEGER:
     cType_=SQL_C_LONG;
     scale_=0;
-    bs=sizeof(SQLINTEGER);
+    bs=sizeof(SQLLEN);
     break;
 
   case Types::FLOAT:
@@ -269,7 +269,7 @@ DataHandler::DataHandler(unsigned int& cr, size_t rows,
   };
   this->setupBuffer(bs);
 
-  dataStatus_=new SQLINTEGER[rows_];
+  dataStatus_=new SQLLEN[rows_];
 
   //set everything to NULL
   for(unsigned int i=0; i<rows_; i++) {
@@ -304,7 +304,7 @@ int DataHandler::getInt() const
 {
   if(!this->isNull()) {
     switch(cType_) {
-      ACCEPT_GET(SQL_C_LONG,SQLINTEGER);
+      ACCEPT_GET(SQL_C_LONG,SQLLEN);
       ACCEPT_GET(SQL_C_SHORT,short);
       ACCEPT_GET(SQL_C_TINYINT,signed char);
       ACCEPT_GET(SQL_C_BIT,signed char);
@@ -337,7 +337,7 @@ Long DataHandler::getLong() const
 #if ODBCVER >= 0x0300
       ACCEPT_GET(SQL_C_SBIGINT,SQLBIGINT);
 #endif
-      ACCEPT_GET(SQL_C_LONG,SQLINTEGER);
+      ACCEPT_GET(SQL_C_LONG,SQLLEN);
       ACCEPT_GET(SQL_C_SHORT,short);
       ACCEPT_GET(SQL_C_TINYINT,signed char);
       ACCEPT_GET(SQL_C_BIT,signed char);
@@ -369,7 +369,7 @@ float DataHandler::getFloat() const
 #if ODBCVER >= 0x0300
       ACCEPT_GET(SQL_C_SBIGINT,SQLBIGINT);
 #endif
-      ACCEPT_GET(SQL_C_LONG,SQLINTEGER);
+      ACCEPT_GET(SQL_C_LONG,SQLLEN);
       ACCEPT_GET(SQL_C_SHORT,short);
       ACCEPT_GET(SQL_C_TINYINT,signed char);
       ACCEPT_GET(SQL_C_BIT,signed char);
@@ -399,7 +399,7 @@ double DataHandler::getDouble() const
 #if ODBCVER >= 0x0300
       ACCEPT_GET(SQL_C_SBIGINT,SQLBIGINT);
 #endif
-      ACCEPT_GET(SQL_C_LONG,SQLINTEGER);
+      ACCEPT_GET(SQL_C_LONG,SQLLEN);
       ACCEPT_GET(SQL_C_SHORT,short);
       ACCEPT_GET(SQL_C_TINYINT,signed char);
       ACCEPT_GET(SQL_C_BIT,signed char);
@@ -633,7 +633,7 @@ void DataHandler::setInt(int val)
     ACCEPT_SET(SQL_C_BIT,signed char);
     ACCEPT_SET(SQL_C_TINYINT,signed char);
     ACCEPT_SET(SQL_C_SHORT,short);
-    ACCEPT_SET(SQL_C_LONG,SQLINTEGER);
+    ACCEPT_SET(SQL_C_LONG,SQLLEN);
 
 #if ODBCVER >= 0x0300
     ACCEPT_SET(SQL_C_SBIGINT,SQLBIGINT);
@@ -661,7 +661,7 @@ void DataHandler::setLong(Long val)
     ACCEPT_SET(SQL_C_BIT,signed char);
     ACCEPT_SET(SQL_C_TINYINT,signed char);
     ACCEPT_SET(SQL_C_SHORT,short);
-    ACCEPT_SET(SQL_C_LONG,SQLINTEGER);
+    ACCEPT_SET(SQL_C_LONG,SQLLEN);
     ACCEPT_SET(SQL_C_DOUBLE,double);
     ACCEPT_SET(SQL_C_FLOAT,float);
 
@@ -685,7 +685,7 @@ void DataHandler::setFloat(float val)
     ACCEPT_SET(SQL_C_BIT,signed char);
     ACCEPT_SET(SQL_C_TINYINT,signed char);
     ACCEPT_SET(SQL_C_SHORT,short);
-    ACCEPT_SET(SQL_C_LONG,SQLINTEGER);
+    ACCEPT_SET(SQL_C_LONG,SQLLEN);
 
   case SQL_C_CHAR:
     this->setString(doubleToString(val));
@@ -707,7 +707,7 @@ void DataHandler::setDouble(double val)
     ACCEPT_SET(SQL_C_BIT,signed char);
     ACCEPT_SET(SQL_C_TINYINT,signed char);
     ACCEPT_SET(SQL_C_SHORT,short);
-    ACCEPT_SET(SQL_C_LONG,SQLINTEGER);
+    ACCEPT_SET(SQL_C_LONG,SQLLEN);
 
   case SQL_C_CHAR:
     this->setString(doubleToString(val));
@@ -843,7 +843,7 @@ void DataHandler::setString(const ODBCXX_STRING& str)
     ACCEPT_SET_VAL(SQL_C_BIT,signed char,stringToInt(str));
     ACCEPT_SET_VAL(SQL_C_TINYINT,signed char,stringToInt(str));
     ACCEPT_SET_VAL(SQL_C_SHORT,short,stringToInt(str));
-    ACCEPT_SET_VAL(SQL_C_LONG,SQLINTEGER,stringToInt(str));
+    ACCEPT_SET_VAL(SQL_C_LONG,SQLLEN,stringToInt(str));
     ACCEPT_SET_VAL(SQL_C_DOUBLE,double,stringToDouble(str));
     ACCEPT_SET_VAL(SQL_C_FLOAT,float,stringToDouble(str));
 

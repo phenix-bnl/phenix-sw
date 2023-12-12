@@ -25,6 +25,7 @@
 #include <odbc++/setup.h>
 
 #include <odbc++/types.h>
+#include <odbc++/errorhandler.h>
 
 /** The namespace where all <b>libodbc++</b> classes reside */
 namespace odbc {
