@@ -1,0 +1,356 @@
+This file contains information about the decay channels of each particle.
+You HAVE to leave spaces between the labels and the numbers.
+
+@{ Pion0->Photon+Photon
+DecayId= 1
+NBody= 2
+BranchingRatio= 0.98798
+ParentID= 111
+ChildID= 22
+ChildID= 22
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Pion0->Photon+Electron+Positron
+DecayId= 2
+NBody= 3
+BranchingRatio= 0.01198
+ParentID= 111
+ChildID= 22
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Pion0->Electron+Positron+Electron+Positron
+DecayId= 23
+NBody= 4
+BranchingRatio= 0.0000314
+ParentID= 111
+ChildID= 11
+ChildID= -11
+ChildID= 11
+ChildID= -11
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Eta->Photon+Photon
+DecayId= 3
+NBody= 2
+BranchingRatio= 0.3931
+ParentID= 221
+ChildID= 22
+ChildID= 22
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Eta->Pion++Pion-+Photon
+DecayId= 30
+NBody= 3
+BranchingRatio= 0.0460
+ParentID= 221
+ChildID= 211
+ChildID= -211
+ChildID= 22
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Eta->Photon+Electron+Positron
+DecayId= 4
+NBody= 3
+BranchingRatio= 0.0068
+ParentID= 221
+ChildID= 22
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Eta->Electron+Positron+Electron+Positron
+DecayId= 24
+NBody= 4
+BranchingRatio= 0.000069
+ParentID= 221
+ChildID= 11
+ChildID= -11
+ChildID= 11
+ChildID= -11
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Eta->Electron+Positron
+DecayId= 29
+NBody=   2
+BranchingRatio= 2.7e-05
+ParentID= 221
+ChildID= 11
+ChildID= -11
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Eta->Pion0+Pion0+Pion0
+DecayId= 14
+NBody= 3
+BranchingRatio= 0.3256
+ParentID= 221
+ChildID= 111
+ChildID= 111
+ChildID= 111
+Enabled= 0
+ChildrenStable= 0
+}
+
+@{ Etaprime->Photon+Photon
+DecayId= 5
+NBody= 2
+BranchingRatio= 0.0210
+ParentID= 331
+ChildID= 22
+ChildID= 22
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Etaprime->Photon+Electron+Positron
+DecayId= 6
+NBody= 3
+BranchingRatio= 9.e-04
+ParentID= 331
+ChildID= 22
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Rho->Electron+Positron
+DecayId= 7
+NBody=   2
+BranchingRatio= 4.71e-05
+ParentID= 113
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Omega->Electron+Positron
+DecayId= 8
+NBody= 2
+BranchingRatio= 7.16e-05
+ParentID= 223
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Omega->Pion0+Electron+Positron
+DecayId= 9
+NBody= 3
+BranchingRatio= 7.7e-04
+ParentID= 223
+ChildID= 111
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Omega->Pion0+Photon
+DecayId= 27
+NBody= 2
+BranchingRatio= 8.28e-02
+ParentID= 223
+ChildID= 111
+ChildID= 22
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Phi->Electron+Positron
+DecayId= 10
+NBody=   2
+BranchingRatio= 2.97e-04
+ParentID= 333
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Phi->Eta+Electron+Positron
+DecayId= 11
+NBody=   3
+BranchingRatio= 1.15e-04
+ParentID= 333
+ChildID= 221
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Phi->Eta+Photon
+DecayId= 28
+NBody=   2
+BranchingRatio= 1.309e-02
+ParentID= 333
+ChildID= 221
+ChildID= 22
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Phi->K++K-
+DecayId= 12
+NBody=   2
+BranchingRatio= 0.492
+ParentID= 333
+ChildID= 321
+ChildID= -321
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ JPsi->Electron+Positron
+DecayId= 13
+NBody=   2
+BranchingRatio= 5.94e-02
+ParentID= 443
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Psiprime->Electron+Positron
+DecayId= 23
+NBody=   2
+BranchingRatio= 7.52e-03
+ParentID= 444
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Upsilon->Electron+Positron
+DecayId= 17
+NBody=   2
+BranchingRatio= 2.48e-02
+ParentID= 553
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Upsilon2S->Electron+Positron
+DecayId= 10017
+NBody=   2
+BranchingRatio= 1.91e-02
+ParentID= 100553
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Upsilon3S->Electron+Positron
+DecayId= 20017
+NBody=   2
+BranchingRatio= 2.18e-02
+ParentID= 200553
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ directPion0->Photon+Photon
+DecayId= 21
+NBody= 2
+BranchingRatio= 0.98798
+ParentID= -111
+ChildID= 22
+ChildID= 22
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ directPion0->Photon+Electron+Positron
+DecayId= 22
+NBody= 3
+BranchingRatio= 0.01198
+ParentID= -111
+ChildID= 22
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ VirtualPhoton->Electron+Positron
+DecayId= 18
+NBody=   2
+BranchingRatio= 1.
+ParentID= -22
+ChildID= 11
+ChildID= -11
+Enabled= 1
+ChildrenStable= 1
+}
+
+@{ Lambda->Proton+Pion-
+DecayId= 15
+NBody=   2
+BranchingRatio= 0.6390
+ParentID= 18
+ChildID= 2212
+ChildID= -211
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Lambda->Neutron+Pion0
+DecayId= 16
+NBody=   2
+BranchingRatio= 0.3580
+ParentID= 18
+ChildID= 2112
+ChildID= 111
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Antilambda->Antiproton+Pion+
+DecayId= 25
+NBody=   2
+BranchingRatio= 0.6390
+ParentID= 26
+ChildID= -2212
+ChildID= 211
+Enabled= 0
+ChildrenStable= 1
+}
+
+@{ Antilambda->Antineutron+Pion0
+DecayId= 26
+NBody=   2
+BranchingRatio= 0.3580
+ParentID= 26
+ChildID= -2112
+ChildID= 111
+Enabled= 0
+ChildrenStable= 1
+}
+

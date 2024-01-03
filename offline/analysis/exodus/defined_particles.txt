@@ -1,0 +1,265 @@
+Contains information about the known particles. You HAVE to put spaces
+between the labels and the numbers!
+
+@{ Geantino
+ID=      0
+Mass=    0.0
+Width=   0.0
+Charge=  0
+Spin=    0
+}
+
+@{ Photon
+ID=      22
+Mass=    0.0
+Width=   0.0
+Charge=  0
+Spin=    2
+}
+
+@{ VirtualPhoton
+ID=      -22
+Mass=    0.0
+Width=   4.0
+Charge=  0
+Spin=    2
+}
+
+@{ Positron
+ID=      -11
+Mass=    0.51099906e-3
+Width=   0.0
+Charge=  1
+Spin=	 1
+}
+
+@{ Electron
+ID=      11
+Mass=    0.51099906e-3
+Width=   0.0
+Charge= -1
+Spin=    1
+}
+
+@{ Ke3
+ID=      21
+Mass=    0.51099906e-3
+Width=   0.0
+Charge= -1
+Spin=    1
+}
+
+@{ Muon+
+ID=      -13
+Mass=    0.105658367
+Width=   0.0
+Charge=  1
+Spin=    1
+}
+
+@{ Muon-
+ID=      13
+Mass=    0.105658367
+Width=   0.0
+Charge=  -1
+Spin=    1
+}
+
+@{ Pion0
+ID=      111
+Mass=    0.1349766
+Width=   0.0
+Charge=  0
+Spin=    0
+}
+
+@{ directPion0
+ID=      -111
+Mass=    0.1349766
+Width=   0.0
+Charge=  0
+Spin=    0
+}
+
+@{ Pion+
+ID=      211
+Mass=    0.13957018
+Width=   0.0
+Charge=  1
+Spin=    0
+}
+
+@{ Pion-
+ID=      -211
+Mass=    0.13957018
+Width=   0.0
+Charge=  -1
+Spin=    0
+}
+
+@{ Rho
+ID=      113
+Mass=    0.77549
+Width=   0.1494
+Charge=  0
+Spin=    2
+}
+
+@{ Omega
+ID=      223
+Mass=    0.78265
+Width=   0.00849
+Charge=  0
+Spin=    2
+}
+
+@{ Eta
+ID=      221
+Mass=    0.547853
+Width=   0.0
+Charge=  0
+Spin=    0
+}
+
+@{ Etaprime
+ID=      331
+Mass=    0.95766
+Width=   0.0
+Charge=  0
+Spin=    0
+}
+
+@{ Phi
+ID=      333
+Mass=    1.019455
+Width=   0.00426
+Charge=  0
+Spin=    2
+}
+
+@{ K+
+ID=      321
+Mass=    0.493677
+Width=   0.0
+Charge=  1
+Spin=    0
+}
+
+@{ K-
+ID=      -321
+Mass=    0.493677
+Width=   0.0
+Charge=  -1
+Spin=    0
+}
+
+@{ proton
+ID=      2212
+Mass=    0.938272
+Width=   0.0
+Charge=  1
+Spin=    1
+}
+
+@{ antiproton
+ID=      -2212
+Mass=    0.938272
+Width=   0.0
+Charge=  -1
+Spin=    1
+}
+
+@{ neutron
+ID=      2112
+Mass=    0.93956536
+Width=   0.0
+Charge=  0
+Spin=    0.5
+}
+
+@{ antineutron
+ID=      -2112
+Mass=    0.93956536
+Width=   0.0
+Charge=  0
+Spin=    0.5
+}
+
+@{ JPsi
+ID=      443
+Mass=    3.096916
+Width=   0.000093
+Charge=  0
+Spin=    1
+}
+
+@{ Psiprime
+ID=      444
+Mass=    3.686
+Width=   0.00034
+Charge=  0
+Spin=    1
+}
+
+@{ Upsilon
+ID=      553
+Mass=    9.4603
+Width=   0.00005402
+Charge=  0
+Spin=    1
+}
+
+@{ Upsilon2S
+ID=      100553
+Mass=    10.0233
+Width=   0.00003198
+Charge=  0
+Spin=    1
+}
+
+@{ Upsilon3S
+ID=      200553
+Mass=    10.3552
+Width=   0.00002032
+Charge=  0
+Spin=    1
+}
+
+@{ deuteron
+ID=      45
+Mass=    1.875612
+Width=   0.0
+Charge=  1
+Spin=    1
+}
+
+@{ antideuteron
+ID=      55
+Mass=    1.875612
+Width=   0.0
+Charge=  -1
+Spin=    1
+}
+
+@{ lambda
+ID=      18
+Mass=    1.115683
+Width=   2.5e-12
+Charge=  0
+Spin=    0.5
+}
+
+@{ antilambda
+ID=      26
+Mass=    1.115683
+Width=   2.5e-12
+Charge=  0
+Spin=    0.5
+}
+
+
+
+
+
+
+
