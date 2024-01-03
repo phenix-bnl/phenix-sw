@@ -1,0 +1,152 @@
+# at least one error to create summary
+insure++.summarize_on_error 1
+# not leaks in summary
+insure++.LeakSummaryFilter -! *
+insure++.report_overwrite false
+#show all errors which occur in the same line of code
+insure++.report_limit -1
+# return line numbers, use insures internal stack tracing
+insure++.stack_internal on
+# no leak check right now
+insure++.leak_search off
+#insure++.leak_combine none
+insure++.leak_sort size
+insure++.leak_sweep off
+insure++.leak_trace off
+insure++.checking_uninit_min_size 1
+#
+# Specifies the directory where Insure++ will store its cache files 
+# containing symbolic debugging information
+insure++.GusCacheDir $GUSDIR
+#
+# error output suppression
+insure++.unsuppress all
+
+# the de/compression produces bogus errors (whenever word is 0xadde)
+insure++.suppress * { lzo1x_decompress_safe() * }
+insure++.suppress * { do_compress() * }
+
+insure++.suppress BAD_FORMAT(other) { Fun4AllRolloverFileOutStream::WriteEvent* * }
+
+# during et startup this sometimes happens
+insure++.suppress COPY_WILD { et_station_attach() * }
+
+# this suppresses the Dictionary 
+insure++.suppress COPY_WILD { G__cpp_setup_* * }
+insure++.suppress COPY_WILD { G__setup_memvar* * }
+
+insure++.suppress EXPR_WILD { G__setup_* * }
+
+insure++.suppress FREE_NULL { free() _dl_close() _dl_open() * }
+# it says realloc and then: ** routines internal to Insure++ **
+insure++.suppress FREE_NULL { realloc() * }
+
+insure++.suppress FREE_NULL { realloc() * * G__* * }
+insure++.suppress FREE_NULL { realloc()  add_dependency() _dl_lookup_symbol() * }
+insure++.suppress FREE_NULL { realloc() __add_to_environ() setenv() * }
+insure++.suppress FREE_NULL { realloc() __add_to_environ() putenv() * }
+
+insure++.suppress READ_UNINIT_MEM(read) { Packet_gl1p::iValue* * }
+insure++.suppress READ_UNINIT_MEM(read) { Packet_gl1::iValue* * }
+insure++.suppress READ_UNINIT_MEM(read) { DchHitLineOutv2::float2short* * }
+insure++.suppress READ_UNINIT_MEM(read) { DchHitLineOutv2::short2float* * }
+insure++.suppress READ_UNINIT_MEM(copy) { DchHitLineOutv2::short2float(short) * }
+insure++.suppress READ_UNINIT_MEM(read) { DchHitLineOutv2::getZ() * }
+insure++.suppress READ_UNINIT_MEM(read) { DchHitLineOutv2::getXYZ() * }
+
+insure++.suppress RETURN_FAILURE { access() TMutDatabaseInit::do_init() * }
+insure++.suppress RETURN_FAILURE { access() TUnixSystem::Which() * }
+insure++.suppress RETURN_FAILURE { access() TUnixSystem::AccessPathName() * }
+
+# X11
+insure++.suppress RETURN_FAILURE { fgets() _X* * }
+
+insure++.suppress RETURN_FAILURE { fgets() G__readline() * }
+insure++.suppress RETURN_FAILURE { fgets() Gl_histinit() * }
+insure++.suppress RETURN_FAILURE { fgets() Gl_histadd() * }
+#SQL
+insure++.suppress RETURN_FAILURE { fgets() iniAppend() * }
+insure++.suppress RETURN_FAILURE { fgets() iniOpen() * }
+
+insure++.suppress RETURN_FAILURE { fgets() TGMimeTypes::TGMimeTypes() * }
+insure++.suppress RETURN_FAILURE { fgets() TString::Gets() TUnixSystem::GetLinkedLibraries() * }
+insure++.suppress RETURN_FAILURE { fgets() XcursorFilenameSave() * }
+
+insure++.suppress RETURN_FAILURE { fopen() G__* * }
+insure++.suppress RETURN_FAILURE { fopen() TEnv::ReadFile() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() CentralityParameters::CentralityParameters() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() CentralityParameters::CentralityParameters() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() PHDchCalibrationObject::fetchSlewFromFile() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() PHDchCalibrationObject::fetchLocalFromFile() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() PHDchCalibrationObject::fetchStereoFromFile() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() TMutParameterDB::read* * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() Lvl2DatabaseAccessorAscii::getTable* * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() RCP::file_ok() * }
+# checking EndIt file to stop event loop 
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() Fun4AllPisaInputManager::run* * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() read3droot03_() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() PHFieldMapObj::initialize() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() QACrk::InitRun* * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() QACrk::InitRun* * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() *basic_ifstream() TMutChargeCorrection::initialize() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() Lvl2Event::setupTriggers() * }
+
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() CalibrationsRead::getcalibs() * }
+insure++.suppress RETURN_FAILURE { fopen() *open() *open() *open() TacT0Read::gett0() * }
+insure++.suppress RETURN_FAILURE { fopen() XcursorFilenameSave() * }
+
+# if prdf file is exhausted
+insure++.suppress RETURN_FAILURE { fread()  fileEventiterator::read_next_buffer() * }
+
+insure++.suppress RETURN_FAILURE { fread()  XauFileName() * }
+# std::streams
+insure++.suppress RETURN_FAILURE { fread() *xsgetn() * }
+
+#dch file reading
+insure++.suppress RETURN_FAILURE at DchMon.C:490
+insure++.suppress RETURN_FAILURE at DchMon.C:626
+
+
+insure++.suppress RETURN_FAILURE { open() X* * }
+
+insure++.suppress RETURN_FAILURE { read() XUnlockDisplay()  * }
+
+insure++.suppress RETURN_FAILURE { readdir() TUnixSystem::UnixGetdirentry()  * }
+
+insure++.suppress RETURN_FAILURE { readv() XUnlockDisplay()  * }
+
+insure++.suppress RETURN_FAILURE { semget() uodbc_open_stats()  * }
+insure++.suppress RETURN_FAILURE { shmget() uodbc_open_stats()  * }
+
+insure++.suppress RETURN_FAILURE { write() tcp_write() etr_close() * }
+insure++.suppress RETURN_FAILURE { write() tcp_write() etr_station_detach() * }
+insure++.suppress RETURN_FAILURE { write() tcp_write() etr_station_remove() * }
+
+insure++.suppress RETURN_FAILURE { writev() XUnlockDisplay()  * }
+
+# server thread
+insure++.suppress RETURN_FAILURE { getservbyport() TUnixSystem::GetServiceByPort() * }
+insure++.suppress RETURN_FAILURE { getservbyport() TUnixSystem::UnixTcpConnect() * }
+insure++.suppress RETURN_FAILURE { getservbyport() TUnixSystem::UnixTcpService() * }
+
+# env var checks
+insure++.suppress RETURN_FAILURE { getenv() * }
+
+# all the sqrt(-1) inits to get NAN
+insure++.suppress USER_ERROR at PadClusterv2.C:15
+insure++.suppress USER_ERROR at PadSnglCluster.C:8
+insure++.suppress USER_ERROR at PadSnglClusterv2.C:7
+
+insure++.suppress USER_ERROR at SavePHPanel.C:8
+insure++.suppress USER_ERROR at SavePHPanelv1.C:14
+
+insure++.suppress USER_ERROR at TofHit.C:8
+insure++.suppress USER_ERROR at TofHitv2.C:4
+
+insure++.suppress USER_ERROR at TofOutv2.C:14
+
+# uncomment this line and set env var REPORT to save it in this file
+insure++.report_file $REPORT
+insure++.coverage_map_file $REPORT.tca
+# uncomment this line and set env var REPORT to save it in this file
+#insure++.checking_uninit_pattern 88888888

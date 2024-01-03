@@ -1,0 +1,8 @@
+offline/AnalysisTrain/jetextract
+offline/packages/fcl
+offline/packages/MuTrigLL1Emulator
+offline/packages/tec
+offline/packages/tecpid
+online_distribution/et
+online_distribution/lzo
+simulation/g4simulation/g4cemc

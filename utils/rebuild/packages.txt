@@ -1,0 +1,209 @@
+# This list must be kept up-to-date with respect to the list of
+# modules in CVS
+offline/packages/Half|pinkenburg@bnl.gov
+online_distribution/et|pinkenburg@bnl.gov
+#online_distribution/lzo|purschke@bnl.gov
+online_distribution/newbasic|purschke@bnl.gov
+utils/jprof|dave@bnl.gov
+offline/framework/phwrappers|dave@bnl.gov
+offline/framework/phool|dave@bnl.gov
+offline/packages/vararray|Pinkenburg@bnl.gov
+offline/framework/phnxgeant|hubert@lanl.gov
+offline/framework/phzebra|dave@bnl.gov
+offline/framework/frog|irina@bnl.gov
+offline/framework/toad|seele@rcf.rhic.bnl.gov
+online/monitoring/tools/pmonitor|purschke@bnl.gov
+online/monitoring/tools/toolbox|purschke@bnl.gov
+offline/packages/geo|rpetti@skipper.physics.sunysb.edu
+offline/database/pdbcal/base|irina@bnl.gov
+offline/database/pdbcal/pg|irina@bnl.gov
+offline/packages/header|Pinkenburg@bnl.gov
+offline/framework/fun4all|pinkenburg@bnl.gov
+offline/packages/PHHepMC|Pinkenburg@bnl.gov
+event_gen/src/PHPythia/PHPythia|chiu@bnl.gov
+event_gen/src/PHPythia/Triggers|chiu@bnl.gov
+event_gen/src/PHPythia/ParticleSelection|chiu@bnl.gov
+event_gen/src/PHPyquen|ngrau@augie.edu
+event_gen/src/PHHijing|chiu@bnl.gov
+event_gen/src/QPythia|ngrau@augie.edu
+#generators/pythia8HepMC|dave@bnl.gov
+generators/hijing|dave@bnl.gov
+generators/flowAfterburner|dave@bnl.gov
+#
+# simulations
+#
+offline/packages/PHG3toG4|slash@rcf.rhic.bnl.gov
+event_gen/src/PHParticleGen|chiu@bnl.gov
+offline/analysis/exodus|bbannier@bnl.gov
+offline/packages/mfm|hubert@lanl.gov
+simulation/pisa2000|hubert@lanl.gov
+simulation/g4simulation/phhepmc|pinkenburg@bnl.gov
+#
+# packages with deps only on phool, Event, PdbCal and SubsysReco
+offline/packages/svxgeo|andrew.adare@colorado.edu
+offline/packages/acc|mkonno@sakura.cc.tsukuba.ac.jp
+offline/packages/accp|mkonno@sakura.cc.tsukuba.ac.jp
+offline/packages/aggro|hemmick@skipper.physics.sunysb.edu
+offline/packages/dgo|rpetti@skipper.physics.sunysb.edu
+offline/packages/lpc|togawa@bnl.gov
+offline/packages/lpol|keimj0703@gmail.com
+offline/packages/mrpc|shengli.huang@vanderbilt.edu
+offline/packages/nanoDST|hemmick@skipper.physics.sunysb.edu
+offline/packages/RawDataCheck|Pinkenburg@bnl.gov
+offline/packages/spin|htorii@bnl.gov
+offline/packages/t0|csanad@bnl.gov
+offline/packages/trigger|frantz@ohio.edu
+offline/packages/vtx|Pinkenburg@bnl.gov
+#event_gen/src/PHPythia/PHPythia8|shlim@rcf.rhic.bnl.gov
+offline/packages/xingshift|aoki@nh.scphys.kyoto-u.ac.jp
+offline/packages/zdc|togawa@bnl.gov
+#
+# now packages with interdependencies
+#
+# gea needs zdc
+offline/packages/gea|hubert@lanl.gov
+# bbc, tofw needs gea
+offline/packages/bbc|homma@hirax7.hepl.hiroshima-u.ac.jp
+offline/packages/bbcmultvtx|oide@icepp.s.u-tokyo.ac.jp
+offline/packages/tofw|shengli.huang@vanderbilt.edu
+# svx needs gea, HelixHough
+offline/packages/svx|hachiya@rcf.rhic.bnl.gov
+offline/packages/vtxpixelrealign|pinkenburg@bnl.gov
+offline/packages/mpc|chiu@bnl.gov
+offline/packages/mpcexreco|nathan.grau@augie.edu
+# vernierScan needs bbc,zdc,trigger
+offline/analysis/vernierScan|pinkenburg@bnl.gov
+# hbd needs nanoDST
+offline/packages/hbd|takao@bnl.gov
+# EWG needs nanodst and hbd
+offline/packages/EWG|hemmick@skipper.physics.sunysb.edu
+offline/packages/emc-calib/DataManager|david@bnl.gov
+offline/packages/emc-calib/Static|david@bnl.gov
+offline/packages/emc-calib/Dynamic|david@bnl.gov
+offline/packages/emc-calib/Calib|david@bnl.gov
+offline/packages/emc-calib/DataManager_plugins/base|david@bnl.gov
+offline/packages/emc-calib/DataManager_plugins/ascii|david@bnl.gov
+offline/packages/emc-calib/DataManager_plugins/pg|david@bnl.gov
+offline/packages/emc-embed|david@bnl.gov
+offline/packages/emc|david@bnl.gov
+offline/packages/emc-embed4all|david@bnl.gov
+# HardpDST needs emc
+offline/packages/HardpDST/containers|jjia@rcf2.rhic.bnl.gov
+# lvl2 needs trigger
+offline/packages/lvl2|frawley@rcf.rhic.bnl.gov
+# fcl needs zdc
+offline/packages/fcl|mheffner@llnl.gov
+# uti needs fcl
+offline/packages/uti|dave@bnl.gov
+# pad needs uti
+offline/packages/pad|david.silvermyr@gmail.com
+offline/packages/dch|rpetti@skipper.physics.sunysb.edu
+# dch zero field analysis needs dch
+offline/analysis/DchAlphaPhi|pinkenburg@bnl.gov
+#mutgeom needs mfm
+offline/packages/mutgeom|slash@rcf.rhic.bnl.gov
+offline/packages/muigeom|silvermy@mail.phy.ornl.gov
+offline/packages/rpcgeom|rhollis@ucr.edu
+offline/packages/fvtxgeom|slash@rcf.rhic.bnl.gov
+#mutoo_base needs mutgeom
+offline/packages/mutoo/base|slash@rcf.rhic.bnl.gov
+offline/packages/muioo/base|silvermy@mail.phy.ornl.gov
+offline/packages/rpcoo/base|rhollis@ucr.edu
+offline/packages/fvtxoo/base|slash@rcf.rhic.bnl.gov
+#mutoo_interface needs mutoo_base
+offline/packages/mutoo/interface|slash@rcf.rhic.bnl.gov
+offline/packages/muioo/interface|silvermy@mail.phy.ornl.gov
+offline/packages/rpcoo/interface|rhollis@ucr.edu
+offline/packages/fvtxoo/interface|slash@rcf.rhic.bnl.gov
+# muidTriggerEmulator needs muioo_interface
+offline/packages/MuidTriggerEmulator|lajoie@iastate.edu
+#mutoo_classes needs mutoo_interface
+offline/packages/mutoo/classes|slash@rcf.rhic.bnl.gov
+offline/packages/muioo/classes|silvermy@mail.phy.ornl.gov
+#mutrg needs mutoo_interface and mutoo_base
+offline/packages/mutrg|fukao@riken.jp
+#MuTrigLL1Emulator needs mutrg
+offline/packages/MuTrigLL1Emulator|lajoie@iastate.edu
+#rxnp base needs mutoo base
+offline/packages/rxnp/base|ericr@umd.edu
+#rxnp_interface needs rxnp base and mutoo classes
+offline/packages/rxnp/interface|ericr@umd.edu
+#rxnp_classes needs mutoo classes and rxnp base
+offline/packages/rxnp/classes|ericr@umd.edu
+#mutoo_modules needs mutoo_classes
+offline/packages/mutoo/modules|slash@rcf.rhic.bnl.gov
+offline/packages/muioo/modules|silvermy@mail.phy.ornl.gov
+offline/packages/rpcoo/modules|rhollis@ucr.edu
+#rxnp_modules needs rxnp_classes, interfaces, base
+offline/packages/rxnp/modules|ericr@umd.edu
+#mutoo_display needs mutoo_interface and phdisplay
+#
+# phdisplay doesn't compile with ROOT 5.15/02. Until then, buh-bye.
+#
+offline/packages/mutoo/display|slash@rcf.rhic.bnl.gov
+offline/packages/muioo/display|silvermy@mail.phy.ornl.gov
+offline/packages/rpcoo/display|rhollis@ucr.edu
+offline/packages/fvtxoo/display|slash@rcf.rhic.bnl.gov
+offline/packages/mutoo/alignment|slash@rcf.rhic.bnl.gov
+offline/packages/fvtxoo/alignment|slash@rcf.rhic.bnl.gov
+offline/packages/MuPC|andrew.glenn-1@colorado.edu
+# tof needs gea, uti
+offline/packages/tof|esumi@sakura.cc.tsukuba.ac.jp
+#tec needs dch, pad and tof
+offline/packages/tec|afranz@bnl.gov
+offline/packages/cgl|julia@bnl.gov
+# reaction plane needs cgl
+offline/packages/reactionplane/Run2|esumi@sakura.cc.tsukuba.ac.jp
+offline/packages/reactionplane|esumi@sakura.cc.tsukuba.ac.jp
+# cglVtx needs cgl
+offline/packages/cglVtx|dave@bnl.gov
+offline/packages/crk|akiba@bnl.gov
+#tecpid needs crk
+offline/packages/tecpid|afranz@bnl.gov
+# ert needs crk
+offline/packages/ert|htorii@bnl.gov
+# emc pi0 calibration needs emc and ert
+offline/analysis/EmcOffCal|pinkenburg@bnl.gov
+# uspin needs ert
+offline/packages/uspin|aoki@nh.scphys.kyoto-u.ac.jp
+# LPana and mpcexcode need uspin
+offline/packages/mpcexcode|nathan.grau@augie.edu
+#offline/packages/LPana|togawa@bnl.gov
+offline/packages/CrkPID|akiba@bnl.gov
+offline/packages/cteval|ralf@skipper.physics.sunysb.edu
+offline/packages/embed|jjia@rcf2.rhic.bnl.gov
+# mutoo_subsysreco needs many things, including mutoo
+offline/packages/mutoo_subsysreco|slash@rcf.rhic.bnl.gov
+offline/packages/rpc_subsysreco|rhollis@ucr.edu
+# fvtxoo/modules needs mutoo_subsysreco
+offline/packages/fvtxoo/modules|slash@rcf.rhic.bnl.gov
+offline/packages/fvtx_subsysreco|slash@rcf.rhic.bnl.gov
+# rxnp reco needs rxnp bases, classes, interface, modules plus other many
+offline/packages/rxnp/reco|ericr@umd.edu
+# muon_subsysreco needs modules that require both the existing and forward upgrade detectors, and not suitable
+# for reconstruction. Should come after mutoo, fvtxoo, rpcoo and rxnp.
+offline/packages/muon_subsysreco|slash@rcf.rhic.bnl.gov
+offline/packages/CNT|hemmick@skipper.physics.sunysb.edu
+# compact CNT need CNT
+offline/packages/compactCNT|frawley@rcf.rhic.bnl.gov
+# MWG needs mutoo_interface
+offline/packages/MWG/interface|slash@rcf.rhic.bnl.gov
+offline/packages/MWG/tools|slash@rcf.rhic.bnl.gov
+offline/packages/MWG/reco|slash@rcf.rhic.bnl.gov
+# MWGpico needs MWG
+offline/packages/MWGpico|rseidl@rcf2.rhic.bnl.gov
+# rpc_muotrackreco needs MWGpico
+offline/packages/rpc_muotrackreco|rhollis@ucr.edu
+offline/framework/embedreco|jjia@rcf2.rhic.bnl.gov
+offline/packages/NodeDump|Pinkenburg@bnl.gov
+offline/framework/recal|anne@bnl.gov
+offline/framework/preco|Pinkenburg@bnl.gov
+# simreco uses HeadReco as base class
+offline/framework/simreco|hubert@lanl.gov
+# svxdstqa needs the reaction plane
+offline/packages/svxdstqa|hachiya@rcf.rhic.bnl.gov
+# mpc pi0cal needs recal
+offline/packages/mpc/calibrations/pi0cal|chiu@bnl.gov
+utils/qa/pdst|msar@gsu.edu
+# Analysis Train modules (and modules depending on it) 
+# are now handled in phnxbld DB

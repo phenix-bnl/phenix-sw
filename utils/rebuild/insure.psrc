@@ -1,0 +1,78 @@
+insure++.summarize bugs
+insure++.report_overwrite false
+# report all errors in single  line
+insure++.report_limit -1
+insure++.leak_combine none
+insure++.leak_sort size
+insure++.leak_sweep off
+insure++.leak_trace on
+insure++.summarize leaks outstanding
+# return line numbers
+insure++.stack_internal on
+#
+# Specifies the directory where Insure++ will store its cache files 
+# containing symbolic debugging information, $GUSDIR set by build script
+insure++.GusCacheDir $GUSDIR
+#
+# specifies whether the default C or C++ compiler should be called to link 
+# when there are no source files on the link line
+insure++.compiler_default cpp
+#
+# TString.h contains a function Zero() which baffles insure
+# not instrumenting this gets it to compile
+insure++.function_ignore Zero
+#
+# error output suppression
+insure++.unsuppress all
+insure++.suppress * in configure
+insure++.suppress * in conftest.c
+insure++.suppress * in conftest.cc
+#
+# the cmath creates this PARSE_ERROR but using PARSE_ERROR as
+# suppression keyword does not work in insure Version 7.1.7
+# these are in SL6.4:
+insure++.suppress * at cmath:500
+insure++.suppress * at cmath:510
+insure++.suppress * at cmath:519
+insure++.suppress * at cmath:528
+insure++.suppress * at string.h:215
+insure++.suppress * at string.h:242
+insure++.suppress * at string.h:321
+insure++.suppress * in cpp_type_traits.h
+insure++.suppress * in exception_ptr.h
+insure++.suppress * in move.h
+insure++.suppress * in stringfwd.h
+
+# svx ...
+insure++.suppress * in SvxPixel1v1.C:65
+insure++.suppress * in SvxStrip11v1.C:32
+insure++.suppress * in SvxStrip11v2.C:39
+insure++.suppress * in SvxStrip11v2.C:41
+insure++.suppress * in SvxStrip11v2.C:42
+
+#---Not checked if needed under SL6 yet------------
+insure++.suppress * in mmintrin.h
+insure++.suppress * in xmmintrin.h
+insure++.suppress * in boost_sp_shared_count.h
+insure++.suppress * in boost_shared_ptr.h
+insure++.suppress * in hashtable_policy.h
+insure++.suppress * in hashtable
+insure++.suppress * in new
+insure++.suppress * in new_allocator.h
+insure++.suppress * in stl_algobase.h:934
+insure++.suppress * in stl_bvector.h
+insure++.suppress * in stl_iterator.h
+insure++.suppress * in stl_map.h
+insure++.suppress * in stl_move.h
+insure++.suppress * in stl_multimap.h
+insure++.suppress * in stl_pair.h
+insure++.suppress * in stl_tree.h
+insure++.suppress * in stl_vector.h
+insure++.suppress * in tuple
+insure++.suppress * in type_traits
+insure++.suppress * in type_traits.hpp
+insure++.suppress * in unordered_map
+insure++.suppress * in vector.tcc
+insure++.suppress INSURE_ERROR
+#insure++.inuse on
+insure++.runtime off
