@@ -1,0 +1,10 @@
+This directory contains, perhaps among other things, the Doxygen config file, Doxyfile_mutoo.  This config file specifies how Doxygen, a code documentation tool, will generate the mutoo code's documentation in HTML.
+
+To use it, obtain the doxygen executable from the Doxygen website:	
+    www.stack.nl/~dimitri/doxygen/
+you might also try /phenix/u/jfrantz/doxygen????/bin/
+and then run, in this docs directory, 
+
+$ doxygen Doxyfile_mutoo
+
+the documentation will be created in a subdirectory called html (./html)

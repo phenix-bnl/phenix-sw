@@ -1,0 +1,59 @@
+#!/usr/local/bin/perl
+# perl script BatchOnlCal
+# author: Sean Kelly CUBoulder
+# description: 
+
+($#ARGV==0) || die"usage: BatchOnlCal  [input file]\n"; 
+
+$input_file = $ARGV[0];
+$template_file = "run_mutoo.csh.template";
+
+open(FILE1,$input_file) || die "\ncan't open file $input_file\n";
+$job_number = 0;
+while($input_line = <FILE1>){
+    $job_number++;
+    @toks = split(":",$input_line);
+    $source_file = $toks[0];
+    $dest_file = $toks[1];
+    $dest_file =~ s/\.root/$job_number\.root/g;
+    $temp_dir = "wrk_".$job_number;
+    $log_file = "run_".$job_number.".log";
+    $job_log_file = "job_".$job_number.".log";
+    $script_file = "run_mutoo_".$job_number.".csh";
+
+    open(FILE2,$template_file) || die "\ncan't open template file\n";
+    open(FILE3,">$script_file") || die "\ncan't open script file\n";
+    
+    while($line = <FILE2>){
+	$line =~ s/INPUT_FILENAME/$source_file/g;
+	$line =~ s/OUTPUT_FILENAME/$dest_file/g;
+	print FILE3 $line;
+    }
+    system("chmod +rwx $script_file");
+    $cmd = "bsub -q phenix_cas -R linux -o $job_log_file \'$script_file \> $log_file\'";
+    print "$cmd\n";
+    system($cmd);
+}
+close(FILE1);
+close(FILE2);
+close(FILE3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

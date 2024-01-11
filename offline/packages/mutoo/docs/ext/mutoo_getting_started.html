@@ -1,0 +1,76 @@
+/*! @defgroup TUTO Getting started
+
+
+<body>
+<center>
+<h2> How to get a local installation of source files, root macros and tutorials </h2>
+</center>
+
+<br>
+<h3> What this tutorial covers </h3>
+
+This tutorial is the first step you need to go through before going through any of the other tutorials in the list. It configures your favorite working directory so that you get the most up to date sources from mutoo and related packages (as well as the preco/fun4all framework) and can run the tutorials using the <i>official</i> root macros on default files we choosed for you.
+<br>
+
+<h3> Step 1: Checking things out of CVS and running the setup script </h3>
+<ul>
+<li> Make yourself a clean working directory on one of the PHENIX data
+disks. Note: if you build under the /direct/phenix+u/ directory you
+may run into the 2GB disk quota, if processing large input files.
+\code  
+rcas2067 % pwd
+/phenix/data09/hpereira
+rcas2067 % mkdir sandbox
+rcas2067 % cd sandbox
+\endcode
+<br>
+
+<li> Get an AFS token
+\code  
+rcas2067 % klog
+Password:  [enter you AFS password]
+\endcode
+<br>
+ <li> Checkout the mutoo package from the CVS repository
+\code  
+rcas2067% cvs co -d mutoo offline/packages/mutoo
+\endcode
+<br>
+  <li> Run the setup script
+\code
+rcas2067% cd mutoo
+rcas2067% ./setup_dirs.prl
+\endcode
+<br>
+
+The setup script will setup build and install directories for the various event
+loops that one might want to run. Root macros for various event loops are
+copied from the mutoo directory to the approriate run directories and automake
+is run for both the preco and mutoo packages so one can build local version of
+these packages. After the setup script is finished the directory below mutoo
+looks like the following.
+
+\code
+rcas2067% cd ../
+rcas2067% ls
+fun4dst/   fun4sim/  mutoo/    mutoo_subsysreco/    preco_b/
+fun4pisa/  muioo/    mutoo_b/  mutoo_subsysreco_b/
+fun4prdf/  muioo_b/  mutoo_i/  preco/
+\endcode
+<br>
+
+<h4> Important note on local build </h4>
+Having run the setup_dirs.prl script does not mean that you have your local build yet. More precisely you will still use the official libraries when running the macro bellow. To get your local build completed, you need to have your code compiled and installed localy. see the <a href="group__BUILD.html">build instructions</a> for more details.
+
+<h4> Using the tutorials </h4>
+The working subdirectories installed by the setup_dirs.prl script are
+<ul>
+<li><b>fun4pisa</b> where you can generate simulated DST from an input PISA file;
+<li><b>fun4sim</b> where you can reconstruct a simulated DST; 
+<li><b>fun4prdf</b> where you can reconstruct a phenix data file and produce a reconstructed DST, a nanoDST and a picoDST for muons;
+<li><b>fun4dst</b> where you can analyse a reconstructed DST, reprocess the reconstruction and/or run the mutoo event displays.
+</ul>
+
+</body>
+
+*/

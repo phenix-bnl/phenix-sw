@@ -1,0 +1,171 @@
+/*! @defgroup TUT1 Fun4Muons_RecoPRDF Tutorial
+
+<body>
+<center>
+<h2> How to run muon reconstruction on phenix raw data files (PRDF) </h2>
+</center>
+
+<h4> What this tutorial covers </h4>
+
+<p>
+This tutorial assumes you have already in your possesion a phenix data file (PRDF) on which you want to run the muon reconstruction software to generate various output files such as DST, nanoDST, picoDST and evaluation ntuples. Note: if you don't have these you can still complete the tutorial using the included demo dst file. 
+ 
+<h4> Step 1: Checking things out of CVS and running the setup script </h4>
+You need to have a properly configured work area before running the tutorial. See the <A HREF="group__TUTO.html">getting started</A> section for details
+
+</ul>
+<h4> Step 2: Running the PRDF to DST event loop </h4>
+<ul>
+<li> Change your working directory to the fun4prdf directory and soft link your favorite PRDF file
+to data.prdf. 
+\code
+rcas2067% cd fun4prdf
+rcas2067% ln -sf my_favorite_prdf_file.prdf data.prdf
+\endcode
+<br>
+
+in case you don't have any, there is one set for you in the setup_dirs.prl script. Then you run the macro:
+
+<li> initialize the database environment variables as well as your LD_LIBRARY_PATH:
+\code
+rcas2067% source SETUP
+\endcode
+<br>
+
+
+<li> run the root macro
+\code
+rcas2067% root -b -q Fun4Muons_RecoPRDF.C
+\endcode
+<br>
+
+if you want to redirect your job output to a file, say run.log you can run:
+\code
+rcas2067% root -b -q Fun4Muons_RecoPRDF.C >& run.log&
+rcas2067% tail -f run.log
+\endcode
+<br>
+<li> have a look at the ouput files. Following files should be present in the fun4prdf directory, as long as you enabled the
+corresponding flags in the Fun4Muons_RecoPRDF.C macro:
+<ul>
+<li> dst_out.root, the reconstructed output DST,
+<li> ndst_out.root, the output nanoDST (MWG style)
+<li> pdst_out.root, the output picoDST. 
+<li> various root evaluation files:
+  <ul>
+  <li>muon_ana_ntuples.root  
+  <li>muon_error_statistics.root 
+  <li>_mutoo_ntuple.root
+  </ul>
+</ul>
+
+</ul>
+<h4> Step 3: Understanding what you just did </h4>
+<ul>
+<li> If you look in the Fun4Muons_RecoPRDF.C script you will see that various
+objects derived from the SubsysReco type are instantiated.  For example the mutoo 
+reconstruction this looks like.
+\code
+se->registerSubsystem( new MuonDev() );
+\endcode
+<br>
+
+which instanciate the reco class and register it to the fun4all server. Some modules have the instanciation and the registration done separately, to allow runtime customization of the module:
+\code
+SubsysReco *mutoo_unpack = new MuonUnpackPRDF();
+mutoo_unpack->Verbosity(1);
+se->registerSubsystem( mutoo_unpack );
+\endcode
+<br>
+
+If you wanted to run other subsystems (e.g. muioo), one would put these to lines in for each subsystem desired.  Some
+of the other systems that one wants to run in addition to mutoo are included in the Fun4Muons_RecoPRDF.C macro in order to filter out the data, produce a reconstructed DST, a nanoDST and possibly a picoDST. Some of them are controlled using flags on top of the files.
+<br>
+
+<li>  <strong>Where is the output ?</strong>  
+The output dst file is called dst.root and lives in the fun4prdf directory.
+To add interface object to the DST one insert a line as illustrated below into this macro.
+\code
+dstManager->AddNode("TMutHit")
+\endcode
+<br>
+
+</ul>
+<h4> Step 4: Changing run-time parameters and editing the MuonDev module </h4>
+<ul>
+<li> The source code for MuonDev.cxx is part of the mutoo_subsysreco package. 
+It is here that one modifies the default runtime parameters and/or modifies the set of analysis modules used in the reconstruction. 
+\code 
+rcas 2067% cd ../mutoo_subsysreco
+rcas 2067% ls MuonDev.C
+MuonDev.C
+\endcode
+<br>
+
+<li>   Every mutoo analysis module has a runtime parameter table. To change the default values one access
+the module parameter table from the node tree and uses the accessor method to change the desired value.  An
+example taken from MuonDev.C is shown below.
+
+\code
+int MuonDev::CreateNodeTree(PHCompositeNode *top_node) {
+
+  .../snip
+
+
+  // Get a pointer to the mMutFindTrack modules parameter table from the node tree
+  mMutFindTrackPar* ftr_par = TMutNode<mMutFindTrackPar>::find_node(mutoo_node, "mMutFindTrackPar");
+
+  // Change the verbosity value (controls the amount of verbage to printed to the screen)
+  ftr_par->set_verbosity(MUTOO::ALOT)
+
+  .../snip
+ 
+}
+\endcode
+<br>
+
+Upon making your change you will have to compile and install in your local library area the mutoo_subsysreco package.
+
+\code
+rcas 2067% cd ../mutoo_subsysreco
+rcas 2067% make install
+\endcode
+<br>
+
+You now should have your local version of the mutoo_subsysreco library installed in the directory mutoo_i.
+
+The complete specification of what runtime parameters are associated with a given module found
+in the analysis module documentation.  This documentation is available 
+<a href="http://www.nevis.columbia.edu/~kelly/phenix/MUTOO/group__modules.html">here</a>.
+Follow the link to the module you are interested in and subsequently follow the link to that module's
+parameter table that is part of the Analysis Module Specification. <br>
+<li> The order and choice of analysis modules that make up the reconstruction encoded in the process_event
+method of the MuonDev class.  Below is shown a typical set of analysis modules used for reconstruction.
+Some modules are interchangable, eg mMutKalFit and mMutTrackFit both perform single track momentum
+reconstruction.
+\code
+    rc->set_IntFlag("DATABASE", 1);
+
+    mMutFindClusMod->event(mutoo_node);
+    mMutFitClusMod->event(mutoo_node);
+    mMutFindGapCoordMod->event(mutoo_node);
+    mMutFindTrackMod->event(top_node);
+    mMutBPFitMod->event(top_node);
+    mMutRejectTrackMod->event(top_node);
+    mMutKalFitMod->event(top_node);          
+    mMutFindVtxMod->event(mutoo_node);    
+    mMutBPVertexMod->event(top_node);      
+    mMutL2FastVtxMod->event(top_node);      
+    mMutMuiRoadMod->event(top_node);
+
+\endcode
+<br>
+
+To effect a change you have made to the process_event method simply recompile the mutoo_subsysreco library as was the case in changing a runtime parameter.
+</ul>
+<h4> Step 5: Modifying a MUTOO analysis module </h4>
+<ul>
+<li> MUTOO reconstruction and simulation is organized into analysis modules.  To see how to modify or develop an analysis modules please see the tutorial "Developing A MUTOO Analysis Module".
+</ul>
+
+*/

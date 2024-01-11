@@ -1,0 +1,75 @@
+graph associations {
+	ratio = fill;
+	node [style=filled];
+	{rank=same; 
+	trk1[label="TMutTrk" color="0.350 0.20 0.600"]
+	}	
+	{rank ="min"; 	
+	eval1[label="TMutEval" color="0.30 0.50 1.000"]
+	}	
+	{rank="min"; 
+	mctrk1[label="TMutMCTrk" color="0.50 0.50 1.000"]
+	}	
+	{rank=same;
+	mchit1[label="TMutMCHit" color="0.0 0.500 1.000"] 
+	mchit2[label="TMutMCHit" color="0.0 0.500 1.000"] 
+        }
+	{rank=same; 
+	gcoord1[label="TMutGapCoord" color="0.30 3.00 0.700"]
+	gcoord2[label="TMutGapCoord" color="0.30 3.00 0.700"]
+	}	
+	{rank=same; 
+	coord1[label="TMutCoord" color="0.650 0.00 0.700"]
+	coord2[label="TMutCoord" color="0.650 0.00 0.700"]
+	coord3[label="TMutCoord" color="0.650 0.00 0.700"]
+	coord4[label="TMutCoord" color="0.650 0.00 0.700"]
+	}	
+	{rank=same; 
+	clus1[label="TMutClus" color="0.650 0.700 0.700"]
+	clus2[label="TMutClus" color="0.650 0.700 0.700"]
+	clus3[label="TMutClus" color="0.650 0.700 0.700"]
+	clus4[label="TMutClus" color="0.650 0.700 0.700"]
+	}	
+	{rank="max" 
+	hit1[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit2[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit3[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit4[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit5[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit6[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit7[label="TMutHit" color="0.000 0.500 0.900"] 
+	hit8[label="TMutHit" color="0.000 0.500 0.900"] 
+	}
+	mctrk1 -- eval1;
+	trk1 -- eval1;
+	mctrk1 -- trk1;
+
+	gcoord1 -- coord1;
+	gcoord1 -- coord2;
+	gcoord2 -- coord3;
+	gcoord2 -- coord4;
+	coord1 -- trk1;
+	coord2 -- trk1;
+	coord3 -- trk1;
+	coord4 -- trk1;
+	clus1 -- coord1;
+	clus2 -- coord2;
+	clus3 -- coord3;
+	clus4 -- coord4;
+	hit1 -- clus1;
+	hit2 -- clus1;
+	hit3 -- clus2;
+	hit4 -- clus2;
+	hit5 -- clus3;
+	hit6 -- clus3;
+	hit7 -- clus4;
+	hit8 -- clus4;
+	mchit1 -- coord1;
+	mchit1 -- coord2;
+	mchit2 -- coord3;
+	mchit2 -- coord4;
+	mchit1 -- gcoord1;
+	mchit2 -- gcoord2;
+}
+
+

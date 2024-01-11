@@ -1,0 +1,6 @@
+setenv JPROF_FLAGS="JP_START JP_FIRST=120 JP_PERIOD=0.05"
+setenv MUONS `cd ../../../ ; pwd`
+setenv LD_LIBRARY_PATH .:${MUONS}/mutoo_i/lib:${LD_LIBRARY_PATH}
+echo ${LD_LIBRARY_PATH}
+setenv OO_FD_BOOT $PHENIX_FD_BOOT
+echo $OO_FD_BOOT

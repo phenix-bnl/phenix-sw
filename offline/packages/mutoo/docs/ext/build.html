@@ -1,0 +1,140 @@
+/*! @defgroup BUILD Building mutoo and related packages
+
+<h3> Build mutoo and related from scratch </h3>
+<ul>
+<li> cd to a clean working directory (eg. mkdir muons, cd muons) and checkout the code.
+
+\code
+mkdir sandbox
+cd sandbox
+cvs checkout -d mutoo offline/packages/mutoo 
+\endcode
+<br>
+
+the following is not necessary unless you are planning to change some classes header file used in GlobalReco, or you want to hack in preco/fun4all
+\code
+cd ../preco_b 
+make install 
+\endcode
+<br>
+</ul>
+
+To check that your local build is correct, you can go through one of the tutorials listed in the main page.
+
+<h3> Directory/File Setup Explained </h3>
+ After you run setup_dirs.prl script you should have a directory tree as illustrated below.
+<p>
+<pre>                     
+         mutoo  mutoo_b  mutoo_i  preco  preco_b  mutoo_subsysreco  mutoo_subsysreco_b
+           |
+   _____________________________________________________________________________
+   |       |       |        |        |          |       |        |              |
+analysis classes display  docs   interface    macro  modules  response     test_programs
+
+</pre>
+<p>
+<ul>
+<li> <b>mutoo</b> root mutoo source directory
+<ul>
+<li> <b>mutoo/classes</b> MUTOO Class Library.
+<li> <b>mutoo/interface</b> MUTOO interface objects (IOs) and interface object containers (IOCs).
+<li> <b>mutoo/modules</b> MUTOO analysis modules.
+<li> <b>mutoo/docs</b> MUTOO documentation.
+<li> <b>mutoo/test_programs</b> MUTOO test programs.
+<li> <b>mutoo/analysis</b> - obsolete - "pdst" analysis programs for DST level analysis.
+<li> <b>mutoo/preco</b> - obsolete.
+<li> <b>mutoo/response</b> - obsolete - Steering scripts for running the mMutSlowSim modules as part of the response chain.
+<li> <b>mutoo/macro</b> - obsolete - root macros for various configurations. These macros are not maintained anymore and will disappear soon. The official macros, used for instance in the tutorials are located in preco/macros.
+</ul>
+<li> <b>mutoo_b</b> mutoo build directory
+<li> <b>mutoo_subsysreco</b> mutoo subsysreco (fun4all modules) distribution
+<li> <b>mutoo_subsysreco_b</b> mutoo subsysreco (fun4all modules) build directory
+<li> <b>mutoo_i</b> mutoo install directory. All libraries and header files are copied here
+<li> <b>muioo</b> muioo distribution
+<li> <b>muioo_b</b> muioo build directory
+<li> <b>preco</b> preco distribution
+<li> <b>preco_b</b> preco build directory
+<li> <b>preco_i</b> preco install directory
+</ul>
+
+<h3> Rebuild mutoo and related packages after file modifications </h3>
+When some code is modified, you will need to rebuild part of the software. The parts you need to recompile depends on the scope of the file you modify.
+
+<ul>
+<li> .cxx files: you just need to recompile the local directory, since no other files get affected
+<li> .h or .hh files: these are headers. Since many files may have these headers included, you need to recompile at least the full mutoo_b directory. Some files are shared with muioo, mutoo_subsysreco and even preco (though very few). For instance, most of the modules header (under mutoo/modules) and interface headers (in mutoo/interface) are shared with mutoo_subsysreco, whereas some classes headers (in mutoo/classes) are shared with muioo. Therefore you'd better recompile the whole thing, as from scratch. Apart from few exceptions (notably because of preco/Subsysreco.h), the makefiles are made so that only the needed (i.e. directly or indirectly modified) files are recompiled. Still some classes have a very large scope (as for PHMap.h) and rebuild will easily take 20 minutes.
+</ul>
+
+<h3> Getting rid of the setup_dirs.prl script (for advanced developers)</h3>
+The setup_dirs.prl script may look too rigid to advanced users/developers who may want to have their local build being installed at a different place or with a different name than mutoo_i, or add other packages (such as lvl2, MWG, etc) to the build. Here are some instructions to bypass the script and do the installation by hand.
+
+<ul>
+<li> If you have no local installation directory where to store the headers and, create one anywhere, store it in a environment variable (here LOCAL_SETUP). <br>
+Note: the environment variable will be used to configure the package as well as your LD_LIBRARY_PATH. it must point to the full path.
+
+\code
+mkdir local_libs
+cd local_libs/
+setenv LOCAL_SETUP `pwd`
+\endcode
+<br>
+
+<li> Be sure that your LD_LIBRARY_PATH includes the $LOCAL_SETUP/lib directory which is where all your local libraries will be installed:
+
+\code
+setenv LD_LIBRARY_PATH $LOCAL_SETUP/lib:$LD_LIBRARY_PATH 
+\endcode
+<br>
+
+<li> Check out your favorite package (here mutoo) from cvs and make yourself a build area. 
+
+\code
+cvs co -d mutoo offline/packages/mutoo
+mkdir mutoo_b
+\endcode
+<br>
+
+<li> Configure, build and install the package:
+
+\code
+cd mutoo_b
+../mutoo/autogen.sh --prefix=$LOCAL_SETUP
+make install-data
+make install
+\endcode
+<br>
+<p>
+<p>note: the <i>make install-data</i> step has been made necessary due to recent changes in the phenix build scripts and consequences on mutoo/muioo makefiles. Indeed, the later cannot have explicit include search path to relative directories as was the case before. This copies all mutoo header from the source directory to the installation include directory prior to any compilation. Not doing this step may result in any kind of inconsitancies in the build and random crashes.
+
+<p>The --prefix option to autogen.sh tells automake where the libraries and headers will be copied at installation stage. The headers are copied to $LOCAL_SETUP/include whereas the libraries are copied to $LOCAL_SETUP/lib
+
+<p>
+<li> Repeat the last two steps for all others packages you want to build locally, always keeping the same LOCAL_SETUP environment variable, so that all headers needed for compilation are taken from the same place and all libraries are installed to the same place. 
+<br><br>
+To complete all compilation stages defined in the setup_dirs.prl script, you will have to repeat these steps at least for 
+<ul>
+<li>offline/packages/muioo 
+<li>offline/packages/mutoo_subsysreco 
+<li>and possibly offline/framework/preco
+</ul>
+If you plan to make strong modifications to mutoo, you may also need to build locally the following:
+<ul>
+<li>offline/packages/MWG
+<li>online/calibration/Run3/subsystems/reco
+</ul>
+these are up to now the packages which explicitly depends on some mutoo maps I am aware off. This list may change in the future. Fill free to update this page consequently.
+<br><br>
+
+<li> Run the macros: 
+As long as the $LOCAL_SETUP/lib path is located at the front of your $LD_LIBRARY_PATH, the libraries installed there will be chosen by root (and any other program) preferentially to the one found elsewhere, and notably in the $OFFLINE_MAIN/lib path, set up by the phenix environment. You may for instance go through one of the tutorials listed on the main page, skipping the local build setup part and creating your own work directory.
+<br><br>
+</ul>
+*/
+
+
+
+
+
+
+
+

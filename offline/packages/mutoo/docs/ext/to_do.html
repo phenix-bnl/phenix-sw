@@ -1,0 +1,181 @@
+/*! @defgroup TODO To Do List
+
+<body>
+<h1> Getting Muon Software ready for the Run AuAu challenge</h1>
+
+<a href="#RE">Resolution/Efficiecy</a><br>
+<a href="#PR">Pattern Recognition</a><br>
+<a href="#LL">Low level, Miscellanuous</a><br>
+<a href="#MUIOO">MUIOO</a><br>
+<a href="#MUIOO">Performance</a><br>
+
+<a name="RE">
+<h3> Resolution and Efficiency </h3>
+
+<ul>
+
+<li> <strong> Evalutation </strong>
+
+Using embedding with HIJING events check efficiency, speed, resolution
+and signal to background. Do the same mixing with real AuAu events
+from Run 2. (Melynda - New Framework)(Pat - Old Framework)
+
+<li> <strong> North South Efficiency Difference </strong>
+Observed efficiency difference between North and South in old
+framework. Is this reproduced in New ? (Xiaorong)
+
+<li> <strong> Ghost Rejection </strong>
+
+With HIJING: compare number of found tracks with number of tracks that
+actually make enough hits in the entire system.  Determine how to best
+reject extra tracks
+
+<li> <strong> Track Matching </strong>
+
+Check MC calculated efficiency compared to real data efficiency a la
+the Run 2 data analysis: predict when a track should be found using
+MuID roads and see when they are found and compare between MC and real
+data.  Make sure phi and theta distributions match in all areas.
+
+<li> <strong> Detailed Evaluation of Track Finding </strong>
+
+At track finding stage store number of tracks formed at each station
+(I think I have this working but need to check once code is running at
+reasonable speed again) (Melynda).  At stub forming stage store the
+cut variable distributions and, if reasonable, comparison to true
+values when running on MC (Sean)
+
+<li> <strong> Inner Anodes </strong>
+
+Make decision on inner anode HVs being on or not.  Do we want to add
+some OnCal histos specifically to address occupancy rates?  Maybe we
+will want to restrict HV area even more if J/psi could possibly be
+compromised?
+
+<li> <strong> Resolution </strong>
+The j/psi resoution in pp data seems to be ~50 MeV worse for new
+framework di-muons.  In order to investigate this we need to select
+from the pp DST produced by DongJo those events that have a new or old
+framework di-muon pair in the vicinity of the j/psi mass and combine
+them into a "golden sample" DST.
+</ul>
+
+<a name="PR">
+<h3> Pattern Recognition </h3>
+
+<ul>
+<li> <strong> Windowing Stub Finder </strong> -  The current stub finder
+has a mode that preselects active cathodes that fall within a provided
+theta, phi window.  The code is written but tests indicate that its buggy.
+
+<li> <strong> Error Propagation for Window Size </strong>
+
+Use error propagation when determining any cut windows rather than
+using constant windows (needed in stub formation as well as
+station-to-station window determination).  Are error calculations
+available at each step?
+
+<li> <strong> Additional Stub Cuts </strong> 
+Station 2 and Station 1 stubs are found without using any data from previous
+stations stub.  Differences in the stub angles are limited from real tracks.
+One could investigate the ranges with monte-carlo and apply cuts on the fly.
+Nominal projection cut etc as in old framework.
+
+<li> <strong> MUIOO seeding </strong> -  Reconstructing every track in 
+a central AuAu event (>300 tracks) takes a long time.  The code to seed
+from the MUID needs to be modified to use the new TMuiRoadO interface from
+MUIOO and tested (MB - done)
+
+<li> <strong> Encorporating bend plane fit/projection. </strong>  The current
+PR uses fixed theta/phi windows centered around a stub in the previous station
+to selet stubs to associate with tracks.  Using a 1 bend plane fit to stations
+2 and 3 to contrain the track and then using the resulting BP par to project to
+station 1 can refine the search windows and reduce the ghost tracks.  (Mike)
+
+<li> <strong> Bend Plane Ghost Rejection </strong>  The current code uses the
+chi-square from the Kalman Fit to select the best track from the set of tracks
+that share a common stub.  Using the BP fit chi-square too select the best track
+is much faster -- Need to be investigated using simulations.
+
+<li> <strong> Kalman filter based pattern recognition.</strong> 
+Using the Kalman filter to pick up hits associated with a track as the
+track is being fit is an alternative to the traditional Stub/Window
+approach.  The KF provides the optimal estimate for the track
+parameters with n data points.  If n is large enough using the KF
+parameters to extrapolate could do better.  What is n ?
+
+</ul>
+
+<a name="PR">
+<h3> Low level, Miscellaneous </h3>
+<ul>
+<li> <strong> Unpacker </strong>
+Add out of time rejection at unpacker stage.
+
+<li> <strong> Cluster Fit </strong>
+Finish multi-track fit cluster logic, and add error propagation
+from clusters that include scratched cathodes.
+
+<li> <strong> Alignment Code </strong>
+Finish MuonAlign super module check with field off from Run3 before
+first data.
+
+<li> <strong> Data Checks </strong>
+
+<ul>
+<li> Check analog cable mapping on all stations/planes (I was able to do
+this straight-forwardly with the clustdata2 ntuple)
+
+<li> Check HV mapping (probably don't need this after Run 3 but couldn't
+hurt to double-check?)
+
+<li> Make sure calibration code checks for duplicated channels every time.
+I think we should make sure we don't have any packets that develop
+this problem over time rather than just doing a one-time check.
+
+<li> Detailed check of all radiographs:  do all blank/hot spots make sense?
+
+<li> Detailed check of each plane hit distributions--do they all make sense?
+
+<li> Seems (20/20 hind-sight) OnCal should have better checking of dead/hot
+packets or at least instructions on how an expert should react. When a
+hot packet occurs, there should be a set of checks done: is the
+calibration screwy, does the data look reasonable if the calibration
+looks o.k., etc.
+
+<li> Check pulse-height and cluster-width distributions.  I believe this is
+all in OnCal pretty well now, but AuAu could require some special
+checking of cluster-width, etc.
+
+<li> Add resolution/efficiency checks to MuTr? (Can be done easily from
+ClustData2-type ntuple for stations 1 and 2)
+</ul>
+
+</ul>
+
+<a name="MUIOO">
+<h3> MUIOO </h3>
+<li> <strong> Road Finding I </strong> LL1 style road finder.
+<li> <strong> Road Finding II </strong> 2d stub-finder style road finder.
+
+<a name="Performance">
+<h3> PERFORMANCE </h3>
+
+<ul>
+<li> <strong> Profiling the code</strong> 
+Hugo's excellent time server to determine which modules are
+bottlenecks.  Use JProf to track things down at a finer scale.
+
+<li> <strong> Object I/O </strong>
+Investigate the use of TObjArray instead of TClonesArray in the object
+i/o in the context of the new ROOT.  Currently we write a flat TClonesArray
+of MUTOO/MUIOO objects to the DST.  This requires copy constructing each
+object to be written out.  TObjArray would only require us to copy a pointer
+but I couldn't get it to work with the old root.
+</ul>
+
+<a name="LEVEL2">
+
+*/
+
+

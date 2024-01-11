@@ -1,0 +1,21 @@
+AC_INIT(configure.in)
+
+AM_INIT_AUTOMAKE(fvtxoo, 1.00)
+AC_PROG_CXX(CC g++)
+AC_ENABLE_STATIC(NO)
+AC_PROG_LIBTOOL
+
+if test $ac_cv_prog_gcc = yes; then
+  CXXFLAGS="$CXXFLAGS -Wall -Werror"
+fi
+
+# Don't define install.  Let autoconf/automake do it
+##INSTALL="/usr/bin/install -C -D"
+
+AC_OUTPUT( \
+	   Makefile \
+	   base/Makefile \
+	   interface/Makefile \
+	   modules/Makefile \
+	   display/Makefile \
+	   alignment/Makefile )

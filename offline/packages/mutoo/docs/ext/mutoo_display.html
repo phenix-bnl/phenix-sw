@@ -1,0 +1,89 @@
+/*! @defgroup TUT5 Fun4Muons_Display Tutorial
+
+<body>
+<center>
+<h2> How to run 2D/3D event display on reconstructed DSTs </h2>
+</center>
+
+<h3> What this tutorial covers </h3>
+
+<p>
+This tutorial enables you to vizualize events on a 2D and/or 3D event display. It runs on reconstructed DSTs, either from Monte Carlo or real data. It assumes you already have such a DST. If you don't, one default DST is provided to you by the setup_dirs.prl script.
+
+<p>
+The event loop do not run the reconstruction so that it runs fast. It only picks whatever interface objects  from the DST and draw them event by event, together with the associated detector on request from the user:
+<ul>
+<li> TMutMCTrk, the Monte Carlo tracks for both mutr and muid detectors, if any;
+<li> TMutClus, the clusters in the mutr detectors; 
+<li> TMutStub, the stubs ( straight segment of tracks) in each mutr detector station;
+<li> TMutTrk, the reconstructed tracks in the mutr detector;
+<li> TMuiClusterO, the clusters in the muid detector;
+<li> TMuiRoadO, the reconstructed tracks in the muid detector.
+</ul>
+The Fun4All "super-modules" that accomplish these tasks are enumerated below:
+<ul>
+<li> MuonReadBackDST - reads all interface objects from the DST
+<li> Muon2DDisplay - is the mutoo 2D event display.<br> it only runs for the mutr detector and offers the possibility to draw an octant based mutr side view or a full front view. Tracks, stubs and coordinates are drawn. It can also dump the hit, clusters, tracks (etc.) to stdout.
+<li> Muon3DDisplay - is the mutoo/muioo 3D event display<br>
+it creates a customizable 3D view of mutr/muid detectors and displays the roads/tracks/clusters on request. Since it has no dump facility as for the 2D event display, it is a good idea to run the 2 of them simultaneously.
+</ul> 
+
+ 
+<h4> Step 1: Checking things out of CVS and running the setup script </h4>
+You need to have a properly configured work area before running the tutorial. See the <A HREF="group__TUTO.html">getting started</A> section for details
+
+<h4> Step 2: Running Fun4Muons_Display </h4>
+<ul>
+<li> Change your working directory to the fun4dst directory and soft link your favorite reconstructed DST to a local dst.root file.
+\code
+rcas2067% cd fun4dst
+rcas2067% ln -sf  my_favorite_reconstructed_dst.root dst.root
+\endcode
+<br>
+
+The reconstructed DST may come either from Monte Carlo data (see the <a HREF="group__TUT3.html">Fun4Muons_RecoDST_sim</a> tutorial) or from real data (see the <a HREF="group__TUT1.html">Fun4Muons_RecoPRDF</a> tutorial).
+
+<li> Source SETUP to initialize Objectivity environment variables and run the steering script.
+\code
+rcas2067% source SETUP
+rcas2067% root Fun4Muons_Display.C
+\endcode
+<br>
+
+The Fun4Muons will go through the various detectors geometry and calibration initialization then read the first event on the DST. It will then display a (non exhaustive) list of commands available from either the 2D or the 3D event display. You may test each of them on the current event, or go to the next event using 
+\code
+root[7] se->run(1)
+\endcode
+<br>
+
+you may also skip a certain amount of event to go to given event number:
+\code
+root[8] se->skipp(5)
+root[7] se->run(1)
+\endcode
+
+<h4> Step 3: an example </h4>
+<a HREF="event_3d.gif">Here</a> is the picture you get by running the following commands from the root prompt:
+\code
+root[0] muon_display_3D->draw_mut_detectors()
+root[0] muon_display_3D->draw_mui_detectors()
+root[0] muon_display_3D->draw_mc_tracks()
+root[0] muon_display_3D->draw_tracks()
+root[0] muon_display_3D->draw_stubs()
+root[0] muon_display_3D->draw_coords()
+root[0] muon_display_3D->draw_coordinates()
+root[0] muon_display_3D->draw_mui_roads()
+root[0] muon_display_3D->draw_mui_clusters()
+root[0] muon_display_3D->get_view()->RotateView( 60, -60 )
+\endcode
+<br>
+The resulting canvas ca be rotated, scaled, projected along the three space directions.
+You can also control the detectors/interface objects to be drawn on screen using a basic GUI by typing:
+\code
+root[0] muon_display_3D->menu()
+\endcode
+<br>
+</body>
+
+
+*/

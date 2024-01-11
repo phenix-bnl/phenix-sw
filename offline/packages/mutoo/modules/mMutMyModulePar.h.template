@@ -1,0 +1,40 @@
+#ifndef __MMUTMYMODULEPAR_HH__
+#define __MMUTMYMODULEPAR_HH__
+
+#include<PHObject.h>
+
+/*! 
+Runtime parameter object for mMutMyModule analysis module
+*/
+class mMutMyModulePar : public TMutParBase
+{
+  
+ public: 
+
+  /*! default constructor */
+  mMutMyModulePar(){;}
+  
+  /*! destructor */
+  ~mMutMyModulePar(){;}
+  
+  /*! PHOOL inteface requirement */
+  void identify(ostream& os = cout) const { os << "mMutMyModulePar";}
+  
+  // ADD GETTERS AND SETTERS FOR RUNTIME PARAMETERS HERE
+  //
+
+ private:  
+
+  // ADD RUNTIME PARAMETERS HERE
+  //
+  
+};
+
+#endif /* __MMUTMYMODULEPAR_HH__ */
+
+
+
+
+
+
+

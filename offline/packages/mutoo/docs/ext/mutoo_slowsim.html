@@ -1,0 +1,211 @@
+/*! @defgroup TUT2 Fun4Muons_PISA Tutorial
+
+<body>
+<center>
+<h2>how to Convert PISA files to DST/PRDF files</h2>
+</center>
+
+<H4>Content:</H4>
+<ul>
+<li><a href="#CONTENT">What this tutorial covers</a></li>
+<li><a href="#CHECKOUT">Checking things out</a></li> 
+<li><a href="#RUNNING">Running Fun4Muons_Pisa</a></li>
+<li><a href="#OUTPUT">Looking at the Ouput</a></li>
+<li><a href="#MODE">Changing the filtering mode</a></li>
+<li><a href="#PRDF">Writting a simulated PRDF file</a></li>
+<li><a href="#COMMENTS">Understanding what you just did</a></li>
+<li><a href="#MODIFICATIONS">Making modifications</a></li>
+<li><a href="#EFFIC">Changing the Muid efficiency in the response</a></li>
+</ul>
+
+<br>
+<h4><A NAME="CONTENT">What this tutorial covers</A></h4>
+
+This tutorial assumes you have already run PISA and have a PISA ouput file. Note: if you don't have these you can
+still complete the tutorial using the included demo PISA file. 
+<br>
+
+The idea is to convert PISA hits to MUTR and MUID detector hits once and store these 
+hits in DST format assuming a perfectly efficient detector. The subseqent phase of the 
+simulation and analysis chain can apply a runtime efficiency/noise mask selected according 
+to whatever run configuration you want to simulate. The Fun4All super-module
+that accomplishes these tasks is listed below.
+
+<ul>
+<li> MuonUnpackPisa - Unpacks PISA file, runs mMutSlowSim/mMuiSlowSim
+modules to convert raw PISA information into TMutMCTrk,
+TMutMCHit, and
+TMuiMCHit objects<br><br>
+ </ul>
+ 
+<h4> Step 1:<A NAME="CHECKOUT">Checking things out</A> of CVS and running the setup script </h4>
+You need to have a properly configured work area before running the tutorial. See the <A HREF="group__TUTO.html">getting started</A> section for details
+
+<h4> Step 2: <A NAME="RUNNING">Running Fun4Muons_Pisa</A> </h4>
+ <ul>
+<li> Change your working directory to the fun4pisa directory and soft
+link your PISA output file to pisa.root. If you just want to use the demo file
+then don't need to do anything; the softlinks were created by the setup script. 
+
+\code
+rcas2067% cd ../fun4pisa
+rcas2067% ln -s  /phenix/u/zhangc/simulation/PISAEvent.root pisa.root
+\endcode
+<br>
+ 
+<li> Source SETUP to initialize environment variables and run the steering script. 
+\code
+rcas2067% source SETUP
+rcas2067% root -b -q Fun4Muons_Pisa.C
+\endcode
+<br>
+</ul>
+
+<h4> Step 3: <A NAME="OUTPUT">Looking at the Ouput</A></h4> 
+The output from the Fun4Muons_Pisa
+event loop is a DST containing the TMutMC*, TMuiMC* objects. It is called dst_out.root 
+
+<h4><A NAME="MODE">Changing the filtering mode</A> </h4>
+ The super-module currently has two operation modes enumerated below.
+<ul>
+<li> <b>ALL</b> - This mode runs over all events, with no requirements for the events to be included.
+<li> <b>DIMUON_ONLY</b> - This mode looks at a TMutMCTrk
+and its associated TMutMCHit objects and checks whether the track has a hit in each of the stations 1, 2, and 3. It then checks 
+whether the event has a good positive and negative track in the same arm. If not, the event is rejected using the 
+specified <b>ACTION</b>, which can be set to either <b>ABORT</b> or <b>DISCARD</b> (the default). 
+<ul>
+<li><b>ABORT</b> cause the reconstruction to be aborted as long as the super-module do not accept the event. The other modules are not called and Fun4All directly goes to the next event
+<li><b>DISCARD</b> the reconstruction goes on normaly after the super-module. Still, since the module is used as an event selector to the fun4all DST output manager, the event will not get written to the output DST.
+</ul>
+<br>
+
+The mode and action can be set at the macro level in the Fun4Muons_Pisa.C
+script. If neither are specified, the defaults will be used (<b>ALL</b> and <b>DISCARD</b> ).
+\code 
+// set filtering mode:
+Muon_pisa->set_mode(MuonUnpackPisa::DIMUON_ONLY);
+
+// set action to take for event rejection:
+Muon_pisa->set_action(MuonUnpackPisa::DISCARD);
+\endcode
+<br>
+</ul>
+
+Provided you selected the <b>DIMUON_ONLY</b> mode, you can twick the way the filtering is done by also changing the following parameters in the Fun4All_Pisa macro:
+<ul>
+<li> changing the depth mode. The following lines:
+\code
+  /* 
+    set mui depth mode for unpacking 
+    uncomment the one you are interested in. 
+    Values are NONE|SHALLOW_SHALLOW|DEEP_SHALLOW|DEEP_DEEP
+    Default is NONE.
+    Makes sense only when mode is MuonUnpackPisa::DIMUON_ONLY
+  */
+  Muon_pisa->set_depth_mode( MuonUnpackPisa::NONE );
+\endcode
+<br>
+
+allows you to select events for which roads with specific depth (deep or shallow) are found. By default, no such selection is done.
+<li> selecting events with only two tracks. The following lines:
+\code
+  /* 
+    if flag is set to true, select events with strictly two tracks
+    Makes sense only when mode is MuonUnpackPisa::DIMUON_ONLY
+    default is false
+  */
+  Muon_pisa->set_two_tracks_only( false );
+\endcode
+<br>
+allows you to select events for which only the selected two roads are present, excluding any other <i>uninterresting</i> roads. This, combined with a proper depth mode, results in the cleanest sample you can get. This option is disabled by default.
+</ul>
+
+<h4><A NAME="PRDF">Writting a simulated PRDF together with the DST</A></h4>
+The <b>Fun4All_Pisa.C</b> also allows to write a simulated PRDF (Phenix Raw Data File) from the input pisa file, synchronized with the output DST. To do so, you need to enable one single flag in the macro, namely:
+\code
+  bool write_prdf = false;  // if true, prdf output gets written
+\endcode
+<br>
+By default the PRDF output gets written in <i>data_out.prdf</i>. This may be changed in the macro arguments. For technical reasons, only the mutr and muid hits are saved to the PRDF whereas other subdetectors are not written. Still you may reconstruct the resulting PRDF as explained in the <a HREF="group__TUT1.html">Fun4Muons_RecoPRDF tutorial</a>.
+
+This option is disabled by default.
+
+<h4><A NAME="COMMENTS">Understanding what you did</A> </h4>
+<ul>
+<li> What did I just run ?<br>
+If you look in the Fun4Muons_Pisa.C script you can see that several
+"super-modules" derived from the SubsysReco type are instantiated. For
+example the PISA-output unpacking super-module is instantiated with the
+line of code below.
+
+\code
+SubsysReco *Muon_pisa = new MuonUnpackPisa();
+\endcode
+<br>
+
+The super-module that handles the unpacking of the PISA
+file is called MuonUnpackPisa. The source
+code for this object is in the mutoo_subsysreco/ directory as is the
+source for all other super-modules.
+<br>Intantiating the reco class is not enough to get it to run you
+also have to register it with the fun4all server. The line in the
+run_muon.C macro that does this is shown below.
+
+\code
+registerSubsystem(Muon_pisa)
+\endcode
+<br>
+
+Sometimes these 2 steps are combined into:
+\code 
+registerSubsystem(new MuonUnpackPisa);
+\endcode
+</ul>
+
+<h4><A NAME="MODIFICATIONS">Making modifications</A></h4>
+<ul>
+<li> Modifications to the analysis modules used during
+the unpacking are made by modifying mMutSlowSim or mMuiSlowSim and
+recompiling the mutoo or muioo libraries. Modification to analysis module
+parameters are made in the super-module MuonUnpackPisa and require a recompile of mutoo_subsysreco.
+<li> Modifications to the DST output are made by
+editing the macro to add more branches to the DST, or by adding a new type 
+of filter (such as SINGLEMUON_ONLY) in MuonUnpackPisa and recompiling the 
+mutoo_subsysreco library.
+</ul>
+
+<h4><A NAME="EFFIC">Changing the Muid efficiency in the response</A></h4> 
+
+This section makes sense only if you plan to generate a simulated PRDF together with the simulated DST. In this case not only the PISA unpacker module is ran
+but also the mutr/muid response modules. In this case you may want to set a Muid tube efficiency by hand to decide if a MC hit must be converted to a hit in the
+muid detector and written to the PRDF or not. 
+
+There are two ways of specifying the muid tube efficiencies at the response level (i.e.
+when creating muid TMuiHitO objects from the TMuiMCHitO objects). Both of these
+methods assumes that the <b>use_hv_mask</b> flag is set to true in the
+MuonUnpackSim module (in mutoo_subsysreco/MuonUnpackSim.cxx):
+
+\code  mui_res_par->set_use_hv_mask(true); \endcode
+
+
+<ul> 
+<li>using a file containing all tubes two pack efficiencies;</li>
+
+provided that the previous flag is set to true, the files 
+\code
+tube_eff_north_default.txt
+tube_eff_south_default.txt
+\endcode
+are read at the TMuiHVMask object initialization. The files must contain a list of formated lines of type:
+\code [arm_index] [plane_index] [panel_index] [orientation] [twopack_index] [efficiency] \endcode
+efficiency numbers must be between 0 and 1. Once the files are read, every time a MC hits fires a tube, the response looks for the corresponding efficiency in the file and decides if a hit is to be generated or not. 
+
+<li>using a single value for all tubes;</li>
+
+To specify a single efficiency for all twopacks, set the MUIOO_TUBE_EFF recoConst flag in your favorite macro. Here in <b>Fun4Muons_RecoDST_sim.C</b>:
+\code rc->set_DoubleFlag("MUIOO_TUBE_EFF",0.95)
+\endcode
+sets all tubes efficiencies to 95%. Note: the value read from the Flag overrides any other values read from an input file if any, as specified above. 
+</ul>
+
+*/

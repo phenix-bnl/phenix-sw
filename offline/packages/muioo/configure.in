@@ -1,0 +1,14 @@
+AC_INIT(configure.in)
+
+AM_INIT_AUTOMAKE(muioo, 1.00)
+
+AC_PROG_CXX(CC g++)
+AC_ENABLE_STATIC(no)
+AC_PROG_LIBTOOL
+
+dnl Never remove the $CXXFLAGS from the setting of the CXXFLAGS
+if test $ac_cv_prog_gxx = yes; then
+  CXXFLAGS="$CXXFLAGS -Wall -Werror"
+fi
+
+AC_OUTPUT(Makefile base/Makefile interface/Makefile classes/Makefile modules/Makefile display/Makefile)

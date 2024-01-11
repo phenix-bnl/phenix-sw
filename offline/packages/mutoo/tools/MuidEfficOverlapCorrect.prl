@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+($#ARGV==0) || die"usage: OverlapCorrect  [input file]\n"; 
+
+$file = $ARGV[0];
+$new_file = "$file".".new";
+
+open(FILE, $file) || die "\ncan't open file $file\n";
+open(FILE1, ">$new_file") || die "\ncan't open file $file\n";
+
+while($line = <FILE>){
+    chop($line);
+    @toks = split(" +",$line);
+    $arm = $toks[0];
+    $plane  = $toks[1];
+    $panel  = $toks[2];
+    $orient = $toks[3];
+    $twopack = $toks[4];
+    $effic = $toks[5];
+    $correct = (1.06 - sqrt(1.1236 - 4*0.06*$effic))/0.12;
+    print "$arm $plane $panel $orient $twopack $correct\n";
+    print FILE1 "$arm $plane $panel $orient $twopack $correct\n";
+}

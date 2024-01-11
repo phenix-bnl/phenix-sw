@@ -1,0 +1,1 @@
+dot -Tgif assoc_graph_station.txt -o foo.gif

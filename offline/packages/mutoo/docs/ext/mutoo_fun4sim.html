@@ -1,0 +1,236 @@
+/*! @defgroup TUT3 Fun4Muons_RecoDST_sim Tutorial
+
+<center>
+<h2> How to run Embedding, Reconstruction and Evaluation </h2>
+</center>
+
+<h4>Contents:</h4>
+<ul>
+<li><a href="#CONTENT">What this tutorial covers</a></li>
+<li><a href="#CHECKOUT">Checking things out</a></li> 
+<li><a href="#RUNNING">Running Fun4Muons_Pisa</a></li>
+<li><a href="#OUTPUT">Looking at the Ouput</a></li>
+<li><a href="#MODE">Changing the embedding mode</a></li>
+<li><a href="#MACRO">Using the right macro with the right library</a></li>
+<li><a href="#PRDF">Writting a merged PRDF file</a></li>
+<li><a href="#COMMENTS">Understanding what you just did</a></li>
+<li><a href="#MODIFICATIONS">Making modifications</a></li>
+<li><a href="#EFFIC">Changing the Muid efficiency in the response</a></li>
+</ul>
+
+<h4><A NAME="CONTENT">What this tutorial covers</A></h4>
+
+<p>
+This tutorial assumes you have already run the slow simulator phase
+of the response/evaluation chain and have in your possesion both
+signal and background DST files.  Note: if you don't have these you
+can still complete the tutorial using the included demo signal and
+background files. The signal DST file contains the TMutMCTrk,
+TMutMCHit objects and potentially the TMuiHit objects. The background
+DST file can either contain TMutHit & TMuiHit objects from real data
+or the same set of Monte-carlo objects as the signal file.
+
+<p>
+The Fun4Muons_RecoDST_sim event loop is a fun4all style event loop that merges
+the TMutHit & TMuiHit objects derived from the signal and backgrond DST files,
+then runs the standard reconstruction, and finally runs the evaluation and
+generates standard evaluation ntuples. Apart from evaluation, it can also create a merged reconstructed DST, a nanoDST and a picoDST. The Fun4All "super-modules" that accomplish these tasks are enumerated below:
+
+<ul>
+<li> MuonUnpackSim - Unpacks signal and background DST, runs
+mMutResponse/mMuiResponse modules to convert TMutMCHit & TMuiMCHit
+into TMutHit/TMuiHit.
+<li> MuonDev & MuiooReco - Standard fun4all reconstruction modules
+<li> MuonAnaTuples - Create the standard reconstruction ntuples
+<li> MuonEval - Runs the evaluation modules and mines the resulting objects for standard evaluation ntuples
+<li> + additional non mutoo related modules to perform the nano/picoDST generation.
+</ul> 
+
+ 
+<h4> Step 1: <A NAME="CHECKOUT">Checking things out of CVS and running the setup script</A></h4>
+You need to have a properly configured work area before running the tutorial. See the <A HREF="group__TUTO.html">getting started</A> section for details
+
+</ul>
+
+<h4> Step 2: Running Fun4Muons_RecoDST_sim </h4>
+<ul>
+<li> Change your working directory to the fun4sim directory and soft link your favorite signal & background
+DST files to signal.root and background.root respectively. 
+\code
+rcas2067% cd fun4sim
+rcas2067% ln -sf  my_favorite_background_file.root background.root
+rcas2067% ln -sf  my_favorite_signal_file.root signal.root
+\endcode
+<br>
+
+The signal file must be a so called slowsim dst, as generated in the previous tutorial. The background file must be either a slowsim DST (typically Hijing) or a real data file. You will need to change the Mode in the macro accordingly. In case you don't have any favorite file, some are already soft linked in fun4sim by the setup_dirs.prl script.
+
+<li> Source SETUP to initialize Objectivity environment variables and run the steering script.
+\code
+rcas2067% source SETUP
+rcas2067% root -b -q Fun4Muons_RecoDST_sim.C
+\endcode
+<br>
+
+</ul>
+
+<h4>Step 3: <A NAME="OUTPUT">Looking at the Ouput</A></h4>
+The output from the Fun4Muons_RecoDST_sim event loop is a standard DST generated during
+the reconstruction with the addition of the TMutMC*, TMuiMC* objects.  In
+addition the MuonEval super-module generates a set of evaluation ntuples 
+that are contained in the file muon_eval_ntuples.root.
+<ul>
+</ul>
+
+<h4><A NAME="MODE">Changing the embedding mode</A></h4>
+The embedding super-module currently has three operation modes enumerated below.
+
+<ul>
+
+<li> <strong>MC_SIGNAL_MC_BG</strong> - This mode reads TMutMCHit, TMutMCTrk and
+TMuiMCHit from the signal/background DST files and runs the
+mMutResponse module to populate the TMutHitMap under the
+MUTOO_SIGNAL/MUTOO_BACKGROUND node.  
+
+<li> <strong>MC_SIGNAL_REAL_BG</strong> - This mode reads TMutMCHit, TMutMCTrk and
+TMuiMCHit from the signal DST files and runs the
+mMutResponse module to populate the TMutHitMap under the
+MUTOO_SIGNAL node.  The TMutHit objects are read from
+the background DST file and are used to populate the TMutHitMap
+under the MUTOO_BACKGROUND node.
+
+<li> <strong>MC_SIGNAL_NO_BG</strong> This mode is the same as the first mode
+but no background signal is read.
+
+<li> <strong>REAL_SIGNAL_REAL_BG</strong> This mode embeds real data signal (e.g. filtered p+p events) into real data background (e.g. Au+Au minimum bias events).
+
+When the hit maps from the signal and background DST files are filled the module
+mMutEmbed is call to merge the hits.  (In MC_SIGNAL_NO_BG mode this is just a 
+straight copy)  The merged TMutHitMap is stored in the MUTOO as are all other maps
+used in subsequent reconstruction.
+
+<p> The mode can be set at the macro level in the Fun4Muons_RecoDST_sim.C script.
+Simply open the macro in your favorite editor and change the mode to the one you wish to use.
+(MC_SIGNAL_NO_BG is used by default)
+\code
+muon_unpack->SetMode( MuonUnpackSim::MC_SIGNAL_NO_BG );
+\endcode
+<br>
+
+</ul>
+
+<h4><A NAME="MACRO">Using the right macro with the right library</A></h4>
+
+In October 2009 the embedding scheme used for the muon arms have been changed so that it does not conflict (in terms of node handling) with the central arm embedding. 
+The RecoDST_sim macro (see above) has been changed accordingly. The main drawback is that the new macro <strong>Fun4Muons_RecoDST_sim.C</strong> will not work with old code,
+namely everything older than <strong>ana.158</strong> or <strong>pro.83</strong>, and vice-versa.
+
+An old version of the macro is still available at <strong>preco/macros/Fun4Muons_RecoDST_sim-old.C</strong> that works with these older libraries.<br>
+
+<h4><A NAME="PRDF">Writting a merged PRDF together with the DST</A></h4>
+The <b>Fun4All_RecoDST_sim.C</b> also allows to write a simulated PRDF (Phenix Raw Data File) from the input DST files, synchronized with the output DST, if any. To do so, you need to enable one single flag in the macro, namely:
+\code
+  bool write_merged_prdf = false;  // if true, prdf output gets written
+\endcode
+<br>
+By default the PRDF output gets written in <i>data_out.prdf</i>. This may be changed in the macro arguments. For technical reasons, only the mutr and muid hits are saved to the PRDF whereas other subdetectors are not written. The mutr/muid hits are read from the signal and background input files whatever their origin, merged into single maps and then converted back to PRDF format. You then can reconstruct the resulting PRDF as explained in the <a HREF="group__TUT1.html">Fun4Muons_RecoPRDF tutorial</a>.
+
+This option is disabled by default.
+
+<h4><A NAME="OUTPUT">Understanding what you just did</A></h4>
+
+If you look in the Fun4Muons_RecoDST_sim.C script you can see that several
+"super-modules" derived from the SubsysReco type are instantiated.
+For example the DST unpacking super-module is instantiated
+with the line of code below.
+
+\code
+SubsysReco *muon_unpack = new MuonUnpackSim();
+\endcode
+<br>
+
+The super-modules that handle the unpacking and merging of the DST
+format signal and background files is called MuonUnpackSim.  The
+source code for this object is in the mutoo_subsysreco directory as
+is the source for the evaluation supermodule MuonEval.  
+
+The source code for the muon tracker reconstruction super-modules are MuonDev.cxx and MuiooReco.cxx, also located under the mutoo_subsysreco directory.
+
+Intantiating the reco class is not enough to get it to run; you also
+have to register it with the fun4all server.  The line in the
+run_muon.C macro that does this is shown below.
+
+\code
+se->registerSubsystem(muon_unpack)
+\endcode
+<br>
+
+The code that instantiates the full set of fun4sim supermodules is shown below.
+
+\code ///////////////////////////////////////////
+// Super Modules
+//////////////////////////////////////////
+MuonUnpackSim* muon_unpack = new MuonUnpackSim();
+muon_unpack->SetMode( mode );
+muon_unpack->Verbosity( 1 );
+se->registerSubsystem( muon_unpack );
+
+se->registerSubsystem( new MuiooReco() );
+se->registerSubsystem( new MuonDev() );
+
+if( do_evaluation ) {
+se->registerSubsystem( new MuonAnaTuples() );
+se->registerSubsystem( new MuonEval() );
+}
+
+\endcode
+
+<h4><A NAME="MODIFICATIONS">Making modification</A></h4>
+<ul> 
+<li>
+Modifications of the order/type of analysis modules used during the
+reconstruction are made by modifying MuonDev or MuiooReco and
+recompiling the mutoo_subsysreco libraries.  Modification to analysis module
+parameter tables are also made here and require a recompile.
+
+<li> 
+Modifications to the evaluation output are made by editing
+mutoo_subsysreco/MuonEval.cxx and recompiling the mutoo_subsysreco libraries.
+If you find that the standard eval ntuples are lacking then feel free
+to create and commit a new one.  At the evaluation stage you have full
+access to all the reconstruction ouput and the associated truth
+information.
+
+</ul>
+
+<h4><A NAME="EFFIC">Changing the Muid efficiency in the response</A></h4> 
+There
+are two ways of specifying the muid tube efficiencies at the response level (i.e.
+when creating muid TMuiHitO objects from the TMuiMCHitO objects). Both of these
+methods assumes that the <b>use_hv_mask</b> flag is set to true in the
+MuonUnpackSim module (in mutoo_subsysreco/MuonUnpackSim.cxx):
+
+\code  mui_res_par->set_use_hv_mask(true); \endcode
+
+
+<ul> 
+<li>using a file containing all tubes two pack efficiencies;</li>
+
+provided that the previous flag is set to true, the files 
+\code
+tube_eff_north_default.txt
+tube_eff_south_default.txt
+\endcode
+are read at the TMuiHVMask object initialization. The files must contain a list of formated lines of type:
+\code [arm_index] [plane_index] [panel_index] [orientation] [twopack_index] [efficiency] \endcode
+efficiency numbers must be between 0 and 1. Once the files are read, every time a MC hits fires a tube, the response looks for the corresponding efficiency in the file and decides if a hit is to be generated or not. 
+
+<li>using a single value for all tubes;</li>
+
+To specify a single efficiency for all twopacks, set the MUIOO_TUBE_EFF recoConst flag in your favorite macro. Here in <b>Fun4Muons_RecoDST_sim.C</b>:
+\code rc->set_DoubleFlag("MUIOO_TUBE_EFF",0.95)
+\endcode
+sets all tubes efficiencies to 95%. Note: the value read from the Flag overrides any other values read from an input file if any, as specified above. 
+</ul>
+
+*/

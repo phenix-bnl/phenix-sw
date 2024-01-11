@@ -1,0 +1,60 @@
+PACKAGE = bend_plane
+
+export MUTOO = ../../../mutoo_i
+
+CXXFLAGS = -g -I. \
+ -I$(MUTOO)/include \
+ -I$(ROOTSYS)/include \
+ -I$(OFFLINE_MAIN)/include \
+ -Wall
+
+ROOTLIBS = $(shell root-config --libs)
+
+# modified by Hugo PEREIRA <pereira@hep.saclay.cea.fr>
+# -lmfm and is needed for kalman
+LDFLAGS =  \
+ -L$(MUTOO)/lib \
+ -L$(OFFLINE_MAIN)/lib \
+ -lmutoo_classes \
+ -lmutoo_interface \
+ -lmutoo_modules \
+ -lmutoo_display \
+ -lphdisplay \
+ -lPHGeant \
+ -lphgeo \
+ -lphgui \
+ -lpdst \
+ -lfun4allfuncs \
+ -lmfm \
+ -lmut \
+ -lmutgeom \
+ -lgslcblas
+
+HDRFILES =
+
+ADDITIONAL_SOURCES = bend_planeDict.C
+
+CINTINCS = $(OFFLINE_MAIN)/include/
+
+SO = lib$(PACKAGE).so
+
+$(SO) : $(PACKAGE).cxx $(ADDITIONAL_SOURCES) $(HDRFILES)
+	$(CXX) $(CXXFLAGS) -g -o $@ -shared  $<  $(ADDITIONAL_SOURCES) $(LDFLAGS) 
+
+run_mutoo : run_mutoo.o 
+	$(CXX) $(LDFLAGS) $^ -o $@
+	@echo	
+
+.PHONY: clean
+
+bend_planeDict.C:  bend_plane.h bend_planeLinkDef.h
+	@echo "Generating ROOT Dictionnary ..."
+	rootcint -f $@ -c -I$(CINTINCS) $^
+
+clean: 
+	rm -f $(SO) *Dict*
+
+
+
+
+

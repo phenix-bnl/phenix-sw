@@ -1,0 +1,6 @@
+setenv MUONS `cd ../ ; pwd`
+echo "muon directory: "${MUONS}
+
+setenv LD_LIBRARY_PATH ${MUONS}/mutoo_i/lib:${LD_LIBRARY_PATH}
+echo "LD_LIBRARY_PATH: "
+echo ${LD_LIBRARY_PATH}

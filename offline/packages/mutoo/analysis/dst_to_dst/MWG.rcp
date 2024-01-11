@@ -1,0 +1,78 @@
+/**@name Muon NanoDST Run Control Parameter (MWG.rcp)
+
+The Run Control Parameter file {\it MWG.rcp} contains all
+the input parameters used to produce the output Muon nanoDST
+branch. This file is read during the execution; consequnetly one doesn't
+have to recompile the code when changing input parameters.\\
+
+Input parameters are divided in three different parameter sets:
+The event selection parameters, the particle selection parameters
+and the dimuon setting and selection parameters.
+\begin{enumerate}
+        \item {\bf Event selection}: Event selection parameters act as
+        event filter. Events passing these cuts are stored in 
+        the output nanoDST. Cuts descriptions are given below:
+        \begin{itemize}
+                \item {$vertexcut$ (default=40 cm)}: 
+                        if $|$ event Z$_{vertex}$ $|$ < $vertexcut$, keep event and proceed.
+                \item {$mintrackcut$ (default=1)}: 
+                        if number of tracks > $mintrackcut$, keep event and proceed.
+                \item {$maxtrackcut$ (default=1000)}: 
+                        if number of tracks < $maxtrackcut$, keep event and proceed. 
+        \end{itemize}
+        \item {\bf Particle selection}: Particle selection parameters act as
+        particle filter within an accepted event. Particles passing these 
+        cuts are stored in the output nanoDST. Cuts descriptions are given 
+        below:
+        \begin{itemize}
+		\item {$ghostsel$ (default=0)}:
+			if $ghostsel=1$ reject particle with $ghostflag=1$.			
+                \item {$ptlowcut$ (default=0.0)}: 
+                        if particle P$_T$ > $ptlowcut$, keep track and proceed.
+                \item {$pthighcut$ (default=1000.0)}: 
+                        if particle P$_T$ < $pthighcut$, keep track and proceed.
+                \item {$minhitcut$ (default=0)}: 
+                        if number of hits within the track > $minhitcut$, keep track and proceed.
+        \end{itemize}
+        \item {\bf Dimuon selection}: Dimuon branch processing is optionnal. If one wants single
+	muon object only within the output, one sets $dodimu = false$. If one wants both single
+	muon object and dimuon object within the output, one sets $dodimu = true$. When $dodimu=true$,
+ 	other dimuon selection parameters act as dimuon filter within an accepted event. Dimuons passing
+	the cuts are stored in the output nanoDST. Cuts description are given below:
+        \begin{itemize}
+                \item {$dodimu$ (default=false)}: if $dodimu=true$ dimuon branch is produced.
+                \item {$dimasscut$ (default=0.5 GeV)}: if dimuon mass > $dimasscut$, keep dimuon and proceed.
+        \end{itemize}
+\end{enumerate}
+*////
+
+
+//==============================================================//
+//                   RUN CONTROL PARAMETER                      //
+//==============================================================//
+// This file contains all needed parameters for nanoDST production 
+
+// Event selection
+//=================
+vertexcut	= 1000.0		// maximum |Z vertex| position
+mintrackcut 	= 1		// minimum number of tracks per event
+maxtrackcut 	= 1000		// maximum number of tracks per event
+
+// Particle selection
+//===================
+ghostsel        = 0             // if 1, reject tracks with ghostflag=1
+ptlowcut  	= 0.0		// minimum particle pT
+pthighcut 	= 1000.0	// maximum particle pT
+minhitcut  	= 0		// minimum number of hits per track
+
+// Dimuon selection
+//=================
+dodimu		= 1		// if 1, create diMuoTracks branch (0 otherwise) 
+dimasscut	= 0.5		// minimum dimuon candidate mass (in GeV)
+
+// Output selection
+//=================
+doframework	= 1		// 0=MuoTracks only (old framework), 1=MuoTracksOO only (new framework), 2=both
+
+
+

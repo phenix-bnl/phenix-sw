@@ -1,0 +1,6 @@
+setenv ONLCAL_MAIN `cd ../mutoo_i ; pwd`
+setenv OO_FD_BOOT phnxobjy.phenix.bnl.gov::/database/play_federation/PHENIX_PLAY
+setenv ONLCAL_CALIB $ONLCAL_MAIN/share
+setenv ONLCAL_BIN $ONLCAL_MAIN/bin
+setenv LD_LIBRARY_PATH $ONLCAL_MAIN/lib:$LD_LIBRARY_PATH
+echo $LD_LIBRARY_PATH

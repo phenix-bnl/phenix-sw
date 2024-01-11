@@ -1,0 +1,153 @@
+/*! @defgroup TUT4 Fun4Muons_ReadDST Tutorial
+
+<body>
+<center>
+<h2> How to read back a DST, create ntuples, nanoDST and picoDST </h2>
+</center>
+
+<h4> What this tutorial covers </h4>
+
+<p>
+This tutorial assumes you have already in your possesion a reconstructed DST either
+from a PRDF file (see the <a href="group__TUT1.html"> Fun4Muons_RecoPRDF Tutorial </a>) or from a slowsim DST
+(see the <a href="group__TUT3.html"> Fun4Muons_RecoDST_sim Tutorial </a>).
+Note: if you don't have these you
+can still complete the tutorial using the included demo dst file. 
+
+<p>
+The Fun4Muons_ReadDST event loop is a fun4all style event loop that reads all mutoo/muioo objects from a reconstructed DST, fills a collection of ntuples and possibly fills a nanoDST or a picoDST. These features can be switched on/off by changing the flags at the top of the macro. The macro does not run the standard reconstruction since the input DST is supposed to be already reconstructed.
+<p>
+The Fun4All "super-modules" that accomplish these tasks are enumerated below.
+
+<ul>
+<li> MuonReadbackDST - Unpacks the DST, reads all mutoo/muioo objects saved on it;
+<li> MuonAnaTuples - Create the standard real data evaluation ntuples;
+<li> MuonEval - Runs the evaluation modules for Monte Carlo data and fills Monte Carlo evaluation ntuples;
+<li> + additional non mutoo related modules to perform the nano/picoDST generation.
+</ul> 
+
+<h4> Step 1: Checking things out of CVS and running the setup script </h4>
+You need to have a properly configured work area before running the tutorial. See the <A HREF="group__TUTO.html">getting started</A> section for details
+
+</ul>
+<h4> Step 2: Running DST to NTUPLE event loop </h4>
+<ul>
+<li> Change your working directory to the fun4dst directory and soft link your favorite reconstructed DST file
+to dst.root.
+\code
+rcas2067% cd fun4dst
+rcas2067% ln -s my_favorite_reconstructed_dst.root dst.root
+\endcode
+<br>
+
+<li> Source SETUP to initialize Objectivity environment variables and run the steering script.
+\code
+rcas2067% source SETUP
+rcas2067% root -b -q Fun4Muons_ReadDST.C
+\endcode
+<br>
+
+if you want to redirect your job output to a file, say run.log you can run:
+\code
+rcas2067% root -b -q Fun4Muons_ReadDST.C >& run.log&
+rcas2067% tail -f run.log
+\endcode
+<br>
+<li> have a look at the ouput files. Following files should be present in the fun4prdf directory, as long as you enabled the
+corresponding flags in the Fun4Muons_ReadDST.C macro:
+<ul>
+<li> ndst_out.root, the output nanoDST (MWG style)
+<li> pdst_out.root, the output picoDST. 
+<li> various root evaluation files:
+  <ul>
+  <li>muon_ana_ntuples.root  
+  <li>muon_error_statistics.root 
+  <li>mutoo_eval_ntuple.root
+  </ul>
+</ul>
+Note: there is an alternative macro in the fun4dst directory, called Fun4MuonsRecoDST.C.
+It does about the same things as the Fun4MuonsReadDST.C except it also runs the standard mutoo/muioo reconstruction on the DST before filling the ntuples and creating nano/pico DSTs. This is usefull if you want to check your modifications to the code on real data without restarting from the PRDF level. To do the same job on a Monte Carlo DST you'd better use the Fun4MuonsRecoDST_sim macro, since evaluation ntuples are more complete there (see the <a href="group__TUT3.html"> Fun4Muons_RecoDST_sim Tutorial </a>). The usage of this macro is similar to the other one:
+\code
+rcas2067% source SETUP
+rcas2067% root -b -q Fun4Muons_RecoDST.C
+\endcode
+<br>
+
+</ul>
+
+<h4> Step 3: Understanding what you just did </h4>
+<ul>
+
+<li> 
+The Fun4Muons_ReadDST event loops unpacks the DST resident MUTOO interface
+objects and re-establishes the associations between them. One uses
+the same methods to access interface objects that have been unpacked
+from a DST as one does in manipulating them in actual analysis code. <br><br>
+
+<li> What did I just run ? <br>
+
+If you look in the Fun4Muons_ReadDST.C script you can see that several
+"super-modules" derived from the SubsysReco type are instantiated.For the mutoo 
+evaluation module, this looks like.
+\code
+se->registerSubsystem( new MuonAnaTuples() );
+\endcode
+<br>
+
+which instanciate the reco class and register it to the fun4all server. Some modules have the instanciation and the registration done separately, to allow runtime customization of the module:
+\code
+MuonReadbackDST *readback_dst = new MuonReadbackDST();
+readback_dst->Verbosity(1);
+se->registerSubsystem( readback_dst ); 
+\endcode
+<br>
+
+All the mutoo related supermodules are located under mutoo_subsysreco.
+The line of code below from MuonAnaTuples.cxx (in MuonAnaTuples::write_reco_ntuple)
+illustrates how to access one of the mutoo interface object containers from the node tree.  In
+the example we are accessing the TMutVtxMap vertex map.
+
+\code
+TMutVtxMap*  vtx_map = TMutNode<TMutVtxMap>::find_node(top_node,"TMutVtxMap");
+\endcode
+<br>
+
+To loop over the contents of the track map one gets an iterator to the contents
+using the range method. Note: in the example we use a const_iterator since we 
+have no intention to change the contents of the TMutVtxMap.
+
+\code
+TMutVtxMap::const_iterator vtx_iter = vtx_map->range();
+\endcode
+<br>
+
+The iterator is subsequently used to traverse the contents of the
+map. In the example below we use the "next" method of the iterator to
+return the current TMutVtx object and advance the iterator.  Its worth
+noting that when the iterator reaches the end of the map the next method
+returns null and the while loop terminates. 
+
+\code
+while(TMutVtxMap::const_pointer vtx_ptr = vtx_iter.next()){
+  vtx_ptr->get()->print();  
+}
+\endcode
+<br>
+
+
+</ul>
+</body>
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+

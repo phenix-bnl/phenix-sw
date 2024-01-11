@@ -1,0 +1,83 @@
+//////////////////////////////////////////////////////////////////
+//
+// Utility class: mMutMyModule:
+// Author: S.Kelly 
+// Date: 3/20/02
+// Description: Template for MUTOO analysis module
+//              
+//////////////////////////////////////////////////////////////////
+
+// MUTOO headers
+//
+#include <mMutMyModule.h>
+#include <mMutMyModulePar.h>
+#include <TMutNode.h>
+#include <PHException.h>
+#include <MUTOO.h>
+#include <PHTimer.h>
+
+// PHENIX headers
+//
+
+/*! \ingroup modules */
+/*! \file mMutMyModule.cxx */
+
+// STL/BOOST
+//
+#include <iostream>
+#include <string>
+
+mMutMyModule::mMutMyModule() : _timer("mMutMyModule")
+{
+  MUTOO::TRACE("initializing module mMutMyModule");
+}
+
+// Event method.
+
+PHBoolean mMutMyModule::event(PHCompositeNode* top_node)
+{
+
+  _timer.restart(); 
+  
+  try { 
+
+    // Reset IOC pointers
+    //
+    set_interface_ptrs(top_node);
+
+    // MODULE CODE GOES HERE
+    //    
+
+  } catch(std::exception& e) {
+    MUTOO::TRACE(e.what());
+    return False;
+  }  
+
+  // Timer
+  //
+  _timer.print(); 
+  return True;
+}
+
+/*! Reset IOC and external interface pointers */
+void mMutRespons::set_interface_ptrs(PHCompositeNode* top_node){  
+
+  // module runtime parameters
+  //
+  _mod_par = TMutNode<mMutMyModulePar>::find_node(top_node,"mMutMyModulePar");
+  _vtx_map = TMutNode<TMutVtxMap>::find_node(top_node,"TMutVtxMap");
+
+  // SET IOC POINTERS HERE
+  //
+} 
+
+
+
+
+
+
+
+
+
+
+

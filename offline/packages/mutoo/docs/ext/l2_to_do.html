@@ -1,0 +1,196 @@
+
+
+<body>
+<h1> Getting Muon Level2 Software ready for the Run AuAu challenge</h1>
+
+<a href="#HELP">HELP</a><br>
+<a href="#MUID">MUID</a><br>
+<a href="#MUTR">MUTR</a><br>
+<a href="#STUDIES">STUDIES</a><br>
+
+<a name="HELP">
+<h1> Getting Help </h1>
+<a href="http://www.phenix.bnl.gov/WWW/trigger/run4plan/Lvl2_index.html"> Tony's Level 2 page </a> <BR>
+<a href="http://www.phenix.bnl.gov/WWW/evb/lvl2"> Justins Level 2 page </a> <BR>
+<a href="http://www.phenix.bnl.gov/WWW/p/draft/gobinda/run4/doc/lvl2/Lvl2_NT_new.html"> Gobina's NT instructions (ATP 28, 29, 1A) </a> 
+
+<a name="MUID">
+
+<h1> MUID - LAND </h1>
+<h4> Accessors </h4>
+<ul>
+<li> L2MuiDataAccessor.C[.h], Complete north and south - [David S.]
+</ul>
+
+<h4> DB Primitives </h4>
+
+<ul>
+  <li> L2MuiDBPrimitives.C[.h]
+  Holds a mapping from raw data to logical tubes. [Complete with double check on cable swap correction]
+  
+  <li> L2MuiDBTrigPar.C[.h]
+  Run time parameters for Lvl1 like algorithm [David S.]
+
+  <li> L2MuiIdXtoZ.C[.h]
+  Mapping from symset to simple geometry.  Used to determine road parameters from symset [David S.]
+
+  <li> L2MuiDBTrigPar.adb (offline/RUN3_REAL/L2MuiDBTrigPar.adb) [David S.]
+    
+  <li> Need Geometry DB primitive for non-simset road finder [Sean K.]
+</ul>
+
+<h4> Algorithms </h4>
+<ul>
+  <li> Need to pull LL1 type algorithm from the attic.  This is the Lvl2 version of the
+       fast LL1 panel based road finder. [David S.] 
+  <li> Back port the above to muioo [David S.,  Sean K.]
+  <li> New roadfinder [On hold -- Sean K.]
+</ul>
+
+<h4> Primitives </h4>
+<ul>
+  <li> L2MuiPairs.C[.h] - [David S.]
+  <li> L2MuiTracksC[.h] - This needs some tweaking to make common with new roadfinder [David S., Sean K, Hugo]
+  <li> L2MuiSymsetCalcPerPanel.C [David S.]
+  <li> Lvl2_MuiTriggerUtils.C[.h]  -- Core of the algorithm for LL1 [complete] 1300 lines of bool comparisons.
+  <li> Need an offline style cluster primitive [On hold - Sean K.]
+  <li> Need an offline style road primitive [On hold - Sean K.]
+</ul>
+
+<a name="MUTR">
+<h1> MUTR - LAND </h1>
+<h4> Accessors </h4>
+<ul>
+  <li> L2MutrDataAccessor.C[.h] - current MUTR data accessor.  The code
+  to organize the data in either a sparsified Lvl2Array2D or a
+  non-sparsified L2SortTable is in place.  Only the Lvl2Array2D has been
+  tested and debugged.  The granularity of the accessor is arm, station, 
+  half-octant.  Each accessor contains space for 6 planes worth of data.
+  We add the NORTH arm.
+  
+<p>[Hugo - 2003/11/20] granularity is now arm/station/half-octant/gap for data
+accessor, cluster and coordinate primitive. Makes 288 primitives</p> 
+  
+<p>[Hugo - 2003/11/21] Lvl2SortTable succesfully tested, used in cluster primitive.</p> 
+  
+<li> We will need an accessor for the output from STPP modules
+
+</ul>
+
+<h4> DB Primitives </h4>
+<ul>
+
+<li> L2MutrGeomDBPrimitives.C[.h]. North and south arms in.
+
+<li>We need to regenerate the ascci DB files based upon latest geometry. 
+
+<p style="color: blue;">[Hugo - 2003/12/08] Done for both geometry DB and calibration DB from 'offline' style objectivity using Fun4All mutoo supermodule "MuonL2Util"</p>
+
+<li> L2MutrCalibDBPrimitives.C[.h]. Calibration DB primative. Generating this with ease during the run,
+make this part of the standard MUTR calibration runs.
+
+<li style="color: blue;"> L2MutrDBTrigPar.C[.h] new DB File to handle all runtime cuts for muon algorithms. Implemented in a "not too rigid" file format for readability (using a PARAMETER_Name::PARAMETER_Value syntax)
+ 
+</ul>
+
+<h4> Algorithms </h4>
+
+<ul>
+<li>L2MutrDimuonNorthTrigger.C[.h]
+<li>L2MutrDimuonSouthTrigger.C[.h]
+</ul>
+
+<p>Also existing are 
+<ul>
+<li>L2MutrSinglemuonNorthTrigger.C[.h]
+<li>L2MutrSinglemuonSouthTrigger.C[.h]
+</ul>
+will probably not be use
+
+<h4> Primitives </h4>
+<ul>
+
+<li> L2MutrClusterPrimitive - does clustering, finds local peak and
+returns centroid of peak strip. [Hugo]
+
+<p>[Hugo - 2003/11/21] Centroid done. Defined a Max cluster size of 5. Split clusters if larger (to be optimized). Use Lvl2SortTable instead of sparse table. Faster</p> 
+
+<li> L2MutrCoordPrimitive.C[.h] -  This finds a coordinate based upon
+an input list of projections.  
+<P style="color: blue;"> [Hugo - 2003/12/08] added a charge correlation cut between clusters of different planes, same gap. to build coordinates. Deteriorates efficiency a lot on RD so that it is kept large at the moment.
+
+<li> L2MutrTrackPrimitive.C[.h] - Matches with the MUID, instantiates
+L2MutrCoordPrimitive to find upstream coordinates and does the theta,
+delta phi -> momentum mapping.
+<p>[Hugo - 2003/11/20] Strongly modified. Looks for coordinates in all gaps instead of only one. Use a theta, phi window to search list of coordinates, added bifurcation when several coordinates are found. Lookup tables have been moved to a pure static class called L2MutrLookup. Used Jamie Nagle parametrisation instead of old one, gives better mass resolution. Same lookup table for both arms. Added a minumum (vertex) momentum cut for tracks: 1.5GeV</p>
+
+<li> L2MutrPairPrimitive.C[.h]
+<p>[Hugo - 2003/11/20] Added opening angle calculation, based on what's done in the L2MuiPairPrimitive; added check on the associated muid road index: pairs need different indices (this is necessary because of bifurcation).</p>
+<p  style="color: blue;">[Hugo - 2003/11/20] Added pair depth selection depending on L2MutrDBTrigPar depth mode parameter. All deep/sheep/shallow combinations implemented.</p>
+
+</ul>
+<h1> Studies and Presentations </h1>
+<a name="STUDIES">
+<ul>
+<li> <a href="https://www.phenix.bnl.gov/WWW/p/draft/hpereira/talks/L2_meeting_11_18_03/talk.pdf" > Level2 meeting on 2003/11/18 [Hugo]</a>
+<li> <a href="https://www.phenix.bnl.gov/WWW/p/draft/hpereira/postscript/lvl2" > level2 mass distributions for north and south arm for simulated pure JPsi samples [Hugo]</a>
+</ul>
+
+<h1> Useful Files </h1>
+<a name="FILES">
+This section lists the locations of files that have been used for level 2 studies.  
+<ul>
+<li> simulated J/Psi in north arm (both tracks in MUTR)
+<pre>
+/direct/phenix+data09/hpereira/simulation/pisa/jpsi_pis_filtered_19_11_2003.north.root
+/direct/phenix+data09/hpereira/simulation/prdf/jpsi_sim_19_11_2003.north.prdf
+/direct/phenix+data09/hpereira/simulation/mutoo_dst/jpsi_sim_19_11_2003.north.root
+</pre>
+<li>simulated J/Psi in south arm (both tracks in MUTR)
+<pre>
+/direct/phenix+data09/hpereira/simulation/pisa/jpsi_pis_filtered_19_11_2003.south.root
+/direct/phenix+data09/hpereira/simulation/prdf/jpsi_sim_19_11_2003.south.prdf
+/direct/phenix+data09/hpereira/simulation/mutoo_dst/jpsi_sim_19_11_2003.south.root
+</pre>
+
+<li>Hijing (both arms)
+
+<pre>
+/direct/phenix+data09/hpereira/simulation/prdf/hijing_sim_08_10_2003_min_bias_0.prdf
+/direct/phenix+data09/hpereira/simulation/prdf/hijing_sim_08_10_2003_min_bias_1.prdf
+/direct/phenix+data09/hpereira/simulation/prdf/hijing_sim_08_10_2003_min_bias_2.prdf
+/direct/phenix+data09/hpereira/simulation/prdf/hijing_sim_08_10_2003_min_bias_3.prdf
+/direct/phenix+data09/hpereira/simulation/prdf/hijing_sim_08_10_2003_min_bias_4.prdf
+/direct/phenix+data09/hpereira/simulation/mutoo_dst/hijing_sim_19_11_2003_min_bias.root
+</pre>
+
+<li>RUN3 D-Au golden events for north arm:
+<pre>Directory: /direct/phenix+data25/brooks/run3/dAu/golden/North/unlike/
+File list: /afs/rhic.bnl.gov/phenix/users/hpereira/muons/work/lvl2/rd_run_list_dau_north </pre>
+
+<li>RUN3 PP golden events for souh arm:
+<pre>Directory: /phenix/data22/ppRUN3/golden_bothframe/MUIDS
+File list (loose mass cut): /afs/rhic.bnl.gov/phenix/users/hpereira/muons/work/lvl2/rd_run_list_pp_south 
+File list (tight mass cut): /afs/rhic.bnl.gov/phenix/users/hpereira/muons/work/lvl2/rd_run_list_pp_south_1
+</pre>
+
+<li>RUN2 Au-Au events both arms:
+<pre>Directory: /direct/phenix+data08/dask
+File list: /afs/rhic.bnl.gov/phenix/users/hpereira/muons/work/lvl2/rd_run_list_au-au
+</pre>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

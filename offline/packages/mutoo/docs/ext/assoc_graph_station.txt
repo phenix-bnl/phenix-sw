@@ -1,0 +1,35 @@
+
+graph associations {
+	ratio = fill;
+	node [style=filled];
+	{rank="same";
+	mtrk1[label="TMutMCTrk" color="0.5 0.500 1.000"] 
+	mtrk2[label="TMutMCTrk" color="0.5 0.500 1.000"] 
+        }
+	{rank="same";
+	mhit1[label="TMutMCHit" color="0.000 0.500 1.000"] 
+	mhit2[label="TMutMCHit" color="0.000 0.500 1.000"] 
+	mhit3[label="TMutMCHit" color="0.000 0.500 1.000"] 
+	mhit4[label="TMutMCHit" color="0.000 0.500 1.000"] 
+	mhit5[label="TMutMCHit" color="0.000 0.500 1.000"] 
+        }
+	{rank="same" 
+	hit1[label="TMutHit" color="0.650 0.200 1.000"] 
+	hit2[label="TMutHit" color="0.650 0.200 1.000"] 
+	hit3[label="TMutHit" color="0.650 0.200 1.000"] 
+	hit4[label="TMutHit" color="0.650 0.200 1.000"] 
+	hit5[label="TMutHit" color="0.650 0.200 1.000"] 
+	}
+	mtrk1 -- mhit1;
+	mtrk1 -- mhit2;
+	mtrk2 -- mhit3;
+	mtrk2 -- mhit4;
+	mtrk2 -- mhit5;
+        mhit1 -- hit1;
+	mhit2 -- hit2;
+	mhit3 -- hit3;
+	mhit4 -- hit4;
+	mhit5 -- hit5;
+}
+
+

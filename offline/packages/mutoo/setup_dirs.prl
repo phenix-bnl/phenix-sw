@@ -1,0 +1,116 @@
+#!/usr/local/bin/perl
+
+$mutoo = `pwd`;
+chop($mutoo);
+
+# make mutoo build dirs
+print "----------------------------\n";
+print "Setting up local mutoo build\n";
+print "----------------------------\n";
+cmd_and_echo("mkdir -p ../mutoo_i");
+cmd_and_echo("mkdir -p ../mutoo_b");
+
+# setup up mutoo build 
+chdir "../mutoo_i";
+$prefix = `pwd`;
+chdir "$mutoo";
+chdir "../mutoo_b";
+cmd_and_echo("../mutoo/autogen.sh --prefix=$prefix");
+cmd_and_echo("make install-data");
+
+# make muioo build dirs
+print "----------------------------\n";
+print "Setting up local muioo build\n";
+print "----------------------------\n";
+chdir "$mutoo";
+chdir "../";
+cmd_and_echo("cvs checkout -d muioo offline/packages/muioo");
+cmd_and_echo("mkdir -p muioo_b");
+chdir "mutoo_i";
+$prefix = `pwd`;
+chdir "$mutoo";
+chdir "../muioo_b";
+cmd_and_echo("../muioo/autogen.sh --prefix=$prefix");
+cmd_and_echo("make install-data");
+
+# make mutoo_subsysreco build dir
+print "----------------------------\n";
+print "Setting up local mutoo_subsysreco build \n";
+print "----------------------------\n";
+chdir "$mutoo";
+chdir "../";
+cmd_and_echo("cvs checkout -d mutoo_subsysreco offline/packages/mutoo_subsysreco");
+cmd_and_echo("mkdir -p mutoo_subsysreco_b");
+chdir "mutoo_i";
+$prefix = `pwd`;
+chdir "$mutoo";
+chdir "../mutoo_subsysreco_b";
+cmd_and_echo("../mutoo_subsysreco/autogen.sh --prefix=$prefix");
+cmd_and_echo("make install-data");
+
+# make preco build dirs
+print "----------------------------\n";
+print "Setting up local preco build\n";
+print "----------------------------\n";
+chdir "$mutoo";
+chdir "../";
+cmd_and_echo("cvs checkout -d preco offline/framework/preco");
+cmd_and_echo("mkdir -p preco_b");
+chdir "mutoo_i";
+$prefix = `pwd`;
+chdir "$mutoo";
+chdir "../preco_b";
+cmd_and_echo("../preco/autogen.sh --prefix=$prefix");
+
+# analysis directories
+print "--------------------------------------\n";
+print "Setting up fun4pisa analysis directory\n";
+print "--------------------------------------\n";
+#
+# copy files
+#
+chdir $mutoo;
+cmd_and_echo("mkdir -p ../fun4pisa");
+cmd_and_echo("cp -i macro/MUTOO_SETUP ../fun4pisa/SETUP");
+cmd_and_echo("cp -i ../preco/macros/Fun4Muons_Pisa.C ../fun4pisa/.");
+cmd_and_echo("ln -s /phenix/data09/hpereira/simulation/run4_AuAu/pisa/jpsi_pis_north_109656-0002.root ../fun4pisa/pisa.root");
+
+# analysis directories
+print "----------------------------\n";
+print "Setting up fun4prdf analysis directory\n";
+print "----------------------------\n";
+
+# copy files
+chdir $mutoo;
+cmd_and_echo("mkdir -p ../fun4prdf");
+cmd_and_echo("cp -i macro/MUTOO_SETUP ../fun4prdf/SETUP");
+cmd_and_echo("cp -i ../preco/macros/Fun4Muons_RecoPRDF.C ../fun4prdf/.");
+
+# use run7 level2 filtered PRDF.
+cmd_and_echo("ln -s /phenix/hl/data66/phnxhl06/hpereira/data/run7_auau/prdf/EVENTDATA_lvl2_P00-0000237593-0000.PRDFF ../fun4prdf/data.prdf");
+
+print "-------------------------------------\n";
+print "Setting up fun4dst analysis directory\n";
+print "-------------------------------------\n";
+chdir $mutoo;
+cmd_and_echo("mkdir -p ../fun4dst");
+cmd_and_echo("cp -i ../preco/macros/Fun4Muons_RecoDST.C ../fun4dst/.");
+cmd_and_echo("cp -i ../preco/macros/Fun4Muons_ReadDST.C ../fun4dst/.");
+cmd_and_echo("cp -i ../preco/macros/Fun4Muons_Display.C ../fun4dst/.");
+cmd_and_echo("cp -i macro/MUTOO_SETUP ../fun4dst/SETUP");
+cmd_and_echo("ln -s /phenix/data09/hpereira/simulation/run4_AuAu/mutoo_dst_new/jpsi_sim_reco_north_109656-0002.root ../fun4dst/dst.root");
+
+print "-------------------------------------\n";
+print "Setting up fun4sim analysis directory\n";
+print "-------------------------------------\n";
+chdir $mutoo;
+cmd_and_echo("mkdir -p ../fun4sim");
+cmd_and_echo("cp -i ../preco/macros/Fun4Muons_RecoDST_sim.C ../fun4sim/.");
+cmd_and_echo("cp -i macro/MUTOO_SETUP ../fun4sim/SETUP");
+cmd_and_echo("ln -s /phenix/data09/hpereira/data/run4_AuAu/mutoo_dst/min_bias_109656-0002.unpack.root ../fun4sim/background.root");
+cmd_and_echo("ln -s /phenix/data09/hpereira/simulation/run4_AuAu/mutoo_dst_new/jpsi_sim_north_109656-0002_condor.root ../fun4sim/signal.root");
+
+sub cmd_and_echo {
+  system("echo $_[0]");  
+  system("$_[0]");  
+}

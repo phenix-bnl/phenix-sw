@@ -1,0 +1,69 @@
+#ifndef __MMUTMYMODULEMODULE_HH__
+#define __MMUTMYMODULEMODULE_HH__
+
+#include<PHTimer.h>
+
+class mMutMyModulePar;
+class PHCompositeNode;
+
+/*! \ingroup modules */
+/*!
+
+INSERT MODULE DESCRIPTION HERE 
+
+<br>
+<h2>Analysis Module Interface Specification</h2>
+<table>
+<tr>
+<td> Object </td>
+<td> Description </td>
+<td> Privilege </td>
+</tr>
+<tr>
+<td> const mMutMyModulePar*</td>
+<td> Parameter Table </td>
+<td> immutable </td>
+</tr>
+
+INSERT ADDITIONAL IOC SPECIFICATIONS HERE
+
+</table>
+*/
+
+class mMutMyModule
+{
+ public: 
+
+  mMutMyModule(); 
+  virtual ~mMutMyModule(){} // if empty do not implement (optimizer produces faster code)
+  virtual PHBoolean event(PHCompositeNode*);
+
+ private:  
+
+  // private methods
+  //
+  void set_interface_ptrs(PHCompositeNode* top_node);
+
+  // Interface pointers
+  //
+  const mMutMyModulePar* _mod_par;           // parameter table
+
+  //  INSERT ADDITIONAL IOC POINTERS HERE
+
+  TMutVtxMap* _vtx_map;
+  // TMutHitMap* _hit_map;
+  // TMutHitMap* _clus_map;
+
+  // Timer
+  //
+  PHTimer _timer;
+
+};
+
+#endif /* __MMUTMYMODULE_HH__ */
+
+
+
+
+
+
