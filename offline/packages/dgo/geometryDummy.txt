@@ -1,0 +1,45 @@
+0.3   xOffset                  
+0.1  attenuationFactor   
+3.5  anodeToAnodeSpacing
+4.3  pixelLength         
+3.2  sidePixelWidth     
+2    numberOfSectors    
+45   numberOfWiresPerSectors 
+3.7306  bottomPhiOfEastArm 
+0.5890  topPhiOfEastArm 
+0.9817  bottomPhiOfWestArm 
+2.1598  topPhiOfWestArm 	
+	
+	
+ 
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       

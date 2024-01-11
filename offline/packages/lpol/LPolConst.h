@@ -1,0 +1,14 @@
+#ifndef PHENIX_LPOL_CONST_HH_
+#define PHENIX_LPOL_CONST_HH_
+
+#define INVALID_SHORT -9999
+#define INVALID_INT -9999
+#define INVALID_LONG -9999
+#define INVALID_FLOAT -9999.
+
+#define SUCCESS_SHORT 0
+#define SUCCESS_INT 0
+#define SUCCESS_FLOAT 0.
+
+const int POL_N_PMT = 4; 
+#endif /* PHENIX_LPOL_CONST_HH */
