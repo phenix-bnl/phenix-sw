@@ -1,0 +1,94 @@
+void bbcReco(Int_t maxEvents=1, Int_t verbose=1) {
+
+  Int_t eventNumber = 0;
+
+  //
+  // Set up the PHOOL initialization
+  //
+  gROOT->Macro("phoolRecoInit.C");
+
+  //
+  // Set up the PISA interface initialization
+  //
+  gROOT->Macro("pisaRecoInit.C");
+
+  // Executing initialization and parameter macros
+  gROOT->Macro("bbctestini.C");
+  gROOT->Macro("bbctestpar.C");
+
+  //
+  // BBC setup module calls
+  //
+  //mBbcSetGeo->event(topNode);
+
+  // Set up input PRDF
+  PHString inputFile = "phnx.prdf";
+
+  // Set up the main iterator and event
+  mainIter.cd();
+  Event *thisEvent = 0;
+  mainIter.addNode(new PHDataNode<Event>(thisEvent, "PRDF"));
+  PHNodeReset reset;
+  Eventiterator *eventIter = new fileEventiterator(inputFile.getString());
+
+  //
+  // Open the output DST file
+  //
+  PHNodeIOManager *ioDST = new PHNodeIOManager("DST.root", PHWrite);
+
+  gROOT->cd();
+
+  while ((thisEvent = eventIter->getNextEvent()) && eventNumber++ < maxEvents) {
+
+    if(eventNumber<=verbose) {
+      cout << "\n Fetched event " << eventNumber << endl;
+    }
+
+    // Point the data node to the new event
+    mainIter.cd();
+    ((PHDataNode<Event>*)(mainIter.findFirst("PHDataNode","PRDF")))->setData(thisEvent);
+
+    BbcGetDCM(topNode);
+    dBbcDCM->Show();
+
+    bbcevent->setRawData( topNode );
+    bbcevent->calculate();
+    bbcevent->setBbcDst( topNode );
+    dBbcOut->Show(); 
+    cout << bbcevent.getTimeZero() << " " << bbcevent.getZVertex() << endl;
+    //
+    // write out the DST
+    //
+    ioDST->write(dstNode);
+
+    // Reset all data for this event
+    mainIter.cd();
+    if (mainIter.cd("DST")) {
+      // cout << "\n In DST " << endl;
+      mainIter.forEach(reset);
+      mainIter.cd();
+    }
+    if (mainIter.cd("DCM")) {
+      // cout << "\n In DCM " << endl;
+      mainIter.forEach(reset);
+      mainIter.cd();
+    }
+    if (mainIter.cd("BBC")) {
+      // cout << "\n In BBC " << endl;
+      mainIter.forEach(reset);
+      mainIter.cd();
+    }
+    if (mainIter.cd("EVA")) {
+      // cout << "\n In EVA " << endl;
+      mainIter.forEach(reset);
+      mainIter.cd();
+    }
+
+  } // loop over events
+
+  delete ioDST;  // this actually closes the output DST file
+
+}
+
+
+

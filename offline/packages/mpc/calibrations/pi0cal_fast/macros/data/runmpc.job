@@ -1,0 +1,12 @@
+Executable     = $ENV(PWD)/runmpc.csh
+Universe       = vanilla
+Priority       = 19
+GetEnv         = True
+Log            = $ENV(PWD)/condor/log/runmpc$(Process).log
+Output         = $ENV(PWD)/condor/log/runmpc$(Process).out
+Error          = $ENV(PWD)/condor/log/runmpc$(Process).err
+Initialdir     = $ENV(PWD)
+Arguments      = $(Process)
++Experiment     = "PHENIX"
++Job_Type      = "cas"
+Queue 200

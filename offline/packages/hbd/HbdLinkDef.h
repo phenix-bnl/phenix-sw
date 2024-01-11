@@ -1,0 +1,52 @@
+#ifdef __CINT__
+
+#pragma link C++ class HbdGhit+;
+#pragma link C++ class HbdGhitv1+;
+#pragma link C++ class HbdGhitList+;
+#pragma link C++ class HbdGhitListv1+;
+#pragma link C++ class HbdBlob+;
+#pragma link C++ class HbdBlobv1+;
+#pragma link C++ class HbdBlobv2+;
+#pragma link C++ class HbdBlobList+;
+#pragma link C++ class HbdBlobListv1+;
+#pragma link C++ class HbdBlobListv2+;
+#pragma link C++ class HbdRaw+;
+#pragma link C++ class HbdRawv1+;
+#pragma link C++ class HbdRawList+;
+#pragma link C++ class HbdRawListv1+;
+#pragma link C++ class HbdCell+;
+#pragma link C++ class HbdCellv1+;
+#pragma link C++ class HbdCellv2+;
+#pragma link C++ class HbdCellList+;
+#pragma link C++ class HbdCellListv1+;
+#pragma link C++ class HbdCellListv2+;
+#pragma link C++ class HbdCluster+;
+#pragma link C++ class HbdWisCluster+;
+#pragma link C++ class HbdWisClusterList+;
+#pragma link C++ class HbdClusterList+;
+#pragma link C++ class HbdMiniCell+;
+#pragma link C++ class HbdMiniCellv1+;
+#pragma link C++ class HbdMiniCellList+;
+#pragma link C++ class HbdMiniCellListv1+;
+#pragma link C++ class HbdMiniCellListv2+;
+#pragma link C++ class HbdMiniToFullCell+;
+#pragma link C++ class HbdHit+;
+#pragma link C++ class HbdHitv1+;
+#pragma link C++ class HbdHitList+;
+#pragma link C++ class HbdHitListv1+;
+#pragma link C++ class hbdDetectorGeo-!;
+#pragma link C++ class HbdCellListAnalyzer-!; 
+#pragma link C++ class HbdPreClusterMaker-!;  
+#pragma link C++ class hbdAdcCalib-!; 
+#pragma link C++ class HbdClusterizer-!; 
+#pragma link C++ class HbdDcmRaw-!; 
+#pragma link C++ class HbdFinalSimulator-!;
+#pragma link C++ class HbdGainCalibTrkV-!;
+#pragma link C++ class HbdReco-!;
+#pragma link C++ class HbdSimreco-!;
+#pragma link C++ class HbdWisClusterizer-!;
+#pragma link C++ class HbdMinPadClusterizer-!; 
+#pragma link C++ class YWCutter-!; 
+#pragma link C++ class YWParticle-!;
+
+#endif /* __CINT__ */

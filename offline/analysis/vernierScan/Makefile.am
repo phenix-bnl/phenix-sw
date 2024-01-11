@@ -1,0 +1,27 @@
+AUTOMAKE_OPTIONS = foreign
+
+INCLUDES = -I$(includedir) -I$(OFFLINE_MAIN)/include -I$(ROOTSYS)/include
+
+lib_LTLIBRARIES = \
+  libVernier.la 
+
+noinst_HEADERS = \
+  VernierLinkDef.h 
+
+libVernier_la_SOURCES = \
+  Vernier.cc \
+  Vernier_Dict.C
+
+libVernier_la_LIBADD = \
+  -L$(libdir) \
+  -L$(OFFLINE_MAIN)/lib \
+  -lSubsysReco
+
+# Rule for generating CINT dictionaries from class headers.
+Vernier_Dict.C: Vernier.h VernierLinkDef.h
+	rootcint -f $@ -c $(DEFAULT_INCLUDES) $(INCLUDES) $^
+
+clean-local:
+	rm -f *Dict*
+
+

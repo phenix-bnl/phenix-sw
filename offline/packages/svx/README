@@ -1,0 +1,43 @@
+
+SVX reconstruction software: Status as of October 2005
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Contact person: Sasha Lebedev (lebedev@iastate.edu)
+
+------------------------------------------------------
+
+Please, notice:	a) Currently, the "clusters" are actually just "pixels" which
+		   are NOT combined into contiguous clusters.
+		b) The default version of rawhit building does NOT account
+                   charge sharing between pixels and strips. In the case the
+		   charge sharing needs to be ON, one should comment/uncomment
+		   a few clearly marked lines in the body of the protected
+	           "makeRaw(...) method in the SvxStripixel.h module.
+
+	Your suggestions and bug reports are very welcome !!!
+	"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Directories:
+	offline/packages/svx      - Contains Silicon vertex reconstruction code
+	offline/packages/svx/wrk  - Contains sample macros for running analysis
+        offline/framework/simreco - Contains SvxSimreco analysis module.
+
+How to run:
+
+	1. Go to a PISA work directory. Run PISA with SVX detector "ON" and
+	   	create PISAEvent.root & svxPISA.par files.
+
+	2. Go to the analysis work directory (e.g. offline/packages/svx/wrk).
+		Link (or copy) PISAEvent.root & svxPISA.par files into this
+		directory. Type "root -b -q svxreco.C >& log.log &".
+                This macro will process 5 events and fill the diagnostic TTree 
+                and a few histograms. TTree is stored in the svxRecoOut.root file,
+		and histograms are stored in the svxHistogramOut.root file.
+
+	3. (optional) Start root, connect svxHistogramOut.root file and draw some
+		histograms, using "draw_svx_*.C" macros.
+
+	4. (optional) Modify (locally!!!) "analyze_svx.C" (and/or everything else) and
+		use it for running your analysis with the input from the svxRecoOut.root file.
+
+

@@ -1,0 +1,21 @@
+#!/bin/csh -f
+oodeletedb -db adcCal0000
+oodeletedb -db adcTag0000
+oodeletedb -db configCal0000
+oodeletedb -db configTag0000
+oodeletedb -db overflow0Cal0000
+oodeletedb -db overflow0Tag0000
+oodeletedb -db overflow1Cal0000
+oodeletedb -db overflow1Tag0000
+oodeletedb -db pedestalCal0000
+oodeletedb -db pedestalTag0000
+oodeletedb -db pmtgainCal0000
+oodeletedb -db pmtgainTag0000
+oodeletedb -db slewpar0Cal0000
+oodeletedb -db slewpar0Tag0000
+oodeletedb -db slewpar1Cal0000
+oodeletedb -db slewpar1Tag0000
+oodeletedb -db tdc0Cal0000
+oodeletedb -db tdc0Tag0000
+oodeletedb -db tdc1Cal0000
+oodeletedb -db tdc1Tag0000

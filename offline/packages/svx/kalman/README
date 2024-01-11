@@ -1,0 +1,47 @@
+A few notes:
+svx_kalman_fit.C is the ROOT macro that I'm using to run the Fun4All module.
+
+SvxKalmanFitter is the Fun4All module that is actually run.
+
+SvxKalmanNode inherits from the more generic KalmanNode and is created
+for each cluster that the algorithm is being applied to.  The generic
+Kalman linear algebra is done in KalmanNode, while the VTX-specific
+portions are done in SvxKalmanNode (eg. where you need to know how to
+convert a state vector to measurement vector).
+
+DCKalmanNode is the equivalent for the Drift Chamber.
+
+
+If you compile SvxKalmanFitter with -DDEBUG (or add "#define DEBUG")
+then a TTree will be produced with the fit info for each node (as
+defined in KFDebugTree).  This makes plotting pull distributions,
+etc. much easier.  You will also need to add -lcteval to the
+Makefile.am, since it adds a bad dependency during production.
+
+
+The entire thing is based on the equations in:
+R. Fruhwirth, Application of Kalman filtering to track and vertex fitting, 
+Nucl. Inst. and Meth. A, 262 (1987) 444-450, 
+DOI: 10.1016/0168-9002(87)90887-4
+(use in Spires or Google Scholar or even Google)
+
+
+To use the SvxKalmanFitter as a singleton, there are a few necessities:
+The pointer can be had using the get() method:
+  SvxKalmanFitter* skf = SvxKalmanFitter::get();
+  skf->set_use_central_tracks(true);
+  skf->SetVerbosity(5);
+
+The magnetic field must be set up in the desired way:
+  skf->set_use_real_fieldmap(true);
+  skf->set_field_filename("Sim3D++.root");
+  skf->set_field_scale_factor(-1.);
+  skf->setup_magnetic_field();
+
+GetNodes needs to be called so that it knows where to find SvxClusters, PHCentralTrack, etc.
+  int GetNodes(PHCompositeNode *topNode);
+
+The fit itself can be performed via one of two fit_track functions:
+  bool fit_track(SvxSegment* segment);
+  bool fit_track(SvxCentralTrack* central_track);
+

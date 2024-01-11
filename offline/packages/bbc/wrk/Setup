@@ -1,0 +1,3 @@
+source ./objyize.csh
+setenv LD_LIBRARY_PATH $MYHOME/install/i686-pc-linux-gnu/lib:$LD_LIBRARY_PATH
+

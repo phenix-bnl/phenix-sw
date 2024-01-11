@@ -1,0 +1,13 @@
+Universe       = vanilla
+Notification   = Error
+Initialdir     = $ENV(PWD)
+Executable     = $ENV(PWD)/runcluster.cmd
+Arguments      = $(Process)
+Log            = $ENV(PWD)/log/mpccluster$(Process).log
+Output         = $ENV(PWD)/log/mpccluster$(Process).out
+Error          = $ENV(PWD)/log/mpccluster$(Process).err
+Notify_user    = $ENV(USER)@rcf.rhic.bnl.gov
+GetEnv         = True
++Experiment    = "phenix"
++Job_Type      = "cas"
+Queue 1

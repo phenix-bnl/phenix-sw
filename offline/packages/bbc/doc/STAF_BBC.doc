@@ -1,0 +1,365 @@
+
+          Beam/Beam Counter Software in STAF/PISORP.
+
+             Hiroaki Ohnishi [Hiroshima-Univ]
+             
+           ohnishi@hirax2.hepl.hiroshima-u.ac.jp
+                         
+                 Version 1.00 18/Oct/1997.
+ 
+This is a documentation for the STAF modules and data structure 
+for the BBC system. 
+
+(I) STAF tables for BBC 
+
+    Input data table for STAF/BBC 
+       
+        bbcghit :   GEANT/PISA output data for BBC.   
+
+    DATA tables in BBC modules;
+      
+        dBbcRaw : raw digitized data. The number of row is as 
+                  same as the Max. number of PMT. 
+        dBbcHit : Calibrated hit data. The number of row is as 
+                  same as the number of firied PMT.
+        dBbcOut : Output data from BBC (Vertex point and Time Zero)
+
+    Tables for constant; 
+
+        dBbcGeo : Geometry information for BBC. ( one entries.)
+        dBbcUcal: Un-calibration constants.( one for each PMT ) 
+        dBbcCal : Calibration constants.   ( one for each PMT )
+
+    Tables for parameters;
+         
+        dBbcGhitRawPar 
+        dBbcRawHitPar  
+        dBbcHitOutPar  
+
+(II) STAF PAMs for BBC 
+     
+  (i)   PAM for set constant.
+         
+    mBbcSetUcal :  Set Un-calibration constant      
+    mBbcSetCal  :  Set calibration constant
+
+  (ii)  PAM for prossess RAW-data
+
+    mBbcGhitRaw : create dBbcRaw(raw data) from bbcghit(PISA output).
+    
+  (iii) PAM for prossess calibrated hit data  
+
+    mBbcRawHit  : create dBbcRawHit(calibrated data) from bbcghit(PISA output).
+
+  (iv)  PAM for prossess output(Vertex and TimeZero)
+   
+    mBbcHitOut  : create mBbcHitOut(Vertex and TimeZero) from dBbcRawHit.
+
+(III) data flow
+
+        bbcghit        PISA output Data
+           |
+      ===========
+      mBbcGhitRaw      Uncalibration and Digitization
+      ===========     
+           |
+        dBbcRaw        Raw data
+           |
+      ===========
+      mBbcRawHit       Calibration
+      ===========
+           |
+        dRawHit        Data for the each hit PMT
+           |
+      ===========
+      mBbcHitOut       calculation Vertex and TimeZero
+      ===========
+           |
+        dHitOut        OUTPUT ( Vertex and TimeZero )
+
+
+(IV)  IDLs for STAF table.
+
+   For Data table. ( 3 idl files )
+      
+     dBbcRaw.idl
+     dBbcHit.idl
+     dBbcOut.idl 
+
+/****************************************************************************
+ * File: dBbcRaw.idl
+ * Author: A. Sakaguchi (Osaka univ.)
+ * Description: the raw data of BBC
+ * Date: Sep/03/97          First Version
+ *       Oct/18/97 T.Kohama rename the member
+ *****************************************************************************/
+struct dBbcRaw{
+   short Pmt;           /* global index or serial id number of tube (0-127)*/
+   short Arm;           /* arm number.  0=south, 1=north */
+   short Half;          /* half arm ID.  0=upper, 1=lower */
+   short Ring;          /* ring number.  0=outer, 1=middle, 2=inner */
+   short Tube;          /* tube number in a ring.  (0-11/0-10/0-8) */
+   short Adc;           /* signal pulse height (0-4096) */
+   short Tdc0;          /* time information by discriminator 0 (0-1023) */
+   short Tdc1;          /* time information by discriminator 1 (0-1023) */
+};
+/****************************************************************************
+ * File: dBbcHit.idl
+ * Author: T. Kohama (Hiroshima univ.)
+ * Description: hit data of calibration of BBC
+ * Date: Oct/18/97 First Version
+ *****************************************************************************/
+struct dBbcHit{
+   short Pmt;         /* serial id number of tube (0-127)*/
+   float PmtCharge;   /* Charge value outputted [pC]*/
+   float Time0;       /* Time from dBbcRaw.Tdc0 [ps] */
+   float Time1;       /* Time from dBbcRaw.Tdc1 [ps] */
+};
+/****************************************************************************
+ * File: dBbcOut.idl
+ * Author: T. Kohama (Hiroshima univ.)
+ * Description: `end-product' of BBC
+ * Date: Oct/18/97 First Version
+ *****************************************************************************/
+struct dBbcOut{
+   float VertexPoint;   /* Collision Vertex Point (cm) */
+   float TimeZero;      /* Collision Time (ps) */
+};
+
+
+
+   For Constants.  ( 3 idl files )
+      dBbcGeo.idl
+      dBbcUcal.idl
+      dBbcCal.idl
+
+/*****************************************************************************/
+/* File: dBbcGeo.idl                                                         */
+/* Discription : IDL for dBbcGeo (Geometry for BBC)                          */
+/*               Right now, we set only Max number of PMTs                   */
+/*                                                                           */
+/* Author    : Hiroaki Ohnishi                                               */
+/* Date:       10/18/97                                                      */
+/* HISTORY:    10/18/97 First version released                               */
+/*                      (Converted from PISORP version to SATF modules)      */
+/*                                                                           */
+/*****************************************************************************/
+struct dBbcGeo {
+  short MaxPmtNo;        /* Max number of PMTs                               */
+};
+
+/*****************************************************************************/
+/* File       :  dBbcUcal.idl                                                */
+/* Discription:  IDL for dBbcUcal (un-calibration constants,                 */
+/*               or reverse calibration constants of each PMT of BBC.        */
+/*               They describe the gain variation etc of each tube.          */
+/* Set by     : mBbcSetUcal                                                  */
+/* Used by    : mBbcGhitRaw                                                  */
+/* Author     : Hiroaki Ohnishi                                              */
+/* Date:        10/18/97                                                     */
+/* HISTORY:     10/18/97 First version released                              */
+/*                       (Converted from PISORP version to SATF modules)     */
+/*                                                                           */
+/*****************************************************************************/
+struct dBbcUcal {
+  short Pmt;             /*PMT channel ID                              */
+  float AdcChGain;       /*ADC digitization unit in photon number.     */
+  float TdcChGain0;      /*TDC digitization unit in [ps] for tdc0      */
+  float TdcChGain1;      /*TDC digitization unit in [ps] for tdc1      */
+  float TdcOffset0;      /*TDC timing offset for tdc0                  */
+  float TdcOffset1;      /*TDC timing offset for tdc1                  */
+  float PulseHeightReso; /*Intrinsic pulse height resolution of PMT.   */
+  float Pedestal;        /*pedestal of ADC                             */
+  float NoiseHeight;     /*noise pulse height                          */
+  float NoiseHitProb;    /*noise hit probability                       */
+  float TimeReso;        /*Intrinsic time resolution [ps]              */
+};
+
+/****************************************************************************
+ * File: dBbcCal.idl
+ * Author: T. Kohama (Hiroshima univ.)
+ * Description: Calibration parameter of BBC
+ * Date: Oct/18/97          First Version
+ *****************************************************************************/
+struct dBbcCal {
+  short Pmt;             /* PMT serial channel ID */
+  float AdcChGain;       /* Charge value per ADC channel [pC/ch] */
+  float TdcChGain0;      /* Time interval per TDC0 channel [ps/ch] */
+  float TdcChGain1;      /* Time interval per TDC1 channel [ps/ch] */
+  float Pedestal;        /* pedestal of ADC [ch] */
+  float TdcOffset0;      /* Timing offset of TDC0 [ch] */
+  float TdcOffset1;      /* Timing offset of TDC1 [ch] */
+};
+
+   For Parameters. ( 3 idl files )
+      dBbcGhitRawPar.idl
+      dBbcRawHitPar.idl
+      dBbcHitOutPar.idl
+
+/*************************************************************************/
+/* File:   dBbcGhitRawPar.idl                                            */
+/* Discription: IDL for dBbcGhitPawPar                                   */
+/*              (control parameters for mBbcGhitRaw)                     */
+/* Author:     Hiroaki Ohnishi                                           */
+/* Used by:    mBbcGhitRaw                                               */
+/* Date:       10/18/97                                                  */
+/* HISTORY:    10/18/97 First version released                           */
+/*                      (Converted from PISORP version to SATF modules)  */
+/*************************************************************************/
+
+struct dBbcGhitRawPar {
+  float AngleCut;     /* Angle cut in deg.                               */
+  float Nindex;       /* refractive index of the radiator(quartz)        */
+  float N0;           /* N0 value of PMT. # of photons from each PMT[pc] */
+  float MomLowerLim;  /* momentum lower limit in GeV                     */
+  float MaxAdc;       /* max value of ADC                                */
+  float MaxTdc;       /* max value of TDC                                */
+};
+/****************************************************************************
+ * File: dBbcRawHitPar.idl
+ * Author: T. Kohama (Hiroshima univ.)
+ * Description: Paramber of mBbcRawHit
+ * Date: Oct/18/97          First Version
+ *****************************************************************************/
+/* 
+   The range of valid TDC and ADC value.
+   MinAdc  <= Adc   <= MaxAdc
+   MinTdc0 <= Tdc0  <= MaxTdc0
+   MinTdc1 <= Tdc1  <= MaxTdc1
+*/
+struct dBbcRawHitPar{
+   short MinAdc;
+   short MaxAdc;
+   short MinTdc0;
+   short MaxTdc0;
+   short MinTdc1;
+   short MaxTdc1;
+};
+/****************************************************************************
+ * File: dBbcHitOutPar.idl
+ * Author: T. Kohama (Hiroshima univ.)
+ * Description: Parameter of mBbcHitOut
+ * Date: Oct/18/97          First Version
+ *****************************************************************************/
+struct dBbcHitOutPar{
+   float NPmtArm;       /*  Number of PMT for each arm (64)*/
+   float MaxTime0;      /*  Out of range of Time0 */
+   float MaxTime1;      /*  Out of range of Time1 */
+};
+
+      
+   For PAMs. ( 5 idl files )
+      mBbcGhitRaw.idl
+      mBbcRawHit.idl
+      mBbcHitOut.idl    
+      mBbcSetUcal.idl
+      mBbcSetCal.idl
+/**********************************************************************
+ * File: mBbcGhitRaw.idl
+ * Discription: IDL for PAM mBbcGhitRaw
+ *       convert GEANT/PISA hits in bbcghit into digitized raw data in
+ *       dBbcRaw. The table dBbcRaw was created number of Max PMT.
+ *
+ * Author:  Hiroaki Ohnsihi (Hiroshima Univ.)
+ * Date:    10/18/97
+ * HISTORY: 10/18/97 First version released
+ *                   (Converted from PISORP version to SATF modules) 
+ **********************************************************************/
+#include "PAM.idl"
+
+#include "dBbcGhitRawPar.idl"
+#include "dBbcGeo.idl"
+#include "dBbcUcal.idl"
+#include "bbcghit.idl"
+#include "dBbcRaw.idl"
+
+interface mBbcGhitRaw: amiModule {
+  STAFCV_T  call( in  dBbcGhitRawPar par
+		, in  dBbcGeo        geo
+		, in  dBbcUcal	     ucal
+		, in  bbcghit        ghit
+		, out dBbcRaw        raw );
+};
+/**********************************************************************\
+*  File: mBbcRawHit.idl                                                *
+*  Description:                                                        *
+*     This calibrate the raw data, create the hit data.                *
+*     The number of the hit data table are the number of hit PMTs.     *
+*  Author: Takeshi Kohama (Hiroshima Univ.)                            *
+\**********************************************************************/
+#include "PAM.idl"
+
+#include "dBbcRawHitPar.idl"
+#include "dBbcCal.idl"
+#include "dBbcRaw.idl"
+#include "dBbcHit.idl"
+
+interface mBbcRawHit: amiModule {
+  STAFCV_T  call( in  dBbcRawHitPar  par
+                , in  dBbcCal        cal
+                , in  dBbcRaw        raw
+                , out dBbcHit        hit);
+};
+/****************************************************************************
+ * File: mBbcHitOut.idl
+ * Author: T. Kohama (Hiroshima univ.)
+ * Description: This calculates the vertex point and time zero from hit data
+ * Date: Oct/18/97          First Version
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dBbcHitOutPar.idl"
+#include "dBbcHit.idl"
+#include "dBbcOut.idl"
+
+interface mBbcHitOut: amiModule {
+  STAFCV_T  call( in  dBbcHitOutPar  par
+                , in  dBbcHit        hit
+                , out dBbcOut        output);
+};
+/**************************************************************************
+ * File: mBbcSetUcal.idl
+ * Discription: IDL for PAM mBbcSetUcal
+ *       set values in dBbcUcal (un-calibration constants of BBC) as follows.
+ *      (1) if ucal is empty (rowcount == 0) then ucal is expaned to the 
+ *          number of the Max PMT entries, 
+ *          and the default values are stored in all entries of ucal.
+ *      (2) if ucal is not empty, but its size (rowcount) is less than 
+ *          Max Pmt number,
+ *          the table is expanded to Max Pmt numbe, and the values in ucal[0]
+ *          is copied to all entries of the table.
+ *	(3) if ucal has (more than) Max Pmt number entries, it does nothing.
+ * Author: Hiroaki Ohnsihi
+ * Date:   10/18/97
+ **************************************************************************/
+#include "PAM.idl"
+
+#include "dBbcGeo.idl"
+#include "dBbcUcal.idl"
+interface mBbcSetUcal: amiModule {
+  STAFCV_T  call( in    dBbcGeo         geo 
+                  inout dBbcUcal        ucal );
+};
+/**************************************************************************
+ * File: mBbcSetCal.idl
+ * Description: IDL for PAM mBbcSetCal
+ *       set values in dBbcCal (calibration constants) as follows.
+ *      (1) if cal is empty (rowcount == 0) then cal is expaned to 128
+ *          entries, and the default values are stored in all entries of cal.
+ *      (2) if cal is not empty, but its size (rowcount) is less than 128
+ *          the table is expanded to 128 entries, and the values in cal[0]
+ *          is copied to all entries of the table.
+ *	(3) if cal has 128 entries, it does nothing.
+ **************************************************************************/
+#include "PAM.idl"
+
+#include "dBbcCal.idl"
+#include "dBbcGeo.idl"
+interface mBbcSetCal: amiModule {
+  STAFCV_T  call( inout dBbcCal        cal    
+                  in    dBbcGeo        geo );
+};
+
+
+
+

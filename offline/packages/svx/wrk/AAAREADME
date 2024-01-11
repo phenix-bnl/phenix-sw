@@ -1,0 +1,13 @@
+see offline wiki 
+https://www.phenix.bnl.gov/WWW/offline/wikioff/index.php/SVX_Geometry
+
+for those files:
+
+fetchsvxPISApar.C
+fetchDBoffset.C
+writePISApar.C
+updateDBoffset.C
+
+svxPISA.par
+svxPISA.par.ideal
+svxPISA.par_run12

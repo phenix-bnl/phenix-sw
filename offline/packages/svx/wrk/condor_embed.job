@@ -1,0 +1,25 @@
+Universe        = vanilla
+GetEnv          = True
+Notification    = Error
+Notify_user     = lebedev@iastate.edu 
+
+Requirements    = CPU_Speed >= 2 && Memory >= 1024
+Rank            = CPU_Speed
+Priority        = +20
+
+GroupNumber     = 1
+
+Arguments       = $(GroupNumber) $(Process)
+
+Initialdir      = /phenix/subsys/vtx/singles/reco
+Executable      = $(Initialdir)/jobfile_embed.csh
+Output          = /phenix/scratch/lebedev/logs/embed_bbbar_0$(GroupNumber)$(Process)_whd.log 
+Error           = /phenix/scratch/lebedev/logs/embed_bbbar_0$(GroupNumber)$(Process)_whd.log 
+Log             = /phenix/scratch/lebedev/logs/embed_bbbar_0$(GroupNumber)$(Process)_whd.log 
+
+
++Experiment     = "phenix"
++Job_Type       = "cas"
+
+Queue    7
+
