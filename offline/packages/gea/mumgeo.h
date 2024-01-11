@@ -1,0 +1,42 @@
+#ifndef __MUMGEO_H__
+#define __MUMGEO_H__
+
+
+typedef struct {
+   float mt_frame_side_thick1[5];
+   float mt_frame_side_thick2[5];
+   float mt_frame_end_thick1[5];
+   float mt_frame_end_thick2[5];
+   float mt_plane_thickness1[5];
+   float mt_plane_thickness2[5];
+   float mt_plane_spacing11[10];
+   float mt_plane_spacing12[10];
+   float mt_plane_spacing13[10];
+   float mt_plane_spacing14[10];
+   float mt_plane_spacing15[10];
+   float mt_plane_spacing21[10];
+   float mt_plane_spacing22[10];
+   float mt_plane_spacing23[10];
+   float mt_plane_spacing24[10];
+   float mt_plane_spacing25[10];
+   float mt_station_z1[5];
+   float mt_station_z2[5];
+   float mt_station_inner_radius1[5];
+   float mt_station_inner_radius2[5];
+   float mt_station_outer_radius1[5];
+   float mt_station_outer_radius2[5];
+   float mt_chm_thick1[5];
+   float mt_chm_thick2[5];
+   short mum_arms;
+   short mum_stations;
+   short mum_channels;
+   short mum_color;
+   short mu_arm_medium;
+   short mt_frame_medium1[5];
+   short mt_frame_medium2[5];
+   short mt_planes_per_station1[5];
+   short mt_planes_per_station2[5];
+   short mt_station_medium1[5];
+   short mt_station_medium2[5];
+} MUMGEO_ST;
+#endif /*__MUMGEO_H__*/

@@ -1,0 +1,59 @@
+#ifndef __DCGEO_H__
+#define __DCGEO_H__
+
+
+typedef struct {
+   short ncells;
+   short ngusset;
+   short ti_switch;
+   float suppzlength;
+   float inradius;
+   float outradius;
+   float phibotw;
+   float phitopw;
+   float phitope;
+   float phibote;
+   float rplane[42];
+   float planethick;
+   float uvangle;
+   float winthickin;
+   float winthickout;
+   float supptiside;
+   float suppalside;
+   float suppzthick;
+   float supptibase;
+   float suppalbase;
+   float x1baserad;
+   float x2baserad;
+   float x1basez;
+   float x2basez;
+   float x1slotthick;
+   float x2slotthick;
+   float x1slotz;
+   float x2slotz;
+   float x1suppthick;
+   float x2suppthick;
+   float x1suppz;
+   float x2suppz;
+   float x1rextent;
+   float x2rextent;
+   float u1rextent;
+   float v1rextent;
+   float u2rextent;
+   float v2rextent;
+   float u1basez;
+   float v1basez;
+   float u2basez;
+   float v2basez;
+   float u1slotz;
+   float v1slotz;
+   float u2slotz;
+   float v2slotz;
+   float u1suppz;
+   float v1suppz;
+   float u2suppz;
+   float v2suppz;
+   float cfibinrad;
+   float cfiboutrad;
+} DCGEO_ST;
+#endif /*__DCGEO_H__*/

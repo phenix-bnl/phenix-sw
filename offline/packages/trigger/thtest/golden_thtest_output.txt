@@ -1,0 +1,37 @@
+___thtest___ running 4000 events on all files
+___thtest___ processing file ../filelinks/uuDST_run2pp_v01_burn1-0000040648-0082.root
+___thtest___ number of total events 4000
+___thtest___ number of MinBias events 698
+___thtest___ number of 'ERT_Gamma2' live events 108
+___thtest___ number of 'ZDCNS' scaled events 110
+___thtest___ running 4000 events on all files
+___thtest___ processing file ../filelinks/EWG_Electron_run3dAu_v03AG_pro48-0000068030-5100.root
+___thtest___ number of total events 4000
+___thtest___ number of MinBias events 331
+___thtest___ number of 'ERT_Gamma2' live events 81
+___thtest___ number of 'ZDCNS' scaled events 7
+___thtest___ processing file ../filelinks/MWG_MinBias_run3pp_v03AG_pro50-0000089096-5100.root
+___thtest___ number of total events 4000
+___thtest___ number of MinBias events 4000
+___thtest___ number of 'ERT_Gamma2' live events 1
+___thtest___ number of 'ZDCNS' scaled events 0
+___thtest___ processing file ../filelinks/PWG_MinBias_run3dAu_v03AG_pro48-0000079615-5600.root
+___thtest___ number of total events 4000
+___thtest___ number of MinBias events 4000
+___thtest___ number of 'ERT_Gamma2' live events 7
+___thtest___ number of 'ZDCNS' scaled events 5
+___thtest___ processing file ../filelinks/PWG_MinBias_run3pp_v03AG_pro51-0000089527-5100.root
+___thtest___ number of total events 4000
+___thtest___ number of MinBias events 4000
+___thtest___ number of 'ERT_Gamma2' live events 4
+___thtest___ number of 'ZDCNS' scaled events 9
+___thtest___ processing file ../filelinks/PWG_MinBias_run4AuAu_Central_62_4GeV_v01_pro53-0000122785-0096.root
+___thtest___ number of total events 4000
+___thtest___ number of MinBias events 4000
+___thtest___ number of 'ERT_Gamma2' live events 7
+___thtest___ number of 'ZDCNS' scaled events 312
+___thtest___ processing file ../filelinks/uuDST_run2_v03_burn1-0000027048-0018.root
+___thtest___ number of total events 483
+___thtest___ number of MinBias events 132
+___thtest___ number of 'ERT_Gamma2' live events 0
+___thtest___ number of 'ZDCNS' scaled events 436

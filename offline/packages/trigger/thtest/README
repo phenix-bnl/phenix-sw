@@ -1,0 +1,69 @@
+This directory contains the "test suite" code for testing trigger helper every time a 
+change is made.  It is very simple to use.  
+
+Running the test
+========================================
+First the directory /phenix/data24/jfrantz/TriggerHelperTest/ is where you should perform 
+the tests--it is world writable.  It contains the files (or links) the test is presently 
+set up to run.
+
+1)
+	cd /phenix/data24/jfrantz/TriggerHelperTest/ 
+	cvs co -d test_TODAYS_DATE offline/packages/trigger/thtest
+
+2) Install your locally modified libtrigger.so library in (i.e. point your build area to) 
+	./install/    (or simply make a symbolic link named ./install that points to your local install) 
+in the directory you just checked out.  See the previous directories on data24 as examples.
+e.g. in test_04-10-04_after_changes/  I checked out the code into
+
+	test_04-10-04_after_changes/offline/package/trigger
+
+, made my mods and built with the following commands:
+
+	cd test_04-10-04_after_changes/offline/package/trigger/b   ! (my build directory)
+.	./autogen.sh --prefix=/phenix/data24/jfrantz/TriggerHelperTest/test_04-10-04_after_changes/install
+
+3) Build the local anadst_trighelp library in the same checked-out directory
+
+	make -f Makefile.trighelp
+
+4) Run the test
+
+	./do_multifiles.csh
+
+This runs on the files in *.list files in the dir. and will produce the file 
+	thtest_output.txt.  
+
+5) Compare with the file golden_thtest_output.txt in the same directory. e.g.
+
+	diff golden_thtest_output.txt thtest_output.txt
+
+Check out any differences.  These mean something has changed and this probably means a 
+bug has been introduced.
+============
+
+Updating the test
+=======================================
+It is anticipated that at least the following things will need maintained about this test
+suite:
+
+1) The links in /phenix/data24/jfrantz/TriggerHelperTest/filelinks/  and the corresponding
+file lists in the offline/packages/trigger/thtest   (*.list).  If a linked-to file moves 
+or is removed from the production disks, or you want to add  a new file (e.g. for new
+run periods)  replace it or add it. [Perhaps we should make hard copies not just links of 
+the files, but for now I'd like to conserve disk space and use links]. Then check in
+the new *.list files to the thtest directory.  If you need to add new *.list files, also change
+do_multifiles.csh.  (the "tee -a" for all jobs after the first is neccessary) 
+
+Note that the way I have the test running I had to have two separate jobs to run on two file
+lists (files_to_test_oldpp.list and files_to_test.list) only because after the rh72 to rh80
+changes some old files cannot be continuously read along side new files. (Root stores a 
+streamer for a class based on the first instance it encounters, and something low-level in our 
+data structures changed between new and old root versions).
+
+2) The "golden" output in golden_thtest_output.txt, corresponding to any changes in the 
+test file list or any other changes (e.g. you decide you want more events, more output).
+
+3) Maybe the output.  Perhaps one wants to make this test more detailed:  output different info.
+For this change anadst_trighelp.cc, (and obviously the corresponding golden_thtest_output.txt).
+

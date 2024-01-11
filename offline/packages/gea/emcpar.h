@@ -1,0 +1,52 @@
+#ifndef __EMCPAR_H__
+#define __EMCPAR_H__
+
+
+typedef struct {
+   float emc_walls;
+   float emc_opt;
+   float iwall;
+   float itype;
+   float angle;
+   float rpos;
+   float zc_start;
+   float yc_start;
+   float lsiz;
+   float tsiz;
+   float no_modz;
+   float no_mody;
+   float no_smodz;
+   float no_smody;
+   float scint_emc_med;
+   float emc_debug;
+   float gcuts[5];
+   float emc_r_min_sc;
+   float emc_r_max_sc;
+   float emc_r_step;
+   float emc_z_min;
+   float emc_z_max;
+   float emc_z_step;
+   float emc_x_min_sc;
+   float emc_x_max_sc;
+   float emc_x_step;
+   float emc_dele_max_sc;
+   float emc_dele_step_sc;
+   float emc_tof_min;
+   float emc_tof_max;
+   float emc_tof_step;
+   float emc_ind1_max_sc;
+   float emc_ind2_max_sc;
+   float emc_iwall_max;
+   float emc_itype_max;
+   float emc_i1_max;
+   float emc_itrack_max;
+   float emc_spart_max;
+   float emc_ncycle_max;
+   float emc_cutgam;
+   float emc_cutele;
+   float emc_cutneu;
+   float emc_cuthad;
+   float emc_cutmuo;
+   float array[32];
+} EMCPAR_ST;
+#endif /*__EMCPAR_H__*/

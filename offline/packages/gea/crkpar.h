@@ -1,0 +1,42 @@
+#ifndef __CRKPAR_H__
+#define __CRKPAR_H__
+
+
+typedef struct {
+   short pntr;
+   float phi_cntr;
+   float phi_open;
+   float dphi_carm;
+   float dphi_cshe;
+   float dphi_cpho;
+   float phi_cpho_off;
+   short n_sect;
+   short n_spm;
+   short n_pmt;
+   float r_pmt_ent;
+   float dx_pmt[32];
+   float r_pmt[32];
+   float z_pmt[32];
+   float theta_pmt[32];
+   float mir_rin;
+   float mir_thck;
+   float mir_theta1;
+   float mir_theta2;
+   float mir_thetacut;
+   float mir_phi1;
+   float mir_phi2;
+   float mir_dz;
+   float wi1_rin;
+   float wi1_thck;
+   float wi1_zend;
+   float wi2_rin;
+   float wi2_thck;
+   float wi2_zend;
+   float tr1_rin;
+   float tr1_thck;
+   float tr1_zend;
+   float tr2_rin;
+   float tr2_thck;
+   float tr2_zend;
+} CRKPAR_ST;
+#endif /*__CRKPAR_H__*/

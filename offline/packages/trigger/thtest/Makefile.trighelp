@@ -1,0 +1,28 @@
+PACKAGE = anadst_trighelp
+
+CXXFLAGS = -I. -I./install/include -I$(ROOTSYS)/include  -I$(OFFLINE_MAIN)/include  -Wall
+
+LDFLAGS = \
+	-L./install/lib \
+	-L$(OFFLINE_MAIN)/lib \
+	-lheader -ltriggerUtility -ltrigger \
+        -lezdst
+
+HDRFILES = $(PACKAGE).h
+LINKFILE = $(PACKAGE)LinkDef.h
+
+ADDITIONAL_SOURCES = 
+
+SO = lib$(PACKAGE).so
+
+$(SO) : $(PACKAGE).cc $(PACKAGE)_dict.C $(ADDITIONAL_SOURCES) $(HDRFILES)
+	$(CXX) $(CXXFLAGS) -g -o $@ -shared  $<  $(ADDITIONAL_SOURCES) $(LDFLAGS) $(PACKAGE)_dict.C
+
+$(PACKAGE)_dict.C : $(HDRFILES) $(LINKFILE)
+	rootcint -f $@  -c $(CXXFLAGS) $^
+
+.PHONY: clean
+
+clean: 
+	rm -f $(SO)
+	rm -f $(PACKAGE)_dict.*

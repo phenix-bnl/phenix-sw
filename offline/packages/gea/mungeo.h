@@ -1,0 +1,68 @@
+#ifndef __MUNGEO_H__
+#define __MUNGEO_H__
+
+
+typedef struct {
+   short nr_muon_arms;
+   short nr_muid_planes;
+   short ndet_per_pl;
+   short mu_floor_flg;
+   float muid_zmin;
+   float muid_zmax;
+   float muid_ang;
+   float beam_height;
+   float mu_top_height;
+   float mu_floor_height;
+   float mu_strp_thick;
+   float mu_gas_thick;
+   float mu_plas_thick;
+   float mu_yoke_thick[2];
+   float mu_donut_thick1[2];
+   float mu_donut_thick2[2];
+   float rmax1_donut1[2];
+   float rmax1_donut2[2];
+   float rmax2_donut1[2];
+   float rmax2_donut2[2];
+   float mu_floor_thick;
+   float mu_abs_thick[11];
+   float mu_hi_abs[11];
+   short mu_hi_med[11];
+   short mu_lo_med[11];
+   short nmed_mu_ps;
+   short nmed_mu_gas;
+   short nmed_mu_cs;
+   short nmed_mu_sh;
+   short nmed_mu_sd;
+   short nmed_mudn;
+   short nmed_muhl;
+   short nmed_mufl;
+   short nmed_yoke;
+   short mu_hi_color;
+   short mu_lo_color;
+   short color_muid;
+   short color_hole;
+   short color_dont;
+   short color_floor;
+   short color_strd;
+   short color_yoke;
+   float rykmin1[2];
+   float rykmin2[2];
+   float rmin_donut[2];
+   float zyoke[2];
+   float zgap_yoke_abs;
+   float zgap_labs_ldet;
+   float muid_delx;
+   float str_xstag;
+   short muhl_shld_flag;
+   short color_muhl_shld;
+   short nmed_muhl_shld;
+   float z_muhl_shld[2];
+   float thick_muhl_shld;
+   short muhl_config_flag;
+   short muabs_config_flag;
+   short npl_muhl;
+   float z_muhl[6];
+   float rmin_muhl[6];
+   float rmax_muhl[6];
+} MUNGEO_ST;
+#endif /*__MUNGEO_H__*/
