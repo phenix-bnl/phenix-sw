@@ -1,0 +1,6 @@
+struct dErtDcmData {
+   unsigned int Nwords;  	//.. 5 header + 120 + 10 trailer = 135
+   unsigned int packetID; 	//.. 14200: west arm, 14201: east arm 
+   unsigned int hitformat; 	//.. IDEMCRICH_LL1
+   unsigned int word[135]; 	//..20 roc and 6 word/roc 
+};

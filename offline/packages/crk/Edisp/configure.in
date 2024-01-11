@@ -1,0 +1,28 @@
+AC_INIT(configure.in)
+
+AC_CANONICAL_HOST
+
+case "$host" in
+*-*-linux*)
+  CC=gcc
+  CXX=g++
+  ;;
+*-*-solaris*)
+  CC=cc
+  CXX=CC
+  ;;
+*)
+  AC_MSG_ERROR([default compiler unknown for this system!])
+  ;;
+esac
+
+AM_INIT_AUTOMAKE(bio, 0.1)
+AM_DISABLE_STATIC
+AM_PROG_LIBTOOL
+
+AC_PROG_CXX
+
+AC_PATH_X
+AC_SUBST(x_libraries)
+
+AC_OUTPUT(Makefile)

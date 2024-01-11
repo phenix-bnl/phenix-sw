@@ -1,0 +1,12 @@
+/********************************************************************* 
+ *File: dCrkRel2s.idl
+ * Author: Y. Akiba, KEK
+ * Purpose: IDL for dCrkRel2s, a short relation table for two tables
+ * Date: 7/28/97
+ *       9/15/97 renamed as dCrkRel2s.idl
+ **********************************************************************/
+
+struct dCrkRel2s {
+  short id1;   /* key for table 1 */
+  short id2;   /* key for table 2 */
+};

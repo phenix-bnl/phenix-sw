@@ -1,0 +1,37 @@
+/****************************************************************************
+ * File: dCrkFEM.idl
+ * Author: Y. Akiba, KEK
+ * Purpose: DS for FEM output of RICH
+ * Date: 7/18/98  based on K. Oyama
+ *****************************************************************************/
+struct dCrkFEM {
+  /* Header structure */
+  unsigned short DAV1;     /* Beginning of Data. 0xFFFF */
+  unsigned short detid;    /* detector ID. RICH is 0x0600 */
+  unsigned short evno;     /* Event counter */
+  unsigned short module;   /* Module address */
+                           /* Crate*16+[L/R]*8+[U/L]*4+Plex */
+  unsigned short flag;     /* reserved */
+  unsigned short clock;    /* LS 8bits = beam clock counter when triggered */
+
+  /* AMU cell information: 3 DAV words */
+  unsigned short tac_cell;  /* AMU cell # of TAC sample (0 to 63) */
+  unsigned short pre_cell;  /* AMU cell # of pre sample (0 to 63) */
+  unsigned short post_cell; /* AMU cell # of post sample (0 to 63) */
+
+
+  /* data block. 5 boards x 32 PMT/board x 3 words/PMT = 480 DAV words */
+  unsigned short data[480];  /* The order of data is:   */
+                             /* ch 0 (pre, post, tac)   */
+                             /* ch 1 (pre, post, tac)   */
+                             /* ...                     */
+                             /* ch 159 (pre, post, tac) */
+			     /* ch 0  to 31 are from board 0 */
+			     /* ch 32 to 63 are from board 1 */
+			     /* ...                          */
+			     /* ch 128 to 159 are from board 0 */
+  /* Trailer Structre */
+  unsigned short usr[8];    /* 8 user words. reserved */
+  unsigned short parity;    /* longitudinal parity */
+  unsigned short CAV2;      /* End of transmission. 0x0000 */
+};

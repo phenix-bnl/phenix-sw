@@ -1,0 +1,37 @@
+Tools when just reading DST consuming so much resources.
+Method:
+   Pick tracks up for 1000 events in a file, write to evaluation
+file and exit ROOT once. Then, re-run ROOT and process the next
+1000 events using RICH_Alignment::SetEventOffset().
+Then, make a TChain of tracks picked-up and run alignment procedure
+using RICH_Alignment::SeImportOutput().
+
+
+Command lines:
+rcas20XX> ./mergecompile.sh 
+
+will make a binary executable "merger".
+
+rcas20XX> dstlist.sh <directory name the DST's are put>
+
+will create "dstlist.txt" which describes DST file list and
+it's entriess. Then,
+
+rcas20XX> mkdir evals
+rcas20XX> ln -s  (built libRICH_Alingment.so path) .
+rcas20XX> cp (rich_hotPMTlit.txt path) .
+rcas20XX> evals.sh <directory name the DST's are put>
+
+will make evaluation files for each 1000 event of the DST's in 
+"evals" directory. Then,
+
+rcas20XX> merger -o tracks.root evals/*
+
+will make a root file which includes TChain pf track Ntuple
+of files in "evals" dir.
+
+rcas20XX> root -b -q def_align.C
+
+will generate new alignment file "alignmentf.txt".
+Then rename it to "alignment.dat".
+

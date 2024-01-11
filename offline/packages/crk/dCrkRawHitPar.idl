@@ -1,0 +1,13 @@
+/****************************************************************************/
+/* File: dCrkRawHitPar.idl                                                  */ 
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkPawHitPar (control parameters for mCrkRawHit)       */ 
+/* Used by: mCrkRawHit                                                      */
+/* Date:  7/28/97                                                           */
+/*        9/15/97  renamed to dCrkRawHitPar                                 */
+/****************************************************************************/
+
+struct dCrkRawHitPar {
+  float min_pe;  /* minimum pulse height of hit (avoid div by 0) */
+};
+

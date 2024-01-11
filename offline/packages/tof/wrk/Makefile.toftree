@@ -1,0 +1,58 @@
+# Makefile for TofTree 
+#            08/21/00 Akio Kiyomichi
+#
+ObjSuf        = o
+SrcSuf        = C
+ExeSuf        =
+DllSuf        = so
+EVENTLIB      = $(EVENTO)
+OutPutOpt     = -o
+
+ROOTCFLAGS    = $(shell root-config --cflags)
+ROOTLIBS      = $(shell root-config --libs)
+ROOTGLIBS     = $(shell root-config --glibs)
+
+# Linux with egcs
+CXX           = g++
+CXXFLAGS      = -O -Wall -fPIC
+LD            = g++
+LDFLAGS       = -g
+SOFLAGS       = -shared
+
+CXXFLAGS     += $(ROOTCFLAGS)
+LIBS          = $(ROOTLIBS)
+GLIBS         = $(ROOTGLIBS)
+
+ROOTCINT      = $(ROOTSYS)/bin/rootcint
+
+#------------------------------------------------------------------------------
+
+EVENTO        = TofTree.$(ObjSuf) \
+                TofTreeDict.$(ObjSuf)
+
+EVENTS        = TofTree.cc TofTreeDict.C
+
+EVENTSO       = libtof_tree.$(DllSuf)
+
+OBJS          = $(EVENTO)
+
+PROGRAMS      = $(EVENTSO)
+
+all:            $(PROGRAMS)
+
+$(EVENTSO):     $(EVENTO)
+		$(LD) $(SOFLAGS) $(LDFLAGS) $(EVENTO) $(OutPutOpt) $(EVENTSO)
+		@echo "  Making shard object $(EVENTSO) done"
+clean:
+		@rm -f $(OBJS) *Dict.* core
+
+.SUFFIXES: .$(SrcSuf)
+
+###
+# Rule for generating CINT dictionaries for TofTree
+TofTreeDict.C TofTreeDict.h : TofTree.hh TofTreeLinkDef.h
+	@echo "  Generating dictionary TofTreeDict..."
+	@$(ROOTCINT) -f TofTreeDict.C -c TofTree.hh TofTreeLinkDef.h
+
+.$(SrcSuf).$(ObjSuf):
+	$(CXX) $(CXXFLAGS) -c $<

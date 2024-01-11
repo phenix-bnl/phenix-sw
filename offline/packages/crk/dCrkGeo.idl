@@ -1,0 +1,48 @@
+/****************************************************************************/
+/* File: dCrkGeo.idl                                                        */ 
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkGeo data structure                                  */ 
+/* Used by: many crk modules                                                */
+/* originally written for DSPACK, translated to STAF                        */
+/* Date: 7/28/97                                                            */
+/*       9/15/97 renamed to dCrkGeo                                         */
+/****************************************************************************/
+
+struct dCrkGeo {
+/* global geometry */
+/* Note: phi_cntr is the angle of center of two arms.*/
+/*       center of arm0 is phi_cntr - phi_open       */
+/*       center of arm1 is phi_cntr + phi_open       */
+  float phi_cntr;     /* phi angle of the center of the two arms */
+  float phi_open;     /* phi opening half angle of the two arms */
+  float dphi_carm;    /* phi sapn of CARM outer envelope */
+  float dphi_cshe;    /* phi span of CSHE outer envelope */
+  float pmt_phi_min;  /* min phi angle covered by PMT array */
+  float pmt_phi_max;  /* max phi angle covered by PMT array */
+  float pmt_dphi;     /* phi angle per PMT row */
+
+/* pmt geometry */
+  float r_pmt_ent;       /* radius of PMT entrance */
+  float dx_pmt[32];      /* sideward displacement of PMT's from SM */
+  float r_pmt[32];       /* radial position of PMT's */
+  float z_pmt[32];       /* z position of PMT's */
+  float theta_pmt[32];   /* theta angle of PMT's */
+
+/* mirror geometry */
+  float mir_rin;      /* inner radius of the mirror */
+  float mir_thck;     /* thickness of the mirror */
+  float mir_theta1;   /* theta angle of the low |z| edge of the mirror */
+  float mir_theta2;   /* theta angle of the high |z| edge of the mirror */ 
+  float mir_thetacut; /* theta angle of mirror cover (effective area) */
+  float mir_phi1;     /* starting phi angle */
+  float mir_phi2;     /* ending phi angle */
+  float mir_dz;       /* displacement of mirror center along z axis */
+
+/* window geometry */
+  float wi1_rin;      /* inner radius of the entrance window */
+  float wi1_thck;     /* thickness of the entrance window */
+  float wi1_zend;     /* z position of the entrance window edge */
+  float wi2_rin;      /* radius of the exit window */
+  float wi2_thck;     /* thichness of the exit window */
+  float wi2_zend;     /* z position of the exit window edge */
+};

@@ -1,0 +1,59 @@
+Author : Jiangyong Jia
+05/07/2001
+
+This is a very rough description of Embedding package. Since the rapid change of the root version recently,
+user need to recompile this package using the same version of root as you run it. When you run the macro,
+you also need to make sure that you have correct offline packages compiled with the same root.
+I haven't touch this package for about one month, so I can't gurantee it will work with the latest offline
+softwares.
+
+
+
+Embedding procedure was described in one talk: /phenix/WWW/p/draft/jjia/hardpwg/correction
+one can also find explanations from Ana50 and upcoming analysis note on recent charged spectra analysis
+
+PHEmbedInitializer :
+set up the node tree structure nessasory for embedding. it also provide MakeCopy function which copys all
+PHTable from one tree to the other.
+PHEmbedMixer:
+merge single particle DST tables with real event DST tables, merge hits if nessasory, currently merging
+of DC hit table  and PC raw table have been done.
+PHEmbededEvent:
+contains table pointers  relevent to the embeded single track DST, real event DST, so one can fetch the
+table pointer directly without the need to seach through the node tree, it also provides functions to
+facilate the Evaluation.
+PHEmbedMCEvaluator:
+this is my private evaluator that I have used for the embedding study.
+PHEmbedMcRecoTrack:
+this is the place of the evaluation result for one embeded track. it will be dumped to a ntuple and served
+as input for efficiency study.
+PHEmbedHistogrammer:
+if you are familar with PHDchHistogrammer, you will know what this is. Yes, it is a place where all the
+evaluation histogram and ntuple were stored(can be written to disk at the end of the root session)
+
+auxilary classes 
+PHEmbedRealEvaluator:
+is a class designed for evaluating real tracks embed into real events
+PHTableNodeReset:
+same as PHNodeReset except this class only reset PHIODataNodes.
+
+
+
+classes only related to DCH, not directly related to the track embedding procedure
+DchTrackSelector
+DstGlobalAnalyzer
+
+
+MACROS:
+run like this:
+root [0] .x  embedfieldiniMc.C
+root [1] .x  embedRunMc.C
+
+
+one need to modify the macro to reflect your own input MC DST and Real DSTs. If you are familar with
+CamTask* macros, you should be able to understand these macroes after some strugglings
+
+
+This package was put in the analysis area just because it have been used in the QM analysis, full support
+should not  be expected until next run data is avaliable and there is a major interest in this direction.
+

@@ -1,0 +1,11 @@
+Uncalibrated towers list format:
+
+sector, x, y, flag
+
+The flag means the following:
+1 = zero statistics
+2 = too few statistics
+3 = noisy
+4 = no peak
+5 = no good check by eye
+6 = warned

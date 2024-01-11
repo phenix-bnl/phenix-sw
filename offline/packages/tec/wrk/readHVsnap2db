@@ -1,0 +1,24 @@
+#! /bin/tcsh
+
+set workdir=`pwd`
+set snapshotdir=snapshots
+set setupscript="/opt/phenix/bin/phenix_setup.csh new"
+
+cd $workdir
+source $setupscript
+setenv OO_FD_BOOT $PHENIX_FD_BOOT
+
+foreach i (`ls $snapshotdir`)
+  set Mmm=`echo $i|cut -d . -f 1`
+  set dd=`echo $i|cut -d . -f 2`
+  set Year=`echo $i|cut -d . -f 3`
+  set hh=`echo $i|cut -d . -f 4|cut -c 1-2`
+  set mm=`echo $i|cut -d . -f 4|cut -c 3-4`
+  set ss=`echo $i|cut -d . -f 4|cut -c 5-6`
+  set mydate="$Mmm $dd $hh"\:"$mm"\:"$ss $Year"
+  set MM=`date --date="$mydate" +%m`
+  set mytime=$Year,$MM,$dd,$hh,$mm,$ss
+  set macroname=readHVsnap2db.C\($mytime\)
+  #echo $macroname
+  root -b -q $macroname
+end

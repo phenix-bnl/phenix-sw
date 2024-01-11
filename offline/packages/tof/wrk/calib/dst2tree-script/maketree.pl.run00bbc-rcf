@@ -1,0 +1,136 @@
+#!/usr/local/bin/perl
+#-----------------------------------------------------------------------------
+#  Perl script maketree.pl
+#
+#  Purpose: auto-generate csh script for camDataRun.C
+#
+#  ARGV[0]: DST file name
+#-----------------------------------------------------------------------------
+if ($#ARGV > -1) {
+    #
+    # Anybody asked for help?
+    #
+    if ($ARGV[0] eq "-h" || $ARGV[0] eq "--help" || $ARGV[0] eq "-?") {
+	print "\n";
+	print "** maketree, generate the csh script for tofCalibByDST.C **\n";
+	print "-----------------------------------------------------------\n";
+	print "arguments:                                                 \n";
+	print "          maketree [data_dir] [filename]                   \n";
+	print "   ARGV[0]: Directory \n";
+	print "   ARGV[1]: DST file name \n";
+	print "\n";
+	exit;
+    }
+}
+if ($#ARGV >= 1) {
+    $data_dir = $ARGV[0];
+    $filename = $ARGV[1];
+} else {
+    print"usage makereco [-h] [--help] [-?] className \n";
+    exit;
+}
+my $PWD="/bin/pwd";
+#
+# Write csh file
+#
+@name     = split(/\./,$filename);
+@section  = split(/\-/,@name[0]);
+
+$runnum   = @section[1];
+$seqnum   = @section[2];
+
+$event    = "1600";
+$treeName = "run".$runnum."tree".$seqnum.".root";
+$logName  = "tree".$runnum."_".$seqnum.".log";
+$cshName  = join("", "maketree".$runnum,"_",$seqnum,".csh");
+
+$dstDir   = $data_dir;
+$thisDir  = `$PWD`;
+chomp($thisDir); # remove \n character
+
+## You should make these directories in current directory
+$treeDir  = $thisDir."/tree";
+$logDir   = $thisDir."/log";
+$cshDir   = $thisDir."/csh";
+$wrkDir   = $thisDir."/wrk";
+
+## Setup Bbc Calibration Parameters 
+if($runnum >= 8885 && $runnum < 9438){ $bbcRun = "8885";} 
+elsif($runnum >= 9438  && $runnum < 10505){ $bbcRun =  "9438";}
+elsif($runnum >= 10505 && $runnum < 11016){ $bbcRun = "10505";} # Fleld OFF
+elsif($runnum >= 11016 && $runnum < 11026){ $bbcRun = "11016";}
+elsif($runnum >= 11026 && $runnum < 11035){ $bbcRun = "11026";}
+elsif($runnum >= 11035 && $runnum < 11058){ $bbcRun = "11035";}
+elsif($runnum >= 11058 && $runnum < 11159){ $bbcRun = "11058";}
+elsif($runnum >= 11159 && $runnum < 11201){ $bbcRun = "11159";}
+elsif($runnum >= 11201 && $runnum < 11460){ $bbcRun = "11201";}
+elsif($runnum >= 11460 && $runnum < 11477){ $bbcRun = "11460";}
+elsif($runnum >= 11477 && $runnum < 11512){ $bbcRun = "11477";}
+elsif($runnum >= 11512 && $runnum < 11597){ $bbcRun = "11512";}
+elsif($runnum >= 11597 && $runnum < 11610){ $bbcRun = "11597";}
+elsif($runnum >= 11610 && $runnum < 11615){ $bbcRun = "11610";}
+elsif($runnum >= 11615 && $runnum < 11654){ $bbcRun = "11615";}
+elsif($runnum >= 11654 && $runnum < 11679){ $bbcRun = "11654";}
+elsif($runnum >= 11679 && $runnum < 11682){ $bbcRun = "11679";}
+elsif($runnum >= 11682 && $runnum < 11684){ $bbcRun = "11682";}
+elsif($runnum >= 11684 && $runnum < 11720){ $bbcRun = "11684";}
+elsif($runnum >= 11720 && $runnum < 11740){ $bbcRun = "11720";}
+elsif($runnum >= 11740 && $runnum < 11757){ $bbcRun = "11740";}
+elsif($runnum >= 11757 && $runnum < 11775){ $bbcRun = "11757";}
+elsif($runnum >= 11775 && $runnum < 11807){ $bbcRun = "11775";}
+elsif($runnum >= 11807 && $runnum < 11817){ $bbcRun = "11807";} # Fleld OFF
+elsif($runnum >= 11817 && $runnum < 11822){ $bbcRun = "11817";}
+elsif($runnum >= 11822 && $runnum < 12058){ $bbcRun = "11822";}
+elsif($runnum >= 12058 && $runnum < 12089){ $bbcRun = "12058";}
+elsif($runnum >= 12089 && $runnum < 12167){ $bbcRun = "12089";}
+elsif($runnum >= 12167 && $runnum < 12299){ $bbcRun = "12167";}
+elsif($runnum >= 12299 && $runnum < 12323){ $bbcRun = "12299";}
+elsif($runnum >= 12323 && $runnum < 12348){ $bbcRun = "12323";} # HALF
+elsif($runnum >= 12348 && $runnum < 12365){ $bbcRun = "12348";}
+elsif($runnum >= 12365 && $runnum < 12374){ $bbcRun = "12365";}
+elsif($runnum >= 12374 && $runnum < 12404){ $bbcRun = "12374";}
+elsif($runnum >= 12404 && $runnum < 12424){ $bbcRun = "12404";} # Special
+elsif($runnum >= 12424 && $runnum < 12431){ $bbcRun = "12424";} # Special
+elsif($runnum >= 12431){                    $bbcRun = "12431";} # Special
+else{ $bbcRun = "8885";}
+$bbcDir = $thisDir."/wrk/bbcpar/".$bbcRun;
+
+# for CCJ
+$dstHost  = "ccjnfs1";  ## CCJ
+$wrkHost  = "ccjnfs1";  ## CCJ
+
+# LSF working Directory
+#$jobDir   = "/job_tmp/kiyo".$runnum."_".$seqnum;   ## CCJ
+$jobDir   = $thisDir."/job_tmp/kiyo".$runnum."_".$seqnum;  ## RCF
+
+open (CSHFILE, ">$cshDir/$cshName") || die "cannot open CSH file $cshName\n";
+print CSHFILE "#!/bin/csh -f \n";
+print CSHFILE "\n";
+print CSHFILE "source phenix.csh\n";
+print CSHFILE "mkdir $jobDir\n";
+print CSHFILE "cp $wrkDir/tofCalibByDST.C $jobDir\n";
+print CSHFILE "cp $wrkDir/tof*.txt $jobDir\n";
+print CSHFILE "cp $wrkDir/tof*.txt.pass? $jobDir\n";
+print CSHFILE "cp $bbcDir/BbcCalib.* $jobDir\n";
+#print CSHFILE "rcpx $dstHost:$dstDir/$filename $jobDir/\n";  ## CCJ
+print CSHFILE "ln -s $dstDir/$filename $jobDir/\n";  ## RCF
+print CSHFILE "cd $jobDir/\n";
+print CSHFILE "touch core\n";
+print CSHFILE "chmod 444 core\n";
+print CSHFILE "\n";
+print CSHFILE "# Post-DST Analysis\n";
+print CSHFILE "root -b << EOF >& $logName\n";
+#print CSHFILE "#include <stddef.h>;\n";  ## for ROOT3.XX
+print CSHFILE ".x tofCalibByDST.C($event, \"$filename\" ,\"$treeName\");\n";
+print CSHFILE ".q\n";
+print CSHFILE "EOF\n";
+print CSHFILE "\n";
+print CSHFILE "cd $thisDir\n";
+#print CSHFILE "rcpx $jobDir/$treeName $wrkHost:$treeDir/ \n";  ## CCJ
+#print CSHFILE "rcpx $jobDir/$logName $wrkHost:$logDir/ \n";    ## CCJ
+print CSHFILE "mv $jobDir/$treeName $treeDir/ \n";  ## RCF
+print CSHFILE "mv $jobDir/$logName $logDir/ \n";    ## RCF
+print CSHFILE "\n";
+print CSHFILE "rm -fr $jobDir\n";
+
+system("chmod +x $cshDir/$cshName");

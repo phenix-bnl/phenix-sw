@@ -1,0 +1,7 @@
+struct dErtFemData {
+   short id;
+   short crate;    //... VME crate number. 0: west arm, 1: east arm
+   short Roc;     //...  ROC number: from 0 to 19
+   short word;    //...  word number: from 0 to 5
+   long  Value;   //...  value of the word
+};

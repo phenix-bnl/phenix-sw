@@ -1,0 +1,47 @@
+#ifndef __DTOFEVAL_H__
+#define __DTOFEVAL_H__
+
+
+typedef struct {
+   short id;
+   short slatid;
+   short sector;
+   short side;
+   short panel;
+   short slat;
+   short rawid;
+   short recid;
+   short gdigiid;
+   short nslathit;
+   short hits_seq;
+   short nrectrack;
+   short rawqvc[2];
+   short rawtvc[2];
+   float dtof;
+   float rectof;
+   float mctof;
+   float deloss;
+   float receloss;
+   float mceloss;
+   float drphi;
+   float dz;
+   float recpos[3];
+   float mcpos[3];
+   short mcpid;
+   float r_vertex;
+   float z_vertex;
+   float phi_vertex;
+   float vertex[3];
+   float p_vertex;
+   float ptheta;
+   float pphi;
+   short idparent;
+   float r_verorg;
+   float z_verorg;
+   float phi_verorg;
+   float p_verorg;
+   float pthetaorg;
+   float pphiorg;
+   short idorigin;
+} DTOFEVAL_ST;
+#endif /*__DTOFEVAL_H__*/

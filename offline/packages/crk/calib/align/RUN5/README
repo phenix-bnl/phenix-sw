@@ -1,0 +1,35 @@
+README of offline/packages/crk/calib/align/RUN5
+
+2005/11/20 
+Susumu Oda, oda@cns.s.u-tokyo.ac.jp
+
+1) RICHAlignment_track collects electron tracks and associated RICH PMT data,
+   and saves them in a ROOT file. 
+2) ProcessRing evaluates RICH mirror displacement parameters from the ROOT 
+   file.
+-------------------------------------------------------------------------------
+1)
+RICHAlignment_track/RICHAlignment_track collects electron tracks and records 
+projection points of the track at PC1 and PC3 using CNT nDSTs. It also records 
+associated RICH PMT data using DSTs including CrkHit nodes.
+
+Just do the followings to get a ROOT file; 
+./autogen.sh
+make
+cd macro
+ln -s ../.libs/librichalignment_track.so ./librichalignment_track.so
+root -l -b -q rich_align_track_RUN5.C
+-------------------------------------------------------------------------------
+2)
+ProcessRing/RICH_Alignment evaluates mirror displacement parameters using a 
+RICHAlignment_track output, and outputs the parameters to a text file and 
+displays ring images. 
+
+Just do the followings to get an output text file;
+make
+cd macro
+ln -s ../libRICH_Alignment.so ./libRICH_Alignment.so
+root -l dstrun_align_RUN5.C
+-------------------------------------------------------------------------------
+offline/packages/crk/calib/align/README
+will help you to understand these alignment procedure. 

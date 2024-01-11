@@ -1,0 +1,48 @@
+
+
+tecmap_database_run01a.txt has wrong mapping for north sides of 
+sectors 0 and 2
+
+--------------------------------------------------------------------------
+
+ June 12, 2001:
+
+ 	Major cleanup. Removed all *par* files, moved geometry for yesr 2000
+to directort geom00, updated response, reconstruction and test macros,
+added rootlogon.C.
+
+---------------------------------------------------------------------------
+ October 24, 2000:
+
+	Updated following files:
+        makeabsgains.C, readprdf.C, readdst.C tecrecini.C, tecrecrun.C, tecrespini.C, tecresprun.C
+
+---------------------------------------------------------------------------
+ March 21, 2000:
+
+ tecresprun.C: Response chain. Reads from pisa99.root and writes out 
+             test.prdf, rawrel.root and rawpar.root.
+
+ tecrecrun.C: Reconstruction chain. Reads from test.prdf and rawrel.root
+            and writes out DST.root.
+
+ tectestrun.C: Test chain. Reads from pisa99.root, writes nothing, can be
+             used for evaluations starting from pisa file.
+
+ tectestrunoo.C, tecresprunoo.C tecrecrunoo.C: 
+   Do the same but use Objectivity Database. To run them you have to 
+   source /phenix/workarea/lebedev/objy/dbinstall/phenix_try_cas.csh
+
+ readprdf.C: simple example of reading prdf file without any analysis
+
+ tecdstrun.C: example of reading DST from DST.root file
+
+ tecmixrun.C: example of prdf event mixing.
+
+ *par.C files not necessary any more
+
+---------------------------------------------------------------------------
+ December 22, 1999:
+
+ 	teceval*.C: Evaluations using test.prdf, rawrel.root and pisa99.root.
+

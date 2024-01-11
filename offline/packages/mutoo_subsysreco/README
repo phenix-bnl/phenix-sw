@@ -1,0 +1,23 @@
+// $Id: README,v 1.5 2009/05/19 07:07:04 hpereira Exp $
+
+NOTE (H. PEREIRA DA COSTA 2005/09/09)
+Be carefull when adding new modules.
+There are two types of modules:
+
+1/ modules which read/fill/modify mutoo maps (PHMaps or TMutXXXMap)  
+
+2/ other modules, which only use existing mutoo maps without modifying them and
+make, say, ntuples.
+
+The type 1 must derive from MuonSubsysreco and not directly from subsysreco. In
+their process_event method, they must have explicit call to clear_maps_if_needed() at the
+beginning of the method and write_maps_if_needed() at the end of the method. This ensures
+that maps are correctly written to output DSTs and correctly cleared at each
+new event. The code will not crash if these are missing. However you may have
+strange results in the output, depending on in which order your subsystems are
+registered in the parent macro.
+
+For other modules (which only does map _reading_), they derive explicitely from
+Subsysreco and do not call either clear_maps_if_needed(), write_maps_if_needed() or PHMapManager.
+
+Hugo

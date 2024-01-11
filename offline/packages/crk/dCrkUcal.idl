@@ -1,0 +1,24 @@
+/*****************************************************************************/
+/* File: dCrkUcal.idl                                                        */
+/* Author: Y. Akiba, KEK                                                     */
+/* Purpose: IDL for dCrkUcal (un-calibration constants, or reverse calib-    */
+/*          ration constants of each PMT of RICH. They describe the gain     */
+/*          variation, time offset, etc of each tube. They also serve as     */
+/*          dead channel mask)                                               */
+/* Used by: mCrkGhitRaw                                                      */
+/* Date: 9/20/97                                                             */
+/*                                                                           */
+/*****************************************************************************/
+struct dCrkUcal {
+  short pmt;        /* PMT channel ID */
+  float gain;       /* ADC ch per 1 p.e. 0 if the channel is dead */
+  float ped;        /* pedestal of ADC */
+  float clock;      /* # of TDC bins per nsec */
+  float t0;         /* timing 0 */
+  float slew;       /* slewing parameter. */
+  float N0p;        /* photo-cathode N0 value */
+  float P_noise;    /* noise hit probability */
+  float mean_noise; /* noise pulse height */
+  float sigma_pe;   /* one photo-electron resolution */
+  float sigma_t;    /* time resolution for one photon */
+};

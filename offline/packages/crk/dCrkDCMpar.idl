@@ -1,0 +1,15 @@
+/****************************************************************************/
+/* File: dCrkDCMpar.idl                                                     */ 
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkDCMpar (control parameters for mCrkDCM)             */ 
+/* Used by: mCrkDCM                                                         */
+/* Date:  7/18/98                                                           */
+/****************************************************************************/
+  
+struct dCrkDCMpar {
+  short mode;   /* switch of DCM mode */
+		/* mode = 0  zero suppression mode   */
+		/* mode = 1  pass through mode (No processing)  */
+  short threshold; /* threshould for zero suppression */
+};
+

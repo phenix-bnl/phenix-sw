@@ -1,0 +1,23 @@
+/*****************************************************************************/
+/* File: dCrkPid.idl                                                         */
+/* Author: Y. Akiba, KEK                                                     */
+/* Purpose: IDL for dCrkPid (Pid calculation result of RICH)                 */
+/* originally for DSPACK. converted to STAF.                                 */
+/* Date: 7/28/97                                                             */
+/*       9/15/97 renamed to dCrkPid                                          */
+/*****************************************************************************/
+struct dCrkPid {
+  short id;
+  short proj_id;
+  short faccept;  /* Flag: 1--> in acceptance. 0--> out of acceptance */
+  short npmt;     /* # of PMTs associated to the track */
+  float npe;      /* sum of pulse height of PMTs */
+  float timing;   /* (corrected) average timing of PMT hits. (nsec) */
+  float chi2;     /* chi-squares/npmt of PMT hits */
+  float rdisp;    /* center displacement of PMT hits */
+  float Lpath;    /* path length from x of ray to xproj */
+  float xproj[3]; /* projected position in RICH PMT array */
+  float chi2b;    /* narrow chisqr */
+  float dt;
+};
+

@@ -1,0 +1,59 @@
+#ifdef __CINT__
+
+#pragma link off all classes;
+#pragma link off all functions;
+#pragma link off all globals;
+
+#pragma link C++ class CglEmbedreco-!;
+#pragma link C++ class CglReco-!;
+#pragma link C++ class CglSnglTrack+;
+#pragma link C++ class CglSnglTrackv1+;
+#pragma link C++ class CglSnglTrackv2+;
+#pragma link C++ class CglSnglTrackv3+;
+#pragma link C++ class CglSnglTrackv4+;
+#pragma link C++ class CglSnglTrackv5+;
+#pragma link C++ class CglSnglTrackv6+;
+#pragma link C++ class CglSnglTrackv7+;
+#pragma link C++ class CglSnglTrackv8+;
+#pragma link C++ class CglSnglTrackv9+;
+#pragma link C++ class CglTrack+;
+#pragma link C++ class CglTrackv1+;
+#pragma link C++ class CglTrackv2+;
+#pragma link C++ class CglTrackv3+;
+#pragma link C++ class CglTrackv4+;
+#pragma link C++ class CglTrackv5+;
+#pragma link C++ class CglTrackv6+;
+#pragma link C++ class CglTrackv7+;
+#pragma link C++ class CglTrackv8+;
+#pragma link C++ class CglTrackv9+;
+#pragma link C++ class dCglTrackWrapper-;
+#pragma link C++ class DetectorGeometry+;
+#pragma link C++ class DetectorGeometryv1+;
+#pragma link C++ class dPHDchTrackWrapper-;
+#pragma link C++ class dPHTrackWrapper-;
+#pragma link C++ class PHDchSnglTrackv1+;
+#pragma link C++ class PHDchTrackOut+;
+#pragma link C++ class PHDchTrackOutv1+;
+#pragma link C++ class PHDetectorGeometry-!;
+#pragma link C++ class PHSnglTrack+;
+#pragma link C++ class PHSnglTrackv1+;
+#pragma link C++ class PHSnglTrackv2+;
+#pragma link C++ class PHSnglTrackv3+;
+#pragma link C++ class PHSnglTrackv4+;
+#pragma link C++ class PHSnglTrackv5+;
+#pragma link C++ class PHSnglTrackv6+;
+#pragma link C++ class PHSnglTrackv7+;
+#pragma link C++ class PHSnglTrackv8+;
+#pragma link C++ class PHTrackOut+;
+#pragma link C++ class PHTrackOutv1+;
+#pragma link C++ class PHTrackOutv2+;
+#pragma link C++ class PHTrackOutv3+;
+#pragma link C++ class PHTrackOutv4+;
+#pragma link C++ class PHTrackOutv5+;
+#pragma link C++ class PHTrackOutv6+;
+#pragma link C++ class PHTrackOutv7+;
+#pragma link C++ class PHTrackOutv8+;
+#pragma link C++ class SavePHPanel+;
+#pragma link C++ class SavePHPanelv1+;
+
+#endif

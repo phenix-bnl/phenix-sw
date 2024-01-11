@@ -1,0 +1,52 @@
+#ifndef __DPHTRACK_H__
+#define __DPHTRACK_H__
+
+
+typedef struct {
+   int trackIndex;
+   short arm;
+   short ifIntersectVtx;
+   short ifIntersectDch;
+   short ifIntersectPc1;
+   short ifIntersectPc2;
+   short ifIntersectPc3;
+   short ifIntersectCrk;
+   short ifIntersectTec;
+   short ifIntersectTof;
+   short ifIntersectPbsc;
+   short ifIntersectPbgl;
+   double projectionVtx[3];
+   double projectionDch[3];
+   double projectionPc1[3];
+   double projectionPc2[3];
+   double projectionPc3[3];
+   double projectionCrk[3];
+   double projectionTec[3];
+   double projectionTof[3];
+   double projectionPbSc[3];
+   double projectionPbGl[3];
+   double errorVtx[3];
+   double errorDch[3];
+   double errorPc1[3];
+   double errorPc2[3];
+   double errorPc3[3];
+   double errorCrk[3];
+   double errorTec[3];
+   double errorTof[3];
+   double errorPbSc[3];
+   double errorPbGl[3];
+   double directionVtx[3];
+   double directionDch[3];
+   double directionPc1[3];
+   double directionPc2[3];
+   double directionPc3[3];
+   double directionCrk[3];
+   double directionTec[3];
+   double directionTof[3];
+   double directionPbSc[3];
+   double directionPbGl[3];
+   double crkPathLength;
+   double tofPathLength;
+   double emcPathLength;
+} DPHTRACK_ST;
+#endif /*__DPHTRACK_H__*/

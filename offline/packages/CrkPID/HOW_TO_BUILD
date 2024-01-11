@@ -1,0 +1,10 @@
+This package can be made as follows.
+(1) check out it from CVS
+(2) make as follows
+% mkdir bld
+% cd bld
+% ../autogen.sh
+% make
+
+The library, libCrkPID.so will be made in bld/.libs
+

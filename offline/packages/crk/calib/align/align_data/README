@@ -1,0 +1,7 @@
+/ arm / side / panel / dz / dphi /
+
+# Run9 Comment
+The parameter for WS panel-12 in Run9 is replaced by Run8 parameter
+due to the low statistics.  All the parameters except for panel-12
+(WS) are the tuned new parameters.
+

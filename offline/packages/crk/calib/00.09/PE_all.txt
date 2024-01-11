@@ -1,0 +1,88 @@
+#
+# PE_all.txt
+# by Y. Akiba
+# date 9/18/00
+#
+# This is correction data for the calibration
+# files that T. Sakaguchi generated.
+# In this calibration files, there are 20 to 50 PMTs that are
+# not properly fit because of "fat" pedestal. I examined those
+# problematic channels, and find good fits for most of them, and
+# PE and PEW values are obtained. To gain statistic, here I merged
+# histogram files of all runs. 
+# Those fits are obtained by fit.C in this directory. 
+# I also examined the dead channels, and added here. Here I only
+# included single dead channels. Those dead channels that appears in
+# 8 channel groups are not included.
+# This file will be used as an input to edit_rich_adc.cc, and
+# PE and PEW values in this files are substitued into the corresponding
+# data in the calibration file.
+#
+#PMT  PE     PEW
+110 0        0
+111 0        0
+176 0        0
+238 0        0
+239 0        0
+320 77.1719  22.861
+336 83.3032  19.5997
+384 91.6935  23.2605
+400 64.116   17.1965
+416 76.9147  20.7644
+432 66.119   18.2582
+448 99.8099  23.0961
+480 65.0782  32.2017
+496 81.3221  23.1471
+560 78.1784  20.533
+576 91.7139  23.0584
+592 86.6279  20.0166
+608 72.4086  20.1272
+614 0        0
+624 80.      30.
+640 79.3267  25.1339
+910 0        0
+960 67.861   33.4001
+976 89.7905  25.1589
+1024 74.8817 26.9157
+1072 67.449  19.4884
+1088 82.6143 22.4042
+1104 80.     30.
+1120 75.4612 21.4363
+1136 74.9241 21.0539
+1152 88.8841 25.6222
+1161 0       0
+1200 71.6614 20.5733
+1232 73.2656 18.538
+1248 82.4357 17.6983
+1264 90.01   30.5845
+1265 90.1008 21.6922
+1310 0       0
+1489 0       0
+1584 75.9513 21.9627
+1600 108.773 25.1113
+1616 86.4312 18.9651
+1664 105.93 22.8025
+1840 67.2184 15.2533
+1888 84.8382 18.8334
+1904 98.1581 21.3258
+1936 74.5528 18.6127
+1974 0       0
+2128 47.4806 18.2446
+2183 0       0
+2208 81.2665 20.0889
+2224 91.1771 27.6501
+2240 73.0164 19.3756
+2496 79.7656 17.7964
+2528 72.7609 19.8467
+2533 0       0
+2544 66.416  34.0612
+2545 74.1155 18.027
+2657 0       0
+2985 0       0
+3089 0       0
+3520 80.031  21.3273
+3824 78.6865 21.9878
+4359 0       0
+4376 0       0
+4377 0       0
+4569 0       0

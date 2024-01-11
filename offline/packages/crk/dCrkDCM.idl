@@ -1,0 +1,44 @@
+/****************************************************************************
+ * File: dCrkDCM.idl
+ * Author: Y. Akiba, KEK
+ * Purpose: DS for DCM output of RICH
+ * Date: 7/18/98  based on K. Oyama
+ *****************************************************************************/
+struct dCrkDCM {  /*   bit 0:15            bit 16:19  */ 
+  unsigned long nWord;     /* number of words of payload */
+  unsigned long scheme;    /* IDRICH_DCM0, IDRICH_DCM2, etc */
+  unsigned long packetID;  /* starts from 6001 */
+ 
+  /* The payload starts here */
+  unsigned long flag;	   /* flag word. reserved.      15     */
+  unsigned long module;    /* module address.            6     */
+  unsigned long evno;      /* event #                    6     */
+  unsigned long clock;     /* beam clock                 6     */
+  unsigned long detid;     /* detector id                6     */
+
+  unsigned long pre_cell;  /* AMU cell # (Pre)          2     */
+  unsigned long post_cell; /* AMU cell # (Post)         4     */
+  unsigned long tac_cell;  /* AMU cell # (Tac)          1     */
+
+  unsigned long data[490];
+                  /* maximum size of data block here. 160ch x 3 + 8 + 2 */
+                  /* When zero suppressed, most of them are empty. If there */
+                  /* are N ch hits, the first 3*N + 10 words are filled */
+                  /* The order is: */
+                  /* 0:2        hit 1 (post, pre, time)  */
+                  /* 3:5        hit 2 (post, pre, time)  */
+                  /*      ...                   */
+                  /* 3N-3:3N-1  hit N (post, pre, time)  */
+                  /* 3N:3N+7    8 user words */
+                  /* 3N+8       parity word  */ 
+                  /* 3N+9       Last word    */
+
+		  /* The data format is as follows */
+                  /* type     Bit 0:15     Bits 16:19   Bits 20:27 */
+                  /* Pre       data        12        channel  */
+                  /* Post      data        10        channel  */
+                  /* TAC       data         9        channel  */
+                  /* user      user word    8         0        */
+                  /* parity    parity word  7         0        */ 
+                  /* last      last word    7         0        */ 
+};

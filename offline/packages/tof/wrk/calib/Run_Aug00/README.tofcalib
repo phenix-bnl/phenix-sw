@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------
+  TOF Calibration Parameter for July/August run
+                               Akio Kiyomichi (last update 08/27/2000)
+--------------------------------------------------------------------------
+Rough calibration by BBC/TOF data [pass0 calibration]
+
+------
+HOWTO
+  If you want to use recent TOF calibration parameter for CAMERA chain,
+  please replace parameter files after LuxorLinker.
+
+  % [LuxorLinker]
+  % cp /phenix/workarea/kiyo/tofcalib/Run_Aug00/tof*.txt .
+
+------
+Using data
+FEM TVC/QVC scan test for parameter 1,2,3
+/export/bigdisk/dcm_data/tof/timecal.071200/ on phoncs0
+
+run07688 - run09438 : field ON/OFF (for parameter 8) [8/15/00]
+
+run10505 - run10708 : field OFF (for parameter 5,6,7) [8/27/00]
+run08732 - run08884	[1500-2000 hits for each slat]
+
+------
+TofCalibObject:
+1. TVC/QVC Pedestal values
+	tofPedestal.txt   - measured by FEM bench test (7/18 - Miwako)
+
+2. TVC conversion factor
+	tofTvcConv.txt    - measured by FEM bench test (7/18 - Miwako)
+
+3. QVC conversion factor
+	tofQvcConv.txt    - measured by FEM bench test (May - Miwako)
+
+4. Slewing parameters
+	tofSlewPar.txt    - 0 value : NO slewing correction
+
+5. Time offset
+	tofToffset.txt    - rough calibration (8/27 - Akio)
+	--> tofToffset.txt.pass0
+
+6. Y position offset
+	tofYoffset.txt    - rough calibration (8/27 - Akio)
+	--> tofYoffset.txt.pass0
+
+7. Light velocity in scint.
+	tofVelocity.txt   - constant value 14.0cm/ns
+	--> tofVelocity.txt.pass0
+
+8. Eloss conversion factor
+	tofElossConv.txt  - gain correction (8/15 - Akio)
+	--> tofElossConv.txt.pass0
+
+9. Global timing offset
+	tofGlobalT.txt    - 0 value.
+
+
+TofAddressObject:
+	toffemmap.txt     - same as toffemmap.txt.year1
+	tofcablemap.txt   - NO need for reconstruction chain.
+
+TofGeometryObject:
+	tofpanelgeo.txt   - survey value. same as tofpanelgeo.txt.year1
+	tofslatoffset.txt - 0 value
+
+------
+MEMO
+run07688 - run08884  : field off [100-200 hits for each slat]
+	081500/tofToffset.txt.nofield
+run07688 - run09438  : field on/off [1500-2000 hits for each slat]
+	081500/tofToffset.txt.alldata
+
+run08732 - run08884  : standard position, field OFF
+run10505 - run10708  : standard position, field OFF
+	082700/tofToffset.txt.pass0
+
+BBC/ZDC calibration parameter [bbczdc]
+  /phenix/workarea/ohnishi/Calib/bbc/081700/BbcCalib.*
+  /phenix/workarea/ohnishi/Calib/zdc/081600/ZdcCalib.*

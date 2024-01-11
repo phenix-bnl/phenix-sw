@@ -1,0 +1,30 @@
+#include "PHEmbedStat.h"
+
+PHEmbedStat::PHEmbedStat(){
+  dchitE.clear();
+  dchitStat.clear();
+  pc1rawE.clear();
+  pc1rawStat.clear();
+  pc2rawE.clear();
+  pc2rawStat.clear();
+  pc3rawE.clear();
+  pc3rawStat.clear();
+  pc1clusterE.clear();
+  pc1clusterStat.clear();
+  pc2clusterE.clear();
+  pc2clusterStat.clear();
+  pc3clusterE.clear();
+  pc3clusterStat.clear();
+  tofoutE.clear();
+  tofoutStat.clear();
+  crkhitE.clear();
+  crkhitStat.clear();
+  emctowerE.clear();
+  emctowerStat.clear();
+  emcclusterE.clear();
+  emcclusterStat.clear();
+  accrawE.clear();
+  accrawStat.clear();
+  tofwhitE.clear();
+  tofwhitStat.clear();
+}

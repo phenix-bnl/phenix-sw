@@ -1,0 +1,241 @@
+<html><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+
+<head><title> PHENIX-RICH Geometry Object User's Guide </title></head>
+
+<body name="top" bgcolor="#ffd8e8" link="#0000ff" vlink="#404080">
+
+<div align=right>
+<a href="http://www.phenix.bnl.gov/">
+<img align=bottom src="/rich/figures/phenix.gif" height=30 alt="PHENIX"></a>
+</div>
+
+<h1><font color="#20b800">
+PHENIX-RICH Geometry Object User's Guide
+</font></h1>
+
+<hr>
+
+<h2><font color="#20b800">
+Document Properties
+</font></h2>
+
+<p>
+Created on October 25, 2000, by K.Shigaki
+<br>
+Last updated on October 31, 2000, by K.Shigaki
+</p>
+
+<p>
+For latest version of this document, check
+<a href="http://www.phenix-j.rhic.bnl.gov/rich/doc/software/geometry_object.html">http://www.phenix-j.rhic.bnl.gov/rich/doc/software/geometry_object.html</a>.
+</p>
+
+<hr>
+
+<h2><font color="#20b800">
+What PHENIX-RICH Geometry Object Is
+</font></h2>
+
+<p>
+The PHENIX-RICH Geometry Object is implemented
+in the current PHENIX analysis framework <strong>ROOT/PHOOL</strong>
+as a C++ class <strong>CrkGeometryObject</strong>,
+derived from the PHENIX geometry object base class
+<strong>PHGeometryObject</strong>.
+</p>
+
+<h2><font color="#20b800">
+What PHENIX-RICH Geometry Object Does For You
+</font></h2>
+
+It holds geometry information of the RICH hardware elements
+needed for the data analysis.
+It also provides support functions
+such as Cherenkov light reflection by the mirror.
+
+<h2><font color="#20b800">
+How You Get PHENIX-RICH Geometry Object
+</font></h2>
+
+<p>
+The PHENIX-RICH Geometry Object is defined in
+
+<pre>
+CrkGeometryObject.hh
+CrkGeometryObject.cc
+</pre>
+
+in the CRK library package of PHENIX.
+The source code can be checked out from the PHENIX CVS repository at:
+
+<pre>
+offline/packages/crk
+</pre>
+
+On the RCF computing farm at BNL,
+compiled CRK library is available on AFS at:
+
+<pre>
+/afs/rhic/phenix/PHENIX_LIB/pro(new)/lib
+</pre>
+
+which should be in your LD_LIBRARY_PATH
+after executing the PHENIX standard setup script by:
+
+<pre>
+% source /opt/phenix/bin/phenix_setup.csh
+</pre>
+
+<h2><font color="#20b800">
+How You Use PHENIX-RICH Geometry Object
+</font></h2>
+
+<h3>
+List of Public Methods of CrkGeometryObject Class
+</h3>
+
+<dl>
+
+<dt><code> CrkGeometryObject (); </code></dt>
+<dd> default constructor; set design (ideal) geometry for the two arms </dd>
+
+<dt><code> ~CrkGeometryObject (); </code></dt>
+<dd> deconstructor </dd>
+
+<dt><code> PHBoolean Fetch (); </code></dt>
+<dd> fetch geometry information from database; <i>to be implemented</i> </dd>
+<dt><code> PHBoolean FetchFromFile (); </code></dt>
+<dd> fetch geometry information from default ASCII file;
+     <i>to be implemented</i> </dd>
+<dt><code> PHBoolean FetchFromFile (char* filename); </code></dt>
+<dd> fetch geometry information from ASCII file;
+     <i>to be implemented</i> </dd>
+<dt><code> PHBoolean FetchFromPhnxPar (char* filename); </code></dt>
+<dd> fetch geometry information from PHENIX parameter file phnx.par;
+     <i>to be implemented</i> </dd>
+<dt><code> PHBoolean Update (PHTimeStamp* Tbeg, PHTimeStamp* Tend); </code></dt>
+<dd> <i>to be implemented</i> </dd>
+
+<dt><code> void UseSurvey (); </code></dt>
+<dd> set surveyed information </dd>
+<dt><code> PHBoolean FetchAlignFromFile (char* filename); </code></dt>
+<dd> fetch mirror alignment information from ASCII file </dd>
+
+<dt><code> char* GetName (); </code></dt>
+<dd> return: name of the object </dd>
+
+<dt><code> PHPoint GetPmtPosition
+           (int arm, int side, int sm, int pmt); </code></dt>
+<dd> return: position of PMT in global coordinates </dd>
+<dd> input: arm [0-1], side [0-1], supermodule id [0-39], PMT id [0-31]</dd>
+    
+<dt><code> PHVector GetPmtVector
+           (int arm, int side, int sm, int pmt); </code></dt>
+<dd> return: direction vector of PMT in global coordinates </dd>
+<dd> input: arm [0-1], side [0-1], supermodule id [0-39], PMT id [0-31]</dd>
+
+<dt><code> PHLine Reflect (int arm, PHLine in,
+           int& side, int& panel, double& path); </code></dt>
+<dd> return: vector of ray reflected by mirror </dd>
+<dd> input: arm [0-1], track vector </dd>
+<dd> output: side [0-1], mirror panel id [0-23], path length [cm] </dd>
+<dt><code> PHPoint HitArray (int arm, PHLine ray, int& side); </code></dt>
+<dd> return: position of track hitting PMT array </dd>
+<dd> input: arm [0-1], vector of ray </dd>
+<dd> output: side [0-1] </dd>
+
+<dt><code> double GetAlignDz (int arm, int side, int panel); </code></dt>
+<dd> return: delta-z alignment parameter </dd>
+<dd> input: arm [0-1], side [0-1], mirror panel id [0-23] </dd>
+<dt><code> double GetAlignDphi (int arm, int side, int panel); </code></dt>
+<dd> return: delta-phi alignment parameter </dd>
+<dd> input: arm [0-1], side [0-1], mirror panel id [0-23] </dd>
+
+<dt><code> int IdToArm (int global_id); </code></dt>
+<dd> conversion from global PMT id [0-5119] to arm id [0-1] </dd>
+<dt><code> int IdToSide (int global_id); </code></dt>
+<dd> conversion from global PMT id [0-5119] to side id [0-1]</dd>
+<dt><code> int IdToSm (int global_id); </code></dt>
+<dd> conversion from global PMT id [0-5119] to supermodule id [0-39] </dd>
+<dt><code> int IdToPmt (int global_id); </code></dt>
+<dd> conversion from global PMT id [0-5119] to PMT id [0-31] </dd>
+<dt><code> int GlobalId (int arm, int side, int sm, int pmt); </code></dt>
+<dd> conversion from arm [0-1], side [0-1], supermodule [0-39]
+     and PMT [0-31] to global PMT id [0-5119] </dd>
+
+<dt><code> void print (); </code></dt>
+<dd> print out geometry information; <i>to be implemented</i> <dd>
+
+</dl>
+
+<h3>
+Example of Usage in ROOT/PHOOL
+</h3>
+
+<p>
+As the initialization
+(after loading needed libraries),
+
+<pre>
+cgo = new CrkGeometryObject();
+cgo->UseSurvey();
+cgo->FetchAlignFromFile("crk_alignment.dat");
+</pre>
+</p>
+
+<p>
+In the event loop
+(after reconstructing tracks using detectors other than RICH),
+
+<pre>
+for (arm = 0; arm < CRK_NARM; arm ++) {
+  PHLine ref = cgo->Reflect (arm, track, side, panel, path);
+  if (ref.length() > 0.) {
+    PHPoint cross = cgo->HitArray (arm, ref, side);
+    if (cross != PHPoint()) {
+      for (int ihit = 0; ihit < npmt; ihit ++) {
+        int pmtid = (crk+ihit)->pmt;
+        if (cgo->IdToArm(pmtid) == arm) {
+          PHPoint pmt_pos =
+            cgo->GetPmtPosition (cgo->IdToArm((crk+ihit)->pmt),
+                                 cgo->IdToSide((crk+ihit)->pmt),
+                                 cgo->IdToSm((crk+ihit)->pmt),
+                                 cgo->IdToPmt((crk+ihit)->pmt));
+          float pmt_r =
+            sqrtf (pmt_pos.getX() * pmt_pos.getX() +
+                   pmt_pos.getY() * pmt_pos.getY());
+          float pmt_phi = atan (pmt_pos.getY() / pmt_pos.getX());
+          if (arm == 1) pmt_phi += Pi;
+          PHPoint pmt_pos_cor (
+            pmt_r * cos (pmt_phi - d_align_dphi [arm][side][panel]),
+            pmt_r * sin (pmt_phi - d_align_dphi [arm][side][panel]),
+            pmt_pos.getZ() - d_align_dz [arm][side][panel]
+          );
+          double r_cor =
+            PHGeometry::distanceLinePoint (ref, pmt_pos_cor);
+        } // if PMT in same arm as track
+      } // loop on PMT hit
+    } // if reflection falls onto PMT array
+  } // if reflected by mirror
+} // loop on arm
+</pre>
+</p>
+
+<hr>
+
+<p>
+Go to <a href="/rich/index.html">PHENIX-RICH Project Home Page</a>
+<br>
+Go to <a href="http://www.phenix.bnl.gov/">PHENIX Home Page</a>
+</p>
+
+<hr>
+
+<address>
+PHENIX-RICH Geometry Object User's Guide -
+<a href="mailto:shigaki@bnl.gov">shigaki@bnl.gov</a>
+</address>
+
+</body>
+
+</html>

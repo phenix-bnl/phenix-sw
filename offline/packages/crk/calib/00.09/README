@@ -1,0 +1,37 @@
+9.22.00
+This directory contains files and programs that are used to
+store the first round RICH calibration data into Objy.
+The major part of calibration work was done by T. Sakaguchi.
+He processed about 200 runs and determined the pedestal values
+of each PMTs in each run. He also combined several runs to determine
+gain calibration, and he got 4 sets. 
+I (YA) examined the gain fit results, and refitted some of the
+not-so-good fit PMT channels in the original Takao/s work,
+and substitued the new fit results in the calibration files.
+The revised calibration files are then loaded into Objy database.
+THis directory contains all programs I used.
+
+Since those files are here for archive purpose, they should
+not be changed.
+
+
+Explanatons for the files. 
+
+fit.C  --- program used to fit the selected, not-so-well fit PMT
+           channels.'
+PE_all.txt. -- revised PMT gains obtained from fit.C (with some 
+	       manual edit. I can not obtain any good fit for some
+	       of the PMTs, In those cases, I set gain =80, for
+	       example.
+
+edit_rich_adc.cc --- program used to edit Takao/s original calibration
+           files
+edit_rich.csh --- driver shell script for edit_rich_adc.cc
+
+merge*.C  --- macro used to merge Root histogram files
+
+CrkCalibInit.C
+load_rich_DB.C --- macros used to store the results into Objy.
+
+
+

@@ -1,0 +1,61 @@
+2000.8.22
+
+this directory contains macros to execute RICH event display.
+
+[STEP 0] Prepare link to input DST file.
+The program read a DST file named "centdst.root" and display the event
+in it. So, the first step you should do is to make a symbolic link 
+"centdst.root" to the  DST file you wish to view
+
+% ln -s your_favorite_DST_file centdst.root
+
+[STEP 1] To start the program under ROOT
+
+To run the program, simply do:
+
+root mydisp_ini.C
+
+This step initialize the program. Now, you are ready to view events.
+The above step will produces 6 Canvases. They are
+"North" (North side view of PHENIX CENTRAL ARMS)
+"South" (South side view of PHENIX CENTRAL ARMS)
+"South West" (2D views of RICH, PC3, EMCAL in South West side)
+"North West" (2D views of RICH, PC3, EMCAL in North West side)
+"South East" (2D views of RICH, PC3, EMCAL in South East side)
+"North East" (2D views of RICH, PC3, EMCAL in North East side)
+
+A recommended way to place those 6 Canvases are
+
+NorthEast   North  NorthWesSouthEast   South  SouthWest
+
+In the default size of the Canvases, the above arrangement will
+almost complete fill up your dislay screen of 1600x1200 pixel.
+
+At this point, all of those Canvases are blank. You have to load
+event. This can be done by (note you are still inside of ROOT)
+
+[STEP 2] Load next good event.
+
+ROOT> .x next.C
+
+This step will load next "good" event. At present, a "good" event
+is an event with -20 < Zbbc < 20, where Zbbc is Z-position of
+event vertex determined by the BBC.
+
+After this step, you have a fresh now event to look at. To view the
+event, you have to
+
+[STEP 3] Display the views.
+
+ROOT> .x disp_evt0.C  // display the "South" View
+ROOT> .x disp_evt1.C  // display the "North" View
+ROOT> .x disp_side.C  // display the four side views (SW,SE,NW,NE).
+
+You can issue any of those three command in any order.
+
+[STEP *] Continue to next event..
+
+After you are done with this event, you can go to the next event by
+repeating [STEP 2] and  and then repeat [STEP 3] to view the event.
+You can skip [STEP 3] if you do not want to view the event. Just
+repeat [STEP 2] until you come to another interesting event.

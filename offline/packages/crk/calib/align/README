@@ -1,0 +1,200 @@
+-- RICH_Alignment
+
+RICH mirror alignment class
+
+Contents
+ 0 What's this?
+   0.0 introduction
+   0.1 alignment.dat
+   0.2 Method
+ 1 How to use
+   1.1 check out and build
+   1.2 Run example
+   1.3 usages
+     1.3.0 Start up ROOT and load library
+     1.3.1 Create RICH_Alignment object load DST
+     1.3.2 Configuration for process
+     1.3.3 Process
+   1.4 Tips for use
+   1.5 Optional functions
+     1.5.0 SetDST()
+     1.5.1 SetEval()
+     1.5.2 SetVerbosity()
+     1.5.3 SetEventOffset()
+     1.5.4 SetAlignmentFile()
+     1.5.5 UseSurvey()
+     1.5.6 Getdz(),Getdphi(),GetdzFinal(),GetdphiFinal()
+     1.5.7 ImportOutput()
+ 2 Note
+
+0. What's this?
+0.0 Introduction
+   RICH_Alignment class is a tool to generate alignment.dat,
+ which describes geometrycal calibration information of RICH mirror
+ from DST, uDST, nDST or OnlCal pass1 DST.
+
+0.1 alignment.dat
+   PHENIX RICH detects electron/high pT hadrons by detecting
+ a Ring-shape image of light made as a result of convergence
+ of Cherenkov lights by shpeared RICH mirror surface.
+ However, RICH mirror is not a Plank. Each mirror in a sector
+ (WN, WS, EN and ES) is composed of 2 x 12 small mirrors. 
+ It is very likely (and actually so) that each mirror shifts
+ from the position to be. To correct these differences, geometrycal
+ calibration is needed. PHENIX analysis framework (CrkGeometryObject,
+ CrkPID) takes the way achieve this correction by shifting PMT position
+ instead of shifting mirrors. alignment.dat describes how much z [cm] and
+ phi [rad] PMT's should be shifted crresponding to mirror.
+
+0.2 Method
+    Ring shape is made on the plane vertical with the line which the
+ track of the particle is reflected by the RICH mirror. PMT hit position
+ on the plane is filled on a 2-D histogram for all the tracks which 
+ passed the mirror to be aligned. At this time, the position of ring center
+ drawn is shifted from (0,0) because alignment is not correct.
+    Then, class serches the position of ring center from the 2-D histogram.
+ First, for the direction of Z axis, +- 2 cm of 2-D hist is projected for
+ Y axis. As the shape is ring, then, 2 peaks will appear; one at Y > 0 and
+ the other at Y < 0. Then, take average of the means of these 2 peaks as
+ Y axis of ring center. After taking this correction, Then, do same thing
+ for Z axis. Class repeats this process 10 times to converge and finally
+ define ring center and define first alignment.
+    Class makes 2-D hist using previous alignment result and re-define
+ ring center again. This process repeats 15 times. Finally to avoid
+ some kinds of oscillation, the average of 10-15th alignment result is
+ taken as final result.
+
+
+1. How to use
+1.1 check-out and build
+ rcas20XX> source /opt/phenix/bin/phenix_setup.csh
+ rcas20XX> cvs -l co offline/packages/crk/calib/alignment
+ rcas20XX> cd offline/packages/crk/calib/alignment
+ rcas20XX> make
+
+    Then, libRICH_Alignment.so will be generated.
+
+1.2 Run a Example
+ rcas20XX> ln -s \
+ /phenix/data27/phnxreco/run3_dAu_pro37/dsts/\
+ /phenix/data27/phnxreco/run3dAu_v01_pro36/dsts/\
+ DST_run3dAu_v01_pro36-0000069502-0002.proot DST.root
+ rcas20XX> root -b -q macros/dstrun_align.C
+
+    This will output alignment.dat and evaluation files.
+
+1.3 Usages
+1.3.0 Start up ROOT and load library
+ rcas20XX> root -b
+ root[0]> gSystem->Load("./libRICH_Alignment");
+
+1.3.1 Cread RICH_Alignment object and load DST
+ root[1]> RICH_Alignment *align = new RICH_Alignment("DST-file.root");
+ root[2]> align->SetDSTLvl(2);
+ /* 
+    Setting type of DST file to process
+    0: DST
+    1: uDST
+    2: Run3 pass1 DST (no nDST)
+ */
+
+1.3.2 Configuration for process
+ root[3]> align->ImportHotPMTList("rich_hotPMTlist.txt");
+ /*
+    Importing list of noisy PMT channel
+ */
+ root[4]> align->UsePAD(1);
+ /* 
+    Selection of method of making the track-association line that the 
+    track is reflected by RICH mirror.
+    0: Made by the track projection points on PC1 and PC3 
+    1: Made by the associated cluster position of PC1 and PC3
+    The recommended and default value is "1"
+ */
+ root[5]> align->VerifByPhi(0);
+ /* 
+    Selection of method of feeding back of alignment data for phi direction.
+    0: Feedback is achived via Y axis.
+    1: Feedback is achived via phi.
+    The recommended and default value is "1"
+ */
+ root[6]> align->SetMAxent(-1);
+ /*
+    Set maximum entry of events to pick electron candidate tracks up.
+    -1 for unlimited.
+ */
+
+1.3.3 Process
+ root[7]> align->Process();
+ /*
+    Process() proceeds
+    1. Pick Electron candidate and PMT hits up from DST. (ProcessTracks())
+    2. Process "define ringcenter and feedback it" 15
+       times. (ProcessRings(loop #))
+    3. Caluculate final alignment from 11-15th alignment definition.
+       (Calc(10,5))
+    4. Write the result to "alignment.dat". (Write())
+    5. If evaluation procedure is activated, proceed evaluation 
+       for the final alignment result (see 1.5.1). (Verify())
+ */
+
+1.4 Tips for use
+   - Recommended events to proceed is > 100k for ERT triggered event.
+   - If you want to use multiple DST, you can make TChain of DST and
+     process it.
+
+1.5 Optional functions
+1.5.0 RICH_Alignment::SetDST(char *dst)
+    Open DST file and get (TTree *) "T" saved in the file.
+1.5.1 RICH_Alignment::SetEval(char *eval)
+    Set evaluation file name and activate evaluation procedure.
+An evaluation file includes 
+   - Ntuple of tracks processed for alignment.
+   - 2-D histograms of PMT hits for each mirror and each feedback.
+   - 2-D histograms of PMT hits using final alignment result 
+     for each mirror.
+   - 2-D histograms of PMT hits using final alignment result 
+     (accumulated for all mirror).
+   - 2-D histograms of PMT hits for each mirror without mirror
+     to compare (accumulated for all mirror).
+   - Histogram of distance of PMT hits from the track reflected line
+     using final alignment result.
+
+    Evaluation procedure also outputs postscript files of 2-D histograms
+of PMT hits for each mirror using the final result for each sector. 
+
+1.5.2 RICH_Alignment::SetVerbosity(int verb)
+    Set Verbosity level from 0 to 2.
+
+1.5.3 RICH_Alignment::SetEventOffset(int offset)
+    Set offset of event # to start picking tracks up.
+
+1.5.4 RICH_Alignment::SetAlignmentFile(char *alignmentdat="alignment.dat")
+    Set output alignment file name instead of "alignment.dat".
+
+1.5.5 RICH_Alignment::UseSurvey(int usesurvey)
+    Use surveyed geometry(1) of not (0). Default calue of class is "1".
+
+1.5.6 Float_t Getdz(),Getdphi(),GetdzFinal(),GetdphiFinal()
+    Getdz(int arm,side,panel,iloop) returns alignment data of Z for
+ordered arm(0-1), side(0-1), mirror panel(0-24) and feedback number.
+    GetdzFinal(int arm,side,panel,iloop) returns final alignment data
+of Z for ordered arm(0-1), side(0-1) and mirror panel(0-24).
+
+1.5.7 RICH_Alignment::ImportOutput(char *evalf="Evalout.root",char *alignf="alignment.dat")
+     Import tracks from Ntuple in evaluation file and final alignment
+data from alignment.dat. This function is used to re-verify alignment
+or create new alignment file using Ntuple in evaluation file.
+
+2. Note 
+   - DST/uDST/pass1 DST structure is always changes, you may need to
+     change code (Node Name or Class version/usage) at anytime.
+   
+   - Some version of DST consumes so much resources when just reading
+     entries. You can try
+     "root -b -q sep/simple.C\(\"DST-to-be-used.root\"\)"
+     and see resources status by "top" sorted by memory usage (M).
+     Typically, such kind of DST's consumes 100MB per 1000 events.
+     In this case, you can try some stuffs in sep/ directory. You can see
+     instruction in the directory.
+

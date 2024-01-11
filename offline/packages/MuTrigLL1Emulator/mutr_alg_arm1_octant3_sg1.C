@@ -1,0 +1,10420 @@
+void func_mutr_alg_arm1_octant3_sg1(
+  short int Station10[8][96],
+  short int Station11[8][192],
+  short int Station12[8][320],
+  unsigned int mutr_trigger_sg1[2][8])
+{
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][0]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][1]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][2]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][0]>0) && (Station11[3][1]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][0]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][1]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][2]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][1]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][1]>0) && (Station11[3][2]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][0]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][1]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][2]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][1]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][2]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][2]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][2]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][2]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][2]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][3]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][2]>0) && (Station11[3][3]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][0]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][1]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][2]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][1]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][2]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][3]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][4]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][4]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][4]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][4]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][4]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][4]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][5]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][5]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][5]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][3]>0) && (Station11[3][6]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][0]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][1]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][2]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][1]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][2]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][3]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][4]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][5]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][6]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][6]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][6]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][6]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][6]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][7]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][7]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][7]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][4]>0) && (Station11[3][8]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][1]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][1]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][1]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][1]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][1]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][3]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][4]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][2]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][5]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][3]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][4]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][5]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][6]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][7]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][8]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][8]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][8]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][8]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][8]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][9]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][9]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][5]>0) && (Station11[3][9]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][2]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][2]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][2]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][3]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][3]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][3]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][3]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][3]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][6]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][7]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][8]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][4]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][9]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][5]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][6]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][7]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][8]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][9]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][10]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][10]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][10]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][10]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][10]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][11]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][6]>0) && (Station11[3][11]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][4]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][4]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][5]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][5]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][5]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][5]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][10]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][11]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][6]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][12]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][7]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][8]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][9]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][10]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][11]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][12]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][12]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][12]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][12]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][12]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][13]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][13]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][13]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][7]>0) && (Station11[3][14]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][6]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][6]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][7]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][7]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][7]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][7]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][7]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][13]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][14]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][8]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][15]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][9]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][10]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][11]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][12]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][13]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][14]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][14]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][14]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][14]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][14]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][15]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][15]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][8]>0) && (Station11[3][15]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][8]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][8]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][9]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][9]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][9]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][9]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][9]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][16]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][17]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][10]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][18]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][19]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][11]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][12]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][13]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][14]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][15]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][16]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][16]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][16]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][16]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][16]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][17]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][9]>0) && (Station11[3][17]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][10]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][10]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][11]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][11]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][11]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][11]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][12]>0) && (Station12[3][20]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][12]>0) && (Station12[3][21]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][12]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][12]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][12]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][12]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][22]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][13]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][14]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][15]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][16]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][17]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][18]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][18]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][18]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][18]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][18]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][18]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][19]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][19]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][19]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][10]>0) && (Station11[3][20]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][12]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][12]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][13]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][13]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][13]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][13]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][23]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][24]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][14]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][25]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][15]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][16]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][17]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][18]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][19]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][20]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][20]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][20]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][20]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][20]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][21]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][21]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][21]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][11]>0) && (Station11[3][22]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][14]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][14]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][15]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][15]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][15]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][15]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][15]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][26]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][27]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][16]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][28]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][29]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][17]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][18]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][19]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][20]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][21]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][22]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][22]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][22]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][22]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][22]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][23]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][23]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][12]>0) && (Station11[3][23]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][16]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][16]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][17]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][17]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][17]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][17]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][18]>0) && (Station12[3][30]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][18]>0) && (Station12[3][31]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][18]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][18]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][18]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][18]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][32]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][19]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][20]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][21]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][22]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][23]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][24]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][24]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][24]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][24]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][24]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][24]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][25]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][25]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][25]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][13]>0) && (Station11[3][26]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][18]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][18]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][19]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][19]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][19]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][19]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][33]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][34]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][20]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][35]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][21]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][22]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][23]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][24]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][25]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][26]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][26]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][26]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][26]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][26]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][27]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][27]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][27]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][14]>0) && (Station11[3][28]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][20]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][20]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][21]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][21]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][21]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][21]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][21]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][36]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][37]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][22]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][38]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][23]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][24]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][25]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][26]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][27]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][28]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][28]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][28]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][28]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][28]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][29]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][29]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][15]>0) && (Station11[3][29]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][22]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][22]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][23]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][23]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][23]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][23]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][23]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][39]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][40]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][24]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][41]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][42]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][25]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][26]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][27]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][28]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][29]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][30]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][30]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][30]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][30]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][30]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][31]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][16]>0) && (Station11[3][31]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][24]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][24]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][25]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][25]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][25]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][25]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][26]>0) && (Station12[3][43]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][26]>0) && (Station12[3][44]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][26]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][26]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][26]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][26]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][45]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][27]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][28]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][29]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][30]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][31]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][32]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][32]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][32]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][32]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][32]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][33]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][33]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][33]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][17]>0) && (Station11[3][34]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][26]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][26]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][27]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][27]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][27]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][27]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][46]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][47]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][28]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][48]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][29]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][30]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][31]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][32]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][33]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][34]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][34]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][34]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][34]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][34]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][35]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][35]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][18]>0) && (Station11[3][35]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][28]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][28]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][29]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][29]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][29]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][29]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][29]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][49]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][50]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][30]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][51]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][52]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][31]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][32]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][33]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][34]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][35]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][36]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][36]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][36]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][36]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][36]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][37]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][37]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][19]>0) && (Station11[3][37]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][30]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][30]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][31]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][31]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][31]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][31]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][32]>0) && (Station12[3][53]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][32]>0) && (Station12[3][54]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][32]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][32]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][32]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][32]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][55]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][33]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][34]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][35]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][36]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][37]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][38]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][38]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][38]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][38]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][38]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][38]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][39]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][39]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][39]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][20]>0) && (Station11[3][40]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][32]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][32]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][33]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][33]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][33]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][33]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][56]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][57]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][34]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][58]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][35]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][36]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][37]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][38]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][39]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][40]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][40]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][40]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][40]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][40]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][41]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][41]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][41]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][21]>0) && (Station11[3][42]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][34]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][34]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][35]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][35]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][35]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][35]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][35]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][59]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][60]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][36]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][61]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][37]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][38]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][39]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][40]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][41]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][42]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][42]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][42]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][42]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][42]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][43]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][43]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][22]>0) && (Station11[3][43]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][36]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][36]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][36]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][37]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][37]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][37]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][37]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][37]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][62]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][63]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][64]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][38]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][65]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][39]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][40]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][41]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][42]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][43]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][44]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][44]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][44]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][44]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][44]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][45]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][23]>0) && (Station11[3][45]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][38]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][38]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][39]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][39]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][39]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][39]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][66]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][67]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][40]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][68]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][41]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][42]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][43]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][44]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][45]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][46]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][46]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][46]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][46]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][46]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][47]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][47]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][47]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][24]>0) && (Station11[3][48]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][40]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][40]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][41]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][41]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][41]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][41]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][69]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][70]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][42]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][71]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][43]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][44]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][45]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][46]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][47]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][48]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][48]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][48]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][48]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][48]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][49]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][49]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][25]>0) && (Station11[3][49]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][42]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][42]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][43]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][43]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][43]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][43]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][43]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][72]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][73]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][44]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][74]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][75]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][45]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][46]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][47]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][48]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][49]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][50]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][50]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][50]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][50]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][50]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][51]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][51]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][26]>0) && (Station11[3][51]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][44]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][44]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][45]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][45]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][45]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][45]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][46]>0) && (Station12[3][76]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][46]>0) && (Station12[3][77]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][46]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][46]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][46]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][46]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][78]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][47]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][48]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][49]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][50]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][51]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][52]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][52]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][52]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][52]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][52]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][52]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][53]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][53]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][53]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][27]>0) && (Station11[3][54]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][46]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][46]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][47]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][47]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][47]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][47]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][79]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][80]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][48]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][81]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][49]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][50]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][51]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][52]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][53]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][54]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][54]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][54]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][54]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][54]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][55]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][55]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][55]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][28]>0) && (Station11[3][56]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][48]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][48]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][49]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][49]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][49]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][49]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][49]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][82]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][83]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][50]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][84]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][51]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][52]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][53]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][54]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][55]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][56]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][56]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][56]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][56]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][56]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][57]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][57]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][29]>0) && (Station11[3][57]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][50]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][50]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][50]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][51]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][51]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][51]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][51]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][51]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][85]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][86]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][87]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][52]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][88]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][53]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][54]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][55]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][56]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][57]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][58]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][58]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][58]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][58]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][58]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][59]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][30]>0) && (Station11[3][59]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][52]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][52]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][53]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][53]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][53]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][53]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][89]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][90]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][54]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][91]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][55]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][56]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][57]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][58]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][59]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][60]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][60]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][60]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][60]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][60]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][61]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][61]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][61]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][31]>0) && (Station11[3][62]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][54]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][54]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][55]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][55]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][55]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][55]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][92]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][93]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][56]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][94]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][57]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][58]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][59]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][60]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][61]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][62]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][62]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][62]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][62]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][62]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][63]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][63]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][32]>0) && (Station11[3][63]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][56]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][56]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][57]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][57]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][57]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][57]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][57]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][95]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][96]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][58]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][97]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][98]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][59]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][60]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][61]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][62]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][63]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][64]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][64]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][64]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][64]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][64]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][65]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][65]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][33]>0) && (Station11[3][65]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][58]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][58]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][59]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][59]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][59]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][59]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][60]>0) && (Station12[3][99]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][60]>0) && (Station12[3][100]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][60]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][60]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][60]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][60]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][101]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][61]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][62]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][63]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][64]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][65]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][66]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][66]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][66]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][66]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][66]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][66]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][67]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][67]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][67]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][34]>0) && (Station11[3][68]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][60]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][60]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][61]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][61]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][61]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][61]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][102]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][103]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][62]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][104]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][63]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][64]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][65]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][66]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][67]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][68]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][68]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][68]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][68]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][68]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][69]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][69]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][69]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][35]>0) && (Station11[3][70]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][62]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][62]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][63]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][63]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][63]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][63]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][63]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][105]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][106]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][64]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][107]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][65]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][66]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][67]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][68]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][69]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][70]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][70]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][70]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][70]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][70]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][71]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][71]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][36]>0) && (Station11[3][71]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][64]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][64]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][64]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][65]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][65]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][65]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][65]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][65]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][108]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][109]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][110]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][66]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][111]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][67]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][68]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][69]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][70]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][71]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][72]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][72]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][72]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][72]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][72]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][73]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][37]>0) && (Station11[3][73]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][66]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][66]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][67]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][67]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][67]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][67]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][112]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][113]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][68]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][114]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][69]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][70]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][71]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][72]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][73]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][74]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][74]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][74]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][74]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][74]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][75]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][75]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][75]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][38]>0) && (Station11[3][76]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][68]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][68]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][69]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][69]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][69]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][69]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][115]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][116]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][70]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][117]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][71]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][72]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][73]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][74]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][75]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][76]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][76]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][76]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][76]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][76]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][77]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][77]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][77]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][39]>0) && (Station11[3][78]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][70]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][70]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][71]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][71]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][71]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][71]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][71]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][118]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][119]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][72]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][120]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][121]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][73]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][74]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][75]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][76]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][77]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][78]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][78]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][78]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][78]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][78]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][79]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][79]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][40]>0) && (Station11[3][79]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][72]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][72]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][73]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][73]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][73]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][73]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][74]>0) && (Station12[3][122]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][74]>0) && (Station12[3][123]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][74]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][74]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][74]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][74]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][124]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][75]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][76]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][77]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][78]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][79]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][80]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][80]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][80]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][80]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][80]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][80]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][81]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][81]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][81]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][41]>0) && (Station11[3][82]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][74]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][74]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][75]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][75]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][75]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][75]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][125]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][126]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][76]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][127]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][77]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][78]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][79]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][80]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][81]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][82]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][82]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][82]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][82]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][82]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][83]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][83]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][83]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][42]>0) && (Station11[3][84]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][76]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][76]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][77]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][77]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][77]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][77]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][77]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][128]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][129]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][78]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][130]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][79]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][80]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][81]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][82]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][83]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][84]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][84]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][84]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][84]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][84]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][85]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][85]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][43]>0) && (Station11[3][85]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][78]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][78]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][78]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][79]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][79]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][79]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][79]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][79]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][131]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][132]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][133]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][80]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][134]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][81]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][82]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][83]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][84]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][85]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][86]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][86]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][86]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][86]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][86]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][87]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][44]>0) && (Station11[3][87]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][80]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][80]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][81]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][81]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][81]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][81]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][82]>0) && (Station12[3][135]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][82]>0) && (Station12[3][136]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][82]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][82]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][82]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][82]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][137]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][83]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][84]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][85]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][86]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][87]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][88]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][88]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][88]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][88]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][88]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][89]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][89]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][89]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][45]>0) && (Station11[3][90]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][82]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][82]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][83]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][83]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][83]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][83]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][138]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][139]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][84]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][140]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][85]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][86]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][87]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][88]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][89]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][90]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][90]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][90]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][90]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][90]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][91]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][91]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][91]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][46]>0) && (Station11[3][92]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][84]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][84]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][85]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][85]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][85]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][85]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][85]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][141]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][142]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][86]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][143]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][144]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][87]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][88]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][89]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][90]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][91]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][92]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][92]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][92]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][92]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][92]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][93]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][93]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][47]>0) && (Station11[3][93]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][86]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][86]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][87]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][87]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][87]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][87]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][88]>0) && (Station12[3][145]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][88]>0) && (Station12[3][146]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][88]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][88]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][88]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][88]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][147]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][89]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][90]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][91]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][92]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][92]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][92]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][92]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][92]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][92]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][93]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][93]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][93]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][93]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][94]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][48]>0) && (Station11[3][94]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][88]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][88]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][89]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][89]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][89]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][89]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][148]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][149]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][90]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][150]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][151]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][91]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][152]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][153]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][154]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][92]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][93]>0) && (Station12[3][155]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][93]>0) && (Station12[3][156]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][93]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][93]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][93]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][94]>0) && (Station12[3][157]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][94]>0) && (Station12[3][158]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][94]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][49]>0) && (Station11[3][95]>0) && (Station12[3][159]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][96]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][96]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][97]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][97]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][97]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][97]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][97]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][98]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][99]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][100]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][100]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][100]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][100]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][100]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][101]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][101]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][101]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][50]>0) && (Station11[3][102]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][96]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][97]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][97]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][97]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][98]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][98]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][98]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][98]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][98]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][99]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][100]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][101]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][101]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][101]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][101]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][101]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][101]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][102]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][102]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][102]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][51]>0) && (Station11[3][103]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][97]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][97]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][98]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][98]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][98]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][98]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][99]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][99]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][99]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][99]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][99]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][99]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][100]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][101]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][102]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][103]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][103]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][103]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][103]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][103]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][103]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][104]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][104]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][104]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][104]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][105]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][52]>0) && (Station11[3][105]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][98]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][98]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][98]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][99]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][99]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][99]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][99]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][99]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][160]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][161]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][100]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][101]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][102]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][103]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][104]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][105]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][105]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][105]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][105]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][105]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][105]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][106]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][106]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][106]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][106]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][53]>0) && (Station11[3][107]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][99]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][99]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][100]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][100]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][100]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][100]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][101]>0) && (Station12[3][162]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][101]>0) && (Station12[3][163]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][101]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][101]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][101]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][101]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][164]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][102]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][103]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][104]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][105]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][106]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][107]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][107]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][107]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][107]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][107]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][107]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][108]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][108]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][108]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][54]>0) && (Station11[3][109]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][101]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][101]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][102]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][102]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][102]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][102]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][165]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][166]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][103]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][167]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][168]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][104]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][105]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][106]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][107]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][108]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][109]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][109]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][109]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][109]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][109]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][110]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][110]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][110]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][55]>0) && (Station11[3][111]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][103]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][104]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][104]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][104]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][104]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][105]>0) && (Station12[3][169]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][105]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][105]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][105]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][105]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][105]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][170]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][171]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][106]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][107]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][108]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][109]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][110]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][111]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][111]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][111]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][111]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][111]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][111]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][112]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][112]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][112]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][112]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][56]>0) && (Station11[3][113]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][105]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][105]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][106]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][106]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][106]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][106]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][107]>0) && (Station12[3][172]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][107]>0) && (Station12[3][173]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][107]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][107]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][107]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][107]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][174]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][108]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][109]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][110]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][111]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][112]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][113]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][113]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][113]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][113]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][113]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][113]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][114]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][114]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][114]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][57]>0) && (Station11[3][115]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][107]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][107]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][108]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][108]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][108]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][108]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][175]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][176]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][109]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][177]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][178]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][110]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][111]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][112]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][113]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][114]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][115]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][115]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][115]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][115]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][115]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][116]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][116]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][116]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][58]>0) && (Station11[3][117]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][109]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][110]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][110]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][110]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][111]>0) && (Station12[3][179]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][111]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][111]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][111]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][111]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][111]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][180]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][181]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][112]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][113]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][114]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][115]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][116]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][117]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][117]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][117]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][117]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][117]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][117]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][118]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][118]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][118]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][118]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][59]>0) && (Station11[3][119]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][111]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][112]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][112]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][112]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][112]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][113]>0) && (Station12[3][182]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][113]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][113]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][113]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][113]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][113]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][183]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][184]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][114]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][115]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][116]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][117]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][118]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][119]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][119]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][119]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][119]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][119]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][119]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][120]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][120]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][120]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][120]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][60]>0) && (Station11[3][121]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][113]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][113]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][114]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][114]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][114]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][114]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][115]>0) && (Station12[3][185]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][115]>0) && (Station12[3][186]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][115]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][115]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][115]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][115]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][187]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][188]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][116]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][117]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][118]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][119]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][120]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][121]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][121]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][121]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][121]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][121]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][121]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][122]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][122]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][122]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][61]>0) && (Station11[3][123]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][115]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][116]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][116]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][116]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][117]>0) && (Station12[3][189]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][117]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][117]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][117]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][117]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][117]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][190]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][191]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][118]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][119]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][120]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][121]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][122]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][123]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][123]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][123]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][123]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][123]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][123]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][124]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][124]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][124]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][124]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][125]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][62]>0) && (Station11[3][125]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][117]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][118]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][118]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][118]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][118]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][119]>0) && (Station12[3][192]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][119]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][119]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][119]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][119]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][119]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][193]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][194]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][120]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][121]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][122]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][123]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][124]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][125]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][125]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][125]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][125]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][125]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][125]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][126]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][126]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][126]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][126]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][63]>0) && (Station11[3][127]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][119]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][119]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][120]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][120]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][120]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][120]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][121]>0) && (Station12[3][195]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][121]>0) && (Station12[3][196]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][121]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][121]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][121]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][121]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][197]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][122]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][123]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][124]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][125]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][126]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][127]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][127]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][127]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][127]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][127]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][127]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][128]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][128]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][128]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][64]>0) && (Station11[3][129]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][121]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][121]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][122]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][122]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][122]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][122]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][198]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][199]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][123]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][200]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][201]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][124]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][125]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][126]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][127]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][128]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][129]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][129]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][129]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][129]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][129]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][130]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][130]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][130]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][65]>0) && (Station11[3][131]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][123]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][124]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][124]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][124]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][124]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][125]>0) && (Station12[3][202]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][125]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][125]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][125]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][125]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][125]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][203]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][204]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][126]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][127]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][128]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][129]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][130]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][131]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][131]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][131]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][131]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][131]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][131]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][132]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][132]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][132]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][132]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][66]>0) && (Station11[3][133]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][125]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][126]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][126]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][126]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][126]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][127]>0) && (Station12[3][205]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][127]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][127]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][127]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][127]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][127]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][206]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][207]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][128]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][129]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][130]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][131]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][132]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][133]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][133]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][133]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][133]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][133]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][133]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][134]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][134]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][134]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][67]>0) && (Station11[3][135]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][127]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][127]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][128]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][128]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][128]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][128]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][129]>0) && (Station12[3][208]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][129]>0) && (Station12[3][209]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][129]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][129]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][129]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][129]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][210]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][211]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][130]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][131]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][132]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][133]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][134]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][135]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][135]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][135]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][135]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][135]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][136]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][136]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][136]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][68]>0) && (Station11[3][137]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][129]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][130]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][130]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][130]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][131]>0) && (Station12[3][212]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][131]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][131]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][131]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][131]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][131]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][213]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][214]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][132]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][133]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][134]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][135]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][136]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][137]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][137]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][137]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][137]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][137]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][137]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][138]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][138]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][138]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][138]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][139]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][69]>0) && (Station11[3][139]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][131]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][132]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][132]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][132]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][132]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][133]>0) && (Station12[3][215]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][133]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][133]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][133]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][133]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][133]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][216]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][217]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][134]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][135]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][136]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][137]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][138]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][139]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][139]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][139]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][139]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][139]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][139]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][140]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][140]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][140]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][140]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][70]>0) && (Station11[3][141]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][133]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][133]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][134]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][134]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][134]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][134]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][135]>0) && (Station12[3][218]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][135]>0) && (Station12[3][219]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][135]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][135]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][135]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][135]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][220]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][136]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][137]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][138]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][139]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][140]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][141]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][141]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][141]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][141]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][141]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][141]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][142]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][142]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][142]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][71]>0) && (Station11[3][143]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][135]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][135]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][136]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][136]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][136]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][136]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][221]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][222]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][137]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][223]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][224]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][138]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][139]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][140]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][141]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][142]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][143]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][143]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][143]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][143]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][143]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][144]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][144]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][144]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][72]>0) && (Station11[3][145]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][137]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][138]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][138]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][138]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][138]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][139]>0) && (Station12[3][225]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][139]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][139]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][139]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][139]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][139]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][226]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][227]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][140]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][141]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][142]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][143]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][144]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][145]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][145]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][145]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][145]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][145]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][145]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][146]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][146]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][146]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][146]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][73]>0) && (Station11[3][147]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][139]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][139]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][140]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][140]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][140]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][140]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][141]>0) && (Station12[3][228]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][141]>0) && (Station12[3][229]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][141]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][141]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][141]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][141]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][230]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][142]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][143]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][144]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][145]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][146]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][147]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][147]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][147]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][147]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][147]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][147]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][148]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][148]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][148]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][74]>0) && (Station11[3][149]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][141]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][141]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][142]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][142]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][142]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][142]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][143]>0) && (Station12[3][231]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][143]>0) && (Station12[3][232]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][143]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][143]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][143]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][143]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][233]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][234]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][144]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][145]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][146]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][147]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][148]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][149]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][149]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][149]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][149]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][149]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][150]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][150]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][150]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][75]>0) && (Station11[3][151]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][143]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][144]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][144]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][144]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][145]>0) && (Station12[3][235]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][145]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][145]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][145]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][145]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][145]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][236]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][237]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][146]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][147]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][148]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][149]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][150]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][151]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][151]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][151]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][151]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][151]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][151]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][152]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][152]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][152]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][152]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][153]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][76]>0) && (Station11[3][153]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][145]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][146]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][146]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][146]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][146]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][147]>0) && (Station12[3][238]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][147]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][147]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][147]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][147]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][147]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][239]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][240]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][148]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][149]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][150]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][151]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][152]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][153]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][153]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][153]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][153]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][153]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][153]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][154]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][154]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][154]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][154]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][77]>0) && (Station11[3][155]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][147]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][147]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][148]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][148]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][148]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][148]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][149]>0) && (Station12[3][241]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][149]>0) && (Station12[3][242]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][149]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][149]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][149]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][149]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][243]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][150]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][151]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][152]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][153]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][154]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][155]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][155]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][155]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][155]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][155]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][155]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][156]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][156]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][156]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][78]>0) && (Station11[3][157]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][149]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][149]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][150]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][150]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][150]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][150]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][244]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][245]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][151]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][246]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][247]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][152]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][153]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][154]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][155]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][156]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][157]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][157]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][157]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][157]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][157]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][158]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][158]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][158]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][79]>0) && (Station11[3][159]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][151]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][152]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][152]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][152]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][152]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][153]>0) && (Station12[3][248]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][153]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][153]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][153]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][153]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][153]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][249]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][250]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][154]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][155]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][156]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][157]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][158]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][159]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][159]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][159]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][159]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][159]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][159]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][160]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][160]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][160]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][160]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][80]>0) && (Station11[3][161]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][153]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][153]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][154]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][154]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][154]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][154]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][155]>0) && (Station12[3][251]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][155]>0) && (Station12[3][252]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][155]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][155]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][155]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][155]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][253]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][156]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][157]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][158]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][159]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][160]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][161]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][161]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][161]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][161]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][161]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][161]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][162]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][162]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][162]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][81]>0) && (Station11[3][163]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][155]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][155]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][156]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][156]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][156]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][156]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][157]>0) && (Station12[3][254]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][157]>0) && (Station12[3][255]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][157]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][157]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][157]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][157]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][256]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][257]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][158]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][159]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][160]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][161]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][162]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][163]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][163]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][163]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][163]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][163]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][164]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][164]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][164]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][82]>0) && (Station11[3][165]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][157]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][158]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][158]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][158]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][159]>0) && (Station12[3][258]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][159]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][159]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][159]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][159]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][159]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][259]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][260]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][160]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][161]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][162]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][163]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][164]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][165]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][165]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][165]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][165]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][165]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][165]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][166]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][166]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][166]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][166]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][167]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][83]>0) && (Station11[3][167]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][159]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][160]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][160]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][160]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][160]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][161]>0) && (Station12[3][261]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][161]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][161]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][161]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][161]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][161]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][262]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][263]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][162]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][163]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][164]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][165]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][166]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][167]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][167]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][167]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][167]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][167]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][167]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][168]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][168]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][168]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][168]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][84]>0) && (Station11[3][169]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][161]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][161]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][162]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][162]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][162]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][162]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][163]>0) && (Station12[3][264]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][163]>0) && (Station12[3][265]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][163]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][163]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][163]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][163]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][266]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][164]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][165]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][166]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][167]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][168]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][169]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][169]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][169]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][169]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][169]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][169]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][170]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][170]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][170]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][85]>0) && (Station11[3][171]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][163]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][163]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][164]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][164]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][164]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][164]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][267]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][268]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][165]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][269]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][270]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][166]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][167]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][168]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][169]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][170]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][171]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][171]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][171]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][171]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][171]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][172]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][172]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][172]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][86]>0) && (Station11[3][173]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][165]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][166]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][166]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][166]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][166]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][167]>0) && (Station12[3][271]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][167]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][167]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][167]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][167]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][167]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][272]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][273]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][168]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][169]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][170]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][171]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][172]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][173]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][173]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][173]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][173]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][173]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][173]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][174]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][174]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][174]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][174]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][87]>0) && (Station11[3][175]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][167]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][168]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][168]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][168]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][168]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][169]>0) && (Station12[3][274]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][169]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][169]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][169]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][169]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][169]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][275]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][276]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][170]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][171]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][172]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][173]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][174]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][175]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][175]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][175]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][175]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][175]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][175]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][176]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][176]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][176]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][88]>0) && (Station11[3][177]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][169]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][169]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][170]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][170]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][170]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][170]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][171]>0) && (Station12[3][277]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][171]>0) && (Station12[3][278]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][171]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][171]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][171]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][171]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][279]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][172]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][173]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][174]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][175]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][176]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][177]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][177]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][177]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][177]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][177]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][177]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][178]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][178]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][178]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][89]>0) && (Station11[3][179]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][171]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][171]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][172]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][172]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][172]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][172]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][280]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][281]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][173]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][282]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][283]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][174]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][175]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][176]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][177]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][178]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][179]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][179]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][179]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][179]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][179]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][180]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][180]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][180]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][90]>0) && (Station11[3][181]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][173]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][174]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][174]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][174]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][174]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][175]>0) && (Station12[3][284]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][175]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][175]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][175]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][175]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][175]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][285]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][286]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][176]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][177]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][178]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][179]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][180]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][181]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][181]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][181]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][181]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][181]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][181]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][182]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][182]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][182]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][182]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][91]>0) && (Station11[3][183]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][175]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][175]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][176]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][176]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][176]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][176]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][177]>0) && (Station12[3][287]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][177]>0) && (Station12[3][288]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][177]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][177]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][177]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][177]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][289]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][178]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][179]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][180]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][181]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][182]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][183]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][183]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][183]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][183]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][183]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][183]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][184]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][184]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][184]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][92]>0) && (Station11[3][185]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][177]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][177]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][178]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][178]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][178]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][178]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][290]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][291]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][179]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][292]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][293]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][180]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][181]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][182]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][183]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][184]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][185]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][185]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][185]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][185]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][185]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][186]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][186]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][186]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][93]>0) && (Station11[3][187]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][179]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][180]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][180]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][180]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][180]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][181]>0) && (Station12[3][294]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][181]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][181]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][181]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][181]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][181]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][295]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][296]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][182]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][183]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][184]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][185]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][309]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][310]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][186]>0) && (Station12[3][311]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][187]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][187]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][187]>0) && (Station12[3][309]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][187]>0) && (Station12[3][310]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][187]>0) && (Station12[3][311]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][187]>0) && (Station12[3][312]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][188]>0) && (Station12[3][309]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][188]>0) && (Station12[3][310]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][188]>0) && (Station12[3][311]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][188]>0) && (Station12[3][312]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][94]>0) && (Station11[3][189]>0) && (Station12[3][312]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][181]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][182]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][182]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][182]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][182]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][183]>0) && (Station12[3][297]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][183]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][183]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][183]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][183]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][183]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][298]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][299]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][300]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][184]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][301]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][302]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][185]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][303]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][304]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][186]>0) && (Station12[3][309]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][305]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][306]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][307]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][309]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][310]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][311]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][187]>0) && (Station12[3][312]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][308]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][309]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][310]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][311]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][312]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][313]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][188]>0) && (Station12[3][314]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][189]>0) && (Station12[3][310]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][189]>0) && (Station12[3][311]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][189]>0) && (Station12[3][312]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][189]>0) && (Station12[3][313]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][189]>0) && (Station12[3][314]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][189]>0) && (Station12[3][315]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][190]>0) && (Station12[3][313]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][190]>0) && (Station12[3][314]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][190]>0) && (Station12[3][315]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+  if ( (Station10[3][95]>0) && (Station11[3][191]>0) && (Station12[3][315]>0) ) 
+    mutr_trigger_sg1[1][3]++; 
+}
+

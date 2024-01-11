@@ -1,0 +1,17 @@
+/*****************************************************************************/
+/* File: dCrkCal.idl                                                         */
+/* Author: Y. Akiba, KEK                                                     */
+/* Purpose: IDL for dCrkCal (calibration constants of each PMT of RICH)      */
+/* Used by: mCrkRawHit                                                       */
+/* originally for DSPACK. Translated to STAF                                 */
+/* Date: 7/28/97                                                             */
+/*       9/15/97 renamed to dCrkRawHit                                       */
+/*****************************************************************************/
+struct dCrkCal {
+  short pmt;        /* PMT channel ID */
+  float adc_gain;   /* ADC ch per 1 p.e */
+  float adc_ped;    /* pedestal of ADC */
+  float tdc_clock;  /* # of TDC bins per nsec */
+  float tdc_t0;     /* timing 0 */
+  float slew;       /* slewing parameter. */
+};

@@ -1,0 +1,20 @@
+/****************************************************************************/
+/* File: dCrkProjPidPar.idl                                                 */
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkProjPidPar (control parameters for mCrkProjPid)     */ 
+/* Used by: mCrkProjPid                                                     */
+/* Date:  7/28/97                                                           */
+/*        9/15/97 renamed to dCrkProjPidPar                                 */
+/*        2/23/98 add gas choice                                            */
+/****************************************************************************/
+
+struct dCrkProjPidPar {
+  short in_accept; /* Flag whether in_accept condition is required or not */
+  short min_npmt;  /* Minimum NPMT required to make Pid output */
+  short gas;       /* index for gas. 1->C2H6 2->CH4 3->CO2 0->UNKNOWN */
+  float Rmax;      /* ring analysis parameters. Those are used only when */
+  float Rmin;      /* gas == 0 (UNKNOWN) or gas >= 4 (UNDEFINED) */
+  float Rmax2;
+  float R0;
+};
+

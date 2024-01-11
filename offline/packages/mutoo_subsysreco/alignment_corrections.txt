@@ -1,0 +1,567 @@
+// alignment parameters.
+// cathode parameters format is: arm station octant gap cathode delta_x[cm] delta_y[cm] delta_phi[rad]
+// anode parameters format is: arm station octant gap delta_z[cm]
+
+// // south station0 [...] gap0 cathode0
+// cathode 0 0 0 0 0 0.0 0.0 0.0
+// cathode 0 0 1 0 0 0.0 0.0 0.0
+// cathode 0 0 2 0 0 0.0 0.0 0.0
+// cathode 0 0 3 0 0 0.0 0.0 0.0
+// cathode 0 0 4 0 0 0.0 0.0 0.0
+// cathode 0 0 5 0 0 0.0 0.0 0.0
+// cathode 0 0 6 0 0 0.0 0.0 0.0
+// cathode 0 0 7 0 0 0.0 0.0 0.0
+// 
+// // south station0 [...] gap0 anode
+// anode 0 0 0 0 0.0
+// anode 0 0 1 0 0.0 
+// anode 0 0 2 0 0.0 
+// anode 0 0 3 0 0.0 
+// anode 0 0 4 0 0.0 
+// anode 0 0 5 0 0.0 
+// anode 0 0 6 0 0.0 
+// anode 0 0 7 0 0.0 
+// 
+// // south station0 [...] gap0 cathode1
+// cathode 0 0 0 0 1 0.0 0.0 0.0
+// cathode 0 0 1 0 1 0.0 0.0 0.0
+// cathode 0 0 2 0 1 0.0 0.0 0.0
+// cathode 0 0 3 0 1 0.0 0.0 0.0
+// cathode 0 0 4 0 1 0.0 0.0 0.0
+// cathode 0 0 5 0 1 0.0 0.0 0.0
+// cathode 0 0 6 0 1 0.0 0.0 0.0
+// cathode 0 0 7 0 1 0.0 0.0 0.0
+// 
+// // south station0 [...] gap1 cathode0
+// cathode 0 0 0 1 0 0.0 0.0 0.0
+// cathode 0 0 1 1 0 0.0 0.0 0.0
+// cathode 0 0 2 1 0 0.0 0.0 0.0
+// cathode 0 0 3 1 0 0.0 0.0 0.0
+// cathode 0 0 4 1 0 0.0 0.0 0.0
+// cathode 0 0 5 1 0 0.0 0.0 0.0
+// cathode 0 0 6 1 0 0.0 0.0 0.0
+// cathode 0 0 7 1 0 0.0 0.0 0.0
+// 
+// // south station0 [...] gap1 anode
+// anode 0 0 0 1 0.0 
+// anode 0 0 1 1 0.0 
+// anode 0 0 2 1 0.0 
+// anode 0 0 3 1 0.0 
+// anode 0 0 4 1 0.0 
+// anode 0 0 5 1 0.0 
+// anode 0 0 6 1 0.0 
+// anode 0 0 7 1 0.0 
+// 
+// // south station0 [...] gap1 cathode1
+// cathode 0 0 0 1 1 0.0 0.0 0.0
+// cathode 0 0 1 1 1 0.0 0.0 0.0
+// cathode 0 0 2 1 1 0.0 0.0 0.0
+// cathode 0 0 3 1 1 0.0 0.0 0.0
+// cathode 0 0 4 1 1 0.0 0.0 0.0
+// cathode 0 0 5 1 1 0.0 0.0 0.0
+// cathode 0 0 6 1 1 0.0 0.0 0.0
+// cathode 0 0 7 1 1 0.0 0.0 0.0
+// 
+// // south station0 [...] gap2 cathode0
+// cathode 0 0 0 2 0 0.0 0.0 0.0
+// cathode 0 0 1 2 0 0.0 0.0 0.0
+// cathode 0 0 2 2 0 0.0 0.0 0.0
+// cathode 0 0 3 2 0 0.0 0.0 0.0
+// cathode 0 0 4 2 0 0.0 0.0 0.0
+// cathode 0 0 5 2 0 0.0 0.0 0.0
+// cathode 0 0 6 2 0 0.0 0.0 0.0
+// cathode 0 0 7 2 0 0.0 0.0 0.0
+// 
+// // south station0 [...] gap2 anode
+// anode 0 0 0 2 0.0 
+// anode 0 0 1 2 0.0 
+// anode 0 0 2 2 0.0 
+// anode 0 0 3 2 0.0 
+// anode 0 0 4 2 0.0 
+// anode 0 0 5 2 0.0 
+// anode 0 0 6 2 0.0 
+// anode 0 0 7 2 0.0 
+// 
+// // south station0 [...] gap2 cathode1
+// cathode 0 0 0 2 1 0.0 0.0 0.0
+// cathode 0 0 1 2 1 0.0 0.0 0.0
+// cathode 0 0 2 2 1 0.0 0.0 0.0
+// cathode 0 0 3 2 1 0.0 0.0 0.0
+// cathode 0 0 4 2 1 0.0 0.0 0.0
+// cathode 0 0 5 2 1 0.0 0.0 0.0
+// cathode 0 0 6 2 1 0.0 0.0 0.0
+// cathode 0 0 7 2 1 0.0 0.0 0.0
+// 
+// // south station1 [...] gap0 cathode0
+// cathode 0 1 0 0 0 0.0 0.0 0.0
+// cathode 0 1 1 0 0 0.0 0.0 0.0
+// cathode 0 1 2 0 0 0.0 0.0 0.0
+// cathode 0 1 3 0 0 0.0 0.0 0.0
+// cathode 0 1 4 0 0 0.0 0.0 0.0
+// cathode 0 1 5 0 0 0.0 0.0 0.0
+// cathode 0 1 6 0 0 0.0 0.0 0.0
+// cathode 0 1 7 0 0 0.0 0.0 0.0
+// 
+// // south station1 [...] gap0 anode
+// anode 0 1 0 0 0.0
+// anode 0 1 1 0 0.0 
+// anode 0 1 2 0 0.0 
+// anode 0 1 3 0 0.0 
+// anode 0 1 4 0 0.0 
+// anode 0 1 5 0 0.0 
+// anode 0 1 6 0 0.0 
+// anode 0 1 7 0 0.0 
+// 
+// // south station1 [...] gap0 cathode1
+// cathode 0 1 0 0 1 0.0 0.0 0.0
+// cathode 0 1 1 0 1 0.0 0.0 0.0
+// cathode 0 1 2 0 1 0.0 0.0 0.0
+// cathode 0 1 3 0 1 0.0 0.0 0.0
+// cathode 0 1 4 0 1 0.0 0.0 0.0
+// cathode 0 1 5 0 1 0.0 0.0 0.0
+// cathode 0 1 6 0 1 0.0 0.0 0.0
+// cathode 0 1 7 0 1 0.0 0.0 0.0
+// 
+// // south station1 [...] gap1 cathode0
+// cathode 0 1 0 1 0 0.0 0.0 0.0
+// cathode 0 1 1 1 0 0.0 0.0 0.0
+// cathode 0 1 2 1 0 0.0 0.0 0.0
+// cathode 0 1 3 1 0 0.0 0.0 0.0
+// cathode 0 1 4 1 0 0.0 0.0 0.0
+// cathode 0 1 5 1 0 0.0 0.0 0.0
+// cathode 0 1 6 1 0 0.0 0.0 0.0
+// cathode 0 1 7 1 0 0.0 0.0 0.0
+// 
+// // south station1 [...] gap1 anode
+// anode 0 1 0 1 0.0 
+// anode 0 1 1 1 0.0 
+// anode 0 1 2 1 0.0 
+// anode 0 1 3 1 0.0 
+// anode 0 1 4 1 0.0 
+// anode 0 1 5 1 0.0 
+// anode 0 1 6 1 0.0 
+// anode 0 1 7 1 0.0 
+// 
+// // south station1 [...] gap1 cathode1
+// cathode 0 1 0 1 1 0.0 0.0 0.0
+// cathode 0 1 1 1 1 0.0 0.0 0.0
+// cathode 0 1 2 1 1 0.0 0.0 0.0
+// cathode 0 1 3 1 1 0.0 0.0 0.0
+// cathode 0 1 4 1 1 0.0 0.0 0.0
+// cathode 0 1 5 1 1 0.0 0.0 0.0
+// cathode 0 1 6 1 1 0.0 0.0 0.0
+// cathode 0 1 7 1 1 0.0 0.0 0.0
+// 
+// // south station1 [...] gap2 cathode0
+// cathode 0 1 0 2 0 0.0 0.0 0.0
+// cathode 0 1 1 2 0 0.0 0.0 0.0
+// cathode 0 1 2 2 0 0.0 0.0 0.0
+// cathode 0 1 3 2 0 0.0 0.0 0.0
+// cathode 0 1 4 2 0 0.0 0.0 0.0
+// cathode 0 1 5 2 0 0.0 0.0 0.0
+// cathode 0 1 6 2 0 0.0 0.0 0.0
+// cathode 0 1 7 2 0 0.0 0.0 0.0
+// 
+// // south station1 [...] gap2 anode
+// anode 0 1 0 2 0.0 
+// anode 0 1 1 2 0.0 
+// anode 0 1 2 2 0.0 
+// anode 0 1 3 2 0.0 
+// anode 0 1 4 2 0.0 
+// anode 0 1 5 2 0.0 
+// anode 0 1 6 2 0.0 
+// anode 0 1 7 2 0.0 
+// 
+// // south station1 [...] gap2 cathode1
+// cathode 0 1 0 2 1 0.0 0.0 0.0
+// cathode 0 1 1 2 1 0.0 0.0 0.0
+// cathode 0 1 2 2 1 0.0 0.0 0.0
+// cathode 0 1 3 2 1 0.0 0.0 0.0
+// cathode 0 1 4 2 1 0.0 0.0 0.0
+// cathode 0 1 5 2 1 0.0 0.0 0.0
+// cathode 0 1 6 2 1 0.0 0.0 0.0
+// cathode 0 1 7 2 1 0.0 0.0 0.0
+// 
+// // south station2 [...] gap0 cathode0
+// cathode 0 2 0 0 0 0.0 0.0 0.0
+// cathode 0 2 1 0 0 0.0 0.0 0.0
+// cathode 0 2 2 0 0 0.0 0.0 0.0
+// cathode 0 2 3 0 0 0.0 0.0 0.0
+// cathode 0 2 4 0 0 0.0 0.0 0.0
+// cathode 0 2 5 0 0 0.0 0.0 0.0
+// cathode 0 2 6 0 0 0.0 0.0 0.0
+// cathode 0 2 7 0 0 0.0 0.0 0.0
+// 
+// // south station2 [...] gap0 anode
+// anode 0 2 0 0 0.0
+// anode 0 2 1 0 0.0 
+// anode 0 2 2 0 0.0 
+// anode 0 2 3 0 0.0 
+// anode 0 2 4 0 0.0 
+// anode 0 2 5 0 0.0 
+// anode 0 2 6 0 0.0 
+// anode 0 2 7 0 0.0 
+// 
+// // south station2 [...] gap0 cathode1
+// cathode 0 2 0 0 1 0.0 0.0 0.0
+// cathode 0 2 1 0 1 0.0 0.0 0.0
+// cathode 0 2 2 0 1 0.0 0.0 0.0
+// cathode 0 2 3 0 1 0.0 0.0 0.0
+// cathode 0 2 4 0 1 0.0 0.0 0.0
+// cathode 0 2 5 0 1 0.0 0.0 0.0
+// cathode 0 2 6 0 1 0.0 0.0 0.0
+// cathode 0 2 7 0 1 0.0 0.0 0.0
+// 
+// // south station2 [...] gap1 cathode0
+// cathode 0 2 0 1 0 0.0 0.0 0.0
+// cathode 0 2 1 1 0 0.0 0.0 0.0
+// cathode 0 2 2 1 0 0.0 0.0 0.0
+// cathode 0 2 3 1 0 0.0 0.0 0.0
+// cathode 0 2 4 1 0 0.0 0.0 0.0
+// cathode 0 2 5 1 0 0.0 0.0 0.0
+// cathode 0 2 6 1 0 0.0 0.0 0.0
+// cathode 0 2 7 1 0 0.0 0.0 0.0
+// 
+// // south station2 [...] gap1 anode
+// anode 0 2 0 1 0.0 
+// anode 0 2 1 1 0.0 
+// anode 0 2 2 1 0.0 
+// anode 0 2 3 1 0.0 
+// anode 0 2 4 1 0.0 
+// anode 0 2 5 1 0.0 
+// anode 0 2 6 1 0.0 
+// anode 0 2 7 1 0.0 
+// 
+// // south station2 [...] gap1 cathode1
+// cathode 0 2 0 1 1 0.0 0.0 0.0
+// cathode 0 2 1 1 1 0.0 0.0 0.0
+// cathode 0 2 2 1 1 0.0 0.0 0.0
+// cathode 0 2 3 1 1 0.0 0.0 0.0
+// cathode 0 2 4 1 1 0.0 0.0 0.0
+// cathode 0 2 5 1 1 0.0 0.0 0.0
+// cathode 0 2 6 1 1 0.0 0.0 0.0
+// cathode 0 2 7 1 1 0.0 0.0 0.0
+
+// // north station0 [...] gap0 cathode0
+// cathode 1 0 0 0 0 0.1 0.0 0.0
+// cathode 1 0 1 0 0 0.1 0.0 0.0
+// cathode 1 0 2 0 0 0.1 0.0 0.0
+// cathode 1 0 3 0 0 0.1 0.0 0.0
+// cathode 1 0 4 0 0 0.1 0.0 0.0
+// cathode 1 0 5 0 0 0.1 0.0 0.0
+// cathode 1 0 6 0 0 0.1 0.0 0.0
+// cathode 1 0 7 0 0 0.1 0.0 0.0
+// 
+// // north station0 [...] gap0 anode
+// anode 1 0 0 0 9 
+// anode 1 0 1 0 9 
+// anode 1 0 2 0 9 
+// anode 1 0 3 0 9 
+// anode 1 0 4 0 9 
+// anode 1 0 5 0 9 
+// anode 1 0 6 0 9 
+// anode 1 0 7 0 9 
+// 
+// // north station0 [...] gap0 cathode1
+// cathode 1 0 0 0 1 0.1 0.0 0.0
+// cathode 1 0 1 0 1 0.1 0.0 0.0
+// cathode 1 0 2 0 1 0.1 0.0 0.0
+// cathode 1 0 3 0 1 0.1 0.0 0.0
+// cathode 1 0 4 0 1 0.1 0.0 0.0
+// cathode 1 0 5 0 1 0.1 0.0 0.0
+// cathode 1 0 6 0 1 0.1 0.0 0.0
+// cathode 1 0 7 0 1 0.1 0.0 0.0
+
+// // north station0 [...] gap1 cathode0
+// cathode 1 0 0 1 0 0.0 0.0 0.0
+// cathode 1 0 1 1 0 0.0 0.0 0.0
+// cathode 1 0 2 1 0 0.0 0.0 0.0
+// cathode 1 0 3 1 0 0.0 0.0 0.0
+// cathode 1 0 4 1 0 0.0 0.0 0.0
+// cathode 1 0 5 1 0 0.0 0.0 0.0
+// cathode 1 0 6 1 0 0.0 0.0 0.0
+// cathode 1 0 7 1 0 0.0 0.0 0.0
+// 
+// // north station0 [...] gap1 anode
+// anode 1 0 0 1 0.0 
+// anode 1 0 1 1 0.0 
+// anode 1 0 2 1 0.0 
+// anode 1 0 3 1 0.0 
+// anode 1 0 4 1 0.0 
+// anode 1 0 5 1 0.0 
+// anode 1 0 6 1 0.0 
+// anode 1 0 7 1 0.0 
+// 
+// // north station0 [...] gap1 cathode1
+// cathode 1 0 0 1 1 0.0 0.0 0.0
+// cathode 1 0 1 1 1 0.0 0.0 0.0
+// cathode 1 0 2 1 1 0.0 0.0 0.0
+// cathode 1 0 3 1 1 0.0 0.0 0.0
+// cathode 1 0 4 1 1 0.0 0.0 0.0
+// cathode 1 0 5 1 1 0.0 0.0 0.0
+// cathode 1 0 6 1 1 0.0 0.0 0.0
+// cathode 1 0 7 1 1 0.0 0.0 0.0
+// 
+// // north station0 [...] gap2 cathode0
+// cathode 1 0 0 2 0 0.0 0.0 0.0
+// cathode 1 0 1 2 0 0.0 0.0 0.0
+// cathode 1 0 2 2 0 0.0 0.0 0.0
+// cathode 1 0 3 2 0 0.0 0.0 0.0
+// cathode 1 0 4 2 0 0.0 0.0 0.0
+// cathode 1 0 5 2 0 0.0 0.0 0.0
+// cathode 1 0 6 2 0 0.0 0.0 0.0
+// cathode 1 0 7 2 0 0.0 0.0 0.0
+// 
+// // north station0 [...] gap2 anode
+// anode 1 0 0 2 0.0 
+// anode 1 0 1 2 0.0 
+// anode 1 0 2 2 0.0 
+// anode 1 0 3 2 0.0 
+// anode 1 0 4 2 0.0 
+// anode 1 0 5 2 0.0 
+// anode 1 0 6 2 0.0 
+// anode 1 0 7 2 0.0 
+// 
+// // north station0 [...] gap2 cathode1
+// cathode 1 0 0 2 1 0.0 0.0 0.0
+// cathode 1 0 1 2 1 0.0 0.0 0.0
+// cathode 1 0 2 2 1 0.0 0.0 0.0
+// cathode 1 0 3 2 1 0.0 0.0 0.0
+// cathode 1 0 4 2 1 0.0 0.0 0.0
+// cathode 1 0 5 2 1 0.0 0.0 0.0
+// cathode 1 0 6 2 1 0.0 0.0 0.0
+// cathode 1 0 7 2 1 0.0 0.0 0.0
+// 
+// // north station1 [...] gap0 cathode0
+// cathode 1 1 0 0 0 0.0 0.0 0.0
+// cathode 1 1 1 0 0 0.0 0.0 0.0
+// cathode 1 1 2 0 0 0.0 0.0 0.0
+// cathode 1 1 3 0 0 0.0 0.0 0.0
+// cathode 1 1 4 0 0 0.0 0.0 0.0
+// cathode 1 1 5 0 0 0.0 0.0 0.0
+// cathode 1 1 6 0 0 0.0 0.0 0.0
+// cathode 1 1 7 0 0 0.0 0.0 0.0
+// 
+// // north station1 [...] gap0 anode
+// anode 1 1 0 0 0.0
+// anode 1 1 1 0 0.0 
+// anode 1 1 2 0 0.0 
+// anode 1 1 3 0 0.0 
+// anode 1 1 4 0 0.0 
+// anode 1 1 5 0 0.0 
+// anode 1 1 6 0 0.0 
+// anode 1 1 7 0 0.0 
+// 
+// // north station1 [...] gap0 cathode1
+// cathode 1 1 0 0 1 0.0 0.0 0.0
+// cathode 1 1 1 0 1 0.0 0.0 0.0
+// cathode 1 1 2 0 1 0.0 0.0 0.0
+// cathode 1 1 3 0 1 0.0 0.0 0.0
+// cathode 1 1 4 0 1 0.0 0.0 0.0
+// cathode 1 1 5 0 1 0.0 0.0 0.0
+// cathode 1 1 6 0 1 0.0 0.0 0.0
+// cathode 1 1 7 0 1 0.0 0.0 0.0
+// 
+// // north station1 [...] gap1 cathode0
+// cathode 1 1 0 1 0 0.0 0.0 0.0
+// cathode 1 1 1 1 0 0.0 0.0 0.0
+// cathode 1 1 2 1 0 0.0 0.0 0.0
+// cathode 1 1 3 1 0 0.0 0.0 0.0
+// cathode 1 1 4 1 0 0.0 0.0 0.0
+// cathode 1 1 5 1 0 0.0 0.0 0.0
+// cathode 1 1 6 1 0 0.0 0.0 0.0
+// cathode 1 1 7 1 0 0.0 0.0 0.0
+// 
+// // north station1 [...] gap1 anode
+// anode 1 1 0 1 0.0 
+// anode 1 1 1 1 0.0 
+// anode 1 1 2 1 0.0 
+// anode 1 1 3 1 0.0 
+// anode 1 1 4 1 0.0 
+// anode 1 1 5 1 0.0 
+// anode 1 1 6 1 0.0 
+// anode 1 1 7 1 0.0 
+// 
+// // north station1 [...] gap1 cathode1
+// cathode 1 1 0 1 1 0.0 0.0 0.0
+// cathode 1 1 1 1 1 0.0 0.0 0.0
+// cathode 1 1 2 1 1 0.0 0.0 0.0
+// cathode 1 1 3 1 1 0.0 0.0 0.0
+// cathode 1 1 4 1 1 0.0 0.0 0.0
+// cathode 1 1 5 1 1 0.0 0.0 0.0
+// cathode 1 1 6 1 1 0.0 0.0 0.0
+// cathode 1 1 7 1 1 0.0 0.0 0.0
+// 
+// // north station1 [...] gap2 cathode0
+// cathode 1 1 0 2 0 0.0 0.0 0.0
+// cathode 1 1 1 2 0 0.0 0.0 0.0
+// cathode 1 1 2 2 0 0.0 0.0 0.0
+// cathode 1 1 3 2 0 0.0 0.0 0.0
+// cathode 1 1 4 2 0 0.0 0.0 0.0
+// cathode 1 1 5 2 0 0.0 0.0 0.0
+// cathode 1 1 6 2 0 0.0 0.0 0.0
+// cathode 1 1 7 2 0 0.0 0.0 0.0
+// 
+// // north station1 [...] gap2 anode
+// anode 1 1 0 2 0.0 
+// anode 1 1 1 2 0.0 
+// anode 1 1 2 2 0.0 
+// anode 1 1 3 2 0.0 
+// anode 1 1 4 2 0.0 
+// anode 1 1 5 2 0.0 
+// anode 1 1 6 2 0.0 
+// anode 1 1 7 2 0.0 
+// 
+// // north station1 [...] gap2 cathode1
+// cathode 1 1 0 2 1 0.0 0.0 0.0
+// cathode 1 1 1 2 1 0.0 0.0 0.0
+// cathode 1 1 2 2 1 0.0 0.0 0.0
+// cathode 1 1 3 2 1 0.0 0.0 0.0
+// cathode 1 1 4 2 1 0.0 0.0 0.0
+// cathode 1 1 5 2 1 0.0 0.0 0.0
+// cathode 1 1 6 2 1 0.0 0.0 0.0
+// cathode 1 1 7 2 1 0.0 0.0 0.0
+// 
+// // north station2 [...] gap0 cathode0
+// cathode 1 2 0 0 0 0.0 0.0 0.0
+// cathode 1 2 1 0 0 0.0 0.0 0.0
+// cathode 1 2 2 0 0 0.0 0.0 0.0
+// cathode 1 2 3 0 0 0.0 0.0 0.0
+// cathode 1 2 4 0 0 0.0 0.0 0.0
+// cathode 1 2 5 0 0 0.0 0.0 0.0
+// cathode 1 2 6 0 0 0.0 0.0 0.0
+// cathode 1 2 7 0 0 0.0 0.0 0.0
+// 
+// // north station2 [...] gap0 anode
+// anode 1 2 0 0 0.0
+// anode 1 2 1 0 0.0 
+// anode 1 2 2 0 0.0 
+// anode 1 2 3 0 0.0 
+// anode 1 2 4 0 0.0 
+// anode 1 2 5 0 0.0 
+// anode 1 2 6 0 0.0 
+// anode 1 2 7 0 0.0 
+// 
+// // north station2 [...] gap0 cathode1
+// cathode 1 2 0 0 1 0.0 0.0 0.0
+// cathode 1 2 1 0 1 0.0 0.0 0.0
+// cathode 1 2 2 0 1 0.0 0.0 0.0
+// cathode 1 2 3 0 1 0.0 0.0 0.0
+// cathode 1 2 4 0 1 0.0 0.0 0.0
+// cathode 1 2 5 0 1 0.0 0.0 0.0
+// cathode 1 2 6 0 1 0.0 0.0 0.0
+// cathode 1 2 7 0 1 0.0 0.0 0.0
+// 
+// // north station2 [...] gap1 cathode0
+// cathode 1 2 0 1 0 0.0 0.0 0.0
+// cathode 1 2 1 1 0 0.0 0.0 0.0
+// cathode 1 2 2 1 0 0.0 0.0 0.0
+// cathode 1 2 3 1 0 0.0 0.0 0.0
+// cathode 1 2 4 1 0 0.0 0.0 0.0
+// cathode 1 2 5 1 0 0.0 0.0 0.0
+// cathode 1 2 6 1 0 0.0 0.0 0.0
+// cathode 1 2 7 1 0 0.0 0.0 0.0
+// 
+// // north station2 [...] gap1 anode
+// anode 1 2 0 1 0.0 
+// anode 1 2 1 1 0.0 
+// anode 1 2 2 1 0.0 
+// anode 1 2 3 1 0.0 
+// anode 1 2 4 1 0.0 
+// anode 1 2 5 1 0.0 
+// anode 1 2 6 1 0.0 
+// anode 1 2 7 1 0.0 
+// 
+// // north station2 [...] gap1 cathode1
+// cathode 1 2 0 1 1 0.0 0.0 0.0
+// cathode 1 2 1 1 1 0.0 0.0 0.0
+// cathode 1 2 2 1 1 0.0 0.0 0.0
+// cathode 1 2 3 1 1 0.0 0.0 0.0
+// cathode 1 2 4 1 1 0.0 0.0 0.0
+// cathode 1 2 5 1 1 0.0 0.0 0.0
+// cathode 1 2 6 1 1 0.0 0.0 0.0
+// cathode 1 2 7 1 1 0.0 0.0 0.0
+
+// // MUID alignment corrections 
+// // parameter format is: arm plane panel delta_x delta_y delta_z delta_phi
+// 
+// // south plane0
+// muid_panel 0 0 0 0.0 0.0 0.0 0.0
+// muid_panel 0 0 1 0.0 0.0 0.0 0.0
+// muid_panel 0 0 2 0.0 0.0 0.0 0.0
+// muid_panel 0 0 3 0.0 0.0 0.0 0.0
+// muid_panel 0 0 4 0.0 0.0 0.0 0.0
+// muid_panel 0 0 5 0.0 0.0 0.0 0.0
+// 
+// // south plane1
+// muid_panel 0 1 0 0.0 0.0 0.0 0.0
+// muid_panel 0 1 1 0.0 0.0 0.0 0.0
+// muid_panel 0 1 2 0.0 0.0 0.0 0.0
+// muid_panel 0 1 3 0.0 0.0 0.0 0.0
+// muid_panel 0 1 4 0.0 0.0 0.0 0.0
+// muid_panel 0 1 5 0.0 0.0 0.0 0.0
+// 
+// // south plane2
+// muid_panel 0 2 0 0.0 0.0 0.0 0.0
+// muid_panel 0 2 1 0.0 0.0 0.0 0.0
+// muid_panel 0 2 2 0.0 0.0 0.0 0.0
+// muid_panel 0 2 3 0.0 0.0 0.0 0.0
+// muid_panel 0 2 4 0.0 0.0 0.0 0.0
+// muid_panel 0 2 5 0.0 0.0 0.0 0.0
+// 
+// // south plane3
+// muid_panel 0 3 0 0.0 0.0 0.0 0.0
+// muid_panel 0 3 1 0.0 0.0 0.0 0.0
+// muid_panel 0 3 2 0.0 0.0 0.0 0.0
+// muid_panel 0 3 3 0.0 0.0 0.0 0.0
+// muid_panel 0 3 4 0.0 0.0 0.0 0.0
+// muid_panel 0 3 5 0.0 0.0 0.0 0.0
+// 
+// // south plane4
+// muid_panel 0 4 0 0.0 0.0 0.0 0.0
+// muid_panel 0 4 1 0.0 0.0 0.0 0.0
+// muid_panel 0 4 2 0.0 0.0 0.0 0.0
+// muid_panel 0 4 3 0.0 0.0 0.0 0.0
+// muid_panel 0 4 4 0.0 0.0 0.0 0.0
+// muid_panel 0 4 5 0.0 0.0 0.0 0.0
+// 
+// // north plane0
+// muid_panel 1 0 0 0.0 0.0 0.0 0.0
+// muid_panel 1 0 1 0.0 0.0 0.0 0.0
+// muid_panel 1 0 2 0.0 0.0 0.0 0.0
+// muid_panel 1 0 3 0.0 0.0 0.0 0.0
+// muid_panel 1 0 4 0.0 0.0 0.0 0.0
+// muid_panel 1 0 5 0.0 0.0 0.0 0.0
+
+// // north plane1
+// muid_panel 1 1 0 0.0 0.0 0.0 0.0
+// muid_panel 1 1 1 0.0 0.0 0.0 0.0
+// muid_panel 1 1 2 0.0 0.0 0.0 0.0
+// muid_panel 1 1 3 0.0 0.0 0.0 0.0
+// muid_panel 1 1 4 0.0 0.0 0.0 0.0
+// muid_panel 1 1 5 0.0 0.0 0.0 0.0
+
+// // north plane2
+// muid_panel 1 2 0 0.0 0.0 0.0 0.0
+// muid_panel 1 2 1 0.0 0.0 0.0 0.0
+// muid_panel 1 2 2 0.0 0.0 0.0 0.0
+// muid_panel 1 2 3 0.0 0.0 0.0 0.0
+// muid_panel 1 2 4 0.0 0.0 0.0 0.0
+// muid_panel 1 2 5 0.0 0.0 0.0 0.0
+// 
+// // north plane3
+// muid_panel 1 3 0 0.0 0.0 0.0 0.0
+// muid_panel 1 3 1 0.0 0.0 0.0 0.0
+// muid_panel 1 3 2 0.0 0.0 0.0 0.0
+// muid_panel 1 3 3 0.0 0.0 0.0 0.0
+// muid_panel 1 3 4 0.0 0.0 0.0 0.0
+// muid_panel 1 3 5 0.0 0.0 0.0 0.0
+// 
+// // north plane4
+// muid_panel 1 4 0 0.0 0.0 0.0 0.0
+// muid_panel 1 4 1 0.0 0.0 0.0 0.0
+// muid_panel 1 4 2 0.0 0.0 0.0 0.0
+// muid_panel 1 4 3 0.0 0.0 0.0 0.0
+// muid_panel 1 4 4 0.0 0.0 0.0 0.0
+// muid_panel 1 4 5 0.0 0.0 0.0 0.0
+

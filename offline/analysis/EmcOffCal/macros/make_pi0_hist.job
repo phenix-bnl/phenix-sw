@@ -1,0 +1,17 @@
+Universe = vanilla
+Notification = Error
+GetEnv = True
+Executable = /bin/csh
+Notify_user = ermias@skipper.physics.sunysb.edu
++Experiment = "phenix"
++Requirements = (JobRunCount >= 1 && JobStatus == 1)
++Job_Type = "cas"
+
+Initialdir = /direct/phenix+hl/tujuba/emc_calib/iterations
+
+Arguments = make_pi0_hist_cdr.csh
+Log = /direct/phenix+hl/tujuba/emc_calib/iterations/cdr_logs/make_pi0_hist.log
+Output = /direct/phenix+hl/tujuba/emc_calib/iterations/cdr_logs/make_pi0_hist.out
+Error = /direct/phenix+hl/tujuba/emc_calib/iterations/cdr_logs/make_pi0_hist.err
+
+Queue 

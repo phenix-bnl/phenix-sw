@@ -1,0 +1,42 @@
+This directory contains several kumac files for crk module.
+
+crk_tst_12stp.kumac
+	kumac file to test "12 step" part of CRK module.
+	transform data from ghit-->Raw-->FEE-->DCM-->Raw again and
+	compare the two Raw data.
+
+
+dc_crk_run_init.kumac
+	initialization for dc_crk_run (run DC reconstruction and RICH)
+	This uses the following macros
+	   dc_init.kumac
+	   dc_par.kumac
+	   crk_init.kumac
+  dc_init.kumac   initialize DC
+  dc_par.kumac    initialize parameters for DC
+  crk_init.kumac  initialize Crk
+  
+dc_crk_run.kumac
+	event processing for DC+RICH reconstruction
+	usage:  exec dc_crk_run nevent evttype
+	        where
+			nevent: # of events to process
+			evttype: event type. should be hj or sig or mix
+	        		hj--> HIJING event (defined in dc_crk_run_init)
+				sig--> signal (e.g. 1 electron track event)
+				mix--> mix hj and sig
+
+	This uses the following macros
+	   dc_1event.kumac
+	   crk_1event.kumac
+	   crk_clear_event.kumac
+	   crk_hbend.kumac
+  dc_1event.kumac
+	process 1 event (for DC)
+  crk_1event.kumac
+	process 1 event (for RICH)
+  dc_crk_clear_event.kumac
+ 	clear current event
+  crk_hbend.kumac
+	HBOOK I/O
+

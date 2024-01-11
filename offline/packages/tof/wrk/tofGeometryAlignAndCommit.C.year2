@@ -1,0 +1,60 @@
+{
+/////////////////////////////////////////////////////////////////////
+// macro written to commit to Objy DB alignment geometry changes
+// for TOF   
+// valid for run 2:  June 2001 through January 2002  
+// author: Julia Velkovska
+// e-mail: julia@bnl.gov 
+//  
+// Starting from the TOF geo in the DB.
+// Now (January 2002) the final alignment was applied using this macro
+//
+//  Alignment done sector-by-sector using residuals information
+///////////////////////////////////////////////////////////////////////
+
+gSystem->Load("libphgeo.so");
+gSystem->Load("libtof.so");
+
+using namespace PHGeometry; 
+
+TofGeometry = new TofGeometryObject();
+
+PHTimeStamp tGet(2001,10,10,0,0,0);
+TofGeometry->setTimeStamp(tGet);
+TofGeometry->fetch();
+
+PHPanel pPanel[10], outPanel[10];
+double angle0 = - 0.00483;  // sector 0
+double angle1 = - 0.005383;  // sector 1
+PHVector trans0 (0,0,0.92);
+PHVector trans1 (0,0,0.238);
+PHVector axis(0,0,1);
+PHMatrix rotTof0 = rotationMatrix(angle0,axis);
+PHMatrix rotTof1 = rotationMatrix(angle1,axis);
+
+
+for (int j = 0; j <10;j++){
+  pPanel[j]=TofGeometry->getPanelGeo(j);
+  if (j>7){// sector 0 
+    outPanel[j]= transformPanel(rotTof0,trans0,pPanel[j]);}
+  if (j<8){//sector 1
+    outPanel[j]= transformPanel(rotTof1,trans1,pPanel[j]);
+  }
+  TofGeometry->setPanelGeo(j,outPanel[j]);
+}
+
+
+TofGeometry->writeToFile("tofpanelgeo.txt.year2");
+PHTimeStamp tStart = (2001,6,1,0,0,0);
+PHTimeStamp tStop = (2002,6,1,0,0,0);
+
+////////////////////////////////////////////////////////
+//   STOP !!! if you are not sure
+// If you want to commit to DB , uncomment the next line
+//
+// TofGeometry->updatePanel(tStart,tStop);
+//
+/////////////////////////////////////////////////////////
+}
+
+

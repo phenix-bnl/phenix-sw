@@ -1,0 +1,36 @@
+Original files:
+
+Edisp.cc
+Edisp.h
+EdispLinkDef.h
+Makefile.am
+configure.in
+autogen.sh
+
+Macros:
+run/ subdirectory contains macros to execute this
+package under ROOT. See run/HOW_TO_RUN.
+
+documents:
+HOW_TO_BUILD     This file.
+
+All other files in this directory are produced by autogen.sh
+
+-----
+After checking out this package, do the following.
+Assume you are at this top directory of Edisp.
+% mkdir bld
+% cd bld
+% ../autogen.sh
+ ( this will produces many config* files, missing, Makefile.in, etc
+   in Edisp directory and Makefile and others in bld directory)
+% make
+ ( this will produce libEdisp.so in bld/.libs directory)
+% cd ../run
+ (Now you are at Edisp/run, where all macros to execute the program
+  are placed.)
+% ln -s ../bld/.libs/libEdisp.so .
+ (Now you have a link to libEdisp.so in Edisp/run directory)
+ (Now you are ready to go. Read run/HOW_TO_RUN for further
+  information on how to use the program)
+

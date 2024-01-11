@@ -1,0 +1,13 @@
+/*****************************************************************************/
+/* File: dCrkHit.idl                                                         */
+/* Author: Y. Akiba, KEK                                                     */
+/* Purpose: IDL for dCrkHit (calibrated hits of PHENIX RICH)                 */
+/* Date: 7/28/97                                                             */
+/*       9/15/97 renamed to dCrkHit                                          */
+/*****************************************************************************/
+
+struct dCrkHit {
+  short pmt;   /* PMT id. 0 through 5119 */
+  float npe;   /* normalized pulse height in terms of photo-electron */
+  float time;  /* calibrated time of the hit (nsec) */
+};

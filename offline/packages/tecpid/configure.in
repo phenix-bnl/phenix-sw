@@ -1,0 +1,16 @@
+AC_INIT(configure.in)
+
+AM_INIT_AUTOMAKE(tecpid, 1.01)
+
+AC_PROG_CXX(CC g++)
+AC_ENABLE_STATIC(no)
+AC_PROG_LIBTOOL
+AC_CONST_TGFILEINFO
+
+dnl   no point in suppressing warnings people should 
+dnl   at least see them, so here we go: -Wall for g++
+if test $ac_cv_prog_gxx = yes; then
+   CXXFLAGS="$CXXFLAGS -Wall -Werror"
+fi
+
+AC_OUTPUT(Makefile)

@@ -1,0 +1,47 @@
+
+To insert hv values read from an ascii file into the objectivity database,
+or to retrieve hv values stored in the database, a new class 
+TecHVObject was created.
+
+The hv values can be stored/retrieved either by run number or by a time stamp.
+
+The ascii file from where to fetch hv values is assumed to be in shortest form,
+i.e., only the values are listed, in the folowing order:
+
+for (hvtype=0; hvtype<2; ...
+  for (sector=0; sector<4; ...
+    for (plane=0; plane<6; ...
+      for (side=0; side<2; ...
+
+The macros writeHV.C, writeHV_bytime.C, readHV.C, and readHV_bytime.C,
+in this wrk directory,
+are examples of how to use the TecHVObject class.
+
+********************************************************************
+IMPORTANT: do not use any rootlogon.C to initialize or root session.
+********************************************************************
+
+To store Achim's hv snapshots into the database, the macro
+"readHVsnap2db.C" and the shell script "readHVsnap2db"
+were created. To use it, you have to:
+1. be logged into a machine that "sees" 
+   /home/phoncs/tec/hvmonitor/snapshots.
+2. be in a directory where you have the macro and the shell script,
+   as well as the loadlibraries.C. If the "libtec.so" in the standard
+   system area still does not include the TecHVObject class, than you
+   have to extract from cvs the offline/packages/tec tree,
+   copy or copy over the files I sent to the list 
+   (TecHVObject*, TecBasicObject.cc and .hh, Makefile.am),
+   recompile the tec code, and make sure the line for libtec.so
+   in the loadlibraries.C points to the appropriate location.
+3. make a directory named "snapshots". Put inside that directory
+   links to the snapshot files you want to store into the db.
+   The snapshot file names have to be the same as the original ones,
+   because the time information is extracted from the file name.
+4. run the shell script readHVsnap2db. Do not use any rootlogon.C.
+5. check the files created ListHV_*.txt, to see if nothing crazy
+   happened, and DELETE them. What the macro does is to read the
+   hv values from the snapshot files, send them to the objectivity
+   db, read them back, and write them to these ListHV*.txt files.
+
+=====================================================================

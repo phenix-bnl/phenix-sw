@@ -1,0 +1,9 @@
+AC_INIT(configure.in)
+
+AM_INIT_AUTOMAKE(tofcalib, 1.01)
+AM_DISABLE_STATIC
+AC_PROG_LIBTOOL
+AC_PROG_CXX
+
+AC_OUTPUT(Makefile)
+  

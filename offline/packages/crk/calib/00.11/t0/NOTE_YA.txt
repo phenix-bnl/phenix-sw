@@ -1,0 +1,14 @@
+those are first RICH TAC calibrations done by T. Sakaguchi.
+I placed them into the DB on 11/30/00
+
+calib_convt_16ch.txt    TAC GAIN
+calib_t0_16ch.txt       T0
+
+According to Sakaguchi-kun, he determined T0 and GAIN in 16 ch group
+(because the statistics is too poor for individual PMTs). If the fit
+does not work well, TAC gain in forced to -0.125 nsec.
+
+A few summary histograms are in
+tac_summary.root
+tac_t0.ps
+tac_gain.ps

@@ -1,0 +1,5 @@
+{
+  gSystem->Load("libpreco.so");
+}
+
+

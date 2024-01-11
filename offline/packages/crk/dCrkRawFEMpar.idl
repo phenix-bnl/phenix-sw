@@ -1,0 +1,22 @@
+/****************************************************************************/
+/* File: dCrkRawFEMpar.idl                                                  */ 
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkPawFEMpar (control parameters for mCrkRawFEM)       */ 
+/* Used by: mCrkRawFEM                                                      */
+/* Date:  7/18/98                                                           */
+/****************************************************************************/
+  
+struct dCrkRawFEMpar {
+  unsigned short mplex;     /* switch of DCM multiplex. */
+		/* mplex = 1 means data is multiplexed to save # of DCM */
+		/* this is the running mode at Day 1 */
+		/* if mplex = 1, data from 1/2 crate is send to 1 DCM */
+		/* if mplex = 0, data from 1/2 crate is send to 2 DCM */
+  unsigned short fem_mask;  /* bit mask of FEMs that are read out */
+	        /* There are 16 FEMs in RICH. Some of them may not read out*/
+                /* If Bit "N" is ON, N-th FEM is read out. Therefore, */
+                /* fem_mask = 0xFFFF means all 16 FEMs are read out   */
+                /* fem_mask = 0x0FF means FEM 0 - 7 (vessel 1) are read out */
+	        /* fem_mas  = 0      means no FEM is read out         */ 
+};
+

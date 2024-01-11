@@ -1,0 +1,20 @@
+/****************************************************************************/
+/* File: dCrkGhitRawPar.idl                                                 */ 
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkGhitPawPar (control parameters for mCrkGhitRaw)     */ 
+/* Used by: mCrkGhitRaw                                                     */
+/* originally written for DSPACK, translated to STAF                        */
+/* Date:  7/28/97                                                           */
+/*        9/15/97 renamed to dCrkGhitRawPar                                 */
+/*        9/25/97 response parameters of individial PMT is moved to         */
+/*                dCrkUcal. Only common parameters are left here            */
+/****************************************************************************/
+
+struct dCrkGhitRawPar {
+  short ghitraw;    /* switch to turn ON(1) or OFF(0) ghitraw output */
+  short max_adc;    /* max value of ADC */
+  short max_tdc;    /* max value of TDC */
+  short min_tdc;    /* min value of TDC */
+  float N0_pisa;    /* N0 value used in PISA simulation */
+  float sinTmax;    /* Winstone cone acceptance */
+};

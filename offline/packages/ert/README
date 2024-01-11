@@ -1,0 +1,23 @@
+The webpage describe the package is at 
+
+http://www.phenix.bnl.gov/WWW/p/draft/xiewei/EMCal-RICH-Trigger/simulation/
+
+
+
+//==========================================================================================
+//
+// The following documents are obsolete. by H.Torii (18/Aug/2004)
+//	All of the DB are moved to PostgreSQL.
+//	Please contact for any questions to htorii@bnl.gov
+//
+
+The webpage related to DB things is at (added by H.Torii 17/May/2002)
+http://www.phenix.bnl.gov/WWW/p/draft/htorii/ert/db_offline/ert_db_offline_analysis.htm
+
+
+When you conduct autogen.sh, you must add the following option to boot 
+Federation of Objy. (by F. Kajihara & H.Torii 27/May/2003)
+
+../ert/autogen.sh --prefix=$PWD/../install --with-boot-file=$PHENIX_FD_BOOT
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
+//==========================================================================================

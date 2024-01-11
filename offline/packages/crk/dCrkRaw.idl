@@ -1,0 +1,13 @@
+/****************************************************************************
+ * File: dCrkRaw.idl
+ * Author: Y. Akiba, KEK
+ * Purpose: DS for raw digitized output of RICH
+ * Originally for DSPACK. converted to STAF.
+ * Date: 7/28/97
+ *       9/15/97 renamed to dCrkRaw
+ *****************************************************************************/
+struct dCrkRaw {
+  short pmt;
+  short adc;
+  short tdc;
+};

@@ -1,0 +1,9 @@
+t0calget.C : Get AfterBurner t0 data at the time of PHTimeStamp "sch".
+t0commit.C : Commit AfterBurner t0 data of the term from "tStart" to "tEnd"
+             into OBJY from an ascii file.
+Run3dAuT0.txt :  Exsample of t0 calibdata file. The format is as follows.
+          0  (t0 of PMT channel 0) (t0 sigma of PMT channel 0)
+          1  (t0 of PMT channel 1) (t0 sigma of PMT channel 1)
+          2  (t0 of PMT channel 2) (t0 sigma of PMT channel 2)
+                                                            ...
+          5119  (t0 of PMT channel 5119) (t0 sigma of PMT channel 5119)

@@ -1,0 +1,716 @@
+***********************************************************************
+***         Time-of-Flight Counter Software in STAF/PISORP.         ***
+***                                                                 ***
+***               Akio Kiyomichi  [Univ. of Tsukuba]                ***
+***                    kiyo@tac.tsukuba.ac.jp                       ***
+***                  last modified: May/15/1997                     ***
+***********************************************************************
+
+    This is a documentation for the STAF modules and data structure 
+    for the TOF subsystem of PHENIX detector. 
+
+(I) STAF tables for TOF
+
+ (i)  Input data table for STAF/TOF 
+  tofghit	: GEANT/PISA output data for TOF.
+
+ (ii) Data tables in TOF modules;
+  dTofGdigi	: GEANT digitized data. (using occupancy study)
+
+  dTofRaw	: Raw digitized data.
+
+  dTofReconstructed : End-product data structure of TOF
+
+ (iii)Tables for constant; 
+  dTofGeoPar	: Geometry parameter (for each panels)
+
+  dTofGeo	: Geometry table (for each slats)
+
+  dTofUcal	: Un-calibration constants
+
+  dTofCal	: Calibration constants
+
+ (iv) Tables for parameters;
+  dTofPerfPar	: control parameters for mTofPerfect
+
+  dTofHbkPar	: control parameters for mTofHbk
+
+  tof_common.h	: TOF common header file
+
+ (v)  Tables to relate entries;
+  dTofGhitGdigi	: tofghit to dTofGdigi
+
+  dTofGdigiRec	: dTofGdigi to dTofReconstructed
+
+  dTofGhitRaw   : tofghit to dTofRaw
+
+  dTofRawRec	: dTofRaw to dTofReconstructed
+
+
+(II) STAF PAMs for TOF
+
+ (i)  PAM for set constant.
+  mTofSetGeoPar	: Set Panel geometry parameters [will be obsorate. May/4/98] 
+
+  mTofSetGeo	: Set Geometry table for each slats
+
+  mTofSetUcal	: Set Un-calibration constants
+
+  mTofSetCal	: Set Calibration constants
+
+ (ii) PAM for process GEANT digitization data
+  mTofGhitGdigi : create dTofGdigi(GEANT data) from tofghit(PISA output).
+		  [convert PISORP-TOF code]
+  mTofGdigiRec	: create dTofReconstructed from dTofGdigi(GEANT data).
+
+  mTofPerfect	: mTofGhitGdigi + mTofGdigiRec
+
+ (iii)PAM for process raw-calibration data  
+  mTofGhitRaw	: create dTofRaw(raw data) from tofghit(PISA output).
+
+  mTofRawRec	: create dTofReconstructed from dTofRaw(raw data).
+
+ (v)  PAM for HBOOK
+  mTofHbk	: booking HBOOK histograms
+
+  mTofHFN	: fill Ntuples. check of (ii) and (iii) processes
+
+
+(III) Data flow        *** draft ***
+
+ (i) Tof Parameter Setup
+
+   ===========  
+  mTofSetGeoPar
+   ===========  
+        |
+  *------------*
+  * dTofGeoPar *
+  *------------*
+	|
+   ===========        ===========        ===========
+   mTofSetGeo         mTofSetUcal        mTofSetCal
+   ===========        ===========        ===========
+        |                 |                  |
+   *---------*       *-----------*       *---------*
+   * dTofGeo *       * dTofUcal  *       * dTofCal *
+   *---------*       *-----------*       *---------*
+
+ (ii) TOF data conversion
+                      GEANT Data                  Experimental Data
+                    *-------------*                            |
+                    *   tofghit   *                            |
+                    *(dele,tof,..)*                            |
+                    *-------------*                            |
+    [mTofPerfect]          |                                   |
+           +---------------+---------------+                   |
+           |                               |                   |
+      ===========  <-fkin             =========== <-dTofGeo    |
+     mTofGhitGdigi <-dTofGeo          mTofGhitRaw <-dTofUcal   |
+      ===========  ->dTofGhitGdigi    =========== ->dGhitRaw   |
+           |                               |                   |
+  *-------------------*            *---------------*           |
+  *    dTofGdigi      *            *    dTofRaw    *  <--------+
+  *(eloss,tof,pos,mom)*            *(qvc[2],tvc[2])*
+  *-------------------*            *---------------*
+           |                               |
+      =========== <-dTofGeo           =========== <-dTofGeo
+     mTofGdigiRec                     mTofRawRec  <-dTofCal
+      =========== ->dTofGdigiRec      =========== ->dTofRawRec
+           |                               |
+  *-------------------*           *-------------------*
+  * dTofReconstructed *           * dTofReconstructed *
+  * (eloss,tof,xtof)  *   <--->   * (eloss,tof,xtof)  *
+  *-------------------*     |     *-------------------*
+           |             Evaluate          |
+    To perfect tracking             To tracking module
+
+ Left : GEANT Perfect Data       Right : Reconstruction
+
+
+(IV) IDLs for STAF DATA table
+
+ (i)  For data table ( 3 idl files )
+    dTofGdigi.idl
+    dTofRaw.idl 
+    dTofReconstructed.idl
+
+::::::::::::::
+dTofGdigi.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofGdigi.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: digitization of PISA-TOF data
+ *               (Converted from PISORP code)
+ * Date: 10/22/97 A.Kiyomichi  First Version
+ *       11/17/97 A.Kiyomichi  Add id, slatid
+ *       12/31/97 A.Kiyomichi  Change from itrack to mctrack 
+ *****************************************************************************/
+struct dTofGdigi {
+  short id;           /* Reference key */
+  short slatid;       /* Slat ID (refer to dTofGeo)*/
+
+  short panel;        /* Panel  (1-11) */
+  short column;       /* Column (1-96) */
+  short pslat;        /* Slat   (0-2) */
+  short slat_seq;     /* Slat sequence  (0-2111) */
+  
+  long  mctrack;      /* Monte Carlo (GEANT) track number */
+  short partl;        /* Particle ID */
+  float tof;          /* Time-of-flight */
+  float eloss;        /* Energy loss*/
+  float pos_m[3];     /* TOF hit position */
+  float pos_hit_slat; /* Hit position in one slat */
+  float theta;        /* Theta position */
+  float phi;          /* Phi position */
+  float p_m[3];       /* Momentum */
+  short nslathit;     /* Number of hits in same slat */
+  short hits_seq;     /* Hits sequence in same slat */
+};
+::::::::::::::
+dTofRaw.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofRaw.idl
+ * Author: Hiroyuki Sako (Univ. of Tsukuba)
+ * Description: the raw data structure of TOF
+ * Date: 09/15/97 H.Sako       First Version
+ *       11/25/97 A.Kiyomichi  Add Slat sequencial ID
+ *****************************************************************************/
+struct dTofRaw {
+  short id;       /* Reference key */
+  short slatid;   /* Slat ID (0-1056) [refer to dTofGeo] */
+  short sector;   /* Sector (0-1) */
+  short side;     /* South=0,North=1*/
+  short panel;    /* Panel  (0-3) */
+  short slat;     /* Slat   (0-95) */
+
+  short cell[2];  /* AMU cell ID (1-64)
+                     [0] = Upper PMT, [1] = lower PMT */
+  short qvc[2];   /* QVC value in channel (1-4096) */
+  short tvc[2];   /* TVC value in channel (1-4096) */
+};
+::::::::::::::
+dTofReconstructed.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofReconstructed.idl
+ * Author: Hiroyuki Sako (Univ. of Tsukuba)
+ * Description: End-product data structure of TOF
+ * Date: 09/15/97 H.Sako       First Version
+ *       11/25/97 A.Kiyomichi  Add Slat sequencial ID
+ *****************************************************************************/
+struct dTofReconstructed {
+  short id;       /* Reference key */
+  short slatid;   /* Slat ID (0-1056) [refer to dTofGeo] */
+  short sector;   /* Sector (0-1) */
+  short side;     /* South=0,North=1*/
+  short panel;    /* Panel  (0-3) */
+  short slat;     /* Slat   (0-95) */
+  
+  float tof;      /* Time-of-flight */
+  float eloss;    /* Energy loss */
+  float xtof[3];  /* TOF hit position */
+  float xtrk[3];  /* Projected track position */
+};
+
+
+ (ii) For constants ( 4 idl files )
+    dTofGeoPar.idl
+    dTofGeo.idl
+    dTofUcal.idl
+    dTofCal.idl
+
+::::::::::::::
+dTofGeoPar.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofGeoPar.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: TOF geometry parameter (for each panels)
+ * Set by: mTofSetGeoPar
+ * Date: 11/17/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofGeoPar {
+  float rslat;        /* Slat R-position from panel front surface */
+  float slat_width;   /* Slat width */
+  float scintz[3];    /* Slat local-Z position */
+  float rpos[11];     /* TOF Panel   R-position */
+  float  phi[11];     /* TOF Panel phi-position */
+  float zpos[11];     /* TOF Panel   Z-position */
+};
+::::::::::::::
+dTofGeo.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofGeo.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: TOF geometry table (for each slats)
+ * Set by: mTofSetGeo
+ * Date: 11/11/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofGeo {
+  short slatid;       /* Slat ID */
+  short sector;       /* Sector (0-1) */
+  short side;         /* South=0,North=1*/
+  short panel;        /* Panel  (0-3) */
+  short slat;         /* Slat   (0-95) */
+  float pos[3];       /* TOF slat position */
+  float r;            /* TOF slat   r-position */
+  float phi;          /* TOF slat phi-position */
+};
+::::::::::::::
+dTofUcal.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofUcal.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: TOF un-calibration constant
+ * Set by: mTofSetUcal
+ * Date: 11/14/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofUcal {
+  short slatid;          /* Slat ID */
+  float qvc_chgain[2];   /* Energy Loss per QVC channel  [eV/ch] */
+  float tvc_conv[2];     /* Time conversion parameter for TVC [ps/ch] */
+  float tvc_ped[2];      /* TVC pedestal [ch] */
+  float slew[2];         /* Slewing parameter */
+  float scint_vlight;    /* Light velocity in scintillator [cm/ns] */
+  float scint_attenu;    /* Light attenuation length [cm] */
+  float tof_sigma;       /* Time resolution [ps] */
+};
+::::::::::::::
+dTofCal.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofCal.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: TOF calibration parameter
+ * Set by: mTofSetCal
+ * Date: 11/18/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofCal {
+  short slatid;          /* Slat ID */
+  float qvc_corr[2];     /* QVC correction parameter */
+  float qvc_corrlsr[2];  /* QVC correction parameter for LASER */
+  float eloss_conv;      /* Energy loss conversion parameter [ch/mip] */
+  float eloss_mip;       /* m.i.p. in one slat [GeV] */
+  float tvc_conv[2];     /* Time conversion parameter for TVC [ps/ch] */
+  float tvc_ped[2];      /* TVC pedestal [ch] */
+  float t0[2];           /* Timing offset of TVC [ch] */
+  float t0_lsr[2];       /* Timing offset of TVC for LASER [ch] */
+  float slew[2];         /* Slewing parameter */
+  float scint_vlight;    /* Light velocity in scintillator [cm/ns] */
+  float scint_attenu;    /* Light attenuation length [cm] */
+};
+
+
+ (iii)For parameters ( 2 idl files and 1 header file)
+    dTofPerfPar.idl
+    dTofHbkPar.idl
+    tof_common.h
+
+::::::::::::::
+dTofPerfPar.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofPerfPar.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: the user control parameters for the Time-of-flight
+ *              perfect track reconstruction
+ * Used by: mTofPerfPar
+ * Date: 04/09/98 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofPerfPar {
+  short verbose;          /* set for debug printing output */
+};
+::::::::::::::
+dTofHbkPar.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofHbkPar.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: control parameters for mTofHbk
+ *              sw = 1--> book histograms  2--> call hrput
+ * Used by: mTofHbk
+ * Date: 10/24/97 A.Kiyomichi  First Version
+ *       11/17/97 A.Kiyomichi  Add event parameter
+ ****************************************************************************/
+struct dTofHbkPar {
+  long sw;
+  long event;
+};
+::::::::::::::
+tof_common.h
+::::::::::::::
+/****************************************************************************
+ * File: tof_common.h
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: common header for tof modules
+ * Date: 11/11/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+/* commonly used macro */
+#define PRIVATE static
+
+/* parameters for TOF geometry */
+#define N_TOF_PMT   2112
+#define N_TOF_SLAT  1056
+#define N_TOF_PANEL   11
+#define NSLAT_PANEL   96
+#define SSLAT_LENGTH  43.39
+#define LSLAT_LENGTH  63.77
+
+
+ (iv) For relations ( 4 idl files )
+    dTofGhitGdigi.idl
+    dTofGdigiRec.idl
+    dTofGhitRaw.idl
+    dTofRawRec.idl
+
+::::::::::::::
+dTofGhitGdigi.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofGhitGdigi.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: relates tofghit table entries to dTofGdigi entries
+ * Date: 11/18/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofGhitGdigi {
+  short ghitid;       /* pointer to tofghit */
+  short slatid;       /* pointer to dTofGeo.slatid */
+  short gdigiid;      /* pointer to dTofGdigi.id */
+};
+::::::::::::::
+dTofGdigiRec.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofGdigiRec.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: relates dTofGdigi table entries to dTofReconstructed entries
+ * Date: 11/25/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofGdigiRec {
+  short gdigiid;      /* pointer to dTofGdigi.id */
+  short slatid;       /* pointer to dTofGeo.slatid */
+  short recid;        /* pointer to dTofReconstructed.id */
+};
+::::::::::::::
+dTofGhitRaw.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofGhitRaw.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: relates tofghit table entries to dTofRaw entries
+ * Date: 11/11/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofGhitRaw {
+  short ghitid;       /* pointer to tofghit */
+  short slatid;       /* pointer to dTofGeo.slatid */
+  short rawid;        /* pointer to dTofRaw.id */
+};
+::::::::::::::
+dTofRawRec.idl
+::::::::::::::
+/****************************************************************************
+ * File: dTofRawRec.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: relates dTofRaw table entries to dTofReconstructed entries
+ * Date: 11/25/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+struct dTofRawRec {
+  short rawid;        /* pointer to dTofRaw.id */
+  short slatid;       /* pointer to dTofGeo.slatid */
+  short recid;        /* pointer to dTofReconstructed.id */
+};
+
+
+(V)  IDLs for STAF PAM table
+
+ (i)  For set constant ( 4 idl files )
+    mTofSetGeoPar.idl
+    mTofSetGeo.idl
+    mTofSetUcal.idl
+    mTofSetCal.idl
+
+::::::::::::::
+mTofSetGeoPar.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofSetGeoPar.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: set values in dTofGeoPar (geometry parameter for each panels)
+ * Date: 11/17/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofGeoPar.idl"
+
+interface mTofSetGeoPar: amiModule {
+  STAFCV_T call (  out dTofGeoPar   par );
+};
+::::::::::::::
+mTofSetGeo.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofSetGeo.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: set values in dTofGeo (geometry table for each slats)
+ * Date: 11/11/97 A.Kiyomichi  First Version
+ *       04/09/97  Change parameter name (par -> geopar)
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofGeoPar.idl"
+#include "dTofGeo.idl"
+
+interface mTofSetGeo: amiModule {
+  STAFCV_T call (  in  dTofGeoPar   geopar
+                 , out dTofGeo         geo);
+};
+::::::::::::::
+mTofSetUcal.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofSetUcal.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: set values in dTofUcal (un-calibration constants of TOF)
+ * Date: 10/22/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofUcal.idl"
+
+interface mTofSetUcal: amiModule {
+  STAFCV_T call (  out dTofUcal     ucal  );
+};
+::::::::::::::
+mTofSetCal.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofSetCal.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: set values in dTofCal (calibration constants of TOF)
+ * Date: 10/22/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofCal.idl"
+
+interface mTofSetCal: amiModule {
+  STAFCV_T call (  out dTofCal       cal  );
+};
+
+
+ (ii) For process GEANT digitization ( 3 idl files )
+    mTofGhitGdigi.idl
+    mTofGdigiRec.idl
+    mTofPerfect.idl
+
+::::::::::::::
+mTofGhitGdigi.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofGhitGdigi.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: convert GEANT/PISA hits in tofghit into digitized data 
+ *              in dTofGdigi. (Converted from PISORP code.)
+ * Date: 10/22/97 A.Kiyomichi  First Version
+ *       11/19/97 A.Kiyomichi  Add fkin, geo, ghitgdigi table
+ *       04/10/98 A.Kiyomichi  Add perfpar table
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "tofghit.idl"
+#include "fkin.idl"
+#include "dTofPerfPar.idl"
+#include "dTofGeo.idl"
+#include "dTofGdigi.idl"
+#include "dTofGhitGdigi.idl"
+
+
+interface mTofGhitGdigi: amiModule {
+  STAFCV_T call (  in    tofghit                 ghit
+                 , in    fkin                    fkin
+                 , in    dTofPerfPar          perfpar
+                 , in    dTofGeo                  geo
+                 , out   dTofGdigi               digi
+                 , out   dTofGhitGdigi      ghitgdigi  );
+};
+::::::::::::::
+mTofGdigiRec.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofGdigiRec.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: convert GEANT digitized data in dTofGdigi into 
+ *              end-product data structure in dTofReconstructed. 
+ * Date: 11/25/97 A.Kiyomichi  First Version
+ *       04/10/98 A.Kiyomichi  Add perfpar table
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofPerfPar.idl"
+#include "dTofGeo.idl"
+#include "dTofGdigi.idl"
+#include "dTofReconstructed.idl"
+#include "dTofGdigiRec.idl"
+
+interface mTofGdigiRec: amiModule {
+  STAFCV_T call (  in    dTofPerfPar          perfpar
+                 , in    dTofGeo                  geo
+                 , in    dTofGdigi               digi
+                 , out   dTofReconstructed        rec
+                 , out   dTofGdigiRec        gdigirec  );
+};
+::::::::::::::
+mTofPerfect.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofPerfect.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: TOF perfect track reconstruction module
+ *              mTofGhitGdigi + mTofGdigiRec
+ * Date: 04/09/98 A.Kiyomichi  First Version
+ *       04/24/98 A.Kiyomichi  Delete mTofSetGeo
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "tofghit.idl"
+#include "fkin.idl"
+#include "dTofPerfPar.idl"
+#include "dTofGeo.idl"
+#include "dTofGdigi.idl"
+#include "dTofGhitGdigi.idl"
+#include "dTofReconstructed.idl"
+#include "dTofGdigiRec.idl"
+
+
+interface mTofPerfect: amiModule {
+  STAFCV_T call (  in    tofghit                 ghit
+                 , in    fkin                    fkin
+                 , in    dTofPerfPar          perfpar
+                 , in    dTofGeo                  geo
+                 , inout dTofGdigi               digi
+                 , inout dTofGhitGdigi      ghitgdigi
+                 , out   dTofReconstructed        rec
+                 , out   dTofGdigiRec        gdigirec  );
+};
+
+
+ (iii)For process Raw digitization ( 2 idl files )
+    mTofGhitRaw.idl
+    mTofRawRec.idl
+
+::::::::::::::
+mTofGhitRaw.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofGhitRaw.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: convert GEANT/PISA hits in tofghit into digitized raw data 
+ *              in dTofRaw.
+ * Date: 11/16/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "tofghit.idl"
+#include "dTofGeo.idl"
+#include "dTofUcal.idl"
+#include "dTofRaw.idl"
+#include "dTofGhitRaw.idl"
+
+interface mTofGhitRaw: amiModule {
+  STAFCV_T call (  in  tofghit      ghit
+                 , in  dTofGeo      geo
+                 , in  dTofUcal     ucal
+                 , out dTofRaw      raw
+                 , out dTofGhitRaw  ghitraw );
+};
+::::::::::::::
+mTofRawRec.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofRawRec.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: convert GEANT digitized data in dTofGdigi into 
+ *              end-product data structure in dTofReconstructed. 
+ * Date: 11/25/97 A.Kiyomichi  First Version
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofGeo.idl"
+#include "dTofCal.idl"
+#include "dTofRaw.idl"
+#include "dTofReconstructed.idl"
+#include "dTofRawRec.idl"
+
+interface mTofRawRec: amiModule {
+  STAFCV_T call (  in  dTofGeo                  geo
+                 , in  dTofCal                  cal
+                 , in  dTofRaw                  raw
+                 , out dTofReconstructed        rec
+                 , out dTofRawRec            rawrec  );
+};
+
+
+ (iv) For HBOOK (2 idl files)
+    mTofHbk.idl
+    mTofHFN.idl
+
+::::::::::::::
+mTofHbk.idl
+::::::::::::::
+/**************************************************************************
+ * File: mTofHbk.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: Book HBOOK histograms used in TOF modules. 
+ *             (Temporarily until TNT or other general HBOOK 
+ *              interface is available.)
+ *            if par->sw == 1 book histograms
+ *            if par->sw == 2 call hrput(0)
+ * Date: 10/24/97 A.Kiyomichi  First Version
+ **************************************************************************/
+#include "PAM.idl"
+
+#include "dTofHbkPar.idl"
+
+interface mTofHbk: amiModule {
+  STAFCV_T  call( in dTofHbkPar par );
+};
+::::::::::::::
+mTofHFN.idl
+::::::::::::::
+/****************************************************************************
+ * File: mTofHFN.idl
+ * Author: Akio Kiyomichi (Univ. of Tsukuba)
+ * Description: Fill contents of TOF data
+ * Date: 10/24/97 A.Kiyomichi  First Version
+ *       11/17/97 A.Kiyomichi  Rename from mTofGdigiHFN.idl
+ *****************************************************************************/
+#include "PAM.idl"
+
+#include "dTofHbkPar.idl"
+#include "tofghit.idl"
+#include "dTofGhitGdigi.idl"
+#include "dTofGdigi.idl"
+#include "dTofGdigiRec.idl"
+
+#include "dTofGhitRaw.idl"
+#include "dTofRaw.idl"
+#include "dTofRawRec.idl"
+#include "dTofReconstructed.idl"
+
+interface mTofHFN: amiModule {
+  STAFCV_T call (  in  dTofHbkPar              par
+                 , in  tofghit                ghit
+                 , in  dTofGhitGdigi     ghitgdigi
+                 , in  dTofGdigi              digi
+                 , in  dTofGdigiRec       gdigirec
+                 , in  dTofReconstructed      grec
+                 , in  dTofGhitRaw         ghitraw
+                 , in  dTofRaw                 raw
+                 , in  dTofRawRec           rawrec
+                 , in  dTofReconstructed      rrec  );
+};

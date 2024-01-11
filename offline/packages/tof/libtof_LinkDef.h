@@ -1,0 +1,56 @@
+#ifdef __CINT__
+#pragma link off all classes;
+#pragma link off all functions;
+#pragma link off all globals;
+
+#pragma link C++ class dTofAssociateWrapper-;
+#pragma link C++ class dTofAssocParWrapper-;
+#pragma link C++ class dTofCalParWrapper-;
+#pragma link C++ class dTofCalWrapper-;
+#pragma link C++ class dTofDCMParWrapper-;
+#pragma link C++ class dTofDCMWrapper-;
+#pragma link C++ class dTofEvalParWrapper-;
+#pragma link C++ class dTofEvalWrapper-;
+#pragma link C++ class dTofFEMhitGhitWrapper-;
+#pragma link C++ class dTofFEMmapWrapper-;
+#pragma link C++ class dTofFEMWrapper-;
+#pragma link C++ class dTofGdigiRecWrapper-;
+#pragma link C++ class dTofGdigiWrapper-;
+#pragma link C++ class dTofGeoParWrapper-;
+#pragma link C++ class dTofGeoWrapper-;
+#pragma link C++ class dTofGhitGdigiWrapper-;
+#pragma link C++ class dTofGhitRawParWrapper-;
+#pragma link C++ class dTofGhitRawWrapper-;
+#pragma link C++ class dTofPerfParWrapper-;
+#pragma link C++ class dTofPidParWrapper-;
+#pragma link C++ class dTofPidWrapper-;
+#pragma link C++ class dTofRawRecParWrapper-;
+#pragma link C++ class dTofRawRecWrapper-;
+#pragma link C++ class dTofRawWrapper-;
+#pragma link C++ class dTofReconstructedWrapper-;
+#pragma link C++ class dTofUcalParWrapper-;
+#pragma link C++ class dTofUcalWrapper-;
+#pragma link C++ class mTofDCMModule-;
+#pragma link C++ class mTofEvaluateModule-;
+#pragma link C++ class mTofFEMModule-;
+#pragma link C++ class mTofGdigiRecModule-;
+#pragma link C++ class mTofGhitGdigiModule-;
+#pragma link C++ class mTofGhitRawModule-;
+#pragma link C++ class mTofPerfectModule-;
+#pragma link C++ class mTofSetCalModule-;
+#pragma link C++ class mTofSetFEMmapModule-;
+#pragma link C++ class mTofSetGeoModule-;
+#pragma link C++ class mTofSetGeoParModule-;
+#pragma link C++ class mTofSetUcalModule-;
+#pragma link C++ class TofAddressObject-!;
+#pragma link C++ class TofBasicObject-!;
+#pragma link C++ class TofCalibObject-!;
+#pragma link C++ class TofGeometryObject+;
+#pragma link C++ class TofHit+;
+#pragma link C++ class TofHitv1+;
+#pragma link C++ class TofHitv2+;
+#pragma link C++ class TofOut+;
+#pragma link C++ class TofOutv1+;
+#pragma link C++ class TofOutv2+;
+
+#endif /* __CINT__ */

@@ -1,0 +1,12 @@
+/****************************************************************************/
+/* File: dCrkDCMRawPar.idl                                                  */ 
+/* Author: Y. Akiba, KEK                                                    */ 
+/* Purpose: IDL for dCrkDCMpar (control parameters for mCrkDCM)             */ 
+/* Used by: mCrkDCMRaw                                                      */
+/* Date:  7/25 /98                                                           */
+/****************************************************************************/
+  
+struct dCrkDCMRawPar {
+  short threshold; /* threshould for zero suppression */
+};
+

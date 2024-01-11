@@ -1,0 +1,94 @@
+(1) HOW TO BUILD test module for RICH calibration
+% mkdir bld
+% cd bld
+% ../autogen.sh
+% make
+
+This should produce libCrkCalib.so in bld/.libs. Make it
+availabe by
+
+% cd ..   # coming back this directory from ./bld
+% ln -s bld/.libs/libCrkCalib.so .
+
+(2) HOW TO TEST OBJY access with RICH calib module
+
+The following shows a "typical" test session. 
+For more, please read CrkCalib.h for all available functionality. The
+member function name should explain by itself.
+
+% root -b CrkCalibInit.C
+root[0] CrkCalib *cal = new CrkCalib();
+root[1] cal->fetch_DB_adc();  // fetch from ADC (program ask you the time)
+ Enter search_time (year, month, day, hour, minute, sec)
+2000 8 2 0 0 0
+//
+// Note that you have to enter all of the six numbers (year...sec) 
+// Also note that you should have "blank" between those numbers.
+//
+root[2] cal->print_adc();     // print the fetched value
+root[3] PHTimeStamp Time(2000,8,1,0,0,0); // set time
+root[4] cal->fetch_DB_adc(Time);  // fetch data for Time
+root[5] cal->print_adc()          // print the fetched value
+root[6] cal->read_file_adc();     // read data from an ASCII text file
+root[7] cal->write_DB_adc();      // store the data to OBJY
+
+
+The following is a terminal screen copy of actual session of
+using this program. (This was done on 2000/10/24)
+
+crk/test-db>root -b CrkCalibInit.C
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   2.23/12  21 February 2000   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+Compiled with thread support.
+
+CINT/ROOT C/C++ Interpreter version 5.14.25, Nov 25 1999
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+root [0]
+Processing CrkCalibInit.C...
+root [1] CrkCalib *cal = new CrkCalib();
+root [2] cal->fetch_DB_adc();
+ Enter search_time (year, month, day, hour, minute, sec)
+2000 8 2 0 0 0
+Look up for Time = Wed Aug  2 00:00:00 2000Application initialised:
+  boot-file : /export/database/objy/PHENIX_NEW
+  AMS-Host  : phenixls.phenix.bnl.gov
+root [3] cal->print_adc()
+Class name : PdbRichADCBank
+calibname  : calib.rich.adc
+BankID     : 1
+StartTime  : Wed Jul  5 00:00:00 2000
+EndTime    : Wed Aug  9 00:00:00 2000
+Description: ADC pedestal from RUN7705. PE=80, PEW=30 for all live channels.
+Data Size  : 5120
+0) SM 0 -1.00852 5.67333 80 30 659.483 0 0 0 47.9895
+1) SM 1 -1.25672 3.59908 80 30 1054.37 0 0 0 16.8863
+2) SM 2 -1.21017 3.24634 80 30 1163.18 0 0 0 22.1007
+3) SM 3 -1.47015 3.15634 80 30 1189.73 0 0 0 34.4239
+4) SM 4 -1.44636 2.97205 80 30 1252.09 0 0 0 54.049
+5) SM 5 -1.26154 3.1334 80 30 1208.19 0 0 0 18.5436
+6) SM 6 -1.31982 3.06188 80 30 1236.25 0 0 0 19.7887
+7) SM 7 -1.53756 2.98828 80 30 1265.77 0 0 0 17.0936
+8) SM 8 -1.10775 3.01731 80 30 1253.94 0 0 0 17.6543
+9) SM 9 -1.25724 3.00432 80 30 1257.02 0 0 0 21.4655
+10) SM 10 -1.31395 3.06329 80 30 1223.04 0 0 0 40.781
+11) SM 11 -1.34379 3.00717 80 30 1256.74 0 0 0 15.991
+12) SM 12 -8.62593 2.94651 80 30 1265.26 0 0 0 46.7797
+13) SM 13 -1.27992 3.31566 80 30 1133.41 0 0 0 34.2033
+14) SM 14 -1.42916 3.62027 80 30 1034.3 0 0 0 39.3613
+15) SM 15 -1.4434 4.49472 80 30 837.025 0 0 0 36.9891
+16) SM 16 -1.0707 4.68567 80 30 799.296 0 0 0 43.5281
+17) SM 17 -1.08086 2.97335 80 30 1255.12 0 0 0 52.1033
+18) SM 18 -0.927184 2.84838 80 30 1305.36 0 0 0 58.3864
+19) SM 19 -0.903883 2.84585 80 30 1326.74 0 0 0 22.4463
+20) SM 20 -1.09828 2.70509 80 30 1373.5 0 0 0 55.1823
+countine (Y/N)? n
+root [4] .q

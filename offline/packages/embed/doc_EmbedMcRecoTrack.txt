@@ -1,0 +1,260 @@
+The current output of the embedding chain is a ROOT file containing the
+Tree EmbedMcRecoTrack. Each entry in EmbedMcRecoTrack contains the
+evaluation information for a single MC particle track embedded into a real
+event. Evaluation information is available for the single particle event
+before the embedding into a real event. From this, in principle, the single
+particle acceptance and efficiency corrections can be determined / cross 
+checked. Some information about the real event event into which we embed
+the single particle event is kept, e.g. variables characterizing centrality
+and vertex position. Finally, information describing the fate of the embedded
+particle after embedding into the real event and rerunning the reconstruction
+is kept. From that, we get the multiplicity dependent efficiency loss.
+
+In general, Tree entries ending with
+
+"G":  contain information about the original GEANT particle that has been
+      identified as the "source", i.e. dominant contributor of DC hits, of 
+      the single particle track that is embedded into the real event.
+"Mc": contain information directly from GEANT except for the "id" variables
+      (see below)
+"S":  contain evaluation information for the simulated single particle before
+      embedding
+"R":  contain evaluation information after embedding and rerunning the
+      reconstruction on the merged event 
+
+For each embedded track the following information is stored
+-----------------------------------------------------------
+
+type			 evaluation mode (YOU HAVE TO CUT ON type==2)!!!!!
+evtID			 event ID
+idGeant			 ID of the GEANT track
+evtxG,evtyG,evtzG	 event vertex in GEANT
+pptG,ppzG,pthe0G,pphi0G  pt, pz, polar angle at vertex, azimuthal angle of primary MC 
+			 particle
+prapiG                   peudeo rapidity of primary MC particle
+genG			 generation (1,2, or 3) of the MC particle
+partidG			 particle ID of the MC particle 
+pareidG			 parent particle ID of the MC particle
+primidG			 primary particle ID of the MC particle
+xvtxG,yvtxG,zvtxG        radial and z coordinate of the MC particle's vertex
+
+bbcqn, bbcqs		 North and South BBC total charge of event embedded into
+zdcen, zdces		 North and South ZDC total energy of event embedded into
+bbcvtx			 BBC of vertex event embedded into
+bbct0			 BBC t_zero of vertex event embedded into
+isminbias                Is the event embedded into a minimum bias event?
+bbccent                  BBC percentile for the real Event
+centclock		 centrality of original event from clock method
+
+ntrkG(S)	         G: multiplicity of MC particle generating at least one
+			 GEANT hit in the drift chambers in the simulated event
+			 (PerfectTrack)
+			 S: multiplicity of reconstructed DC tracks in the 
+			 simulated event
+dctrkidG(S)(R)		 G: PerfectTrack ID
+			 S: DchTrackID in simulated event
+			 R: DchTrackID in reconstructed event after embedding
+dctrkQualG(S)(R)	 G: PerfectTrack quality
+			 S: DchTrack quality in simulated event
+			 R: DchTrack quality in reconstructed event after 
+			 embedding
+the0G(S)(R)		 polar angle at vertex (G, S, and R should be familiar
+			                        by now)
+phi0G(S)(R)		 azimuthal angle at vertex
+alphaG(S)(R)		 drift chamber alpha
+thetaG(S)(R)		 drift chamber theta
+phiG(S)(R)		 drift chamber phi
+betaG(S)(R)		 drift chamber beta
+zedG(S)(R)		 drift chamber zed
+momG(S)(R)		 momentum
+x1hG(S)(R)		 multiplicity of x1 hits
+x2hG(S)(R)		 same for x2
+uv1hG(S)(R)		 same for uv1
+uv2hG(S)(R)		 same for uv2
+
+x1hE			 x1 hits after embedding for PerfectTracks
+x2hE			 x2 hits after embedding for PerfectTracks
+uv1hE			 uv1 hits after embedding for PerfectTracks
+uv2hE			 xuv2 hits after embedding for PerfectTracks
+ntrkb			 track multiplicity in the real event
+			 before embedding
+ntrka			 track multiplicity in the merged event
+			 after embedding
+pc1(2)(3)idMc	         reconstructed PC1(2)(3) cluster ID in the simulated 
+			 event that corresponds to the original GEANT hit
+tof(emc)idMc		 see directly above
+
+pc1(2)(3)xMc		 GEANT x coordinate for the correct MC particle hit 
+			 PC1(2)(3)
+pc1(2)(3)yMc		 y coordinate
+pc1(2)(3)zMc		 z coordinate
+tof(emc)x(y)(z)Mc	 see directly above
+
+pc1(2)(3)idS(R)		 ID of reconstructed PC1(2)(3) cluster in the 
+			 simulated event and after embedding 
+
+pc1(2)(3)x(y)(z)S(R)	 coordinates of the PC1(2)(3) cluster in the 
+			 simulated event and after embedding
+ppc1(2)(3)x(y)(z)S(R)	 coordinates of the projections to PC1(2)(3) in the
+			 simulated event and after embedding
+pc1(2)(3)idE		 reconstructed PC1(2)(3) cluster ID after embedding
+			 for the correct MC particle
+
+toftMc			 GEANT time-of-flight
+tofeMc			 GEANT energy loss
+pltofMc			 path length to TOF from GEANT
+tofidS(R)		 reconstructed TOF hit ID before(after) embedding
+tofx(y)(z)S(R)		 coordinates of tofidS(R)			 
+toftS(R)		 time-of-flight of tofidS(R)
+tofeS(R)		 energy loss of tofidS(R)
+tofpidS(R)		 not yet filled with reasonable value
+ptofx(y)(z)S(R)		 coordinates of projections to TOF before(after) 
+			 embedding
+pltofS(R)		 pathlength to TOF before(after) embedding
+
+tecidS(R)		 place holder for whatever will come for the TEC
+tecx(y)(z)S(R)		 place holder for whatever will come for the TEC
+ptecx(y)(z)S(R)		 place holder for whatever will come for the TEC
+tecidE			 place holder for whatever will come for the TEC
+
+plcrkMc(S)(R)		 path length to the CRK
+crkaccS(R)		 the following variables are the standard output
+			 of CrkPid before and after embedding
+crknpmt0S(R)		 "
+crknpmt1S(R)		 "
+crknpmt3S(R)		 "
+crknpe0S(RP		 "
+crknpe1S(R)		 "
+crknpe3S(R)		 "
+crkchi2S(R)		 "
+crkdsipS(R)		 "
+crkpathS(R)		 up to here!
+
+plemcMc(S)(R)		 path length to the EMC
+emctrkno0Mc		 the following variables are the standard entries
+			 in EmcGeaClusterTrack, summarizing the ancestry
+			 of the associated EMC cluster BEFORE embedding
+emctrkno1Mc		 "
+emctrkno2Mc		 "
+emctwrhit0Mc		 "
+emctwrhit1Mc		 "
+emctwrhit2Mc		 "
+emcpid0Mc		 "
+emcpid1Mc		 "
+emcpid2Mc		 "
+emcedep0Mc		 "
+emcedep1Mc		 "
+emcedep2Mc		 "
+emcptot0Mc		 "
+emcptot1Mc		 "
+emcptot2Mc		 "
+emcidS(R)		 reconstructed EMC cluster ID before(after) embedding
+emcx(y)(z)S(R)		 coordinates of EMC cluster before(after) embedding
+pemcx(y)(z)S(R)		 coordinates of the projections to the EMC before
+			 (after) embedding
+emcswkeyS(R)		 standard variables from EmcClusterLocalExt1 before
+			 (after) embedding
+emcmeaseS(R)		 "
+emcecoreS(R)		 "
+emcecentS(R)		 "
+emcecorrS(R)		 "
+emctofS(R)		 "
+emctofcorrS(R)		 "
+emctofminS(R)		 "
+emcprobphotS(R)		 "
+emctwrhitS(R)		 "
+emcchi2S(R)		 "	 
+emcpartesum0S(R)	 "
+emcpartesum1S(R)	 "
+emcpartesum2S(R)	 "
+emcpartesum3S(R)	 "
+
+aerboxidS(R)             associated BOX ID for Aerogel Counter
+aerph1S(R)               ADC value of associated box
+aerph2S(R)               "
+
+nx1x2fitS(R)		 number of drift chamber x hits fitted in the 
+			 track model
+mchi2S(R)		 chi^2 of track model fit
+errS(R)			 error code of track model fit
+alphafS(R)		 alpha from the track fit
+
+sumfoundS(R)		 multiplicity of reconstructed tracks before (after)
+			 embedding that have the MC particle as dominant 
+			 contributor
+solutionS(R)		 index of reconstructed tracks before (after)
+			 embedding that have the MC particle as dominant 
+			 contributor; 1<=solution<=sumfound
+mulmainS(R)		 multiplicity of DC hit contributing MC particles
+xmulmainS(R)		 multiplicity of DC x hit contributing MC particles
+uvmulmainS(R)		 multiplicity of DC uv hit contributing MC particles
+mainIDS(R)		 ID of main contributor
+xmainIDS(R)		 ID of main contributor of x hits
+uvmainIDS(R)		 ID of main contributor of uv hits
+purityS(R)		 purity of main contributor (=1 if exactly one 
+			 contributor, otherwise it's 0<purity<1)
+xpurityS(R)		 purity of main contributor x
+uvpurityS(R)		 purity of main contributor uv
+
+sumfound		 for each solutionR the multiplicity of reconstructed
+			 tracks (in simulated single particle event) 
+			 contributing hits is determined. sumfound is the
+			 sum of all of these (this is not used) for a given
+			 MC particle.
+solution		 index for sumfound: 1<=solution<=sumfound
+
+pc2(3)sS(R)		 2d (phi-z) matching (in sigma) to PC2(3) 
+pc2(3)sdphiS(R)		 phi matching (in sigma) to PC2(3)
+pc2(3)sdzS(3)		 z matching (in sigma) to PC2(3)
+pc2(3)dphiS(R)		 phi matching (absolute) to PC2(3)
+pc2(3)dzS(R)		 z matching (absolute) to PC2(3)
+tofsS(R)		 analogue to PC
+tofsdphiS(R)		 analogue to PC
+tofsdzS(R)		 analogue to PC
+tofdphiS(R)		 analogue to PC
+tofdzS(R)		 analogue to PC
+emcsS(R)		 analogue to PC
+emcsdphiS(R)		 analogue to PC
+emcsdzS(R)		 analogue to PC
+emcdphiS(R)		 analogue to PC
+emcdzS(R)		 analogue to PC
+
+
+x1hSG			 multiplicity of x1 hits contributed by the MC particle
+			 to the track reconstructed in the simulated event
+x2hSG			 same for x2
+uvhSG			 same for uv
+x1hRG			 multiplicity of x1 hits contributed by the MC particle
+			 to the track reconstructed after embedding
+x2RG			 same for x2
+uvhRG			 same for uv
+x1hRS			 multiplicity of x1 hits that are the same before and
+			 after embedding
+x2hRS			 same for x2
+uvhRS			 same for uv
+
+pc2sdphiS, pc2sdzS       pc2 charged track matching in phi and z for simulated event(in number of sigmas).
+pc2sS                    pc2 charged track matching in radial for simulated event (sqrt(pc2sdphiS*pc2sdphiS+pc2sdzS*pc2sdzS)
+pc2dphiS,pc2dzS          difference between associated hit and projection in phi and z at PC2
+pc3sdphiS,pc3sdzS        ""
+pc3sS                    ""
+pc3dphiS,pc3dzS          ""
+tofsdphiS,tofsdzS        ""
+tofsS                    ""
+tofdphiS,tofdzS          ""
+emcsdphiS,emcsdzS        ""
+emcsS                    ""
+emcdphiS,emcdzS          ""
+
+pc2sdphiR, pc2sdzR       pc2 charged track matching in phi and z for real event(in number of sigmas).
+pc2sR                    pc2 charged track matching in radial for real event (sqrt(pc2sdphiR*pc2sdphiR+pc2sdzR*pc2sdzR)
+pc2dphiR,pc2dzR          difference between associated hit and projection in phi and z at PC2 in real event
+pc3sdphiR,pc3sdzR        ""
+pc3sR                    ""
+pc3dphiR,pc3dzR          ""
+tofsdphiR,tofsdzR        ""
+tofsR                    ""
+tofdphiR,tofdzR          ""
+emcsdphiR,emcsdzR        ""
+emcsR                    ""
+emcdphiR,emcdzR          ""
