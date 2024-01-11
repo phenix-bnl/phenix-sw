@@ -1,0 +1,5 @@
+Makefile.in aclocal.m4 autom4te.cache configure 
+.deps .libs config.status config.log libtool Makefile
+confdefs.h conftest.dir
+*.lo
+*Dict.* *.la testexternals*
