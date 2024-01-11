@@ -1,0 +1,40 @@
+3.08   0.365394   0.0619864 
+3.31   0.656983   0.0772921 
+3.53   0.5747   0.081078 
+3.76   0.632684   0.0922665 
+4.00   0.792965   0.124781 
+4.22   0.628518   0.314259 
+4.56   0.488606   0.11845 
+5.02   0.508572   0.195605 
+
+
+computed ratio via:
+
+e.setFit(0)
+//TGraphErrors*pi0=(TGraphErrors*)e.plot_spectrum_from_ascii("pp_pi0_isr_53GeV_all.txt",eband)
+TGraphErrors*pi0=(TGraphErrors*)e.plot_spectrum_from_ascii("pp_pi0_isr_53.2GeV_amaldi79.txt",eband)
+TGraphErrors*eta=(TGraphErrors*)e.plot_spectrum_from_ascii("pp_eta_53.2GeV_amaldi79.txt",eband)
+TF1 *f = new TF1("f", "[0]/([1]+x)^[2]", 2., 6.); 
+f->SetParameters(1.e6,2.,14.);  
+pi0->Fit("f","R","",2.,6.)
+TGraphErrors*r=(TGraphErrors*)emcAnalyzerUtils::ratio(eta,f)
+r.Draw("AP")
+emcAnalyzerUtils::dumpGraph(r,"x-y-ey")
+
+Also:
+
+emcAnalyzerUtils::ratio(eta,pi0,1,0.1)                                                             
+ <I> emcAnalyzerUtils::ratio of pp_eta_53.2GeV_amaldi79.txt over pp_pi0_isr_53.2GeV_amaldi79.txt
+    pT                pT_err   Ratio    errRatio 
+    3.08 (3.08,3.10)   0.00    0.400    0.090
+    3.31 (3.31,3.30)   0.00    0.600    0.116
+    3.53 (3.53,3.50)   0.00    0.542    0.108
+    3.76 (3.76,3.70)   0.00    0.613    0.126
+    4.00 (4.00,4.10)   0.00    0.938    0.220
+    4.22 (4.22,4.30)   0.00    0.767    0.411
+    4.56 (4.56,4.50)   0.00    0.379    0.121
+    5.02 (5.02,5.10)   0.00    0.650    0.344
+
+
+
+

@@ -1,0 +1,24 @@
+4.12  922. 30.     148.
+4.38  538. 23.     74. 
+4.62  252. 15.     32.
+4.88  109. 10.     14. 
+5.20  39.4  4.2     5.1
+5.70  12.6  2.3      1.7    
+6.40  1.1   0.5      0.3
+
+
+
+BONESINI 87 ZP C37,39 
+P IN GEV 280.
+PI+ P --> PI0 X 
+PT(P=3,RF=CM) IN GEV 
+y = E*D3(SIG)/DP**3 IN PB./GEV**2 
+x1 TO x2 y dy +- dsys 
+
+PT(P=3,RF=CM) = 4.0 TO 4.25 GEV 
+PT(P=3,RF=CM) = 4.25 TO 4.5 GEV 
+PT(P=3,RF=CM) = 4.5 TO 4.75 GEV 
+PT(P=3,RF=CM) = 4.75 TO 5.0 GEV 
+PT(P=3,RF=CM) = 5.0 TO 5.5 GEV 
+PT(P=3,RF=CM) = 5.5 TO 6.0 GEV 
+PT(P=3,RF=CM) = 6.0 TO 7.0 GEV

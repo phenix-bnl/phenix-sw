@@ -1,0 +1,16 @@
+2.40	2.1e-30	 0.8e-30 
+2.60	4.1e-31	 3.4e-31 
+2.85    1.5E-31	 1.2E-31 
+3.20    6.4E-32	 4.3E-32 
+3.70	3.4E-32  1.8e-32 
+
+
+3.70    3.4E-32  1.8E-32 
+
+
+POVLIS 83 PRL 51,967 
+YRAP (P=3,RF=CM) -0.75 TO 0.2
+P BE --> ETA X
+x= PT IN GEV
+y= E*D3(SIG)/DP**3 IN CM**2/GEV**2/NUCLEUS
+x    y	     dy

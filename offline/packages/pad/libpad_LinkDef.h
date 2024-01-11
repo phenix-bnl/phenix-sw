@@ -1,0 +1,49 @@
+#ifdef __CINT__
+
+#pragma link C++ class dPad23ParWrapper-;
+#pragma link C++ class dPadClusterWrapper-;
+#pragma link C++ class dPadDCMParWrapper-;
+#pragma link C++ class dPadDCMWrapper-;
+#pragma link C++ class dPadEvalParWrapper-;
+#pragma link C++ class dPadEvalWrapper-;
+#pragma link C++ class dPadFastSimParWrapper-;
+#pragma link C++ class dPadFEMParWrapper-;
+#pragma link C++ class dPadFEMWrapper-;
+#pragma link C++ class dPadGeomWrapper-;
+#pragma link C++ class dPadGhitClusWrapper-;
+#pragma link C++ class dPadGhitRawWrapper-;
+#pragma link C++ class dPadNibbleGhitWrapper-;
+#pragma link C++ class dPadPerfParWrapper-;
+#pragma link C++ class dPadRawClusWrapper-;
+#pragma link C++ class dPadRawWrapper-;
+#pragma link C++ class dPadRecParWrapper-;
+#pragma link C++ class dPadSlowSimParWrapper-;
+#pragma link C++ class mPadDCMModule-!;
+#pragma link C++ class mPadDumpRawModule-!;
+#pragma link C++ class mPadEvaluateModule-!;
+#pragma link C++ class mPadFastSimModule-!;
+#pragma link C++ class mPadFEMModule-!;
+#pragma link C++ class mPadRecModule-!;
+#pragma link C++ class mPadUnpackModule-!;
+#pragma link C++ class PadAddressObject-!;
+#pragma link C++ class PadAncObjy-!;
+#pragma link C++ class PadBasicObject-!;
+#pragma link C++ class PadCalibrationObject-!;
+#pragma link C++ class PadCluster+;
+#pragma link C++ class PadClusterv1+;
+#pragma link C++ class PadClusterv2+;
+#pragma link C++ class padEvtToRaw-!;
+#pragma link C++ class padInclBad-!;
+#pragma link C++ class padMixDST-!;
+#pragma link C++ class PadOnlineRec-!;
+#pragma link C++ class PadRaw+;
+#pragma link C++ class PadRawv1+;
+#pragma link C++ class PadRecModule-!;
+#pragma link C++ class PadSnglCluster+;
+#pragma link C++ class PadSnglClusterv1+;
+#pragma link C++ class PadSnglClusterv2+;
+#pragma link C++ class PadSnglRaw+;
+#pragma link C++ class PadSnglRawv1+;
+#pragma link C++ class PadVertexFunction-!;
+
+#endif

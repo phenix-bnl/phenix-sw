@@ -1,0 +1,15 @@
+     0.057    0.0             2.6            0.9     0.8
+     0.106    0.0             1.1            0.19    0.13
+     0.186    0.0             0.52           0.094   0.08
+     0.457    0.0             0.092          0.025   0.015
+
+
+   EXPeriment = DESY-PETRA-JADE
+   sqrt(s)    = 35 GeV
+   Author     = Pitzl et al
+   REFerence  = Zeit. Phys. C46 (1990) 1
+
+
+      xE         (s/beta) dsig/dxE       errors
+                   (mub GeV**2)       stat.   sys.
+

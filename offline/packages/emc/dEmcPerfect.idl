@@ -1,0 +1,14 @@
+/* dEmcPerfect.idl */
+
+/** (STAF) This table contains what a perfect calorimeter should see
+* Position is the actual impact of the front face of the calorimeter 
+* in absolute coordinates 
+@ingroup staf
+**/
+
+struct dEmcPerfect {
+  short id;           	/* unique identifyer of the entry */
+  long true_track;	/* track number */
+  short pid;		/* particle ID */
+  float xyz[3];		/* impact point */
+};

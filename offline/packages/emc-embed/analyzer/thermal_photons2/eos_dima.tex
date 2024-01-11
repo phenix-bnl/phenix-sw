@@ -1,0 +1,228 @@
+\documentclass[aps,twocolumn,groupedaddress,superscriptaddress,floatfix]{revtex4}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\title{Systematic study of direct photon production in Cu+Cu and Au+Au
+collisions at RHIC energies}
+
+\author{D. d'Enterria}
+\author{D. Peressounko}
+\begin{abstract}
+We analyse direct photon production in Cu+Cu and Au+Au collisions
+at $\sqrt{s_{NN}}$=62 and 200 GeV within hydrodynamic model. We
+consider three different equations of state: EOS of pure hadron
+gas, bag motivated EOS with first order phase transition and
+lattice-like EOS.  In all cases confronting effective slopes of
+thermal photons and final particle multiplicity we extract number
+of effective degrees of freedom and compare it with input one.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+Direct photons provide reasonable estimate of the initial
+temperature reached in the collision. Confronting them with other
+thermodynamic quantities such as entropy or energy density gives
+the possibility to extract number of effective degrees of freedom.
+
+\section{Hydrodynamic model}
+To describe evolution of the nucleus-nucleus collision we use
+hydrodynamic model plus pQCD contribution scaled with number of
+binary collisions. Detailed description of this model one can find
+in the \cite{DDE-DP-1}. Hydrodynamic equations being just
+equations of local conservation of energy-momentum should be
+accomplished by equation of state of hot matter and initial
+conditions. We consider these ingredients in details in the next
+sections.
+
+
+\subsection{Equation of state}
+
+Hydrodynamic equations should be accomplished with an equation of
+state i.e. dependence
+\begin{equation}\label{vs-def}
+v_s^2(e)= \left ( \frac{\partial p}{\partial e}\right )_{S},
+\end{equation}
+where subscript $S$ means that the derivative should be taken for
+an adiabatic process:
+$$
+\frac{\sigma}{n}=const.
+$$
+Here $\sigma$ is the entropy density and $n$ is the particle
+density for the case of gas with conserved number of particles or
+some charge (baryon, strange, electric charge etc.) density in the
+case of a gas in chemical equilibrium.
+
+In the case of chemically equilibrated gas both energy density and
+pressure depends only on temperature and thus
+\begin{equation}\label{vs-eqil}
+v_s^2=  \frac{\left (\frac{\partial p}{\partial T}\right )}{\left
+(\frac{\partial e}{\partial T}\right )}.
+\end{equation}
+
+Let us first consider several simple model equations of state and
+then construct our more or less realistic one. For massless
+particles $p=1/3\varepsilon$ and thus such equation of state
+results in constant {\it maximal possible} speed of sound
+$v_s^2=1/3$ -- see thin black solid line in the
+fig.~\ref{fig:EOS}. For a pure pion gas in chemical equilibrium we
+find that the speed of sound monotonically increases with the
+temperature and at $T\sim m_\pi$ goes already close to the speed
+of sound of massless gas. Similarly, speed of sound in the gas,
+consisting of baryons, monotonically increases with temperature
+(dashed line in the fig.~\ref{fig:EOS}), but in the case of
+mixture of pions and baryons (dotted line in fig.~\ref{fig:EOS})
+speed of sound is no more monotonic function: it increases at
+$T\ll m_\pi$, decreases at $m_\pi<T<m_p$ and then further
+increases, tending to the speed of sound of massless gas.
+Increasing of the number of heavier resonances in the gas results
+in further decrease of speed of sound -- see dash-ditted line in
+fig.~\ref{fig:EOS}. For comparison we present as well results of
+the lattice calculations of the speed of sound \cite{latt} in hot
+matter. In contrast to the case of hadron resonance gas lattice
+$v_s$ has monotonic dependence on the temperature (we fixed in
+this plot $T_c=160$~MeV). In addition, this increase is much
+steeper than those in the case of pure pion or baryon gas, what
+means rapid creation of considerable number of relatively light
+degrees of freedom after phase transition. We found, that lattice
+predictions of $v_s$ are qualitatively differ from HRG model at
+$T<T_c$. This discrepancy probably can be related  to the
+unphysically large quark masses used in the lattice calculations
+and thus to the absence of light pion states. So, in our analysis
+we will not use lattice results directly, but combine them with
+HRG model predictions for $T<T_c$.
+
+\begin{figure}[t!]
+\includegraphics[width=\columnwidth]{vs_cheq.eps}
+\caption{Speed of sound squared for different gases in chemical
+equilibrium.}\label{fig:EOS}
+\end{figure}
+
+In this analysis we use three different equations of state: (a)
+EOS of resonance hadron gas without phase transition, (b) EOS with
+first order phase transition and (c) EOS using lattice
+parameterization. The first case (a), EOS of the resonance
+hadronic gas is modeled as a gas of non-interacting $\sim$400
+known hadrons and hadronic resonances with masses below 2.5
+GeV/$c^2$. In the second case (b) EOS of hadron resonance gas EOS
+is complimented with first order phase transition to the QGP at
+$T_{c}$ = 165 MeV, described within bag model as a gas of massless
+quarks and gluons with latent heat $\Delta\varepsilon\approx$ 1.4
+GeV/fm$^3$. The QGP is modeled as an ideal gas of massless quarks
+($N_f$ = 2.5 flavours) and gluons with total degeneracy
+$g_{\mbox{\tiny{\it{QGP}}}} = (g_{\mbox{\tiny{\it{gluons}}}}+7/8\,
+g_{\mbox{\tiny{\it{quarks}}}})$ = 42.25. The corresponding EoS,
+$p=1/3\varepsilon-4/3B$ ($B$ being the bag constant), has sound
+velocity $c_s^2=\partial p/\partial \varepsilon = 1/3$. Both
+phases are connected via the standard Gibbs' condition of phase
+equilibrium, $p_{\mbox{\tiny{\it{QGP}}}}(T_{c}) =
+p_{\mbox{\tiny{\it{HRG}}}}(T_{c})$, during the mixed phase. The
+external bag pressure, calculated to fulfill this condition at
+$T_c$, is $B\approx$ 0.38 GeV/fm$^3$. In the case (c) we construct
+our equation of state as following. First we compare dependence
+$e(T)$ for HRG and lattice and find some point, where
+\begin{eqnarray}\label{Conn}
+ e_{HRG}(T_{conn})&=&e_{latt}(T_{conn},T_c)  \\
+ \frac{
+ de_{HRG}}{dT}(T_{conn})&=&\frac{de_{latt}}{dT}(T_{conn},T_c).
+\end{eqnarray}
+Here we consider transition temperature $T_c$ and connection
+temperature $T_{conn}$ as free parameters. We find $T_c=168$ MeV
+and $T_{conn}=182$~MeV. Having $T_c$ fixed we then find point,
+where \begin{equation}\label{vs-conn}
+ v_s^{HRG}(T_{vs})=v_s^{Latt}(T_{vs}). \nonumber
+\end{equation}
+We find $T_{vs}=172$~MeV. Resulting dependencies of $e(T)$ and
+$v_s(T)$ are presented in the Fig.~\ref{fig:E-vs}.
+
+
+\begin{figure*}[tbh]
+\includegraphics[width=\columnwidth]{E.eps}
+\includegraphics[width=\columnwidth]{vs.eps}
+\caption{Normalized energy density (left) and speed of sound
+(right) for equations of states. Black line represents equation of
+state of chemically equilibrated resonance hadron
+gas.}\label{fig:E-vs}
+\end{figure*}
+
+
+Energy density is less sensitive to the presence of the light
+states, while speed of sound is much more sensitive to the mass
+state distribution.
+
+\subsection{Initial conditions}
+Second important ingredient of the hydrodynamic modes is initial
+conditions. We use the same procedure as in \cite{DDE-DP-1}. For
+different colliding systems we use different initial conditions,
+summarized in Table~\ref{tab:IC}
+
+\begin{table*}
+\caption{Initial conditions for different EOSes and colliding
+systems}\label{tab:IC}
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  EOS  & Au+Au, 200                     & Au+Au, 62   & Cu+Cu, 200 &  Cu+Cu, 62 \\
+  \hline
+  Bag  & $\tau_{in}=0.15$, $E_{in}=220$ & $\tau_{in}=0.45$, $E_{in}=33$ & $\tau_{in}=0.1$, $E_{in}=160$ & $\tau_{in}=0.30$, $E_{in}=24$ \\
+  Latt & $\tau_{in}=0.15$, $E_{in}=220$ & $\tau_{in}=0.45$, $E_{in}=36.5$ &  $\tau_{in}=0.10$, $E_{in}=170$  & $\tau_{in}=0.30$, $E_{in}=30.5$ \\
+  HRG  & $\tau_{in}=0.60$, $E_{in}=37$  & $\tau_{in}=0.60$, $E_{in}=22.5$ & $\tau_{in}=0.60$, $E_{in}=17$ & $\tau_{in}=0.60$, $E_{in}=12$ \\
+  \hline
+\end{tabular}
+\end{table*}
+
+We check that we properly reproduce charged particles yield in
+midrapidity comparing our yield with data measured with PHOBOS
+RHIC experiment and other RHIC experiments where available, see
+fig.~\ref{fig:Nch}. One can see that centrality dependence both of
+the total charged particles yield and of the transverse energy are
+reproduced well for all considered EOSes and curves go close to
+each other.
+
+\begin{figure*}[t]
+\includegraphics[width=\columnwidth]{Nch_Au200.eps}
+\includegraphics[width=\columnwidth]{Et_Au200.eps}
+\includegraphics[width=\columnwidth]{Nch_Au62.eps}
+\includegraphics[width=\columnwidth]{Et_Au62.eps}
+\includegraphics[width=\columnwidth]{Nch_Cu200.eps}
+\includegraphics[width=\columnwidth]{Et_Cu200.eps}
+\includegraphics[width=\columnwidth]{Nch_Cu62.eps}
+\includegraphics[width=\columnwidth]{Et_Cu62.eps}
+\caption{Normalized charged particles density and transverse
+energy density calculated with different EOSes.}\label{fig:Nch}
+\end{figure*}
+
+
+\section{Number of effective degrees of freedom}
+Correlating direct photon effective temperatures and total charged
+particles yields we constructed numbers of effective degrees of
+freedom and compared them to ideal ones implemented into
+hydrodynamics, see fig.~\ref{fig:Hdf}
+
+\begin{figure*}[t]
+\includegraphics[width=0.66\columnwidth]{Ndf_Au200_bag.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Au200_Latt.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Au200_HRG.eps} \\
+\includegraphics[width=0.66\columnwidth]{Ndf_Au62_bag.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Au62_Latt.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Au62_HRG.eps} \\
+\includegraphics[width=0.66\columnwidth]{Ndf_Cu200_bag.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Cu200_Latt.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Cu200_HRG.eps} \\
+\includegraphics[width=0.66\columnwidth]{Ndf_Cu62_bag.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Cu62_Latt.eps}
+\includegraphics[width=0.66\columnwidth]{Ndf_Cu62_HRG.eps} \\
+\caption{Effective number of degrees of freedom}\label{fig:Ndf}
+\end{figure*}
+
+
+
+
+\begin{thebibliography}{99}
+\bibitem{DDE-DP-1}D.d'Enteriia and D.Peressounko,
+\bibitem{latt}S.D.~Katz, Plenary talk at 18th International Conference on Ultrarelativistic Nucleus-Nucleus
+Collisions: Quark Matter 2005 (QM 2005), Budapest, Hungary, 4-9
+Aug 2005; e-Print Archive: hep-ph/0511166.
+\bibitem{Nch-PHOBOS}G.Roland et al.,(PHOBOS collaboration),
+nucl-ex /0510042.
+\end{thebibliography}
+\end{document}
+% ------------------------------------------------------------------------

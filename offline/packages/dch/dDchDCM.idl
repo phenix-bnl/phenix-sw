@@ -1,0 +1,79 @@
+/** dDchDCM.idl 
+
+The each drift chamber has 40 keystones and correspondingly 
+ 40 FEMs.  Each FEM sends 2 data broadcasts of 972 words each 
+ (see dDchFEM.idl) which represent the DC data prior to  
+ zero-suppression.  This is 160 broadcasts total. 
+
+ The DCM table contains a single DriftChamber DCM broadcast. 
+ There will be 160 of these in each real PHENIX event 
+
+ Go Packers!!!!! 
+
+ Here is the report which the Drift Chamber will provide to the people 
+ who will pack the data into true PHENIX packets and frames.  This table 
+ contains both the block of words which are to be the packet contents AND  
+ some easily indices which attempt to describe just which hardware source 
+ this darn data came from.  Here's a long-winded description of each of  
+ the styles of fields found in this data record: 
+
+ 1)  nWord: 
+   Since we will be zero-suppressing the data (sometimes) the length of  
+   the data block will vary.  nWord tells the number of valid words in the 
+   enclosed datablock. 
+
+ 2)  scheme: 
+   We choose to mimic at least two modes of operation of the DCM.  These 
+   are passthough mode (in which you get ALL your DCM's words, but they are
+   pre-pended by smart indices in their high-order bits)., zero-suppressed-
+   mode (words are just passthrough except empty words are missing).   
+   Eventually we will also add formats which represent DSP-massaged data, 
+   however not for the MDC. 
+   The scheme variable lists which mode your software is simulating. 
+
+ 3)  Packet ID: 
+   The upper 8-bits contain a subsystem ID , which is defined in the header
+   file Subs_DCM.h .The lower 24 bits contain detector specific information
+   ( hardware address). 
+
+ 4)  DCM data: 
+   This is a data block which matches the length of the WHOLE FEM data  
+   record (971 words for the DC).  
+   note: 971 not 972, because CAV1=0xFFFFF is not in the DCM output. 
+   The reason we need SO much room is for the case in which we simulate 
+   pass-through mode.  Although this is wasteful, it is CLEAR to the 
+   packers what they are receiving and that is the main goal of this data 
+   structure. 
+
+*/
+
+struct dDchDCM 
+{
+/**	 number of VALID 32 bit words- 
+        NOTE: data only partly filled in zero-supp mode */
+	unsigned long nWord;  
+/** scheme=0 - pass through at FPGA and DSP 
+                         scheme=1 - zero-supp at FPGA , pass @ DSP
+                         scheme=2 - zero-supp at FPGA , more at DSP */  
+        unsigned long scheme; 
+
+/** upper 8 bits give subsystem ID 
+ lower 24 bits -drift chamber hardware address*/
+        unsigned long packetID;
+
+/** 32 bit words from the DCM report */
+        unsigned long DCM[971];  
+};
+
+
+
+
+
+
+
+
+
+
+
+
+

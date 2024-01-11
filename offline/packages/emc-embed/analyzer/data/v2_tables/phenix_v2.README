@@ -1,0 +1,56 @@
+
+  eps and data files for PPG022 (pi/K/p v2)
+
+------------------------------------------------------------------------
+eps fig1 <prl_fig1_v3.eps>
+eps fig2 <prl_fig2_v3.eps>
+eps fig3 <prl_fig3_v3.eps>
+
+------------------------------------------------------------------------
+The data files in the plots are here <./vec/>.
+
+------------------------------------------------------------------------
+Fig1:
+res.dat --- resolution (cent, err, cos, err, sin, err)
+chg_cent.dat --- v2 vs centrality (cent, err, v2, err, sys_up, sys_dn)
+chg_pt.dat --- v2 vs pt (pt, min_pt, max_pt, v2, err, sys_up, sys_dn)
+
+Fig2:
+neg_pi.dat --- pi- (pt, min_pt, max_pt, v2, err_sta, err_sys)
+neg_ka.dat --- K-
+neg_pr.dat --- pbar
+pos_pi.dat --- pi+
+pos_ka.dat --- K+
+pos_pr.dat --- proton
+com_pi.dat --- pi+,pi- (pt, min_pt, max_pt, v2, err_sta)
+com_ka.dat --- K+,K-
+com_pr.dat --- proton,pbar
+scl_pi.dat --- pi+,pi- (quark scaled)
+scl_ka.dat --- K+,K- (quark scaled)
+scl_pr.dat --- proton,pbar (quark scaled)
+
+Fig3:
+cen20_neg_ch.dat --- 0-20% ch- (pt, min_pt, max_pt, v2, err_sta)
+cen20_neg_pk.dat --- 0-20% pi-,K-
+cen20_neg_pr.dat --- 0-20% bpar
+cen20_pos_ch.dat --- 0-20% ch+
+cen20_pos_pk.dat --- 0-20% pi+,K+
+cen20_pos_pr.dat --- 0-20% proton
+cen40_neg_ch.dat --- 20-40% ch-
+cen40_neg_pk.dat --- 20-40% pi-,K-
+cen40_neg_pr.dat --- 20-40% pbar
+cen40_pos_ch.dat --- 20-40% ch+
+cen40_pos_pk.dat --- 20-40% pi+,K+
+cen40_pos_pr.dat --- 20-40% proton
+cen60_neg_ch.dat --- 40-60% -
+cen60_neg_pk.dat --- 40-60% -
+cen60_neg_pr.dat --- 40-60% -
+cen60_pos_ch.dat --- 40-60% +
+cen60_pos_pk.dat --- 40-60% +
+cen60_pos_pr.dat --- 40-60% +
+
+------------------------------------------------------------------------
+last update : 4th/July/2003 12:00
+ShinIchi Esumi <mailto:esumi@sakura.cc.tsukuba.ac.jp>
+
+------------------------------------------------------------------------

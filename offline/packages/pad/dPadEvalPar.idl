@@ -1,0 +1,16 @@
+/* dPadEvalPar.idl */
+
+/* Contains the user control parameters for the PC evaluation */
+
+struct dPadEvalPar {
+  short verbose;          /* set for debug printing to the screen */
+  short fillclus;         /* set to fill the PadClus ntuple */
+  short fillghit;         /* set to fill the PadGhit ntuple */
+  short filleval;         /* set to fill the PadEval ntuple */
+  short fillstat;         /* set to fill the PadStat ntuple */
+  short printstat;        /* set to print the statistics to the screen */
+  short pcnumber;         /* select PC1, 2, or 3 (0,1, or 2) */
+  float rcutpc1;          /* s diff for a successful PC1 cluster */
+  float rcutpc2;          /* s diff for a successful PC2 cluster */
+  float rcutpc3;          /* s diff for a successful PC3 cluster */
+};

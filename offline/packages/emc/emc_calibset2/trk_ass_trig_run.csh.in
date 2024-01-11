@@ -1,0 +1,53 @@
+#!/usr/local/bin/tcsh -f
+#
+# Batch job script
+#
+#  Usage: run.csh infile outfile
+#
+#
+#Trigger study by using v05 DST
+
+setenv OFFLINE_MAIN @_OFFLINE_MAIN_@
+source /opt/phenix/bin/phenix_setup.csh
+setenv LD_LIBRARY_PATH @_prefix_@/lib:${LD_LIBRARY_PATH}
+
+###############################################################
+if( $# != 2) then
+    echo "usage : $0 infile outfile"
+    exit
+endif
+set IN_FILENAME  = $1
+set OUT_FILENAME = $2
+if( -r ${IN_FILENAME} ) then
+	echo " Input file name is "${IN_FILENAME}
+else
+	echo " Can't find input file : "${IN_FILENAME}
+	exit
+endif
+
+set pushdsilent
+pushd `dirname $0`
+set DIR_MACRO     = `pwd`
+popd
+echo " DIR_MACRO = " ${DIR_MACRO}
+
+################################################################################
+echo "*****************************************************"
+echo "*** run.csh start *** "`date`
+echo "*****************************************************"
+echo "Processing ............................................"
+#######################################
+/opt/phenix/root/bin/root -b -q ${HOME}/local/photon/Calibset2/trk_ass_trig_run.cc\(\"${IN_FILENAME}\",\"${OUT_FILENAME}\"\)
+#######################################
+echo " ...................................................... Finished processing "
+ls -la ${OUT_FILENAME}
+echo "*****************************************************"
+echo "*** run.csh finished *** "`date`
+echo "*****************************************************"
+echo ""
+echo ""
+################################################################################
+
+
+
+

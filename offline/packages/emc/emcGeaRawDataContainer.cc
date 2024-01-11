@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+/*
+ * $Id: emcGeaRawDataContainer.cc,v 2.1 2008/04/29 02:20:34 mazsi Exp $
+ *
+ * implementation file for emcGeaRawDataContainer.
+ *
+ */
+
+
+#include <emcGeaRawData.h>
+#include <emcGeaRawDataContainer.h>
+
+emcContainerImp(emcGeaRawData);
+
+
+

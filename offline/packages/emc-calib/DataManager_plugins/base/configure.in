@@ -1,0 +1,16 @@
+AC_INIT(configure.in)
+
+AC_CANONICAL_HOST
+
+AM_INIT_AUTOMAKE(emcdatamanager_plugins_base, 1.00)
+AC_ENABLE_STATIC(no)
+AC_PROG_CXX(cxx CC g++)
+AC_PROG_LIBTOOL
+
+dnl   no point in suppressing warnings people should
+dnl   at least see them, so here we go for gcc: -Wall
+if test $ac_cv_prog_gxx = yes; then
+  CXXFLAGS="$CXXFLAGS -Wall -Werror"
+fi
+
+AC_OUTPUT(Makefile)

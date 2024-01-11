@@ -1,0 +1,47 @@
+/* dEmcGeaClusterTrack.idl */
+/** 
+(STAF) Evaluator; connects Clusters to Tracks (unique GEANT track number).
+In other words: it tells you which track has been the source of
+energy deposited in a certain cluster.
+@ingroup staf
+*/
+
+struct dEmcGeaClusterTrack {
+  long id;          	/* unique identifyer; */
+  long clusid;		/*                                      */
+  long evno;		/*                                      */
+  long keycent;		/*                                      */
+  long input;		/* serial number of input (merge!) */
+  long type;		/* PbSc = 1, PbGl = 2 */
+  long arm;		/* West = 0, East = 1 */
+  long sector;		/* Sector serial number */
+  long trkno[3];	/* true_track indices that contributed */
+  long tracktwrhit[3];	/* Number of towers in which it deposited energy */
+  float edep_nom[3];	/* Nominal energy deposited by the track */
+  float pid[3];		/* Real track pid */
+  float ptot[3];	/* Total momentum of orig. track */
+  float vertex[3][3];	/* Vertex of the track */
+  float ancestry[3];	/* Ancestry - generation - of the track */
+  float xyz[3][3];	/* Nominal impact position according to EmcPerfect */
+  float edep[3];	/* energy deposited by the respective tracks */
+  float efrac[3];	/* edep[1]/mease, edep[2]/mease, edep[3]/mease */
+  float measxyz[3];	/* Measured impact position */
+  float mease;		/* Measured energy of the cluster (incl. overlaps) */
+  float ecore;		/* Core energy a la Sasha Bazilevsky */
+  float tof;		/* Measured TOF */
+  float etof;		/* Measured E in tower providing TOF */
+  float tofmin;		/* Measured smallest TOF */
+  float etofmin;	/* Measured E in tower providing smallest TOF */
+  float tofmax;		/* Measured largest TOF */
+  float etofmax;	/* Measured E in tower providing largest TOF */
+  long  twrhit;		/* Number of towers in the cluster */
+  float disp[2];	/* dispersion */
+  float padisp[2];	/* dispersion along principal axes */
+  float partesum[8];	/* Partial energy sums of first 8 contributors */
+  long charged;		/* Pc3 indicates charge in front of cluster */
+  float pc3proj[3];	/* Pc3 projection */
+  float chi2_sh;
+  float prob_photon_sh;
+  float e_sh[2];
+  float chglist[8];
+};

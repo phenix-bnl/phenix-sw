@@ -1,0 +1,67 @@
+#!/usr/local/bin/tcsh -f
+#
+# Batch job script
+#
+
+setenv OFFLINE_MAIN @_OFFLINE_MAIN_@
+source /opt/phenix/bin/phenix_setup.csh
+setenv LD_LIBRARY_PATH @_prefix_@/lib:${LD_LIBRARY_PATH}
+###############################################################
+#
+echo $#
+if( $# != 2 && $# != 3 ) then
+    echo "usage : $0 listfile outfilename [sector]"
+    exit
+endif
+set INFO_FILE  = $1
+set OUTFILE    = $2
+@ SECT_START   = 0
+@ SECT_END     = 7
+if( $# == 3 ) then
+    @ SECT_START        = $3
+    @ SECT_END          = $3
+endif
+if( -r ${INFO_FILE} ) then
+	echo " File name of DST list is "${INFO_FILE}
+else
+	echo " Can't open the DST list file: "${INFO_FILE}
+	exit
+endif
+###############################################################
+echo " ana.csh::*****************************************************"
+echo " ana.csh::*** ana.csh start *** "`date`
+echo " ana.csh::*****************************************************"
+###############################################################
+setenv TMPFILE /tmp/emc_ana_$$.cc
+rm -fr ${TMPFILE}
+echo " ana.csh:: Create tmporary file " ${TMPFILE}
+cat <<EOF > ${TMPFILE}
+#include <stdio.h>
+#include <TChain.h>
+#include <TFile.h>
+void emc_ana_$$(){
+  gSystem->Load("libemc_dstrun.so");
+  gSystem->Load("libemc_clusttr.so");
+  gSystem->Load("libemc_calibset2.so");
+  // *** Process *********************
+  clust_calib_ana("${INFO_FILE}","${OUTFILE}",${SECT_START},${SECT_END});
+  // *** Close uDST *********************
+}
+//
+EOF
+chmod uog+wr ${TMPFILE}
+cat ${TMPFILE}
+#######################################
+echo " ana.csh::Processing ............................................"
+echo /opt/phenix/root/bin/root -b -q ${TMPFILE}
+/opt/phenix/root/bin/root -b -q ${TMPFILE}
+#######################################
+echo " ana.csh::...................................................... Finished processing "
+echo -n " ana.csh::"
+ls -la ${OUTFILE}
+echo " ana.csh::Delete "${TMPFILE}
+rm -f ${TMPFILE}
+echo " ana.csh::*****************************************************"
+echo " ana.csh::*** ana.csh finished *** "`date`
+echo " ana.csh::*****************************************************"
+################################################################################

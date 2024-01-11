@@ -1,0 +1,244 @@
+
+08-JAN-2001
+
+        Lots of mods in the comments of various classes so 
+	the doxygen-generated documentation looks ok.
+
+  emcTracedFEM and child.
+
+	Correctly implemented Compact method.
+
+	Added RemoveLastItems() to remove the last item of each channel
+	(needed for PbSc Gains at least).
+
+  Added class emcTracedFEMPlotter (used to make TGraphs out of emcTracedFEM
+	objects. Nice to _see_ what gains look like.
+	
+  Added file CalibGFXLinkDef.h
+
+  Modified Makefile.am to build a libemcCalibGFX library with 
+	emcTracedFEMPlotter class within.
+
+  Removed obsolete class emcBankIDConverter
+	
+20-DEC-2001
+
+ CalibLinkDef.h
+
+	added classes emcTracedFEM emcTacPeds emcTacPedFEM
+
+
+ Makefile.am
+
+	added classes emcTracedFEM emcTacPeds emcTacPedFEM
+
+ 	
+ emcCalFEM.h.C
+
+        emcCalFEM is now a "emcManageable" so it can be passed directly
+	to datamanager, without going through the emcFEMtuple-extra-layer-of
+	-indirection. Not used at the moment by calibrator, but infrastructure
+	is there and working (see also new plugins in DataManager_plugins).
+	
+        Changed the ctors (e.g. make a copy constructor!) so that
+	pinNumber, post_pre and tac_pre are not used anylonger.
+
+	New methods SetXmin, SetXmax (in replacement of SetLastValidTime),
+	SetDescription(). The fDescription field might be used by plugins
+	to fill in the description field of Objy bank headers.
+
+	Xmin and Xmax are the min and max values of the (potential) X-axis of 
+	calfems (used by emcTracedFEM classes only).
+	For the use of it, see e.g. emcTracedFEM::getValue(int,int)
+
+  emcCalFEMFactory.h.C
+
+	New static method CreateDefault to be used to create default versions of
+	various emcCalFEM classes.
+
+	Now able to create the newly added class emcTacPedFEM.
+
+  emcFEMtuple.h.C, emcFEMtupleFactory.C
+
+	Changes required by emcCalFEM changes.
+	Note that this class is meant to disappear soon.
+	An emcFEMtuple was only meant to be an emcManageable-"vector" of emcCalFEM,
+	i.e. a thing that can be passed to/from DataManager. We believe it's doing
+	nothing very valuable, expect adding the burden of yet another level of indirection.
+	It used to be convenient when we foresaw to go to the DM for each event, verifying
+	every time the validity of the calibration sets we already collected. This requirement
+	vanishes (as we now agreed to fetch calibrations only once per run), and thus the main
+	purpose of this class disappeared. It would be much more convenient to use directly the
+	emcCalFEM objects (in which case user would be free to handle a collection of those as
+	he/she prefers, user here might be the calibrator class).
+	We keep it for the moment in order not to destroy everything at once...
+	But please note that all the infrastructure for using only emcCalFEM objects is already there.
+
+  emcGainFEM.h.C
+
+	emcGainFEM is now only a special case of emcTracedFEM (see below).
+
+  emcGains.C
+
+	Changes required by emcGainFEM changes.
+	Please note that this class will disappear if/when emcFEMtuple disappear.
+
+  emcHLRatioFEM.h.C, emcLCTofFEM.h.C, emcPedestalFEM.h.C emcQAFEM.h.C
+  emcTofT0FEM.h emcWalkTofFEM.h
+
+	Removed pinNumber, post_pre, tac_pre in ctor, like in emcCalFEM.
+	Implemented copy ctors.
+	New static method Default(int, const PHTimeStamp&, const PHTimeStamp&)
+
+  new classes emcTacPedFEM and emcTacPeds
+
+	This is to handle the new TAC pedestal drift calibration data.
+	Note that the getValue method is not the same as the one of 
+	the parent class (as slope=rms in this case, it is forced to _not_
+	be used).
+	Derived from emcTracedFEM (see below).
+	
+  emcTracedValue.h.C
+
+	Method GetTime() renamed to GetX()
+	New Method Set(int x, float constant, float slope)
+
+  new class emcTracedFEM
+
+        Generalisation of emcGainFEM, and more symetric, regarding PbSc/PbGl.
+	The "X-axis" in there might be tics for PbSc or run number for PbGl.
+	Same functionalities, expect for 2 new ones : 
+	* new method LastItem(int channel) which
+	  returns a pointer to a emcTracedValue which can be modified "in place"
+	  (this is to answer one E.K. request)
+	* new (protected) method Compact to merge traced line.
+	NOT FULLY TESTED (only a little bit for PbGl constant lines !).
+	Edward, please modify this one if you'd like your lines to be merged.
+	
+31-AUG-2001
+
+ CalibLinkDef.h
+
+	added class emcPedestals5
+	
+ Makefile.am    
+
+	added class emcPedestals5
+	
+ emcCalFEM.C    
+ emcCalFEM.h
+
+	added new method Version() and corresponding protected data member
+	fVersion (used by emcPedestalFEM only for the moment)
+   	
+ emcCalFEMFactory.C 
+
+	added creation of version 1 of emcPedestalFEM object in case flavor=
+	emcPedestal5
+	
+ emcFEMtupleFactory.C
+
+	added creation of class emcPedestals5
+ 	
+ emcPedestalFEM.C  
+ emcPedestalFEM.h  
+
+	added versioning. version=0 is Run1 version (i.e. Year 2000) with
+	3 types of pedestals per channel. version=1 is Run2 version (i.e. 
+	Year 2001) with 5 types of pedestals per channel.
+
+  NEW FILE :
+
+	emcPedestals5.h
+	
+18-JUN-2001
+	
+ CalibLinkDef.h    	
+ Makefile.am       
+
+	added class emcRawDataCalibratorV1, to be used in place
+	of emcRawDataCalibrator for coming Run (2001).
+	Using the factory, all that needs to be changed is :
+		emcCalibratorFactory::Initialize("emcRawDataCalibrator")
+	to
+		emcCalibratorFactory::Initialize("emcRawDataCalibratorV1")
+		
+ emcCalFEM.C       
+ emcCalFEM.h       
+
+	Introduced Is/SetDraft methods, to tag this object as being replaceable
+	in the database (i.e. a draft object which lies within the validity
+	period of a yet-in-the-db draft object will replace the yet-in-the-db 
+	object).	
+	
+ emcCalibratedDataObject.C 
+ emcCalibratedDataObject.h 
+
+	Now derives from PHOOL PHObject and no longer directly from TObject.
+	The plan is to have this object streamable "automatically" by
+	ROOT at some point. Not tested yet.
+
+	Also changed += operator to handle correctly the deadneighbours.
+	
+ emcCalibrator.h
+   	
+	Added a Reset pure virtual method.
+	Upon a Reset, a Calibrator should behaves as if it's brand new born
+	
+ emcCalibratorFactory.C    
+ emcCalibratorFactory.h
+    	
+	Added the possibility to build emcRawDataCalibratorV1 in addition of
+	the already existing emcRawDataCalibrator
+	
+ emcFEMtuple.C     
+ emcFEMtuple.h     
+
+	Added Is/SetDraft methods (see emcCalFEM).
+	Introduced fLastStartTime and fFirstEndTime timestamps to speed up a
+	little bit the IsValid method (not fully tested yet, but should be OK)
+	
+ emcGainFEM.C      
+ emcGainFEM.h      
+
+	Tiny mods related to compilation on Solaris.*
+	
+ emcGains.C        
+
+	Removed unused variable
+	
+ emcHLRatioFEM.h   	
+ emcLCTofFEM.h     
+ emcQAFEM.h        
+ emcTracedValue.C  
+ emcTracedValue.h 
+	
+	Specified that we use std::vector (needed e.g. on Solaris)
+	
+ emcMixedDataObject.C      
+ emcMixedDataObject.h  
+    	
+	Added SetToZero(int index) method.
+	Removed unused methods from interface.
+	
+ emcPedestalFEM.C  
+ emcPedestalFEM.h 
+ 	
+	Small changes (to build on Solaris).
+	Added some new pedestals types in preparation for Run2001
+	(not tested yet; will be used in emcRawDataCalibratorV1)*
+	
+
+ emcRawDataCalibrator.C    
+ emcRawDataCalibrator.h 
+   	
+	Lots of cleanup, e.g. in GetECalAtT0 method.
+	WARNING: during this cleanup, it appeared that this new code makes
+	calibrated energies different from the previous by ... 1 bit (over 32).
+	Not kidding. It turns out that the old code can also give this answer
+	depending on optimisation level (-O2 or -O0). Should not matter, but
+	it's here for the record just in case...
+	
+  emcRawDataCalibratorV1 : 
+
+	New class for calibrating Run2001 data.

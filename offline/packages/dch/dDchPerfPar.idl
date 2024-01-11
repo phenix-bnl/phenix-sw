@@ -1,0 +1,11 @@
+/* dDchPerfPar.idl */
+
+/** Contains the user control parameters for the drift chamber
+	perfect track reconstruction */
+
+struct dDchPerfPar {
+/** set for debug printing output */
+  short verbose;          
+/** set local study of alpha-phi or not */
+  short localStudy;
+};

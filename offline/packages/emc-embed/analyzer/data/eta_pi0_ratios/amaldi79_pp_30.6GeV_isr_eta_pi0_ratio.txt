@@ -1,0 +1,26 @@
+0.91   0.0949641   0.0152338 
+1.09   0.134661   0.0207722 
+1.27   0.203853   0.0306368 
+1.45   0.224207   0.0506965 
+1.63   0.372519   0.0322179 
+1.82   0.4006   0.0432625 
+2.00   0.436285   0.0561138 
+2.18   0.573395   0.0500054 
+2.36   0.810877   0.113674 
+2.54   0.552806   0.15227 
+2.73   0.987221   0.254064 
+
+
+computed ratio via:
+
+e.setFit(0)
+TGraphErrors*pi0=(TGraphErrors*)e.plot_spectrum_from_ascii("pp_pi0_isr_30.6GeV_all.txt",eband)
+TGraphErrors*eta=(TGraphErrors*)e.plot_spectrum_from_ascii("",eband)
+TF1 *f = new TF1("f", "[0]/([1]+x)^[2]", 0, 4); 
+f->SetParameters(100,1.,10.);
+pi0->Fit("f")
+TGraphErrors*r=(TGraphErrors*)emcAnalyzerUtils::ratio(eta,f)
+r.Draw("AP")
+emcAnalyzerUtils::dumpGraph(r,"x-y-ey")
+
+

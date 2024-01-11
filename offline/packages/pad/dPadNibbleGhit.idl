@@ -1,0 +1,32 @@
+/* dPadDCM.idl -- J.Lauret September 2 1998				*/
+
+/*
+This table is used to recreate GEANT associations of data fetched from the 
+RAW records.  This process is intended to enable evaluators to work AS
+THEY DID BEFORE, even when we are reading RAWTAPE data.  Here is the concept:
+
+*/
+
+/*{NOTE:  The lines below are commented out...}                             */
+/*---------------------------------------------                             */
+/*      /* dPadGhitRaw.idl                                                  */
+/*                                                                          */
+/*      /*   Relates dcghit table entries to dPadRaw entries.               */
+/*                                                                          */
+/*      struct dPadGhitRaw {                                                */
+/*        short ghitid;                     /* pointer to pcghit.id         */
+/*        short rawid;                      /* pointer to dPadRaw.id        */
+/*      };                                                                  */
+/*--------                                                                  */
+
+
+struct dPadNibbleGhit 
+{
+        short ghitid;   /* Geant "ghit" id reference 			*/
+        short rawid;	/* Keep the pointer to dPadRaw.id		*/
+        short Card;	/* The FEM or DCM card number			*/
+	short padx;	/* Kept padx value from dPadRaw			*/
+	short padz;	/* Kept padz value from dPadRaw			*/
+};
+
+

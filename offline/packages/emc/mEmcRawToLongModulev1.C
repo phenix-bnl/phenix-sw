@@ -1,0 +1,347 @@
+#include <Fun4AllReturnCodes.h>
+#include "mEmcRawToLongModulev1.h"
+#include "emcNodeHelper.h"
+#include "PHCompositeNode.h"
+#include "dEmcRawDataWrapper.h"
+#include "dEmcDCMLongDataWrapper.h"
+
+using std::cout;
+using std::cerr;
+using std::endl;
+
+//_____________________________________________________________________________
+mEmcRawToLongModulev1::mEmcRawToLongModulev1(): SubsysReco("mEmcRawToLongModulev1")
+{
+  fEmcRawNodeName = "dEmcRawData";
+  fEmcDCMLongNodeName = "dEmcDCMLongData";
+}
+
+//_____________________________________________________________________________
+mEmcRawToLongModulev1::~mEmcRawToLongModulev1()
+{
+}
+
+//_____________________________________________________________________________
+int
+mEmcRawToLongModulev1::process_event(PHCompositeNode *root) 
+{
+  return process_event(root,fEmcRawNodeName.c_str(),fEmcDCMLongNodeName.c_str());
+}
+
+//_____________________________________________________________________________
+int
+mEmcRawToLongModulev1::process_event(PHCompositeNode *root,
+				     const char* dEmcRawNodeName,
+				     const char* dEmcDCMLongNodeName) 
+{
+  PHCompositeNode* emcNode = 
+    emcNodeHelper::findCompositeNode(root,"EMC");
+
+  if (!emcNode) 
+    {
+      emcNode = new PHCompositeNode("EMC");
+      root->addNode(emcNode);
+    }
+  
+  PHCompositeNode* dcmNode =
+    emcNodeHelper::findCompositeNode(root,"DCM");
+  
+  if (!dcmNode) 
+    {
+      dcmNode = new PHCompositeNode("DCM");
+      root->addNode(dcmNode);
+    }
+  
+  dEmcRawDataWrapper* dEmcRawData = 
+    emcNodeHelper::getTable<dEmcRawDataWrapper>(dEmcRawNodeName,emcNode);
+
+  if ( !dEmcRawData ) 
+    {
+      cerr << __FILE__ << ":" << __LINE__ 
+	   << " Table dEmcRawData not found in node "
+	   << dEmcRawNodeName << " I will create it."
+	   << endl;
+      dEmcRawData = emcNodeHelper::addTable<dEmcRawDataWrapper>
+	(emcNode,"dEmcRawData",15000,false,dEmcRawNodeName);
+    }
+
+  dEmcDCMLongDataWrapper* dEmcDCMLongData =
+    emcNodeHelper::getTable<dEmcDCMLongDataWrapper>(dEmcDCMLongNodeName,dcmNode);
+
+  if ( !dEmcDCMLongData ) 
+    {
+      cerr << __FILE__ << ":" << __LINE__ 
+	   << " Table dEmcDCMLongData not found in node "
+	   << dEmcDCMLongNodeName << " I will create it."
+	   << endl;
+      dEmcDCMLongData = emcNodeHelper::addTable<dEmcDCMLongDataWrapper>
+	(dcmNode,"dEmcDCMLongData",500,false,dEmcDCMLongNodeName);
+    }
+
+  return doit(*dEmcRawData, *dEmcDCMLongData) ? EVENT_OK : ABORTRUN;
+}
+
+//_____________________________________________________________________________
+bool
+mEmcRawToLongModulev1::doit(const dEmcRawDataWrapper& dEmcRawData,
+			    dEmcDCMLongDataWrapper& dEmcDCMLongData)
+{
+  //       IN:
+  //        dEmcRawData    - PLEASE FILL IN DESCRIPTION HERE
+  //      OUT:
+  //        dEmcDCMLongData    - PLEASE FILL IN DESCRIPTION HERE
+
+  unsigned short i;
+  long rawdata[5][4608][4][2];   /* Max value for PbGl, PbSc is 2592 only */
+  long activemodule[32][4][2];   /* One for each FEM module */
+  unsigned int ll;
+  long iarm,isector,iz,iy,itower,imod,ichan,imody,imodz,ichany,ichanz;
+  long swkey;
+  long FEMmodule;
+  int  icount;
+  int  pkts_per_sector;
+ 
+  short timecell = 1;
+  short precell = 2;
+  short postcell = 3;
+  short iflag,ievno,iclock,idetid;
+  short ioffset;
+  int channel;
+  int  fem_channel;
+ 
+  /* this is the map of software tower channel to fem channel
+     (software map to hardware map) */
+  const int fem_map[144] = {
+    21,  20,  45,  44,  69,  68,  93,  92, 117, 116, 141, 140,
+    23,  22,  47,  46,  71,  70,  95,  94, 119, 118, 143, 142,
+    17,  16,  41,  40,  65,  64,  89,  88, 113, 112, 137, 136,
+    19,  18,  43,  42,  67,  66,  91,  90, 115, 114, 139, 138,
+    13,  12,  37,  36,  61,  60,  85,  84, 109, 108, 133, 132,
+    15,  14,  39,  38,  63,  62,  87,  86, 111, 110, 135, 134,
+     9,   8,  33,  32,  57,  56,  81,  80, 105, 104, 129, 128,
+    11,  10,  35,  34,  59,  58,  83,  82, 107, 106, 131, 130,
+     5,   4,  29,  28,  53,  52,  77,  76, 101, 100, 125, 124,
+     7,   6,  31,  30,  55,  54,  79,  78, 103, 102, 127, 126,
+     1,   0,  25,  24,  49,  48,  73,  72,  97,  96, 121, 120,
+     3,   2,  27,  26,  51,  50,  75,  74,  99,  98, 123, 122
+  };
+
+  short i_FEMData;   /* Counter of output rows */
+
+  long userword[8];
+  
+  /* ----------  Executable  -------------------------------*/
+
+  if(dEmcRawData.RowCount() <= 0)
+    {
+      printf("Error in mEmcRawToFEM: raw data table empty \n");
+      return false;
+    }
+  /*
+    Read raw data.  Using hwkey restore sector and serial number
+    of channel within the sector.  Compute FEM module number that goes
+    with the channel.  Indicate in a table that this FEM has at least
+    one hit, and store raw data until read-in is finished
+    We assume that one specific channel has only one raw data entry
+    in dEmcRawData table
+  */    
+
+  for (ll = 0; ll < sizeof(rawdata)/sizeof(rawdata[0][0][0][0]); ll++)
+    {
+      *((long *)rawdata + ll) = 0;
+    }
+  for (ll = 0; ll < sizeof(activemodule)/sizeof(activemodule[0][0][0]); ll++)
+    {
+      *((long *)activemodule + ll) = 0;
+    }
+  for (ll = 0; ll < sizeof(userword)/sizeof(userword[0]); ll++)
+    {
+      *(userword + ll) = 0;
+    }
+  /* Take care of proper filling later ! */
+  
+  /* Set userwords to 5900 */
+  for (i=0;i<8;i++) userword[i] = 0x00005900;
+
+  ievno = dEmcRawData.get_evno(0) & 0xffff;   /* Word only, not longword */
+  iclock = ievno - 1;                     /* Dummy, take care of it ! */
+  iflag = 0;  	                          /* Dummy for now */
+  idetid = 4;
+  
+  i_FEMData = 0;
+  
+  
+  for ( i = 0; i < dEmcRawData.RowCount() ; i++)
+    {
+      /* Replace this section: derive everything from swkey,
+	 to get more transparent to "Indexer"
+	 Jan. 3, 2000, G. David */
+
+      swkey = dEmcRawData.get_swkey(i);
+      iarm = swkey / 100000; 
+      swkey = swkey - 100000 * iarm;
+      isector = swkey / 10000; 
+      swkey = swkey - 10000 * isector;
+      iy = swkey / 100; 
+      iz = swkey - 100 * iy;
+
+      /* Get supermodule and channel within supermodule */
+      if(iarm == 0 || isector > 1)
+	/* This is PbSc */
+	{
+	  /* Supermodule numbering goes like 6 * y + z */
+	  imody = iy / 12;
+	  imodz = iz / 12;
+	  imod = 6 * imody + imodz;
+	  /* Channel within supermodule goes like 12 * y + z */
+	  ichany = iy % 12;
+	  ichanz = iz % 12;
+	  ichan = 12 * ichany + ichanz;
+	  itower = 144 * imod + ichan;
+          fem_channel = 144 * imod + fem_map[ichan];
+	}
+      else      
+	/* This is PbGl */
+	{
+	  /* Super-duper-module numbering goes like 8 * y + z */
+	  imody = iy / 12;
+	  imodz = iz / 12;
+	  imod = 8 * imody + imodz;
+	  /* Channel within supermodule goes like 12 * y + z */
+	  ichany = iy % 12;
+	  ichanz = iz % 12;
+	  ichan = 12 * ichany + ichanz;
+	  itower = 144 * imod + ichan;
+          fem_channel = 144 * imod + fem_map[ichan];
+	}
+      activemodule[imod][isector][iarm] = 1;
+      
+      
+      /* Fake values to time, pre and post AMU cell numbers */
+      /* we might want to make these random from 0-63, */
+      /* since that would better correspond to reality */
+
+      timecell = 1;
+      precell = 2;
+      postcell = 3;
+      
+      /*
+         put in raw data channels.  note that adclopost is
+         for high gain data
+      */
+      rawdata[0][fem_channel][isector][iarm] = dEmcRawData.get_adclopost(i);
+      rawdata[1][fem_channel][isector][iarm] = dEmcRawData.get_adclopre(i);
+      rawdata[2][fem_channel][isector][iarm] = dEmcRawData.get_adchipost(i);
+      rawdata[3][fem_channel][isector][iarm] = dEmcRawData.get_adchipre(i);
+      rawdata[4][fem_channel][isector][iarm] = dEmcRawData.get_tdc(i);
+      
+    }   /* End for i = 0, loop over RawData rows */
+
+  /*
+    OK, now let's write out one dEmcFEMData structure for each FEM
+    that has at least one non-zero channel
+   */
+
+  for ( isector = 0; isector < 4; isector++)
+    {
+      for (iarm = 0; iarm < 2; iarm++)
+	{
+          if(iarm == 0 || isector > 1)
+            {
+              pkts_per_sector = 18;
+            }
+          else
+            {
+              pkts_per_sector = 32;
+            }
+	  for ( imod = 0; imod < pkts_per_sector; imod++)
+	    {	      
+              // write out only the modules that have data
+	      if( activemodule[imod][isector][iarm] > 0 )
+		{
+		  dEmcDCMLongData.set_scheme(i_FEMData,1108);
+		  
+		  /* 
+		     Eventually check how module is encoded!
+		     Right now it is similar to "hwkey"
+		  */
+		  
+		  /* Encode serially */
+		  if(iarm == 0)
+		    {
+		      FEMmodule = 18 * isector + imod;
+		    }
+		  else
+		    {
+		      if(isector > 1)
+			{
+			  FEMmodule = 72 + 18 * (isector - 2) + imod;
+			}
+		      else
+			{
+			  FEMmodule = 108 + 32 * isector + imod;
+			}
+		    }
+		  
+		  dEmcDCMLongData.set_packetID(i_FEMData,8001 + FEMmodule);
+		  
+                  icount = 0;	// keeps track of where we are in the packet
+		  
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,iflag);
+		  
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,iflag);
+		  
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,FEMmodule + 1);
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,ievno);
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,iclock);
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,idetid);
+		  
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,postcell);
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,precell);
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,timecell);
+		  
+		  ioffset = imod * 144;
+		  
+                  /* the real data channels are scrambled */
+		  for ( fem_channel = ioffset; fem_channel < ioffset + 144; fem_channel++)
+		    {
+                      channel = (fem_channel - ioffset) << 20;
+
+                      /* in simulated data, there is a hit if the channel data
+                         are non-zero */
+                      if ( rawdata[0][fem_channel][isector][iarm] != 0 )
+                          { 
+                            dEmcDCMLongData.set_DCM(icount++,i_FEMData,channel |
+                                   (rawdata[0][fem_channel][isector][iarm] ^ 0xfff) | 0x92000);
+                            dEmcDCMLongData.set_DCM(icount++,i_FEMData,channel |
+                                   (rawdata[1][fem_channel][isector][iarm] ^ 0xfff) | 0xa4000);
+                            dEmcDCMLongData.set_DCM(icount++,i_FEMData,channel |
+                                   (rawdata[2][fem_channel][isector][iarm] ^ 0xfff) | 0xb3000);
+                            dEmcDCMLongData.set_DCM(icount++,i_FEMData,channel |
+                                   (rawdata[3][fem_channel][isector][iarm] ^ 0xfff) | 0xc5000);
+                            dEmcDCMLongData.set_DCM(icount++,i_FEMData,channel |
+                                   (rawdata[4][fem_channel][isector][iarm] ^ 0xfff) | 0xd1000);
+                          }
+
+		    }  /* End loop over itower from ioffset to ioffset + 144 */
+
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,0x10080000); /* long. parity */
+		  dEmcDCMLongData.set_DCM(icount++,i_FEMData,0x10072220); /* summary word */
+
+		  dEmcDCMLongData.set_nWords(i_FEMData,icount);	/* now put in length */
+
+		  /* Increment table row count */
+		  
+		  i_FEMData = i_FEMData + 1;
+		}  /* End if (activemodule[imod][isector] > 0) */
+	      
+	    }   /* End loop over imod, max. number of FEM modules in sector */
+	}    /* End loop over iarm */
+      
+    }    /* End loop over isector, all sectors */
+  
+  dEmcDCMLongData.SetRowCount(i_FEMData);
+
+  return true;
+}
+

@@ -1,0 +1,26 @@
+/* dPadGeom.idl */
+
+/* Contains the user control parameters for the pad chamber geometry */
+
+struct dPadGeom {
+  float pdxoff[3];          /* x-offset for PCX */
+  float pdzoff[3];          /* z-offset for PCX */
+  float pdgas[3];           /* attenuation factors */
+  float aasep[3];           /* anode-to-anode spacing */
+  float pxlen[3];           /* pixel length */
+  float wside[3];           /* side pixel width */
+  float wcent[3];           /* center pixel width */
+  float pxsep[3];           /* pixel space line width */
+  float clsep[3];           /* cell space line width */
+  short npdsec[3];          /* number of sectors */
+  short npdwr[3];           /* number of wires per sector */
+  short npdx[3];            /* number of pads across wires */
+  short npdz[3];            /* number of pads along wire */
+  short sectperarm[3];      /* number of sectors per arm */
+  float inradius[3];        /* inner inscribed radius of each sector */
+  float zgap[3];            /* gap between 2 parts at Z=0 along the wire */
+  float phibote;            /* phi coordinate at bottom of east arm */
+  float phitope;            /* phi coordinate at top of east arm */
+  float phibotw;            /* phi coordinate at bottom of west arm */
+  float phitopw;            /* phi coordinate at top of west arm */
+};

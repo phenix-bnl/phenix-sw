@@ -1,0 +1,10 @@
+/* dDchGhitRaw.idl */
+
+/**   Relates dcghit table entries to dDchRaw entries. */
+
+struct dDchGhitRaw {
+/** pointer to dcghit.id */
+  short ghitid;                     
+/** pointer to dDchRaw.id */
+  short rawid;                      
+};

@@ -1,0 +1,90 @@
+\begin{table}
+\begin{center} 
+\begin{tabular}[]{cccccc}
+$p_\perp (GeV/c)$ & 
+$\frac{1}{2\pi}\ \frac{1}{p_\perp} \frac{d^2N}{dp_\perp dy}$ (GeV/c)$^{-2}$ & 
+$\sigma_{stat}$ & $\sigma_{sys}$ & $\sigma_{cor}$ & $\sigma_{tot}$ \\ \hline
+1.221 & 2.563893 & 0.312301 & 0.575005 & 0.640973 & 0.915975\\
+1.721 & 0.283789 & 0.043906 & 0.059530 & 0.070947 & 0.102494\\
+2.221 & 0.060488 & 0.008288 & 0.013987 & 0.015122 & 0.022204\\
+2.721 & 0.016129 & 0.002221 & 0.004541 & 0.004032 & 0.006466\\
+3.221 & 0.002629 & 0.000694 & 0.000935 & 0.000657 & 0.001338\\
+3.721 & 0.000990 & 0.000223 & 0.000446 & 0.000247 & 0.000557\\
+\end{tabular}
+\caption{ \label{tab:pi-cg-new} PbGl $\pi^0$ central 10\%}
+\end{center}
+
+\begin{center} 
+\begin{tabular}[]{cccccc}
+$p_\perp (GeV/c)$ &  
+$\frac{1}{2\pi}\ \frac{1}{p_\perp} \frac{d^2N}{dp_\perp dy}$ (GeV/c)$^{-2}$ & 
+$\sigma_{stat}$ & $\sigma_{sys}$ & $\sigma_{cor}$ & $\sigma_{tot}$ \\ \hline
+1.221 & 2.563893 & 0.312301 & 0.575005 & 0.640973 & 0.915975\\
+1.721 & 0.283789 & 0.043906 & 0.059530 & 0.070947 & 0.102494\\
+2.221 & 0.060488 & 0.008288 & 0.013987 & 0.015122 & 0.022204\\
+2.721 & 0.016129 & 0.002221 & 0.004541 & 0.004032 & 0.006466\\
+\end{tabular}
+\caption{ \label{tab:pi-pg-new} PbGl $\pi^0$ peripheral (central 60-80\%)}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center} 
+\begin{tabular}[]{cccccccc}
+$p_\perp (GeV/c)$ & $R_{AA}$ & $\sigma_{stat}$ & $\sigma_{tot}$(data) 
+  & $\sigma_{upper}$ & $\sigma_{lower}$ 
+  & $\sigma_{+}$ & $\sigma_{-}$\\ \hline
+1.221 & 0.416 & 0.0507 & 0.1487 & 0.1354 & 0.0864 & 0.1793 & 0.2074\\
+1.721 & 0.326 & 0.0504 & 0.1177 & 0.1073 & 0.0748 & 0.1483 & 0.1671\\
+2.221 & 0.376 & 0.0516 & 0.1382 & 0.1342 & 0.0928 & 0.1743 & 0.1994\\
+2.721 & 0.444 & 0.0611 & 0.1780 & 0.1766 & 0.1158 & 0.2210 & 0.2581\\
+3.221 & 0.273 & 0.0721 & 0.1390 & 0.1223 & 0.0745 & 0.1734 & 0.1987\\
+3.721 & 0.341 & 0.0769 & 0.1920 & 0.1722 & 0.0966 & 0.2282 & 0.2691\\
+\end{tabular}
+\caption{ \label{tab:raa-pig-new} $R_{AA}$ for $\pi^0$ from PbGl central 10\%}
+\end{center}
+
+\begin{center} 
+\begin{tabular}[]{cccccccc}
+$p_\perp (GeV/c)$ & $R_{AA}$ & $\sigma_{stat}$ & $\sigma_{tot}$(data) 
+  & $\sigma_{upper}$ & $\sigma_{lower}$ 
+  & $\sigma_{+}$ & $\sigma_{-}$\\ \hline
+1.220 & 0.359 & 0.0209 & 0.0775 & 0.1147 & 0.0757 & 0.1438 & 0.1677\\
+1.720 & 0.413 & 0.0242 & 0.0927 & 0.1339 & 0.0958 & 0.1340 & 0.1634\\
+2.220 & 0.409 & 0.0302 & 0.0896 & 0.1439 & 0.1017 & 0.1498 & 0.1811\\
+2.720 & 0.293 & 0.0303 & 0.0767 & 0.1152 & 0.0769 & 0.1561 & 0.1781\\
+3.222 & 0.314 & 0.0437 & 0.0903 & 0.1417 & 0.0850 & 0.1299 & 0.1724\\
+3.724 & 0.338 & 0.0531 & 0.1129 & 0.1741 & 0.0940 & 0.1639 & 0.2198\\
+\end{tabular}
+\caption{ \label{tab:average-pi-new} Combined $R_{AA}$ for $\pi^0$ central 10\%}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center} 
+\begin{tabular}[]{cccccccc}
+ $p_\perp (GeV/c)$ & ratio & $\sigma_{stat}$ & $\sigma_{tot}$(data) 
+ & $\sigma_{tot}$ \\ \hline
+1.224 &  0.65312 &  0.10668 &  0.23300 &  0.36351\\
+1.724 &  0.46070 &  0.09652 &  0.16733 &  0.25833\\
+2.224 &  0.38269 &  0.06912 &  0.14291 &  0.21715\\
+2.724 &  0.36297 &  0.07800 &  0.16431 &  0.22592\\
+\end{tabular}
+\caption{ \label{tab:cp-pig-new} ratio of central/peripheral collisions for 
+neutral pions from PbGl}
+\end{center}
+
+\begin{center} 
+\begin{tabular}[]{cccccccc}
+ $p_\perp (GeV/c)$ & ratio & $\sigma_{stat}$ & $\sigma_{tot}$(data) 
+ & $\sigma_{tot}$ \\ \hline
+1.210 &  0.38622 &  0.02548 &  0.08146 &  0.18224\\
+1.710 &  0.52576 &  0.03748 &  0.11069 &  0.24758\\
+2.221 &  0.41146 &  0.04069 &  0.10048 &  0.19834\\
+2.721 &  0.31938 &  0.04583 &  0.09041 &  0.15713\\
+3.233 &  0.28685 &  0.07012 &  0.11783 &  0.15487\\
+\end{tabular}
+\caption{\label{tab:cp-average-new} Combined ratio of central/peripheral 
+collisions for neutral pions }
+\end{center}
+\end{table}

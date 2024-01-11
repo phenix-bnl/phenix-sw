@@ -1,0 +1,26 @@
+/* dEmcGeaTrack.idl */
+/** (STAF) GEANT track info, relevant to EMCal, extracted from "fkin".
+* All generations (ancestry levels) are stored in this table.
+* Track is TRUE_TRACK, unique throughout the event, even if there are
+* multiple subevents and/or input files (merge)
+@ingroup staf
+**/
+
+struct dEmcGeaTrack {
+  long id;          	/* unique identifyer of the entry */
+  long trkno;		/* GEANT track number ("true_track" in fkin) */
+  short input;		/* serial number if more than one input present */
+  short anclvl;		/* ancestry level (1: last ID when hitting EMCal */
+  short pid;		/* GEANT PID */
+  float ekin;		/* total kinetic energy */
+  float xyz[3];		/* vertex, where born */
+  float ptot;		/* momentum */
+  float pxyz[3];	/* momentum */
+  float impxyz[3];	/* Impact point - pos. of first hit - on the EMCal */
+  long itparent;	/* true track number of the parent */
+  long idparent;	/* PID of the parent */
+  long parent_ptr;	/* Pointer to the entry for the parent in this
+			   table (row number) */
+  long twrhit;		/* Number of towers where it deposited energy */
+  float edep;		/* Total energy deposited by the particle */
+};

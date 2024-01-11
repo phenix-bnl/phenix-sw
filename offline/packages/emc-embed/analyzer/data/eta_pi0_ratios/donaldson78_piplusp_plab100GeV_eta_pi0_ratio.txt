@@ -1,0 +1,31 @@
+1.8  0.46 0.04
+2.25 0.44 0.11
+2.75  .71  .24
+
+
+DONALDSON 78 PRL 40,684 P IN GEV 100. 
+RE(Q=E) PI+ P --> ETA X RE(Q=P) PI+ P --> PI0 X 
+x = XL(P=3,RF=CM,DEF=PL/PLMAX) 
+y = SIG(Q=E)/SIG(Q=P) 
+PT(P=3,RF=CM) IN GEV 1.6 TO 2.0 
+x1 TO x2 y +- dy 
+0.40 0.50 .46 .04
+PT(P=3,RF=CM) IN GEV 2.0 TO 2.5 
+x1 TO x2 y +- dy 
+-0.05 0.00 .43 .13 
+0.00 0.05 .45 .09
+PT(P=3,RF=CM) IN GEV 2.5 TO 3.0 
+x1 TO x2 y +- dy 
+0.00 0.10 .71 .24
+
+
+Maike:
+
+1.6 2.0 0.46 0.05 0.40 0.50
+2.0 2.5 0.38 0.14 0.00 0.05 
+2.5 3.0 0.63 0.36 0.00 0.10 
+
+
+DONALDSON 78 PRL 40,684
+P IN GEV 100. RE(Q=E) P+ P --> ETA X; RE(Q=P) P+ P --> PI0 X,x=pt, y= sig(Q=E)/sig(Q=P)
+x1 to x2 y +- dy XL1 to XL2

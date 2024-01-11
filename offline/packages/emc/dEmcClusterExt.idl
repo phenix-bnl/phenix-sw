@@ -1,0 +1,80 @@
+/**************************************************************************/
+/* dEmcClusterExt.idl */
+/** (STAF) Cluster Extended (detailed) data.
+There is one row (entry) for each cluster found.  It repeats the
+information in dEmcCluster and adds substantial new ones.
+It contains only info available when analyzing beam data.
+@ingroup staf
+*/
+
+struct dEmcClusterExt {
+  short id;           	/* unique identifyer, same as in dEmcClusterLocal */
+  long runno;		/* run number */
+  long evno;		/* event number */
+  short clusno;		/*              */
+  short method;		/* algorithm and pass (first: local) */
+  short type;           /* detector type: PbSc = 1, PbGl = 2 */
+  short arm;		/* East - West */
+  short sector;	  	/*    */
+  float xyz[3];		/* Absolute Cartesian coordinates of impact */
+  float dxyz[3];	/* Estimated error in position */
+  float e;		/* Energy */
+  float ecorr;		/* Energy corrected for lateral nonuniformity
+			   and att. length */
+  float de;		/* Estimated error on energy */
+  float tof;		/* TOF - flashtime in the highest E tower */
+  float ecent;		/* energy in the highest E tower */
+  float tofcorr;	/* TOF - flashtime slew corrected assuming
+			   it is a photon */
+  float dtof;		/* Estimated error on TOF */
+  float qual;		/* cluster quality (0-1), 1 means "perfect" */
+  float pid;		/* guess of particle ID */
+  float prob_photon;
+  float prob_neuhad;
+  float chi2;		/* chi2 of fit (IHEP) */
+
+/** Fields concerning 3d clustering level (EMShower) */
+
+  short nsh;
+  float chi2_sh;
+  float prob_photon_sh;
+  float e_sh[2];
+  float ecorr_sh[2];
+  float de_sh[2];
+  float xyz_sh[2][3];
+  float dxyz_sh[2][3];
+
+/**
+			Up to here this is an identical copy
+			of dEmcClusterLocal
+			Theta and phi are polar-azimuthal angles
+			corrected with the z vertex!
+
+*/
+
+  float theta;		/* Calculated polar angle of the cluster center */
+  float phi;		/* Calculated azimuth of the cluster center */
+  float unitv[3];	/* components of the unit vector pointing to the cl. */
+  short ind[2];		/* sector array index of the highest E tower */
+  short twrhit;		/* Number of towers included into the cluster */
+			/* TOF related info */
+  float tofmin;		/* smallest valid TOF - flashtime in the cluster */
+  float etofmin;	/* E for smallest valid TOF - flashtime */
+  float tofmincorr;	/* smallest valid TOF - flashtime slew corrected
+			   assuming it is a photon */
+  float tofmax;		/* largest valid TOF - flashtime in the cluster */
+  float etofmax;	/* E for largest valid TOF - flashtime */
+  float tofmaxcorr;	/* smallest valid TOF - flashtime slew corrected
+			   assuming it is a photon */
+  float tofmean;	/* mean valid TOF - flashtime in the cluster */
+			/* showershape related info */
+  float disp[2];	/* dispersion */
+  float padisp[2];	/* dispersion along principal axes */
+  long  charged;	/* = 0 if no charge overlap anywhere
+			   = 1 if there is at least one charge overlap */
+  float pc3proj[3]; 	/* Projection of Pc3 hit */
+  float partesum[16];	/* Partial energy sums of first 16 contributors */
+  long  twrlist[16];	/* list of contributing towers sorted to decr. E */
+  long  chglist[16];   	/* 0 or 1 (if there is charge overlapping the
+			   corresponding entry in twrlist */
+};

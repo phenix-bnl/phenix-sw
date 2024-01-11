@@ -1,0 +1,60 @@
+/* dDchReconstructionPar.idl */
+
+struct dDchReconstructionPar {
+  //Calibrator Flag for mirror hits
+  short mirrorHitAnalysis;
+  //DchFast Candidate Finder
+  short houghThresholdOnXCell ;  
+  short houghThresholdOnXMask ;  
+  short houghThresholdOnUVCell;  
+  short houghThresholdOnUVMask ; 
+  short purgeCandidateThreshold ;
+ 
+  // finder.setReferenceRadius(220.);
+ 
+  //finder.setNumberOfAlphaBins(300);
+  //finder.setNumberOfPhiBins(6000);
+  //finder.setMaxAlpha(0.8);
+  //finder.setMinAlpha(-0.8);
+  //finder.setMaxPhi(1.);
+  //finder.setMinPhi(-0.65);
+
+  //finder.setNumberOfBetaBins(60);
+  //finder.setNumberOfZedBins(200);
+  //finder.setMaxBeta(2.5);
+  //finder.setMinBeta(0.6);
+  //finder.setMaxZed(100.);
+  //finder.setMinZed(-100.);
+
+
+  short minimumNumberOfXHits;
+  short minimumNumberOfUVHits;
+   
+  // DchCandidate Finder
+  short firstXHoughThreshold ;
+  short secondXHoughThreshold ;
+  short XHitsThreshold;
+
+  // both
+  long  numberOfAlphaBins;
+  long  numberOfPhiBins;
+  long  numberOfBetaBins;
+  long  numberOfZedBins;
+  short cellDifferenceCut;
+
+  float maxAlpha;
+  float minAlpha;
+  float maxPhi;
+  float minPhi;
+  float maxBeta;
+  float minBeta;
+  float maxZed;
+  float minZed;
+
+  float delBetaCut;
+  float deltaBetaCut;
+  float wireResolution;
+  float initUVChi2;
+  float initXChi2; 
+  float deltaBetaVertexCut;
+};

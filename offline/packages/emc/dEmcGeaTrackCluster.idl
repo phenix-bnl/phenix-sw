@@ -1,0 +1,20 @@
+/* dEmcGeaTrackCluster.idl */
+/** (STAF) Evaluator; connects Tracks to Clusters.
+* In other words: it tells you that in which clusters did a particular 
+* track deposit energy 
+@ingroup staf
+*/
+
+struct dEmcGeaTrackCluster {
+  long id;          	/* unique identifyer; */
+  long trkno;		/* true track number */
+  long track_ptr;	/* Pointer to corresponding entry in GeaTrack */
+  short input;		/* serial number of input (merge!) */
+  long clusid[3];	/* cluster id where it contributed */
+  float pid;		/* Particle ID for the track */
+  float ptot;		/* Momentum for the track*/
+  float nom_edep;	/* Momentum for the track*/
+  float edep[3];	/* energy deposited in the respective clusters */
+  float efrac[3];	/* fraction of energy from this track */
+			/*  in the respective cluster */
+};

@@ -1,0 +1,22 @@
+/* dDchFastSimPar.idl */
+
+/** Contains the user control parameters for the DC fast hit simulation */
+
+struct dDchFastSimPar {
+/** random number generator seed */
+  long  randseed;         
+/** single wire hit efficiency (1.00=100%) */
+  float wire_eff;         
+/** resolution in cm in drift direction */
+  float rphires;          
+/** rphires for the proportional region */
+  float rphiprop;         
+/** two-track separation in cm in drift direction */
+  float twotrksep;        
+/** eff. for back-drift hits (1.0=100.0%) */
+  float back_eff;         
+/** set for run-time debug printing */
+  short verbose;
+/** flag for test chain : temporary**/
+  short testchain;
+};

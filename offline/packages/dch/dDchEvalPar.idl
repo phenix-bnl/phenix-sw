@@ -1,0 +1,29 @@
+/* dDchEvalPar.idl */
+
+/** Contains the user control parameters for the DC evaluation */
+
+struct dDchEvalPar {
+/** set to activate debug printing */
+  short verbose;
+/** set to write out the dDchHitCoords table */
+  short coordinates;
+/** decide if position method or main contributor to identify found or not */
+  short main;
+/** efficiency main contributor cut */
+  short effiMainCut;
+/** efficiency delta phi cut */
+  float effiDphiCut;
+/** efficiency delta alpha cut */
+  float effiDalphaCut;
+/** efficiency delta zed cut */
+  float effiDzedCut;
+/** ghost main contributor cut */
+  short ghostMainCut;
+/** ghost delta phi cut */
+  float ghostDphiCut;
+/** ghost delta alpha cut */
+  float ghostDalphaCut;
+/** ghost delta zed cut */
+  float ghostDzedCut;
+
+};

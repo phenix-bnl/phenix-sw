@@ -1,0 +1,1 @@
+Have the embedding modules writing in the output RUN node their parameters, e.g. Smearer should write out its percent smearing and method (e.g. 1 random per event vs 1 random per tower).

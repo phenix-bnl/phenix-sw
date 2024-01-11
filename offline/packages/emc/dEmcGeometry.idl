@@ -1,0 +1,44 @@
+/***************************************************************************/
+/* dEmcGeometry.idl */
+/** (STAF) emc Database Geometry.  
+This will be part of the software database 
+ Each tower is one entry 
+ It allows for deviations from nominal position 
+@ingroup staf
+**/
+
+/*
+	Major overhaul Nov 98 G.D.
+	Change all indices to run from 0 (including arm)
+
+*/
+
+
+struct dEmcGeometry {
+  short	id;		/* unique identifyer */
+  short hwkey;		/* hardware database key for cross-referencing */
+  short swkey;		/* software database key for cross-referencing */
+  short arm;		/* West = 0  East = 1 */
+  short sector;		/* sector number 0 - 3 */
+  short ind[2];		/* sector array indices 0 - 71 or 95  0 - 35 or 47 */
+  float nomxyz[3];	/* nominal absolute coord., center of front face */
+  float actxyz[3];	/* actual absolute coord., center of front face */
+  float nomunitv[3];	/* nominal directional (unit) vector of the tower  */
+  float actunitv[3];	/* actual directional (unit) vector of the tower   */
+  float nomtheta;	/* nominal theta in (0,0,0) coo. system */
+  float nomphi;		/* nominal phi in (0,0,0) coo. system */
+  float acttheta;	/* actual theta in (0,0,0) coo. system */
+  float actphi;		/* actual phi in (0,0,0) coo. system */
+  float nomdist;	/* nominal distance from (0,0,0) */
+  float actdist;	/* actual distance from (0,0,0) */
+  float nomflash;	/* nominal flashtime from (0,0,0) */
+  float actflash;	/* actual flashtime from (0,0,0)  */
+  float sectheta;	/* theta in sector-based coo. system */
+  float secphi;		/* phi in sector-based coo. system */
+};
+
+
+
+
+
+

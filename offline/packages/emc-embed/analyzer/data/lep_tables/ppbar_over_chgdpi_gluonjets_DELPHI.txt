@@ -1,0 +1,9 @@
+1.38    0.0678
+2.18    0.1186
+3.42    0.1809
+5.26    0.2575
+8.08    0.3797
+14.90   0.4033
+ 
+ 
+ (p+pbar)/(pi+ + pi-) gluon jets (averaged over Y and M event selection) - DELPHI Coll. EPJ C17, 207 (2000)

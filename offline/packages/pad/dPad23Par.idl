@@ -1,0 +1,7 @@
+/* dPad23Par.idl */
+
+/*   Contains information about the date of the PISA file. */
+
+struct dPad23Par {
+	long idatePC23;		/* Date variable */
+};

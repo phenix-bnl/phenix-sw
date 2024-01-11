@@ -1,0 +1,26 @@
+3.20  0.51 0.16 
+3.70  0.26 0.14 
+4.20  0.543 0.057 
+4.70  0.462 0.055 
+5.20  0.399 0.055 
+5.70  0.54 0.10 
+6.40  0.323 0.098 
+7.40  0.52 0.26
+
+
+pT		ratio		dratio
+
+Eta to pi0 ratio
+pCu @ 800 GeV/c
+-0.50 < y < 1.00
+Data from: http://home.fnal.gov/~apana/etapi0/tables/etapi_800_cu_v20a_indx14.html
+The systematic uncertainty on the ratios is conservatively estimated at ~7%.
+
+3.00 3.50 0.51 0.16 
+3.50 4.00 0.26 0.14 
+4.00 4.50 0.543 0.057 
+4.50 5.00 0.462 0.055 
+5.00 5.50 0.399 0.055 
+5.50 6.00 0.54 0.10 
+6.00 7.00 0.323 0.098 
+7.00 8.00 0.52 0.26

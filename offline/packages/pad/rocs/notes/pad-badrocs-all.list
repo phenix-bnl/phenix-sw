@@ -1,0 +1,143 @@
+Run #           commit   ***validity start******* --- validity end-------   Action if any
+		status
+
+107631		FAILURE  Mon Jan  5 05:50:15 2004 Mon Jan  5 12:16:45 2004  This is a bad run which should not be filled
+108374		FAILURE  Fri Jan  9 05:28:41 2004 Sat Jan 10 03:41:00 2004  This is a bad run which should not be filled
+108461		SUCCESS  Sat Jan 10 03:41:00 2004 Sun Jan 11 05:40:27 2004  Change start time to       Jan  5 05:50:15 2004 OR
+									    even better start time of RUN4
+108692		SUCCESS  Sun Jan 11 05:40:27 2004 Sun Jan 11 11:08:17 2004
+108714		SUCCESS  Sun Jan 11 11:08:17 2004 Sun Jan 11 21:32:35 2004
+108795		SUCCESS  Sun Jan 11 21:32:35 2004 Mon Jan 12 03:00:50 2004
+108807		SUCCESS  Mon Jan 12 03:00:50 2004 Tue Jan 13 00:28:23 2004 change end time to                  Tue Jan 13 03:57:17 2004
+
+108928		FAILURE  Tue Jan 13 00:28:23 2004 Tue Jan 13 03:57:17 2004 This is a bad run which should not be filled 
+108942		SUCCESS  Tue Jan 13 03:57:17 2004 Tue Jan 13 11:38:53 2004
+109005		SUCCESS  Tue Jan 13 11:38:53 2004 Tue Jan 13 14:39:19 2004 change end time to                  Thu Jan 15 06:48:03 2004
+109016		FAILURE  Tue Jan 13 14:39:19 2004 Thu Jan 15 06:48:03 2004 This is a bad run which should not be filled
+109217		SUCCESS  Thu Jan 15 06:48:03 2004 Thu Jan 15 13:55:26 2004
+109252		SUCCESS  Thu Jan 15 13:55:26 2004 Thu Jan 15 20:48:23 2004
+109293		SUCCESS  Thu Jan 15 20:48:23 2004 Fri Jan 16 23:13:08 2004
+109424		SUCCESS  Fri Jan 16 23:13:08 2004 Sat Jan 17 05:29:32 2004
+109479		SUCCESS  Sat Jan 17 05:29:32 2004 Sat Jan 17 21:05:38 2004
+109549		SUCCESS  Sat Jan 17 21:05:38 2004 Sun Jan 18 04:35:00 2004
+109573		SUCCESS  Sun Jan 18 04:35:00 2004 Sun Jan 18 10:38:12 2004
+109576		SUCCESS  Sun Jan 18 10:38:12 2004 Sun Jan 18 18:17:14 2004
+109594		SUCCESS  Sun Jan 18 18:17:14 2004 Sun Jan 18 22:40:17 2004 
+109657		SUCCESS  Sun Jan 18 22:40:17 2004 Mon Jan 19 02:59:27 2004
+109672		SUCCESS  Mon Jan 19 02:59:27 2004 Mon Jan 19 06:49:41 2004
+109679		SUCCESS  Mon Jan 19 06:49:41 2004 Mon Jan 19 18:06:52 2004
+109691		SUCCESS  Mon Jan 19 18:06:52 2004 Tue Jan 20 02:21:21 2004
+109763		SUCCESS  Tue Jan 20 02:21:21 2004 Tue Jan 20 07:33:40 2004 change end time to               Fri Jan 23 07:27:59 2004
+
+110264		FAILURE  Thu Jan 22 23:33:15 2004 Fri Jan 23 07:27:59 2004 This is a bad run which should not be filled
+110300		SUCCESS  Fri Jan 23 07:27:59 2004 Fri Jan 23 19:10:39 2004 
+110385		SUCCESS  Fri Jan 23 19:10:39 2004 Fri Jan 23 22:47:15 2004 change end time to               Sat Jan 24 17:08:42 2004
+110457		FAILURE  Fri Jan 23 22:47:15 2004 Sat Jan 24 07:10:38 2004 This is a bad run which should not be filled
+
+110628		SUCCESS  Sat Jan 24 17:08:42 2004 Sat Jan 24 21:01:46 2004
+110655		FAILURE  Sat Jan 24 21:01:46 2004 Sun Jan 25 05:01:20 2004 OK run fill                      run110655_newBadROCs.txt
+110708		SUCCESS  Sun Jan 25 05:01:20 2004 Sun Jan 25 13:17:55 2004
+110756		SUCCESS  Sun Jan 25 13:17:55 2004 Sun Jan 25 20:25:02 2004 change end time to               Mon Jan 26 13:15:40 2004
+
+110890		FAILURE  Mon Jan 26 03:25:12 2004 Mon Jan 26 13:15:40 2004 This is a bad run which should not be filled
+110920		SUCCESS  Mon Jan 26 13:15:40 2004 Mon Jan 26 23:00:27 2004
+110983		SUCCESS  Mon Jan 26 23:00:27 2004 Tue Jan 27 03:25:38 2004
+111006		SUCCESS  Tue Jan 27 03:25:38 2004 Tue Jan 27 07:57:43 2004
+111033		SUCCESS  Tue Jan 27 07:57:43 2004 Wed Jan 28 15:26:17 2004 change end time to Wed          Jan 28 21:12:23 2004
+111402		FAILURE  Wed Jan 28 15:26:17 2004 Wed Jan 28 21:12:23 2004 This is a bad run which should not be filled
+111467		SUCCESS  Wed Jan 28 21:12:23 2004 Thu Jan 29 05:38:41 2004
+111528		SUCCESS  Thu Jan 29 05:38:41 2004 Thu Jan 29 19:49:15 2004 change end time to               Fri Jan 30 04:34:03 2004
+111593		FAILURE  Thu Jan 29 19:49:15 2004 Fri Jan 30 04:34:03 2004 This is a bad run which should not be filled
+111697		SUCCESS  Fri Jan 30 04:34:03 2004 Fri Jan 30 09:03:13 2004
+111714		SUCCESS  Fri Jan 30 09:03:13 2004 Fri Jan 30 17:00:49 2004 
+111824		SUCCESS  Fri Jan 30 17:00:49 2004 Fri Jan 30 21:00:00 2004 change end time to               Sat Jan 31 02:33:08 2004
+111838		FAILURE  Fri Jan 30 21:00:00 2004 Sat Jan 31 02:33:08 2004 This is a bad run which should not be filled
+111894		SUCCESS  Sat Jan 31 02:33:08 2004 Sat Jan 31 11:07:09 2004
+111957		SUCCESS  Sat Jan 31 11:07:09 2004 Sat Jan 31 17:33:03 2004
+111984		SUCCESS  Sat Jan 31 17:33:03 2004 Sun Feb  1 00:51:57 2004
+112061		SUCCESS  Sun Feb  1 00:51:57 2004 Sun Feb  1 06:22:50 2004
+112122		SUCCESS  Sun Feb  1 06:22:50 2004 Sun Feb  1 12:16:45 2004
+112184		SUCCESS  Sun Feb  1 12:16:45 2004 Sun Feb  1 19:39:10 2004 A gap. change end time to        Mon Feb  2 01:28:50 2004
+
+112284		SUCCESS  Mon Feb  2 01:28:50 2004 Mon Feb  2 08:23:14 2004 change end time to               Tue Feb  3 07:17:28 2004
+112320		FAILURE  Mon Feb  2 08:23:14 2004 Mon Feb  2 19:43:54 2004 This is a bad run which should not be filled  
+ 
+112519		SUCCESS  Tue Feb  3 07:17:28 2004 Sat Feb  7 02:44:22 2004 A gap. Change end time to        Sat Feb  7 23:50:47 2004
+
+113573		FAILURE  Sat Feb  7 23:50:47 2004 Thu Feb 12 01:13:24 2004 OK run fill             run113573_newBadROCs.txt
+114296		SUCCESS  Thu Feb 12 01:13:24 2004 Thu Feb 12 06:42:46 2004
+114329		SUCCESS  Thu Feb 12 06:42:46 2004 Thu Feb 12 19:45:22 2004
+114468		SUCCESS  Thu Feb 12 19:45:22 2004 Fri Feb 13 07:36:50 2004
+114600		SUCCESS  Fri Feb 13 07:36:50 2004 Fri Feb 13 12:01:05 2004 A gap. Change end time to       Sat Feb 14 12:46:32 2004    
+ 
+114927		SUCCESS  Sat Feb 14 12:46:32 2004 Sat Feb 14 18:16:59 2004
+114967		FAILURE  Sat Feb 14 18:16:59 2004 Sun Feb 15 05:00:58 2004  OK run fill            run114967_newBadROCs.txt
+115026		FAILURE  Sun Feb 15 05:00:58 2004 Sun Feb 15 15:30:36 2004  OK run fill            run115026_newBadROCs.txt
+115179		FAILURE  Sun Feb 15 15:30:36 2004 Sun Feb 15 20:57:02 2004  OK run fill            run115179_newBadROCs.txt
+115204		FAILURE  Sun Feb 15 20:57:02 2004 Mon Feb 16 02:09:13 2004  OK run fill            run115204_newBadROCs.txt
+115227		FAILURE  Mon Feb 16 02:09:13 2004 Fri Feb 20 15:24:39 2004  OK run fill            run115227_newBadROCs.txt
+116161		FAILURE  Fri Feb 20 15:24:39 2004 Sat Feb 21 01:20:06 2004  OK run fill            run116161_newBadROCs.txt
+116228		SUCCESS  Sat Feb 21 01:20:06 2004 Sat Feb 21 07:17:12 2004  
+116313		FAILURE  Sat Feb 21 07:17:12 2004 Sat Feb 21 21:02:13 2004  OK run fill            run116313_newBadROCs.txt
+116421		FAILURE  Sat Feb 21 21:02:13 2004 Sun Feb 22 02:17:10 2004  OK run fill            run116421_newBadROCs.txt
+116468		SUCCESS  Sun Feb 22 02:17:10 2004 Sun Feb 22 08:29:31 2004
+116533		SUCCESS  Sun Feb 22 08:29:31 2004 Sun Feb 22 13:52:02 2004
+116544		FAILURE  Sun Feb 22 13:52:02 2004 Sun Feb 22 22:09:17 2004  OK run fill            run116544_newBadROCs.txt
+116571		FAILURE  Sun Feb 22 22:09:17 2004 Mon Feb 23 07:30:02 2004  OK run fill            run116571_newBadROCs.txt
+116637		FAILURE  Mon Feb 23 07:30:02 2004 Mon Feb 23 14:02:50 2004  OK run fill            run116637_newBadROCs.txt
+116659		FAILURE  Mon Feb 23 14:02:50 2004 Tue Feb 24 00:05:24 2004  OK run fill            run116659_newBadROCs.txt
+116746		FAILURE  Tue Feb 24 00:05:24 2004 Tue Feb 24 04:20:11 2004  OK run fill            run116746_newBadROCs.txt
+116776		SUCCESS  Tue Feb 24 04:20:11 2004 Tue Feb 24 22:30:06 2004
+116921		FAILURE  Tue Feb 24 22:30:06 2004 Wed Feb 25 02:05:31 2004  OK run fill            run116921_newBadROCs.txt and
+                                                                            change end time to     Wed Feb 25 20:09:04 2004      
+117119		FAILURE  Wed Feb 25 20:09:04 2004 Fri Feb 27 02:24:05 2004  OK run fill            run117119_newBadROCs.txt
+117297		FAILURE  Fri Feb 27 02:24:05 2004 Fri Feb 27 07:05:48 2004  OK run fill            run117297_newBadROCs.txt
+117311		FAILURE  Fri Feb 27 07:05:48 2004 Fri Feb 27 18:41:28 2004  OK run fill            run117311_newBadROCs.txt
+117428		FAILURE  Fri Feb 27 18:41:28 2004 Sat Feb 28 00:05:07 2004  OK run fill            run117428_newBadROCs.txt
+117435		FAILURE  Sat Feb 28 00:05:07 2004 Sat Feb 28 05:56:26 2004  OK run fill            run117435_newBadROCs.txt
+117455		FAILURE  Sat Feb 28 05:56:26 2004 Sat Feb 28 21:42:33 2004  OK run fill            run117455_newBadROCs.txt
+117574		FAILURE  Sat Feb 28 21:42:33 2004 Sun Feb 29 01:16:02 2004  OK run fill            run117574_newBadROCs.txt
+
+117579		FAILURE  Sun Feb 29 01:16:02 2004 Sun Feb 29 05:48:43 2004  OK run fill            run117579_newBadROCs.txt
+117586		FAILURE  Sun Feb 29 05:48:43 2004 Mon Mar  1 04:28:13 2004  OK run fill            run117586_newBadROCs.txt
+117759		FAILURE  Mon Mar  1 04:28:13 2004 Mon Mar  1 08:54:43 2004  OK run fill            run117759_newBadROCs.txt
+117766		FAILURE  Mon Mar  1 08:54:43 2004 Mon Mar  1 16:00:32 2004  OK run fill            run117766_newBadROCs.txt
+117825		FAILURE  Mon Mar  1 16:00:32 2004 Mon Mar  1 21:54:20 2004  OK run fill            run117825_newBadROCs.txt AND
+									    change end time to     Tue Mar  2 08:37:07 2004
+117847		FAILURE  Mon Mar  1 21:54:20 2004 Tue Mar  2 08:37:07 2004 non exixting file 
+117921		FAILURE  Tue Mar  2 08:37:07 2004 Tue Mar  2 15:37:35 2004  OK run fill            run117921_newBadROCs.txt
+118019		FAILURE  Tue Mar  2 15:37:35 2004 Tue Mar  2 19:08:05 2004  OK run fill            run118019_newBadROCs.txt
+118038		FAILURE  Tue Mar  2 19:08:05 2004 Thu Mar  4 12:17:44 2004  OK run fill            run118038_newBadROCs.txt AND
+									    change end date to     2004 Thu Mar  4 22:11:08 2004
+118252		FAILURE  Thu Mar  4 12:17:44 2004 Thu Mar  4 22:11:08 2004  This is a bad run which should not be filled 
+118301		FAILURE  Thu Mar  4 22:11:08 2004 Fri Mar  5 04:27:01 2004  OK run fill            run118301_newBadROCs.txt
+118308		FAILURE  Fri Mar  5 04:27:01 2004 Fri Mar  5 10:23:13 2004  OK run fill            run118308_newBadROCs.txt 
+118321		FAILURE  Fri Mar  5 10:23:13 2004 Fri Mar  5 18:50:21 2004  OK run fill            run118321_newBadROCs.txt
+118438		FAILURE  Fri Mar  5 18:50:21 2004 Sat Mar  6 02:09:43 2004  OK run fill            run118438_newBadROCs.txt
+118457		FAILURE  Sat Mar  6 02:09:43 2004 Sat Mar  6 08:56:53 2004  OK run fill            run118457_newBadROCs.txt
+
+118469		FAILURE  Sat Mar  6 08:56:53 2004 Sun Mar  7 04:14:44 2004  OK run fill            run118469_newBadROCs.txt AND
+									     change end date to    Sun Mar  7 09:06:22 2004
+
+118751		FAILURE  Sun Mar  7 04:14:44 2004 Sun Mar  7 09:06:22 2004  This is a bad run which should not be filled 
+118767		FAILURE  Sun Mar  7 09:06:22 2004 Sun Mar  7 16:21:36 2004  OK run fill            run118767_newBadROCs.txt
+118870		FAILURE  Sun Mar  7 16:21:36 2004 Sun Mar  7 23:29:59 2004  OK run fill            run118870_newBadROCs.txt
+118903		FAILURE  Sun Mar  7 23:29:59 2004 Mon Mar  8 03:27:40 2004  OK run fill            run118903_newBadROCs.txt AND
+									    change end date to     Mon Mar  8 08:49:24 2004
+118912		FAILURE  Mon Mar  8 03:27:40 2004 Mon Mar  8 08:49:24 2004  This is a bad run which should not be filled
+118932		FAILURE  Mon Mar  8 08:49:24 2004 Mon Mar  8 18:10:34 2004  OK run fill            run118932_newBadROCs.txt
+119100		FAILURE  Mon Mar  8 18:10:34 2004 Tue Mar  9 01:02:09 2004  OK run fill            run119100_newBadROCs.txt AND
+									    change end date to     Tue Mar  9 19:53:57 2004
+119129		FAILURE  Tue Mar  9 01:02:09 2004 Tue Mar  9 08:17:44 2004  This is a bad run which should not be filled
+119139		FAILURE  Tue Mar  9 08:17:44 2004 Tue Mar  9 19:53:57 2004  This is a bad run which should not be filled
+119267		FAILURE  Tue Mar  9 19:53:57 2004 Wed Mar 10 04:12:51 2004  OK run fill            run119267_newBadROCs.txt
+119314		FAILURE  Wed Mar 10 04:12:51 2004 Wed Mar 10 09:03:29 2004  OK run fill            run119314_newBadROCs.txt
+119327		FAILURE  Wed Mar 10 09:03:29 2004 Wed Mar 10 15:13:11 2004  OK run fill            run119327_newBadROCs.txt
+119380		FAILURE  Wed Mar 10 15:13:11 2004 Wed Mar 10 18:22:15 2004  OK run fill            run119380_newBadROCs.txt
+119387		FAILURE  Wed Mar 10 18:22:15 2004 Thu Mar 11 04:08:15 2004  OK run fill            run119387_newBadROCs.txt
+119433		FAILURE  Thu Mar 11 04:08:15 2004 Thu Mar 11 22:23:24 2004  OK run fill            run119433_newBadROCs.txt 
+119550		FAILURE  Thu Mar 11 22:23:24 2004 Fri Mar 12 05:24:28 2004  OK run fill            run119550_newBadROCs.txt 
+119684		FAILURE  Fri Mar 12 05:24:28 2004 Fri Mar 12 08:49:30 2004  OK run fill            run119684_newBadROCs.txt
+119690		FAILURE  Fri Mar 12 08:49:30 2004 Sat Mar 13 00:09:27 2004  OK run fill            run119690_newBadROCs.txt 
+119917		FAILURE  Sat Mar 13 00:09:27 2004 Sat Mar 13 04:59:00 2004  OK run fill            run119917_newBadROCs.txt AND
+												   change end date to today.

@@ -1,0 +1,8 @@
+For UA2,  the lower pt results are at fixed pt
+(I didn't know the exact bins), the higher pt (from 5.75)
+are averaged over pt bin as usual. Note that for
+Kretzer's ff's z has to be larger than 0.01, which excludes
+the UA2 data for pt <2.8 in this case.  I wouldn't put
+much trust in the KKP ff's there either!
+
+W.Vogelsang

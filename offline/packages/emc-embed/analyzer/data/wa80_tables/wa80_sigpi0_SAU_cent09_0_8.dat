@@ -1,0 +1,35 @@
+300   100   15609.1   1299.66
+500   100   4093.97   119.746
+700   100   1617.12   26.4416
+900   100   569.369   8.48222
+1100   100   214.784   3.26939
+1300   100   80.4762   1.45207
+1500   100   31.6532   0.7116
+1700   100   13.4938   0.359104
+1900   100   6.02358   0.190918
+2100   100   2.55093   0.106389
+2300   100   1.04579   0.0527088
+2500   100   0.431853   0.0302302
+2700   100   0.231312   0.018832
+2900   100   0.0921682   0.0110285
+3100   100   0.0516686   0.00708145
+3300   100   0.0267037   0.00452122
+3500   100   0.00927637   0.00269926
+3700   100   0.00384993   0.00172787
+3900   100   0.000745855   0.000933772
+
+
+
+obtained via:
+
+TH1F*hwa80_cent08=(TH1F*)emcAnalyzerUtils::readAsciiToHisto("/home/enterria/analyzer/data/wa98_tables/wa80_sigpi0_SAU_cent08_0_3.dat",4,"x-xerror-y-yerror");
+TH1F*hwa80_cent07=(TH1F*)emcAnalyzerUtils::readAsciiToHisto("/home/enterria/analyzer/data/wa98_tables/wa80_sigpi0_SAU_cent07_3_8.dat",4,"x-xerror-y-yerror");
+hwa80_cent08->Draw();
+hwa80_cent07->Draw("same");
+TH1F*hwa80_cent09=(TH1F*)hwa80_cent08->Clone();
+hwa80_cent09->Add(hwa80_cent07,1.)
+hwa80_cent09->Draw("same");
+hwa80_cent09->SetLineColor(2)
+hwa80_cent07->SetLineColor(4)
+hwa80_cent08->SetMarkerStyle(29)
+emcAnalyzerUtils::dumpHisto(hwa80_cent09);

@@ -1,0 +1,25 @@
+/* dEmcEvent.idl */
+
+/** (STAF) One-row table, filled once per event.  Contains GEANT/beam event info
+Basic data filled in mEmcGeaEvent using fkin bank if GEANT (if running
+with simulation data), or in mEmcEvent (if running beam data).
+Additional data filled in mEmcCalibTower.
+@ingroup staf
+*/
+
+struct dEmcEvent {
+  short id;           	/* unique identifyer of the entry */
+  short evtyp;		/* event type */
+  long evno;		/* event number */
+  long runno;		/* run number */
+  short serialno;	/* serial number of input (may be more than one) */
+  float impact;		/* impact parameter */
+  float xyz[3];		/* estimated vertex */
+  float twrmultlo;	/* tower multiplicity low threshold */
+  float twrmulthi;	/* tower multiplicity high threshold */
+  float tote;		/* total energy seen in calorimeter */
+  float totet;		/* total transverse energy seen in calorimeter */
+  float trigsum[3];	/* total number of triggers firing  --  3 thresholds */
+  float sece[8];	/* sector energy sum array */
+  float secet[8];	/* sector energy sum array */
+};

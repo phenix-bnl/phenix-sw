@@ -1,0 +1,35 @@
+3.30   0.578353   0.0710656 
+3.75   0.569712   0.0698704 
+4.50   0.628998   0.079662 
+6.00   0.499048   0.0857261 
+7.50   0.484233   0.0673437 
+8.50   0.578644   0.0930419 
+9.50   0.537724   0.132152 
+10.50  0.523538   0.213293 
+
+
+
+computed ratio:
+
+e.setFit(0)
+TGraphErrors*eta=(TGraphErrors*)e.plot_spectrum_from_ascii("pp_eta_isr_62.4GeV_kourkoumelis79.txt",eband)
+TGraphErrors*pi0=(TGraphErrors*)e.plot_spectrum_from_ascii("pp_pi0_isr_62.4GeV_kourkoumelis79.txt",eband)
+double ptmin = 0., ptmax = 16.; 
+TF1 *fit_total = new TF1("fit_total", "[0]/(exp([2]*x*x+[3]*x)+x/[1])^[4]", ptmin, ptmax);
+fit_total->SetParameters(273.251,2.34601,-9.54848e-03,4.67200e-02,1.64203e+01);
+pi0.Fit("fit_total")
+TGraphErrors*r=(TGraphErrors*)emcAnalyzerUtils::ratio(eta,fit_total)
+r.Draw("AP")
+emcAnalyzerUtils::dumpGraph(r,"x-y-ey")
+
+
+maike's calculation:
+3.7203  0.5721  0.0244 
+4.4477  0.6097  0.0243 
+5.9712	0.5569	0.0915 
+
+7.5   0.52069   0.0891904 
+8.5   0.559803   0.106329 
+9.5   0.541284   0.144768 
+10.5  0.4494	 0.18627 
+

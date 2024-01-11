@@ -1,0 +1,84 @@
+#!/usr/local/bin/tcsh -f
+#
+# Batch job script
+#
+#  Usage: run.csh infile outfile
+#
+#
+#Trigger study by using v05 DST
+
+setenv OFFLINE_MAIN @_OFFLINE_MAIN_@
+source /opt/phenix/bin/phenix_setup.csh
+setenv LD_LIBRARY_PATH @_prefix_@/lib:${LD_LIBRARY_PATH}
+
+# htorii's run & tower QA parameters
+# currently not use....
+#setenv HTPARDIR "/phenix/u/htorii/local/photon/Calibset1"
+setenv HTPARDIR "/NOT_USING_IGNORE_ME_IGNORE_ME"
+
+###############################################################
+if( $# != 2 && $# != 3 ) then
+    echo "usage : $0 DST outfile [maxevent]"
+    exit
+endif
+set IN_FILENAME  = $1
+set OUT_FILENAME = $2
+@ MAXEVENT = 0
+if( $# == 3 ) then
+    @ MAXEVENT = $3
+endif
+if( -r ${IN_FILENAME} ) then
+	echo " Input file name is "${IN_FILENAME}
+else
+	echo " Can't find input file : "${IN_FILENAME}
+	exit
+endif
+
+################################################################################
+echo " run.csh::*****************************************************"
+echo " run.csh::*** run.csh start *** "`date`
+echo " run.csh::*****************************************************"
+#######################################
+setenv TMPFILE /tmp/emc_run_$$.cc
+rm -fr ${TMPFILE}
+echo " run.csh:: Create tmporary file " ${TMPFILE}
+cat <<EOF > ${TMPFILE}
+#include <stdio.h>
+#include <TChain.h>
+#include <TFile.h>
+void emc_run_$$(char* infile,char* outfile,int maxevent){
+  gSystem->Load("libemc_dstrun.so");
+  gSystem->Load("libemc_clusttr.so");
+  gSystem->Load("libemc_calibset2.so");
+  // *** Open run2tree *********************
+  TFile* tfile = new TFile(infile);
+  TTree* udst = (TTree*)tfile->Get("udst");
+  Evt* evt =  new Evt();
+  evt->Init_run2tree(udst);
+  // *** Process *********************
+  trk_ass(evt,outfile,maxevent);
+  // *** Close uDST *********************
+  tfile->Close();
+}
+//
+EOF
+chmod uog+wr ${TMPFILE}
+cat ${TMPFILE}
+#######################################
+echo " run.csh::Processing ............................................"
+echo /opt/phenix/root/bin/root -b -q ${TMPFILE}\(\"${IN_FILENAME}\",\"${OUT_FILENAME}\",${MAXEVENT}\)
+/opt/phenix/root/bin/root -b -q ${TMPFILE}\(\"${IN_FILENAME}\",\"${OUT_FILENAME}\",${MAXEVENT}\)
+#######################################
+echo " run.csh::...................................................... Finished processing "
+echo -n " run.csh::"
+ls -la ${OUT_FILENAME}
+#echo " run.csh::Delete "${TMPFILE}
+#rm -f ${TMPFILE}
+echo " run.csh::*****************************************************"
+echo " run.csh::*** run.csh finished *** "`date`
+echo " run.csh::*****************************************************"
+################################################################################
+
+
+
+

@@ -1,0 +1,9 @@
+1.38     0.0582
+2.18     0.0948
+3.42     0.1097
+5.26     0.1453
+8.08     0.1553
+14.90    0.1005
+ 
+ 
+ (p+pbar)/(pi+ + pi-) quark jets (averaged over Y and M event selection)

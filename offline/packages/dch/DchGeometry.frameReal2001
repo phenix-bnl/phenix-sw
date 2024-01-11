@@ -1,0 +1,25 @@
+-1.361   XofOriginEAST
+-1.132  YofOriginEAST
+-0.05       ZofOriginEAST
+0.999999   XofAxis1EAST
+0.00138    YofAxis1EAST
+0.0        ZofAxis1EAST
+-0.00138   XofAxis2EAST
+0.999999   YofAxis2EAST
+0.0        ZofAxis2EAST
+0.0        XofAxis3EAST
+0.0        YofAxis3EAST
+1.0        ZofAxis3EAST
+-0.061   XofOriginWEST
+-1.012   YofOriginWEST
+0.         ZofOriginWEST
+0.999998   XofAxis1WEST
+-0.00188   YofAxis1WEST
+0.0        ZofAxis1WEST
+0.00188    XofAxis2WEST
+0.999998   YofAxis2WEST
+0.0        ZofAxis2WEST
+0.0        XofAxis3WEST
+0.0        YofAxis3WEST
+1.0        ZofAxis3WEST
+

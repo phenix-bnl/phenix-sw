@@ -1,0 +1,24 @@
+0.25 48.48 0.49 
+0.35 27.22 0.34 
+0.45 14.14 0.23 
+0.55 7.73 0.12 
+0.65 4.424 0.068 
+0.82 1.667 0.036 
+1.12 0.368 0.010 
+1.42 0.1255 0.0041 
+1.72 0.0291 0.0018 
+2.18 0.00475 0.00051 
+
+
+mind that 1.42 0.1255 0.0041  is taken from chhad+
+
+==> pp_chhad-_isr_62GeV_breakstone95_pT0.25.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT0.35.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT0.45.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT0.55.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT0.65.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT0.82.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT1.12.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT1.72.txt <==
+==> pp_chhad-_isr_62GeV_breakstone95_pT2.18.txt <==
+

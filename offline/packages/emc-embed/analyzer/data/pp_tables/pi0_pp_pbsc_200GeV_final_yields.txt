@@ -1,0 +1,25 @@
+  1.25      8.903e-03    8.048e-04
+  1.75      1.407e-03    1.167e-04
+  2.25      2.843e-04    2.362e-05
+  2.75      7.762e-05    6.817e-06
+  3.25      2.344e-05    2.329e-06
+  3.75      7.460e-06    7.035e-07
+  4.25      2.728e-06    2.700e-07
+  4.75      1.134e-06    1.186e-07
+  5.25      5.102e-07    5.682e-08
+  5.75      2.554e-07    3.052e-08
+  6.25      1.146e-07    1.529e-08
+  6.75      6.776e-08    9.854e-09
+  7.25      3.662e-08    6.101e-09
+  7.75      1.858e-08    3.707e-09
+  8.25      1.431e-08    3.147e-09
+  8.75      7.646e-09    2.004e-09
+  9.25      6.335e-09    1.736e-09
+  9.75      2.786e-09    1.073e-09
+
+D.d'E:
+Inv. yields: [Sasha no bin shift correction, no divided by pt]/[42.0*pT]
+
+The 10% overall normalization error is not included.
+Also not included the 3% trigger bias error 
+(it's common in PbSc and PbGl and accounted after combining specta)

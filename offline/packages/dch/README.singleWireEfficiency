@@ -1,0 +1,16 @@
+The FastSimulator allows one to apply a single-wire efficiency to each
+wire individually. To use that feature you have to do the following:
+
+- checkout the packages geo, dgo, and dch from the repository
+- build all packages in that order with the same install path and add this
+  install path to your LD_LIBRARY_PATH
+- copy the file DchEfficiency.Real (do NOT change the filename!!!) from 
+  the dch source directory into the working directory where you run your 
+  response and reconstruction macro
+- upon execution the DchInitializer will create the PHDchNoiseObject which 
+  reads the individual single-wire efficiency values from DchEfficiency.Real. 
+  These values are used by the FastSimulator. If DchEfficiency.Real is not 
+  found (because you did not copy it into your working directory or because 
+  you renamed it) the DchInitializer prints a corresponding message on the 
+  screen and a default single-wire efficiency of 95 % is used for all wires.
+

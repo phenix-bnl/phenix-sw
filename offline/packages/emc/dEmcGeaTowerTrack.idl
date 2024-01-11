@@ -1,0 +1,19 @@
+/* dEmcGeaTowerTrack.idl */
+/** (STAF) Evaluator; connects Towers to Tracks.
+* In other words: it tells you which track has been the source of
+* energy deposited in a certain tower
+* the tower <--> track is a many-to-many relationship
+* maximum three tracks can contribute to a tower as of now
+* Track means TRUE_TRACK i.e. unique throughout the event 
+* even if there is more than one subevent and/or input file (merge)
+@ingroup staf
+**/
+
+struct dEmcGeaTowerTrack {
+  long id;          	/* unique identifyer; */
+  long twrkey;		/* tower key; z + 100 * y + 10000 * i1 */
+  short input;		/* serial number of input (merge!) */
+  long trkno[3];	/* true track indices of contributing tracks */
+  float edep[3];	/* energy deposited by the respective tracks */
+  float toffirst[3];	/* time of first hit from GEANT - consistency! */
+};

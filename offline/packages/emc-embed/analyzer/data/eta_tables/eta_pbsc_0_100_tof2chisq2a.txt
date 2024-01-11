@@ -1,0 +1,77 @@
+  2.25  0.05    1.161e-02    3.368e-03    29.02    3.130e-03    1.245e-03    3.273e-03    5.804e-04
+  2.75  0.05    3.595e-03    1.031e-03    28.67    9.529e-04    3.928e-04    9.980e-04    1.798e-04
+  3.25  0.05    8.088e-04    1.528e-04    18.89    1.233e-04    9.022e-05    1.402e-04    4.044e-05
+  3.75  0.05    2.140e-04    4.626e-05    21.62    3.929e-05    2.442e-05    4.307e-05    1.070e-05
+  4.50  0.05    5.921e-05    1.477e-05    24.94    1.300e-05    7.002e-06    1.389e-05    2.960e-06
+  5.50  0.05    1.049e-05    2.345e-06    22.35    1.951e-06    1.302e-06    2.134e-06    5.247e-07
+  6.50  0.05    2.569e-06    9.725e-07    37.86    9.135e-07    3.337e-07    9.377e-07    1.284e-07
+  7.50  0.05    8.812e-07    2.414e-07    27.39    2.097e-07    1.195e-07    2.220e-07    4.406e-08
+  8.50  0.05    3.754e-07    1.699e-07    45.27    1.615e-07    5.295e-08    1.644e-07    1.877e-08
+  9.50  0.05    1.385e-07    7.616e-08    55.00    7.342e-08    2.025e-08    7.430e-08    6.924e-09
+
+
+Spectrum shifted along the y-axis (Yield): 
+  pT   pT_err   Ntot   Ntot_err   (Rel_toterr %)   Stat_err   Syst_err   CCuncorr_toterr   pTcorr_toterr
+
+The results above are a combination of two bin shifts:
+
+Spectrum shifted along the y-axis (Yield) for pTbinwidth = 0.5 GeV/c
+
+ (pTmean,yieldshift) = ( 2.22,91.5% ) 
+ (pTmean,yieldshift) = ( 2.72,93.2% ) 
+ (pTmean,yieldshift) = ( 3.22,94.5% ) 
+ (pTmean,yieldshift) = ( 3.73,95.4% ) 
+<W> shiftYield(...): pT binwidth is not 0.5 ! Check your bin-shift correction for bin pT=4.5
+ (pTmean,yieldshift) = ( 4.48,96.4% ) 
+<W> shiftYield(...): pT binwidth is not 0.5 ! Check your bin-shift correction for bin pT=5.5
+ (pTmean,yieldshift) = ( 5.48,97.3% ) 
+<W> shiftYield(...): pT binwidth is not 0.5 ! Check your bin-shift correction for bin pT=6.5
+ (pTmean,yieldshift) = ( 6.48,97.9% ) 
+<W> shiftYield(...): pT binwidth is not 0.5 ! Check your bin-shift correction for bin pT=7.5
+ (pTmean,yieldshift) = ( 7.49,98.4% ) 
+<W> shiftYield(...): pT binwidth is not 0.5 ! Check your bin-shift correction for bin pT=8.5
+ (pTmean,yieldshift) = ( 8.49,98.7% ) 
+<W> shiftYield(...): pT binwidth is not 0.5 ! Check your bin-shift correction for bin pT=9.5
+ (pTmean,yieldshift) = ( 9.49,98.9% ) 
+  pT   pT_err   Ntot   Ntot_err   (Rel_toterr %)   Stat_err   Syst_err   CCuncorr_toterr   pTcorr_toterr
+  2.25  0.05    1.161e-02    3.368e-03    29.02    3.130e-03    1.245e-03    3.273e-03    5.804e-04
+  2.75  0.05    3.595e-03    1.031e-03    28.67    9.529e-04    3.928e-04    9.980e-04    1.798e-04
+  3.25  0.05    8.088e-04    1.528e-04    18.89    1.233e-04    9.022e-05    1.402e-04    4.044e-05
+  3.75  0.05    2.140e-04    4.626e-05    21.62    3.929e-05    2.442e-05    4.307e-05    1.070e-05
+  4.50  0.05    6.597e-05    1.645e-05    24.94    1.448e-05    7.802e-06    1.547e-05    3.299e-06
+  5.50  0.05    1.137e-05    2.542e-06    22.35    2.115e-06    1.411e-06    2.313e-06    5.687e-07
+  6.50  0.05    2.734e-06    1.035e-06    37.86    9.722e-07    3.551e-07    9.980e-07    1.367e-07
+  7.50  0.05    9.260e-07    2.537e-07    27.39    2.204e-07    1.256e-07    2.333e-07    4.630e-08
+  8.50  0.05    3.908e-07    1.770e-07    45.27    1.681e-07    5.514e-08    1.712e-07    1.954e-08
+  9.50  0.05    1.432e-07    7.876e-08    55.00    7.593e-08    2.094e-08    7.684e-08    7.160e-09
+
+
+Spectrum shifted along the y-axis (Yield) for pTbinwidth = 1.0 GeV/c
+
+ (pTmean,yieldshift) = ( 2.13,70.5% ) 
+<W> shiftYield(...): pT binwidth is not 1 ! Check your bin-shift correction for bin pT=2.75
+ (pTmean,yieldshift) = ( 2.64,75.8% ) 
+<W> shiftYield(...): pT binwidth is not 1 ! Check your bin-shift correction for bin pT=3.25
+ (pTmean,yieldshift) = ( 3.15,79.8% ) 
+<W> shiftYield(...): pT binwidth is not 1 ! Check your bin-shift correction for bin pT=3.75
+ (pTmean,yieldshift) = ( 3.66,83.0% ) 
+<W> shiftYield(...): pT binwidth is not 1 ! Check your bin-shift correction for bin pT=4.5
+ (pTmean,yieldshift) = ( 4.42,86.5% ) 
+ (pTmean,yieldshift) = ( 5.43,89.8% ) 
+ (pTmean,yieldshift) = ( 6.44,92.0% ) 
+ (pTmean,yieldshift) = ( 7.45,93.6% ) 
+ (pTmean,yieldshift) = ( 8.45,94.7% ) 
+ (pTmean,yieldshift) = ( 9.46,95.6% ) 
+  pT   pT_err   Ntot   Ntot_err   (Rel_toterr %)   Stat_err   Syst_err   CCuncorr_toterr   pTcorr_toterr
+  2.25  0.05    8.949e-03    2.597e-03    29.02    2.413e-03    9.600e-04    2.523e-03    4.475e-04
+  2.75  0.05    2.924e-03    8.383e-04    28.67    7.751e-04    3.195e-04    8.117e-04    1.462e-04
+  3.25  0.05    6.837e-04    1.291e-04    18.89    1.042e-04    7.627e-05    1.185e-04    3.419e-05
+  3.75  0.05    1.862e-04    4.025e-05    21.62    3.418e-05    2.125e-05    3.748e-05    9.311e-06
+  4.50  0.05    5.921e-05    1.477e-05    24.94    1.300e-05    7.002e-06    1.389e-05    2.960e-06
+  5.50  0.05    1.049e-05    2.345e-06    22.35    1.951e-06    1.302e-06    2.134e-06    5.247e-07
+  6.50  0.05    2.569e-06    9.725e-07    37.86    9.135e-07    3.337e-07    9.377e-07    1.284e-07
+  7.50  0.05    8.812e-07    2.414e-07    27.39    2.097e-07    1.195e-07    2.220e-07    4.406e-08
+  8.50  0.05    3.754e-07    1.699e-07    45.27    1.615e-07    5.295e-08    1.644e-07    1.877e-08
+  9.50  0.05    1.385e-07    7.616e-08    55.00    7.342e-08    2.025e-08    7.430e-08    6.924e-09
+
+

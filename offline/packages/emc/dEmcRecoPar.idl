@@ -1,0 +1,21 @@
+/* dEmcRecoPar.idl */
+
+/** (STAF) Parameters for reconstruction 
+    @ingroup staf
+ **/
+
+struct dEmcRecoPar {
+  long anyset;		/* any parameter set */
+  long extended_output;	/* 0 -> Write dEmcClusterLocal only (default)
+			   1 -> Write dEmcClusterLocalExt only
+			   2 -> Write both tables */
+  long maxtowers;	/* Max. number of towers in a cluster */
+  float clus_thr;	/* Min. E required in center */
+  float clus_cut;	/* Min. E in a tower in order - otherwise set to 0 */
+  float clus_w0;	/* w0 parameter in calculating log weighted pos. */
+
+  // Parameters for "Chi2" clustering
+  float TowerThresh;    /* Threshold in EMCal each tower (GeV) */
+  float eClustMin;      /* Min cluster energy to be output in tables */
+  float tmppar;         /* ... for specific use */
+};

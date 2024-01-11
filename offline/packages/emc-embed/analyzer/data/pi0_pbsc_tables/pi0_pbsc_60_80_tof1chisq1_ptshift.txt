@@ -1,0 +1,18 @@
+ <I> Constructing full-corrected tof1chisq1 spectrum for centrality class: 18 (60 - 80%) from raw yields file: yields_60_80_tof1chisq1.txt
+ <I> Spectrum shifted (after doing and undoing the 1/pT normalization) along the x-axis (pT) to correct for the true mean value of the $p_T$ bin in the steeply falling spectrum
+ <I> Total # of events in centrality class: 6.29936e+06 +/- 2509.85
+  pT   pT_err   Ntot   Ntot_err   (Rel_toterr %)   Stat_err   Syst_err   CCuncorr_toterr   pTcorr_toterr
+  1.21  0.05    1.448e-01    2.059e-02    14.22    8.180e-04    2.058e-02    1.878e-02    7.238e-03
+  1.71  0.05    2.325e-02    3.320e-03    14.28    1.713e-04    3.316e-03    3.018e-03    1.162e-03
+  2.22  0.05    4.894e-03    7.050e-04    14.41    5.253e-05    7.031e-04    6.365e-04    2.447e-04
+  2.72  0.05    1.222e-03    1.784e-04    14.60    1.948e-05    1.773e-04    1.596e-04    6.110e-05
+  3.22  0.05    3.803e-04    5.655e-05    14.87    8.880e-06    5.584e-05    5.009e-05    1.902e-05
+  3.73  0.05    1.184e-04    1.814e-05    15.33    4.350e-06    1.761e-05    1.595e-05    5.919e-06
+  4.23  0.05    5.101e-05    8.117e-06    15.91    2.576e-06    7.697e-06    7.096e-06    2.550e-06
+  4.73  0.05    1.744e-05    3.003e-06    17.22    1.373e-06    2.670e-06    2.645e-06    8.720e-07
+  5.23  0.05    9.011e-06    1.672e-06    18.56    9.141e-07    1.400e-06    1.483e-06    4.505e-07
+  5.73  0.05    4.508e-06    9.473e-07    21.01    6.260e-07    7.110e-07    8.564e-07    2.254e-07
+  6.23  0.05    2.016e-06    4.991e-07    24.76    3.808e-07    3.227e-07    4.618e-07    1.008e-07
+  6.73  0.05    1.163e-06    3.324e-07    28.59    2.736e-07    1.888e-07    3.124e-07    5.814e-08
+
+

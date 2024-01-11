@@ -1,0 +1,14 @@
+/* dPadCluster.idl */
+
+/* Contains information about reconstructed PC clusters. */
+
+struct dPadCluster {
+  short id;              /* a primary reference key */
+  short arm;             /* arm number (1=west, 2=east) */
+  short sector;          /* sector number containing cluster (1-8) */
+  short wire;            /* wire number of cluster maximum*/
+  short cell;            /* pad cell number of cluster maximum */
+  float xyz[3];          /* global coordinates */
+  float dxyz[3];         /* error in the global coordinates */
+  short type;            /* definition of cluster shape */
+};

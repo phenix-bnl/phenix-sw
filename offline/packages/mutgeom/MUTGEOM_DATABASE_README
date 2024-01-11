@@ -1,0 +1,33 @@
+An aid to deciphering the mutr geometry database.
+
+
+The class MutArm contains most of the calls used to fetch from and update the database.  
+The model I used in the past is
+1) write a geometry-modifying function that gets input from a text file and test.
+2) write a database-accessing function that writes the text file to the database.
+   You can use existing pdbcal objects to update the database, such as PdbCoordinate.  
+   No need to keep creating more database classes.	
+3) use a bit of cutting and pasting to create the database-read function from the above two functions.
+
+All of the more recent database files are for manipulating strips and wires and they have the same format:
+"arm station octant halfoctant gap plane channel"
+A point of possible confusion is the numbering of the planes.  For the geometry, we enumerated Cathode1, Wire, Cathode2 in MUTGEOM.h  So the cathode planes are numbered 0 and 2.  This conflicted with the existing reconstruction software, which Melynda fixed by adding "CathodePlaneNumber {Cathode_1,Cathode_2}" to MutGeomEnumerations.h.  So the reconstruction code checks Cathode Plane number instead of Plane number.  Be careful to deconflict this when you update/write an input text file.
+****The most reliable way to determine the format for a database input file is to go to the source code.
+
+Example macros for updating the database are stored in the subdirectories of mutgeom/ along with versions of the input text files.
+
+
+Exceptions to the above:
+There are three things that are updated by MutStation instead of MutArm
+1) the station 1 and 3 strip surveys, 
+2) the station 3 half octant surveys,
+3) the DCM channel map
+
+You should never need to modify strips surveys.
+You will need to update the half octant surveys if new arm surveys are done during a shutdown.
+You will likely need to update the channel map, and it takes special consideration.
+
+The DCM channel map has no single input file due to the nature of the beast.  Which is this:
+A map was made for generic octants for each station in which the actual packet ID wasn't specified, only relative packet IDs.  These files are located in
+/afs/rhic.bnl.gov/phenix/software/calibration/mutr_txt/a#_s#_map.dat. 
+This generic map was turned into a specific map in MutPlane::getDCMChannels(), then this specific map was stored in the database.  So to change individual channel mappings, you can't use this input text file.  I chose to read in an arm from the database, retrieving the specific mapping. Then modify that mapping and insert the new map into the database.  There is compiled code in mutgeom/dead_DCM_channels that can be used as a start for future mapping problems.  The case that's coded is for swapped cathode cables.  For swapped DCM cables, we just deadened those channels.  Future problems will call for unique solutions.

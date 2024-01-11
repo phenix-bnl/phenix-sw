@@ -1,0 +1,21 @@
+0.1  0.2         1.68                  0.22   0.0 
+0.2  0.3         0.680                 0.064      0.0   
+0.3  0.4         0.327                 0.034     0.0   
+0.4  0.5         0.168                 0.022    0.0 
+0.5  0.6         0.0813                0.0093     0.0   
+0.6  0.7         0.0387                0.0076     0.0    
+0.7  0.8         0.0124                0.0033       0.0 
+0.8  0.9         0.00380               0.000285   0.0 
+
+
+   EXPeriment = CERN-LEP-ALEPH
+   sqrt(s)    = 91.2 GeV
+   Author     = Buskulic et al
+   REFerence  = Phys. Lett. 292B (1992) 210
+
+   Errors shown are statistical only.  
+   Additional 7% overall systematic uncertainty.
+
+
+   xE   xE      (1/sig(h)) dsig/dxE       error
+   min  max

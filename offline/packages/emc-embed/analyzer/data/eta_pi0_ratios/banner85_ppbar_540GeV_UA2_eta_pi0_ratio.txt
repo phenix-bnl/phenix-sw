@@ -1,0 +1,21 @@
+5.75	0.6451	0.1906 
+
+
+
+
+computed from eta, pi0 spectra
+
+\bibitem{Banner:1984wh}
+  M.~Banner {\it et al.}  [UA2 Collaboration],
+  %``Inclusive Particle Production In The Transverse Momentum Range Between
+  %0.25-Gev/C And 40-Gev/C At The Cern S P Anti-P S Collider,''
+  Z.\ Phys.\ C {\bf 27} (1985) 329.
+  %%CITATION = ZEPYA,C27,329;%%
+
+
+
+
+
+
+5.75   0.645161   0.190668 
+

@@ -1,0 +1,29 @@
+/* dEmcGeaTowerEval.idl */
+/** (STAF) Evaluator; connects Towers to Tracks.
+@ingroup staf
+**/
+
+struct dEmcGeaTowerEval {
+  long id;          	/* unique identifyer; */
+  long twrkey;		/* tower key; z + 100 * y + 10000 * i1 */
+  long input;		/* serial number of input (merge!) */
+  long arm;		/* arm, West = 0, East = 1 */
+  long sector;		/*    */
+  long indy;		/* Index in y direction */
+  long indz;		/* Index in z direction */
+  long trkno[3];	/* true track indices of contributing tracks */
+  float pid[3];         /* Real track pid */
+  float ptot[3];        /* Total momentum of orig. track */
+  float vertex[3][3];   /* Vertex of the track */
+  float ancestry[3];    /* Ancestry - generation - of the track */
+  long itparent[3];
+  long idparent[3];
+  float edep[3];	/* energy deposited in the respective towers */
+  float mease;		/* Measured energy */
+  float tof;		/* Measured - flash */
+  float toffirst[3];	/* GEANT first hit - flash */
+  float dist_nom;
+  float dist_act;
+  float sinthe_nom;	/* Nominal sin theta - from event vertex */
+  float sinthe_act;	/* Actual sin theta - from vertex of first track */
+};

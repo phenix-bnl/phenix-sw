@@ -1,0 +1,35 @@
+/* file dEmcGeaHit.idl */
+
+/**(STAF) Hits are passed by PISA in bit-packed format in structure emcghit. 
+ * This is the structure you get after unpacking. 
+ * Jeff's original version modified: Aug. 20, 1997, G. David 
+ * Updated: Oct. 10, 1997, G. David 
+ * Updated: Dec. 9, 1997, G. David 
+ * Updated: Mar. 30, 1998, G. David 
+ * fields isubevt and nfile added to make translation of local track 
+ * number into run-wide "true-track" possible 
+
+ * There is one row in this table for each elementary GEANT dE energy 
+ * deposition in a sensitive EMCal volume.  For typical settings there 
+ * are about 1500-2000 hits per GeV VISIBLE.  (Note, that for the 
+ * PbSc that is a SAMPLING calorimeter this corresponds to about 5 GeV 
+ * energy lost in the calorimeter 
+@ingroup staf
+ **/
+
+struct dEmcGeaHit {
+  long id;           	 /* entry no. of emcghit from which unpacked */
+  short type;            /* detector type: PbSc = 1, PbGl = 2 */
+  short sector;          /* sector number 1-8 */
+  short smodind;	 /* supermodule index */
+  short towerind;	 /* tower index within supermodule */
+  float deltae;          /* energy loss in GeV */
+  float xyz[3];          /* global cartesian coordinates of the hit (cm) */
+  float tof;             /* time-of-flight, absolute, as given by GEANT (ns) */
+  short numed;           /* tracking medium number */
+  short partid;          /* particle id number */
+  short itrack;          /* ancestor track number in subevent */
+  short isubevt;         /* serial number of subevent */
+  short nfile;           /* serial number of input file */
+  long true_track;       /* True track number */
+};

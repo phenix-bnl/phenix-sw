@@ -1,0 +1,982 @@
+bash-2.05b$ for i in `cat run4lists/pad-badrocs-update-epoch.list`; do root -l -
+q "bulkCommitBadROCs.C($i,1)"; done
+root [0]
+Processing bulkCommitBadROCs.C(108461,1073299815,1073817627,1)...
+ 
+ TSstart Mon Jan  5 05:50:15 2004
+ 
+ TSstop  Sun Jan 11 05:40:27 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs resp
+ectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(108807,1073894450,1073984237,1)...
+ 
+ TSstart Mon Jan 12 03:00:50 2004
+ 
+ TSstop  Tue Jan 13 03:57:17 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs resp
+ectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(109005,1074011933,1074167283,1)...
+ 
+ TSstart Tue Jan 13 11:38:53 2004
+ 
+ TSstop  Thu Jan 15 06:48:03 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs resp
+ectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(109763,1074583281,1074860879,1)...
+ 
+ TSstart Tue Jan 20 02:21:21 2004
+ 
+ TSstop  Fri Jan 23 07:27:59 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs resp
+ectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(110385,1074903039,1074946238,1)...
+ 
+ TSstart Fri Jan 23 19:10:39 2004
+ 
+ TSstop  Sat Jan 24 07:10:38 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(110655,1074996106,1075024880,1)...
+ 
+ TSstart Sat Jan 24 21:01:46 2004
+ 
+ TSstop  Sun Jan 25 05:01:20 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 134
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(110756,1075054675,1075140940,1)...
+ 
+ TSstart Sun Jan 25 13:17:55 2004
+ 
+ TSstop  Mon Jan 26 13:15:40 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 134
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(111033,1075208263,1075342343,1)...
+ 
+ TSstart Tue Jan 27 07:57:43 2004
+ 
+ TSstop  Wed Jan 28 21:12:23 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 133
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(111528,1075372721,1075455243,1)...
+ 
+ TSstart Thu Jan 29 05:38:41 2004
+ 
+ TSstop  Fri Jan 30 04:34:03 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(111824,1075500049,1075534388,1)...
+ 
+ TSstart Fri Jan 30 17:00:49 2004
+ 
+ TSstop  Sat Jan 31 02:33:08 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(112184,1075655805,1075703330,1)...
+ 
+ TSstart Sun Feb  1 12:16:45 2004
+ 
+ TSstop  Mon Feb  2 01:28:50 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(112284,1075703330,1075810648,1)...
+ 
+ TSstart Mon Feb  2 01:28:50 2004
+ 
+ TSstop  Tue Feb  3 07:17:28 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(112519,1075810648,1076215847,1)...
+ 
+ TSstart Tue Feb  3 07:17:28 2004
+ 
+ TSstop  Sat Feb  7 23:50:47 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 133
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(113573,1076215847,1076566404,1)...
+ 
+ TSstart Sat Feb  7 23:50:47 2004
+ 
+ TSstop  Thu Feb 12 01:13:24 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(114600,1076675810,1076780792,1)...
+ 
+ TSstart Fri Feb 13 07:36:50 2004
+ 
+ TSstop  Sat Feb 14 12:46:32 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(114967,1076800619,1076839258,1)...
+ 
+ TSstart Sat Feb 14 18:16:59 2004
+ 
+ TSstop  Sun Feb 15 05:00:58 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(115026,1076839258,1076877036,1)...
+ 
+ TSstart Sun Feb 15 05:00:58 2004
+ 
+ TSstop  Sun Feb 15 15:30:36 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(115179,1076877036,1076896622,1)...
+ 
+ TSstart Sun Feb 15 15:30:36 2004
+ 
+ TSstop  Sun Feb 15 20:57:02 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(115204,1076896622,1076915353,1)...
+ 
+ TSstart Sun Feb 15 20:57:02 2004
+ 
+ TSstop  Mon Feb 16 02:09:13 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(115227,1076915353,1077308679,1)...
+ 
+ TSstart Mon Feb 16 02:09:13 2004
+ 
+ TSstop  Fri Feb 20 15:24:39 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116161,1077308679,1077344406,1)...
+ 
+ TSstart Fri Feb 20 15:24:39 2004
+ 
+ TSstop  Sat Feb 21 01:20:06 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116313,1077365832,1077415333,1)...
+ 
+ TSstart Sat Feb 21 07:17:12 2004
+ 
+ TSstop  Sat Feb 21 21:02:13 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 127
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116421,1077415333,1077434230,1)...
+ 
+ TSstart Sat Feb 21 21:02:13 2004
+ 
+ TSstop  Sun Feb 22 02:17:10 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116544,1077475922,1077505757,1)...
+ 
+ TSstart Sun Feb 22 13:52:02 2004
+ 
+ TSstop  Sun Feb 22 22:09:17 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116571,1077505757,1077539402,1)...
+ 
+ TSstart Sun Feb 22 22:09:17 2004
+ 
+ TSstop  Mon Feb 23 07:30:02 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116637,1077539402,1077562970,1)...
+ 
+ TSstart Mon Feb 23 07:30:02 2004
+ 
+ TSstop  Mon Feb 23 14:02:50 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116659,1077562970,1077599124,1)...
+ 
+ TSstart Mon Feb 23 14:02:50 2004
+ 
+ TSstop  Tue Feb 24 00:05:24 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116746,1077599124,1077614411,1)...
+ 
+ TSstart Tue Feb 24 00:05:24 2004
+ 
+ TSstop  Tue Feb 24 04:20:11 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(116921,1077679806,1077757744,1)...
+ 
+ TSstart Tue Feb 24 22:30:06 2004
+ 
+ TSstop  Wed Feb 25 20:09:04 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117119,1077757744,1077866645,1)...
+ 
+ TSstart Wed Feb 25 20:09:04 2004
+ 
+ TSstop  Fri Feb 27 02:24:05 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117297,1077866645,1077883548,1)...
+ 
+ TSstart Fri Feb 27 02:24:05 2004
+ 
+ TSstop  Fri Feb 27 07:05:48 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117311,1077883548,1077925288,1)...
+ 
+ TSstart Fri Feb 27 07:05:48 2004
+ 
+ TSstop  Fri Feb 27 18:41:28 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117428,1077925288,1077944707,1)...
+ 
+ TSstart Fri Feb 27 18:41:28 2004
+ 
+ TSstop  Sat Feb 28 00:05:07 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117435,1077944707,1077965786,1)...
+ 
+ TSstart Sat Feb 28 00:05:07 2004
+ 
+ TSstop  Sat Feb 28 05:56:26 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117455,1077965786,1078022553,1)...
+ 
+ TSstart Sat Feb 28 05:56:26 2004
+ 
+ TSstop  Sat Feb 28 21:42:33 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117574,1078022553,1078035362,1)...
+ 
+ TSstart Sat Feb 28 21:42:33 2004
+ 
+ TSstop  Sun Feb 29 01:16:02 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117579,1078035362,1078051723,1)...
+ 
+ TSstart Sun Feb 29 01:16:02 2004
+ 
+ TSstop  Sun Feb 29 05:48:43 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117586,1078051723,1078133293,1)...
+ 
+ TSstart Sun Feb 29 05:48:43 2004
+ 
+ TSstop  Mon Mar  1 04:28:13 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117759,1078133293,1078149283,1)...
+ 
+ TSstart Mon Mar  1 04:28:13 2004
+ 
+ TSstop  Mon Mar  1 08:54:43 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117766,1078149283,1078174832,1)...
+ 
+ TSstart Mon Mar  1 08:54:43 2004
+ 
+ TSstop  Mon Mar  1 16:00:32 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117825,1078174832,1078234627,1)...
+ 
+ TSstart Mon Mar  1 16:00:32 2004
+ 
+ TSstop  Tue Mar  2 08:37:07 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(117921,1078234627,1078259855,1)...
+ 
+ TSstart Tue Mar  2 08:37:07 2004
+ 
+ TSstop  Tue Mar  2 15:37:35 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118019,1078259855,1078272485,1)...
+ 
+ TSstart Tue Mar  2 15:37:35 2004
+ 
+ TSstop  Tue Mar  2 19:08:05 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 133
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118038,1078272485,1078456268,1)...
+ 
+ TSstart Tue Mar  2 19:08:05 2004
+ 
+ TSstop  Thu Mar  4 22:11:08 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 133
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118301,1078456268,1078478821,1)...
+ 
+ TSstart Thu Mar  4 22:11:08 2004
+ 
+ TSstop  Fri Mar  5 04:27:01 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118308,1078478821,1078500193,1)...
+ 
+ TSstart Fri Mar  5 04:27:01 2004
+ 
+ TSstop  Fri Mar  5 10:23:13 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118321,1078500193,1078530621,1)...
+ 
+ TSstart Fri Mar  5 10:23:13 2004
+ 
+ TSstop  Fri Mar  5 18:50:21 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118438,1078530621,1078556983,1)...
+ 
+ TSstart Fri Mar  5 18:50:21 2004
+ 
+ TSstop  Sat Mar  6 02:09:43 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118457,1078556983,1078581413,1)...
+ 
+ TSstart Sat Mar  6 02:09:43 2004
+ 
+ TSstop  Sat Mar  6 08:56:53 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118469,1078581413,1078668382,1)...
+ 
+ TSstart Sat Mar  6 08:56:53 2004
+ 
+ TSstop  Sun Mar  7 09:06:22 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118767,1078668382,1078694496,1)...
+ 
+ TSstart Sun Mar  7 09:06:22 2004
+ 
+ TSstop  Sun Mar  7 16:21:36 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118870,1078694496,1078720199,1)...
+ 
+ TSstart Sun Mar  7 16:21:36 2004
+ 
+ TSstop  Sun Mar  7 23:29:59 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118903,1078720199,1078753764,1)...
+ 
+ TSstart Sun Mar  7 23:29:59 2004
+ 
+ TSstop  Mon Mar  8 08:49:24 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(118932,1078753764,1078787434,1)...
+ 
+ TSstart Mon Mar  8 08:49:24 2004
+ 
+ TSstop  Mon Mar  8 18:10:34 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119100,1078787434,1078880037,1)...
+ 
+ TSstart Mon Mar  8 18:10:34 2004
+ 
+ TSstop  Tue Mar  9 19:53:57 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 128
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119267,1078880037,1078909971,1)...
+ 
+ TSstart Tue Mar  9 19:53:57 2004
+ 
+ TSstop  Wed Mar 10 04:12:51 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119314,1078909971,1078927409,1)...
+ 
+ TSstart Wed Mar 10 04:12:51 2004
+ 
+ TSstop  Wed Mar 10 09:03:29 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119327,1078927409,1078949591,1)...
+ 
+ TSstart Wed Mar 10 09:03:29 2004
+ 
+ TSstop  Wed Mar 10 15:13:11 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 129
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119380,1078949591,1078960935,1)...
+ 
+ TSstart Wed Mar 10 15:13:11 2004
+ 
+ TSstop  Wed Mar 10 18:22:15 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119387,1078960935,1078996095,1)...
+ 
+ TSstart Wed Mar 10 18:22:15 2004
+ 
+ TSstop  Thu Mar 11 04:08:15 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119433,1078996095,1079061804,1)...
+ 
+ TSstart Thu Mar 11 04:08:15 2004
+ 
+ TSstop  Thu Mar 11 22:23:24 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119550,1079061804,1079087068,1)...
+ 
+ TSstart Thu Mar 11 22:23:24 2004
+ 
+ TSstop  Fri Mar 12 05:24:28 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119684,1079087068,1079099370,1)...
+ 
+ TSstart Fri Mar 12 05:24:28 2004
+ 
+ TSstop  Fri Mar 12 08:49:30 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 130
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119690,1079099370,1079154567,1)...
+ 
+ TSstart Fri Mar 12 08:49:30 2004
+ 
+ TSstop  Sat Mar 13 00:09:27 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 131
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+root [0]
+Processing bulkCommitBadROCs.C(119917,1079154567,1079171940,1)...
+ 
+ TSstart Sat Mar 13 00:09:27 2004
+ 
+ TSstop  Sat Mar 13 04:59:00 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16
+

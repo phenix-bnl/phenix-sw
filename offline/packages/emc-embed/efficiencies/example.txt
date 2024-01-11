@@ -1,0 +1,23 @@
+cd /phenix/data01/enterria/run2_eta/embed_files_on_5percent_smear/
+
+ls -1 eta*root > list_eta_5percent_smear_20.txt
+
+from root prompt:
+
+gSystem->Load("/afs/rhic/phenix/users/enterria/install8/lib/libemcEfficiency.so");
+.includepath /afs/rhic/phenix/users/enterria/install8/include
+.includepath $OFFLINE_MAIN/include
+.L ~/afs/offline/packages/emc-embed/efficiencies/do_efficiency.C++
+loop_on_merged("eta",20,5,1);
+do_efficiency("eta",20,5,1);
+
+will produce file efficiency_eta_7percent_smear_624_1pass.root at the local /home/ dir of the rcas node.
+
+output_eff_factors("eta", 20, 5, 1, 1 );
+
+will produce emcEfficiency_eta_7percentsmear_counts.h to be compiled with emcAnalyzer
+
+gSystem->Load("~/install8/lib/libemcAnalyzer.so")
+emcAnalyzer e
+e.setEfficParticle("eta")
+e.plot_spectrum(0,20,"tof1chisq1","full")

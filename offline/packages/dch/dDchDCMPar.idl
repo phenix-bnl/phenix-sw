@@ -1,0 +1,23 @@
+/** this tabel passes to DCM operation scheme as a parameter to the module
+ mDchDCM that fills the DCM table. */ 
+
+struct dDchDCMPar 
+{
+/** scheme=0 - pass through at FPGA and DSP 
+                         scheme=1 - zero-supp at FPGA , pass @ DSP
+                         scheme=2 - zero-supp at FPGA , more at DSP */  
+        unsigned long scheme;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+

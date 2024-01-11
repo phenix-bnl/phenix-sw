@@ -1,0 +1,43 @@
+/* dEmcDCMData.idl */
+
+/* -------------  OLD VERSION
+
+struct dEmcDCMData {
+  long flag;		* dummy for now *
+  long module;		* Module number encoded *
+  long evno;		* Event number *
+  long clock;		* Beam clock *
+  long detid;		* Detector ID *
+  long timecell;	* Timing AMU cell number *
+  long precell;		* Pre AMU cell number *  
+  long postcell;	* Post AMU cell number *
+  long data[442];	* Max. size: 144*3 + 8 user words + 2 words
+			   Due to zero suppression, much of the
+			   array may remain empty
+			   If N channels fired, there are N * 3 words
+				1: channel N post
+				2: channel N pre
+				3: channel N time
+			   followed by
+				8 user words
+				1 parity word
+				1 trailer (all bits zero?)
+			*
+};
+
+------------------ END OF OLD VERSION */
+
+/** (STAF) Data as they come out of the DCM
+Using Jaime's description as of June 15, 1998
+Short format with zero suppression
+All entries are longwords (32 bit).
+Updated to new format, Aug. 28, 1998  G. David 
+@ingroup staf
+*/
+
+struct dEmcDCMData {
+   unsigned long nWords;	/* number of valid 32-bit words in array */
+   unsigned long scheme;	/* DCM formatting scheme */
+   unsigned long packetID;	/* Upper 8 bits: subsystem ID */
+   unsigned long DCM[450];	/* Contents: see above        */
+};

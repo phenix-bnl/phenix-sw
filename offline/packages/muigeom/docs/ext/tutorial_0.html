@@ -1,0 +1,119 @@
+/*! @defgroup TUT0 MuID configuration database access
+
+<center>
+<h2> How to access the Muon identifier configuration database database </h2>
+</center>
+
+<h3>Geometry</h3>
+The Muon Identifier geometry is fetched either from the geometry/calibration database or using the following five files: 
+<ul>
+<li> mui-panel-geom.dat
+<li> mui-panel-size.dat
+<li> mui-tube-geom.dat
+<li> mui-tube-size.dat
+<li> mui-fem-config.dat
+</ul> 
+
+Examples of these files can be retrieved CVS:
+\code
+cvs co -d muigeom/database offline/packages/muigeom/database
+\endcode
+
+<h3>Tube efficiencies</h3>
+The Muon Identifier tube efficiencies are calculated from the real data analysis (by counting how often a hit is found in a plane, matching a road reconstructed with the other planes), or using the current draw on the MuID High Voltage chains. These efficiencies are used in the simulations to mimic the detector performances.
+They are fetched either from the geometry/calibration database from the bank named 
+<ul>
+<li><i>calib.mui.mui.tubeeff</i></li>
+</ul>
+
+or using the following (default) files: 
+<ul>
+<li>tube_eff_north_default.txt, for the north arm MuID tube efficiencies
+<li>tube_eff_south_default.txt, for the south arm MuID tube efficiencies
+</ul>
+
+<p>To configure the way the tube efficiencies are loaded in a simulated data reconstruction macro, use the TMuiHVMask interface:
+<ul>
+<li>to load the efficiency from local files (the default), with the default names provided above, add the following line to your macro:
+\code
+TMuiHVMask::set_mode( TMuiHVMask::FROM_FILE );
+\endcode
+</li>
+<li>to specify alternative file names to be loaded add the following lines to your macro:
+\code
+  TMuiHVMask::set_filename_south( "your_south_filename" );
+  TMuiHVMask::set_filename_north( "your_north_filename" );
+\endcode
+</li>
+<li>to use a unique tube efficiency for all tubes in place of what is found either in the files or in the database, add the following lines to your macro:
+\code
+TMuiHVMask::set_mode( TMuiHVMask::FIXED_VALUE );
+TMuiHVMask::set_effic_twopack( 0.85 );
+\endcode
+(in this case a 85% efficiency is used for all tubes)<br>
+
+Alternatively (but not recommanded, and kept only for backward compatibility), you can use the following <i>recoConst</i> in your macro:
+\code
+recoConsts::instance()-set_DoubleFlag( "MUIOO_TUBE_EFF", 0.85 );
+\endcode
+</li>
+<li>to access the database add the following line to your macro:
+\code
+TMuiHVMask::set_mode( TMuiHVMask::FROM_DATABASE );
+\endcode
+</li>
+</ul>
+
+<h3>Macros</h3>
+<p>Several macros has been written to access (read/write) the muon identifier database. They are located in the <i>muigeom/database</i> directory.
+
+<p>The macros are:
+<ul>
+<li><b>writeDB.C</b>, to commit the muon identifier description from local text files to the database for a given time range. The macro must be edited to set the validity time range of the commit. The text files used for the commit must have the names provided above, and the proper format.</li>
+
+<li><b>readDB.C</b>, to read the muon identifier geometry from the database for a given time stamp and fill the corresponding local files. It can be used to check if a commit to the DB has been successfully performed. The macro must be edited to set the search time stamp.
+
+<li><b>writeTubeEff.C</b> to commit the tube efficiencies from local text files to the database for a given time range. The macro must be edited to set the validity time range of the commit and the name of the source text files.</li>
+
+<li><b>readTubeEff.C</b>, to read the muon identifier tube efficiencies from database for a given time stamp and write them to local files. It can be used to check if a commit to the DB has been successfully performed. The macro must be edited to set the search time stamp and the name of the files to which the muid efficiencies will be writen. 
+</ul>
+
+<h3>Database server</h3>
+By default, the database server used for access is not the master server and is read-only, so that users wont be able to update it. Updates of the master server must be coordinated with the offline coordinator. It implies modifying the user's <b>.odbc.ini</b> file located in the home directory. By default this file is empty (or non existing) but can be copied from the phenix setup:
+
+\code
+cp /opt/phenix/etc/odbc.ini ~
+\endcode
+<br>
+
+The lines to be changed in the file reside under the <i>[calibrarions]</i> section. The <i>Database</i> and <i>Servername</i> entries must be changed and replaced by:
+
+\code
+Database = calibrations
+Servername = phnxdb3.phenix.bnl.gov
+\endcode
+<br>
+note that these may be subject to changes in the future and is to be used in extreme care.
+
+<h3>Name of the muid database banks</h3>
+<p> The following banks are written to the database:
+<ul>
+<li><i>mapmuimui_address</i> corresponding to the file <i>mui-fem-config.dat</i></li>
+<li><i>geommuimui_size</i> corresponding to the file <i>mui-panel-size.dat</i> and <i>mui-tube-size.dat</i></li>
+<li><i>geommuimui_panel</i> corresponding to the file <i>mui-panel-geom.dat</i></li>
+<li><i>geommuimui_tube</i> corresponding to the file <i>mui-tube-geom.dat</i></li>
+</ul>
+
+<p>To check the bank records in the database for a given bank name (here <i>geommuimui_size</i>) use:
+\code 
+isql calibrations
+select  abstime(int4(startvaltime)),abstime(int4(endvaltime)),abstime(int4(inserttime)),description from geommuimui_size
+\endcode
+
+<p>To delete banks committed by mistake, use the following:
+\code
+isql calibrations
+delete from geommuimui_size where description like 'run6%'  
+\endcode
+which would delete all <i>geommuimui_size</i> records for which destription contains <i>run6</i>. Note that this requires that the database server is set to <i>phnxdb3.phenix.bnl.gov</i> as described above.
+*/

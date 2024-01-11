@@ -1,0 +1,44 @@
+#ifndef __DEMCGEACLUSTERTRACK_H__
+#define __DEMCGEACLUSTERTRACK_H__
+
+
+typedef struct {
+   int id;
+   int clusid;
+   int evno;
+   int keycent;
+   int input;
+   int type;
+   int arm;
+   int sector;
+   int trkno[3];
+   int tracktwrhit[3];
+   float edep_nom[3];
+   float pid[3];
+   float ptot[3];
+   float vertex[3][3];
+   float ancestry[3];
+   float xyz[3][3];
+   float edep[3];
+   float efrac[3];
+   float measxyz[3];
+   float mease;
+   float ecore;
+   float tof;
+   float etof;
+   float tofmin;
+   float etofmin;
+   float tofmax;
+   float etofmax;
+   int twrhit;
+   float disp[2];
+   float padisp[2];
+   float partesum[8];
+   int charged;
+   float pc3proj[3];
+   float chi2_sh;
+   float prob_photon_sh;
+   float e_sh[2];
+   float chglist[8];
+} DEMCGEACLUSTERTRACK_ST;
+#endif /*__DEMCGEACLUSTERTRACK_H__*/

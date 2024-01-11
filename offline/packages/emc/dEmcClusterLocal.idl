@@ -1,0 +1,53 @@
+/* dEmcClusterLocal.idl */
+/** (STAF) Output of the first pass (local, EMCal info only) clustering.
+This is the short output - detailed info can be found in
+dEmcClusterLocalExt.  There is one row for each cluster found.
+@ingroup staf
+\deprecated see emcClusterContainer/emcClusterContent now.
+*/
+
+struct dEmcClusterLocal {
+  short id;           	/* unique identifyer */
+  long runno;		/* run number */
+  long evno;		/* event number */
+  short clusno;		/*              */
+  short method;		/* algorithm used */
+  short type;           /* detector type: PbSc = 1, PbGl = 2 */
+  short arm;		/* West = 1, East = 2 */
+  short sector;	  	/* sector   */
+  float xyz[3];		/* Absolute Cartesian coordinates of impact */
+  float dxyz[3];	/* Estimated error in position */
+  float e;		/* Energy */
+  float ecore;		/* Energy */
+  float ecorr;		/* Energy corrected for lateral nonuniformity
+			   and att. length */
+  float de;		/* Estimated error on energy */
+  float tof;		/* TOF - flashtime in the highest E tower */
+  float ecent;		/* energy in the highest E tower */
+  float tofcorr;	/* TOF - flashtime slew corrected assuming
+			   it is a photon */
+  float dtof;		/* Estimated error on TOF */
+  float qual;		/* cluster quality (0-1), 1 means "perfect" */
+  float pid;		/* guess of particle ID */
+  float prob_photon;    /* Probability it is a photon */
+  float prob_neuhad;    /* Probability it is a neutral hadron */
+  float chi2;		/* chi2 of fit (IHEP) */
+
+/** Fields concerning 3d clustering level (EMShower) */
+
+  short nsh;
+  float chi2_sh;
+  float prob_photon_sh;
+  float e_sh[2];
+  float ecorr_sh[2];
+  float de_sh[2];
+  float xyz_sh[2][3];
+  float dxyz_sh[2][3];
+};
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+/** dDchHit.idl */
+
+/** Contains information about reconstructed DC hits. */
+
+struct dDchHit {
+/** a primary reference key */
+  short id;              
+/** arm number. 0=west, 1=east */
+  short arm;             
+/** plane number (0-39) */
+  short plane;           
+/** cell number (0-79) */
+  short cell;            
+/** z-sign. 0=south, 1=north */
+  short side;            
+/** distance of hit from wire in cm */
+  float distance;        
+/** width of the hit in time bins */
+  float width;
+  long time1;
+  long time2;           
+/** id of leading edge raw data hit */
+  short idraw1;          
+/** id of trailing edge raw data hit */
+  short idraw2;          
+/** id of hit if ambigous copy exists */
+  short idmirror;        
+/** hit used in track */
+  short used;            
+/** base point of line, point on track */
+  float xyz[3];          
+/** error of base point */
+  float err[3];          
+/** direction of line */
+  float vxyz[3];         
+};

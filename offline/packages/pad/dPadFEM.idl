@@ -1,0 +1,30 @@
+
+/* This file has been copied from dDchFEM.idl */
+
+struct dPadFEM {
+  /*  Here is the header for a Pad FEM report:  		*/
+  long CAV1;         /* Beginning of transmission (000FFFFF) 	*/
+  long det;          /* Detector ID 				*/
+  long Ecounter;     /* Event count 				*/
+  long adr;          /* HEX: Module address 			*/
+  long Flag;	     /* UserWord loaded from ArcNet 		*/
+  long Bcounter;     /* LS 8 bits = beam clock counter when trigger occured */
+
+  /*  Here is the block of RAW FEM DATA WORDS 			*/
+  long Word[117];    /* Block of RAW FEM data 			*/
+
+  /*  Here is the trailer for the Drift Chamber FEM report:  	*/
+  long usr1;         /* 1st user word loaded from ArcNet	*/
+  long usr2;         /* 2nd user word loaded from ArcNet	*/
+  long usr3;         /* 3rd user word - DC FEM status word	*/
+  long usr4;         /* 4th user word - all 0's			*/
+  long usr5;         /* */
+  long usr6;         /* */
+  long usr7;         /* */
+  long usr8;         /* */
+  long parity;       /* Parity word 				*/
+  long CAV2;         /* End of transmission (00000000) 		*/
+};
+
+
+

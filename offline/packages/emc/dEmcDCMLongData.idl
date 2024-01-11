@@ -1,0 +1,15 @@
+/* dEmcDCMData.idl */
+
+/** (STAF) Data as they come out of the DCM
+ in IDPBSC_DCM32 format, also called
+ long format.
+ @ingroup staf
+*/
+
+struct dEmcDCMLongData {
+   unsigned long nWords;	/* number of valid 32-bit words in array */
+   unsigned long scheme;	/* DCM formatting scheme */
+   unsigned long packetID;	/* Upper 8 bits: subsystem ID */
+   unsigned long DCM[979];	/* IDPBSC_DCM32 Formatted Data */
+};
+

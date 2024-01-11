@@ -1,0 +1,25 @@
+//
+//
+//
+// pi0 production at 200 GeV from Ina Sarcevic:
+// *.data files at /home/enterria/wrk/pQCD/revdataRHIC with labeling:
+// PionRHIC200(Shadow)(EnergyLoss)(Scale factor)
+//  Shadow: PP, EKS
+//  EnergyLoss: NoLoss, Loss0.3,0.5,1.0
+//  Scale factor: QF1.0  (scales set to p_T) or QF2.0 (scales set to 2p_T)
+
+//  *.data file is in the format (pt, Ed^Bsigma/d^3p, K factor, AA/pp)
+// invariant cross section integrated over
+// 1 unit of rapidity.  Units are pb/GeV^2 for all files
+// except once that are labeled *.data_AA, those are in
+// mb/pb^2. 
+
+//  For instance, PionRHIC200EKSLoss0.3QF1.0.data
+//  means it's pi0 calculation at 200 GeV with EKS shadowing with
+//  eps=0.3GeV and Q = 1.0 pt.
+
+//  We use MRS99 structure functions and BKK (Binnewies, Kniehl and
+//  Kramer) fragmentation functions.
+
+//  Files that end with *.data_AA* are original multiplied by number of
+//  collisions that you sent us.

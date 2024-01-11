@@ -1,0 +1,19 @@
+18-JUN-2001
+ EmcDynamicData.C  
+ EmcDynamicData.h  
+ Makefile.am       
+ emcConfigurationFile.C    
+ emcDataObject.C   
+ emcRawDataObject.C        
+ emcRawDataTester.C        
+	
+	First bunch of mods to compile on Solaris7. Not really finished yet.
+	
+ emcRawDataAccessor.C      
+ emcRawDataAccessor.h 
+     	
+	As above + changed FEM limits
+
+ emcEventGlobal*
+
+	Removed, as those are used nowhere.

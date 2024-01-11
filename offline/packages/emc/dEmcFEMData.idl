@@ -1,0 +1,29 @@
+/* dEmcFEMData.idl */
+/** (STAF) Data as they come out of the FEE.
+Using Jaime's description as of June 15, 1998.
+"Full" format - all channels have Hi/Lo Pre/Post info.
+G. David 
+@ingroup staf
+*/
+
+struct dEmcFEMData {
+  short header;         /* 0xFFFF (all bits on) */
+  short detid;          /* 8 for now */
+  short evno;		/* event number (take care of overflow!) */
+  short module;		/* serial number of input (merge!) */
+  short flag;		/* dummy */
+  short clock;		/* Last 8 bits of beam clock */
+  short timecell;	/* Timing AMU cell number */
+  short precell;	/* Pre AMU cell number */
+  short postcell;	/* Post AMU cell number */
+  short data[720];	/* 144 x 5 words
+				 1: Channel n timing
+				 2: Channel n HiGain Post Sample
+				 3: Channel n LoGain Post Sample
+				 4: Channel n HiGain Pre Sample
+				 5: Channel n LoGain Pre Sample 
+			*/
+  short userword[8];	/* 8 user-defined words - empty for now */
+  short longparity;     /* longitudinal parity */
+  short trailer;	/* 0x0000 (all bits off) */
+};

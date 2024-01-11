@@ -1,0 +1,13 @@
+2.67 0.47 0.08 
+2.82 0.34 0.10 
+3.00 0.50 0.10 
+3.45 0.49 0.09
+
+
+ANTILLE 87 PL 194B,568 
+M IN GEV 24.3 
+RE(Q=P-P PI0) P P --> PI0 X 
+RE(Q=P-P ETA) P P --> ETA X 
+x = PT(P=3,RF=CM) IN GEV 
+y = SIG(Q=P-PETA)/SIG(P-P PI0) 
+x y +- dy 

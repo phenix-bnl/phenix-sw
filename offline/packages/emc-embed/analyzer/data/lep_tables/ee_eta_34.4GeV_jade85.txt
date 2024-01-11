@@ -1,0 +1,14 @@
+    0.047    0.0              2.81           1.16    1.6
+    0.071    0.0              1.24           0.41    0.3
+    0.181    0.0              0.23           0.07    0.04
+
+
+   EXPeriment = DESY-PETRA-JADE
+   sqrt(s)    = 34.4 GeV
+   Author     = Bartel et al
+   REFerence  = Zeit. Phys. C28 (1985) 343
+
+
+      xE         (s/beta) dsig/dxE       errors
+                   (mub GeV**2)       stat.   sys.
+

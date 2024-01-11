@@ -1,0 +1,182 @@
+
+ Here's a short tutorial on how to compute pi-zero efficiencies
+ from the embedded file(s).
+ _____________________________________________________________________________
+ _____________________________________________________________________________
+
+
+ It's a 3 step process :
+
+ 1. We loop over embedded events and fill some histograms 
+    for each defined analysis cut, and for each centrality
+    class (plus minbias). Basically some Minv versus pT histograms for merged 
+    cluster pairs, both for simulated input and for merged output.
+
+ 2. We reopen the file containing those histograms, and we make the relevant
+    projections in pT bins, extract the pi0 peak position and width, and then compute
+    the efficiencies.
+
+ 3. We output the efficiency correction factors (4-parameters fit of eff. vs. pT):
+    eff(pT) = [0]+[1]*x+[2]*x*x+[3]*log(x)+[4]*log(x)*log(x), for each cut and centrality class
+    in the form of a LaTeX table, ascii file or usual inv. mass plots.
+
+
+ Those 3 steps are correlated with the opening mode of the efficiency file:
+
+ 1) "RECREATE" (default): 1st step --> produce efficiency bi-dim histos
+ 2) "UPDATE"            : 2nd step --> compute efficiencies
+ 3) "READ"              : 3rd step --> output efficiency factors, plots, tables
+
+
+ Take a look at the macro do_efficiency.C to see a practical example of how 
+ things are run.
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+ From ROOT prompt, type:
+
+gSystem->Load("libemcEfficiency.so");
+
+// Create an efficiency object for the corresponding RUN ( = 1,2 )
+// Action: Calls defaultCentralityClasses(), defaultHagWeightPerCentrality(), defineCutNames()
+
+emcEfficiency eff(2); // RUN-2 is default
+
+// Open output file in RECREATE mode (default)
+// Action: Books all necessary histos (General and per CentClass and Cut)
+
+eff.openEfficiencyFile("efficiency.root");
+
+// Open input embed+eval file
+// Action: Creates node structure for reading GeaTrack and ClusterTrack tables
+
+eff.openEmbedFile("embedded.root");
+
+_____________________________________________________________________________
+
+// STEP 1 : Loop over all input events
+// Actions: Retrieves GeaTrack and ClusterTrack tables per event. 
+//          Calls pi0_reconstruction(): getInitialParticleInfo()   [ PbSc-only selection here ] + 
+// 					getListOfMergedParticles() [ fill of fListOfMergedParticles with effParticle(s) ]+ 
+//					minvMergedParticles()      [ passCuts(*pair), fill(*pair) ]
+//					reset()
+
+eff.run();  
+
+// Close both output and input
+// Actions: closeEmbedFile() + closeEfficiencyFile()
+
+eff.close();
+_____________________________________________________________________________
+
+// STEP 2 : Now compute the efficiencies
+//          You do not have to specify again the efficiency
+//          file if this is the same ROOT session.
+// Actions: readEfficiencyFile() + defineCutNames() + calls efficiency(cut,centIndex,normalization);
+
+eff.efficiency_all_cuts();
+
+_____________________________________________________________________________
+
+// STEP 3: Now output all the efficiency correction factors
+//         for a given cut.
+
+eff.outputFinalEfficiencyFactors("mycut");
+
+// Now you can copy&paste the std'out factors into the code which corrects the raw pi0 yield spectra
+// or better yet:
+std::ofstream fileout("my_correction_factors.h");
+eff.outputFinalEfficiencyFactors("mycut",fileout);
+
+// We can also output the factors in a (LaTeX/ascii) table form
+eff.table(cout,"NoCut",0,false); // Eff. factors for "NoCut", centclass == "C0", output == ascii
+
+// Or produce a typical "gaussian signal plus linear backgd." inv. mass plots
+eff.subtractLikePlot(1.5,"FiduCut",0);//
+
+ _____________________________________________________________________________
+ _____________________________________________________________________________
+
+
+ Here's a variant, reading sequentially 2 (or N) merged files, the output going into
+ one single efficiency file
+
+gSystem->Load("libemcEfficiency.so");
+emcEfficiency eff; 
+eff.openEfficiencyFile("efficiency.root");
+
+// First step:
+
+eff.openEmbedFile("embedded1.root"); // open 1st file
+eff.run(); // loop on 1st file
+eff.closeEmbedFile(); // close 1st file
+eff.openEmbedFile("embedded2.root"); // open 2nd file
+eff.run(); // loop on 2nd file
+// ...
+eff.openEmbedFile("embeddedN.root"); // open N file
+eff.run(); // loop on N file
+
+// 2nd step:
+
+eff.efficiency_all_cuts(); // Compute efficiencies
+
+// 3rd step:
+
+eff.outputFinalEfficiencyFactors("ToF1Cut"); // Cout eff. factors for "ToF1Cut" in "code"-like mode
+eff.table(cout,"NoCut",0,false);             // Cout eff. factors for "NoCut", centclass == "C0", output == ascii
+eff.subtractLikePlot(10,"FiduCut",0);        // Produce inv. mass plot for pT = 5 GeV/c bin, "FiduCut" and centclass == "C0"
+
+
+eff.close(); // close all files (input and output)
+
+ _____________________________________________________________________________
+ _____________________________________________________________________________
+
+ Finally, note that you can run the 3 steps in 3 different ROOT sessions
+
+ >root
+
+gSystem->Load("libemcEfficiency.so");
+emcEfficiency eff; 
+
+eff.openEfficiencyFile("efficiency.root"); // opened in "RECREATE" mode
+eff.openEmbedFile("embedded.root");
+
+eff.run();
+.q // it's not unsafe to quit before closing as the emcEfficiency destructor will
+   // do it for you.
+
+ At this stage, the efficiency.root file will have empty efficiency histograms,
+ but all the needed histograms to fill them will be there (e.g. the pT binned
+ minv spectra of both input pi0-zero and output clusters).
+
+ Then, restart ROOT:
+
+ >root
+
+gSystem->Load("libemcEfficiency.so");
+emcEfficiency e;
+
+e.openEfficiencyFile("efficiency.root","UPDATE");
+e.setVerbose(1); // to see a little bit what's going on
+
+e.efficiency_all_cuts();
+
+.q
+
+ Again, restart ROOT:
+
+ >root
+
+gSystem->Load("libemcEfficiency.so");
+emcEfficiency e;
+
+e.readEfficiencyFile("efficiency.root"); // opened in "READ" mode
+
+e.outputFinalEfficiencyFactors("mycut"); // to c-out
+// or
+std::ofstream fileout("mycorrection_factors.h");
+e.outputFinalEfficiencyFactors("mycut","counts",fileout);
+e.outputFinalEfficiencyFactors_all_cuts("counts",fileout);
+.q

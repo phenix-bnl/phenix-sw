@@ -1,0 +1,12 @@
+
+/* Structure for padDCM 						*/
+/* Words are now 32 bits long						*/
+/* Comments removed because 'stic' fails ... (??). See module for full	*/
+/* comment ..								*/
+
+struct dPadDCM {
+ unsigned long Word[132]	;	/* All words in unique "squishable" array */
+};
+
+
+

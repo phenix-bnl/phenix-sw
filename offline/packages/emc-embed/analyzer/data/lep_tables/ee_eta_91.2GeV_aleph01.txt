@@ -1,0 +1,15 @@
+0.10 0.15 2.471 0.195 0.363 
+0.15 0.20 1.506 0.084 0.154 
+0.20 0.30 0.802 0.028 0.047 
+0.30 0.50 0.306 0.007 0.016 
+0.50 1.00 0.029 0.001 0.002 
+
+
+HEISTER 01 PL B528,19 
+Production rate and differential cross sections for the ETA 
+RE(Q=HAD) E+ E- --&gt; HADRONS RE(Q=ETA) 
+E+ E- --&gt; ETA X 
+SQRT(S) IN GEV 91.2 
+x = X(DEF=P(P=3)/P(P=1)) 
+y = (1/SIG(Q=HAD))*D(SIG(Q=ETA))/DX 
+x1 TO x2 y +- dy +- dsys 

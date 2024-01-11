@@ -1,0 +1,26 @@
+/* dEmcCalibTower.idl */
+
+/** (STAF) These are the calibrated (and corrected) data for the towers.
+There is one row (entry) for each tower that fired.
+In further processing this structure relies heavily on the software DB.
+Put in arm and sector numbers explicitely to make clustering more eff. 
+\deprecated This used to be our storage object for towers in DSTs. New objects are emcTowerContainer/emcTowerContent.
+@ingroup staf
+*/
+
+struct dEmcCalibTower {
+  short id;           	/* unique identifyer - currently serial number */
+  long hwkey;		/* hardware key  --  to search software database */
+  long swkey;		/* software key  --  to search software database */
+  short type;           /* detector type: PbSc = 1, PbGl = 2 */
+  short arm;		/* West = 0 - East = 1 */
+  short sector;	  	/* sector number: 0,1,2,3 (West) - 3,2,1,0 (East) */
+  short ind[2];		/* Sector array indices: PbSc(x,y) = 72*36, or PbGl(x,y) = 96*48 */
+  float ecal;		/* calibrated energy (GeV) */
+/** TOF is the measured time - the time it would take for a photon
+    to fly from the actual vertex to the impact point on the
+    calorimeter
+*/
+  float tof;		/* calibrated time - flashtime (ns) */
+
+};

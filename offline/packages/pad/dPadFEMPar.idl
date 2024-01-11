@@ -1,0 +1,24 @@
+/* dPadFEMPar.idl */
+
+/* This tructure is required to pass parameters to the mPadFEM module */
+/* Debug level detail -->						*/
+
+struct dPadFEMPar {
+  short pcnumber	;	/* select PC1, 2, or 3 (0,1, or 2) 	*/
+  short mode		;	/* Unpack=1 pack=0			*/
+  short	debug		;	/* Debug level 0=none max is 4	  	*/
+  short	fout		;	/* 0 to screen, 1 to file		*/
+  short skipg		;	/* Skip Geant hit association		*/
+
+  unsigned long	last	;	/* LastDcmWord				*/
+
+};
+
+
+/*  > 0 reports errors on dimension					*/
+/*  > 1 general param and program execution info			*/
+/*  > 2 mild processing info for real debug (like reverse checks)	*/
+/*  > 3 heavy debug print-out						*/
+/*  > 4 (heavy as well) but checked and fine. Re-enable only if in doubt*/
+/* fout=1 will output level >2+ to a file named				*/
+/* padfem_$pcnum.tmp or padunpack_$pcnum.tmp				*/

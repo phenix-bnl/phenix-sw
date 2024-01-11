@@ -1,0 +1,11 @@
+2.8 0.52 0.03 
+4.0 0.59 0.08
+
+
+AKESSON 85 PL 158B,282 
+RE(Q=PI0) PBAR P --> PI0 X RE(Q=ETA) 
+PBAR P --> ETA X 
+M IN GEV 53. 
+x = PT(P=3,RF=CM) 
+y = SIG(Q=ETA)/SIG(Q=PI0) 
+x y +- dy

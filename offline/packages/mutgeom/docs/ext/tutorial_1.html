@@ -1,0 +1,98 @@
+/*! @defgroup TUT1 How to use local files in place of the database for the muon tracker configuration
+
+<h3>Introduction</h3>
+<p>The Muon Tracker configuration is loaded at initialization stage of each job. The configuration can be either retrieved from local files of from the <i>calibrations</i> database. By default the configuration is retrieved from the database, and depends on the run number that is being processed. However some work may require to load different configurations <i>manually</i> that have not been commited to the database.
+
+<p>This tutorial describes how to use either local files or default values retrieved from the database. It covers the following configurations:
+
+<ul>
+<li><b>the muon tracker internal alignment</b>: it allows to align each octant, half-octant, gap and plane, and should (in principle) be done only once, since the different gaps of the same octant are fixed one with respect to the other</li>
+<li><b>the muon tracker global alignment</b>: it allows to align all octants independently, but keeping its constituent gaps/planes fixed one with respect to the other. It should in principle be performed every time the muon tracker is moved.</li>
+<li><b>the muon tracker list of disabled high voltage channels</b>: this list corresponds to tripped HV modules during data taking and can be different for each run.</li>
+<li><b>the muon tracker list of disabled high voltage wires</b>: this list corresponds to permanently disabled individual anode wires that cannot be identified as tripped HV modules (by the HV log parsing script) and must therefore be set manually.</li>
+</ul>
+
+Note: even though a distinction was historically made between internal and global alignment, practically all alignment corrections that have been performed so far was only applied as <i>internal</i>.
+
+<h3>Using local configurations</h3>
+
+The default local file names are:
+<ul>
+<li><i>mut.globalAligConsts.dat</i> for the global alignment constants. To load the file in place of the database global alignment, add the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_database_access("use_local_global_align_file",true);
+\endcode
+
+An alternative filename for the global alignment constants can be specified by adding the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_filename("use_local_global_align_file", "your_filename");
+\endcode
+
+<li> <i>mut.internalAligConsts.dat</i> for the internal alignment constants. To load the file in place of the database internal alignment, add the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_database_access("use_local_internal_align_file",true);
+\endcode
+
+An alternative filename for the internal alignment constants can be specified by adding the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_filename("use_local_internal_align_file", "your_filename");
+\endcode
+</li>
+
+<li> <i>mut.disabledAnodes.dat</i> for the list of disabled HV channels. To load the file in place of the database list, add the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_database_access("use_local_dead_HV_file",true);
+\endcode
+
+An alternative filename for the list of disabled HV channels can be specified by adding the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_filename("use_local_dead_HV_file", "your_filename");
+\endcode
+
+To switch off completely the reading of the disabled HV channels and thus consider that all channels are active, add the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_database_access("disable_HV",false);
+\endcode
+
+
+<li> <i>mut.disabledWires.dat</i> for the list of disabled anode wires. To load the file in place of the database list, add the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_database_access("use_local_dead_wire_file",true);
+\endcode
+
+An alternative filename for the list of disabled HV wires can be specified by adding the following line to your macro:
+
+\code
+TMutDatabaseCntrl::set_filename("use_local_dead_wire_file", "your_filename");
+\endcode
+
+</li>
+
+</ul>
+
+<p><b>Remarks</b>:
+
+<p>Using alternative names for the configuration files is possible only for recent enough libraries. If this fails, just give your configuration files the <i>default</i> names provided above.
+
+<p>The procedure above concerns only the Muon Tracker (MuTR). The use of local filenames in place of the database for the Muon Identifier (MuID) is a different procedure described elsewhere.
+
+<h3>Default values</h3>
+
+<p>By default, the Database configurations are used and no specific setup is needed in the reconstruction macro. This corresponds to the following setup for the <i>TMutDatabaseCntrl</i> class:
+
+\code
+TMutDatabaseCntrl::set_database_access("disable_HV",true);
+TMutDatabaseCntrl::set_database_access("use_local_dead_HV_file",false);
+TMutDatabaseCntrl::set_database_access("use_local_global_align_file",false);
+TMutDatabaseCntrl::set_database_access("use_local_internal_align_file",false);
+\endcode
+
+*/

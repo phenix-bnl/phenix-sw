@@ -1,0 +1,100 @@
+#!/usr/local/bin/tcsh -f
+#
+# Batch job script
+#
+
+#set QUEUE_NAME = "sim_short"
+set QUEUE_NAME = "phenix_cas"
+
+setenv OFFLINE_MAIN @_OFFLINE_MAIN_@
+source /opt/phenix/bin/phenix_setup.csh
+setenv LD_LIBRARY_PATH @_prefix_@/lib:${LD_LIBRARY_PATH}
+set MERGE_CSH = "@_prefix_@/libexec/merge.csh"
+
+###############################################################
+#
+if( $# != 6 ) then
+    echo "usage : $0 merge_prog listfile out.root start end step "
+    exit
+endif
+set MERGE_PROG = $1
+set INFO_FILE  = $2
+set OUTFILE    = $3
+@ START        = $4
+@ END          = $5
+@ STEP          = $6
+if( -r ${INFO_FILE} ) then
+	echo " merge_all.csh:: File name of DST list is "${INFO_FILE}
+else
+	echo " Can't open the DST list file: "${INFO_FILE}
+	exit
+endif
+
+set MERGE_ALL_LIST = "tmp_merge_all.list"
+set TMP_DIR = "tmp_merge"
+###############################################################
+echo -n " merge_all.csh:: Create batch("$INFO_FILE") (min,max) = ("${START}","${END}")? :(y,n) "
+set ans = $<
+if( $ans == 'n' ) then
+    echo " merge_all.csh::     ...................Skiped... "
+    exit
+endif
+
+###############################################################
+
+set ans = y
+if( -e ${TMP_DIR} ) then
+    echo -n " merge_all.csh:: Delete ${TMP_DIR} directory ([y]/n) ? "
+    set ans = $<
+    if( ${ans} == n ) then
+	echo " merge_all.csh:: Sorry can't work without delete ${TMP_DIR} "
+	exit
+    endif
+    rm -fR ${TMP_DIR}
+endif
+mkdir -p ${TMP_DIR}
+cp ${INFO_FILE} ${TMP_DIR}
+cp ${MERGE_CSH} ${TMP_DIR}
+echo " merge_all.csh:: cd ${TMP_DIR} "
+cd ${TMP_DIR}
+rm -f ${MERGE_ALL_LIST}
+touch ${MERGE_ALL_LIST}
+set JOBLIST = ""
+@ njob = 0
+
+@ num = $START
+while( $num <= $END )
+    @ numend = $num + $STEP - 1
+    if( $numend > $END ) then
+	@ numend = $END
+    endif
+    #######################################
+    echo " merge_all.csh:: -------------------------------------------------------------------------------------------- "
+    set TMPFILE = tmp_${OUTFILE}_${num}_${numend}
+    echo ${TMP_DIR}/${TMPFILE} >> ${MERGE_ALL_LIST}
+    set JOBNAME = "sub${num}"
+    if( ${JOBLIST} == "" ) then
+	set JOBLIST = "ended("\"${JOBNAME}\"")"
+    else
+	set JOBLIST = "${JOBLIST}&&ended("\"${JOBNAME}\"")"
+    endif
+    echo bsub -r -J ${JOBNAME} -q ${QUEUE_NAME} -o tmp_log.${num} ${MERGE_CSH} ${MERGE_PROG} ${INFO_FILE} ${TMPFILE} ${num} ${numend}
+    bsub -r -J ${JOBNAME} -q ${QUEUE_NAME} -o tmp_log.${num} ${MERGE_CSH} ${MERGE_PROG} ${INFO_FILE} ${TMPFILE} ${num} ${numend}
+    @ njob = ${njob} + 1
+    echo " merge_all.csh:: -------------------------------------------------------------------------------------------- "
+    #######################################
+    @ num = $numend + 1
+end
+cd ../
+
+
+echo " merge_all.csh:: -------------------------------------------------------------------------------------------- "
+echo " merge_all.csh:: Submitting...  summary job. "
+set JOBNAME = "all"
+echo bsub -r -J ${JOBNAME} -q ${QUEUE_NAME} -w ${JOBLIST} -o ${TMP_DIR}/tmp_log.all ${MERGE_CSH} ${MERGE_PROG} ${TMP_DIR}/${MERGE_ALL_LIST} ${OUTFILE}
+bsub -r -J ${JOBNAME} -q ${QUEUE_NAME} -w ${JOBLIST} -o ${TMP_DIR}/tmp_log.all ${MERGE_CSH} ${MERGE_PROG} ${TMP_DIR}/${MERGE_ALL_LIST} ${OUTFILE}
+echo " merge_all.csh:: -------------------------------------------------------------------------------------------- "
+
+
+#bsub -r -J ${JOBNAME} -q ${QUEUE_NAME} -w ${JOBLIST} -o ${TMP_DIR}/tmp_log.all root -l -q -b ${MERGE_CC}\(\"${TMP_DIR}/${MERGE_ALL_LIST}\",\"${OUTFILE}\"\)
+#bsub -r -J ${JOBNAME} -q ${QUEUE_NAME} -w ${JOBLIST} -o ${TMP_DIR}/tmp_log.all touch ${OUTFILE}

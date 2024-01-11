@@ -1,0 +1,23 @@
+/* dEmcRawData.idl */
+
+/** (STAF) There is one row for each tower that fired. Both the pre- and post-sample 
+* are written out.  Low or high gain is encoded into the ADC value 
+* At this point the raw data use heavily the hardware database 
+* The field hwkey (not fully specified yet) is geared towards easy search 
+* (identification) form the hardware point of view 
+@ingroup staf
+*/
+
+struct dEmcRawData {
+  short id;           	/* unique identifyer of the entry */
+  long evno;		/* event number */
+  long hwkey;		/* hardware key  --  to search hardware database */
+  long swkey;		/* software key  --  may be zero */
+  short type;           /* detector type: PbSc = 1, PbGl = 2 */
+  short adclopre;	/* ADC low pre-sample */
+  short adclopost;	/* ADC low post-sample */
+  short adchipre;	/* ADC high pre-sample */
+  short adchipost;	/* ADC high post-sample */
+  short tdc;		/* TDC readout */
+
+};

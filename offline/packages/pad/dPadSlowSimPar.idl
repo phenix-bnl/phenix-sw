@@ -1,0 +1,11 @@
+/* dPadSlowSimPar.idl */
+
+/* Contains the user control parameters for the PC electronics simulation */
+
+struct dPadSlowSimPar {
+  short verbose;          /* set for debug printing to the screen */
+  short pcnumber;         /* select PC1, 2, or 3 (0,1, or 2) */
+  long  randseed[3];      /* random number seed */
+  float qnoise[3];        /* average noise charge on each pad */
+  float threshold[3];     /* charge threshold for a pad to fire */
+};

@@ -1,0 +1,14 @@
+/* dPadEval.idl */
+
+/* Contains information about evaluated PC reconstructed clusters. */
+
+struct dPadEval {
+  short id;              /* a primary reference key */
+  short clusid;          /* pointer to pcCluster.id */
+  short ghitid;          /* pointer to pcghit.id */
+  float deltax;          /* difference in x (rec-gen) */
+  float deltaz;          /* difference in z (rec-gen) */
+  float deltar;          /* difference in r (rec-gen) */
+  short nhits;           /* number of GEANT hits in cluster */
+  short type;            /* cluster type */
+};

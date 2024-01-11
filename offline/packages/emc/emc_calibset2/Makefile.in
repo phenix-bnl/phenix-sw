@@ -1,0 +1,546 @@
+# Makefile.in generated automatically by automake 1.4a from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_STRIP_FLAG =
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AMTARFLAGS = @AMTARFLAGS@
+AS = @AS@
+AWK = @AWK@
+CC = @CC@
+CXX = @CXX@
+DLLTOOL = @DLLTOOL@
+EXEEXT = @EXEEXT@
+FILE = @FILE@
+LD = @LD@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+NM = @NM@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+OFFLINE_MAIN = @OFFLINE_MAIN@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+ROOTLIBS = @ROOTLIBS@
+ROOTSYS = @ROOTSYS@
+STRIP = @STRIP@
+VERSION = @VERSION@
+deplibs_check_method = @deplibs_check_method@
+file_magic_cmd = @file_magic_cmd@
+install_sh = @install_sh@
+reload_flag = @reload_flag@
+with_gcc = @with_gcc@
+with_gnu_ld = @with_gnu_ld@
+
+####################################################################
+#
+# Makefile
+#
+####################################################################
+
+
+AUTOMAKE_OPTIONS = foreign
+lib_LTLIBRARIES = libemc_calibset2.la
+INCLUDES = -I$(srcdir) -I$(includedir) @INCLUDES@
+
+###########################################################################
+ROOT_SRCS = Hist.cc Hist_hoge.cc Hist_ass.cc Hist_ele.cc \
+			Hist_mip.cc Hist_miptwr.cc Hist_miptwr2.cc Hist_trig.cc Hist_eqa.cc \
+			CalibObj.cc SumupTH.cc TH0Xch.cc TH1Xch.cc TH2Xch.cc TH0Xrun.cc \
+			CalibRuns.cc CalibRunsTH0.cc CalibRunsTH1.cc CalibRunsTH2.cc \
+			EmcCalibrator.cc EmcCalibratorMIP.cc EmcCalibratorTOF.cc \
+			EmcCalibratorTOFObj.cc EmcCalibratorTOFBBC.cc EmcCalibratorTOFMIP.cc \
+			EmcCalibratorQA.cc EmcCalibratorQArun.cc EmcCalibratorTOFPed.cc \
+			clust_calib.cc clust_calib_merge.cc clust_calib_ana.cc \
+			trk_ass.cc trk_ass_merge.cc trk_ass_ana.cc \
+			trk_ass_trig.cc trk_ass_trig_merge.cc \
+			clust_scan.cc clust_tofread.cc hoge.cc Tpoint.cc \
+			txt2ntuple.cc
+
+
+###Hist_pi0.cc HClustPair.cc 
+
+LIB_SRCS = 
+###########################################################################
+
+libemc_calibset2_la_SOURCES = $(ROOT_SRCS) $(LIB_SRCS)
+libemc_calibset2_la_LIBADD = $(ROOT_SRCS:.cc=_Dict.lo)
+BUILT_SOURCES = $(ROOT_SRCS:.cc=_Dict.cc)
+include_HEADERS = $(ROOT_SRCS:.cc=.hh) $(LIB_SRCS:.cc=.hh)
+CLEANFILES = $(ROOT_SRCS:.cc=_Dict.cc) $(ROOT_SRCS:.cc=_Dict.hh)
+EXTRA_DIST = $(ROOT_SRCS:.cc=_LinkDef.hh) autogen.sh \
+				main_scan.cc main_clust_calib.cc \
+				Hist_ass_ana.cc Hist_ass_ana2.cc Hist_mip_ana.cc \
+				main_trk_ass.cc trk_ass_trig_run.cc trk_ass_trig_run.csh.in \
+				trk_ass_dst.csh.in trk_ass_run2tree.csh.in trk_ass_ana.csh.in \
+				clust_calib_dst.csh.in clust_calib_run2tree.csh.in clust_calib_ana.csh.in \
+				merge.csh.in merge_all.csh.in \
+				emc_calib_dst.csh.in emc_calib_run2tree.csh.in emc_calib_ana.csh.in \
+				emc_calib_merge.csh.in emc_calib_merge_all.csh.in \
+				clust_calib_cmd.cc \
+				qatwr_sectall011027 emcRejectList.dat emcRejectList_run011113.dat emcRejectList_run011212.dat \
+				Convert_Table.cc
+
+
+bin_SCRIPTS = emc_calib_dst.csh emc_calib_run2tree.csh emc_calib_ana.csh \
+				emc_calib_merge.csh emc_calib_merge_all.csh
+
+
+#trk_ass_dst.csh trk_ass_run2tree.csh trk_ass_ana.csh \
+#clust_calib_dst.csh clust_calib_run2tree.csh clust_calib_ana.csh \
+#merge.csh merge_all.csh \
+
+LIBOBJS = $(ROOT_SRCS:.cc=.o) $(BUILD_SOURCES:.cc=.o) $(LIB_SRCS:.cc=.o)
+LTLIBOBJS = $(LTBOBJS)
+
+########################################################################
+# This is standard header of script file.
+####################################
+#setenv OFFLINE_MAIN @_OFFLINE_MAIN_@
+#source /opt/phenix/bin/phenix_setup.csh
+#setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:@_prefix_@/lib
+###########################################################################
+#
+#
+# For instant check in development
+#
+#
+###########################################################################
+TRK_ASS = main_trk_ass
+TRK_ASSSRC = $(TRK_ASS).cc
+TRK_ASSOBJ = $(TRK_ASSSRC:.cc=.o)
+###########################################################################
+MAIN_SCAN = main_scan
+MAIN_SCANSRC = $(MAIN_SCAN).cc
+MAIN_SCANOBJ = $(MAIN_SCANSRC:.cc=.o)
+###########################################################################
+MAIN_CLUST_CALIB = main_clust_calib
+MAIN_CLUST_CALIBSRC = $(MAIN_CLUST_CALIB).cc
+MAIN_CLUST_CALIBOBJ = $(MAIN_CLUST_CALIBSRC:.cc=.o)
+subdir = emc_calibset2
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(lib_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) 
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+libemc_calibset2_la_LDFLAGS = 
+libemc_calibset2_la_DEPENDENCIES =  Hist_Dict.lo Hist_hoge_Dict.lo \
+Hist_ass_Dict.lo Hist_ele_Dict.lo Hist_mip_Dict.lo Hist_miptwr_Dict.lo \
+Hist_miptwr2_Dict.lo Hist_trig_Dict.lo Hist_eqa_Dict.lo \
+CalibObj_Dict.lo SumupTH_Dict.lo TH0Xch_Dict.lo TH1Xch_Dict.lo \
+TH2Xch_Dict.lo TH0Xrun_Dict.lo CalibRuns_Dict.lo CalibRunsTH0_Dict.lo \
+CalibRunsTH1_Dict.lo CalibRunsTH2_Dict.lo EmcCalibrator_Dict.lo \
+EmcCalibratorMIP_Dict.lo EmcCalibratorTOF_Dict.lo \
+EmcCalibratorTOFObj_Dict.lo EmcCalibratorTOFBBC_Dict.lo \
+EmcCalibratorTOFMIP_Dict.lo EmcCalibratorQA_Dict.lo \
+EmcCalibratorQArun_Dict.lo EmcCalibratorTOFPed_Dict.lo \
+clust_calib_Dict.lo clust_calib_merge_Dict.lo clust_calib_ana_Dict.lo \
+trk_ass_Dict.lo trk_ass_merge_Dict.lo trk_ass_ana_Dict.lo \
+trk_ass_trig_Dict.lo trk_ass_trig_merge_Dict.lo clust_scan_Dict.lo \
+clust_tofread_Dict.lo hoge_Dict.lo Tpoint_Dict.lo txt2ntuple_Dict.lo
+am_libemc_calibset2_la_OBJECTS =  Hist.lo Hist_hoge.lo Hist_ass.lo \
+Hist_ele.lo Hist_mip.lo Hist_miptwr.lo Hist_miptwr2.lo Hist_trig.lo \
+Hist_eqa.lo CalibObj.lo SumupTH.lo TH0Xch.lo TH1Xch.lo TH2Xch.lo \
+TH0Xrun.lo CalibRuns.lo CalibRunsTH0.lo CalibRunsTH1.lo CalibRunsTH2.lo \
+EmcCalibrator.lo EmcCalibratorMIP.lo EmcCalibratorTOF.lo \
+EmcCalibratorTOFObj.lo EmcCalibratorTOFBBC.lo EmcCalibratorTOFMIP.lo \
+EmcCalibratorQA.lo EmcCalibratorQArun.lo EmcCalibratorTOFPed.lo \
+clust_calib.lo clust_calib_merge.lo clust_calib_ana.lo trk_ass.lo \
+trk_ass_merge.lo trk_ass_ana.lo trk_ass_trig.lo trk_ass_trig_merge.lo \
+clust_scan.lo clust_tofread.lo hoge.lo Tpoint.lo txt2ntuple.lo
+libemc_calibset2_la_OBJECTS =  $(am_libemc_calibset2_la_OBJECTS)
+SCRIPTS =  $(bin_SCRIPTS)
+
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXFLAGS = @CXXFLAGS@
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+DIST_SOURCES =  $(libemc_calibset2_la_SOURCES)
+HEADERS =  $(include_HEADERS)
+
+DIST_COMMON =  $(include_HEADERS) Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+GZIP_ENV = --best
+DEP_FILES =  .deps/CalibObj.P .deps/CalibRuns.P .deps/CalibRunsTH0.P \
+.deps/CalibRunsTH1.P .deps/CalibRunsTH2.P .deps/EmcCalibrator.P \
+.deps/EmcCalibratorMIP.P .deps/EmcCalibratorQA.P \
+.deps/EmcCalibratorQArun.P .deps/EmcCalibratorTOF.P \
+.deps/EmcCalibratorTOFBBC.P .deps/EmcCalibratorTOFMIP.P \
+.deps/EmcCalibratorTOFObj.P .deps/EmcCalibratorTOFPed.P .deps/Hist.P \
+.deps/Hist_ass.P .deps/Hist_ele.P .deps/Hist_eqa.P .deps/Hist_hoge.P \
+.deps/Hist_mip.P .deps/Hist_miptwr.P .deps/Hist_miptwr2.P \
+.deps/Hist_trig.P .deps/SumupTH.P .deps/TH0Xch.P .deps/TH0Xrun.P \
+.deps/TH1Xch.P .deps/TH2Xch.P .deps/Tpoint.P .deps/clust_calib.P \
+.deps/clust_calib_ana.P .deps/clust_calib_merge.P .deps/clust_scan.P \
+.deps/clust_tofread.P .deps/hoge.P .deps/trk_ass.P .deps/trk_ass_ana.P \
+.deps/trk_ass_merge.P .deps/trk_ass_trig.P .deps/trk_ass_trig_merge.P \
+.deps/txt2ntuple.P
+SOURCES = $(libemc_calibset2_la_SOURCES)
+OBJECTS = $(am_libemc_calibset2_la_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .c .cc .lo .o .obj
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign emc_calibset2/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status $(BUILT_SOURCES)
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-libLTLIBRARIES:
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+
+distclean-libLTLIBRARIES:
+
+maintainer-clean-libLTLIBRARIES:
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(libdir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(libdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  echo " $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p"; \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libemc_calibset2.la: $(libemc_calibset2_la_OBJECTS) $(libemc_calibset2_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(libdir) $(libemc_calibset2_la_LDFLAGS) $(libemc_calibset2_la_OBJECTS) $(libemc_calibset2_la_LIBADD) $(LIBS)
+
+install-binSCRIPTS: $(bin_SCRIPTS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_SCRIPTS)'; for p in $$list; do \
+	  f="`echo $$p|sed '$(transform)'`"; \
+	  if test -f $$p; then \
+	    echo " $(INSTALL_SCRIPT) $$p $(DESTDIR)$(bindir)/$$f"; \
+	    $(INSTALL_SCRIPT) $$p $(DESTDIR)$(bindir)/$$f; \
+	  elif test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_SCRIPT) $(srcdir)/$$p $(DESTDIR)$(bindir)/$$f"; \
+	    $(INSTALL_SCRIPT) $(srcdir)/$$p $(DESTDIR)$(bindir)/$$f; \
+	  else :; fi; \
+	done
+
+uninstall-binSCRIPTS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(bin_SCRIPTS)'; for p in $$list; do \
+	  f="`echo $$p|sed '$(transform)'`"; \
+	  echo " rm -f $(DESTDIR)$(bindir)/$$f"; \
+	  rm -f $(DESTDIR)$(bindir)/$$f; \
+	done
+.cc.o:
+	$(CXXCOMPILE) -c -o $@ $<
+.cc.obj:
+	$(CXXCOMPILE) -c -o $@ `cygpath -w $<`
+.cc.lo:
+	$(LTCXXCOMPILE) -c -o $@ $<
+
+install-includeHEADERS: $(include_HEADERS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(includedir)
+	@list='$(include_HEADERS)'; for p in $$list; do \
+	  if test -f "$$p"; then d= ; else d="$(srcdir)/"; fi; \
+	  f="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " $(INSTALL_DATA) $$d$$p $(DESTDIR)$(includedir)/$$f"; \
+	  $(INSTALL_DATA) $$d$$p $(DESTDIR)$(includedir)/$$f; \
+	done
+
+uninstall-includeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(include_HEADERS)'; for p in $$list; do \
+	  f="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " rm -f $(DESTDIR)$(includedir)/$$f"; \
+	  rm -f $(DESTDIR)$(includedir)/$$f; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+distdir: $(DISTFILES)
+	here=`cd $(top_builddir) && pwd`; \
+	top_distdir=`cd $(top_distdir) && pwd`; \
+	distdir=`cd $(distdir) && pwd`; \
+	cd $(top_srcdir) \
+	  && $(AUTOMAKE) --include-deps --build-dir=$$here --srcdir-name=$(top_srcdir) --output-dir=$$top_distdir --foreign emc_calibset2/Makefile
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+
+DEPS_MAGIC := $(shell mkdir .deps > /dev/null 2>&1 || :)
+
+-include $(DEP_FILES)
+
+mostlyclean-depend:
+
+clean-depend:
+
+distclean-depend:
+	-rm -rf .deps
+
+maintainer-clean-depend:
+
+%.o: %.cc
+	@echo '$(CXXCOMPILE) -c -o $@ $<'; \
+	$(CXXCOMPILE) -Wp,-MD,.deps/$(*D)/$(*F).pp -c -o $@ $<
+	@-cp .deps/$(*D)/$(*F).pp .deps/$(*D)/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*D)/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*D)/$(*F).P; \
+	rm .deps/$(*D)/$(*F).pp
+
+%.lo: %.cc
+	@echo '$(LTCXXCOMPILE) -c -o $@ $<'; \
+	$(LTCXXCOMPILE) -Wp,-MD,.deps/$(*D)/$(*F).pp -c -o $@ $<
+	@-sed -e 's/^\([^:]*\)\.o[ 	]*:/\1.lo \1.o :/' \
+	  < .deps/$(*D)/$(*F).pp > .deps/$(*D)/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*D)/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*D)/$(*F).P; \
+	rm -f .deps/$(*D)/$(*F).pp
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-libLTLIBRARIES install-binSCRIPTS
+install-exec: install-exec-am
+
+install-data-am: install-includeHEADERS
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-libLTLIBRARIES uninstall-binSCRIPTS \
+		uninstall-includeHEADERS
+uninstall: uninstall-am
+all-am: Makefile $(LTLIBRARIES) $(SCRIPTS) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_STRIP_FLAG=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(libdir) $(DESTDIR)$(bindir) \
+		$(DESTDIR)$(includedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+	-test -z "$(CLEANFILES)" || rm -f $(CLEANFILES)
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
+mostlyclean-am:  mostlyclean-libLTLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags mostlyclean-depend \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-libLTLIBRARIES clean-compile clean-libtool clean-tags \
+		clean-depend clean-generic mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-libLTLIBRARIES distclean-compile \
+		distclean-libtool distclean-tags distclean-depend \
+		distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-libLTLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-depend \
+		maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-libLTLIBRARIES distclean-libLTLIBRARIES \
+clean-libLTLIBRARIES maintainer-clean-libLTLIBRARIES \
+uninstall-libLTLIBRARIES install-libLTLIBRARIES mostlyclean-compile \
+distclean-compile clean-compile maintainer-clean-compile \
+mostlyclean-libtool distclean-libtool clean-libtool \
+maintainer-clean-libtool uninstall-binSCRIPTS install-binSCRIPTS \
+uninstall-includeHEADERS install-includeHEADERS tags mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir \
+mostlyclean-depend distclean-depend clean-depend \
+maintainer-clean-depend info-am info dvi-am dvi check check-am \
+installcheck-am installcheck install-exec-am install-exec \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all install-strip installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+%_Dict.cc: %.hh
+	@echo ------------------------------------- Making $@
+	$(ROOTSYS)/bin/rootcint -f $@ -c $(INCLUDES) $< $(<D)/$*_LinkDef.hh
+	@echo ------------------------------------- Done!
+
+%.csh : %.csh.in
+	@echo ------------------------------------- Making $@
+	sed 's|@_prefix_@|${prefix}|g; s|@_OFFLINE_MAIN_@|${OFFLINE_MAIN}|g' < $< > $@
+	chmod uog+x $@
+	@echo ------------------------------------- Done!
+.PHONY : $(TRK_ASS)
+$(TRK_ASS):
+	$(CXX) -g $(CFLAGS) -o $(TRK_ASS) $(TRK_ASSSRC) \
+			$(INCLUDES) $(ROOTLIBS) -L$(prefix)/lib \
+			-lemc_calibset2 -lclusttr -lmicrodst
+.PHONY : $(MAIN_SCAN)
+$(MAIN_SCAN):
+	$(CXX) -g $(CFLAGS) -o $(MAIN_SCAN) $(MAIN_SCANSRC) \
+			$(INCLUDES) $(ROOTLIBS) -L$(prefix)/lib -lmicroqm01 -lclusttr -lemc_calibset2
+.PHONY : $(MAIN_CLUST_CALIB)
+$(MAIN_CLUST_CALIB):
+	$(CXX) -g $(CFLAGS) -o $(MAIN_CLUST_CALIB) $(MAIN_CLUST_CALIBSRC) \
+			$(INCLUDES) $(ROOTLIBS) -L$(prefix)/lib -lclusttr -lemc_calibset2 -lmicroqm01
+###########################################################################
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

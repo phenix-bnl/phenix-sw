@@ -1,0 +1,13 @@
+   mPadDetGeo->FetchFromFileDBFormat("padGeometry.adb");
+   PHVector uE(0.999999,0.00138,0.0);
+   PHVector vE(-0.00138,0.999999,0.0);
+   PHPoint originE(-1.361,-1.132,-0.05);
+   PHFrame padEAST(originE,uE,vE);
+   mPadDetGeo->set_eastFrame(padEAST);
+   PHVector uW(0.999998,-0.00188,0.0);
+   PHVector vW(0.00188,0.999998,0.0);
+   PHPoint originW(-0.061,-1.012,0);
+   PHFrame padWEST(originW,uW,vW);
+   mPadDetGeo->set_westFrame(padWEST);
+   mPadDetGeo->rotateAndTranslate();
+   //mPadDetGeo->PutIntoGeoChamDatabase();

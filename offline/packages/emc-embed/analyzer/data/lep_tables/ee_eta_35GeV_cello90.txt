@@ -1,0 +1,18 @@
+     0.050     0.0            1.523             0.285     0.0  
+     0.105     0.0            1.011             0.247     0.0
+     0.210     0.0            0.446             0.216     0.0
+     0.375     0.0            0.143             0.056     0.0
+     0.690     0.0            0.010             0.003     0.0
+
+
+
+   EXPeriment = DESY-PETRA-CELLO
+   sqrt(s)    = 35 GeV
+   Author     = Behrend et al
+   REFerence  = Zeit. Phys. C47 (1990) 1
+   
+   Errors are statistical only. Systematic errors are about 20%.
+
+
+      xE         (s/beta) dsig/dxE       error
+                   (mub GeV**2)       

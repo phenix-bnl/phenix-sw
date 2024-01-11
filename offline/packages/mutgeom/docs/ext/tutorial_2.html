@@ -1,0 +1,65 @@
+/*! @defgroup TUT2 How to create the dead HV maps from the online high voltage system logs
+
+<!------------------------------------->
+<h3>Introduction</h3>
+<p>The dead HV maps are files associated to each run which list the HV modules that were dead for this run during data taking. They are used in the simulations to reproduce the real data detector acceptance.</p>
+
+<p>The online high voltage system logs record the status of all HV channels at fixed time intervals (by default 3mins) and store them into files. There is one such file per day for each muon arm (south or north).</p>
+
+<p>This tutorial explains how to run the script that parse the HV logs and generates the map of disabled HV channels on a run by run basis.</p>
+
+<!------------------------------------->
+<h3>HV logs description</h3>
+The logfiles are located on the <i>va011</i> machine in 1008. You need to log there as phnxmutr user to be able to read them:
+
+\code
+ssh phnxmutr@va011.phenix.bnl.gov
+\endcode
+
+The files are:
+\code
+/home/phoncs/mutr/hv/runlog/MutrHV_NorthYYYY-MM-DD.log
+/home/phoncs/mutr/hv/runlog/MutrHV_SouthYYYY-MM-DD.log
+\endcode
+
+Each line of such a file has the following format:
+\code
+1141598096 Sun Mar  5 17:34:56 EST 2006 N1411 1 1 799.6
+\endcode
+with:
+<ul>
+<li>the (unix) time of the measurement</li>
+<li>the plain time stamp of the measurement</li>
+<li>the channel name (here: N1411)</li>
+<li>the bulk status</li>
+<li>the HV status</li>
+<li>the applied high-voltage</li>
+</ul>
+<p>A channel is dead whenever the bulk or HV status is different from 1 or when the high voltage is lower than 1800V
+
+<!------------------------------------->
+<h3>HV log parsing script</h3>
+
+<p>The script used to generate the dead HV maps from the high voltage logs is called <b>parse_hv_logs.pl</b>. It is located on CVS in the <i>mutgeom/database</i> directory and can be retrieved using:
+\code
+cvs co -d mutgeom/database offline/packages/mutgeom/database
+\endcode
+
+<p>It runs on the va011 machine as mentionned above and takes several arguments retrieved using
+\code
+parse_hv_logs.pl --help
+\endcode
+
+<p>A sample command would be:
+\code
+parse_hv_logs.pl --first-run=109656 --last-run=107670
+\endcode
+
+<p>It generates the HV maps for all runs from 109656 to 107670 and stores the corresponding files in the local directory, with name:
+\code
+mut.disabledAnodes.dat_XXXXXX
+\endcode
+(the last digits being the run number).
+
+<p>These files can then either be used directly as inputs for the simulations, or copied into the calibration database (see <a href="group__TUT1.html">tutorial 2</a> and <a href="group__TUT0.html">tutorial 3</a>).
+*/

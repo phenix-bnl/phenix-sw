@@ -1,0 +1,18 @@
+      0.200  0.300         0.332             0.15    0.0
+      0.300  0.350         0.169             0.08    0.0
+      0.350  0.400         0.243             0.08    0.0
+      0.400  0.450         0.141             0.054   0.0
+      0.450  0.500         0.06              0.03    0.0
+      0.500  0.650         0.023             0.015   0.0
+      0.650  0.700         0.012             0.005   0.0
+
+
+   EXPeriment = SLAC-PEP-005 (MARK-II)
+   sqrt(s)    = 29 GeV
+   Author     = Wormser et al
+   REFerence  = Phys. Rev. Lett. 61 (1988) 1057
+
+
+      xp     xp       (s/beta) dsig/dxp      error
+      min    max        (mub GeV**2)      
+

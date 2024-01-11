@@ -1,0 +1,15 @@
+  2.700E+00  1.813E+07
+  2.900E+00  1.073E+07
+  3.160E+00  5.297E+06
+  3.550E+00  2.054E+06
+  4.060E+00  7.021E+05
+  4.700E+00  2.191E+05
+  5.480E+00  6.508E+04
+  6.420E+00  1.879E+04
+  7.430E+00  5.968E+03
+  8.430E+00  2.181E+03
+  9.440E+00  8.810E+02
+
+
+for KKP with scale pt/2  (here I cannot calculate below
+pt=2.6 since CTEQ is only valid from scale 1.3).

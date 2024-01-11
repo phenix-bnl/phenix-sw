@@ -1,0 +1,12 @@
+pT    epT    R_AA     eR_AA    eR_AA(%)    eNcoll    eNcoll(%)
+  2.75    0.00    0.733    0.315    43.0    0.209    28.6
+  3.25    0.00    0.837    0.211    25.3    0.239    28.6
+  3.75    0.00    0.841    0.208    24.7    0.240    28.6
+  4.50    0.00    0.967    0.271    28.0    0.276    28.6
+  5.50    0.00    0.641    0.415    64.8    0.183    28.6
+
+
+$R_{AA}(p_T)$ for $\eta$ in centrality class 60-92\%.
+Errors tabulated are point-to-point (4th column) and abs. normalization (6th column)
+There is an additional 9.7\% type-{\bf B} systematic error
+The $T_{AA}$ normalization error common to all data points is: $\pm$28.6\%

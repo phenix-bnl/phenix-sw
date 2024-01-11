@@ -1,0 +1,23 @@
+/* dEmcGeaTrackTower.idl */
+/** (STAF) Evaluator; connects Tracks to Towers.
+* In other words: it tells you that in which towers did a particular 
+* track deposit energy
+* maximum 30 towers per track 
+* the tower <--> track is a many-to-many relationship 
+* Entries are concatenated! 
+* Track means TRUE_TRACK, unique throughout the event, even if 
+* there are subevents and/or multiple input files (merge) 
+@ingroup staf
+**/
+
+struct dEmcGeaTrackTower {
+  long id;          	/* unique identifyer; */
+  long trkno;		/* true_track number */
+  short input;		/* serial number of input (merge!) */
+  float xyz[3];		/* Nominal impact point: coordinates of first hit*/
+  long twrkey[3];	/* tower indices where it contributed */
+			/*    z + 100 * y + 10000 * sector + 
+				100000 * arm    */
+  float edep[3];	/* energy deposited in the respective towers */
+  long nextid;		/* pointer to the next 3 entries in the same table */
+};

@@ -1,0 +1,19 @@
+/***************************************************************************/
+/* dEmcGeaParams.idl */
+/** (STAF) emc Geant parameters.  This will be part of the software database 
+* 120 entries per sector 
+* It allows for deviations from nominal position 
+@ingroup staf
+*/
+
+struct dEmcGeaParams {
+  short	id;		/* unique identifyer */
+  float detarray[120];	/* corresponds to ra_det array in old emc_gini_new */
+			/* and in new memcgeaparams */
+};
+
+
+
+
+
+

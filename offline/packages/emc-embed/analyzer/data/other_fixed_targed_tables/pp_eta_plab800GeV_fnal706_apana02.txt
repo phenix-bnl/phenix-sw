@@ -1,0 +1,18 @@
+3.00   3.50  5.1E+4   1.7E+4   0.63E+4 
+3.50   4.00  1.14E+4  0.37E+4  0.14E+4 
+4.00   4.50  2.13E+3  0.34E+3  0.25E+3 
+4.50   5.00  6.78E+2  0.91E+2  0.80E+2 
+5.00   5.50  2.20E+2  0.36E+2  0.26E+2 
+5.50   6.00  1.08E+2  0.16E+2  0.13E+2 
+6.00   7.00  2.06E+1  0.48E+1  0.25E+1 
+7.00   8.00  4.4E+0   1.8E+0   0.6E+0 
+8.00   10.00 1.05e+0  0.70e+0  0.14e+0
+
+
+x1 TO x2     y     +- dy     +- dsys
+
+APANASEVICH 02 PR D68,052001 
+Invariant differetrial cross sections/nucleon for the inclusive reaction p p -- > pi0 X at 530 and 800 GEV, 
+averaged over the c.m. rapidity interval -0.75 to 0 .75 and -1.0 to 0.5 respectively. 
+P P --> ETA X
+PLAB IN GEV   800; YRAP -1.0 TO 0.5; x = PT IN GEV; y = E*D3SIG/DP**3 IN PB/GEV**2

@@ -1,0 +1,10 @@
+/* dPadRecPar.idl */
+
+/* Contains the user control parameters for the PC cluster reconstruction
+   *** Lund version 1.0 *** by Paul Nilsson February 9, 1998. */
+
+struct dPadRecPar {
+  short verbose;          /* set for debug printing to the screen */
+  short pcnumber;         /* select PC1, 2, or 3 (0,1, or 2) */
+  short method[3];        /* select the reconstruction method */
+};

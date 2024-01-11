@@ -1,0 +1,9 @@
+  2.50  0.05    4.600e-04    1.331e-04    28.94    1.242e-04    4.783e-05    1.299e-04    2.300e-05
+  3.50  0.05    5.703e-05    1.407e-05    24.67    1.263e-05    6.202e-06    1.347e-05    2.851e-06
+  4.50  0.05    1.232e-05    2.053e-06    16.66    1.492e-06    1.409e-06    1.805e-06    6.160e-07
+  5.50  0.05    1.263e-06    4.589e-07    36.32    4.329e-07    1.521e-07    4.453e-07    6.317e-08
+  6.50  0.05    2.123e-07    2.049e-07    96.54    2.032e-07    2.683e-08    2.039e-07    1.061e-08
+
+
+ <I> Constructing full-corrected 3x3tof1chisq1 spectrum for eta and centrality class: 17 (60 - 92%) from raw yields file: eta_yields_60_92_3x3tof1chisq1.txt
+ <I> Spectrum shifted along the y-axis (Yield) to correct for true mean value of the $p_T$ bin in the steeply falling spectrum

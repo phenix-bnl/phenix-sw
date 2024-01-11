@@ -1,0 +1,22 @@
+30  35  32.2  10.801  0.123   2.394
+35  40  37.1  3.683   0.064   0.663
+40  45  42.1  1.004   0.028   0.158
+45  50  47.1  0.342   0.015   0.066
+50  55  51.9  0.084   0.006   0.021
+
+
+bin limits [GeV] <E_pi> [GeV] E d^3sigma/d^3 p [microb c^3 /GeV^2 ] (+/- stat +/- sys)
+
+
+Cross Sections and Transverse Single-Spin Asymmetries in Forward
+Neutral Pion Production from Proton Collisions at sqrt(s)=200 GeV
+J. Adams /et al., /Phys. Rev. Lett. * 92 *, 171801 (2004).
+
+------------------------------------------------------------------------
+
+ Figure 2: Invariant Differential Cross Sections for ?^0 production.
+
+pi^0 selected to have 3.4 < eta < 4.0, giving < eta > = 3.8. 
+Statistical and point-to-point systematic uncertainties are listed. 
+The normalization uncertainty (E_pi independent) is 17%.
+

@@ -1,0 +1,14 @@
+/* dPadFastSimPar.idl */
+
+/* Contains the user control parameters for the PC fast cluster simulation */
+
+struct dPadFastSimPar {
+  short pcnumber;         /* select PC1, 2, or 3 */
+  long  randseed[3];      /* random number seed */
+  float efficiency[3];    /* single hit efficiency (1.00=100%) */
+  float phires[3];        /* resolution in cm in phi direction */
+  float zres[3];          /* resolution in cm in z direction */
+  float phisep[3];        /* two-track separation in cm in phi direction */
+  float zsep[3];          /* two-track separation in cm in z direction */
+  short verbose;          /* set for run-time debug printing */
+};

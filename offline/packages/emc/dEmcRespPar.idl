@@ -1,0 +1,18 @@
+/* dEmcRespPar.idl */
+
+/** (STAF) Parameters for reconstruction
+    @ingroup staf
+ */
+
+struct dEmcRespPar {
+  long anyset;		/* any parameter set */
+  long sim_timing;	/* 0 -> Use full pulse reconstruction + LED (default)
+			   1 -> Use time of first GEANT hit w/o corrections */
+  long pbgl_response;	/* 0 -> Cumulate GEANT hits (default)
+			   1 -> Cumulate GEANT hits but mix in photoelectron,
+				noise effects 
+			   2 -> Cumulate GEANT hits but modify with empirical
+				simple parametrization 
+				This needs total deposited energy without
+				attenuation */
+};

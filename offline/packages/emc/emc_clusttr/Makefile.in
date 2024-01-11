@@ -1,0 +1,451 @@
+# Makefile.in generated automatically by automake 1.4a from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_STRIP_FLAG =
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AMTARFLAGS = @AMTARFLAGS@
+AS = @AS@
+AWK = @AWK@
+CC = @CC@
+CXX = @CXX@
+DLLTOOL = @DLLTOOL@
+EXEEXT = @EXEEXT@
+FILE = @FILE@
+LD = @LD@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+NM = @NM@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+OFFLINE_MAIN = @OFFLINE_MAIN@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+ROOTLIBS = @ROOTLIBS@
+ROOTSYS = @ROOTSYS@
+STRIP = @STRIP@
+VERSION = @VERSION@
+deplibs_check_method = @deplibs_check_method@
+file_magic_cmd = @file_magic_cmd@
+install_sh = @install_sh@
+reload_flag = @reload_flag@
+with_gcc = @with_gcc@
+with_gnu_ld = @with_gnu_ld@
+
+####################################################################
+#
+# Makefile.am
+#
+####################################################################
+
+
+AUTOMAKE_OPTIONS = foreign
+lib_LTLIBRARIES = libemc_clusttr.la
+INCLUDES = -I$(srcdir) -I$(includedir) @INCLUDES@
+
+###########################################################################
+ROOT_SRCS = TrackCl.cc ClustTr.cc Gg2.cc \
+			nt_trk.cc nt_emc.cc nt_evt.cc nt_tower.cc nEmcClusterLocalExt.cc\
+			mdst_run2tree.cc mdst_microDST.cc \
+			fit_mpeak.cc fit_mpeak2d.cc \
+			fitpeak.cc FitPeak2D.cc scale2DX.cc \
+			hadd.cc hmerge.cc \
+			emcRejectList.cc emcRejectClust.cc EmcTOFCorr.cc \
+			TNamedDir.cc Clust.cc Track.cc Global.cc Ass.cc Evt.cc Pid.cc \
+			ClustPair.cc EvtPair.cc EvtVector.cc
+
+
+LIB_SRCS = 
+###########################################################################
+
+libemc_clusttr_la_SOURCES = $(ROOT_SRCS) $(LIB_SRCS)
+libemc_clusttr_la_LIBADD = $(ROOT_SRCS:.cc=_Dict.lo)
+BUILT_SOURCES = $(ROOT_SRCS:.cc=_Dict.cc)
+include_HEADERS = $(ROOT_SRCS:.cc=.hh) $(LIB_SRCS:.cc=.hh)
+CLEANFILES = $(ROOT_SRCS:.cc=_Dict.cc) $(ROOT_SRCS:.cc=_Dict.hh)
+EXTRA_DIST = $(ROOT_SRCS:.cc=_LinkDef.hh) main_fake.cc chain_udst.cc \
+				nbatch.csh nbatch_all.csh nbatch_check.csh \
+				copy.csh copy_to_hpss.csh copy_from_hpss.csh
+
+LIBOBJS = $(ROOT_SRCS:.cc=.o) $(BUILD_SOURCES:.cc=.o) $(LIB_SRCS:.cc=.o)
+LTLIBOBJS = $(LTBOBJS)
+
+###########################################################################
+#
+#
+# For instant check in development
+#
+#
+###########################################################################
+MAIN_FAKE = main_fake
+MAIN_FAKESRC = $(MAIN_FAKE).cc
+MAIN_FAKEOBJ = $(MAIN_FAKESRC:.cc=.o)
+subdir = emc_clusttr
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(lib_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) 
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+libemc_clusttr_la_LDFLAGS = 
+libemc_clusttr_la_DEPENDENCIES =  TrackCl_Dict.lo ClustTr_Dict.lo \
+Gg2_Dict.lo nt_trk_Dict.lo nt_emc_Dict.lo nt_evt_Dict.lo \
+nt_tower_Dict.lo nEmcClusterLocalExt_Dict.lo mdst_run2tree_Dict.lo \
+mdst_microDST_Dict.lo fit_mpeak_Dict.lo fit_mpeak2d_Dict.lo \
+fitpeak_Dict.lo FitPeak2D_Dict.lo scale2DX_Dict.lo hadd_Dict.lo \
+hmerge_Dict.lo emcRejectList_Dict.lo emcRejectClust_Dict.lo \
+EmcTOFCorr_Dict.lo TNamedDir_Dict.lo Clust_Dict.lo Track_Dict.lo \
+Global_Dict.lo Ass_Dict.lo Evt_Dict.lo Pid_Dict.lo ClustPair_Dict.lo \
+EvtPair_Dict.lo EvtVector_Dict.lo
+am_libemc_clusttr_la_OBJECTS =  TrackCl.lo ClustTr.lo Gg2.lo nt_trk.lo \
+nt_emc.lo nt_evt.lo nt_tower.lo nEmcClusterLocalExt.lo mdst_run2tree.lo \
+mdst_microDST.lo fit_mpeak.lo fit_mpeak2d.lo fitpeak.lo FitPeak2D.lo \
+scale2DX.lo hadd.lo hmerge.lo emcRejectList.lo emcRejectClust.lo \
+EmcTOFCorr.lo TNamedDir.lo Clust.lo Track.lo Global.lo Ass.lo Evt.lo \
+Pid.lo ClustPair.lo EvtPair.lo EvtVector.lo
+libemc_clusttr_la_OBJECTS =  $(am_libemc_clusttr_la_OBJECTS)
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXFLAGS = @CXXFLAGS@
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+DIST_SOURCES =  $(libemc_clusttr_la_SOURCES)
+HEADERS =  $(include_HEADERS)
+
+DIST_COMMON =  $(include_HEADERS) Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+GZIP_ENV = --best
+DEP_FILES =  .deps/Ass.P .deps/Clust.P .deps/ClustPair.P .deps/ClustTr.P \
+.deps/EmcTOFCorr.P .deps/Evt.P .deps/EvtPair.P .deps/EvtVector.P \
+.deps/FitPeak2D.P .deps/Gg2.P .deps/Global.P .deps/Pid.P \
+.deps/TNamedDir.P .deps/Track.P .deps/TrackCl.P .deps/emcRejectClust.P \
+.deps/emcRejectList.P .deps/fit_mpeak.P .deps/fit_mpeak2d.P \
+.deps/fitpeak.P .deps/hadd.P .deps/hmerge.P .deps/mdst_microDST.P \
+.deps/mdst_run2tree.P .deps/nEmcClusterLocalExt.P .deps/nt_emc.P \
+.deps/nt_evt.P .deps/nt_tower.P .deps/nt_trk.P .deps/scale2DX.P
+SOURCES = $(libemc_clusttr_la_SOURCES)
+OBJECTS = $(am_libemc_clusttr_la_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .c .cc .lo .o .obj
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign emc_clusttr/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status $(BUILT_SOURCES)
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-libLTLIBRARIES:
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+
+distclean-libLTLIBRARIES:
+
+maintainer-clean-libLTLIBRARIES:
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(libdir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(libdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  echo " $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p"; \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libemc_clusttr.la: $(libemc_clusttr_la_OBJECTS) $(libemc_clusttr_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(libdir) $(libemc_clusttr_la_LDFLAGS) $(libemc_clusttr_la_OBJECTS) $(libemc_clusttr_la_LIBADD) $(LIBS)
+.cc.o:
+	$(CXXCOMPILE) -c -o $@ $<
+.cc.obj:
+	$(CXXCOMPILE) -c -o $@ `cygpath -w $<`
+.cc.lo:
+	$(LTCXXCOMPILE) -c -o $@ $<
+
+install-includeHEADERS: $(include_HEADERS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(includedir)
+	@list='$(include_HEADERS)'; for p in $$list; do \
+	  if test -f "$$p"; then d= ; else d="$(srcdir)/"; fi; \
+	  f="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " $(INSTALL_DATA) $$d$$p $(DESTDIR)$(includedir)/$$f"; \
+	  $(INSTALL_DATA) $$d$$p $(DESTDIR)$(includedir)/$$f; \
+	done
+
+uninstall-includeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(include_HEADERS)'; for p in $$list; do \
+	  f="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " rm -f $(DESTDIR)$(includedir)/$$f"; \
+	  rm -f $(DESTDIR)$(includedir)/$$f; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+distdir: $(DISTFILES)
+	here=`cd $(top_builddir) && pwd`; \
+	top_distdir=`cd $(top_distdir) && pwd`; \
+	distdir=`cd $(distdir) && pwd`; \
+	cd $(top_srcdir) \
+	  && $(AUTOMAKE) --include-deps --build-dir=$$here --srcdir-name=$(top_srcdir) --output-dir=$$top_distdir --foreign emc_clusttr/Makefile
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+
+DEPS_MAGIC := $(shell mkdir .deps > /dev/null 2>&1 || :)
+
+-include $(DEP_FILES)
+
+mostlyclean-depend:
+
+clean-depend:
+
+distclean-depend:
+	-rm -rf .deps
+
+maintainer-clean-depend:
+
+%.o: %.cc
+	@echo '$(CXXCOMPILE) -c -o $@ $<'; \
+	$(CXXCOMPILE) -Wp,-MD,.deps/$(*D)/$(*F).pp -c -o $@ $<
+	@-cp .deps/$(*D)/$(*F).pp .deps/$(*D)/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*D)/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*D)/$(*F).P; \
+	rm .deps/$(*D)/$(*F).pp
+
+%.lo: %.cc
+	@echo '$(LTCXXCOMPILE) -c -o $@ $<'; \
+	$(LTCXXCOMPILE) -Wp,-MD,.deps/$(*D)/$(*F).pp -c -o $@ $<
+	@-sed -e 's/^\([^:]*\)\.o[ 	]*:/\1.lo \1.o :/' \
+	  < .deps/$(*D)/$(*F).pp > .deps/$(*D)/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*D)/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*D)/$(*F).P; \
+	rm -f .deps/$(*D)/$(*F).pp
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-libLTLIBRARIES
+install-exec: install-exec-am
+
+install-data-am: install-includeHEADERS
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-libLTLIBRARIES uninstall-includeHEADERS
+uninstall: uninstall-am
+all-am: Makefile $(LTLIBRARIES) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_STRIP_FLAG=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(libdir) $(DESTDIR)$(includedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+	-test -z "$(CLEANFILES)" || rm -f $(CLEANFILES)
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
+mostlyclean-am:  mostlyclean-libLTLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags mostlyclean-depend \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-libLTLIBRARIES clean-compile clean-libtool clean-tags \
+		clean-depend clean-generic mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-libLTLIBRARIES distclean-compile \
+		distclean-libtool distclean-tags distclean-depend \
+		distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-libLTLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-depend \
+		maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-libLTLIBRARIES distclean-libLTLIBRARIES \
+clean-libLTLIBRARIES maintainer-clean-libLTLIBRARIES \
+uninstall-libLTLIBRARIES install-libLTLIBRARIES mostlyclean-compile \
+distclean-compile clean-compile maintainer-clean-compile \
+mostlyclean-libtool distclean-libtool clean-libtool \
+maintainer-clean-libtool uninstall-includeHEADERS \
+install-includeHEADERS tags mostlyclean-tags distclean-tags clean-tags \
+maintainer-clean-tags distdir mostlyclean-depend distclean-depend \
+clean-depend maintainer-clean-depend info-am info dvi-am dvi check \
+check-am installcheck-am installcheck install-exec-am install-exec \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all install-strip installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+%_Dict.cc: %.hh
+	@echo ------------------------------------- Making $@
+	$(ROOTSYS)/bin/rootcint -f $@ -c $(INCLUDES) $< $(<D)/$*_LinkDef.hh
+	@echo ------------------------------------- Done!
+$(MAIN_FAKE): $(MAIN_FAKESRC)
+	$(CXX) -g $(CFLAGS) -o $(MAIN_FAKE) $(MAIN_FAKESRC) \
+			$(INCLUDES) $(ROOTLIBS) -L$(prefix)/lib -lemc_clusttr -lmicrodst
+###########################################################################
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

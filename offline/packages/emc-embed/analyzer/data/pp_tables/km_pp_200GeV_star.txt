@@ -1,0 +1,26 @@
+0.0493 0.143+/-0.011
+0.0718 0.1262+/-0.0047
+0.0977 0.1076+/-0.0023
+0.127 0.0877+/-0.0024
+0.158 0.0734+/-0.0026
+0.192 0.0617+/-0.0063
+0.227 0.0487+/-0.0050
+0.264 0.0411+/-0.0042
+0.303 0.0370+/-0.0028
+0.343 0.0286+/-0.0022
+0.383 0.0242+/-0.0027
+
+
+m_T - m_K [GeV/c^2 ] 1/N_event d^2 N / (2 ? m_T dm_T dy) [c^4 /GeV^2 ]
+K-, pp
+
+    Identified Particle Distributions in pp and Au+Au Collisions at
+    sqrt(s_NN )=200 GeV
+    J. Adams /et al. /, Phys. Rev. Lett. *92*, 112301 (2004).
+------------------------------------------------------------------------
+      Figure 1: Invariant yield as function of transverse mass for |y|<0.1.
+
+Errors are statistical and point-to-point systematic. There is an
+additional correlated 5% uncertainty.
+
+

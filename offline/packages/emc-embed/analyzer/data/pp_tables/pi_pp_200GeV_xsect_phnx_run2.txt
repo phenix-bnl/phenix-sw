@@ -1,0 +1,20 @@
+0.20   87.0829   14.79 
+0.40   30.0358   4.89141 
+0.60   9.32437   1.51843 
+0.80   3.05572   0.504931 
+1.00   1.1091   0.187748 
+1.20   0.444179   0.077362 
+1.40   0.199122   0.0348167 
+1.60   0.0905169   0.0153788 
+1.80   0.0456659   0.00795112 
+2.00   0.0228159   0.00417939 
+2.20   0.0119805   0.00257011 
+2.40   0.0058387   0.0013193 
+2.60   0.00357662   0.00109839 
+
+
+sum of pi+ and pi-
+TGraphErrors *pip =e.plot_spectrum_from_ascii("pip_pp_200GeV_xsect_phnx_run2.txt",eband)
+TGraphErrors *pim =e.plot_spectrum_from_ascii("pim_pp_200GeV_xsect_phnx_run2.txt",eband)
+TGraphErrors*pi=(TGraphErrors*)emcAnalyzerUtils::add(pim,pip)
+emcAnalyzerUtils::scale(*pi,0.5)

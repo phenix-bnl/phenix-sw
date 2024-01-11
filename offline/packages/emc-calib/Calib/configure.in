@@ -1,0 +1,10 @@
+AC_INIT(configure.in)
+
+AC_CANONICAL_HOST
+
+AM_INIT_AUTOMAKE(emccalib, 1.01)
+AC_ENABLE_STATIC(no)
+AC_PROG_CXX(cxx CC g++)
+AC_PROG_LIBTOOL
+
+AC_OUTPUT(Makefile)

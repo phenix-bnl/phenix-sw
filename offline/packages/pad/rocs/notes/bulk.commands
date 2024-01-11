@@ -1,0 +1,17 @@
+
+VERIFY:
+
+for i in `cat run4lists/pad-badrocs-update-epoch.list`; do START=`echo $i | awk -F, '{print $2}'`; STRT=`expr $START + 2`; RUN=`echo $i | awk -F, '{print $1}'`; root -l -q "bulkReadBadROCs.C($RUN,$STRT)"; done
+
+
+SUBMIT:
+
+for i in `cat run4lists/pad-badrocs-update-epoch.list`; do root -l -q "bulkCommitBadROCs.C($i,1)"; done
+
+
+GENERATING EPOCH TIMES:
+
+cat pad-badrocs-update.list | perl -mDate::Parse -lne '($run,$start,$stop) = split/,/; print STDOUT $run . "," . Date::Parse::str2time($start) . "," . Date::Parse::str2time($stop);' > pad-badrocs-update-epoch.list
+
+Needs perl-TimeDate RPM installed.
+

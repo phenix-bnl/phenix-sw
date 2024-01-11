@@ -1,0 +1,12 @@
+
+/* dPadDCMPar.idl , parameters control for mPadDCM module 		     	*/
+/* Some of the parameters here are inspired by the scheme used in dPadFEMPar 	*/
+/* See this idl file for more info						*/
+
+struct dPadDCMPar {
+  short	debug		;	/* Debug level 0=none max is 4			*/
+  short fout		;	/* Output to a file ?				*/
+  short scheme		;	/* 0 pass through, 
+				   1 FPGA zero suppress				*/
+  short idx		;	/* Debug output file will be post-fixed by idx	*/
+};

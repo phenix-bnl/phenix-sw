@@ -1,0 +1,8 @@
+/* dPadGhitClus.idl */
+
+/*   Relates pcghit table entries to dPadCluster entries. */
+
+struct dPadGhitClus {
+  short ghitid;                     /* pointer to pcghit.id */
+  short clusid;                     /* pointer to dPadCluster.id */
+};

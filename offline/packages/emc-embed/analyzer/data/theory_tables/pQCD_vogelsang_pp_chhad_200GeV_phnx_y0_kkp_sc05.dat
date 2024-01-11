@@ -1,0 +1,30 @@
+  1.250E+00  8.232E+09
+  1.750E+00  4.275E+08
+  2.250E+00  6.625E+07
+  2.750E+00  1.601E+07
+  3.250E+00  4.228E+06
+  3.750E+00  1.337E+06
+  4.250E+00  4.906E+05
+  4.750E+00  2.030E+05
+  5.250E+00  9.208E+04
+  5.750E+00  4.503E+04
+  6.250E+00  2.341E+04
+  6.750E+00  1.276E+04
+  7.250E+00  7.262E+03
+  7.750E+00  4.291E+03
+  8.250E+00  2.613E+03
+  8.750E+00  1.636E+03
+  9.250E+00  1.050E+03
+  9.750E+00  6.885E+02
+
+
+Invariant cross section E d3 sigma/dp3 , as a function of pt, 
+averaged over |eta|<0.35, in pb/GeV2, for the sum h+ + h- .
+The "sc" in the file name stands for the scale
+in units of pt, the "kkp" for the KKP fragmentation
+functions, and the "k" for Kretzer. 
+Everything is for CTEQ6M.
+NOTE, I have calculated down to pt=1.25. However,
+in particular for the scale choice pt/2 this makes
+really no sense.  The code won't crash, but the result
+has no real meaning, whatever it is.

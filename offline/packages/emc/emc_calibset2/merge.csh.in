@@ -1,0 +1,71 @@
+#!/usr/local/bin/tcsh -f
+#
+# Batch job script
+#
+
+setenv OFFLINE_MAIN @_OFFLINE_MAIN_@
+source /opt/phenix/bin/phenix_setup.csh
+setenv LD_LIBRARY_PATH @_prefix_@/lib:${LD_LIBRARY_PATH}
+###############################################################
+#
+echo $#
+if( $# != 5 && $# != 3 ) then
+    echo "usage : $0 mergeprogram listfile out.root (start end)"
+    echo "           mergeprogram = trk_ass_merge :  for output of trk_ass.csh  "
+    echo "           mergeprogram = clust_calib_merge : for output of clust_calib "
+    exit
+endif
+set MERGE_PROG = $1
+set INFO_FILE  = $2
+set OUTFILE    = $3
+@ START        = 0
+@ END          = 0
+if( $# == 5 ) then
+    @ START        = $4
+    @ END          = $5
+endif
+
+if( -r ${INFO_FILE} ) then
+	echo " File name of DST list is "${INFO_FILE}
+else
+	echo " Can't open the DST list file: "${INFO_FILE}
+	exit
+endif
+###############################################################
+echo " merge.csh::*****************************************************"
+echo " merge.csh::*** merge.csh start *** "`date`
+echo " merge.csh::*****************************************************"
+###############################################################
+setenv TMPFILE /tmp/emc_merge_$$.cc
+rm -rf ${TMPFILE}
+echo " merge.csh:: Create tmporary file " ${TMPFILE}
+cat <<EOF > ${TMPFILE}
+#include <stdio.h>
+#include <TChain.h>
+#include <TFile.h>
+void emc_merge_$$(){
+  gSystem->Load("libemc_dstrun.so");
+  gSystem->Load("libemc_clusttr.so");
+  gSystem->Load("libemc_calibset2.so");
+  // *** Process *********************
+  ${MERGE_PROG}("${INFO_FILE}","${OUTFILE}",${START},${END});
+  // *** Close uDST *********************
+}
+//
+EOF
+chmod uog+wr ${TMPFILE}
+cat ${TMPFILE}
+#######################################
+echo " merge.csh::Processing ............................................"
+echo /opt/phenix/root/bin/root -b -q ${TMPFILE}
+/opt/phenix/root/bin/root -b -q ${TMPFILE}
+#######################################
+echo " merge.csh::...................................................... Finished processing "
+echo -n " merge.csh::"
+ls -la ${OUTFILE}
+echo " merge.csh::Delete "${TMPFILE}
+rm -f ${TMPFILE}
+echo " merge.csh::*****************************************************"
+echo " merge.csh::*** merge.csh finished *** "`date`
+echo " merge.csh::*****************************************************"
+################################################################################

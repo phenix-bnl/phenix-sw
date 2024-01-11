@@ -1,0 +1,10 @@
+/* dDchRawHits.idl */
+
+/**   Relates dDchRaw table entries to dDchHits entries. */
+
+struct dDchRawHits {
+/** pointer to dDchRaw.id */
+  short rawid;                      
+/** pointer to dDchHits.id */
+  short hitsid;                     
+};

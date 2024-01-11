@@ -1,0 +1,35 @@
+/** dDchTracks.idl */
+/** Contains information about reconstructed drift chamber tracks. */
+
+struct dDchTracks {
+  /** a primary reference key */
+  short trackid;         
+  /** arm number of track (0=west, 1=east) */
+  short arm;             
+  /** side of track (0 = north, 1 = south) */
+  short side;            
+  /** point on outgoing track */
+  float point[3];        
+  /** error on outgoing track point */
+  float err_point[3];    
+  /** direction vector of outgoing track */
+  float direction[3];    
+  /** error on direction vector of outgoing track */
+  float err_direction[3];
+  /** list of hit id by plane associated with the track*/
+  short hits[40];
+  /**  quality of the track */
+  short quality;
+  // a set of variables that defines the position and direction of the 
+  // track
+  float phi;
+  float alpha;
+  float beta;
+  float betaNoVertex; // this is a beta where we do not require the
+  // vertex
+  float zed;
+  // these variables are determined from the track model fit
+  float phi0;
+  float theta0;
+  float momentum;
+};

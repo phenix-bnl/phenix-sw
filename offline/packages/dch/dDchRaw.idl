@@ -1,0 +1,22 @@
+/* dDchRaw.idl */
+
+/** Contains information about raw drift chamber data. */
+
+struct dDchRaw {
+/** a primary reference key */
+  short id;
+/** global index */
+  int  global;
+/** arm number. 1= WEST and 0=EAST  (4/00 reconstruction)*/
+  short arm;             
+/** plane number (0-39) */
+  short plane;           
+/** cell number (0-79) */
+  short cell;            
+/** z-sign. 0=SOUTH, 1=NORTH    (4/00  reconstruction)*/
+  short side;            
+/** 0=leading edge, 1=trailing edge */
+  short edge;            
+/** TDC value of the leading or trailing edge */
+  long  time;            
+};

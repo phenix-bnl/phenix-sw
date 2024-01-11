@@ -1,0 +1,194 @@
+---------------------------------------------------------
+author: Federica Ceretto/Messer
+date:   06/15/00 
+Version 1.0 (First tutorial)
+send comment or suggestion to : federica@bnl.gov
+---------------------------------------------------------
+Comments:
+
+This tutorial is surely not complete at the moment but it will 
+improve. 
+It is supposed to be a help for the 'not drift chamber expert' shift crew.
+So if you are confused and you can not understant something, contact me !
+
+------------------------------------------------------------------------
+
+  How to run Drift Chamber Software in the Counting House ?
+
+-------------------------------------------------------------------------
+Go to the directory /home/phnxdc/shift on one of the phoncs machine
+(ex:phoncs10).
+
+------------------------------------------------------------------------
+
+This directory has write access to everybody so you do not need to 
+have the phnxdc password.
+Here you can find several root macros which will be useful to perform two
+kind of 'analysis'.
+
+---------------------------------------------------------------
+ RUN THE EVENT DISPLAY FOR THE DRIFT CHAMBER:
+ 
+1a) Firstly you have to EDIT the name of the data file you want to look at in 
+    the macro :
+  
+   monitorInitOneByOne.C .
+
+   This macro loads the library and initialize the objects you 
+   need for the event display !
+   You should EDIT just the name of the file you want to look at 
+   and nothing else.
+   
+   EX:
+    PHString prdfInFile = "/export/rcfdata/dcm_data/rc/rc-0004503-DC.W.prdf";
+    
+    NB:this line is present at the beginning of the macro just
+     after the libraries are loaded, you  can not miss it !
+
+
+1b) Run the macro at the root prompt
+    
+    root[0] .x monitorInitOneByOne.C 
+
+    A gui will open automatically !
+
+2a) Now you can look at each event one by one:
+
+    To do that you have to execute an other macro which need
+    as an INPUT the number of events you want to skip !
+                ----------------------------------------
+
+    execute the macro:  monitorOneByOne.C(10) 
+
+    This command will skip ten events and look at the eleventh !
+    NB: usually the first 'event' is a header, it does not 
+    contain any useful data.
+    
+
+2a) To see the hits and tracks on the display you should click the 
+    CONFIG button on the main gui. Then the Track button on the 
+    DCH CONFIG WINDOW  and double click on what you would like to 
+    see on the display.
+    Tipically a good configuration is that:
+    ex:
+      on the Track Control
+ 
+      show trackNorth
+      show trackSouth
+      show HitNorth
+      show hitSouth
+      show ExtendTrack (track prolonged to the vertex)
+      
+      on the Hit Set Control
+     
+      show X1 
+      show X2
+    
+   NB: if there are too many hits and track it could happen that 
+   if you try to switch on everything root will hang
+                                      ---------------
+  
+    Have fun with the display !!!!!!!
+
+  IMPORTANT: if in all the events there are no hits or tracks or
+             you think something strange is going on then, you should
+             execute some statistical analysis (described below)
+
+--------------------------------------------------------------------
+    RUN SOME STATISTIC ANALYSIS FOR DCH DATA QUALITY CHECK 
+
+1a) Firstly you have to EDIT the name of the data file you want to look at in 
+    the macro :
+  
+   .x monitorInit.C .
+
+   This macro loads the library and initialize the objects you 
+   need for the analysis !
+   You should EDIT just the name of the file you want to look at 
+   and nothing else.
+   
+   EX:
+    PHString prdfInFile = "/export/rcfdata/dcm_data/rc/rc-0004503-DC.W.prdf";
+    
+    NB:this line is present at the beginning of the macro just
+     after loading the libraries, you can not miss it !
+
+
+1b) Run the macro "monitorInit.C" at the root prompt
+ 
+
+2)  Start the analysis of the data .
+    You need to give the number of events you want to analyse as an INPUT !
+    -----------------------------------------------------------------------
+   
+    .x monitorStat.C(100)
+
+    it will analyse 100 events !! 
+    NB: verbosity of different kind is still on:
+       do not worry for example if you see "Raw Timeout of range " 
+       -----------------------------------------------------------
+     
+
+3)  Run the macro :
+
+    .x monitorFede.C
+
+    it will give you a list of function you can call at the root prompt:
+
+    ex:
+      rawdist()
+      timedist()
+      statdistRawHit()
+      statdistTrack() 
+
+   
+3a)   rawdist() 
+     four plots will be shown :
+     1) reference Time distribution: the mean of the distribution should be 
+        centered about at 570 +/- 10
+        call an expert  if the distribution is not at all there !
+        if the distribution is there but it is off off too much than it could
+        be you are not able to reconstruct (and see) hits.
+     2) time distribution of raw data:
+        it is enough the histogramm is some how filled. 
+        if it is not then the detector has no data
+
+     3) noisy channels : show how many raws per channel (plane:cell)
+
+     4) time distribution of hits:  it should rough look like that: 
+
+
+              -- -
+             /     \
+             |     |
+             |     |
+             /     \----------\ 
+            /                  \
+            |                  |  
+            |                  |
+            |                  |  
+            |                  |
+            /                  \ 
+
+     NB: important for data taking is that the plot 1) and 2) are filled !!!
+     If they are not : CALL the EXPERTS !! 
+
+3b)  timedist()
+      this two plots are for calibration purposes (only for experts)
+
+3c)  statdistRawHit()
+      1) distribution of raw data 
+      2) raw data vs event number
+      3) distribution of hits
+      4) hits vs event number 
+
+3d)  statdistTrack()
+      1) distribution of tracks
+      2) tracks vs event number 
+
+
+
+
+
+
+

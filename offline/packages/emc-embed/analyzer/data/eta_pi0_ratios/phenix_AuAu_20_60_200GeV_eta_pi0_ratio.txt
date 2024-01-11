@@ -1,0 +1,16 @@
+2.25   0.36   0.10
+2.75   0.34   0.10
+3.25   0.37   0.070
+3.75   0.34   0.066
+4.50   0.41   0.096 
+5.50   0.49   0.096
+6.50   0.42   0.16
+7.50   0.43   0.098
+8.50   0.38   0.17
+9.50   0.40   0.20 
+
+
+pT   R_{eta/pi0} err.R_{eta/pi0}
+
+Au+Au eta/pi0 ratio 200 GeV (20-60% centrality)
+Errors are total errors (only point-to-point survive).

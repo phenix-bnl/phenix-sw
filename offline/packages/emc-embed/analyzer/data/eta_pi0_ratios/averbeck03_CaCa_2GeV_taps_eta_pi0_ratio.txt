@@ -1,0 +1,21 @@
+0.05   0.00453035   0.00226838 
+0.12   0.00783138   0.00257183 
+0.20   0.0145747   0.00378461 
+0.28   0.0240436   0.00760908 
+0.36   0.0386199   0.0137699 
+0.44   0.0601291   0.0305491 
+0.56   0.0636419   0.0712915 
+0.72   0.106084   0.375517 
+
+
+computed via:
+e.setFit(0);
+TGraphErrors*pi0=(TGraphErrors*)e.plot_spectrum_from_ascii("taps_sis_pi0_CaCa_2GeV.txt",eband);
+TGraphErrors*eta=(TGraphErrors*)e.plot_spectrum_from_ascii("taps_sis_eta_CaCa_2GeV.txt",eband);
+TF1 *boltz = new TF1("boltz","[0]*exp(sqrt(x*x+[1]*[1]+[2])/[3])",0.,1.2);
+boltz->SetParameters(1,0.135,0.,-1);
+boltz->SetParLimits(1,0.135,0.135);
+pi0->Fit("boltz");
+TGraphErrors*r=(TGraphErrors*)emcAnalyzerUtils::ratio(eta,boltz)
+r.Draw("AP")
+emcAnalyzerUtils::dumpGraph(r,"x-y-ey")

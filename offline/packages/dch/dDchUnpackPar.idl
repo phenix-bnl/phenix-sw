@@ -1,0 +1,11 @@
+
+
+struct dDchUnpackPar 
+{
+        short detIdWord;  /* index where the detid word is located in the DCM 
+				output stream 
+				detidWord from MDC  = 1
+				detidWord real data = 0  */ 
+        short dc111;  /* 0 = normal data and MDC data;
+			 1 = DC prototype test data */
+};

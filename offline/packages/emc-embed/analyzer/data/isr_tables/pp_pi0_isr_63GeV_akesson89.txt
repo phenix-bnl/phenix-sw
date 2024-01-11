@@ -1,0 +1,20 @@
+4.75 2610. 680. 
+5.25 945. 235. 
+5.73 400. 90. 
+6.23 200. 46. 
+6.73 101. 23. 
+7.23 55.  12.5 
+7.72 25.9 5.9 
+8.23 13.7 3.1 
+8.75 7.32 1.98 
+9.38 3.02 0.84 
+10.40 0.670 0.264
+
+
+AKESSON 89 CERN-EP/89-98 
+Errors are combined statistical and systematic
+P P --> PI0 X 
+SQRT(S) IN GEV 63 
+x = PT IN GEV 
+y = E*D3(SIG)/D(P**3) IN PB/GEV**2 
+x y +- dy 

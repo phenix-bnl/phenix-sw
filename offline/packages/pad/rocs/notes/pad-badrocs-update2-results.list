@@ -1,0 +1,17 @@
+for i in `cat notes/pad-badrocs-update2-epoch.list` ; do root -l -q
+"bulkCommitBadROCs.C($i,1)" ; done
+root [0]
+Processing bulkCommitBadROCs.C(110385,1074903039,1074982122,1)...
+ 
+ TSstart Fri Jan 23 19:10:39 2004
+ 
+ TSstop  Sat Jan 24 17:08:42 2004
+PadCalibrationObject Parameter information
+numberBadCh= 0
+numberBadROC= 132
+ 
+Debug= 0 (should be 1 or 2 when debugging Info for Bad Channel and Bad ROCs respectively)
+Attempting to commit calibrations...
+ 
+!!PUT WORKED!!
+(int)16

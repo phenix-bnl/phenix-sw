@@ -1,0 +1,86 @@
+/* dDchDCM.idl */
+
+/** This table is used to recreate GEANT associations of data fetched from the
+RAW records.  This process is intended to enable evaluators to work AS
+THEY DID BEFORE, even when we are reading RAWTAPE data.Here is the concept:
+
+In the "Normal Staf run" (Pisa input),we take as the basic input the GHITS 
+bank of information about where tracks crossed various detector elements.  
+The GHITS bank is the one which includes the MCTRACK index which identifies
+the track number responsible for the hit.  During the FastSimulator, each 
+GHIT is made both into a STAF_RAW word as well as a "Detector-HIT". During 
+this process, the table shown below (dDchGhitRaw.idl) is filled:
+
+
+{NOTE:  The lines below are commented out...}                             
+---------------------------------------------                             
+      /* dDchGhitRaw.idl                                                  
+                                                                          
+      /*   Relates dcghit table entries to dDchRaw entries.               
+                                                                          
+      struct dDchGhitRaw {                                                
+        short ghitid;                     /* pointer to dcghit.id         
+        short rawid;                      /* pointer to dDchRaw.id        
+      };                                                                  
+--------                                                                  
+
+
+After the unpack of the RAW-TAPE events, we will be filling the "Staf-Raw" 
+table.  Obviously, this data will be re-ordered via the transformations 
+which lead to the creation of the RAW_TAPE itself.  To allow evaluators 
+of detectors to run UNTOUCHED from the "normal" to the "RAW-TAPE" modes,
+we must re-fill this table making associations of the NEW STaf-Raw data 
+tables back into the ghits.  From there, all analysis and evaluation can
+run as before.
+
+For each detector which will create raw data, the detector person will 
+have to determine some kind of "smallest information piece" which can be 
+referenced by a unique locus within the RAW-TAPE data.  For the drift 
+chamber example the thinking is as follows:
+
+1)  The data from the DCM consists of 32 bit words.
+2)  The upper 12 bits are pre-pended by the DCM and act as smart indices 
+which ID the rest of the word.
+3)  The lower 20 bits are what the DC calls a "TimeSlice".
+4)  Each "TimeSlice" contains four 5-bit subsections which we (almost 
+correctly) call nibbles.
+5)  In each nibble of Drift Chamber information, there can be only one 
+"edge" which is certainly associated with one GHIT which originally created
+it.
+
+Our job is to create an association table which goes from each uniquely 
+identifiable nibble back to the GHIT. Then, as we fill the STaf-RAW table, 
+nibble-bynibble,we can look up the GHIT which is associated with the nibble
+in hand and recreate the GHIT-RAW association table.  This job happens in 
+mDchUnpack.cc
+
+Since Nibble addresses have the same meaning before and after
+zero-suppression, and the Staf-RAW data is only available while filling the
+FEM,we choose to fill this association table during the mDchFEM.cc routine.
+*/
+
+struct dDchNibbleGhit 
+{
+/** Geant "ghit" id reference */
+        short ghitid;   
+
+/** The arm of the nibble   */
+        short arm;      
+/** The side of the nibble   */
+        short side;     
+/** The key of the nibble   */
+        short key;
+/** The pair of the nibble   */
+        short pair;
+/** The channel of the nibble   */
+        short channel;
+/** The nibble   */
+        short Nibble;
+};
+
+
+
+
+
+
+

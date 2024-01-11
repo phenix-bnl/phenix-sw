@@ -1,0 +1,7 @@
+struct dPadPerfPar {
+     short verbose ; /* set for debug printing output */
+     short pc1;      /* set to activate PC1 perfect tracking */
+     short pc2;      /* set to activate PC2 perfect tracking */
+     short pc3;      /* set to activate PC3 perfect tracking */
+};
+

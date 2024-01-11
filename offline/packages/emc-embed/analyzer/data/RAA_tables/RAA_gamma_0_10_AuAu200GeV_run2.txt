@@ -1,0 +1,29 @@
+pT    epT    R_AA     eR_AA    eR_AA(%)
+1.25   0.05   8.261   +8.08     0.
+1.75   0.05   4.177   +4.46     0.
+2.25   0.05   0.979   +2.73     0.
+2.75   0.05   0.587   +1.73     0.
+3.25   0.05   1.108   +1.21     0.
+3.75   0.05   1.080   +0.78     0.
+ 4.25  0.05    1.714  6.34e-01  37.0  
+ 4.75  0.05    1.656  5.44e-01  32.9  
+ 5.25  0.05    1.290  4.59e-01  35.6  
+ 5.75  0.05    1.418  4.14e-01  29.2  
+ 6.25  0.05    1.006  3.40e-01  33.8  
+ 6.75  0.05    1.199  3.61e-01  30.1  
+ 7.25  0.05    1.331  3.97e-01  29.8  
+ 7.75  0.05    1.177  3.80e-01  32.3  
+ 8.50  0.05    0.948  2.98e-01  31.5  
+ 9.50  0.05    0.954  3.56e-01  37.3  
+ 11.0  0.05    0.823  3.21e-01  38.9  
+ 13.0  0.05    0.957  4.65e-01  48.6  
+
+
+R_AA gamma Au+Au 0-10% centrality.
+Au+Au gamma spectrum is that published in Phys.Rev.Lett.94:232301,2005 (nucl-ex/0503003).
+
+p+p reference is NLO pQCD calculation scaled by T_AA [W.Vogelsang, CTEQ6, mu=p_T]
+which has a +/-20% uncertainty above pT = 4 GeV/c
+
+Errors in 4th column are point-to-point. The '+' indicates that the lower errors 
+extend to zero.

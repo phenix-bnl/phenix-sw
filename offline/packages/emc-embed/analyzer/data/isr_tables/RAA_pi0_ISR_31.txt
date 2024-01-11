@@ -1,0 +1,60 @@
+2.15   0.41  0.10
+2.65   1.07  0.27
+3.20   1.86  0.46
+3.70   2.00  0.50
+4.20   2.05  0.51
+3.84	 1.43331   0.0914659
+4.22	 1.68221   0.135037
+4.72	 1.42134   0.151214
+5.23	 1.34201   0.0975307
+5.73	 1.44231   0.137746
+6.23	 1.5017    0.233959
+6.73	 1.59007   0.437963
+7.23	 0.867703  0.328502
+
+
+2.15   0.41  0.10
+2.65   1.07  0.27
+3.20   1.86  0.46
+3.70   2.00  0.50
+4.20   2.05  0.51
+
+
+7.23	 0.867703  0.328502
+7.73	 0.569728  0.370051
+
+[A A --> PI0 X]/16*[P P --> PI0 X]  @ SQRT(s)= 31 GeV
+
+Second half of (lower pT) data comes from:
+
+\bibitem{Karabarbounis:1981px}A.~Karabarbounis {\it et al.},
+%``Production Of Pi0 At Large Transverse Momentum In Alpha Alpha And Alpha P
+%Collisions At The Cern Intersecting Storage Rings,''
+Phys.\ Lett.\ B {\bf 104} (1981) 75.
+%%CITATION = PHLTA,B104,75;%%
+
+TGraphErrors *pi0_karab=e.plot_spectrum_from_ascii("alpha_alpha_pi0_isr_30.6GeV_karabarbounis81.txt",eband)
+TF1 *powlaw = new TF1("powlaw","[0]/x^[1]",2.,5.); 
+//TGraphErrors *pi0_pp_all = (TGraphErrors*)e.plot_spectrum_from_ascii("pp_pi0_isr_30.6GeV_all.txt",eband);
+//powlaw->SetParameters(42.324*16.,11.8527); // (fit result)*A^2
+TGraphErrors *pi0_pp_kourkou = (TGraphErrors*)e.plot_spectrum_from_ascii("pp_pi0_isr_30.6GeV_kourkoumelis80.txt",eband);
+pi0_pp_kourkou->Fit("powlaw","REI","",2.,5.);
+powlaw->SetParameters(52.61*16.,12.04); // (fit result)*A^2
+TGraphErrors*RAA_karab=emcAnalyzerUtils::ratio(pi0_karab,powlaw)
+emcAnalyzerUtils::dumpGraph(RAA_karab);
+
+// using pi0_all
+2.15   0.411848  0.051481 
+2.65   1.07398   0.122741 
+3.20   1.86478   0.286889 
+3.70   2.00428   0.320684 
+4.20   2.05284   0.432177 
+
+// using kourkoumelis:
+2.15   0.382403  0.0478003 
+2.65   1.03703   0.118517 
+3.20   1.86535   0.286977 
+3.70   2.06016   0.329625 
+4.20   2.16077   0.454898 
+
+Final systematical error is that of the paper: +/-25%

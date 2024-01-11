@@ -1,0 +1,19 @@
+0.05   0.00952564   0.0032489 
+0.15   0.0132001   0.00348615 
+0.25   0.0306378   0.00812961 
+0.35   0.0778311   0.0204287 
+0.45   0.12594   0.0538228 
+0.55   0.152532   0.0423382 
+0.65   0.19093   0.0529965 
+
+
+computed via:
+e.setFit(0);
+TGraphErrors*pi0=(TGraphErrors*)e.plot_spectrum_from_ascii("taps_sis_pi0_NiNi_1.9GeV.txt",eband);
+TGraphErrors*eta=(TGraphErrors*)e.plot_spectrum_from_ascii("taps_sis_eta_NiNi_1.9GeV.txt",eband);
+TF1 *f = new TF1("f","([0]+[1]*x+[2]*x*x+[3]*x*x*x)*exp(x/[4])",0.,1.2);
+f->SetParameters(1,1,1.,1,-1);                    
+pi0->Fit("f");
+TGraphErrors*r=(TGraphErrors*)emcAnalyzerUtils::ratio(eta,f)
+r.Draw("AP")
+emcAnalyzerUtils::dumpGraph(r,"x-y-ey")

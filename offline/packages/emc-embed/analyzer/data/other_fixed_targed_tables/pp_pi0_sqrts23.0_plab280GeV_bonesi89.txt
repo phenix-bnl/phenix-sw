@@ -1,0 +1,36 @@
+4.11  675.0E-09  31.1E-09 124.0E-09
+4.36  353.4E-09  9.5E-09  59.0E-09
+4.61  153.0E-09  6.1E-09  24.0E-09
+4.86   72.0E-09  4.2E-09  12.0E-09
+5.19   27.5E-09  1.8E-09  5.2E-09
+5.69   5.43E-09  0.79E-09  1.1E-09
+6.19   1.06E-09  0.21E-09  0.37E-09
+6.69   0.14E-09  0.08E-09  0.04E-09
+
+
+
+BONESINI 88 ZP C38, 371 
+Invariant cross section 
+P P --> PI0 X 
+PLAB IN GEV 280 
+PT IN GEV/C 
+y = E*D3SIG/DP3 IN MB/GEV**2
+
+y = E*D3SIG/DP3 IN PB/GEV**2
+
+pp-> pi0 x bonesi 89
+plab = 280GeV, y in pbarn
+pt  pt2  y  dy
+
+
+
+PT = 4.11 (BIN = 4.0 TO 4.25) GEV/C 
+PT = 4.36 (BIN = 4.25 TO 4.5) GEV/C 
+PT = 4.61 (BIN = 4.5 TO 4.75) GEV/C 
+PT = 4.86 (BIN = 4.75 TO 5.0) GEV/C 
+PT = 5.19 (BIN = 5.0 TO 5.5) GEV/C 
+PT = 5.69 (BIN = 5.5 TO 6.0) GEV/C
+PT = 6.19 (BIN=6.0 TO 6.5) GEV/C 
+PT = 6.69 (BIN=6.5 TO 7.0) GEV/C
+
+

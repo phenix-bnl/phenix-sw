@@ -1,0 +1,29 @@
+  1.500E+00  8.126E+07
+  1.700E+00  2.800E+07
+  1.900E+00  1.020E+07
+  2.150E+00  3.464E+06
+  2.600E+00  6.311E+05
+  3.450E+00  3.732E+04
+
+
+One thing I tried was to take
+the KKP charged-hadron ff's and "modify" them
+as people sometimes do it to turn them into
+h- and h+ separately. So for example I take
+the (for h-) "favored"  d  ff and multiply it by
+(1+z)/2
+whereas the "unfavored" u is multiplied by
+(1-z)/2.
+This is for h- , for h+ you would just do the
+oppposite.
+
+After this modification, I seem to get much bigger
+numbers at eta=3.2:
+
+a factor 3 or so larger than what I had for Kretzer.
+I am not claiming this is the right way of doing it
+(in fact I may have made a mistake; I did this
+rather quickly!), but if true it indicates that
+there is a *lot* of uncertainty concerning the ff's
+here. Perhaps Kretzer h- are "anomalously" low,
+who knows.

@@ -1,0 +1,10 @@
+
+The total number of events is
+3.53039040000000000e+07
+
+ie. this is the number you should divide by for Nevents.
+
+(The total number of equivalent events at highpt is
+8.42041920000000000e+07, for central bins and 0-100,
+a little lower than that for peripheral bins)
+

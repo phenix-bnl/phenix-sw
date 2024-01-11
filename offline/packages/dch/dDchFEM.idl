@@ -1,0 +1,98 @@
+/* dDchFEM.idl */
+
+/** Contains a single DriftChamber FEM broadcast. 
+ There will be 160 of these in each real PHENIX event 
+
+   Welcome to the idl file which defines the Drift Chamber FEM REPORT!!! 
+   All FEM data consists of three basic parts.  These are: 
+   1)  Header words: 
+          The header contains a number of words (the total varies from  
+ 	    detector to detector) which serve a vareity of purposes.   
+
+ 	    The first word from EVERY system is CAV1 which will have all 
+ 	    bits=1.  (i.e. 0xFFFF for 16 bit systems and 0xFFFFF for 20's)
+
+          The header will always contain Event and Beamclock Counters. 
+ 	    for the Mock-Data Challenge, these fields are ignored. 
+
+ 	    The header will possibly contain some "user" words (such as 
+ 	    "Flag" in the DC). 
+
+ 	    The header will contain two fields which uniquely identify the  
+ 	    source of the block of data contained in the report.  Below, 
+ 	    these are called:  det and adr  (SEE BELOW)
+	
+    2)  Data Block: 
+          This is a fixed length string of either 20 bit or 16 bit numbers 
+          depending upon your sub-system.  For the Drift Chambers, this 
+          happens to be 960 20-but words. 
+
+    3)  Trailer: 
+          The trailer will contain a number of user words (how many is sub-
+ 	    system dependent). 
+ 	    The second-to-the-last number will be parity of the data so far. 
+
+ 	    The Last-Word is always CAV2 (a Glink standard) which will have 
+ 	    all bits = 0 (thereby not affecting the parity). 
+
+
+   The structure below shows ONE report from a Drift Chamber FEM.  In one 
+   complete PHENIX event, there will be 160 of these. 
+ You will need to contact your FEM person to determine the header, trailer,
+ and data fields for your sub-system and what they contain. 
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>DET and ADR fields<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ In the DC data format shown below, the det and adr fields serve special  
+ importance.  These fields contain unique numbers which will identify this
+ packet of data from your system.  I.e. THESE NUMBERS HAVE A 1-1 RELATION 
+ TO YOUR HARDWARE INDICES(!!!).  The exact format of these numbers is not 
+ yet final (as far as I know).  Therefore, for the DC, we have chosen the 
+ following convention almost arbitrarily: 
+
+ det    0xDC000     arm 0 
+        0xDC001     arm 1 
+
+ adr    0xAskkp     s = side (0-1) 
+                    kk= keystone (0-19) 
+                    p = pair (0-1) 
+
+ ONE OF YOUR MOST IMPORTANT CHOICES in making the FEM DATA is a convention 
+ by which to uniquely ID your packet using DET and ADR!!! */
+
+
+
+struct dDchFEM {
+  /*  Here is the header for a DC FEM report:  */
+/** Beginning of transmission (000FFFFF) */
+  long CAV1;         
+/** Detector ID dc000=west dc001=east */ 
+  long det;          
+/** Event count = LS-16 bits  (reset w/ ModeBits)*/
+  long Ecounter;     
+/** HEX: a0000 + side*0x1000 + Keystone*0x100 + CardPair */
+  long adr;          
+/** UserWord loaded from ArcNet */	
+  long Flag;	     
+/** LS 8 bits = beam clock counter when trigger occured */
+  long Bcounter;     
+
+  /*  Here is the block of RAW FEM DATA WORDS */
+/** Block of RAW FEM data */
+  long Word[960];   
+
+  /*  Here is the trailer for the Drift Chamber FEM report:  */
+/** 1st user word loaded from ArcNet*/
+  long usr1;         
+/** 2nd user word loaded from ArcNet*/
+  long usr2;         
+/** 3rd user word - DC FEM status word*/
+  long usr3;         
+/** 4th user word - all 0's*/
+  long usr4;         
+/** Parity word */
+  long parity;       
+/** End of transmission (00000000) */
+  long CAV2;         
+};
+
+

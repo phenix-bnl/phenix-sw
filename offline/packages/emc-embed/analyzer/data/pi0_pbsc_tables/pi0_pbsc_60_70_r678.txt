@@ -1,0 +1,21 @@
+ <I> Constructing full-corrected r678 spectrum for pi0 and centrality class: 12 (60 - 70%) from raw yields file: yields_60_70_r678.txt
+ <I> Spectrum shifted along the y-axis (Yield) to correct for true mean value of the $p_T$ bin in the steeply falling spectrum
+ <I> Total # of events in centrality class: 1.29516e+06 +/- 657.055
+  pT   pT_err   Ntot   Ntot_err   (Rel_toterr %)   Stat_err   Syst_err   CCuncorr_toterr   pTcorr_toterr
+  1.25  0.05    1.841e-01    2.634e-02    14.31    2.980e-03    2.617e-02    2.405e-02    9.207e-03
+  1.75  0.05    2.859e-02    4.124e-03    14.42    6.155e-04    4.078e-03    3.756e-03    1.429e-03
+  2.25  0.05    6.942e-03    1.012e-03    14.57    1.698e-04    9.974e-04    9.157e-04    3.471e-04
+  2.75  0.05    1.569e-03    2.348e-04    14.96    5.725e-05    2.277e-04    2.113e-04    7.847e-05
+  3.25  0.05    4.915e-04    7.603e-05    15.47    2.393e-05    7.217e-05    6.805e-05    2.457e-05
+  3.75  0.05    1.415e-04    2.380e-05    16.82    1.110e-05    2.105e-05    2.144e-05    7.074e-06
+  4.25  0.05    6.617e-05    1.192e-05    18.02    6.519e-06    9.984e-06    1.077e-05    3.308e-06
+  4.75  0.05    1.925e-05    4.576e-06    23.77    3.500e-06    2.947e-06    4.298e-06    9.625e-07
+  5.25  0.05    8.283e-06    2.451e-06    29.59    2.086e-06    1.287e-06    2.346e-06    4.141e-07
+  5.75  0.05    3.952e-06    1.540e-06    38.97    1.408e-06    6.233e-07    1.499e-06    1.976e-07
+  6.25  0.05    3.087e-06    1.089e-06    35.27    9.700e-07    4.940e-07    1.049e-06    1.543e-07
+  6.75  0.05    1.575e-06    6.799e-07    43.17    6.300e-07    2.557e-07    6.622e-07    7.874e-08
+  7.25  0.05    nan    nan    16.47    nan    nan    nan    nan
+  7.75  0.05    2.708e-07    3.857e-07    142.40    3.830e-07    4.523e-08    3.846e-07    1.354e-08
+
+
+ FUNCTION MUST BE MINIMIZED BEFORE CALLING MINOs     

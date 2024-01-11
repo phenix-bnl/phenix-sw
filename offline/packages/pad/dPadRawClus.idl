@@ -1,0 +1,9 @@
+/* dPadRawClus.idl */
+
+/*   Relates dPadRaw table entries to dPadCluster entries. */
+
+struct dPadRawClus {
+  short rawid;                      /* pointer to dPadRaw.id */
+  short clusid;                     /* pointer to dPadCluster.id */
+};
+

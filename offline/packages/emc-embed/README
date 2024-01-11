@@ -1,0 +1,62 @@
+Here's a mini tutorial on how to perform EMCal embedding:
+
+From ROOT prompt, type:
+
+_____________________________________________________________________________
+RUN-1:
+
+// Load the embedding library
+gSystem->Load("libemcEmbedRun1.so"); // For Run-1 embedding [DST+DST] 
+
+setverbose(0); // Change to 1,2,... to have more output
+
+// If you want to increase the statistics in the PbGl part put ~750 there
+setSimEventOffset(0);
+
+// Open the output file
+doutfileopen("embedding_result.root");
+
+// Open the REAL DST
+dfileopen("read_dst.root");
+
+// Open the SIMULATED DST and the associated RAWREL file (Run-1)
+dfileopen2("simul_dst.root","rawrel.root");
+
+// Loop over all events
+drun(); 
+
+// IMPORTANT: save the results !!!
+dexit();
+
+_____________________________________________________________________________
+RUN-2:
+
+// Load the embedding library
+gSystem->Load("libemcEmbedRun2.so"); // For Run-2 embedding [DST+DST] or
+//gSystem->Load("libemcEmbedEasy.so"); // For Run-2 embedding [(u)DST+(u)DST] <-- not ready yet !
+
+setverbose(0); // Change to 1,2,... to have more output
+
+setPercentageOfSimEnergySmearing(0.08); // Simulated towers energy smearing (%)
+
+// Open the output file
+doutfileopen("embedding_result.root");
+
+// Open the REAL DST
+dfileopen("read_dst.root");
+
+// Open the SIMULATED DST (Run-2)
+// Please note that in the case of Run-2 this simulated must be a recent one,
+// i.e. one containing the input kinematics (the information
+// that used to be present only in the rawrel.root file)
+dfileopen2("simul_dst.root");
+
+// Loop over all events
+drun(); 
+
+// IMPORTANT: save the results !!!
+dexit();
+
+// This last function will also print a few messages
+// that are worth noting, e.g. the list of applied
+// afterburners.

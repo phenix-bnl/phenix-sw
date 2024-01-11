@@ -1,0 +1,21 @@
+03-JAN-2002
+
+	* added getGLV1TimeStamp method in emcGlobals
+	
+18-JUN-2001
+	modifications:
+	
+	* in EmcSector, PbScSector, PbGlSector, EmcStaticData : 
+	some cleanup (plain C arrays to STL vector, char* to string, that sort of things)
+
+	* in Makefile.am :
+	added emcDefines and emcException
+
+	* in emcGlobals : changed reducedMean signature and implementation
+	
+	add-ons :
+
+	* emcException class (first try of it)
+	* emcDefines.h to have some commonly used headers for emcal
+	errors reporting.
+	* this ChangeLog file

@@ -1,0 +1,19 @@
+  1.0000E+00  1.0394E-01  4.5014E-01  4.4592E-01
+  2.0000E+00  1.0377E-01  4.5659E-01  4.3964E-01
+  3.0000E+00  1.3939E-01  4.8690E-01  3.7371E-01
+  4.0000E+00  1.7817E-01  5.0780E-01  3.1403E-01
+  5.0000E+00  2.1695E-01  5.1845E-01  2.6460E-01
+  6.0000E+00  2.5447E-01  5.2108E-01  2.2445E-01
+  7.0000E+00  2.9010E-01  5.1935E-01  1.9055E-01
+  8.0000E+00  3.2342E-01  5.1373E-01  1.6285E-01
+  9.0000E+00  3.5376E-01  5.0557E-01  1.4067E-01
+  1.0000E+01  3.8215E-01  4.9630E-01  1.2155E-01
+
+
+Relative parton-parton contributions for h-
+
+     pt          qq          qg          gg
+
+These relative contributions I need to do for
+Kretzer's fragmentation functions because KKP
+don't have h+ and h- sparately. They are rather similar.

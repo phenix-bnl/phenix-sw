@@ -1,0 +1,9 @@
+/* dPadGhitRaw.idl */
+
+/*   Relates pcghit table entries to dPadRaw entries. */
+
+struct dPadGhitRaw {
+  short ghitid;                     /* pointer to pcghit.id */
+  short rawid;                      /* pointer to dPadRaw.id */
+};
+

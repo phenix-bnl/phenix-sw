@@ -1,0 +1,13 @@
+/* dPadRaw.idl */
+
+/*   Contains information about fired pads. */
+
+struct dPadRaw {
+  short id;              /* a primary reference key */
+  short arm;             /* arm number (0=west, 1=east) */
+  short sector;          /* sector number containing cluster (0-7) */
+  short side;            /* 1 = north, 0 = south */
+  short padx;            /* index of pad in r-phi direction (0-x) */
+  short padz;            /* index of pad in z direction (0-z) */
+  short padtype;         /* calibrated pad type. 1=inactive, 2=hot, 0=good */
+};

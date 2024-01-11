@@ -1,0 +1,67 @@
+Hello, embedding fans !
+
+This is an updated version of the old Run2 EMCAL Embedding framework, to fit into the new Fun4All framework. 
+
+For the impatient, have a look at the (test) driving macro run_embed.C.
+
+The output of the embedding is a PWG-like nanoDST, with the following structure :
+
+      EVA (PHCompositeNode)/
+         dEmcGeaTrack (PHIODataNode)          |
+         dEmcGeaTrackCluster (PHIODataNode)   | Evaluation tables
+         dEmcGeaClusterTrack (PHIODataNode)   |
+         fkin (PHIODataNode)                  -> primary info
+      emcClusterContainer (PHIODataNode)      -> merged clusters (*)
+      PHGlobal (PHIODataNode)                 -> from real event
+      emcSimClusterContainer (PHIODataNode)   -> original sim clusters
+      Sync (PHIODataNode) 		      -> to allow synchronisation
+
+(*) merged clusters = clusters that do have a simulated contribution (<=>emcClusterContent::isMerged()==true OR isSimulated()==true).
+
+The inputs are :
+
+1) a real PWG nanoDST (containing Sync,PHGlobal) which drives the run.
+2) a real DST(EMCTwr) containing emcTowerContainer
+3) a simulated DST containing emcClusterContainer, emcTowerContainer, VtxOut, fkin
+
+The embedding is decomposed into several SubsysReco conforming modules (at some point all those should be called by one single "super"-module, e.g. EmcEmbedDriver). Those must be done in sequence. Here's the list (in brackets the top nodes this module deals with, see below for an explanation of the topnodes) :
+
+* EmcEmbedEventSelector [REAL,SIMU]
+    - decides whether or not the real and simulated vertices match for a given
+ event. If not, the following modules are *not* executed.
+(just for the record, note that there's a (dumb) alternative to this one, called EmcEmbedVertexSelector).
+
+* EmcEmbedDriver [REAL,SIMU,TOP]
+    - for the moment, only insure that the relevant nodes/subnodes required by the other modules are created. Might evolved in a full blown driver, encapsulating the call to the other modules, so you would only have to register this one to your Fun4All embedding macro. So far, we prefer to have the modules accessible one by one to ease debugging.
+
+* EmcEmbedSimDeadTower [SIMU]
+    - (re)apply the real deadmap to the simulated towers
+
+* EmcSimTowerSmearer [SIMU]
+    - degrade the simulated energy resolution to better fit the real one
+
+* EmcEmbedTowerMerger [REAL,SIMU,TOP]
+    - actually merge signals from simulated and real towers, creating merged towers.
+
+* EmcEmbedReclusterizer [TOP]
+    - clusterize the merge event (encapsulating a call to mEmcClusterizerv0 which is also used by normal reconstruction).
+
+* EmcEmbedMergedClusterUpdater [TOP]
+    - computes and updates the simfrac() variable of the merged clusters.
+ 
+* EmcEmbedOutputMover [REAL,SIMU,TOP]
+    - make some node gym(**) to insure we get under TOP/DST node the relevant pieces of information that the Fun4AllOutputManager will use to produce the output. It is at this stage that we filter out the merged clusters (i.e. keeping only those clusters that do have a simulated information)
+
+* EmcEmbedChecker (optional) [REAL,SIMU,TOP]
+    - mainly for debugging purposes. Print out a few summary numbers at the end of each event.
+
+-------
+
+The node gym is by far the most complex part of the embedding software.
+Here is a recap on what should going on.
+
+We deal with 3 top nodes : a simulated one (called SIMU by default) which contains the nodes of the simulated DST, a real one (called REAL by default) which contains the nodes of the real PWG nano DST, and a merged one (called TOP, this is for the moment imposed by Fun4All because as we write this, the Fun4AllOutputManager can only deal with nodes under this very top node). The top node names can in pinciple be changed in the ctors of the different modules (but then they of course have to be used consistently...).
+
+L. Aphecetche (aphecetc@in2p3.fr)
+
+29-APR-2004

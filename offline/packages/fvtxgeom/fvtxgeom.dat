@@ -1,0 +1,57 @@
+// $Id: fvtxgeom.dat,v 1.7 2007/03/24 09:46:56 hpereira Exp $ 
+// fvtx geometry
+// the format is: variable_name::value_1::value_2::[...]
+// the "//" is used to add comments. All lines starting with this are ignored at parsing.
+
+// error handling:
+// - if this file is not found in the working directory, the default configuration is used
+// - if this file miss some variables, the default values are used for these variables
+// - if a variable found in this file has the wrong number of values, an exception is thrown
+
+// station position along the beam [cm]
+station_z::18.7::25.1::31.5::37.9
+
+// phi_begin for sector 0 [rad]
+
+// no staggering
+sector_phi0::0::0::0::0
+
+// 1 degree staggering
+// sector_phi0::0::0.01745::0.03491::0.05236
+
+// 10 degrees staggering
+// sector_phi0::0::0.1745::0.3491::0.5236
+
+// sector phi window [rad]
+sector_delta_phi::0.2618
+  
+// sector frame thickness [cm]
+sector_delta_z::0.300
+
+// azimutal overlap [cm]
+phi_overlap::0.1
+
+// delta z [cm] between plane average z and Sector average z
+// Note: the plane z should not be used especially since both radius of the same plane are not at the same "z"
+// radius->get_z() or later should be used instead
+// The z provided here corresponds to the inner radius.
+plane_delta_z::-0.290::0.290
+
+//   inner and outer radius [cm] of the different radial objects. 
+//   Note that there is only one radius for the station 1, 
+//   so that the corresponding values given here are ignored
+inner_radius::3.5::3.5::3.5::3.5::9.8::9.8::9.8::9.8
+outer_radius::10.2::10.2::10.2::10.2::9.8::17.8::17.8::17.8    
+    
+// delta z between sector average z and radius average z [cm]
+// inner radius first and second plane; outer radius first and second plane
+radius_delta_z::-0.290::0.290::-0.215::0.215
+  
+// columns thicknes [cm]
+column_delta_z::0.03;
+  
+// strip width [cm]
+strip_width::0.0075;
+
+// strip tilt angle [rad]
+strip_tilt::0::0::0::0::0::0::0::0;

@@ -1,0 +1,119 @@
+/*! @defgroup TUT0 How to access the Muon Tracker database
+
+<h3>Introduction</h3>
+
+The Muon Tracker configuration is loaded at initialization stage of each job. The configuration can be either retrieved from local files of from the database. It is recomanded to use the database configurations in place of local files so that all users are sure to use the same configuration, this provided that the contents of the database is set properly. 
+
+This tutorial describes how one can write some of the configuration files to the database, or retrieve them from the database. It covers the following configurations:
+
+<ul>
+<li><b>the muon tracker internal alignment</b>: it allows to align each octant, half, gap and plane, and should (in principle) be done only once, since the different gaps of the same octant are fixed one with respect to the other</li>
+<li><b>the muon tracker global alignment</b>: it allows to align all octants independently, but keeping its constituent gaps/planes fixed one with respect to the other. It should in principle be performed every time the muon tracker is moved.</li>
+<li><b>the muon tracker list of disabled high voltage channels</b>: this list corresponds to tripped HV modules during data taking and can be different for each run.</li>
+<li><b>the muon tracker list of dead FEM channels</b>: this list corresponds to FEM channels that have problems during the run (dead/stuck bits/bad AMU Cells, etc) and are therefore masked out.</li>
+</ul>
+
+<h3>Macros</h3>
+<p>Several macro has been written to access (read/write) the database. They are located on CVS in the <i>mutgeom/database</i> directory and can be retrieved using:
+
+\code
+cvs co -d mutgeom/database offline/packages/mutgeom/database
+\endcode
+ 
+<p>The <i>alignment</i> macros are:
+
+<ul>
+<li><b>fetch_alignment.C</b>, to read the muon tracker internal/global alignment for a given time stamp, and optionally write it to local files. It can be used to check if a commit to the DB has been successfully performed.
+
+<li><b>update_global_alignment.C</b>, to commit the muon tracker global alignment from a text file to the database for a given time range. The macro must be edited to set the validity time range of the commit, the input text file, and the description of the commit. The format of the text file is described in the MutArm::updateGlobalAligConsts method.</li>
+
+<li><b>update_internal_alignment.C</b>, to commit the muon tracker internal alignment from a text file to the database for a given time range. The macro must be edited to set the validity time range of the commit, the input text file, and the description of the commit. The format of the text file is described in the MutArm::updateInternalAligConsts method.</li> 
+</ul>
+
+<p>The <i>disabled HV channel</i> macros are:
+
+<ul>
+<li><b>fetch_disabled_wires.C</b>, to read the list of disabled HV channels for a given run, and optionally write it to a local file. It can be used to check if a commit to the DB has been successfully performed.</li>
+
+<li><b>update_disabled_wires.C</b>, to commit a set of disabled HV channels contained in files to the database for a given run number. The macro must be edited to set location of the files to be commited.</li>
+</ul>
+
+<p>The <i>dead FEM channel</i> macros are:
+
+<ul>
+<li><b>fetch_dead_channels.C</b>, to read the list of dead FEM channels for a given run. It can be used to check if a commit to the DB has been successfully performed.</li>
+
+<li><b>update_dead_channels.C</b>, to commit a set of dead FEM channels contained in files to the database for a time interval (defined by a starting and ending runnumber). The macro must be edited to set location of the files to be commited, the validity range, and the comments to be added to the DB.</li>
+</ul>
+
+<p>The <i>dead FEM channel</i> macros are:
+
+<ul>
+<li><b>fetch_dcm_channel_map.C</b>, to read the mapping between FEM channels and strip indices for a given timestamp.</li>
+
+<li><b>update_dcm_channel_map.C</b>, to commit a set of dead FEM channels contained in files to the database for a time interval (defined by a starting and ending runnumber). The macro must be edited to set location of the files to be commited, the validity range, and the comments to be added to the DB.</li>
+</ul>
+
+<p>
+<h3>Important notes:</h3> 
+<p>The <i>FEM channel map</i> macros are:
+
+<p>
+The setting of dead channels, dead HV, etc to the Database is not <i>additive</i>, meaning that if there are several entries matching a given time-stamp, only the latest submitted entry will be read. Notably it will not be <i>merged</i> with previous entries. As a result when one wants to <b>add</b> a dead channel to the list of existing dead channels, for a given period of time, one must: 
+<ul>
+<li>fetch the existing dead channels into a file;</li>
+<li> add the additional channels to this file;</li>
+<li> commit the updated file to the database, with the proper validity range.</li>
+</ul>
+</p>
+
+<p>
+The contents of these various databases notably uses the MuTR plane number as one of the IDs to locate a channel or a plane. The definition of the plane number differs slightly in mutgeom from the offline (mutoo) world. In mutgeom (as well as in the database),
+<ul>
+<li><b>plane 0</b> is the first cathode plane (corresponding to FEM channels);</li>
+<li><b>plane 1</b> is the anode plane (corresponding to HV anode wires);</li>
+<li><b>plane 2</b> is the second cathod plane (corresponding to FEM channels);</li>
+</ul>
+
+As a result, when one wants to add dead FEM channels to the DB one must refer to plane 0 or 2 depending on the cathode to which the channels belong. On the other hand when one wants to add disabled HV wires to the DB one must set the plane to 1.
+</p>
+
+<h3>Example files</h3>
+
+Some files are added in the mutgeom/database directory to illustrate the format of the files used to update the database:
+<ul>
+<li><b>mut.internalAligConsts.dat</b> an example of MuTR internal alignment file</li>
+<li><b>DeadChannels.dat</b> an example of MuTR dead FEM channels</li>
+</ul>
+
+<h3>Database server</h3>
+By default, the database server used for access is not the master server and is read-only, so that users won't be able to update it. Updates of the master server must be coordinated with the Offline Coordinator. In general, one should first test with the test DB server, then notify the Offline Coordinator (Chris) and make your changes to the Master server. Finally you should ask Chris to propagate your changes from the Master server at 1008 to the other server at RCF so that jobs running at RCF then have the modifications. The procedure is described in more detail <a href="https://www.phenix.bnl.gov/WWW/offline/wikioffline/index.php/Database#If_you_have_to_update_calibrations"> here</a>.
+
+<h3>Name of the mutr database banks</h3> 
+<p> The following banks relevant for the MuTR calibrations are stored in the database: 
+
+<table>
+<tr><td>mutgeomglobalalign</td><td> corresponds to the (default) file <i>mut.globalAligConsts.dat</td></tr>
+<tr><td>mutgeominternalalign</td><td> corresponds to the (default) file <i>mut.internalAligConsts.dat</td></tr>
+<tr><td>muthvdisabled</td><td> corresponds to the list of disabled HV channels</li>
+<tr><td>mutsouthdisconnectedwires</td><td> corresponds to the south arm list of disconnected anode wires</li>
+<tr><td>mutnorthdisconnectedwires</td><td> corresponds to the north arm list of disconnected anode wires</li>
+<tr><td>mutsouthattenuatedstrips</td><td> corresponds to the south arm list of attenuated strips</li>
+<tr><td>mutnorthattenuatedstrips</td><td> corresponds to the north arm list of attenuated strips</li>
+<tr><td>mutsouthdeadchannels</td><td> corresponds to the south arm list of dead FEM channels</li>
+<tr><td>mutnorthdeadchannels</td><td> corresponds to the north arm list of dead FEM channels</li>
+</table>
+
+<p>To check the bank records in the database for a given bank name (here <i>mutgeominternalalign</i>) use:
+\code 
+isql calibrations
+select  abstime(int4(startvaltime)),abstime(int4(endvaltime)),abstime(int4(inserttime)),description from mutgeominternalalign
+\endcode
+
+<p>To delete banks committed by mistake, use the following:
+\code
+isql calibrations
+delete from mutgeominternalalign where description like 'run6%'  
+\endcode
+which would delete all <i>mutgeominternalalign</i> records for which destription contains <i>run6</i>. Note that this requires that the database server is set to <i>phnxdb3.phenix.bnl.gov</i> as described above.
+*/

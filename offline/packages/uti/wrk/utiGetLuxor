@@ -1,0 +1,49 @@
+# Script for installing all Luxor modules into a package.
+# You must define STAFTOP to be your top local CVS directory where
+#   you have checked out STAF.  You must run this within the top
+#   directory of your package ($LUXTOP if you are following the
+#   Luxor-in-STAF guide.
+
+cp $STAFTOP/staf/ana/dch/src/*.idl src
+cp $STAFTOP/staf/ana/dch/src/*.c src
+cp $STAFTOP/staf/ana/dch/src/*.cc src
+cp $STAFTOP/staf/ana/dch/inc/*.idl inc
+cp $STAFTOP/staf/ana/dch/inc/*.h inc
+cp $STAFTOP/staf/ana/pad/src/*.idl src
+cp $STAFTOP/staf/ana/pad/src/*.c src
+cp $STAFTOP/staf/ana/pad/src/*.F src
+cp $STAFTOP/staf/ana/pad/inc/*.idl inc
+cp $STAFTOP/staf/ana/tec/src/*.idl src
+cp $STAFTOP/staf/ana/tec/src/*.c src
+cp $STAFTOP/staf/ana/tec/inc/*.idl inc
+cp $STAFTOP/staf/ana/tec/wrk/*.txt wrk
+cp $STAFTOP/staf/ana/cgl/src/*.idl src
+cp $STAFTOP/staf/ana/cgl/src/*.c src
+cp $STAFTOP/staf/ana/cgl/inc/*.idl inc
+cp $STAFTOP/staf/ana/uti/src/*.c src
+cp $STAFTOP/staf/ana/uti/src/*.cc src
+cp $STAFTOP/staf/ana/uti/inc/*.hh inc
+cp $STAFTOP/staf/ana/uti/inc/*.h inc
+cp $STAFTOP/staf/ana/uti/som/*.tcl wrk
+cp $STAFTOP/staf/ana/uti/som/tclIndex wrk
+cp $STAFTOP/staf/ana/tof/src/*.idl src
+cp $STAFTOP/staf/ana/tof/inc/*.idl inc
+cp $STAFTOP/staf/ana/tof/inc/*.h inc
+rm inc/cernif.h
+cp $STAFTOP/staf/ana/tof/src/*.c src
+cp $STAFTOP/staf/ana/bbc/src/*.idl src
+cp $STAFTOP/staf/ana/bbc/inc/*.idl inc
+cp $STAFTOP/staf/ana/bbc/inc/*.h inc
+cp $STAFTOP/staf/ana/bbc/src/*.c src
+cp $STAFTOP/staf/ana/crk/src/*.idl src
+cp $STAFTOP/staf/ana/crk/src/*.c src
+cp $STAFTOP/staf/ana/crk/inc/*.idl inc
+cp $STAFTOP/staf/ana/crk/inc/*.h inc
+cp $STAFTOP/staf/ana/mvd/src/*.idl src
+cp $STAFTOP/staf/ana/mvd/src/*.c src
+cp $STAFTOP/staf/ana/mvd/inc/*.idl inc
+cp $STAFTOP/staf/ana/emc/src/*.idl src
+cp $STAFTOP/staf/ana/emc/src/*.c src
+cp $STAFTOP/staf/ana/emc/src/*.F src
+cp $STAFTOP/staf/ana/emc/inc/*.idl inc
+
