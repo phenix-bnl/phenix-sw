@@ -1,0 +1,65 @@
+-------------------------------------------------------
+To build the DST QA library libdstqa.so:
+
+1)checkout the code in utils/qa/pdst
+2)create a build directory 
+  mkdir $MYDIR/build
+  cd $MYDIR/build
+3)generate the Makefile by typing:
+  ../pdst/autogen.sh --prefix=$MYDIR
+4)compile the library by typing:
+  make
+5)install the library by typing:
+  make install
+
+The library file will be in $MYDIR/lib
+
+-------------------------------------------------------
+
+This library uses the pdst library to loop through the events 
+in a DST file.  It generates a root file containing the QA histograms 
+for the various PHENIX subsystems.  The procedure in root (see wrk/run_qa.C 
+for an example) is as follows:
+
+
+1) Load the DST QA library:
+
+      	gSystem->Load("libdstqa.so");
+
+  (You probably need to specify the path unless the library is in your current
+  working directory.)
+
+2) Optionally choose the subsystems for which histograms will be filled by
+   calling qaSetOpts(str), where str is a combination of the following letters:
+   
+      Z -- Zero Degree Calorimiter
+      B -- Beam-Beam Counter
+      S -- T-zero Counter
+      D -- Drift Chamber
+      P -- Pad Chamber
+      T -- Time Expansion Chamber
+      F -- Time of Flight Detector
+      E -- Electromagnetic Calorimeter
+      M -- Muon Tracker
+  
+   The default is equivalent to qaSetOpts("ZBSDPTFE")  (i.e. output will be
+   produced for all subsystems).  The option string is not case-sensitive.
+   Note that all histograms will be present in the output file even if you
+   choose not to fill them for certain subsystems.
+
+3) Call  qaRun(dstname, qaoutname) to fill the histograms
+
+
+Ed Jackson <ejackson@iastate.edu>
+
+$Id: README,v 1.5 2002/06/07 03:20:08 ssato Exp $
+
+
+
+
+
+
+
+
+
+

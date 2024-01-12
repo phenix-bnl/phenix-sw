@@ -1,0 +1,124 @@
+#!/bin/sh -f
+# parameter 1 --> run number
+# parameter 2 --> subsystem
+# parameter 3 --> condition
+# -s --> consider error
+# -t [tag string] --> use a specific tag
+# -p --> print psql query
+
+while [ `echo $1 | cut -c1` = '-' ]
+	do
+	case $1 in
+		-t|--tag)
+				shift
+				tag_sel="and tag='$1'"
+				shift
+				;;
+		-p|--print)
+				print_query=true
+				shift
+				;;
+		-s|--sigma)
+				consider_error=true
+				shift
+				;;
+		-h|--help)
+				cat <<EOF
+Usage: qa_check [OPTION]... RUN_NUMBER SUBSYSTEM PARNAME_STRING CONDITION_OPERATOR VALUE
+
+Check if QA parameter specified in PARNAME_STRING for the SUBSYSTEM obeys the condition (CONDITION_OPERATOR VALUE)
+during RUN_NUMBER aquisition.
+
+PARNAME_STRING should match at least the begining of the parameter string used in database
+CONDITION_OPERATOR  can be \< or \> or =
+
+Mandatory arguments to long options are mandatory for short options too.
+  -t, --tag tag_name      check only entries using this tag, i.e. run4_pro56
+  -p, --print             output psql query 
+  -s, --sigma             consider the parameter deviation determined by parerror in database
+  -f, --file file_name    uses subsystems and conditions in file_name and return '1' if all conditions are satisfied
+  -h, --help              display this help and exit
+
+Example : qa_check -s 113108 bbc "Mean T0" = 0
+          qa_check -f file_condition 113108
+
+file condition example :
+bbc 'Mean T0' < 0.5
+-s bbc 'Mean Z' = -30
+-s electron '<DEP> (0.8<mom<4.0)' = 0
+
+Report bugs to <slash@bnl.gov>.
+EOF
+				exit
+				;;
+			-f|--file)
+					shift
+					filename=$1
+					runnumber=$2
+					cat ${filename} |
+					while read line ; do
+							variable=`echo ${line} | cut -d\' -f2`
+							condition_op=`echo ${line} | cut -d\' -f3 | cut -d\  -f2`
+							value=`echo ${line} | cut -d\' -f3 | cut -d\  -f3`
+							if [ `echo ${line} | cut -d\  -f1` = '-s' ]
+									then
+									subsystem=`echo ${line} | cut -d\  -f2`
+									res=`qa_check -s "${runnumber}" "$subsystem" "$variable" "$condition_op" "$value"`
+							else
+									subsystem=`echo ${line} | cut -d\  -f1`
+									res=`qa_check "${runnumber}" "$subsystem" "$variable" "$condition_op" "$value"`
+							fi
+							echo $res
+							if [ ${res} = 0 ]
+									then
+									break
+							fi
+					done | awk '{printf $0;}' | awk '{printf("%s\n",substr($0,length($0),1));}'
+					exit
+			;;
+			*)
+				echo "Option $1 invalid"
+				exit
+		;;
+	esac
+done
+
+runnumber=$1
+
+if [ $# -eq 5 ]
+		then
+				subsystem=$2
+				variable=$3
+				condition_op=$4
+				value=$5
+		else
+				echo "I'm missing some parameter..."
+				exit
+		fi
+		
+		condition="parameter${condition_op}$value"
+
+		if [ "${consider_error}" ]
+		then
+				if [ ${condition_op} = '>' ]
+				then 
+						condition=`echo ${condition} | replace parameter parameter-parerror`
+				elif [ ${condition_op} = '<' ]
+				then
+						condition=`echo ${condition} | replace parameter parameter+parerror`
+				elif [ ${condition_op} = '=' ]
+				then
+						condition="`echo ${condition} | replace parameter parameter+parerror\>` and `echo ${condition} | replace parameter parameter-parerror\<`"
+				fi
+		fi
+
+		query="select ${condition} as qa from ${subsystem}qa where runnumber=${runnumber} ${segment_sel} ${tag_sel} and parname like '${variable}%' order by inserttime limit 1;"
+
+		if [ "${print_query}" ]
+		then
+				echo ${query}
+		fi
+
+		psql_output=`psql -h phnxdb2.phenix.bnl.gov calibrations -c "${query}"`
+
+		echo ${psql_output} | grep -c t

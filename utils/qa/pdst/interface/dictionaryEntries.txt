@@ -1,0 +1,18 @@
+#==============================================================================
+# This file holds the entries that appear in the QA Summary WebPage dictionary.
+# Follow a previous entries format, when adding your definitiions.
+#		   - Michael P. McCumber
+#		     mccumber@grad.physics.sunysb.edu
+#		     03/17/2005
+# Ex.
+#==============================================================================
+AjitPairQA
+ The ratio of the front (0-90 degrees) of the dphi distribution and the back (90-180 degrees) of the dphi distribution.  Dphi distribution from tracks 1-4 GeV.
+#---------
+MeanPt
+ The average transverse momentum of the tracks in the run.  Sensitive to the magnetic field quality during the run.
+#---------
+<TracksPerEvent>
+ The average number of tracks per Event during the run.  Sensitive to detector holes.
+#---------
+

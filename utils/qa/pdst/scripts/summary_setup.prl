@@ -1,0 +1,55 @@
+#!/usr/bin/perl
+#
+# my own rerunned histgrams with qa2
+#$histdir="/home/marzia/v03-hist02/";
+#local copy of production histograms
+$histdir="/phenix/data23/phenixqa/qaout-ver7/";
+$summoutdir="../qasummary-ver7/";
+$statusoutdir="../qastatus-ver7/";
+#
+$nhist=0;
+$ntodo=0;
+$nexist=0;
+open (OUT2,">qasumm.list");
+open (OUT,">qasumm.sh");
+print OUT "#!/bin/csh -f \n";
+     open DIRX , "ls -l $histdir |";
+     while (<DIRX>)
+     {
+       @li=split /\s+/;
+       $histfile=$li[8];
+       chomp($histfile);
+       if( $histfile=~ /^DST/ )
+       {
+         @mi=split /([-.])/, $histfile ;
+         $runNumber=$mi[2];
+         $fileNumber=$mi[4];
+         if($mi[8] ne "failed")
+         {
+          $nhist ++;
+          $qasummfile="$summoutdir"."qav03-$runNumber-$fileNumber-summary.txt";
+          $qastatusfile="$statusoutdir"."qav03-$runNumber-$fileNumber-status.txt";
+          $runNumber=int($runNumber);
+          if(-e $qasummfile)
+          {
+            $nexist ++;
+            print OUT2 "$qasummfile exists \n";
+          }
+          else
+          { 
+            $ntodo++;
+            print "$qasummfile does not exist \n";
+            print OUT "root -b -q dstQaSummary.C\\(\\\"$histdir$histfile\\\",\\\"a1.txt\\\",\\\"a2.txt\\\",$runNumber\\) \n";
+            print OUT "mv a1.txt $qasummfile \n";
+            print OUT "mv a2.txt $qastatusfile \n";
+				  }
+         }
+       }
+     } 
+close(OUT);
+close(OUT2);
+system("chmod +x ./qasumm.sh");
+
+print " Number of hist files $nhist - existing summary $nexist still to do $ntodo \n";
+
+

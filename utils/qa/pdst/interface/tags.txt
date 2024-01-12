@@ -1,0 +1,11 @@
+1114630499
+<option value="%" SELECTED>latest Tags</option>
+<OPTION VALUE="%run4AuAu%200GeV%">latest run4AuAu 200GeV Tags</OPTION>
+<OPTION VALUE="%run4AuAu%62_4GeV%">latest run4AuAu 62.4GeV Tags</OPTION>
+<OPTION VALUE="%run4pp%MinBias%">latest run4pp MinBias Tags</OPTION>
+<OPTION VALUE="run4AuAu_Central_200GeV_v01_pro56">run4AuAu_Central_200GeV_v01_pro56</OPTION>
+<OPTION VALUE="run4AuAu_Central_200GeV_v01_pro59">run4AuAu_Central_200GeV_v01_pro59</OPTION>
+<OPTION VALUE="run4AuAu_Central_62_4GeV_v02_pro58">run4AuAu_Central_62_4GeV_v02_pro58</OPTION>
+<OPTION VALUE="run4AuAu_Muon_200GeV_v01_pro58">run4AuAu_Muon_200GeV_v01_pro58</OPTION>
+<OPTION VALUE="run4pp_Muon_MinBias_v01_pro57">run4pp_Muon_MinBias_v01_pro57</OPTION>
+<OPTION VALUE="run5CuCu_online">run5CuCu_online</OPTION>

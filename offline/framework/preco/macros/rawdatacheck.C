@@ -1,0 +1,71 @@
+void rawdatacheckdAu()
+{
+  gSystem->Load("libRawDataCheck.so");
+  Fun4AllServer *se = Fun4AllServer::instance();
+  RawDataCheck *chk = RawDataCheck::instance();
+  chk->Verbosity(1);
+  GranuleCheck *Bbc = new CheckBbc();
+  GranuleCheck *DchEast = new CheckDch("EAST");
+  GranuleCheck *DchWest = new CheckDch("WEST");
+  GranuleCheck *EmcEastTop = new CheckEmc("EAST", "TOP");
+  GranuleCheck *EmcWestTop = new CheckEmc("WEST", "TOP");
+  GranuleCheck *EmcEastBottom = new CheckEmc("EAST", "BOTTOM");
+  GranuleCheck *EmcWestBottom = new CheckEmc("WEST", "BOTTOM");
+  GranuleCheck *ErtEast = new CheckErt("EAST");
+  GranuleCheck *ErtWest = new CheckErt("WEST");
+  GranuleCheck *Fcal = new CheckFcal();
+  GranuleCheck *MuidSouth = new CheckMuid("SOUTH");
+  GranuleCheck *MuidNorth = new CheckMuid("NORTH");
+  GranuleCheck *MutrNorth = new CheckMutr("NORTH");
+//   CheckMutr *mutrn = MutrNorth;
+//   mutrn->SetBadPacket(11190);
+//   mutrn->SetBadPacket(11227);
+//   mutrn->SetBadPacket(11231);
+//   mutrn->SetBadPacket(11254);
+//   mutrn->SetBadPacket(11312);
+//   mutrn->SetBadPacket(11315);
+//   mutrn->SetBadPacket(11326);
+  GranuleCheck *MutrSouth = new CheckMutr("SOUTH");
+  //  chk->AddKnownBadPacket(11168);
+  //  chk->AddKnownBadPacket(11070);
+//   DaqMutrMon *mutrs = MutrSouth;
+//   mutrs->SetBadPacket(11168);
+//   mutrs->SetBadPacket(11070);
+//   mutrs->SetBadPacket(11077);
+  //      GranuleCheck *Mvd = new CheckMvd();
+  GranuleCheck *Ntc = new CheckNtc();
+  GranuleCheck *PadEast = new CheckPad("EAST");
+  GranuleCheck *PadWest = new CheckPad("WEST");
+  GranuleCheck *RichEast = new CheckRich("EAST");
+  GranuleCheck *RichWest = new CheckRich("WEST");
+  GranuleCheck *Tec = new CheckTec();
+  GranuleCheck *Tof = new CheckTof();
+  GranuleCheck *Zdc = new CheckZdc();
+
+  chk->registerGranule(Bbc);
+  chk->registerGranule(DchEast);
+  chk->registerGranule(DchWest);
+  chk->registerGranule(EmcEastTop);
+  chk->registerGranule(EmcWestTop);
+  chk->registerGranule(EmcEastBottom);
+  chk->registerGranule(EmcWestBottom);
+  chk->registerGranule(ErtEast);
+  chk->registerGranule(ErtWest);
+  chk->registerGranule(Fcal);
+  chk->registerGranule(Ntc);
+  chk->registerGranule(MuidSouth);
+  chk->registerGranule(MuidNorth);
+  chk->registerGranule(MutrSouth);
+  chk->registerGranule(MutrNorth);
+  //      chk->registerGranule(Mvd);
+  chk->registerGranule(PadEast);
+  chk->registerGranule(PadWest);
+  chk->registerGranule(RichEast);
+  chk->registerGranule(RichWest);
+  chk->registerGranule(Tec);
+  chk->registerGranule(Tof);
+  chk->registerGranule(Zdc);
+
+  se->registerSubsystem(chk);
+}
+

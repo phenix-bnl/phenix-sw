@@ -1,0 +1,9 @@
+electron 'Electrons/Event (0.2<mom<4.0)' > 0.1
+electron 'Electrons/Event (0.2<mom<4.0)' < 0.13
+electron '<DEP> (0.2<mom<4.0)' > -0.5
+electron '<East/West Nelectrons> (0.2<mom<4.0)' > 0.4
+electron '<East/West Nelectrons> (0.2<mom<4.0)' < 0.65
+dch 'P East' > 0.55
+dch 'P East' < 0.65
+dch 'P Weast' > 0.55
+dch 'P Weast' < 0.65

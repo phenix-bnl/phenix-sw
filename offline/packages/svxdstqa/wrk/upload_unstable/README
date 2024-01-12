@@ -1,0 +1,35 @@
+*************************************
+from Alan Dion
+November 5 (remember remember), 2014
+
+remember to 
+setenv ODBCINI /opt/phenix/etc/odbc.ini.master
+before uploading.  Or replace "master" with "test" to upload to the test database
+
+to write the reference map, modify the string pixelfilename in testWriteReference.C 
+and just run the macro
+
+
+
+to write the diff maps, one can modify and run the shell script "upload_diff.sh"
+one only needs modify the for loop to run over the desired set of text files containing the 
+unstable map information.  Note one can also uncomment the "echo" statement and comment
+the actual running of root, so that one can be sure that sane run numbers are being passed
+to the macro testWriteDiff.C
+
+
+the instructions for the chip map are the same as for the diff maps, but instead the
+shell script is called "upload_chip.sh"
+
+
+I usually run these with e.g.
+
+nohup ./upload_diff.sh >&upload_diff.out </dev/null &
+
+on an interactive node.  So far they don't take so long that the job will be killed,
+but be careful for run14 : probably it is best to upload in small-ish rungroups
+
+*************************************
+
+
+

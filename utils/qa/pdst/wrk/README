@@ -1,0 +1,23 @@
+The macro Hist2PS.C will produce a postscript file with multiple histograms per
+page.  This can be useful with the DST QA histograms.  See comments in the macro
+for more details.
+
+run_qa.C is an example of how to use libqadst.so.  See comments in the macro
+for more details.
+
+To produce the QA summary text file, run the macro dstQaSummary.C, giving it the
+name of a QA histogram file as an argument:
+
+root[] .x dstQaSummary.C("qaout.root")
+
+or, from the command line:
+
+root -b -q dstQaSummary.C\(\"qaout.root\"\)
+
+
+
+
+Ed Jackson <ejackson@iastate.edu>
+
+$Id: README,v 1.1 2001/07/26 18:21:40 ejackson Exp $
+

@@ -1,0 +1,568 @@
+1114630448
+<optgroup label="bbc" id="tablename" value="bbcqa">
+<OPTION LABEL="" VALUE="bbcqa::EndPoint (mip)" SELECTED>EndPoint (mip)</OPTION>
+<OPTION LABEL="" VALUE="bbcqa::Mean T0 (ns)">Mean T0 (ns)</OPTION>
+<OPTION LABEL="" VALUE="bbcqa::Mean Z Vertex (cm)">Mean Z Vertex (cm)</OPTION>
+<OPTION LABEL="" VALUE="bbcqa::Number of Events">Number of Events</OPTION>
+<OPTION LABEL="" VALUE="bbcqa::Number of PMT hits">Number of PMT hits</OPTION>
+<OPTION LABEL="" VALUE="bbcqa::QsQn rate">QsQn rate</OPTION>
+</optgroup>
+
+<optgroup label="crk" id="tablename" value="crkqa">
+<OPTION LABEL="" VALUE="crkqa::Hits per PMT">Hits per PMT</OPTION>
+<OPTION LABEL="" VALUE="crkqa::Hits per PMT in limited PMTs">Hits per PMT in limited PMTs</OPTION>
+<OPTION LABEL="" VALUE="crkqa::No. limited PMT NHits errors">No. limited PMT NHits errors</OPTION>
+<OPTION LABEL="" VALUE="crkqa::No. PMTs with charge gain errors">No. PMTs with charge gain errors</OPTION>
+<OPTION LABEL="" VALUE="crkqa::No. PMTs with sigma errors">No. PMTs with sigma errors</OPTION>
+<OPTION LABEL="" VALUE="crkqa::No. PMTs with T0 errors">No. PMTs with T0 errors</OPTION>
+<OPTION LABEL="" VALUE="crkqa::N. PMT nhits error">N. PMT nhits error</OPTION>
+<OPTION LABEL="" VALUE="crkqa::PMT T0">PMT T0</OPTION>
+</optgroup>
+
+<optgroup label="dch" id="tablename" value="dchqa">
+<OPTION LABEL="" VALUE="dchqa::Active Area fraction East">Active Area fraction East</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Active Area fraction Weast">Active Area fraction Weast</OPTION>
+<OPTION LABEL="" VALUE="dchqa::P East">P East</OPTION>
+<OPTION LABEL="" VALUE="dchqa::P Weast">P Weast</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Track Multiplicity">Track Multiplicity</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Track Multiplicity East">Track Multiplicity East</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Track Multiplicity |vtx<30cm|">Track Multiplicity |vtx&lt;30cm|</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Track Multiplicity West">Track Multiplicity West</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Tracks w/ xhits>=8 (%)">Tracks w/ xhits&gt;=8 (%)</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Tracks w/ Z information (%)">Tracks w/ Z information (%)</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Xhits East">Xhits East</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Xhits on DC track">Xhits on DC track</OPTION>
+<OPTION LABEL="" VALUE="dchqa::Xhits Weast">Xhits Weast</OPTION>
+</optgroup>
+
+<optgroup label="electron" id="tablename" value="electronqa">
+<OPTION LABEL="" VALUE="electronqa::<chi2/npe0> (0.2<mom<0.4)">&lt;chi2/npe0&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<chi2/npe0> (0.2<mom<4.0)">&lt;chi2/npe0&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<chi2/npe0> (0.4<mom<0.8)">&lt;chi2/npe0&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<chi2/npe0> (0.8<mom<4.0)">&lt;chi2/npe0&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<DEP> (0.2<mom<0.4)">&lt;DEP&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<DEP> (0.2<mom<4.0)">&lt;DEP&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<DEP> (0.4<mom<0.8)">&lt;DEP&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<DEP> (0.8<mom<4.0)">&lt;DEP&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<East/West Nelectrons> (0.2<mom<0.4)">&lt;East/West Nelectrons&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<East/West Nelectrons> (0.2<mom<4.0)">&lt;East/West Nelectrons&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<East/West Nelectrons> (0.4<mom<0.8)">&lt;East/West Nelectrons&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<East/West Nelectrons> (0.8<mom<4.0)">&lt;East/West Nelectrons&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<electron/positron> (0.2<mom<0.4)">&lt;electron/positron&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<electron/positron> (0.2<mom<4.0)">&lt;electron/positron&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<electron/positron> (0.4<mom<0.8)">&lt;electron/positron&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<electron/positron> (0.8<mom<4.0)">&lt;electron/positron&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Event (0.2<mom<0.4)">Electrons/Event (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Event (0.2<mom<4.0)">Electrons/Event (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Event (0.4<mom<0.8)">Electrons/Event (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Event (0.8<mom<4.0)">Electrons/Event (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Good track (0.2<mom<0.4)">Electrons/Good track (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Good track (0.2<mom<4.0)">Electrons/Good track (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Good track (0.4<mom<0.8)">Electrons/Good track (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::Electrons/Good track (0.8<mom<4.0)">Electrons/Good track (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Phi Match> (sigma) (0.2<mom<0.4)">&lt;EmCal Phi Match&gt; (sigma) (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Phi Match> (sigma) (0.2<mom<4.0)">&lt;EmCal Phi Match&gt; (sigma) (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Phi Match> (sigma) (0.4<mom<0.8)">&lt;EmCal Phi Match&gt; (sigma) (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Phi Match> (sigma) (0.8<mom<4.0)">&lt;EmCal Phi Match&gt; (sigma) (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal T0> (0.2<mom<0.4)">&lt;EmCal T0&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal T0> (0.2<mom<4.0)">&lt;EmCal T0&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal T0> (0.4<mom<0.8)">&lt;EmCal T0&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal T0> (0.8<mom<4.0)">&lt;EmCal T0&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Z Match> (sigma) (0.2<mom<0.4)">&lt;EmCal Z Match&gt; (sigma) (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Z Match> (sigma) (0.2<mom<4.0)">&lt;EmCal Z Match&gt; (sigma) (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Z Match> (sigma) (0.4<mom<0.8)">&lt;EmCal Z Match&gt; (sigma) (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<EmCal Z Match> (sigma) (0.8<mom<4.0)">&lt;EmCal Z Match&gt; (sigma) (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E0 (0.2<mom<0.4)">&lt;E/P-1&gt; E0 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E0 (0.2<mom<4.0)">&lt;E/P-1&gt; E0 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E0 (0.4<mom<0.8)">&lt;E/P-1&gt; E0 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E0 (0.8<mom<4.0)">&lt;E/P-1&gt; E0 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E1 (0.2<mom<0.4)">&lt;E/P-1&gt; E1 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E1 (0.2<mom<4.0)">&lt;E/P-1&gt; E1 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E1 (0.4<mom<0.8)">&lt;E/P-1&gt; E1 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E1 (0.8<mom<4.0)">&lt;E/P-1&gt; E1 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E2 (0.2<mom<0.4)">&lt;E/P-1&gt; E2 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E2 (0.2<mom<4.0)">&lt;E/P-1&gt; E2 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E2 (0.4<mom<0.8)">&lt;E/P-1&gt; E2 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E2 (0.8<mom<4.0)">&lt;E/P-1&gt; E2 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E3 (0.2<mom<0.4)">&lt;E/P-1&gt; E3 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E3 (0.2<mom<4.0)">&lt;E/P-1&gt; E3 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E3 (0.4<mom<0.8)">&lt;E/P-1&gt; E3 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> E3 (0.8<mom<4.0)">&lt;E/P-1&gt; E3 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W0 (0.2<mom<0.4)">&lt;E/P-1&gt; W0 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W0 (0.2<mom<4.0)">&lt;E/P-1&gt; W0 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W0 (0.4<mom<0.8)">&lt;E/P-1&gt; W0 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W0 (0.8<mom<4.0)">&lt;E/P-1&gt; W0 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W1 (0.2<mom<0.4)">&lt;E/P-1&gt; W1 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W1 (0.2<mom<4.0)">&lt;E/P-1&gt; W1 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W1 (0.4<mom<0.8)">&lt;E/P-1&gt; W1 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W1 (0.8<mom<4.0)">&lt;E/P-1&gt; W1 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W2 (0.2<mom<0.4)">&lt;E/P-1&gt; W2 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W2 (0.2<mom<4.0)">&lt;E/P-1&gt; W2 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W2 (0.4<mom<0.8)">&lt;E/P-1&gt; W2 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W2 (0.8<mom<4.0)">&lt;E/P-1&gt; W2 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W3 (0.2<mom<0.4)">&lt;E/P-1&gt; W3 (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W3 (0.2<mom<4.0)">&lt;E/P-1&gt; W3 (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W3 (0.4<mom<0.8)">&lt;E/P-1&gt; W3 (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<E/P-1> W3 (0.8<mom<4.0)">&lt;E/P-1&gt; W3 (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::N. Electrons (0.2<mom<0.4)">N. Electrons (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::N. Electrons (0.2<mom<4.0)">N. Electrons (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::N. Electrons (0.4<mom<0.8)">N. Electrons (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::N. Electrons (0.8<mom<4.0)">N. Electrons (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<Rich N0> (0.2<mom<0.4)">&lt;Rich N0&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<Rich N0> (0.2<mom<4.0)">&lt;Rich N0&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<Rich N0> (0.4<mom<0.8)">&lt;Rich N0&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<Rich N0> (0.8<mom<4.0)">&lt;Rich N0&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH ring displacement> (0.2<mom<0.4)">&lt;RICH ring displacement&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH ring displacement> (0.2<mom<4.0)">&lt;RICH ring displacement&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH ring displacement> (0.4<mom<0.8)">&lt;RICH ring displacement&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH ring displacement> (0.8<mom<4.0)">&lt;RICH ring displacement&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH T0> (0.2<mom<0.4)">&lt;RICH T0&gt; (0.2&lt;mom&lt;0.4)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH T0> (0.2<mom<4.0)">&lt;RICH T0&gt; (0.2&lt;mom&lt;4.0)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH T0> (0.4<mom<0.8)">&lt;RICH T0&gt; (0.4&lt;mom&lt;0.8)</OPTION>
+<OPTION LABEL="" VALUE="electronqa::<RICH T0> (0.8<mom<4.0)">&lt;RICH T0&gt; (0.8&lt;mom&lt;4.0)</OPTION>
+</optgroup>
+
+<optgroup label="emc" id="tablename" value="emcqa">
+<OPTION LABEL="" VALUE="emcqa::E0: dead towers">E0: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E0: <hits/tower>">E0: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E0: noisy towers">E0: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E0: <TOF>">E0: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E1: dead towers">E1: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E1: <hits/tower>">E1: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E1: noisy towers">E1: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E1: <TOF>">E1: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E2: dead towers">E2: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E2: <hits/tower>">E2: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E2: noisy towers">E2: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E2: <TOF>">E2: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E3: dead towers">E3: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E3: <hits/tower>">E3: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E3: noisy towers">E3: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::E3: <TOF>">E3: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W0: dead towers">W0: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W0: <hits/tower>">W0: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W0: noisy towers">W0: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W0: <TOF>">W0: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W1: dead towers">W1: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W1: <hits/tower>">W1: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W1: noisy towers">W1: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W1: <TOF>">W1: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W2: dead towers">W2: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W2: <hits/tower>">W2: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W2: noisy towers">W2: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W2: <TOF>">W2: &lt;TOF&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W3: dead towers">W3: dead towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W3: <hits/tower>">W3: &lt;hits/tower&gt;</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W3: noisy towers">W3: noisy towers</OPTION>
+<OPTION LABEL="" VALUE="emcqa::W3: <TOF>">W3: &lt;TOF&gt;</OPTION>
+</optgroup>
+
+<optgroup label="ert" id="tablename" value="ertqa">
+<OPTION LABEL="" VALUE="ertqa::2x2: E0: hits/event">2x2: E0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E0: Live SM">2x2: E0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E1: hits/event">2x2: E1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E1: Live SM">2x2: E1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E2: hits/event">2x2: E2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E2: Live SM">2x2: E2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E3: hits/event">2x2: E3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: E3: Live SM">2x2: E3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W0: hits/event">2x2: W0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W0: Live SM">2x2: W0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W1: hits/event">2x2: W1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W1: Live SM">2x2: W1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W2: hits/event">2x2: W2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W2: Live SM">2x2: W2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W3: hits/event">2x2: W3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::2x2: W3: Live SM">2x2: W3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E0: hits/event">4x4a: E0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E0: Live SM">4x4a: E0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E1: hits/event">4x4a: E1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E1: Live SM">4x4a: E1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E2: hits/event">4x4a: E2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E2: Live SM">4x4a: E2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E3: hits/event">4x4a: E3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: E3: Live SM">4x4a: E3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W0: hits/event">4x4a: W0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W0: Live SM">4x4a: W0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W1: hits/event">4x4a: W1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W1: Live SM">4x4a: W1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W2: hits/event">4x4a: W2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W2: Live SM">4x4a: W2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W3: hits/event">4x4a: W3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4a: W3: Live SM">4x4a: W3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E0: hits/event">4x4b: E0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E0: Live SM">4x4b: E0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E1: hits/event">4x4b: E1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E1: Live SM">4x4b: E1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E2: hits/event">4x4b: E2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E2: Live SM">4x4b: E2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E3: hits/event">4x4b: E3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: E3: Live SM">4x4b: E3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W0: hits/event">4x4b: W0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W0: Live SM">4x4b: W0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W1: hits/event">4x4b: W1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W1: Live SM">4x4b: W1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W2: hits/event">4x4b: W2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W2: Live SM">4x4b: W2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W3: hits/event">4x4b: W3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4b: W3: Live SM">4x4b: W3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E0: hits/event">4x4c: E0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E0: Live SM">4x4c: E0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E1: hits/event">4x4c: E1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E1: Live SM">4x4c: E1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E2: hits/event">4x4c: E2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E2: Live SM">4x4c: E2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E3: hits/event">4x4c: E3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: E3: Live SM">4x4c: E3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W0: hits/event">4x4c: W0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W0: Live SM">4x4c: W0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W1: hits/event">4x4c: W1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W1: Live SM">4x4c: W1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W2: hits/event">4x4c: W2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W2: Live SM">4x4c: W2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W3: hits/event">4x4c: W3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::4x4c: W3: Live SM">4x4c: W3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/emu: 2x2">GL1&amp;&amp;emu/emu: 2x2</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/emu: 4x4a">GL1&amp;&amp;emu/emu: 4x4a</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/emu: 4x4b">GL1&amp;&amp;emu/emu: 4x4b</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/emu: 4x4c">GL1&amp;&amp;emu/emu: 4x4c</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/emu: RICH">GL1&amp;&amp;emu/emu: RICH</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/GL1: 2x2">GL1&amp;&amp;emu/GL1: 2x2</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/GL1: 4x4a">GL1&amp;&amp;emu/GL1: 4x4a</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/GL1: 4x4b">GL1&amp;&amp;emu/GL1: 4x4b</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/GL1: 4x4c">GL1&amp;&amp;emu/GL1: 4x4c</OPTION>
+<OPTION LABEL="" VALUE="ertqa::GL1&&emu/GL1: RICH">GL1&amp;&amp;emu/GL1: RICH</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E0: hits/event">RICH: E0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E0: Live SM">RICH: E0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E1: hits/event">RICH: E1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E1: Live SM">RICH: E1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E2: hits/event">RICH: E2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E2: Live SM">RICH: E2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E3: hits/event">RICH: E3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: E3: Live SM">RICH: E3: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W0: hits/event">RICH: W0: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W0: Live SM">RICH: W0: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W1: hits/event">RICH: W1: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W1: Live SM">RICH: W1: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W2: hits/event">RICH: W2: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W2: Live SM">RICH: W2: Live SM</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W3: hits/event">RICH: W3: hits/event</OPTION>
+<OPTION LABEL="" VALUE="ertqa::RICH: W3: Live SM">RICH: W3: Live SM</OPTION>
+</optgroup>
+
+<optgroup label="general" id="tablename" value="generalqa">
+</optgroup>
+
+<optgroup label="muid" id="tablename" value="muidqa">
+<OPTION LABEL="" VALUE="muidqa::North:  Frac.of Evts w/ goldroads">North:  Frac.of Evts w/ goldroads</OPTION>
+<OPTION LABEL="" VALUE="muidqa::North:  Fract.of Evts w/ roads">North:  Fract.of Evts w/ roads</OPTION>
+<OPTION LABEL="" VALUE="muidqa::North:  <NHits>">North:  &lt;NHits&gt;</OPTION>
+<OPTION LABEL="" VALUE="muidqa::North:  <Road-Track match>">North:  &lt;Road-Track match&gt;</OPTION>
+<OPTION LABEL="" VALUE="muidqa::South:  Frac.of Evts w/ goldroads">South:  Frac.of Evts w/ goldroads</OPTION>
+<OPTION LABEL="" VALUE="muidqa::South:  Fract.of Evts w/ roads">South:  Fract.of Evts w/ roads</OPTION>
+<OPTION LABEL="" VALUE="muidqa::South:  <NHits>">South:  &lt;NHits&gt;</OPTION>
+<OPTION LABEL="" VALUE="muidqa::South:  <Road-Track match>">South:  &lt;Road-Track match&gt;</OPTION>
+</optgroup>
+
+<optgroup label="mutr" id="tablename" value="mutrqa">
+<OPTION LABEL="" VALUE="mutrqa::North:  <Cath.Cluster Peak Charge>">North:  &lt;Cath.Cluster Peak Charge&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Cath.Cluster Width>">North:  &lt;Cath.Cluster Width&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  Events w/ fitted tracks(%)">North:  Events w/ fitted tracks(%)</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Fitted Cath.Cluster> S1">North:  &lt;Fitted Cath.Cluster&gt; S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Fitted Cath.Cluster> S2">North:  &lt;Fitted Cath.Cluster&gt; S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Fitted Cath.Cluster> S3">North:  &lt;Fitted Cath.Cluster&gt; S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Momentum> fitted tracks">North:  &lt;Momentum&gt; fitted tracks</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Dead Packets">North:  No. Dead Packets</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Dead Plane S1">North:  No. Dead Plane S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Dead Plane S2">North:  No. Dead Plane S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Dead Plane S3">North:  No. Dead Plane S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hits/event/packet S1">North:  No. Hits/event/packet S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hits/event/packet S2">North:  No. Hits/event/packet S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hits/event/packet S3">North:  No. Hits/event/packet S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hits/event/plane S1">North:  No. Hits/event/plane S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hits/event/plane S2">North:  No. Hits/event/plane S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hits/event/plane S3">North:  No. Hits/event/plane S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hot Packets">North:  No. Hot Packets</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hot Plane S1">North:  No. Hot Plane S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hot Plane S2">North:  No. Hot Plane S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  No. Hot Plane S3">North:  No. Hot Plane S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  NPackets w/ error rate>10%">North:  NPackets w/ error rate&gt;10%</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Pulse Sample3 Ampl.>">North:  &lt;Pulse Sample3 Ampl.&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Pulse Timing:samp3-samp2>">North:  &lt;Pulse Timing:samp3-samp2&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::North:  <Pulse Timing:samp3-samp4>">North:  &lt;Pulse Timing:samp3-samp4&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Cath.Cluster Peak Charge>">South:  &lt;Cath.Cluster Peak Charge&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Cath.Cluster Width>">South:  &lt;Cath.Cluster Width&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  Events w/ fitted tracks(%)">South:  Events w/ fitted tracks(%)</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Fitted Cath.Cluster> S1">South:  &lt;Fitted Cath.Cluster&gt; S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Fitted Cath.Cluster> S2">South:  &lt;Fitted Cath.Cluster&gt; S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Fitted Cath.Cluster> S3">South:  &lt;Fitted Cath.Cluster&gt; S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Momentum> fitted tracks">South:  &lt;Momentum&gt; fitted tracks</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Dead Packets">South:  No. Dead Packets</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Dead Plane S1">South:  No. Dead Plane S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Dead Plane S2">South:  No. Dead Plane S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Dead Plane S3">South:  No. Dead Plane S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hits/event/packet S1">South:  No. Hits/event/packet S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hits/event/packet S2">South:  No. Hits/event/packet S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hits/event/packet S3">South:  No. Hits/event/packet S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hits/event/plane S1">South:  No. Hits/event/plane S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hits/event/plane S2">South:  No. Hits/event/plane S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hits/event/plane S3">South:  No. Hits/event/plane S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hot Packets">South:  No. Hot Packets</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hot Plane S1">South:  No. Hot Plane S1</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hot Plane S2">South:  No. Hot Plane S2</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  No. Hot Plane S3">South:  No. Hot Plane S3</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  NPackets w/ error rate>10%">South:  NPackets w/ error rate&gt;10%</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Pulse Sample3 Ampl.>">South:  &lt;Pulse Sample3 Ampl.&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Pulse Timing:samp3-samp2>">South:  &lt;Pulse Timing:samp3-samp2&gt;</OPTION>
+<OPTION LABEL="" VALUE="mutrqa::South:  <Pulse Timing:samp3-samp4>">South:  &lt;Pulse Timing:samp3-samp4&gt;</OPTION>
+</optgroup>
+
+<optgroup label="mvd" id="tablename" value="mvdqa">
+</optgroup>
+
+<optgroup label="ntcp" id="tablename" value="ntcpqa">
+</optgroup>
+
+<optgroup label="pad" id="tablename" value="padqa">
+<OPTION LABEL="" VALUE="padqa::PC1 East Low Activity">PC1 East Low Activity</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC1 East Ratio">PC1 East Ratio</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC1 West Low Activity">PC1 West Low Activity</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC1 West Ratio">PC1 West Ratio</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC2 West Low Activity">PC2 West Low Activity</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC2 West Ratio">PC2 West Ratio</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC3 East Low Activity">PC3 East Low Activity</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC3 East Ratio">PC3 East Ratio</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC3 West Low Activity">PC3 West Low Activity</OPTION>
+<OPTION LABEL="" VALUE="padqa::PC3 West Ratio">PC3 West Ratio</OPTION>
+</optgroup>
+
+<optgroup label="physics" id="tablename" value="physicsqa">
+<OPTION LABEL="" VALUE="physicsqa::AjitPairQa">AjitPairQa</OPTION>
+<OPTION LABEL="" VALUE="physicsqa::Mean Pt">Mean Pt</OPTION>
+<OPTION LABEL="" VALUE="physicsqa::PC3 East Match Fraction">PC3 East Match Fraction</OPTION>
+<OPTION LABEL="" VALUE="physicsqa::PC3 West Match Fraction">PC3 West Match Fraction</OPTION>
+<OPTION LABEL="" VALUE="physicsqa::<TracksPerEvent>">&lt;TracksPerEvent&gt;</OPTION>
+</optgroup>
+
+<optgroup label="pi0emc" id="tablename" value="pi0emcqa">
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope0(1-4GeV)">ClusEnergySlope0(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope1(1-4GeV)">ClusEnergySlope1(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope2(1-4GeV)">ClusEnergySlope2(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope3(1-4GeV)">ClusEnergySlope3(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope4(1-4GeV)">ClusEnergySlope4(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope5(1-4GeV)">ClusEnergySlope5(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope6(1-4GeV)">ClusEnergySlope6(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlope7(1-4GeV)">ClusEnergySlope7(1-4GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlopeGl(0.2-1.0GeV)">ClusEnergySlopeGl(0.2-1.0GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlopeGl(1.0-2.0GeV)">ClusEnergySlopeGl(1.0-2.0GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlopeGl(2.0-4.0GeV)">ClusEnergySlopeGl(2.0-4.0GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlopeSc(0.2-1.0GeV)">ClusEnergySlopeSc(0.2-1.0GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlopeSc(1.0-2.0GeV)">ClusEnergySlopeSc(1.0-2.0GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusEnergySlopeSc(2.0-4.0GeV)">ClusEnergySlopeSc(2.0-4.0GeV)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusterMultH: <clusters/(cent0-cent2>">ClusterMultH: &lt;clusters/(cent0-cent2&gt;</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusterMultHWidth: <clusters/(cent0-cent2>">ClusterMultHWidth: &lt;clusters/(cent0-cent2&gt;</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusterMultL: <clusters/(cent6-cent8>">ClusterMultL: &lt;clusters/(cent6-cent8&gt;</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusterMultLWidth: <clusters/(cent6-cent8>">ClusterMultLWidth: &lt;clusters/(cent6-cent8&gt;</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusterMultM: <clusters/(cent3-cent5>">ClusterMultM: &lt;clusters/(cent3-cent5&gt;</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::ClusterMultMWidth: <clusters/(cent3-cent5>">ClusterMultMWidth: &lt;clusters/(cent3-cent5&gt;</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakGl (pT0)">epPeakGl (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakGl (pT1)">epPeakGl (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakGl (pT2)">epPeakGl (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSc (pT0)">epPeakSc (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSc (pT1)">epPeakSc (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSc (pT2)">epPeakSc (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec0">epPeakSec0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec1">epPeakSec1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec2">epPeakSec2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec3">epPeakSec3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec4">epPeakSec4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec5">epPeakSec5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec6">epPeakSec6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epPeakSec7">epPeakSec7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthGl (pT0)">epWidthGl (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthGl (pT1)">epWidthGl (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthGl (pT2)">epWidthGl (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSc (pT0)">epWidthSc (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSc (pT1)">epWidthSc (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSc (pT2)">epWidthSc (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec0">epWidthSec0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec1">epWidthSec1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec2">epWidthSec2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec3">epWidthSec3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec4">epWidthSec4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec5">epWidthSec5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec6">epWidthSec6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::epWidthSec7">epWidthSec7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nCentralEvents">nCentralEvents</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nPeripheralEvents">nPeripheralEvents</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits0">nTowerHits0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits1">nTowerHits1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits2">nTowerHits2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits3">nTowerHits3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits4">nTowerHits4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits5">nTowerHits5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits6">nTowerHits6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHits7">nTowerHits7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsGl">nTowerHitsGl</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsSc">nTowerHitsSc</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth0">nTowerHitsWidth0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth1">nTowerHitsWidth1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth2">nTowerHitsWidth2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth3">nTowerHitsWidth3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth4">nTowerHitsWidth4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth5">nTowerHitsWidth5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth6">nTowerHitsWidth6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidth7">nTowerHitsWidth7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidthGl">nTowerHitsWidthGl</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::nTowerHitsWidthSc">nTowerHitsWidthSc</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio0">padisp_ratio0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio1">padisp_ratio1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio2">padisp_ratio2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio3">padisp_ratio3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio4">padisp_ratio4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio5">padisp_ratio5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio6">padisp_ratio6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratio7">padisp_ratio7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioGl">padisp_ratioGl</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioSc">padisp_ratioSc</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth0">padisp_ratioWidth0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth1">padisp_ratioWidth1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth2">padisp_ratioWidth2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth3">padisp_ratioWidth3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth4">padisp_ratioWidth4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth5">padisp_ratioWidth5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth6">padisp_ratioWidth6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidth7">padisp_ratioWidth7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidthGl">padisp_ratioWidthGl</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::padisp_ratioWidthSc">padisp_ratioWidthSc</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC0">PEOverEC0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC1">PEOverEC1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC2">PEOverEC2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC3">PEOverEC3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC4">PEOverEC4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC5">PEOverEC5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC6">PEOverEC6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverEC7">PEOverEC7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGl">PEOverECGl</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlTw1">PEOverECGlTw1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlTw2">PEOverECGlTw2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlTw3">PEOverECGlTw3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlTwWidth1">PEOverECGlTwWidth1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlTwWidth2">PEOverECGlTwWidth2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlTwWidth3">PEOverECGlTwWidth3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECGlWidth">PEOverECGlWidth</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECSc">PEOverECSc</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScTw1">PEOverECScTw1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScTw2">PEOverECScTw2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScTw3">PEOverECScTw3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScTwWidth1">PEOverECScTwWidth1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScTwWidth2">PEOverECScTwWidth2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScTwWidth3">PEOverECScTwWidth3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECScWidth">PEOverECScWidth</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth0">PEOverECWidth0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth1">PEOverECWidth1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth2">PEOverECWidth2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth3">PEOverECWidth3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth4">PEOverECWidth4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth5">PEOverECWidth5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth6">PEOverECWidth6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::PEOverECWidth7">PEOverECWidth7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakGl (pT0)">Pi0PeakGl (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakGl (pT1)">Pi0PeakGl (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakGl (pT2)">Pi0PeakGl (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSc (pT0)">Pi0PeakSc (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSc (pT1)">Pi0PeakSc (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSc (pT2)">Pi0PeakSc (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec0">Pi0PeakSec0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec1">Pi0PeakSec1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec2">Pi0PeakSec2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec3">Pi0PeakSec3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec4">Pi0PeakSec4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec5">Pi0PeakSec5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec6">Pi0PeakSec6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0PeakSec7">Pi0PeakSec7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthGl (pT0)">Pi0WidthGl (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthGl (pT1)">Pi0WidthGl (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthGl (pT2)">Pi0WidthGl (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSc (pT0)">Pi0WidthSc (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSc (pT1)">Pi0WidthSc (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSc (pT2)">Pi0WidthSc (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec0">Pi0WidthSec0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec1">Pi0WidthSec1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec2">Pi0WidthSec2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec3">Pi0WidthSec3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec4">Pi0WidthSec4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec5">Pi0WidthSec5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec6">Pi0WidthSec6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0WidthSec7">Pi0WidthSec7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventGl (pT0)">Pi0YieldPerEventGl (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventGl (pT1)">Pi0YieldPerEventGl (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventGl (pT2)">Pi0YieldPerEventGl (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSc (pT0)">Pi0YieldPerEventSc (pT0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSc (pT1)">Pi0YieldPerEventSc (pT1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSc (pT2)">Pi0YieldPerEventSc (pT2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec0">Pi0YieldPerEventSec0</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec1">Pi0YieldPerEventSec1</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec2">Pi0YieldPerEventSec2</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec3">Pi0YieldPerEventSec3</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec4">Pi0YieldPerEventSec4</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec5">Pi0YieldPerEventSec5</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec6">Pi0YieldPerEventSec6</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::Pi0YieldPerEventSec7">Pi0YieldPerEventSec7</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&ecent<=1.0&&sec<6)">TofPeak (ecent&gt;0.5&amp;&amp;ecent&lt;=1.0&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&ecent<=1.0&&sec>=6)">TofPeak (ecent&gt;0.5&amp;&amp;ecent&lt;=1.0&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==0)">TofPeak (ecent&gt;0.5&amp;&amp;sec==0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==1)">TofPeak (ecent&gt;0.5&amp;&amp;sec==1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==2)">TofPeak (ecent&gt;0.5&amp;&amp;sec==2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==3)">TofPeak (ecent&gt;0.5&amp;&amp;sec==3)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==4)">TofPeak (ecent&gt;0.5&amp;&amp;sec==4)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==5)">TofPeak (ecent&gt;0.5&amp;&amp;sec==5)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent<=0.5&&sec<6)">TofPeak (ecent&lt;=0.5&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent<=0.5&&sec>=6)">TofPeak (ecent&lt;=0.5&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec<6)">TofPeak (ecent&gt;0.5&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==6)">TofPeak (ecent&gt;0.5&amp;&amp;sec==6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec>=6)">TofPeak (ecent&gt;0.5&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>0.5&&sec==7)">TofPeak (ecent&gt;0.5&amp;&amp;sec==7)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>1.0&&sec<6)">TofPeak (ecent&gt;1.0&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofPeak (ecent>1.0&&sec>=6)">TofPeak (ecent&gt;1.0&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&ecent<=1.0&&sec<6)">TofWidth (ecent&gt;0.5&amp;&amp;ecent&lt;=1.0&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&ecent<=1.0&&sec>=6)">TofWidth (ecent&gt;0.5&amp;&amp;ecent&lt;=1.0&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==0)">TofWidth (ecent&gt;0.5&amp;&amp;sec==0)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==1)">TofWidth (ecent&gt;0.5&amp;&amp;sec==1)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==2)">TofWidth (ecent&gt;0.5&amp;&amp;sec==2)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==3)">TofWidth (ecent&gt;0.5&amp;&amp;sec==3)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==4)">TofWidth (ecent&gt;0.5&amp;&amp;sec==4)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==5)">TofWidth (ecent&gt;0.5&amp;&amp;sec==5)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent<=0.5&&sec<6)">TofWidth (ecent&lt;=0.5&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent<=0.5&&sec>=6)">TofWidth (ecent&lt;=0.5&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec<6)">TofWidth (ecent&gt;0.5&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==6)">TofWidth (ecent&gt;0.5&amp;&amp;sec==6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec>=6)">TofWidth (ecent&gt;0.5&amp;&amp;sec&gt;=6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>0.5&&sec==7)">TofWidth (ecent&gt;0.5&amp;&amp;sec==7)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>1.0&&sec<6)">TofWidth (ecent&gt;1.0&amp;&amp;sec&lt;6)</OPTION>
+<OPTION LABEL="" VALUE="pi0emcqa::TofWidth (ecent>1.0&&sec>=6)">TofWidth (ecent&gt;1.0&amp;&amp;sec&gt;=6)</OPTION>
+</optgroup>
+
+<optgroup label="tec" id="tablename" value="tecqa">
+<OPTION LABEL="" VALUE="tecqa::Inefficient planes">Inefficient planes</OPTION>
+<OPTION LABEL="" VALUE="tecqa::timebins / track">timebins / track</OPTION>
+<OPTION LABEL="" VALUE="tecqa::Track Multiplicity">Track Multiplicity</OPTION>
+</optgroup>
+
+<optgroup label="tmp" id="tablename" value="tmpqa">
+</optgroup>
+
+<optgroup label="tof" id="tablename" value="tofqa">
+<OPTION LABEL="" VALUE="tofqa::<dY> (cgl-tof) [cm]">&lt;dY&gt; (cgl-tof) [cm]</OPTION>
+<OPTION LABEL="" VALUE="tofqa::<dZ> (cgl-tof) [cm]">&lt;dZ&gt; (cgl-tof) [cm]</OPTION>
+<OPTION LABEL="" VALUE="tofqa::<Eloss> (GeV)">&lt;Eloss&gt; (GeV)</OPTION>
+<OPTION LABEL="" VALUE="tofqa::Hits in North">Hits in North</OPTION>
+<OPTION LABEL="" VALUE="tofqa::<TOF-BBC t0> (ns)">&lt;TOF-BBC t0&gt; (ns)</OPTION>
+</optgroup>
+
+<optgroup label="zdc" id="tablename" value="zdcqa">
+<OPTION LABEL="" VALUE="zdcqa::<North Energy>">&lt;North Energy&gt;</OPTION>
+<OPTION LABEL="" VALUE="zdcqa::<South Energy>">&lt;South Energy&gt;</OPTION>
+<OPTION LABEL="" VALUE="zdcqa::ZDC-BBC T0">ZDC-BBC T0</OPTION>
+<OPTION LABEL="" VALUE="zdcqa::ZDC-BBC Vertex">ZDC-BBC Vertex</OPTION>
+</optgroup>

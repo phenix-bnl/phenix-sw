@@ -1,0 +1,446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>QA Tutorial</title>
+  <meta name="GENERATOR" content="OpenOffice.org 1.0.2  (Linux)">
+  <meta name="CREATED" content="20040731;4281400">
+  <meta name="CHANGED" content="20040803;81700">
+</head>
+<body lang="en-US" bgcolor="#e6e6ff" style="color: rgb(0, 0, 0);"
+ link="#0000ee" alink="#0000ee" vlink="#551a8b">
+<h1 style="text-align: center;"><font color="#800000"><font
+ face="Century Schoolbook L"><font size="5" style="font-size: 20pt;"><b>QUALITY
+ANALYSIS</b></font></font></font></h1>
+<div style="text-align: center;"> </div>
+<h1 style="text-align: center;"><font color="#800000"><font
+ face="Century Schoolbook L"><font size="5" style="font-size: 20pt;"><b>TUTORIAL</b></font></font></font></h1>
+<p align="center" style="margin-bottom: 0cm;"><a
+ href="mailto:slash@bnl.gov">Cesar Luiz da Silva, University of Sao
+Paulo</a></p>
+<hr>
+<ol>
+  <li>
+    <h1><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;"><a
+ href="#I%20-%20Some%20definitions.%7Coutline">Some definitions.</a></font></font></h1>
+  </li>
+  <li>
+    <h1><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;"><a
+ href="#II%20-%20How%20to%20add%20and%20fill%20QA%20histograms.%7Coutline">How
+to add and fill QA histograms.</a></font></font></h1>
+  </li>
+  <li>
+    <h1><a href="#III_-_Extracting_and_committing_to_summa"><font
+ face="Century Schoolbook L"><font size="4" style="font-size: 16pt;">Extracting
+and committing to database summaries from QA histograms.</font></font></a></h1>
+  </li>
+  <li>
+    <h1><a href="#IV_-_How_to_include_edit_or_delete_par"><font
+ face="Century Schoolbook L"><font size="6" style="font-size: 22pt;"><font
+ size="4" style="font-size: 16pt;"><font face="Century Schoolbook L">How
+to include, edit, or delete summary parameters.</font></font></font></font></a></h1>
+  </li>
+  <li>
+    <h1><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;"><a href="#V_-_QA_summary_web">QA summary web.</a></font></font></h1>
+  </li>
+  <li>
+    <h1><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;"><a href="#QA_check">QA check in command line.</a></font></font></h1>
+    <hr>
+    <h2><font face="Century Schoolbook L"><font size="5"
+ style="font-size: 20pt;">I - Some definitions.</font></font></h2>
+  </li>
+</ol>
+<p align="left"><font color="#004a4a"><font face="Century Schoolbook L"><font
+ size="4" style="font-size: 16pt;">Quality Analysis is a set of Reco
+Modules which fills
+histograms in order to check the quality of the data after event
+reconstruction. It allows us
+verify calibration, bad runs and run by run fluctuations of many
+subsystems and its parameters.
+<br>
+<br>
+In QA, a <font color="#ff0000">subsystem</font>
+is not always a subdetector. It can
+be a subdetector (i. e. BBC) or even a PWG (i. e. Electron). In fact,
+we
+could create subsystems to specific fast tracks, future papers, etc...</font></font></font></p>
+<p align="left"><font color="#004a4a"><font face="Century Schoolbook L"><font
+ size="4" style="font-size: 16pt;">Parameters are calculated from
+histograms produced during production or reading DSTs.</font></font></font></p>
+<p align="left"><font color="#004a4a"><font face="Century Schoolbook L"><font
+ size="4" style="font-size: 16pt;">Examples :</font></font></font></p>
+<center>
+<table width="472" border="1" cellpadding="4" cellspacing="4">
+  <col width="137"> <col width="305"> <thead> <tr valign="top">
+    <th width="137" bgcolor="#ffffff">
+    <p><font size="5"><b>Subsystem</b></font></p>
+    </th>
+    <th width="305" bgcolor="#ffffff">
+    <p><font size="5"><b>Parameters</b></font></p>
+    </th>
+  </tr>
+  </thead> <tbody>
+    <tr valign="top">
+      <td width="137" bgcolor="#ffffff">
+      <p align="right">TEC --&gt;</p>
+      </td>
+      <td width="305" bgcolor="#ffffff">
+      <p>number of unefficient planes</p>
+      <p>track multiplicity</p>
+      <p>timebins per track</p>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td width="137" bgcolor="#ffffff">
+      <p align="right">Electron --&gt;</p>
+      </td>
+      <td width="305" bgcolor="#ffffff">
+      <p>tracks / event</p>
+      <p>average electron momentum</p>
+      <p>EmCal matching (sigma)</p>
+      <p>average RICH n0</p>
+      <p>electrons / event</p>
+      <p>electrons / track</p>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td width="137" bgcolor="#ffffff">
+      <p align="right">environment --&gt;</p>
+      </td>
+      <td width="305" bgcolor="#ffffff">
+      <p>temperature</p>
+      <p>humidity</p>
+      <p>luck of the DAQ operator</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p align="left"><br>
+<br>
+</p>
+<h2><a name="II - How to add and fill QA histograms.|outline"></a><font
+ face="Century Schoolbook L"><font size="6" style="font-size: 22pt;">II
+- How to add and fill QA histograms.</font></font></h2>
+<p><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">These histograms are defined, filled and
+saved by SubsysReco inherent classes <font color="#ff0000">QAxxx</font></font></font>.<font
+ size="4" style="font-size: 16pt;"><font face="Century Schoolbook L">Where<b>
+xxx</b> is the subsystem name or abbreviation. The structure is </font></font>
+</p>
+<ul>
+  <p
+ style="border: 1px solid rgb(0, 0, 0); padding: 0.05cm; margin-right: 2.4cm; background-color: rgb(255, 255, 255);">
+  <font face="Century Schoolbook L"><font size="4">QAxxx::Init(PHCompositeNode
+*topNode) { // histogram definitions }<br>
+QAxxx::process_event(PHCompositeNode *topNode) {// fill histograms}<br>
+QAxxx::End(PHCompositeNode *topNode) {// optional histogram finishing }</font></font></p>
+</ul>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">Examples can be seen in CVS at</font></font></p>
+<p align="center"><a
+ href="http://www.phenix.bnl.gov/viewcvs/utils/qa/pdst"><font size="4"
+ style="font-size: 16pt;"><font face="Century Schoolbook L">/utils/qa/pdst/histoXXX.C</font></font></a></p>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">The QA classes can be easily called by
+Fun4All macros. To do so,</font></font></p>
+<ul>
+  <li>
+    <p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">open a file to save the histograms</font></font></p>
+  </li>
+  <li>
+    <p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">init QASubsystem</font></font></p>
+  </li>
+  <li>
+    <p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">register in Fun4All</font></font></p>
+  </li>
+  <li>
+    <p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">run events</font></font></p>
+  </li>
+  <li>
+    <p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">write the histograms to file and close it.</font></font></p>
+  </li>
+</ul>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">Example (thi is not a complete macro...) :</font></font></p>
+<pre
+ style="border: 1px solid rgb(0, 0, 0); padding: 0.05cm; margin-left: 2.4cm; margin-right: 2.4cm; margin-bottom: 0.5cm; background-color: rgb(255, 255, 255);"><font
+ face="Century Schoolbook L"><font size="4">TFile* qaoutfile = TFile::Open("qafile.root", "RECREATE");</font></font>
+<font face="Century Schoolbook L"><font size="4">SubsysReco* qabbc = new QABbc();</font></font>
+<font face="Century Schoolbook L"><font size="4">Fun4AllServer *se = Fun4AllServer::instance();</font></font>
+<font face="Century Schoolbook L"><font size="4">se-&gt;registerSubsystem(qabbc);</font></font>
+<font face="Century Schoolbook L"><font size="4">// run PRDF or DST events</font></font><font
+ face="Century Schoolbook L"><font size="4"><br>se-&gt;End();<br>qaout-&gt;Write();</font></font><font
+ face="Century Schoolbook L"><font size="4"><br>qaout-&gt;End();</font></font></pre>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">The production macro is a good complete
+example of how to produce qa histogram files.</font></font></p>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">During run 4 production has been produced two
+QA files per segment : </font></font> </p>
+<ul>
+  <li>
+    <p><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">qaRoot with <a href="qaRoot.histolist">these
+histograms</a></font></font></p>
+  </li>
+  <li>
+    <p><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">PhysicsQA with <a
+ href="PhysicsQA.histolist">these histograms</a></font></font></p>
+  </li>
+</ul>
+<h2><a name="III_-_Extracting_and_committing_to_summa"></a><font
+ face="Century Schoolbook L"><font size="6" style="font-size: 22pt;">III
+- Extracting and committing to database summaries from QA histograms.</font></font></h2>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">After finish a stripe production, it's
+necessary loop over all QA histograms produced and summarize then in
+run
+basis to be consulted during analysis. The procedure is merge all qa
+files segments in one file per run number and run the summary macro. </font></font>
+</p>
+<p><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">The shell script <a
+ href="http://www.phenix.bnl.gov/viewcvs/utils/qa/pdst/wrk/run_summary.sh">utils/qa/pdst/wrk/run_summary.sh</a>
+takes care of all. It searches qaRoot files in production disks, run a
+macro to merge then in one file per run number, creates summary and
+status directories, if necessary, and run the <a
+ href="http://www.phenix.bnl.gov/viewcvs/utils/qa/pdst/wrk/summary.C">summary
+macro</a> . In this macro you have to comment out undesirable
+subsystems
+and set if you want commit the parameters to database, the default is
+NO.</font></font></p>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">WARNING :: when you call a qa file with
+missing histograms for a determined subsystem, the program crashes. In
+my
+to do list I have a inclusion of a </font></font><font
+ face="Century Schoolbook L"><font size="4" style="font-size: 16pt;">histogram
+check </font></font><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">in summary code, avoiding crashes and print
+out innocents "missing histograms for subsystem XXX".</font></font> </p>
+<h2><a name="IV_-_How_to_include_edit_or_delete_par"></a><font
+ face="Century Schoolbook L"><font size="6" style="font-size: 22pt;">IV
+- How to include, edit, or delete summary parameters.</font></font></h2>
+<p><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">Each subsystem has a different QA table in
+Postgress calibrations
+database. You can check it by command line :<br>
+</font></font></p>
+<pre
+ style="border: 1px solid rgb(0, 0, 0); padding: 0.05cm; margin-left: 2.4cm; margin-right: 2.4cm; margin-bottom: 0.5cm; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><big><span
+ style="font-family: century schoolbook l,monospace,monospace;">&gt;psql calibrations<br>calibrations=&gt; \dt *qa<br>          List of relations<br> Schema |    Name    | Type  | Owner<br>------------+--------------+---------+--------<br> public | bbcqa          | table | phnxrc<br> public | crkqa           | table | phnxrc<br> public | dchqa          | table | phnxrc<br> public | electronqa   | table | phnxrc<br> public | emcqa         | table | phnxrc<br> public | muidqa       | table | phnxrc<br> public | mutrqa        | table | phnxrc<br> public | mvdqa         | table | phnxrc<br> public | ntcpqa         | table | phnxrc<br> public | padqa          | table | phnxrc<br> public | physicsqa    | table | phnxrc<br> public | tecqa           | table | phnxrc<br> public | tofqa           | table | phnxrc<br> public | zdcqa          | table | phnxrc<br>(14 rows)<br><br></span></big><font
+ face="Century Schoolbook L"><font size="4">calibrations=&gt; \d XXXqa;                                    &lt;---- choose your subsystem<br>           Table "public.XXXqa"<br>   Column      |       Type             | Modifiers<br>-----------------+-----------------------+-----------<br> runnumber  | integer               |				<br> segment       | integer               |			  &lt;---- segment number or -1 for run merged segments <br> tag               | text                     |				&lt;---- production-library tag <br> inserttime    | bigint                  |<br> parameter    | double precision |			   &lt;---- parameter value<br> parerror       | double precision |			     &lt;---- parameter error<br> parname      | text                     |			   &lt;---- parameter name<br></font></font><font
+ face="Century Schoolbook L"><font size="4"></font></font></pre>
+<p><br>
+<font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">If you want to include an aditional QA
+summary module, you start creating a table for your subsystem. The
+table should have the same structure of the others qa tables. I
+recommend create it from other qa table by using the command <br>
+</font></font></p>
+<div style="text-align: center;"><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">select * into &lt;your subsystem
+name&gt;qa from bbcqa where runnumber=-1;<br>
+</font></font>
+<div style="text-align: left;"><font size="4" style="font-size: 16pt;"><br>
+<font face="Century Schoolbook L">for example.</font></font><br>
+</div>
+</div>
+<p><font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">The follow step is fill this table with
+your summary. For that you should</font></font><font size="4"
+ style="font-size: 16pt;"><font face="Century Schoolbook L"> create a
+file in </font></font><a
+ href="http://www.phenix.bnl.gov/viewcvs/utils/qa/pdst"><font size="4"
+ style="font-size: 16pt;"><font face="Century Schoolbook L">/utils/qa/pdst/</font></font></a>&nbsp;
+<font size="4" style="font-size: 16pt;"><font
+ face="Century Schoolbook L">like <font color="#800000">summaryXXX.C</font>
+with a <font color="#800000">QAsummary</font> function <font
+ color="#800000">processXXX()</font>.</font></font></p>
+<p><font face="Century Schoolbook L"><font size="4"
+ style="font-size: 16pt;">The skeleton of this file is :</font></font></p>
+<pre
+ style="border: 1px solid rgb(0, 0, 0); padding: 0.05cm; margin-left: 1cm; margin-right: 1cm; background-color: rgb(255, 255, 255);"><font
+ face="Century Schoolbook L"><font size="4">#include "summaryQA.h"<br><br>int QASummary::processXXX()<br>{<br></font></font><font
+ face="Century Schoolbook L"><font size="4"><b><font color="#800000">//call histograms from already opened qafile<br></font></b></font></font><font
+ face="Century Schoolbook L"><font size="4">     TH1F* hist0 = (TH1F *) qafile-&gt;Get ("myhistogram0_in_qafile");</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     TH1F* hist1 = (TH1F *) qafile-&gt;Get ("myhistogram1_in_qafile");</font></font><br><br><font
+ face="Century Schoolbook L"><font size="4"><font color="#800000">/<b>/get means, RMS, number of entries, etc ... from histograms</b></font></font></font><br><font
+ face="Century Schoolbook L"><font size="4">     float value0 = hist0-&gt;GetMean();</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     float error0 = hist0-&gt;GetRMS();</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     int entries = hist0-&gt;GetEntries();</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     error0 = error0/(float)entries;   // error of the mean</font></font><br><br><font
+ face="Century Schoolbook L"><font size="4">     float value1 = hist1-&gt;GetMean();</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     float error1 = hist0-&gt;GetRMS();</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     entries = hist1-&gt;GetEntries();</font></font><br><font
+ face="Century Schoolbook L"><font size="4">     error1 = error1/(float)entries;   // error of the mean</font></font><font
+ face="Century Schoolbook L"><font size="4"><br><br></font></font><font
+ face="Century Schoolbook L"><font size="4"><font color="#800000">/<b>/fill database with QA parameters</b></font></font></font><br><font
+ face="Century Schoolbook L"><font size="4">     CommitToQADatabase("XXX","</font></font><font
+ face="Century Schoolbook L"><font size="4">my 1th parameter name</font></font><font
+ face="Century Schoolbook L"><font size="4">", value0, error0);<br></font></font><font
+ face="Century Schoolbook L"><font size="4">     CommitToQADatabase("XXX","</font></font><font
+ face="Century Schoolbook L"><font size="4">my 2th parameter name</font></font><font
+ face="Century Schoolbook L"><font size="4">", value1, error1);</font></font><br><font
+ face="Century Schoolbook L"><font size="4">  cout &lt;&lt; "    ...done." &lt;&lt; endl;<br>  return 0;<br>}<br></font></font><font
+ face="Century Schoolbook L"><font size="4"></font></font></pre>
+<h2><a name="V_-_QA_summary_web"></a>V - QA summary web</h2>
+<p align="center"><font face="Century Schoolbook L"><font size="4"><b><span
+ style="background: rgb(255, 255, 0) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;">NO
+CHANGE IS NEEDED IN THE WEB WHEN YOU INCLUDE, DELETE OR EDIT PARAMETERS</span></b></font></font></p>
+<p align="left" style=""><font face="Century Schoolbook L"><font
+ size="4"><span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;">The
+QA summary web page call PHP classes to create menus directly from the
+database. It fetches the last entry for every QA tables and loop over
+all
+parameters included in the table to generate the parameter menu.</span></font></font></p>
+<p align="left" style=""><font face="Century Schoolbook L"><font
+ size="4"><span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;">There
+are three options in QA summary web :</span></font></font></p>
+<ul>
+  <li>
+    <p align="left" style=""><font face="Century Schoolbook L"><font
+ size="4"><span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;">plot
+parameter versus run number</span></font></font></p>
+  </li>
+  <li>
+    <p align="left" style=""><font face="Century Schoolbook L"><font
+ size="4"><span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;">select
+runs according the run and parameters range set by the user</span></font></font></p>
+  </li>
+  <li>
+    <p align="left" style=""><font face="Century Schoolbook L"><font
+ size="4"><span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;">print
+subsystem parameters tables</span></font></font></p>
+  </li>
+</ul>
+<span style="font-family: century schoolbook l;">The selection can be
+done by :<br>
+</span>
+<ul>
+  <li><span style="font-family: century schoolbook l;">run number range<br>
+    </span></li>
+  <li><span style="font-family: century schoolbook l;">subsystem-&gt;parameter
+name</span></li>
+  <li><span style="font-family: century schoolbook l;">parameter range</span></li>
+  <li><span style="font-family: century schoolbook l;">production-library
+tag</span></li>
+  <li><span style="font-family: century schoolbook l;">multi
+subsystem-&gt;parameter selection</span></li>
+</ul>
+<span style="font-family: century schoolbook l;">The multi selection
+field makes possible apply cuts in many parameters, even from different
+subsystems, to select or plot parameters. The format of cut&nbsp; is <br>
+<br>
+</span>
+<div style="text-align: center;"><big><span
+ style="font-family: century schoolbook l; color: rgb(153, 0, 0);">subsystem-&gt;parameter
+[&gt;,&lt;,=] value [and,or,&amp;&amp;,||] subsystem-&gt;parameter
+[&gt;,&lt;,=] value ...</span><br>
+</big></div>
+<span style="font-family: century schoolbook l;"><br>
+The selection takes account the parameter error :<br>
+</span>
+<ul>
+  <li>subsystem-&gt;parameter &gt;
+value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+means&nbsp;&nbsp; &nbsp; &nbsp; parameter-parerror &gt; value</li>
+  <li>subsystem-&gt;parameter &lt;
+value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+means&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameter+parerror &lt; value</li>
+  <li>subsystem-&gt;parameter =
+value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+means&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameter-parerror &lt; value
+&lt; parameter+parerror<br>
+  </li>
+</ul>
+<span style="font-family: century schoolbook l;"> </span>
+<p><span
+ style="background: transparent none repeat scroll 50% 0%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""><font size="4"><font face="Century Schoolbook L">The location
+of QA summary web code in CVS is<br>
+</font></font></span></span></p>
+<div style="text-align: center;">
+<p><font size="+1"><a
+ href="http://www.phenix.bnl.gov/viewcvs/utils/qa/pdst/html/">utils/qa/pdst/html<br>
+</a></font></p>
+<div style="text-align: left;"><span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""><font size="4"><font face="Century Schoolbook L">You can
+checkout this code in any place with Phenix and calibrations psql
+database installed. The main code is QAsummary.html.<br>
+<br>
+</font></font></span></span>
+<h2><a name="QA_check"></a>VI - QA check in command line<br>
+</h2>
+<span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""><font size="4"><font face="Century Schoolbook L">
+Other option to make use of QA information is the shell command <span
+ style="color: rgb(255, 0, 0); font-weight: bold;">qa_check</span>.<br>
+<br>
+This tool makes easy checking of a specific run if it can be used in
+Analysis Train or final analysis. The format is<br>
+<br>
+</font></font></span></span>
+<div style="text-align: center;"><span
+ style="background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial; color: rgb(153, 0, 0); font-weight: bold;"><span
+ style=""><font size="4"><font face="Century Schoolbook L">qa_check
+run_number subsystem 'parameter name' [/&gt;,/&lt;,=] value</font></font></span></span><br>
+</div>
+<span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""><font size="4"><font face="Century Schoolbook L"><br>
+The result is <span style="color: rgb(204, 0, 0);">1</span> if <span
+ style="color: rgb(204, 0, 0);">true</span>, <span
+ style="color: rgb(51, 51, 153);">0</span> if is <span
+ style="color: rgb(51, 51, 153);">false</span>. If is used the option
+-s , errors are considered like QA web. It's not necessary write the
+full parameter name. <br>
+<br>
+Multi selection can be applyied by a selection file. <br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+<small>condition.file</small><br>
+</font></font></span></span>
+<pre
+ style="border: 1px solid rgb(0, 0, 0); padding: 0.05cm; margin-left: 2.4cm; margin-right: 2.4cm; margin-bottom: 0.5cm; background-color: rgb(255, 255, 255);"><font
+ face="Century Schoolbook L"><font size="4">bbc 'Mean T0' &lt; 0<br>-s bbc 'Mean Z' = 0.0<br>-s electron '&lt;DEP&gt; (0.8&lt;mom&lt;4.0)' = 0</font></font><font
+ face="Century Schoolbook L"><font size="4"></font></font><font
+ face="Century Schoolbook L"><font size="4"><br></font></font></pre>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; <big><span style="font-weight: bold;"><span
+ style="color: rgb(153, 0, 0);">qa_check -f condition.file run_number</span></span></big><br>
+<span
+ style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""><font size="4"><font face="Century Schoolbook L"><br>
+There are more option. For a full list of those, use the help option -h.<br>
+<br>
+Enjoy.<br>
+</font></font></span></span></div>
+</div>
+<p><span
+ style="background: transparent none repeat scroll 50% 0%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""></span></span></p>
+<p><span
+ style="background: transparent none repeat scroll 50% 0%; -moz-background-clip: initial; -moz-background-inline-policy: initial; -moz-background-origin: initial;"><span
+ style=""></span></span></p>
+<br>
+</body>
+</html>

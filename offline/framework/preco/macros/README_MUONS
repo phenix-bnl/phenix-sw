@@ -1,0 +1,35 @@
+// $Id: README_MUONS,v 1.3 2004/03/15 19:21:40 hpereira Exp $
+
+The following macros tends to be the official set of Fun4All macros to be used
+for doing the muon analysis using new framework MUTOO and MUIOO packages, MWG
+nano dst package and MWGpico pico dst package. They are:
+
+Fun4Muons_Pisa.C
+to generate a new framework simulated dst, containing MC information from a pisa
+file.
+
+Fun4Muons_RecoPRDF.C
+to reconstruct a PRDF file, possibly adding level2 and offline filtering, 
+generate a reconstructed DST, a nanoDST and a picoDST.
+
+Fun4Muons_UnpackPRDF.C
+to unpack a PRDF into a unreconstructed DST. Usefull for producing background DSTs 
+for embedding studies.
+
+Fun4Muons_RecoDST.C 
+to run mutoo reconstruction on a DST, using the muid/mutr hits as a starting 
+point; generate a reconstructed DST, a nanoDST and a picoDST.
+
+Fun4Muons_ReadDST.C
+to read a reconstructed DST, generate a nanoDST and a picoDST, without running
+the mutoo/muioo reconstruction
+
+Fun4Muons_RecoDST_sim.C
+to run mutoo reconstruction on a simulated DST (slowsim), using the muid/mutr MC
+hits as a starting point; generate a reconstructed DST, a nanoDST and a picoDST.
+
+Fun4Muons_Display.C
+to run mutoo 3D and 2D event display on a reconstructed DST.
+
+All macros also have various evaluator enabled by default. You may disable them
+by changing the switches inside. 

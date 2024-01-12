@@ -1,0 +1,51 @@
+Lets start from a complete run list. Assuming all compactEWG are on disk we can get a list of all runs already produced by
+
+ls -1 /phenix/data*/phnxreco/run4AuAu_Central_200GeV_v01_pro59/*/compactEWG_MinBias/ | grep .root | cut -d- -f2 | sort -n -u | replace 00001 1 | tee run4AuAu_compactEWGrun.list
+
+I splitted the run4 data in 10 groups according to different acceptances. Some of the groups are only quite different in acceptance, it's up to you merge then again. You can see the differences in the ratio between number of electrons in east and west arms. Just go to QAsummary page and select run4AuAu_pro59 tag and East/West Nelectrons parameter. You can also cut and past in your browser the expression bellow
+
+http://www.phenix.bnl.gov/phenix/WWW/run/05/dataprod/QA/plot.php?par=electronqa%3A%3A%3CEast%2FWest+Nelectrons%3E+%280.2%3Cmom%3C4.0%29&tag=run4AuAu_Central_200GeV_v01_pro59&paramlow=0&paramhigh=1&runmin=0&runmax=999999&shouldTally=no
+
+I splitted into the follow groups :
+
+G1    107445 - 107827
+G2    108280 - 108714
+G3    108769 - 110236
+CONV1 110237 - 111031
+G4    111032 - 111592
+G5    111604 - 113564
+G6    113570 - 114330
+G7    114331 - 116691
+G8    116707 - 117852
+G9    118264 - 120849
+CONV2 120845 - 121111
+G10   121220 - 122223
+
+Now you can use the runlist to check which one pass QA requirements and count how many events they have. The shell script get_nevents.sh makes everything. Firt of all, you need specify the QA conditions. There is a different condition for each group. Each group has an acceptance, if the number of electrons per event or ratio between east/west changes in the midle of this group, that means something went wrong in that run. That's why the thresholds are tinny different. The conditions are specified in
+
+condition_*
+
+All of them requires :
+0.6 < average P_west < 0.65 && 0.6 < average P_east < 0.65  --> this cut reject zero field runs and runs with some magnetic field problem
+0.05 < Nelectrons / event < 0.08    --> reject converter and low efficient runs, different cuts for each group
+0.5 < East/West Nelectrons < 0.8  --> reject runs with temporary dead areas, different cuts for each group
+
+In order to check the QA database and count how many events just run
+
+sh get_nevents run4AuAu_compactEWGrun.list | tee run4AuAu_Electrons.list
+
+The output is 
+
+run number    group    no. BBCLL1 scaled events   no. entries in QA database    passed QA conditions ?
+
+
+We can play with this list. For example, if we want the number of events in good runs for groups g5,g6,g7,g8 and g9 we type
+
+cat run4AuAu_Electrons.list | awk '{if ($5==1 && ($2=="g5" || $2=="g6" || $2=="g7" || $2=="g8" || $2=="g9")) {count+=$3; print($0,count);}}' 
+
+Here are some numbers I got in my analysis :
+
+1029 runs in total corresponding to 1496M BBCLL1 scaled events
+
+692 passed QA conditions corresponding to 1270M BBCLL1 scaled events (85% of events to be reconstructed). Complete list is run4AuAu_goodrun_Electrons.list
+
