@@ -33,7 +33,7 @@ c
  
       implicit none
 
-#include "guphnx.inc"
+#include "mfm.inc"
  
 c     input variable    xyzp(3)  giving (x,y,z) coordinate
       real   xyzp(3)
