@@ -1,0 +1,47 @@
+
+This is PHHijing, a Subsysreco inspired by the success of PHPythia.
+
+There are several problems with PHENIX HIJING 1.37.  The most
+important are the following: 
+
+1) No decays are performed, including D & B.
+
+2) No particle origin vertex is stored
+
+This version seeks to fix these two things, as well as offer a place
+to make other fixes in the future.  
+
+The first bug is probably not a huge deal, but we'd like it fixed.
+PHENIX HIJING does not do weak and EM decays, but since GEANT doesn't
+do D/B decays, the way PHENIX has handled this is to set the PID of
+such particles to e neutrino.  At this point the particle and
+potential decay products are "lost".  The simple solution is just to
+allow HIJING to decay them, as this version does.
+
+The second flaw could be a bigger issue.  Up till now, ALL particles
+have been placed at the primary vertex.  There may be cases where this
+is undesirable, and we want to insert the particles into PISA at their
+real origin.  Maintaining the origin information is straightforward
+(using a patch from BAC and Yue Shi).  The problem, however, is that
+adding this information to the output FZ file will break any old
+HIJING files, since there is no schema evolution in FZ i/o.
+
+Thus we chose to create a new framework separate from hijing137.  It
+uses a copy of the same fortran code, with the above changes, and
+operates in the fun4all framework.  Therefore the output is in DST
+format already.
+
+Because the core code is almost an exact copy of hijing137, it still
+requires hijing.par to be present in the pwd.  This can eventually be
+changed, though.  Note that you ONLY need hijing.par, since the output
+goes directly into a root file.
+
+See PHHijing/macros for an example of running this code.  
+
+TODO:
+-----
+
+- remove hijing.par need
+- create new i/o routine for PISA so we can read these files in!
+
+

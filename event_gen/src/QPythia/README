@@ -1,0 +1,47 @@
+This is the first working version of Q-PYTHIA into PHENIX. 
+
+OVERVIEW
+---------
+Right now you can vary qhat and perform fixed path length 
+calculations. Those in the future something more 
+sophisticated can be developed.
+
+INPUT
+--------
+In the macro directory there is QPythia.C which shows 
+how to run this. The constructor takes in 
+
+1) the random number seed
+
+   If it is set to 0, the current time is used to generate 
+   a seed.
+
+2) the configuration file
+
+The configuration files currently knows about the following 
+pythia parameters
+
+roots
+proj
+targ
+frame
+msel
+ckin
+
+Additional there are two other Q-PYTHIA specific parameters
+
+qhat
+pathlength
+
+The units of qhat are GeV^2/fm and fm for pathlength. The 
+path length represents the fixed path length of all partons 
+through the medium. No off-center collisions are produced 
+at this time.
+
+OUTPUT
+----------
+The resulting output is the same as PHPythia:
+
+PHPythiaHeader
+PHPythia
+
