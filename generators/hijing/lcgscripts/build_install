@@ -1,0 +1,153 @@
+#!/bin/sh
+#
+export GENERATOR=hijing
+export VERSION=1.383bs.2
+
+#
+if [ x$MCGENERATORS = x ]; then
+  echo You have to define MCGENERATORS variable at first.
+  echo If you want to write your version into MCGENERATORS replica,
+  echo you should define MCGENERATORS=/afs/.cern.ch/sw/lcg/external/MCGenerators
+  exit 1
+fi
+
+# LCGplatform definition
+. ${MCGENERATORS}/.scripts/platform_functions
+LCGPLATFORM=$(check_platform)
+
+if [ "x$1" = "x" ] ; then
+  echo Usage: build_install arg1  with arg1 = install or test or installfromtest
+  echo default test directory is MCGenerators/test or MCGTESTDIR if set
+  exit 1
+fi
+
+INSTALLDIR=${MCGENERATORS}
+if [ "$1" = "test" ] || [ "$1" = "installfromtest" ] ; then
+  INSTALLDIR=${MCGENERATORS}/test
+  if [ "x${MCGTESTDIR}" != "x" ]; then
+    INSTALLDIR=${MCGTESTDIR}
+  fi
+fi
+
+#
+if [ "$1" = "install" ] ; then
+  echo building ${GENERATOR} and installing it at the nominal place
+elif [ "$1" = "test" ] ; then
+  echo building ${GENERATOR} and installing it at ${INSTALLDIR}
+elif [ "$1" = "installfromtest" ] ; then
+  for versdir in ${VERSION} ${VERSION}.2; do
+    echo copying ${GENERATOR} version ${versdir} from ${INSTALLDIR} to the nominal place
+    rm -rf ${MCGENERATORS}/${GENERATOR}/${versdir}/${LCGPLATFORM}
+    rm -rf ${MCGENERATORS}/${GENERATOR}/${versdir}/share
+    mkdir -p ${MCGENERATORS}/${GENERATOR}/${versdir}
+    rcp -rp ${INSTALLDIR}/${GENERATOR}/${versdir}/${LCGPLATFORM} ${MCGENERATORS}/${GENERATOR}/${versdir}/.
+    rcp -rp ${INSTALLDIR}/${GENERATOR}/${versdir}/share ${MCGENERATORS}/${GENERATOR}/${versdir}/.
+    rcp -rp ${INSTALLDIR}/distribution/${GENERATOR}-${versdir}-${LCGPLATFORM}.tgz ${MCGENERATORS}/distribution/.
+  done 
+  exit 1
+else
+  echo Usage: build_install arg1  with arg1 = install or test or installfromtest
+  echo default test directory is MCGenerators/test or MCGTESTDIR if set
+  exit 1
+fi
+
+#
+mkdir -p build
+cd build
+cp -f ${MCGENERATORS}/distribution/${GENERATOR}-${VERSION}-src.tgz .
+if [ ! -e ${GENERATOR}-${VERSION}-src.tgz ]; then
+  echo There is no sources tarball ${GENERATOR}-${VERSION}-src.tgz in .../MCGenerators/distribution! Exiting.
+  exit 1
+fi
+. ${MCGENERATORS}/.scripts/platform_functions
+LCGPLATFORM=$(check_platform)
+rm -rf ${GENERATOR}
+tar xvfz ${GENERATOR}-${VERSION}-src.tgz
+cd ${GENERATOR}/${VERSION}
+echo running lcg_configure...
+./lcg_configure >& compile.log
+cat compile.log
+echo compiling...
+make >& compile1.log
+cat compile1.log >> compile.log
+rm -f compile1.log
+if [ ! -e lib/libhijing.so ]; then
+  echo compilation failed at libhijing.so ! See file compile.log
+  exit 1
+fi
+if [ ! -e lib/libhijing_dummy.so ]; then
+  echo compilation failed at libhijing_dummy.so! See file compile.log
+  exit 1
+fi
+if [ ! -e lib/archive/libhijing.a ]; then
+  echo compilation failed at libhijing.a ! See file compile.log
+  exit 1
+fi
+if [ ! -e lib/archive/libhijing_dummy.a ]; then
+  echo compilation failed at libhijing_dummy.a! See file compile.log
+  exit 1
+fi
+#
+
+echo cleaning...
+find . -name 'CVS' -exec rm -rf {} \; >& /dev/null
+rm -rf lcgscripts
+
+echo Saving pydata.o .... 
+# save pydata.o compiled as shared object
+cp tmp/pyhidata.o lib/.
+cp tmp/hidata.o lib/.
+cp tmp/ludata.o lib/.
+ 
+rm -rf tmp
+
+echo copying to ${MCGENERATORS}/${VERSION}/${LCGPLATFORM} ...
+rm -rf ${MCGENERATORS}/${GENERATOR}/${VERSION}/${LCGPLATFORM}
+rm -rf ${MCGENERATORS}/${GENERATOR}/${VERSION}/share
+mkdir -p ${MCGENERATORS}/${GENERATOR}/${VERSION}
+cd ${MCGENERATORS}/${GENERATOR}/${VERSION}
+mkdir ${LCGPLATFORM}
+cd -
+rcp -rp * ${MCGENERATORS}/${GENERATOR}/${VERSION}/${LCGPLATFORM}/.
+cd -
+mkdir share
+cd share
+cp -rf  ../${LCGPLATFORM}/src .
+cp -rf  ../${LCGPLATFORM}/dummy .
+cp -rf  ../${LCGPLATFORM}/data .
+cp -rf  ../${LCGPLATFORM}/doc .
+cp -rf  ../${LCGPLATFORM}/examples .
+cp -rf  ../${LCGPLATFORM}/configure .
+cp -rf  ../${LCGPLATFORM}/lcg_configure .
+cp -rf  ../${LCGPLATFORM}/Make* .
+
+rm -rf  ../${LCGPLATFORM}/src 
+rm -rf  ../${LCGPLATFORM}/dummy 
+rm -rf  ../${LCGPLATFORM}/data 
+rm -rf  ../${LCGPLATFORM}/doc 
+rm -rf  ../${LCGPLATFORM}/examples 
+rm -rf  ../${LCGPLATFORM}/configure 
+rm -rf  ../${LCGPLATFORM}/lcg_configure 
+rm -rf  ../${LCGPLATFORM}/Make* 
+cp ../${LCGPLATFORM}/README .
+#                                   preparing tarball with libraries:
+echo preparing tarball with libraries...
+#cd ../..
+cd ../${LCGPLATFORM}
+
+mkdir -p tmp/${GENERATOR}/${VERSION}/${LCGPLATFORM}
+cd tmp/${GENERATOR}/${VERSION}/${LCGPLATFORM}
+
+rcp -rp ${INSTALLDIR}/${GENERATOR}/${VERSION}/${LCGPLATFORM}/lib .
+cp -f ${INSTALLDIR}/${GENERATOR}/${VERSION}/${LCGPLATFORM}/config.mk .
+cp -f ${INSTALLDIR}/${GENERATOR}/${VERSION}/${LCGPLATFORM}/compile.log .
+
+cd ../../..
+tar -czf ${GENERATOR}-${VERSION}-${LCGPLATFORM}.tgz ${GENERATOR}
+mkdir -p ${INSTALLDIR}/distribution
+mv ${GENERATOR}-${VERSION}-${LCGPLATFORM}.tgz ${INSTALLDIR}/distribution/.
+cd ..
+rm -rf tmp
+
+#
+echo successfully finished

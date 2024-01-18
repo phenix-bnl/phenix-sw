@@ -1,0 +1,12 @@
+#!/bin/sh
+#           This generator is kept in GENSER CVS
+#
+export GENERATOR=hijing
+export VERSION=1.383bs.2
+#
+rm -rf ${GENERATOR}
+mkdir ${GENERATOR}
+mv simu/GENSER2/${GENERATOR} ${GENERATOR}/${VERSION}
+rm -rf simu
+tar cvf - ${GENERATOR} | gzip -cf > ${GENERATOR}-${VERSION}-src.tgz
+cp -f ${GENERATOR}-${VERSION}-src.tgz ${MCGREPLICA}/distribution/.

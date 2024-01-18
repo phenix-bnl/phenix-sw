@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+
+if [ x$MCGENERATORS = x ]; then
+  echo MCGENERATORS variable is not defined !
+  exit 1
+fi
+
+. ${MCGENERATORS}/.scripts/platform_functions
+LCGPLATFORM=$(check_platform)
+echo LCGPLATFORM is ${LCGPLATFORM}
+./configure --lcgplatform=${LCGPLATFORM}
