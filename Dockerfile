@@ -134,6 +134,8 @@ ENV OFFLINE_MAIN=/usr/local/opt/build/phenix/new/install/
 ENV LD_LIBRARY_PATH=/usr/local/opt/build/phenix/new/install/lib/:$LD_LIBRARY_PATH
 ENV TSEARCHPATH=.:/usr/local/opt/build/phenix/new/install/
 
+COPY odbc.ini ./odbc.ini
+
 COPY --chmod=0755 <<-"EOF" /opt/entrypoint.sh
 #!/bin/bash
 set -e
