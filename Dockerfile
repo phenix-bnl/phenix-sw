@@ -133,6 +133,7 @@ RUN mkdir offline/AnalysisTrain/Run16dAuPi0Photon/build \
 ENV OFFLINE_MAIN=/usr/local/opt/build/phenix/new/install/
 ENV LD_LIBRARY_PATH=/usr/local/opt/build/phenix/new/install/lib/:$LD_LIBRARY_PATH
 ENV TSEARCHPATH=.:/usr/local/opt/build/phenix/new/install/
+ENV GSEARCHPATH=.:PG
 
 COPY odbc.ini ./odbc.ini
 
